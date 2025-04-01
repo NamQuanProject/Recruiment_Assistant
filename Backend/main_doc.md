@@ -20,7 +20,7 @@ Backend/
 ├── migrations/       # Database migration scripts
 ├── go.mod            # Go module file
 ├── Dockerfile        # Docker setup
-├── README.md         # Documentation
+├── main_doc.md         # Documentation
 ```
 
 ## Getting Started
