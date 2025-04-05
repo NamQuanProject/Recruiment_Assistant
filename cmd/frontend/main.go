@@ -4,12 +4,11 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"path/filepath"
 )
 
 func main() {
     // Define the path to the React build folder
-    frontendDir := filepath.Join("..", "..", "web", "build")
+    frontendDir := "D:/Projects/Milestones/Second Year/Second Semester/Hackathon 2025 [GDGoC]/source/Recruiment_Assistant/web/build"
 
     // Check if the build folder exists
     if _, err := os.Stat(frontendDir); os.IsNotExist(err) {
