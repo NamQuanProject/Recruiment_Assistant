@@ -1,21 +1,24 @@
 package main
 
 import (
+	"context"
 	"log"
 	"os"
 	"os/signal"
-	"context"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/evaluation"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/output"
+
+	"github.com/KietAPCS/test_recruitment_assistant/internal/aiservices"
 )
 
 func main() {
 	// Start servers concurrently
+	// go func() {
+	// 	evaluation.RunServer()
+	// }()
+	// go func() {
+	// 	output.RunServer()
+	// }()
 	go func() {
-		evaluation.RunServer()
-	}()
-	go func() {
-		output.RunServer()
+		aiservices.RunServer()
 	}()
 
 	// Wait for interrupt signal (Ctrl+C)
