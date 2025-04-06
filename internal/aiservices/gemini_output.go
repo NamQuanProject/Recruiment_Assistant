@@ -1,7 +1,6 @@
 package aiservices
 
 import (
-	"fmt"
 	"time"
 
 	"github.com/google/generative-ai-go/genai"
@@ -18,8 +17,6 @@ func (agent *AIAgent) SetOutputStructure(structure map[string]any) {
 
 func StructureToProperties(structure map[string]any) map[string]*genai.Schema {
 	properties := make(map[string]*genai.Schema)
-	fmt.Print("StructureToProperties: ", structure)
-	fmt.Print("\n")
 	for key, value := range structure {
 		switch v := value.(type) {
 		case string:
@@ -52,7 +49,6 @@ func StructureToProperties(structure map[string]any) map[string]*genai.Schema {
 						Properties: StructureToProperties(firstItem),
 					}
 				default:
-					// Default fallback
 					itemSchema = &genai.Schema{Type: genai.TypeString}
 				}
 
@@ -61,7 +57,6 @@ func StructureToProperties(structure map[string]any) map[string]*genai.Schema {
 					Items: itemSchema,
 				}
 			} else {
-				// Handle empty array case
 				properties[key] = &genai.Schema{
 					Type:  genai.TypeArray,
 					Items: &genai.Schema{Type: genai.TypeString},
@@ -69,15 +64,12 @@ func StructureToProperties(structure map[string]any) map[string]*genai.Schema {
 			}
 		}
 	}
-	fmt.Print("Properties: ", properties)
-	fmt.Print("\n")
 	return properties
 }
 
 func DefaultGeminiStructure() map[string]any {
 	return map[string]any{
-		"Question": "string",
-		"Answer":   "string",
+		"Answer": "string",
 	}
 }
 func (agent *AIAgent) AddToHistory(question string, response string) {

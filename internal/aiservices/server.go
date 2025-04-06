@@ -8,25 +8,27 @@ import (
 
 func RunServer() {
 	r := gin.Default()
-
+	agent, err := NewAIAgent(Config{}, true)
 	r.GET("/ai", func(c *gin.Context) {
-		// Initialize the AI agent
-		agent, err := NewAIAgent(Config{}, true)
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create AI agent"})
 			return
 		}
+
 		prompt := "List 3 popular cookie recipes."
 
-		agent.CallChatGemini(prompt)
+		final_prompt := prompt
+
+		result := agent.CallChatGemini(final_prompt)
 
 		c.JSON(http.StatusOK, gin.H{
-			"prompt": prompt,
+			"Question": prompt,
+			"Response": result["Response"],
 		})
-		agent.Close()
-
 	})
 
-	// Start the server on port 8081
+	r.POST("/ai", func(c *gin.Context) {})
+
+	agent.Close()
 	r.Run(":8081")
 }

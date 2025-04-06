@@ -33,3 +33,64 @@ type Config struct {
 	MaxTokens   int
 	Temperature float32
 }
+
+type PersonalInfo struct {
+	Name     string
+	Location string
+	Phone    string
+	Email    string
+	Website  string
+	Github   string
+	Linkedin string
+	Facebook string
+}
+
+type EducationBackground struct {
+	University                string
+	Degree                    string
+	Major                     string
+	GraduationDate            string
+	CurrentGPA                float32
+	RelevantCourses           []string
+	ExtracurricularActivities []string
+	Award                     []string
+	Scholarships              []string
+}
+
+type WorkExperience struct {
+	CompanyName      string
+	JobTitle         string
+	JobDescription   string
+	TypeJob          string // Internship, Full-time, Part-time
+	Location         string
+	StartDate        string
+	EndDate          string
+	Description      string
+	Responsibilities string
+	Skills           []Skills
+	Accomplishments  []string
+	Projects         []string
+	Technologies     []string
+	References       []string
+}
+
+type Skills struct {
+	SkillName         string
+	SkillLevel        string
+	YearsOfExperience int
+}
+
+type Project struct {
+	ProjectName string
+	Description string
+	Reference   string
+}
+
+type CV struct {
+	PersonalInfo        PersonalInfo
+	EducationBackground EducationBackground
+	WorkExperience      []WorkExperience
+	WorkingSkills       []Skills
+	Projects            []Project
+	SocialActivitys     []string
+}
