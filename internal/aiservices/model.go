@@ -87,8 +87,9 @@ type Project struct {
 }
 
 type CV struct {
+	JobApply            string
 	PersonalInfo        PersonalInfo
-	EducationBackground EducationBackground
+	EducationBackground []EducationBackground
 	WorkExperience      []WorkExperience
 	WorkingSkills       []Skills
 	Projects            []Project

@@ -14,9 +14,7 @@ func (agent *AIAgent) CallChatGemini(prompt string) map[string]any {
 		history_prompt += fmt.Sprintf("Question: %s\nAnswer: %s\n", history.Question, history.Response)
 	}
 
-	// Add the current question to the history
 	final_prompt := history_prompt + fmt.Sprintf("Question: %s\n", prompt)
-	// Set the final prompt
 
 	resp, err := agent.Model.GenerateContent(agent.ctx, genai.Text(final_prompt))
 	if err != nil {
@@ -60,7 +58,7 @@ func (agent *AIAgent) CallGeminiStructure(prompt string, structure map[string]an
 	}
 
 	// Add the current question to the history
-	final_prompt := history_prompt + fmt.Sprintf("Question: %s\n", prompt)
+	final_prompt := "This is the history context:" + history_prompt + "\n" + "And this is the current problems" + fmt.Sprintf("Question: %s\n", prompt)
 	// Set the final prompt
 
 	resp, err := agent.Model.GenerateContent(agent.ctx, genai.Text(final_prompt))
