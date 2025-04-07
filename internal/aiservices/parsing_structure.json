@@ -1,0 +1,62 @@
+{   
+    "JobApply" : "string",
+    "PersonalInfo": {
+      "FullName": "string",
+      "Age": "int",
+      "Email": "string",
+      "PhoneNumber": "string",
+      "Address": "string",
+      "LinkedIn": "string",
+      "GitHub": "string",
+      "Website": "string"
+    },
+    "EducationBackground": {
+      "University": "string",
+      "Degree": "string",
+      "Major": "string",
+      "GraduationDate": "string",
+      "CurrentGPA": "float",
+      "RelevantCourses": ["string"],
+      "Award": ["string"],
+      "Scholarships": ["string"]
+    },
+    "WorkExperience": [
+      {
+        "CompanyName": "string",
+        "JobTitle": "string",
+        "JobDescription": "string",
+        "TypeJob": "string",
+        "Location": "string",
+        "StartDate": "string",
+        "EndDate": "string",
+        "Description": "string",
+        "Responsibilities": "string",
+        "Skills": [
+          {
+            "SkillName": "string",
+            "SkillLevel": "string",
+            "YearsOfExperience": "int"
+          }
+        ],
+        "Accomplishments": ["string"],
+        "Projects": ["string"],
+        "Technologies": ["string"],
+        "References": ["string"]
+      }
+    ],
+    "WorkingSkills": [
+      {
+        "SkillName": "string",
+        "SkillLevel": "string",
+        "YearsOfExperience": "int"
+      }
+    ],
+    "Projects": [
+      {
+        "ProjectName": "string",
+        "Description": "string",
+        "Reference": "string"
+      }
+    ],
+    "Activities": ["string"]
+}  

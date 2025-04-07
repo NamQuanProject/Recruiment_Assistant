@@ -36,6 +36,7 @@ type Config struct {
 
 type PersonalInfo struct {
 	Name     string
+	Age      int
 	Location string
 	Phone    string
 	Email    string
@@ -46,22 +47,21 @@ type PersonalInfo struct {
 }
 
 type EducationBackground struct {
-	University                string
-	Degree                    string
-	Major                     string
-	GraduationDate            string
-	CurrentGPA                float32
-	RelevantCourses           []string
-	ExtracurricularActivities []string
-	Award                     []string
-	Scholarships              []string
+	University      string
+	Degree          string
+	Major           string
+	GraduationDate  string
+	CurrentGPA      float32
+	RelevantCourses []string
+	Award           []string
+	Scholarships    []string
 }
 
 type WorkExperience struct {
 	CompanyName      string
 	JobTitle         string
 	JobDescription   string
-	TypeJob          string // Internship, Full-time, Part-time
+	TypeJob          string
 	Location         string
 	StartDate        string
 	EndDate          string
@@ -87,10 +87,11 @@ type Project struct {
 }
 
 type CV struct {
+	JobApply            string
 	PersonalInfo        PersonalInfo
-	EducationBackground EducationBackground
+	EducationBackground []EducationBackground
 	WorkExperience      []WorkExperience
 	WorkingSkills       []Skills
 	Projects            []Project
-	SocialActivitys     []string
+	Activitys           []string
 }

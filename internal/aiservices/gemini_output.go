@@ -1,6 +1,7 @@
 package aiservices
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/google/generative-ai-go/genai"
@@ -80,8 +81,13 @@ func (agent *AIAgent) AddToHistory(question string, response string) {
 	})
 }
 
-func (agent *AIAgent) GetHistory() []History {
-	return agent.History
+func (agent *AIAgent) GetHistory() string {
+	// Convert the history to a string
+	history_prompt := ""
+	for _, history := range agent.History {
+		history_prompt += fmt.Sprintf("Question: %s\nAnswer: %s\n", history.Question, history.Response)
+	}
+	return history_prompt
 }
 
 // func (agent *AIAgent) ClearHistory() {

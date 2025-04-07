@@ -1,0 +1,278 @@
+{
+  "Activities": [
+    "Contributor in Pune PyCon 2018",
+    "Mentor at GirlScript Summer of Code 2019",
+    "Organizing head for the National level technical event - Innovatus"
+  ],
+  "EducationBackground": {
+    "Award": [
+      "Awarded ‘The Best Outgoing Student Award 2017-18’",
+      "Won 2nd Prize in an Hackathon organized by MIT-ADT Persona Fest 2018 Pune",
+      "Best Paper Award in National Level Conference on “Emerging Trends in Computing , Analytics and Security - 2018”(NCETCAS-2018)"
+    ],
+    "CurrentGPA": null,
+    "Degree": "B.E.",
+    "GraduationDate": "2018",
+    "Major": "COMPUTER ENGINEERING",
+    "RelevantCourses": [],
+    "Scholarships": [],
+    "University": "Marathwada Mitra Mandal’s College of Engineering"
+  },
+  "JobApply": "SOFTWARE ENGINEER · FULL STACK PYTHON DEVELOPER",
+  "PersonalInfo": {
+    "Address": "Pune, Maharashtra, India",
+    "Age": null,
+    "Email": "omkarpathak27@gmail.com",
+    "FullName": "Omkar Pathak",
+    "GitHub": "https://github.com/OmkarPathak",
+    "LinkedIn": "https://www.linkedin.com/in/omkar-pathak-94473811b",
+    "PhoneNumber": "8087996634",
+    "Website": "www.omkarpathak.in"
+  },
+  "Projects": [
+    {
+      "Description": "A simple resume parser used for extracting information from resumes\nExtract information from thousands of resumes in just a few seconds\nAuthor and maintainer of this project",
+      "ProjectName": "Pyresparser",
+      "Reference": "https://github.com/OmkarPathak/pyresparser"
+    },
+    {
+      "Description": "To find a economical and smarter alternative to current garbage problems\nUsers can monitor levels of all garbage bins from a global dashboard provided\nWas responsible for Django backend development",
+      "ProjectName": "Garbage Level Monitoring System",
+      "Reference": "https://github.com/OmkarPathak/Garbage-Level-Monitoring-System"
+    },
+    {
+      "Description": "Author and maintainer of this project\nAn educational library to teach all the major algorithms\nGot covered in Fosstack, (https://fosstack.com/algorithms-with-python/) FullStackFeed, (https://fullstackfeed.com/pygorithm-a-python-module-for-learning-all-major-algorithms/) Kleiber (https://kleiber.me/blog/2017/08/10/tutorial-decorator-primer/) and Tagged under Hotest Github Project on ITCodeMonkey (https://www.itcodemonkey.com/article/653.html)",
+      "ProjectName": "Pygorithm",
+      "Reference": "https://github.com/OmkarPathak/pygorithm"
+    },
+    {
+      "Description": "Face Recognition using OpenCV and Python\nRaspberry Pi was used as the data server\nUser notified if any suspicious activity detected in real time",
+      "ProjectName": "Smart Surveillance System using Raspberry Pi and Face Recognition",
+      "Reference": "https://github.com/OmkarPathak/Smart-Surveillance-System-using-Raspberry-Pi"
+    },
+    {
+      "Description": "SVM algorithm used for training and classification\nFlask framework used\nSelf-generated dataset",
+      "ProjectName": "Password Strength Evaluator using Machine Learning",
+      "Reference": "https://github.com/OmkarPathak/Password-Strength-Evaluator-using-Machine-Learning"
+    }
+  ],
+  "WorkExperience": [
+    {
+      "Accomplishments": [
+        "brought migration time to 1.5 hours from 9 hours without any manual intervention"
+      ],
+      "CompanyName": "Schlumberger",
+      "Description": null,
+      "EndDate": "Present",
+      "JobDescription": "DATA ENGINEER",
+      "JobTitle": "DATA ENGINEER",
+      "Location": "Pune, Maharashtra, India",
+      "Projects": [],
+      "References": [],
+      "Responsibilities": "Responsible for implementing and managing an end-to-end CI/CD Pipeline with custom validations for Informatica migrations which\nbrought migration time to 1.5 hours from 9 hours without any manual intervention\nEnhancing, auditing and maintaining custom data ingestion framework that ingest around 1TB of data each day to over 70 business\nunits\nWorking with L3 developer team to ensure the discussed Scrum PBI’s are delivered on time for data ingestions\nPlanning and Executing QA and Production Release Cycle activities",
+      "Skills": [],
+      "StartDate": "July 2018",
+      "Technologies": [
+        "Informatica"
+      ],
+      "TypeJob": null
+    },
+    {
+      "Accomplishments": [],
+      "CompanyName": "Truso",
+      "Description": null,
+      "EndDate": "July 2018",
+      "JobDescription": "FULL STACK DEVELOPER INTERN",
+      "JobTitle": "FULL STACK DEVELOPER INTERN",
+      "Location": "Pune, Maharashtra, India",
+      "Projects": [],
+      "References": [],
+      "Responsibilities": "Created RESTful apis\nTried my hands on Angular 5/6\nWas responsible for Django backend development",
+      "Skills": [],
+      "StartDate": "June 2018",
+      "Technologies": [
+        "Angular 5/6",
+        "Django"
+      ],
+      "TypeJob": null
+    },
+    {
+      "Accomplishments": [],
+      "CompanyName": "Propeluss",
+      "Description": null,
+      "EndDate": "January 2018",
+      "JobDescription": "DATA ENGINEERING INTERN",
+      "JobTitle": "DATA ENGINEERING INTERN",
+      "Location": "Pune, Maharashtra, India",
+      "Projects": [],
+      "References": [],
+      "Responsibilities": "Wrote various automation scripts to scrape data from various websites.\nApplied Natural Language Processing to articles scraped from the internet to extract different entities in these articles using entity\nextraction algorithms and applying Machine Learning to classify these articles.\nAlso applied KNN with LSA for extracting relevant tags for various startups based on their works.",
+      "Skills": [],
+      "StartDate": "October 2017",
+      "Technologies": [
+        "Natural Language Processing",
+        "Machine Learning",
+        "KNN",
+        "LSA"
+      ],
+      "TypeJob": null
+    },
+    {
+      "Accomplishments": [],
+      "CompanyName": "GeeksForGeeks",
+      "Description": null,
+      "EndDate": "September 2017",
+      "JobDescription": "TECHNICAL CONTENT WRITER",
+      "JobTitle": "TECHNICAL CONTENT WRITER",
+      "Location": "Pune, Maharashtra, India",
+      "Projects": [],
+      "References": [],
+      "Responsibilities": "Published 4 articles for the topics such as Data Structures and Algorithms and Python",
+      "Skills": [],
+      "StartDate": "July 2017",
+      "Technologies": [
+        "Data Structures",
+        "Algorithms",
+        "Python"
+      ],
+      "TypeJob": null
+    },
+    {
+      "Accomplishments": [],
+      "CompanyName": "Softtestlab Technologies",
+      "Description": null,
+      "EndDate": "July 2017",
+      "JobDescription": "WEB DEVELOPER INTERN",
+      "JobTitle": "WEB DEVELOPER INTERN",
+      "Location": "Pune, Maharashtra, India",
+      "Projects": [],
+      "References": [],
+      "Responsibilities": "Was responsible for creating an internal project for the company using PHP and Laravel for testing purposes\nWorked on a live project for creating closure reports using PHP and Excel",
+      "Skills": [],
+      "StartDate": "June 2017",
+      "Technologies": [
+        "PHP",
+        "Laravel",
+        "Excel"
+      ],
+      "TypeJob": null
+    }
+  ],
+  "WorkingSkills": [
+    {
+      "SkillLevel": null,
+      "SkillName": "Python",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "C",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "PHP",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "C++",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Shell Script",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "HTML",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "CSS",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "JavaScript",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Angular 6/7",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Django",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Flask (Python)",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Laravel (PHP)",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Linux",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Unix",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Windows",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "MySQL",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "SQLite",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "MongoDB",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Git",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "NLP",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Scikit-Learn",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "OpenCV",
+      "YearsOfExperience": null
+    },
+    {
+      "SkillLevel": null,
+      "SkillName": "Cloud (GCP, Azure, DigitalOcean)",
+      "YearsOfExperience": null
+    }
+  ]
+}
