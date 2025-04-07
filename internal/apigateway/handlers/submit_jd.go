@@ -48,14 +48,16 @@ func UploadJDHandler(c *gin.Context) {
 		return
 	}
 
-	// Process the PDF
+	// // Process the PDF
 	if err := ProcessPDF(filePath, c); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"error": fmt.Sprintf("Failed to process PDF: %v", err),
 		})
 		return
 	}
+	// parsing.ExtractTextFromPDF(filePath)
 
+	// Return success response without processed text
 	c.JSON(http.StatusOK, gin.H{
 		"message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
 		"path":    filePath,
@@ -79,12 +81,14 @@ func ProcessPDF(filePath string, c *gin.Context) error {
 	log.Printf("Processing PDF file: %s (Size: %d bytes)", filePath, fileInfo.Size())
 
 	// Prepare the request to the parsing server
-	txtFilePath := strings.TrimSuffix(filePath, ".pdf") + ".txt"
+	absPath, _ := filepath.Abs(filePath)
+	txtFilePath := strings.TrimSuffix(absPath, ".pdf") + ".txt"
+
 	parseRequest := struct {
 		PDFPath  string `json:"pdf_path"`
 		TextPath string `json:"txt_path"`
 	}{
-		PDFPath:  filePath,
+		PDFPath:  absPath,
 		TextPath: txtFilePath,
 	}
 
@@ -114,23 +118,8 @@ func ProcessPDF(filePath string, c *gin.Context) error {
 		return nil
 	}
 
-	var parseResponse struct {
-		Text string `json:"text"`
-	}
-
-	if err := json.NewDecoder(resp.Body).Decode(&parseResponse); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": fmt.Sprintf("Failed to decode parsing server response: %v", err),
-		})
-		return nil
-	}
-
-	c.JSON(http.StatusOK, gin.H{
-		"message":   fmt.Sprintf("File '%s' uploaded and processed successfully", file.Name()),
-		"path":      filePath,
-		"text_path": txtFilePath,
-		"text":      parseResponse.Text,
-	})
+	// No need to return the processed text now, so just skip decoding the response.
+	// We only need to send a status.
 
 	return nil
 }
