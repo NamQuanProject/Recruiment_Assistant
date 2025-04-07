@@ -1,8 +1,10 @@
 package apigateway
 
 import (
+	"net/http"
+	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/middleware"
+	// "github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/middleware"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/user"
 	"github.com/gin-gonic/gin"
 )
@@ -14,18 +16,30 @@ func Init() {
 }
 
 func RunServer() {
-	r := gin.Default()
-	Init()
+    r := gin.Default()
+    
+    // Load HTML templates
+    r.LoadHTMLGlob("./templates/*")
+    
+    Init()
 
-	r.POST("/signup", user.Signup)
-	r.POST("/login", user.Login)
-	r.GET("/validate", middleware.RequireAuth, user.Validate)
-	r.POST("/logout", user.Logout) 
-	r.GET("/test", middleware.RequireAuth, func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "Hello, world!",
-		})
-	})
+    // Authentication routes
+    r.POST("/signup", user.Signup)
+    r.POST("/login", user.Login)
+    r.POST("/logout", user.Logout) 
+    
+    // Serve HTML form upload
+    r.GET("/", func(c *gin.Context) {
+        c.HTML(http.StatusOK, "upload.html", nil)
+    })
 
-	r.Run()
+    // Create a route for testing the upload without auth (temporary)
+    r.GET("/upload-test", func(c *gin.Context) {
+        c.HTML(http.StatusOK, "upload.html", nil)
+    })
+
+    // Job description routes
+    r.POST("/submitJD", handlers.UploadJDHandler)
+
+    r.Run()
 }
