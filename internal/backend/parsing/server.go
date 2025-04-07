@@ -43,3 +43,7 @@ func RunServer() {
 	fmt.Println("Parsing server running at http://localhost:8082")
 	r.Run(":8082")
 }
+
+func ExtractJson(CV_text string, output_path string) {
+
+}

@@ -1,11 +1,15 @@
 package handlers
 
 import (
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
+	"strings"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -42,10 +46,10 @@ func UploadJDHandler(c *gin.Context) {
 			"error": "Failed to save file",
 		})
 		return
-	}	
+	}
 
 	// Process the PDF
-	if err := ProcessPDF(filePath); err != nil {
+	if err := ProcessPDF(filePath, c); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"error": fmt.Sprintf("Failed to process PDF: %v", err),
 		})
@@ -58,7 +62,7 @@ func UploadJDHandler(c *gin.Context) {
 	})
 }
 
-func ProcessPDF(filePath string) error {
+func ProcessPDF(filePath string, c *gin.Context) error {
 	// Open the PDF file
 	file, err := os.Open(filePath)
 	if err != nil {
@@ -74,10 +78,59 @@ func ProcessPDF(filePath string) error {
 
 	log.Printf("Processing PDF file: %s (Size: %d bytes)", filePath, fileInfo.Size())
 
-	// Here you can add your PDF processing logic
-	// For example, using unipdf or pdfcpu libraries
+	// Prepare the request to the parsing server
+	txtFilePath := strings.TrimSuffix(filePath, ".pdf") + ".txt"
+	parseRequest := struct {
+		PDFPath  string `json:"pdf_path"`
+		TextPath string `json:"txt_path"`
+	}{
+		PDFPath:  filePath,
+		TextPath: txtFilePath,
+	}
 
-	
+	// Send POST request to the parsing server
+	reqBody, err := json.Marshal(parseRequest)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": fmt.Sprintf("Failed to prepare request: %v", err),
+		})
+		return err
+	}
+
+	resp, err := http.Post("http://localhost:8082/parse", "application/json", bytes.NewBuffer(reqBody))
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": fmt.Sprintf("Failed to call parsing server: %v", err),
+		})
+		return err
+	}
+	defer resp.Body.Close()
+
+	// Read the response
+	if resp.StatusCode != http.StatusOK {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": fmt.Sprintf("Parsing server returned error: %v", resp.Status),
+		})
+		return nil
+	}
+
+	var parseResponse struct {
+		Text string `json:"text"`
+	}
+
+	if err := json.NewDecoder(resp.Body).Decode(&parseResponse); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": fmt.Sprintf("Failed to decode parsing server response: %v", err),
+		})
+		return nil
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"message":   fmt.Sprintf("File '%s' uploaded and processed successfully", file.Name()),
+		"path":      filePath,
+		"text_path": txtFilePath,
+		"text":      parseResponse.Text,
+	})
 
 	return nil
 }
