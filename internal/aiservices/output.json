@@ -1,33 +1,32 @@
 {
+  "Activities": [
+    "Contributor in Pune PyCon 2018",
+    "Mentor at GirlScript Summer of Code 2019",
+    "Organizing head for the National level technical event - Innovatus"
+  ],
   "EducationBackground": {
     "Award": [
-      "Top rated Python developer, 2018 in Pune and Fifth in India at Github",
-      "Quora Top Writer, 2018 India",
-      "‘The Best Outgoing Student Award 2017-18’",
-      "Won 2nd Prize, 2018 in an Hackathon organized by MIT-ADT Persona Fest 2018 Pune",
-      "Best Paper Award, in National Level Conference on “Emerging Trends in Computing , Analytics and Security - 2018”(NCETCAS-2018)"
+      "Awarded ‘The Best Outgoing Student Award 2017-18’",
+      "Won 2nd Prize in an Hackathon organized by MIT-ADT Persona Fest 2018 Pune",
+      "Best Paper Award in National Level Conference on “Emerging Trends in Computing , Analytics and Security - 2018”(NCETCAS-2018)"
     ],
-    "CurrentGPA": 74.0,
+    "CurrentGPA": null,
     "Degree": "B.E.",
-    "ExtracurricularActivities": [
-      "Contributor in Pune PyCon 2018",
-      "Mentor at GirlScript Summer of Code 2019",
-      "Organizing head for the National level technical event - Innovatus"
-    ],
     "GraduationDate": "2018",
-    "Major": "Computer Engineering",
+    "Major": "COMPUTER ENGINEERING",
     "RelevantCourses": [],
     "Scholarships": [],
     "University": "Marathwada Mitra Mandal’s College of Engineering"
   },
-  "JobApply": "Software Engineer",
+  "JobApply": "SOFTWARE ENGINEER · FULL STACK PYTHON DEVELOPER",
   "PersonalInfo": {
     "Address": "Pune, Maharashtra, India",
+    "Age": null,
     "Email": "omkarpathak27@gmail.com",
     "FullName": "Omkar Pathak",
     "GitHub": "https://github.com/OmkarPathak",
     "LinkedIn": "https://www.linkedin.com/in/omkar-pathak-94473811b",
-    "PhoneNumber": "+91 8087996634",
+    "PhoneNumber": "8087996634",
     "Website": "www.omkarpathak.in"
   },
   "Projects": [
@@ -42,7 +41,7 @@
       "Reference": "https://github.com/OmkarPathak/Garbage-Level-Monitoring-System"
     },
     {
-      "Description": "Author and maintainer of this project\nAn educational library to teach all the major algorithms\nGot covered in Fosstack, (https://fosstack.com/algorithms-with-python/) FullStackFeed, (https://fullstackfeed.com/pygorithm-a-python-module-for-learning-all-major-algorithms/) Kleiber (https://kleiber.me/blog/2017/08/10/tutorial-decorator-primer/) and Tagged under Hotest Github Project on ITCodeMonkey",
+      "Description": "Author and maintainer of this project\nAn educational library to teach all the major algorithms\nGot covered in Fosstack, (https://fosstack.com/algorithms-with-python/) FullStackFeed, (https://fullstackfeed.com/pygorithm-a-python-module-for-learning-all-major-algorithms/) Kleiber (https://kleiber.me/blog/2017/08/10/tutorial-decorator-primer/) and Tagged under Hotest Github Project on ITCodeMonkey (https://www.itcodemonkey.com/article/653.html)",
       "ProjectName": "Pygorithm",
       "Reference": "https://github.com/OmkarPathak/pygorithm"
     },
@@ -57,7 +56,6 @@
       "Reference": "https://github.com/OmkarPathak/Password-Strength-Evaluator-using-Machine-Learning"
     }
   ],
-  "SocialActivitys": [],
   "WorkExperience": [
     {
       "Accomplishments": [

@@ -2,6 +2,7 @@
     "JobApply" : "string",
     "PersonalInfo": {
       "FullName": "string",
+      "Age": "int",
       "Email": "string",
       "PhoneNumber": "string",
       "Address": "string",
@@ -16,7 +17,6 @@
       "GraduationDate": "string",
       "CurrentGPA": "float",
       "RelevantCourses": ["string"],
-      "ExtracurricularActivities": ["string"],
       "Award": ["string"],
       "Scholarships": ["string"]
     },
@@ -58,5 +58,5 @@
         "Reference": "string"
       }
     ],
-    "SocialActivitys": ["string"]
+    "Activities": ["string"]
 }  
