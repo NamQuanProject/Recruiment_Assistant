@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Java, JavaScript, TypeScript, C",
+    "page": 1,
+    "x": 202.97,
+    "y": 581.81,
+    "width": 136.92,
+    "height": 12.94,
+    "description": "This is a strong area because it highlights relevant technical skills in programming languages that are important for a Senior Software Engineer role.",
+    "type": "strong"
+  },
+  {
+    "text": "Spring boot, Nextjs, JWT, Material UI, PostgreSQL",
+    "page": 1,
+    "x": 127.7,
+    "y": 421.46,
+    "width": 232.28,
+    "height": 12.94,
+    "description": "This is a strong area because it showcases experience with modern frameworks and technologies, crucial for senior software engineering positions.",
+    "type": "strong"
+  },
+  {
+    "text": "Using Spring Boot and Spring data JPA for managing system, with Spring Security for",
+    "page": 1,
+    "x": 71.42,
+    "y": 514.34,
+    "width": 398.62,
+    "height": 12.94,
+    "description": "This is a strong area because it demonstrates experience with backend technologies and security implementation, which are essential for a senior role.",
+    "type": "strong"
+  },
+  {
+    "text": "Active participant in the UIT ACM/ICPC programming community, focusing on competitive coding",
+    "page": 1,
+    "x": 71.42,
+    "y": 219.69,
+    "width": 460.84,
+    "height": 12.94,
+    "description": "This is a strong area because it demonstrates a commitment to continuous learning and engagement with the developer community, which is important for a senior role.",
+    "type": "strong"
+  },
+  {
+    "text": "Courses work: Data Structures and Algorithms, Calculus, Object-Oriented Programming, Competitive",
+    "page": 1,
+    "x": 94.22,
+    "y": 113.25,
+    "width": 473.5,
+    "height": 12.94,
+    "description": "This area is weak because, for a senior role, it's better to focus on projects and experience than coursework. Consider removing this section or shortening it significantly and expanding on project details.",
+    "type": "weak"
+  },
+  {
+    "text": "server load efficiency.",
+    "page": 1,
+    "x": 304.13,
+    "y": 314.88,
+    "width": 107.21,
+    "height": 12.94,
+    "description": "This area is weak because it lacks specific quantification of the improvements made. Adding metrics like 'improved server load by X%' would make the impact more tangible and impressive.",
+    "type": "weak"
+  },
+  {
+    "text": "Development .",
+    "page": 1,
+    "x": 94.22,
+    "y": 138.45,
+    "width": 69.98,
+    "height": 12.94,
+    "description": "This area is weak because of the trailing period after the word Development. Removing this typo would improve the overall presentation of the CV.",
+    "type": "weak"
+  },
+  {
+    "text": "Progamming, Operating System, Computer Network, Database Management Systems, Web Application",
+    "page": 1,
+    "x": 94.22,
+    "y": 125.85,
+    "width": 481.39,
+    "height": 12.94,
+    "description": "This area is weak because 'Progamming' is misspelled. Correcting the spelling to 'Programming' will improve the CV's professionalism.",
+    "type": "weak"
+  }
+]

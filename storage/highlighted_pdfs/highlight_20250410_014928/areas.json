@@ -1,0 +1,62 @@
+[
+  {
+    "text": "VNUHCM - University of Information Technology,",
+    "page": 1,
+    "x": 36,
+    "y": 86.97,
+    "width": 246.57,
+    "height": 12.94,
+    "description": "Strong: Currently pursuing a Bachelor's degree in Information Systems at a recognized university (VNUHCM - University of Information Technology). This is relevant to the Junior Software Engineer role.",
+    "type": "strong"
+  },
+  {
+    "text": "Courses work: Data Structures and Algorithms, Calculus, Object-Oriented Programming, Competitive",
+    "page": 1,
+    "x": 94.22,
+    "y": 113.25,
+    "width": 473.5,
+    "height": 12.94,
+    "description": "Strong: The CV mentions relevant coursework, including Data Structures and Algorithms, Object-Oriented Programming, and Database Management Systems. This demonstrates a foundational understanding of core computer science concepts.",
+    "type": "strong"
+  },
+  {
+    "text": "OptiMart – Personal Project                                                                                                           July 2024 – November 2024",
+    "page": 1,
+    "x": 36,
+    "y": 275.04,
+    "width": 541.21,
+    "height": 12.94,
+    "description": "Strong: The 'OptiMart' project showcases full-stack development skills and use of modern technologies such as Next.js and Spring Boot. This demonstrates practical experience in building web applications.",
+    "type": "strong"
+  },
+  {
+    "text": "Engage",
+    "page": 1,
+    "x": 71.42,
+    "y": 245.52,
+    "width": 38.64,
+    "height": 12.94,
+    "description": "Weak: 'Engage in self‐study and participate in algorithms competitions to enhance expertise.' is vague. It does not specify the platforms or languages used which reduces the impact.  It should be more specific, e.g., 'Practiced algorithm problem-solving on LeetCode and HackerRank in Python and Java to improve coding skills'.",
+    "type": "weak"
+  },
+  {
+    "text": "Optimart is an e-commerce platform that lets users shop for a diverse range of products online",
+    "page": 1,
+    "x": 53.4,
+    "y": 287.95,
+    "width": 393.1,
+    "height": 11.67,
+    "description": "Weak: Project descriptions could elaborate more on the *impact* of the projects (e.g., user base, problem solved effectively, efficiency gains).",
+    "type": "weak"
+  },
+  {
+    "text": "Tech stacks :",
+    "page": 1,
+    "x": 56.16,
+    "y": 421.46,
+    "width": 71.54,
+    "height": 12.94,
+    "description": "Weak: While listing the tech stack is good, the CV could benefit from quantifying the impact or results achieved using these technologies in the projects. For example, 'Improved website loading speed by X% using Redis caching'.",
+    "type": "weak"
+  }
+]

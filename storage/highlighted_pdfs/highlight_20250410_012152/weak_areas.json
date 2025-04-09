@@ -1,0 +1,128 @@
+[
+  {
+    "text": "Compassionate and flexible Full-time Undergraduate student at Pratt School of",
+    "page": 1,
+    "x": 45.81,
+    "y": 96.29,
+    "width": 287.79,
+    "height": 8.98,
+    "description": "This is a weak opening statement for a Senior Software Engineer role. It emphasizes personality traits and student status rather than technical skills and experience. It should be replaced with a concise summary highlighting relevant software engineering skills, years of experience, and key achievements. Tailor it to a Senior Software Engineer."
+  },
+  {
+    "text": "Architecture with diverse experience of management from being an event staff at",
+    "page": 1,
+    "x": 45.81,
+    "y": 109.28,
+    "width": 294.2,
+    "height": 8.98,
+    "description": "This continues the focus on non-software related experience, specifically architecture and event management. While diverse experience can be valuable, it needs to be framed in a way that demonstrates transferable skills relevant to software engineering, which is lacking here. Remove or significantly condense this section and focus on technical skills and projects."
+  },
+  {
+    "text": "college’s athletic center to research assistant; Always ready to engage and absorb",
+    "page": 1,
+    "x": 45.81,
+    "y": 122.28,
+    "width": 301,
+    "height": 8.98,
+    "description": "Again, this highlights unrelated experience. While the desire to learn is good, it doesn't compensate for the lack of demonstrable software engineering skills. Focus on quantifiable achievements and technical expertise instead of generic statements."
+  },
+  {
+    "text": "new knowledge and criticisms; Outgoing and optimistic teamplayer creates strong",
+    "page": 1,
+    "x": 45.81,
+    "y": 135.28,
+    "width": 300.07,
+    "height": 8.98,
+    "description": "These are soft skills, which are valuable, but secondary to technical skills for a Senior Software Engineer role. Emphasizing team player abilities is good, but the focus should be on how these skills contributed to successful software projects. Quantify how teamwork translated into project success."
+  },
+  {
+    "text": "bonds when working with other people, committing to an exceptional teamwork;",
+    "page": 1,
+    "x": 45.81,
+    "y": 148.28,
+    "width": 292.11,
+    "height": 8.98,
+    "description": "This continues to overemphasize generic soft skills. The resume needs concrete examples of how teamwork was applied in a software engineering context. Add a project section with details about contributions, technologies used, and outcomes."
+  },
+  {
+    "text": "International student and bilingual",
+    "page": 1,
+    "x": 45.81,
+    "y": 161.28,
+    "width": 124.04,
+    "height": 8.98,
+    "description": "While being an international student and bilingual are positive attributes, they are not central to the qualifications for a Senior Software Engineer. This should be moved to the end of the resume or omitted altogether to prioritize technical experience. The space could be better used for skills or personal projects."
+  },
+  {
+    "text": "Work/Experience",
+    "page": 1,
+    "x": 45.68,
+    "y": 191.26,
+    "width": 135.61,
+    "height": 23.96,
+    "description": "While Work/Experience is a standard section heading, the experience listed focuses on architecture, event management, and lab technician roles, which are not directly relevant to a Senior Software Engineer position. This section needs to be heavily revised to include any software development experience, even if it's from personal projects, open-source contributions, or internships. Quantify accomplishments wherever possible."
+  },
+  {
+    "text": "DIGITAL FABRICATION L AB TECHNICIAN",
+    "page": 1,
+    "x": 90.26,
+    "y": 252.29,
+    "width": 179.45,
+    "height": 8.98,
+    "description": "While this role highlights technical aptitude with various software and hardware, it does not translate directly to software engineering experience. The description should explicitly link the technologies used to relevant software engineering concepts or transferable skills, if possible. If not, consider minimizing this section."
+  },
+  {
+    "text": "Bachelor of Architecture",
+    "page": 1,
+    "x": 421.35,
+    "y": 277.8,
+    "width": 93.39,
+    "height": 9.58,
+    "description": "A Bachelor of Architecture is not directly relevant to a Senior Software Engineer position. This indicates a lack of formal education in computer science or a related field. The candidate needs to demonstrate how they have acquired the necessary software engineering skills through other means, such as online courses, boot camps, or self-study. Including relevant coursework from the Architecture degree would also be beneficial."
+  },
+  {
+    "text": "V I S U A L I Z A T I O N",
+    "page": 1,
+    "x": 421,
+    "y": 472.8,
+    "width": 78.18,
+    "height": 9.58,
+    "description": "This section lists software related to Visualization (Adobe Photoshop, Illustrator, etc), which are not directly relevant for a Senior Software Engineer Role. Unless the role specifically requires expertise in these areas, these should be de-emphasized or removed. Replace with specific programming skills that are in high demand."
+  },
+  {
+    "text": "M O D E L I N G",
+    "page": 1,
+    "x": 421,
+    "y": 537.8,
+    "width": 53.93,
+    "height": 9.58,
+    "description": "This section lists software related to 3D Modelling (Rhinoceros, Revit, Auto CAD), which are not directly relevant for a Senior Software Engineer Role. Unless the role specifically requires expertise in these areas, these should be de-emphasized or removed. Replace with specific programming skills that are in high demand."
+  },
+  {
+    "text": "F A B R I C A T I O N",
+    "page": 1,
+    "x": 421,
+    "y": 589.8,
+    "width": 68.37,
+    "height": 9.58,
+    "description": "This section lists software related to Fabrication (Laser Cutting, 3D Printing, CNC Milling), which are not directly relevant for a Senior Software Engineer Role. Unless the role specifically requires expertise in these areas, these should be de-emphasized or removed. Replace with specific programming skills that are in high demand."
+  },
+  {
+    "text": "O T H E R",
+    "page": 1,
+    "x": 421,
+    "y": 667.8,
+    "width": 33.71,
+    "height": 9.58,
+    "description": "This section lists Office, Word, Powerpoint, Excel, which are basic computer skills and not directly relevant for a Senior Software Engineer Role. These should be de-emphasized or removed. The space could be better used for technical skills like programming languages, frameworks, and tools."
+  },
+  {
+    "text": "LANGUAGES",
+    "page": 1,
+    "x": 421.5,
+    "y": 709.88,
+    "width": 55.49,
+    "height": 11.97,
+    "description": "The Languages section lists Vietnamese and English, which are general language proficiencies and not directly relevant for a Senior Software Engineer Role. Unless the role specifically requires expertise in these languages, these should be de-emphasized or removed. The space could be better used for technical skills like programming languages, frameworks, and tools."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Architecture with diverse experience of management from being an event staff at",
+    "page": 1,
+    "x": 45.81,
+    "y": 109.28,
+    "width": 294.2,
+    "height": 8.98,
+    "description": "This text, along with the degree mentioned, highlights a focus on architecture. While management experience is useful, the architecture focus is not directly related to many research fields, which could be a disadvantage if the research assistant role requires specific subject matter expertise outside of architecture.",
+    "type": "weak"
+  },
+  {
+    "text": "EVENT SERVICES STAFF",
+    "page": 1,
+    "x": 90.26,
+    "y": 382.29,
+    "width": 106.28,
+    "height": 8.98,
+    "description": "This experience is less relevant to a research assistant role and might dilute the resume's focus. It doesn't demonstrate research-related skills.",
+    "type": "weak"
+  },
+  {
+    "text": "Photography Assistant",
+    "page": 1,
+    "x": 90.26,
+    "y": 642.28,
+    "width": 119.75,
+    "height": 8.98,
+    "description": "This experience is less relevant to a research assistant role and might dilute the resume's focus. It doesn't demonstrate research-related skills.",
+    "type": "weak"
+  },
+  {
+    "text": "DIGITAL FABRICATION L AB TECHNICIAN",
+    "page": 1,
+    "x": 90.26,
+    "y": 252.29,
+    "width": 179.45,
+    "height": 8.98,
+    "description": "While the role sounds promising, the description lacks quantifiable achievements or specific research methodologies used. It would be stronger if it explicitly mentioned involvement in formal research projects or data collection. Specifying the research focus of the lab would be beneficial.",
+    "type": "weak"
+  }
+]

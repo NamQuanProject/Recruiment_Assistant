@@ -1,0 +1,62 @@
+[
+  {
+    "text": "VNUHCM - University of Information Technology,",
+    "page": 1,
+    "x": 36,
+    "y": 86.97,
+    "width": 246.57,
+    "height": 12.94,
+    "description": "This is a strong area. The candidate is pursuing a Bachelor's degree in Information Systems at a recognized university, which is directly relevant to a Software Engineer position.",
+    "type": "strong"
+  },
+  {
+    "text": "OptiMart – Personal Project                                                                                                           July 2024 – November 2024",
+    "page": 1,
+    "x": 36,
+    "y": 275.04,
+    "width": 541.21,
+    "height": 12.94,
+    "description": "This is a strong area. The inclusion of personal projects demonstrates initiative and practical application of skills. This project showcases skills that are related to full-stack development and use modern technologies, which is attractive for potential employers.",
+    "type": "strong"
+  },
+  {
+    "text": "Spring boot, Nextjs, JWT, Material UI, PostgreSQL",
+    "page": 1,
+    "x": 127.7,
+    "y": 421.46,
+    "width": 232.28,
+    "height": 12.94,
+    "description": "This is a strong area. Listing the tech stacks used in projects highlights the candidate's proficiency with relevant technologies that is valuable to a software engineer role. Mentioning specific technologies like Spring Boot, Next.js, PostgreSQL, JWT, and Material UI is good as it indicates an understanding of modern development practices.",
+    "type": "strong"
+  },
+  {
+    "text": "Courses work: Data Structures and Algorithms, Calculus, Object-Oriented Programming, Competitive",
+    "page": 1,
+    "x": 94.22,
+    "y": 113.25,
+    "width": 473.5,
+    "height": 12.94,
+    "description": "This is a weak area. While listing coursework is useful for a junior role, it could be improved by adding specific projects that were built from each course or projects to highlight real world application. Currently it is a vague list without much demonstration of skill.",
+    "type": "weak"
+  },
+  {
+    "text": "Engage",
+    "page": 1,
+    "x": 71.42,
+    "y": 245.52,
+    "width": 38.64,
+    "height": 12.94,
+    "description": "This is a weak area. The description 'Engage in self‐study and participate in algorithms competitions to enhance expertise.' is vague and could be improved. Specify which algorithms and competitions were used. Add specifics about the accomplishments or learnings gained in each competition.",
+    "type": "weak"
+  },
+  {
+    "text": "Optimart is an e-commerce platform that lets users shop for a diverse range of products online",
+    "page": 1,
+    "x": 53.4,
+    "y": 287.95,
+    "width": 393.1,
+    "height": 11.67,
+    "description": "This is a weak area. While it describes what the project is, it could be improved by adding details about the project's purpose, target users and the value it provides. Explain *why* the features are important. Explain what problem the e-commerce platform is solving.",
+    "type": "weak"
+  }
+]

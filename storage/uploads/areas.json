@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Fabian Isensee",
+    "page": 1,
+    "x": 153,
+    "y": 190,
+    "width": 63,
+    "height": 10,
+    "description": "This is a strong area as it identifies the author of the work.",
+    "type": "strong"
+  },
+  {
+    "text": "Division of Medical Image Computing, German Cancer Research Center (DKFZ),",
+    "page": 1,
+    "x": 141,
+    "y": 219,
+    "width": 335,
+    "height": 13,
+    "description": "Strong: Affiliation with a reputable research center indicates expertise in the field.",
+    "type": "strong"
+  },
+  {
+    "text": "f.isensee@dkfz-heidelberg.de",
+    "page": 1,
+    "x": 241,
+    "y": 333,
+    "width": 132,
+    "height": 9,
+    "description": "Having a contact email is useful for any SWE role in case the reviewer has further questions on the CV.",
+    "type": "strong"
+  },
+  {
+    "text": "Medical Image Segmentation, Validation, Benchmark",
+    "page": 1,
+    "x": 211,
+    "y": 595,
+    "width": 219,
+    "height": 9,
+    "description": "Strong: Keywords directly relevant to medical image analysis showcasing domain expertise.",
+    "type": "strong"
+  },
+  {
+    "text": "arXiv:2404.09556v2  [cs.CV]  25 Jul 2024",
+    "page": 1,
+    "x": 10,
+    "y": 217,
+    "width": 27,
+    "height": 342,
+    "description": "This area is weak because it's an arXiv identifier not relevant for a software engineering job.",
+    "type": "weak"
+  },
+  {
+    "text": "nnU-Net Revisited:",
+    "page": 1,
+    "x": 240,
+    "y": 114,
+    "width": 135,
+    "height": 15,
+    "description": "Weak: The title is scientific and doesn't highlight any software engineering skills.  The CV needs to be tailored for a SWE job, explicitly mentioning software development skills, tools, and projects.",
+    "type": "weak"
+  },
+  {
+    "text": "Abstract.",
+    "page": 1,
+    "x": 163,
+    "y": 385,
+    "width": 44,
+    "height": 9,
+    "description": "Weak: The abstract focuses on the scientific findings and comparisons of different medical image segmentation methods, not on the software engineering aspects of the work. For a SWE role, the abstract should be re-written to emphasize the software development, engineering, and implementation challenges.",
+    "type": "weak"
+  },
+  {
+    "text": "The release of nnU-Net marked a paradigm shift in 3D medi-",
+    "page": 1,
+    "x": 206,
+    "y": 385,
+    "width": 246,
+    "height": 9,
+    "description": "Weak: This area doesn't show the actual job required, need to emphasis the Software Engineering skills, tools, and projects.",
+    "type": "weak"
+  }
+]

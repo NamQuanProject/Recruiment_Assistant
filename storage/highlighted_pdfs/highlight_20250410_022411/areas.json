@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Python (NumPy, Pandas, Scikit-learn, Flask), SAS; SQL - Redshift, MySQL; ElasticSearch; Recommendation",
+    "page": 1,
+    "x": 21,
+    "y": 723,
+    "width": 541,
+    "height": 14,
+    "description": "This area is strong because it lists relevant programming languages and tools often used in software engineering, especially data-focused roles. Python, SQL, and related libraries are highly valuable.",
+    "type": "strong"
+  },
+  {
+    "text": "Partnered with product team to build a production recommendation engine in Python that improved the",
+    "page": 1,
+    "x": 49,
+    "y": 211,
+    "width": 535,
+    "height": 14,
+    "description": "This area is strong because it demonstrates experience in building production-ready systems using Python and collaborating with product teams, crucial skills for a software engineer.",
+    "type": "strong"
+  },
+  {
+    "text": "Led data extraction and evaluation efforts to save Best Buy more than 11M over the course of tenure",
+    "page": 1,
+    "x": 49,
+    "y": 196,
+    "width": 516,
+    "height": 14,
+    "description": "This area is strong because it demonstrates quantifiable results and leadership experience, which are desirable qualities in a SWE.",
+    "type": "strong"
+  },
+  {
+    "text": "Best Buy",
+    "page": 1,
+    "x": 21,
+    "y": 158,
+    "width": 61,
+    "height": 22,
+    "description": "While the experience at Best Buy is likely relevant, the title '- Senior Data Scientist' does not explicitly align with a SWE role. This could be a weak area if the responsibilities described don't sufficiently highlight software engineering skills. To improve, the bullet points should emphasize coding, system design, and software development aspects of the role.",
+    "type": "weak"
+  },
+  {
+    "text": "October 2018 - current",
+    "page": 1,
+    "x": 21,
+    "y": 180,
+    "width": 119,
+    "height": 14,
+    "description": "The duration of experience is good, but it needs to be positioned effectively. Highlighting the contributions with more of a software engineering context would be ideal.",
+    "type": "strong"
+  },
+  {
+    "text": "Analytically minded self-starter with a decade of experience collaborating with cross-functional teams and",
+    "page": 1,
+    "x": 34,
+    "y": 82,
+    "width": 545,
+    "height": 14,
+    "description": "While this sounds good, it's very general and doesn't directly address software engineering skills. It is a weak area because it doesn't provide specific details relevant to the target role. The opening statement should be more targeted to the specific job requirements.",
+    "type": "weak"
+  },
+  {
+    "text": "Coached data team throughout short and long-term projects, redefining documentation frequently",
+    "page": 1,
+    "x": 49,
+    "y": 286,
+    "width": 506,
+    "height": 13,
+    "description": "This is a good point as it demonstrates leadership and mentoring. However, if the documentation work included software design documents that would strengthen this area even further. Otherwise, this section is relatively weak.",
+    "type": "weak"
+  },
+  {
+    "text": "2U",
+    "page": 1,
+    "x": 21,
+    "y": 312,
+    "width": 20,
+    "height": 22,
+    "description": "Similar to the Best Buy experience, this is a Data Scientist/Analyst role. The description of the responsibilities needs to be adjusted to emphasize any relevant software engineering aspects. Without that explicit connection, it's a weak area for a SWE application.",
+    "type": "weak"
+  }
+]

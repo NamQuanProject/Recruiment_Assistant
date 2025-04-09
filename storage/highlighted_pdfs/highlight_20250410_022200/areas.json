@@ -1,0 +1,72 @@
+[
+  {
+    "text": "Courses work: Data Structures and Algorithms, Calculus, Object-Oriented Programming, Competitive",
+    "page": 1,
+    "x": 94,
+    "y": 113,
+    "width": 473,
+    "height": 13,
+    "description": "This section is less relevant for an experienced SWE. While foundational knowledge is important, focusing on project experience and specific skills relevant to the job would be more impactful.",
+    "type": "weak"
+  },
+  {
+    "text": "FoodHub  - Group Project",
+    "page": 1,
+    "x": 36,
+    "y": 447,
+    "width": 338,
+    "height": 13,
+    "description": "The project description is well-detailed, especially showcasing experience with both front-end (Next.js) and back-end (Spring Boot) technologies and highlights the candidate's ability to develop complex applications. Also the description involves technologies like JWT and the usage of databases. ",
+    "type": "strong"
+  },
+  {
+    "text": "Optimart is an e-commerce platform that lets users shop for a diverse range of products online",
+    "page": 1,
+    "x": 53,
+    "y": 287,
+    "width": 393,
+    "height": 11,
+    "description": "Quantifying the impact of features or optimizations (e.g., by what percentage did debounce improve server load?) would add more weight to this area.",
+    "type": "weak"
+  },
+  {
+    "text": "Spring boot, Nextjs, JWT, Material UI, PostgreSQL",
+    "page": 1,
+    "x": 127,
+    "y": 421,
+    "width": 232,
+    "height": 13,
+    "description": "This highlights relevant technical skills, including Spring Boot, Next.js, JWT, and PostgreSQL, showcasing the candidate's broad skillset relevant for a SWE role.",
+    "type": "strong"
+  },
+  {
+    "text": "Progamming, Operating System, Computer Network, Database Management Systems, Web Application",
+    "page": 1,
+    "x": 94,
+    "y": 125,
+    "width": 481,
+    "height": 13,
+    "description": "There is a grammatical error ('Progamming' instead of 'Programming') that should be corrected for a professional presentation.",
+    "type": "weak"
+  },
+  {
+    "text": "Active participant in the UIT ACM/ICPC programming community, focusing on competitive coding",
+    "page": 1,
+    "x": 71,
+    "y": 219,
+    "width": 460,
+    "height": 13,
+    "description": "Participation in activities like UIT - ACM/ICPC BootCamp shows a commitment to continuous learning and engagement with the developer community, highlighting problem-solving skills.",
+    "type": "strong"
+  },
+  {
+    "text": "AWARDS \u0026 CERTIFICATES",
+    "page": 1,
+    "x": 36,
+    "y": 649,
+    "width": 134,
+    "height": 13,
+    "description": "The CV includes awards and certificates, demonstrating achievements in programming and problem-solving.",
+    "type": "strong"
+  }
+]

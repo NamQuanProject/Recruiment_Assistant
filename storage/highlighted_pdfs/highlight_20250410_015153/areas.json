@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Compassionate and flexible Full-time Undergraduate student at Pratt School of",
+    "page": 1,
+    "x": 45.81,
+    "y": 96.29,
+    "width": 287.79,
+    "height": 8.98,
+    "description": "This describes the candidate as compassionate and flexible, which are good soft skills for teamwork and collaboration in a software engineering role. It demonstrates adaptability and a willingness to work with others.",
+    "type": "strong"
+  },
+  {
+    "text": "new knowledge and criticisms; Outgoing and optimistic teamplayer creates strong",
+    "page": 1,
+    "x": 45.81,
+    "y": 135.28,
+    "width": 300.07,
+    "height": 8.98,
+    "description": "Being an outgoing team player who's open to feedback is valuable in software engineering, where collaboration and continuous improvement are essential. However, the CV needs to highlight this quality further with examples of successful teamwork in technical contexts.",
+    "type": "strong"
+  },
+  {
+    "text": "V I S U A L I Z A T I O N",
+    "page": 1,
+    "x": 421,
+    "y": 472.8,
+    "width": 78.18,
+    "height": 9.58,
+    "description": "Visualization skills are relevant to UI/UX development, game programming, data visualization, or tools that have a strong visual component. The candidate lists relevant tools in the following lines.",
+    "type": "strong"
+  },
+  {
+    "text": "Bachelor of Architecture",
+    "page": 1,
+    "x": 421.35,
+    "y": 277.8,
+    "width": 93.39,
+    "height": 9.58,
+    "description": "The candidate's education background in Architecture is a weak area because it is not directly relevant to software engineering. To mitigate this, the candidate should mention any relevant coursework, self-learning, or projects in computer science or software development, even if they are self-taught.",
+    "type": "weak"
+  },
+  {
+    "text": "Work/Experience",
+    "page": 1,
+    "x": 45.68,
+    "y": 191.26,
+    "width": 135.61,
+    "height": 23.96,
+    "description": "This is a general section heading. The listed experiences lack direct software development projects. To improve this, the candidate needs to showcase software development experience even if it is personal projects or contributions to open-source projects. Focus on highlighting any transferable skills and quantify the impact wherever possible.",
+    "type": "weak"
+  },
+  {
+    "text": "Adobe Photoshop, Illustrator,",
+    "page": 1,
+    "x": 421,
+    "y": 485.8,
+    "width": 115.66,
+    "height": 9.58,
+    "description": "These skills are beneficial for front end developers. However, the CV does not explicitly list any code created to improve UI/UX for applications.",
+    "type": "weak"
+  }
+]

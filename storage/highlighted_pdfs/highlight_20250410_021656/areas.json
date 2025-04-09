@@ -1,0 +1,82 @@
+[
+  {
+    "text": "VNUHCM - University of Information Technology,",
+    "page": 1,
+    "x": 36,
+    "y": 86.97,
+    "width": 246.57,
+    "height": 12.94,
+    "description": "This is a weak area. While mentioning education is important, for a Senior Software Engineer role, focusing more on relevant project experience and skills is more impactful than detailed coursework. Consider minimizing the education section to highlight practical experience.",
+    "type": "weak"
+  },
+  {
+    "text": "Courses work: Data Structures and Algorithms, Calculus, Object-Oriented Programming, Competitive",
+    "page": 1,
+    "x": 94.22,
+    "y": 113.25,
+    "width": 473.5,
+    "height": 12.94,
+    "description": "This is a weak area. Listing coursework is more appropriate for junior roles or recent graduates. A Senior Software Engineer's CV should emphasize practical skills and project accomplishments. Remove the coursework to save space for more relevant information.",
+    "type": "weak"
+  },
+  {
+    "text": "OptiMart – Personal Project                                                                                                           July 2024 – November 2024",
+    "page": 1,
+    "x": 36,
+    "y": 275.04,
+    "width": 541.21,
+    "height": 12.94,
+    "description": "This is a strong area. The inclusion of personal projects demonstrates initiative and a passion for software development. The name and dates give a brief idea of the project's scope.",
+    "type": "strong"
+  },
+  {
+    "text": "Developed a",
+    "page": 1,
+    "x": 72.02,
+    "y": 302.04,
+    "width": 60.26,
+    "height": 12.94,
+    "description": "This section regarding the development in OptiMart project is strong because it uses modern technologies such as Next.js and Material UI to build an e-commerce platform.",
+    "type": "strong"
+  },
+  {
+    "text": "Using",
+    "page": 1,
+    "x": 71.42,
+    "y": 354.96,
+    "width": 29.04,
+    "height": 12.94,
+    "description": "This section regarding the Spring Boot and Spring data JPA in OptiMart is strong because it shows the use of backend technologies. Also shows experience in managing system and optimization for application security by implementing Spring Security",
+    "type": "strong"
+  },
+  {
+    "text": "Spring boot, Nextjs, JWT, Material UI, PostgreSQL",
+    "page": 1,
+    "x": 127.7,
+    "y": 421.46,
+    "width": 232.28,
+    "height": 12.94,
+    "description": "This is a strong area. Listing the tech stack used in the project clearly showcases the candidate's proficiency with relevant technologies for a senior software engineer role.",
+    "type": "strong"
+  },
+  {
+    "text": "FoodHub  - Group Project",
+    "page": 1,
+    "x": 36,
+    "y": 447.26,
+    "width": 338.5,
+    "height": 12.94,
+    "description": "The project is relevant and demonstrates experience working in a team. However, like the personal project, it would be even stronger if it quantified the impact of any optimizations made or features implemented. Aim to demonstrate the project's impact.",
+    "type": "weak"
+  },
+  {
+    "text": "FoodHub is an online food ordering platform that allows users to easily find, order from their favorite restaurants, and have",
+    "page": 1,
+    "x": 54,
+    "y": 460.29,
+    "width": 514.21,
+    "height": 11.67,
+    "description": "The description of FoodHub is good in providing context, but it lacks specifics on the candidate's contributions. Focus on highlighting the specific features or components the candidate developed or improved, and quantify the impact if possible.",
+    "type": "weak"
+  }
+]

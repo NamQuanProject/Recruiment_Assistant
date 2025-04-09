@@ -1,0 +1,62 @@
+[
+  {
+    "text": "C++, Python, JavaScript, TypeScript",
+    "page": 1,
+    "x": 146.42,
+    "y": 238.71,
+    "width": 149.04,
+    "height": 11.03,
+    "description": "This is a strong area. Proficiency in multiple programming languages relevant to software engineering internships shows a versatile skill set and ability to adapt to different technologies often encountered in internship projects.",
+    "type": "strong"
+  },
+  {
+    "text": "Reactjs, TailwindCSS, Figma",
+    "page": 1,
+    "x": 119.78,
+    "y": 251.19,
+    "width": 123.12,
+    "height": 11.03,
+    "description": "This is a strong area. Familiarity with Reactjs and TailwindCSS, popular front-end frameworks and libraries, makes the candidate attractive for front-end focused internships. Figma proficiency shows design capabilities which is useful.",
+    "type": "strong"
+  },
+  {
+    "text": "GPA: 3.76/4.00",
+    "page": 1,
+    "x": 58.68,
+    "y": 119.67,
+    "width": 64.76,
+    "height": 11.03,
+    "description": "This is a strong area. A high GPA demonstrates academic excellence and a strong understanding of computer science fundamentals. This indicates the candidate's ability to learn and perform well in an academic setting, which is a good predictor of success in an internship.",
+    "type": "strong"
+  },
+  {
+    "text": "Health Recommendation System",
+    "page": 1,
+    "x": 36,
+    "y": 292.02,
+    "width": 144.35,
+    "height": 11.03,
+    "description": "This is a weak area. While projects are listed, the description lacks details. The resume could be improved by including specific technical achievements or contributions within projects, such as performance improvements, innovative solutions, or unique features implemented and metrics to quantify the impact of the projects.",
+    "type": "weak"
+  },
+  {
+    "text": "TikTok TechJam 2024",
+    "page": 1,
+    "x": 36,
+    "y": 375.9,
+    "width": 99.47,
+    "height": 11.03,
+    "description": "This is a weak area. While projects are listed, the description lacks details. The resume could be improved by including specific technical achievements or contributions within projects, such as performance improvements, innovative solutions, or unique features implemented and metrics to quantify the impact of the projects.",
+    "type": "weak"
+  },
+  {
+    "text": "EvoGym",
+    "page": 1,
+    "x": 36,
+    "y": 456.08,
+    "width": 40.31,
+    "height": 11.03,
+    "description": "This is a weak area. The project description could be improved by including specific technical achievements or contributions within projects, such as performance improvements, innovative solutions, or unique features implemented. Elaborating on the challenges faced and lessons learned would also strengthen this section.",
+    "type": "weak"
+  }
+]

@@ -97,8 +97,8 @@ type CV struct {
 	Activitys           []string
 }
 
-// FindWeakAreasRequest represents the request to find weak areas in a CV
-type FindWeakAreasRequest struct {
+// AnalyzeCVRequest represents the request to analyze areas in a CV
+type AnalyzeCVRequest struct {
 	CVPath     string `json:"cv_path" binding:"required"`
 	JobTitle   string `json:"job_title" binding:"required"`
 	JobDetails string `json:"job_details" binding:"required"`
@@ -110,10 +110,11 @@ type FindWeakAreasRequest struct {
 		Width  float64 `json:"width"`
 		Height float64 `json:"height"`
 	} `json:"text_blocks"`
+	EvaluationReference map[string]any `json:"evaluation_reference"`
 }
 
-// WeakArea represents a weak area in the CV that needs to be highlighted
-type WeakArea struct {
+// Area represents an area in the CV that needs to be highlighted
+type Area struct {
 	Text        string  `json:"text"`
 	Page        int     `json:"page"`
 	X           float64 `json:"x"`
@@ -121,11 +122,12 @@ type WeakArea struct {
 	Width       float64 `json:"width"`
 	Height      float64 `json:"height"`
 	Description string  `json:"description"`
+	Type        string  `json:"type"` // "weak" or "strong"
 }
 
-// FindWeakAreasResponse represents the response from the AI server
-type FindWeakAreasResponse struct {
-	WeakAreas []WeakArea `json:"weak_areas"`
+// AnalyzeCVResponse represents the response from the AI server
+type AnalyzeCVResponse struct {
+	Areas []Area `json:"areas"`
 }
 
 type JD struct {

@@ -140,6 +140,13 @@
                     placeholder="Enter job description and requirements..."></textarea>
             </div>
 
+            <div class="form-group">
+                <label for="evaluationReference">Evaluation Reference (JSON):</label>
+                <textarea id="evaluationReference" name="evaluationReference" placeholder='{"key": "value"}'></textarea>
+                <small style="color: #666; display: block; margin-top: 5px;">Optional: Add evaluation data from another
+                    service in JSON format</small>
+            </div>
+
             <button type="submit">Analyze and Highlight CV</button>
         </form>
 
@@ -159,6 +166,18 @@
             messageDiv.innerHTML = '';
 
             try {
+                // Validate JSON if provided
+                const evaluationRef = document.getElementById('evaluationReference').value;
+                if (evaluationRef) {
+                    try {
+                        JSON.parse(evaluationRef);
+                    } catch (error) {
+                        messageDiv.innerHTML = `<div class="error">Error: Invalid JSON format in evaluation reference</div>`;
+                        loadingDiv.style.display = 'none';
+                        return;
+                    }
+                }
+
                 const response = await fetch('/analyze-cv', {
                     method: 'POST',
                     body: formData

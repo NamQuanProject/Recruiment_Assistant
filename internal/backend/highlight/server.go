@@ -17,12 +17,12 @@ import (
 
 // HighlightRequest represents the request to highlight a CV
 type HighlightRequest struct {
-	PDFPath     string `json:"pdf_path" binding:"required"`
-	WeakAreas   []WeakArea `json:"weak_areas" binding:"required"`
+	PDFPath string `json:"pdf_path" binding:"required"`
+	Areas   []Area `json:"areas" binding:"required"`
 }
 
-// WeakArea represents a weak area in the CV that needs to be highlighted
-type WeakArea struct {
+// Area represents an area in the CV that needs to be highlighted
+type Area struct {
 	Text        string `json:"text"`
 	Page        int    `json:"page"`
 	X           float64 `json:"x"`
@@ -30,6 +30,7 @@ type WeakArea struct {
 	Width       float64 `json:"width"`
 	Height      float64 `json:"height"`
 	Description string `json:"description"`
+	Type        string `json:"type"` // "weak" or "strong"
 }
 
 // HighlightResponse represents the response from the highlight server
@@ -79,17 +80,19 @@ func RunServer() {
 			return
 		}
 
-		// Save weak areas to a JSON file
-		weakAreasPath := filepath.Join(outputDir, "weak_areas.json")
-		weakAreasJSON, err := json.MarshalIndent(req.WeakAreas, "", "  ")
+		// Save areas to JSON file
+		areasJSON, err := json.MarshalIndent(req.Areas, "", "  ")
 		if err != nil {
-			log.Printf("Failed to marshal weak areas: %v", err)
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to process weak areas"})
+			log.Printf("Failed to marshal areas: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to process areas"})
 			return
 		}
-		if err := os.WriteFile(weakAreasPath, weakAreasJSON, 0644); err != nil {
-			log.Printf("Failed to write weak areas file: %v", err)
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save weak areas"})
+
+		// Use consistent file name for areas JSON
+		areasPath := filepath.Join(outputDir, "areas.json")
+		if err := os.WriteFile(areasPath, areasJSON, 0644); err != nil {
+			log.Printf("Failed to write areas file: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save areas"})
 			return
 		}
 
@@ -97,7 +100,7 @@ func RunServer() {
 		pythonScriptPath := filepath.Join("internal", "backend", "highlight", "highlight_pdf.py")
 		highlightedPDFPath := filepath.Join(outputDir, baseName+"_highlighted.pdf")
 		
-		cmd := exec.Command("python", pythonScriptPath, copiedPDFPath, weakAreasPath, highlightedPDFPath)
+		cmd := exec.Command("python", pythonScriptPath, copiedPDFPath, areasPath, highlightedPDFPath)
 		output, err := cmd.CombinedOutput()
 		if err != nil {
 			log.Printf("Error executing Python script: %v\nOutput: %s", err, string(output))
