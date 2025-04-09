@@ -79,10 +79,13 @@ func ProcessJD(filePath string) error {
 
 	log.Printf("Processing JD file: %s (Size: %d bytes)", absPath, fileInfo.Size())
 
+	// Need to implement
 	parseRequest := struct {
-		InputPath string `json:"input_path"`
+		JobName                string `json:"job_name"`
+		CompanyDescriptionPath string `json:"company_jd"`
 	}{
-		InputPath: absPath,
+		JobName:                "account-manager",
+		CompanyDescriptionPath: absPath,
 	}
 
 	reqBody, err := json.Marshal(parseRequest)
@@ -90,7 +93,7 @@ func ProcessJD(filePath string) error {
 		return fmt.Errorf("failed to prepare request: %v", err)
 	}
 
-	resp, err := http.Post("http://localhost:8085/parse", "application/json", bytes.NewBuffer(reqBody))
+	resp, err := http.Post("http://localhost:8085/parse/jd", "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
 		return fmt.Errorf("failed to call parsing server: %v", err)
 	}
@@ -99,6 +102,8 @@ func ProcessJD(filePath string) error {
 	if resp.StatusCode != http.StatusOK {
 		return fmt.Errorf("parsing server returned error: %v", resp.Status)
 	}
+
+	log.Printf("parsed successfully: %s", absPath)
 
 	return nil
 }

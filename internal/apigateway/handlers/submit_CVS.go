@@ -90,7 +90,7 @@ func ProcessCV(filePath string) error {
 		return fmt.Errorf("failed to prepare request: %v", err)
 	}
 
-	resp, err := http.Post("http://localhost:8082/parse", "application/json", bytes.NewBuffer(reqBody))
+	resp, err := http.Post("http://localhost:8085/parse", "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
 		return fmt.Errorf("failed to call CV parsing server: %v", err)
 	}
