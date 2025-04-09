@@ -5,7 +5,6 @@ import (
 
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/user"
 	"github.com/gin-gonic/gin"
 )
 
@@ -19,14 +18,14 @@ func RunServer() {
 	r := gin.Default()
 
 	// Load HTML templates
-	r.LoadHTMLGlob("./templates/*")
+	// r.LoadHTMLGlob("./templates/*")
 
-	// Init()
+	// // Init()
 
-	// Authentication routes
-	r.POST("/signup", user.Signup)
-	r.POST("/login", user.Login)
-	r.POST("/logout", user.Logout)
+	// // Authentication routes
+	// r.POST("/signup", user.Signup)
+	// r.POST("/login", user.Login)
+	// r.POST("/logout", user.Logout)
 
 	// Serve HTML form upload
 	r.GET("/", func(c *gin.Context) {
@@ -40,6 +39,7 @@ func RunServer() {
 
 	// Job description routes
 	r.POST("/submitJD", handlers.SubmitJDHandler)
+	r.POST("/submitCVs", handlers.SubmitCVsHandler)
 
-	r.Run()
+	r.Run(":8081")
 }
