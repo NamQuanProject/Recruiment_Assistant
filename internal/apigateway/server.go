@@ -6,6 +6,7 @@ import (
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
 	"github.com/gin-gonic/gin"
+	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/user"
 )
 
 func Init() {
@@ -18,14 +19,14 @@ func RunServer() {
 	r := gin.Default()
 
 	// Load HTML templates
-	// r.LoadHTMLGlob("./templates/*")
+	r.LoadHTMLGlob("./templates/*")
 
 	// // Init()
 
-	// // Authentication routes
-	// r.POST("/signup", user.Signup)
-	// r.POST("/login", user.Login)
-	// r.POST("/logout", user.Logout)
+	// Authentication routes
+	r.POST("/signup", user.Signup)
+	r.POST("/login", user.Login)
+	r.POST("/logout", user.Logout)
 
 	// Serve HTML form upload
 	r.GET("/", func(c *gin.Context) {
