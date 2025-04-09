@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@layer utilities {
+  .bg-primary {
+    background-color: #CAF4FA;
+  }
+  .bg-secondary {
+    background-color: #9BDEEF;
+  }
+  .bg-thirdary {
+    background-color: #E8F7F5;
+  }
+  .text-peachpuff {
+    color: #f9dbba;
+  }
+  .button-primary {
+    background-color: #B1D1EC;
+  }
+  .button-active {
+    background-color: #A0C4FF;
+  }
+}
