@@ -96,3 +96,11 @@ type CV struct {
 	Projects            []Project
 	Activitys           []string
 }
+
+type JD struct {
+	JobTitle               string
+	JobType                string
+	ExperienceRequirements string
+	SkillsRequired         []string
+	Location               string
+}

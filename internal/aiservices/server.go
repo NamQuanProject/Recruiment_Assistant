@@ -234,6 +234,29 @@ func RunServer() {
 			"Response": parsed_response,
 		})
 	})
+	r.POST("/ai/parsing", func(c *gin.Context) {
+		var requestBody struct {
+			JobRawText string `json:"job_raw_text"`
+		}
+
+		if err := c.ShouldBindJSON(&requestBody); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid JSON format"})
+			return
+		}
+
+		prompt := "Parse the following CV: " + requestBody.JobRawText
+
+		parsed_response, err := GeminiParsingRawCVText(prompt)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse CV"})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{
+			"Question": prompt,
+			"Response": parsed_response,
+		})
+	})
 
 	r.GET("/ai/jd_category/:job_name", func(c *gin.Context) {
 		jobName := c.Param("job_name")
