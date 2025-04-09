@@ -2,41 +2,45 @@ package main
 
 import (
 	"context"
-	"log"
 	"os"
 	"os/signal"
-	"syscall"
-
+	"log"
+	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/highlight"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/aiservices"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/output"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/parsing"
+	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/evaluation"
 )
 
 func main() {
-	// Start each service in a goroutine
-	go func() {
-		log.Println("[API Gateway] Starting on :8081...")
-		apigateway.RunServer()
-	}()
 
 	go func() {
-		log.Println("[AI Services] Starting on :8083...")
+		log.Println("[AI Services] Starting on :8081...")
 		aiservices.RunServer()
 	}()
 
 	go func() {
-		log.Println("[Parsing Service] Starting on :8082...")
-		parsing.RunServer()
+		log.Println("[Evaluation] Starting on :8082...")
+		evaluation.RunServer()
 	}()
 
 	go func() {
-		log.Println("[Output Service] Starting on :8083...")
+		log.Println("[Highlight Service] Starting on :8083...")
+		highlight.RunServer()
+	}()
+	
+	go func() {
+		log.Println("[Output Service] Starting on :8084...")
 		output.RunServer()
 	}()
 
-	// Wait for termination signal (Ctrl+C, SIGTERM)
-	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	go func() {
+		log.Println("[Parsing Service] Starting on :8085...")
+		parsing.RunServer()
+	}()
+
+	// Wait for interrupt signal (Ctrl+C)
+	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt)
 	defer stop()
 
 	<-ctx.Done()

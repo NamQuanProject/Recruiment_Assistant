@@ -74,6 +74,6 @@ func RunServer() {
 	// Define API routes
 	r.POST("/output", outputHandler)
 
-	// Start the server on port 8082
-	r.Run(":8083")
+	// Start the server on port 8084
+	r.Run(":8084")
 }

@@ -3,6 +3,7 @@ package aiservices
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
 )
 
 func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[string]any, error) {
@@ -69,4 +70,57 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 
 	fmt.Println("Parsed Response:", resp)
 	return resp, nil
+}
+
+func HandleCategoryPrompt(structure_jd map[string]any) string {
+	// Lấy mô tả chính nếu có
+	description := ""
+	if val, ok := structure_jd["description"].(string); ok {
+		description = val
+	}
+
+	// Lấy mục tiêu chính trong phần job_description
+	objectivesStr := ""
+	if jobDesc, ok := structure_jd["job_description"].(map[string]any); ok {
+		if objectives, ok := jobDesc["Objectives of this role"].([]any); ok && len(objectives) > 0 {
+			objectivesStr = " This role involves " + objectives[0].(string)
+			for i := 1; i < len(objectives); i++ {
+				objectivesStr += ", " + objectives[i].(string)
+			}
+			objectivesStr += "."
+		}
+	}
+
+	// Lấy skill requirements nếu có
+	skillsStr := ""
+	if skills, ok := structure_jd["skills_requirements"].([]any); ok && len(skills) > 0 {
+		skillsStr = " Ideal candidates should possess skills such as " + skills[0].(string)
+		for i := 1; i < len(skills); i++ {
+			skillsStr += ", " + skills[i].(string)
+		}
+		skillsStr += "."
+	}
+
+	// Tận dụng interview_questions như là điểm nổi bật ứng viên cần chuẩn bị
+	insightStr := ""
+	if questions, ok := structure_jd["interview_questions"].([]any); ok && len(questions) > 0 {
+		insightStr = " During the interview, candidates are often asked about topics like "
+		first := true
+		for _, q := range questions {
+			if qmap, ok := q.(map[string]any); ok {
+				if questionText, ok := qmap["question"].(string); ok {
+					if !first {
+						insightStr += ", "
+					}
+					insightStr += strings.ToLower(questionText)
+					first = false
+				}
+			}
+		}
+		insightStr += ". This reflects the importance of practical knowledge and strong communication skills in this role."
+	}
+
+	// Kết hợp các phần
+	fullString := description + objectivesStr + skillsStr + insightStr
+	return fullString
 }

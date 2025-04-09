@@ -1,0 +1,73 @@
+import fitz  # PyMuPDF
+import json
+import argparse
+import sys
+
+def highlight_pdf(pdf_path, weak_areas_path, output_path):
+    """
+    Highlight weak areas in a PDF file.
+    
+    Args:
+        pdf_path (str): Path to the input PDF file
+        weak_areas_path (str): Path to the JSON file containing weak areas
+        output_path (str): Path to save the highlighted PDF
+    """
+    # Load the PDF
+    doc = fitz.open(pdf_path)
+    
+    # Load weak areas from JSON
+    with open(weak_areas_path, 'r') as f:
+        weak_areas = json.load(f)
+    
+    # Highlight each weak area
+    for area in weak_areas:
+        page_num = area.get('page', 0) - 1  # Convert to 0-based index
+        
+        # Skip if page number is out of range
+        if page_num < 0 or page_num >= len(doc):
+            print(f"Warning: Page {area.get('page')} is out of range. Skipping.")
+            continue
+        
+        page = doc[page_num]
+        
+        # Apply a small offset to the y-coordinate to account for PDF rendering differences
+        y_offset = 0  # Adjust this value if needed (positive values move highlight down)
+        
+        # Create a highlight annotation with precise coordinates
+        rect = fitz.Rect(
+            area['x'], 
+            area['y'] + y_offset, 
+            area['x'] + area['width'], 
+            area['y'] + area['height'] + y_offset
+        )
+        
+        # Add a highlight annotation with a semi-transparent yellow color
+        annot = page.add_highlight_annot(rect)
+        annot.set_colors(stroke=[1, 1, 0])  # Yellow color
+        annot.set_opacity(0.3)  # 30% opacity
+        
+        # Add a popup note with the description
+        if 'description' in area and area['description']:
+            annot.set_info(title="Weak Area", content=area['description'])
+        
+        # Update the annotation
+        annot.update()
+    
+    # Save the highlighted PDF
+    doc.save(output_path)
+    doc.close()
+    
+    print(f"Highlighted PDF saved to: {output_path}")
+
+def main():
+    parser = argparse.ArgumentParser(description="Highlight weak areas in a PDF file.")
+    parser.add_argument("pdf_path", help="Path to the input PDF file")
+    parser.add_argument("weak_areas_path", help="Path to the JSON file containing weak areas")
+    parser.add_argument("output_path", help="Path to save the highlighted PDF")
+    
+    args = parser.parse_args()
+    
+    highlight_pdf(args.pdf_path, args.weak_areas_path, args.output_path)
+
+if __name__ == "__main__":
+    main() 
