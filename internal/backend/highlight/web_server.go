@@ -1,6 +1,7 @@
 package highlight
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
@@ -54,35 +55,73 @@ func (s *WebServer) Run() {
 		// Get job title and details
 		jobTitle := c.PostForm("jobTitle")
 		jobDetails := c.PostForm("jobDetails")
+		evaluationReferenceStr := c.PostForm("evaluationReference")
 
 		if jobTitle == "" || jobDetails == "" {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Job title and details are required"})
 			return
 		}
 
+		// Parse evaluation reference if provided
+		var evaluationReference map[string]any
+		if evaluationReferenceStr != "" {
+			if err := json.Unmarshal([]byte(evaluationReferenceStr), &evaluationReference); err != nil {
+				log.Printf("Failed to parse evaluation reference: %v", err)
+				c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid evaluation reference format"})
+				return
+			}
+		}
+
 		// Create a unique filename
 		timestamp := time.Now().Format("20060102_150405")
 		filename := fmt.Sprintf("%s_%s", timestamp, filepath.Base(file.Filename))
-		filepath := filepath.Join(s.uploadDir, filename)
+		pdfPath := filepath.Join(s.uploadDir, filename)
 
 		// Save the uploaded file
-		if err := c.SaveUploadedFile(file, filepath); err != nil {
+		if err := c.SaveUploadedFile(file, pdfPath); err != nil {
 			log.Printf("Failed to save file: %v", err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save file"})
 			return
 		}
 
-		// Find weak areas using AI
-		weakAreas, err := FindWeakAreas(filepath, jobTitle, jobDetails, "http://localhost:8081")
+		areas, err := FindAreas(pdfPath, jobTitle, jobDetails, "http://localhost:8081", evaluationReference)
 		if err != nil {
-			log.Printf("Failed to find weak areas: %v", err)
+			log.Printf("Failed to find areas: %v", err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to analyze CV"})
+			return
+		}
+
+		// Count strong and weak areas
+		strongCount := 0
+		weakCount := 0
+		for _, area := range areas {
+			if area.Type == "strong" {
+				strongCount++
+			} else {
+				weakCount++
+			}
+		}
+
+		// Save areas to JSON file
+		areasJSON, err := json.MarshalIndent(areas, "", "  ")
+		if err != nil {
+			log.Printf("Failed to marshal areas: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to process areas"})
+			return
+		}
+
+		// Use consistent file name for areas JSON
+		areasPath := filepath.Join(s.uploadDir, "areas.json")
+		// Write with UTF-8 encoding
+		if err := os.WriteFile(areasPath, areasJSON, 0644); err != nil {
+			log.Printf("Failed to write areas file: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save areas"})
 			return
 		}
 
 		// Create highlight client and highlight the PDF
 		highlightClient := NewClient("http://localhost:8083")
-		highlightResp, err := highlightClient.HighlightPDF(filepath, weakAreas)
+		highlightResp, err := highlightClient.HighlightPDF(pdfPath, areas)
 		if err != nil {
 			log.Printf("Failed to highlight PDF: %v", err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to highlight PDF"})
@@ -91,7 +130,7 @@ func (s *WebServer) Run() {
 
 		// Return success response with download link
 		c.JSON(http.StatusOK, gin.H{
-			"message":            "CV analyzed and highlighted successfully",
+			"message":            fmt.Sprintf("CV analyzed successfully. Found %d strong areas and %d weak areas.", strongCount, weakCount),
 			"highlighted_pdf_path": highlightResp.HighlightedPDFPath,
 		})
 	})

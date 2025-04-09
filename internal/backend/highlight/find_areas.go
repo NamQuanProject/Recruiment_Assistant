@@ -8,24 +8,35 @@ import (
 	"net/http"
 )
 
-// Client represents a client for the highlight server
-type Client struct {
-	BaseURL string
+
+type FindAreasRequest struct {
+	CVPath              string        `json:"cv_path"`
+	JobTitle            string        `json:"job_title"`
+	JobDetails          string        `json:"job_details"`
+	TextBlocks          []PDFTextBlock `json:"text_blocks"`
+	EvaluationReference map[string]any  `json:"evaluation_reference"`
 }
 
-// NewClient creates a new highlight client
-func NewClient(baseURL string) *Client {
-	return &Client{
-		BaseURL: baseURL,
+
+type FindAreasResponse struct {
+	Areas []Area `json:"areas"`
+}
+
+
+func FindAreas(cvPath, jobTitle, jobDetails, aiServerURL string, evaluationReference map[string]any) ([]Area, error) {
+	// Extract text from the PDF
+	textBlocks, err := ExtractTextFromPDF(cvPath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to extract text from PDF: %v", err)
 	}
-}
 
-// HighlightPDF sends a request to highlight a PDF with areas
-func (c *Client) HighlightPDF(pdfPath string, areas []Area) (*HighlightResponse, error) {
 	// Create the request body
-	reqBody := HighlightRequest{
-		PDFPath: pdfPath,
-		Areas:   areas,
+	reqBody := FindAreasRequest{
+		CVPath:              cvPath,
+		JobTitle:            jobTitle,
+		JobDetails:          jobDetails,
+		TextBlocks:          textBlocks,
+		EvaluationReference: evaluationReference,
 	}
 
 	// Marshal the request body to JSON
@@ -35,7 +46,7 @@ func (c *Client) HighlightPDF(pdfPath string, areas []Area) (*HighlightResponse,
 	}
 
 	// Create the HTTP request
-	req, err := http.NewRequest("POST", c.BaseURL+"/highlight", bytes.NewBuffer(jsonData))
+	req, err := http.NewRequest("POST", aiServerURL+"/ai/analyze-cv-areas", bytes.NewBuffer(jsonData))
 	if err != nil {
 		return nil, fmt.Errorf("failed to create request: %v", err)
 	}
@@ -67,10 +78,10 @@ func (c *Client) HighlightPDF(pdfPath string, areas []Area) (*HighlightResponse,
 	}
 
 	// Unmarshal the response
-	var highlightResp HighlightResponse
-	if err := json.Unmarshal(body, &highlightResp); err != nil {
+	var findAreasResp FindAreasResponse
+	if err := json.Unmarshal(body, &findAreasResp); err != nil {
 		return nil, fmt.Errorf("failed to unmarshal response: %v", err)
 	}
 
-	return &highlightResp, nil
-} 
+	return findAreasResp.Areas, nil
+}	
