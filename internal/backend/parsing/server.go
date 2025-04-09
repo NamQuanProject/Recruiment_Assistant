@@ -4,50 +4,65 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
+	"path/filepath"
+	"strings"
+
 	"github.com/gin-gonic/gin"
 )
 
-// Struct to receive the request
 type ParseRequest struct {
-	PDFPath  string `json:"pdf_path" binding:"required"`
-	TextPath string `json:"txt_path" binding:"required"`
+	InputPath string `json:"input_path" binding:"required"`
 }
 
-// StartParsingServer starts the parsing service on port 8082
 func RunServer() {
+	log.Println("[Parsing] Starting server...")
+
 	r := gin.Default()
 
-	// POST route for parsing
 	r.POST("/parse", func(c *gin.Context) {
 		var req ParseRequest
 
-		// Bind the incoming JSON request to the ParseRequest struct
-		log.Printf("Bind JSON...\n")
 		if err := c.ShouldBindJSON(&req); err != nil {
-			// If the JSON is invalid, return a bad request status
-			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input"})
+			log.Printf("Failed to bind JSON: %v", err)
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input JSON"})
 			return
 		}
 
-		log.Printf("Extracting Text...\n")
-		// Call the processing function (assuming it returns an error if any)
-		text, err := ExtractTextFromPDF(req.PDFPath)
-		log.Printf("Extracted Text...\n")
-
-		if err != nil {
-			// If there is an error during processing, return an internal server error
-			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		if _, err := os.Stat(req.InputPath); os.IsNotExist(err) {
+			log.Printf("File not found: %s", req.InputPath)
+			c.JSON(http.StatusNotFound, gin.H{"error": "File does not exist"})
 			return
 		}
 
-		// Send only a status message indicating success
-		c.JSON(http.StatusOK, gin.H{
-			"message": "File processed successfully",
-			"text":    text,
-		})
+		ext := strings.ToLower(filepath.Ext(req.InputPath))
+
+		switch ext {
+		case ".pdf":
+			log.Printf("Detected PDF: %s", req.InputPath)
+			_, err := ExtractTextFromPDF(req.InputPath)
+			if err != nil {
+				c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+				return
+			}
+			c.JSON(http.StatusOK, gin.H{"message": "PDF processed successfully"})
+
+		case ".zip":
+			log.Printf("Detected ZIP: %s", req.InputPath)
+			_, err := ExtractTextFromZip(req.InputPath)
+			if err != nil {
+				c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+				return
+			}
+			c.JSON(http.StatusOK, gin.H{"message": "ZIP processed successfully"})
+
+		default:
+			c.JSON(http.StatusBadRequest, gin.H{
+				"error": "Unsupported file type. Only .pdf and .zip are allowed.",
+			})
+		}
 	})
 
-	// Start the server on port 8082
 	fmt.Println("Parsing server running at http://localhost:8082")
 	r.Run(":8082")
 }
