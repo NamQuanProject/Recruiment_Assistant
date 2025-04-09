@@ -1,9 +1,10 @@
 package handlers
 
 import (
-	"archive/zip"
+	"bytes"
+	"encoding/json"
 	"fmt"
-	"io"
+	"log"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -12,104 +13,93 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func SubmitCVs(c *gin.Context) {
-	form, err := c.MultipartForm()
+func SubmitCVsHandler(c *gin.Context) {
+	// Get single uploaded file under field "pdfFile"
+	file, err := c.FormFile("pdfFile")
 	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid multipart form"})
+		c.JSON(http.StatusBadRequest, gin.H{"error": "No file uploaded under field 'pdfFile'"})
 		return
 	}
 
-	files := form.File["cvs"]
-	if len(files) == 0 {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "No files uploaded"})
-		return
-	}
-
-	// Create uploads directory if not exists
-	if err := os.MkdirAll("uploads", os.ModePerm); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": "Failed to create upload directory",
+	ext := strings.ToLower(filepath.Ext(file.Filename))
+	if ext != ".pdf" {
+		c.JSON(http.StatusBadRequest, gin.H{
+			"file":  file.Filename,
+			"error": "Only PDF files are allowed",
 		})
 		return
 	}
-	filePath := filepath.Join("uploads", "cvs")
 
-	var uploaded []string
-
-	for _, file := range files {
-		filename := file.Filename
-		ext := strings.ToLower(filepath.Ext(filename))
-
-		if ext == ".zip" {
-			// Save zip temporarily
-			tempZipPath := filepath.Join(filePath, "temp_"+filename)
-			if err := c.SaveUploadedFile(file, tempZipPath); err != nil {
-				c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save ZIP file"})
-				return
-			}
-			// Extract zip
-			names, err := extractZip(tempZipPath, filePath)
-			if err != nil {
-				c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract ZIP file"})
-				return
-			}
-			uploaded = append(uploaded, names...)
-			os.Remove(tempZipPath) // Clean up
-		} else {
-			// Save regular file
-			dst := filepath.Join(filePath, filepath.Base(filename))
-			if err := c.SaveUploadedFile(file, dst); err != nil {
-				c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Failed to save file %s", filename)})
-				return
-			}
-			uploaded = append(uploaded, filename)
-		}
+	uploadDir := "uploads"
+	if err := os.MkdirAll(uploadDir, os.ModePerm); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create upload directory"})
+		return
 	}
 
+	dst := filepath.Join(uploadDir, file.Filename)
+	if err := c.SaveUploadedFile(file, dst); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"file":  file.Filename,
+			"error": "Failed to save file",
+		})
+		return
+	}
+
+	// Process the uploaded PDF
+	if err := ProcessCV(dst); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"file":   file.Filename,
+			"status": "failed",
+			"error":  err.Error(),
+		})
+		return
+	}
+
+	// Success response
 	c.JSON(http.StatusOK, gin.H{
-		"message":  "CVs uploaded successfully",
-		"uploaded": uploaded,
+		"message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
+		"path":    dst,
 	})
 }
 
-func extractZip(zipPath string, destDir string) ([]string, error) {
-	var extracted []string
-
-	r, err := zip.OpenReader(zipPath)
+func ProcessCV(filePath string) error {
+	file, err := os.Open(filePath)
 	if err != nil {
-		return nil, err
+		return fmt.Errorf("could not open file: %v", err)
 	}
-	defer r.Close()
+	defer file.Close()
 
-	for _, f := range r.File {
-		if f.FileInfo().IsDir() {
-			continue
-		}
-		fpath := filepath.Join(destDir, f.Name)
-
-		// Create parent directories if needed
-		if err := os.MkdirAll(filepath.Dir(fpath), os.ModePerm); err != nil {
-			return nil, err
-		}
-
-		// Open file in zip
-		inFile, err := f.Open()
-		if err != nil {
-			return nil, err
-		}
-		defer inFile.Close()
-
-		outFile, err := os.Create(fpath)
-		if err != nil {
-			return nil, err
-		}
-		defer outFile.Close()
-
-		if _, err := io.Copy(outFile, inFile); err != nil {
-			return nil, err
-		}
-
-		extracted = append(extracted, f.Name)
+	fileInfo, err := file.Stat()
+	if err != nil {
+		return fmt.Errorf("could not get file info: %v", err)
 	}
-	return extracted, nil
+
+	absPath, _ := filepath.Abs(filePath)
+	absPath = filepath.ToSlash(absPath)
+
+	log.Printf("Processing CV: %s (Size: %d bytes)", absPath, fileInfo.Size())
+
+	parseRequest := struct {
+		InputPath string `json:"input_path"`
+	}{
+		InputPath: absPath,
+	}
+
+	reqBody, err := json.Marshal(parseRequest)
+	if err != nil {
+		return fmt.Errorf("failed to prepare request: %v", err)
+	}
+
+	resp, err := http.Post("http://localhost:8082/parse", "application/json", bytes.NewBuffer(reqBody))
+	if err != nil {
+		return fmt.Errorf("failed to call CV parsing server: %v", err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("CV parsing server returned error: %v", resp.Status)
+	}
+
+	log.Printf("CV parsed successfully: %s", absPath)
+	return nil
 }

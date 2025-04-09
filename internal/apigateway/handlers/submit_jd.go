@@ -48,7 +48,7 @@ func SubmitJDHandler(c *gin.Context) {
 	}
 
 	// // Process the PDF
-	if err := ProcessCV(filePath); err != nil {
+	if err := ProcessJD(filePath); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"error": fmt.Sprintf("Failed to process File: %v", err),
 		})
@@ -62,7 +62,7 @@ func SubmitJDHandler(c *gin.Context) {
 	})
 }
 
-func ProcessCV(filePath string) error {
+func ProcessJD(filePath string) error {
 	file, err := os.Open(filePath)
 	if err != nil {
 		return fmt.Errorf("could not open file: %v", err)
