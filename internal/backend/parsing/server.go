@@ -40,9 +40,14 @@ func RunServer() {
 		switch ext {
 		case ".pdf":
 			log.Printf("Detected PDF: %s", req.InputPath)
-			_, err := ExtractTextFromPDF(req.InputPath)
+			textPath, err := ExtractTextFromPDF(req.InputPath)
+			_, er := ExtractJsonFromText(textPath)
 			if err != nil {
 				c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+				return
+			}
+			if er != nil {
+				c.JSON(http.StatusInternalServerError, gin.H{"error": er.Error()})
 				return
 			}
 			c.JSON(http.StatusOK, gin.H{"message": "PDF processed successfully"})

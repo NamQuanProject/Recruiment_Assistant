@@ -2,11 +2,14 @@
 package parsing
 
 import (
+	"bytes"
 	"crypto/sha256"
 	"encoding/hex"
+	"encoding/json"
 	"fmt"
 	"io"
 	"log"
+	"net/http"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -45,7 +48,7 @@ func ExtractTextFromPDF(pdfPath string) (string, error) {
 		return "", fmt.Errorf("error executing Python script: %v\nOutput: %s", err, string(output))
 	}
 
-	return strings.TrimSpace(string(output)), nil
+	return strings.TrimSpace(string(outputPath)), nil
 }
 
 func ExtractTextFromZip(zipPath string) (string, error) {
@@ -114,4 +117,146 @@ func ExtractTextFromZip(zipPath string) (string, error) {
 	}
 
 	return baseDir, nil
+}
+
+func ExtractJsonFromText(textPath string) (map[string]interface{}, error) {
+	// 1. Read the file content
+	fileBytes, err := os.ReadFile(textPath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read file: %w", err)
+	}
+	cvText := string(fileBytes)
+
+	// 2. Prepare JSON body
+	requestBody := map[string]string{
+		"job_raw_text": cvText,
+	}
+	jsonData, err := json.Marshal(requestBody)
+	if err != nil {
+		return nil, fmt.Errorf("failed to marshal request body: %w", err)
+	}
+
+	// 3. Send POST request
+	url := "http://localhost:8081/ai/parsing"
+	resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
+	if err != nil {
+		return nil, fmt.Errorf("failed to send POST request: %w", err)
+	}
+	defer resp.Body.Close()
+
+	// 4. Read response body
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read response body: %w", err)
+	}
+
+	// 5. Parse JSON response
+	var jsonResponse map[string]interface{}
+	err = json.Unmarshal(body, &jsonResponse)
+	if err != nil {
+		return nil, fmt.Errorf("failed to parse response JSON: %w", err)
+	}
+
+	log.Print(jsonResponse)
+	// 6. Save to .json file
+	jsonFilename := strings.TrimSuffix(textPath, filepath.Ext(textPath)) + ".json"
+	jsonBytes, err := json.MarshalIndent(jsonResponse, "", "  ")
+	if err != nil {
+		return nil, fmt.Errorf("failed to format JSON: %w", err)
+	}
+	err = os.WriteFile(jsonFilename, jsonBytes, 0644)
+	if err != nil {
+		return nil, fmt.Errorf("failed to write JSON file: %w", err)
+	}
+	log.Printf("JSON saved to: %s", jsonFilename)
+
+	// 7. Return parsed JSON
+	return jsonResponse, nil
+}
+
+func ExtractJsonFromTextBatch(folderPath string) error {
+	// Step 1: Create "jsons" directory next to folderPath
+	jsonDir := filepath.Join(filepath.Dir(folderPath), "jsons")
+	err := os.MkdirAll(jsonDir, os.ModePerm)
+	if err != nil {
+		return fmt.Errorf("failed to create json output directory: %w", err)
+	}
+
+	// Step 2: Read directory entries
+	files, err := os.ReadDir(folderPath)
+	if err != nil {
+		return fmt.Errorf("failed to read folder: %w", err)
+	}
+
+	// Step 3: Process each .txt file
+	for _, file := range files {
+		if file.IsDir() {
+			continue
+		}
+		if filepath.Ext(file.Name()) != ".txt" {
+			continue
+		}
+
+		txtFilePath := filepath.Join(folderPath, file.Name())
+		fileBytes, err := os.ReadFile(txtFilePath)
+		if err != nil {
+			log.Printf("Skipping file %s: %v", file.Name(), err)
+			continue
+		}
+		cvText := string(fileBytes)
+
+		// Prepare JSON body
+		requestBody := map[string]string{
+			"job_raw_text": cvText,
+		}
+		jsonData, err := json.Marshal(requestBody)
+		if err != nil {
+			log.Printf("Failed to marshal request body for %s: %v", file.Name(), err)
+			continue
+		}
+
+		// Send POST request
+		url := "http://localhost:8081/ai/parsing"
+		resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
+		if err != nil {
+			log.Printf("Failed to send request for %s: %v", file.Name(), err)
+			continue
+		}
+		defer resp.Body.Close()
+
+		// Read response
+		body, err := io.ReadAll(resp.Body)
+		if err != nil {
+			log.Printf("Failed to read response for %s: %v", file.Name(), err)
+			continue
+		}
+
+		// Parse JSON
+		var jsonResponse map[string]interface{}
+		err = json.Unmarshal(body, &jsonResponse)
+		if err != nil {
+			log.Printf("Failed to parse JSON for %s: %v", file.Name(), err)
+			continue
+		}
+
+		// Save to json file
+		baseName := strings.TrimSuffix(file.Name(), filepath.Ext(file.Name()))
+		jsonPath := filepath.Join(jsonDir, baseName+".json")
+
+		jsonBytes, err := json.MarshalIndent(jsonResponse, "", "  ")
+		if err != nil {
+			log.Printf("Failed to format JSON for %s: %v", file.Name(), err)
+			continue
+		}
+
+		err = os.WriteFile(jsonPath, jsonBytes, 0644)
+		if err != nil {
+			log.Printf("Failed to write JSON file for %s: %v", file.Name(), err)
+			continue
+		}
+
+		log.Printf("Saved: %s", jsonPath)
+	}
+
+	return nil
 }

@@ -18,7 +18,7 @@ func RunServer() {
 	r := gin.Default()
 
 	// Load HTML templates
-	// r.LoadHTMLGlob("./templates/*")
+	r.LoadHTMLGlob("./templates/*")
 
 	// // Init()
 
@@ -41,5 +41,5 @@ func RunServer() {
 	r.POST("/submitJD", handlers.SubmitJDHandler)
 	r.POST("/submitCVs", handlers.SubmitCVsHandler)
 
-	r.Run(":8081")
+	r.Run(":8080")
 }
