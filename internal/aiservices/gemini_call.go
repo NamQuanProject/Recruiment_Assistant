@@ -46,18 +46,15 @@ func (agent *AIAgent) CallChatGemini(prompt string) map[string]any {
 	return map[string]any{
 		"Response": string(string_ouput),
 	}
-	// fmt.Println("Answer:", string_output)
 }
 
 func (agent *AIAgent) CallGeminiStructure(prompt string, structure map[string]any) map[string]any {
-	// structure := DefaultGeminiStructure()
 	agent.SetOutputStructure(structure)
 	history_prompt := ""
 	for _, history := range agent.History {
 		history_prompt += fmt.Sprintf("Question: %s\nAnswer: %s\n", history.Question, history.Response)
 	}
 
-	// Add the current question to the history
 	final_prompt := "This is the history context:" + history_prompt + "\n" + "And this is the current problems" + fmt.Sprintf("Question: %s\n", prompt)
 	// Set the final prompt
 

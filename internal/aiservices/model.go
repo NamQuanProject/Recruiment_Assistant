@@ -14,6 +14,7 @@ type History struct {
 }
 
 type AIAgent struct {
+	Id            string
 	Name          string
 	Client        *genai.Client
 	Model         *genai.GenerativeModel

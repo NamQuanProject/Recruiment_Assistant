@@ -5,9 +5,7 @@ import (
 	"fmt"
 )
 
-// GeminiParsingRawCVText parses the raw CV text into a structured format
 func GeminiParsingRawCVText(CVRawText string) (map[string]any, error) {
-	// Step 1: Load JSON structure from file
 	structure, jsonErr := ReadJsonStructure("./internal/aiservices/parsing_structure.json")
 	if jsonErr != nil {
 		return nil, jsonErr
@@ -18,7 +16,6 @@ func GeminiParsingRawCVText(CVRawText string) (map[string]any, error) {
 	}
 	structurePrompt := string(structureBytes)
 
-	// Step 2: Create AI Agent
 	agent, err := NewAIAgent(Config{}, true)
 	if err != nil {
 		return nil, err
@@ -40,7 +37,6 @@ func GeminiParsingRawCVText(CVRawText string) (map[string]any, error) {
 	Please return only a single top-level JSON object called "CV" following the structure.
 	`
 
-	// Step 4: Send prompt to the AI agent
 	resp := agent.CallChatGemini(FinalstructurePrompt)
 	agent.Model.ResponseMIMEType = "application/json"
 	if err != nil {

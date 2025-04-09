@@ -1,6 +1,7 @@
 package aiservices
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -27,6 +28,32 @@ func RunServer() {
 			"Response": result["Response"],
 		})
 		agent.Close()
+	})
+
+	r.GET("/ai/jd_category/", func(c *gin.Context) {
+		fmt.Println("Route /ai/category is hit")
+
+		structure, err := ReadJsonStructure("./internal/aiservices/jobs_guideds.json")
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse CV"})
+			return
+		}
+
+		jobData := make(map[string]interface{})
+
+		for jobCategory, accountDataRaw := range structure {
+			accountData, ok := accountDataRaw.(map[string]interface{})
+			if !ok {
+				c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid job data format"})
+				return
+			}
+			jobData[jobCategory] = accountData
+		}
+
+		// Respond with all job data
+		c.JSON(http.StatusOK, gin.H{
+			"Response": jobData,
+		})
 	})
 
 	r.GET("/ai/parsing", func(c *gin.Context) {
@@ -208,7 +235,31 @@ func RunServer() {
 		})
 	})
 
-	r.POST("/ai", func(c *gin.Context) {})
+	r.GET("/ai/jd_category/:job_name", func(c *gin.Context) {
+		jobName := c.Param("job_name")
+		fmt.Printf("Route /ai/jd_category/%s is hit\n", jobName)
 
-	r.Run(":8081")
+		structure, err := ReadJsonStructure("./internal/aiservices/jobs_guideds.json")
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse CV"})
+			return
+		}
+
+		accountDataRaw, exists := structure[jobName]
+		if !exists {
+			c.JSON(http.StatusNotFound, gin.H{"error": "Job category not found"})
+			return
+		}
+
+		accountData, ok := accountDataRaw.(map[string]interface{})
+		if !ok {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid job data format"})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{
+			"Response": accountData,
+		})
+	})
+	r.Run(":8080")
 }
