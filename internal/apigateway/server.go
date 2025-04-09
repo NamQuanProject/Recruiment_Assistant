@@ -2,6 +2,7 @@ package apigateway
 
 import (
 	"net/http"
+
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/user"
@@ -11,7 +12,7 @@ import (
 func Init() {
 	initializers.LoadEnvVariables()
 	initializers.ConnectToDB()
- 	initializers.SyncDatabase()
+	initializers.SyncDatabase()
 }
 
 func RunServer() {
@@ -38,7 +39,7 @@ func RunServer() {
 	})
 
 	// Job description routes
-	r.POST("/submitJD", handlers.UploadJDHandler)
+	r.POST("/submitJD", handlers.SubmitJDHandler)
 
 	r.Run()
 }
