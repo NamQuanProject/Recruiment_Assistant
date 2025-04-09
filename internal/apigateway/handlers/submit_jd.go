@@ -22,13 +22,13 @@ func UploadJDHandler(c *gin.Context) {
 		return
 	}
 
-	// Check file extension
-	if filepath.Ext(file.Filename) != ".pdf" {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"error": "Only PDF files are allowed",
-		})
-		return
-	}
+	// // Check file extension
+	// if filepath.Ext(file.Filename) != ".pdf" {
+	// 	c.JSON(http.StatusBadRequest, gin.H{
+	// 		"error": "Only PDF files are allowed",
+	// 	})
+	// 	return
+	// }
 
 	// Create uploads directory if not exists
 	if err := os.MkdirAll("uploads", os.ModePerm); err != nil {
@@ -65,7 +65,7 @@ func UploadJDHandler(c *gin.Context) {
 func ProcessCV(filePath string) error {
 	file, err := os.Open(filePath)
 	if err != nil {
-		return fmt.Errorf("could not open PDF file: %v", err)
+		return fmt.Errorf("could not open file: %v", err)
 	}
 	defer file.Close()
 

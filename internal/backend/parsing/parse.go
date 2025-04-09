@@ -6,6 +6,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"io"
+	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -64,38 +65,46 @@ func ExtractTextFromZip(zipPath string) (string, error) {
 	// Create unique output directory
 	timestamp := time.Now().Format("20060102_150405")
 	baseDir := filepath.Join("storage", "cv_zips", fmt.Sprintf("upload_%s_%s", timestamp, hashStr))
-	err = os.MkdirAll(baseDir, 0755)
-	if err != nil {
+	log.Printf("Base dir: %s", baseDir)
+
+	if err := os.MkdirAll(baseDir, 0755); err != nil {
 		return "", err
 	}
 
-	// Copy original zip file into storage
-	zipCopyPath := filepath.Join(baseDir, "original.zip")
+	// Save original zip file with its actual name
+	originalName := filepath.Base(zipPath)
+	zipCopyPath := filepath.Join(baseDir, originalName)
 	zipCopy, err := os.Create(zipCopyPath)
 	if err != nil {
 		return "", err
 	}
-	_, err = file.Seek(0, 0) // reset to start of zip
+	_, err = file.Seek(0, 0)
 	if err != nil {
 		return "", err
 	}
-	_, err = io.Copy(zipCopy, file)
-	if err != nil {
-		return "", err
-	}
-
-	// Extract files
-	extractedPath := filepath.Join(baseDir, "extracted")
-	err = unzip(zipCopyPath, extractedPath)
-	if err != nil {
+	if _, err := io.Copy(zipCopy, file); err != nil {
 		return "", err
 	}
 
-	// Output path for texts
+	// Unzip into "extracted" directory
+	extractedPath := filepath.Join(baseDir)
+	if err := os.MkdirAll(extractedPath, 0755); err != nil {
+		return "", err
+	}
+	if err := unzip(zipCopyPath, extractedPath); err != nil {
+		return "", err
+	}
+
+	// Create output folder for texts
 	outputPath := filepath.Join(baseDir, "texts")
-	os.Mkdir(outputPath, 0755)
+	if err := os.MkdirAll(outputPath, 0755); err != nil {
+		return "", err
+	}
 
-	// Call Python batch processing
+	extractedPath = filepath.Join(extractedPath, strings.TrimSuffix(originalName, filepath.Ext(originalName)))
+	log.Printf("Extracted_path: %s", extractedPath)
+
+	// Run python script
 	pythonScriptPath := filepath.Join("internal", "backend", "parsing", "extract_pdf.py")
 	cmd := exec.Command("python", pythonScriptPath, "-batch", "true", extractedPath, outputPath)
 
