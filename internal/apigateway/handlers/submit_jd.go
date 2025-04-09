@@ -8,7 +8,6 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-	"strings"
 
 	"github.com/gin-gonic/gin"
 )
@@ -23,13 +22,13 @@ func UploadJDHandler(c *gin.Context) {
 		return
 	}
 
-	// Check file extension
-	if filepath.Ext(file.Filename) != ".pdf" {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"error": "Only PDF files are allowed",
-		})
-		return
-	}
+	// // Check file extension
+	// if filepath.Ext(file.Filename) != ".pdf" {
+	// 	c.JSON(http.StatusBadRequest, gin.H{
+	// 		"error": "Only PDF files are allowed",
+	// 	})
+	// 	return
+	// }
 
 	// Create uploads directory if not exists
 	if err := os.MkdirAll("uploads", os.ModePerm); err != nil {
@@ -49,77 +48,57 @@ func UploadJDHandler(c *gin.Context) {
 	}
 
 	// // Process the PDF
-	if err := ProcessPDF(filePath, c); err != nil {
+	if err := ProcessCV(filePath); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": fmt.Sprintf("Failed to process PDF: %v", err),
+			"error": fmt.Sprintf("Failed to process File: %v", err),
 		})
 		return
 	}
-	// parsing.ExtractTextFromPDF(filePath)
 
-	// Return success response without processed text
-	c.JSON(http.StatusOK, gin.H{
-		"message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
-		"path":    filePath,
-	})
+    // Return success response with the extracted text
+    c.JSON(http.StatusOK, gin.H{
+        "message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
+        "path":    filePath,
+    })
 }
 
-func ProcessPDF(filePath string, c *gin.Context) error {
-	// Open the PDF file
+func ProcessCV(filePath string) error {
 	file, err := os.Open(filePath)
 	if err != nil {
-		return fmt.Errorf("could not open PDF file: %v", err)
+		return fmt.Errorf("could not open file: %v", err)
 	}
 	defer file.Close()
 
-	// Get file info
 	fileInfo, err := file.Stat()
 	if err != nil {
 		return fmt.Errorf("could not get file info: %v", err)
 	}
 
-	log.Printf("Processing PDF file: %s (Size: %d bytes)", filePath, fileInfo.Size())
-
-	// Prepare the request to the parsing server
 	absPath, _ := filepath.Abs(filePath)
-	txtFilePath := strings.TrimSuffix(absPath, ".pdf") + ".txt"
+	absPath = filepath.ToSlash(absPath)
+
+	log.Printf("Processing file: %s (Size: %d bytes)", absPath, fileInfo.Size())
 
 	parseRequest := struct {
-		PDFPath  string `json:"pdf_path"`
-		TextPath string `json:"txt_path"`
+		InputPath string `json:"input_path"`
 	}{
-		PDFPath:  absPath,
-		TextPath: txtFilePath,
+		InputPath: absPath,
 	}
 
-	// Send POST request to the parsing server
 	reqBody, err := json.Marshal(parseRequest)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": fmt.Sprintf("Failed to prepare request: %v", err),
-		})
-		return err
+		return fmt.Errorf("failed to prepare request: %v", err)
 	}
 
 	resp, err := http.Post("http://localhost:8082/parse", "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": fmt.Sprintf("Failed to call parsing server: %v", err),
-		})
-		return err
+		return fmt.Errorf("failed to call parsing server: %v", err)
 	}
 	defer resp.Body.Close()
 
-	// Read the response
 	if resp.StatusCode != http.StatusOK {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": fmt.Sprintf("Parsing server returned error: %v", resp.Status),
-		})
-		return nil
+		return fmt.Errorf("parsing server returned error: %v", resp.Status)
 	}
-
-	// No need to return the processed text now, so just skip decoding the response.
-	// We only need to send a status.
 
 	return nil
 }
