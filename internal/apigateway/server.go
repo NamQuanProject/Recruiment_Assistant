@@ -4,7 +4,6 @@ import (
 	"net/http"
 
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
-
 	// "github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/user"
 	"github.com/gin-gonic/gin"

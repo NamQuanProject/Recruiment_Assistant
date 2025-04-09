@@ -49,33 +49,34 @@ func UploadJDHandler(c *gin.Context) {
 	}
 
 	// // Process the PDF
-	if err := ProcessPDF(filePath, c); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": fmt.Sprintf("Failed to process PDF: %v", err),
-		})
-		return
-	}
-	// parsing.ExtractTextFromPDF(filePath)
+	extractedText, err := ProcessPDF(filePath, c)
+    if err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{
+            "error": fmt.Sprintf("Failed to process PDF: %v", err),
+        })
+        return
+    }
 
-	// Return success response without processed text
-	c.JSON(http.StatusOK, gin.H{
-		"message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
-		"path":    filePath,
-	})
+    // Return success response with the extracted text
+    c.JSON(http.StatusOK, gin.H{
+        "message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
+        "path":    filePath,
+        "text":    extractedText,
+    })
 }
 
-func ProcessPDF(filePath string, c *gin.Context) error {
+func ProcessPDF(filePath string, c *gin.Context) (string, error) {
 	// Open the PDF file
 	file, err := os.Open(filePath)
 	if err != nil {
-		return fmt.Errorf("could not open PDF file: %v", err)
+		return "", fmt.Errorf("could not open PDF file: %v", err)
 	}
 	defer file.Close()
 
 	// Get file info
 	fileInfo, err := file.Stat()
 	if err != nil {
-		return fmt.Errorf("could not get file info: %v", err)
+		return "", fmt.Errorf("could not get file info: %v", err)
 	}
 
 	log.Printf("Processing PDF file: %s (Size: %d bytes)", filePath, fileInfo.Size())
@@ -98,7 +99,7 @@ func ProcessPDF(filePath string, c *gin.Context) error {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"error": fmt.Sprintf("Failed to prepare request: %v", err),
 		})
-		return err
+		return "", err
 	}
 
 	resp, err := http.Post("http://localhost:8082/parse", "application/json", bytes.NewBuffer(reqBody))
@@ -106,7 +107,7 @@ func ProcessPDF(filePath string, c *gin.Context) error {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"error": fmt.Sprintf("Failed to call parsing server: %v", err),
 		})
-		return err
+		return "", err
 	}
 	defer resp.Body.Close()
 
@@ -115,11 +116,23 @@ func ProcessPDF(filePath string, c *gin.Context) error {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"error": fmt.Sprintf("Parsing server returned error: %v", resp.Status),
 		})
-		return nil
+		return "", nil
 	}
 
-	// No need to return the processed text now, so just skip decoding the response.
-	// We only need to send a status.
+	var responseBody struct {
+		Message string `json:"message"`
+		Text    string `json:"text"`
+	}
 
-	return nil
+	// Return the response from the parsing server
+	if err := json.NewDecoder(resp.Body).Decode(&responseBody); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": fmt.Sprintf("Failed to decode response: %v", err),
+		})
+	}
+
+	log.Printf("Parsing server response: %s", responseBody.Message)
+
+
+	return responseBody.Text, nil
 }
