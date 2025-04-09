@@ -59,7 +59,6 @@ func UploadJDHandler(c *gin.Context) {
     c.JSON(http.StatusOK, gin.H{
         "message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
         "path":    filePath,
-        "text":    extractedText,
     })
 }
 
@@ -72,7 +71,7 @@ func ProcessCV(filePath string) error {
 
 	fileInfo, err := file.Stat()
 	if err != nil {
-		return "", fmt.Errorf("could not get file info: %v", err)
+		return fmt.Errorf("could not get file info: %v", err)
 	}
 
 	absPath, _ := filepath.Abs(filePath)
