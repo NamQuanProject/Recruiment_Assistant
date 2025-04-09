@@ -77,7 +77,7 @@ func ProcessJD(filePath string) error {
 	absPath, _ := filepath.Abs(filePath)
 	absPath = filepath.ToSlash(absPath)
 
-	log.Printf("Processing file: %s (Size: %d bytes)", absPath, fileInfo.Size())
+	log.Printf("Processing JD file: %s (Size: %d bytes)", absPath, fileInfo.Size())
 
 	parseRequest := struct {
 		InputPath string `json:"input_path"`

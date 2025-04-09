@@ -20,6 +20,7 @@ func RunServer() {
 
 	// Load HTML templates
 	r.LoadHTMLGlob("./templates/*")
+	r.LoadHTMLGlob("./templates/*")
 
 	// // Init()
 

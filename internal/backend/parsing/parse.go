@@ -116,10 +116,12 @@ func ExtractTextFromZip(zipPath string) (string, error) {
 		return "", fmt.Errorf("error executing script: %v\nOutput: %s", err, string(out))
 	}
 
-	return baseDir, nil
+	return outputPath, nil
 }
 
-func ExtractJsonFromText(textPath string) (map[string]interface{}, error) {
+func ExtractJsonFromText(textPath string, outputPath string) (map[string]interface{}, error) {
+	log.Println("Function entered")
+
 	// 1. Read the file content
 	fileBytes, err := os.ReadFile(textPath)
 	if err != nil {
@@ -150,28 +152,58 @@ func ExtractJsonFromText(textPath string) (map[string]interface{}, error) {
 		return nil, fmt.Errorf("failed to read response body: %w", err)
 	}
 
-	// 5. Parse JSON response
+	// 5. Parse top-level JSON
 	var jsonResponse map[string]interface{}
 	err = json.Unmarshal(body, &jsonResponse)
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse response JSON: %w", err)
 	}
 
-	log.Print(jsonResponse)
-	// 6. Save to .json file
-	jsonFilename := strings.TrimSuffix(textPath, filepath.Ext(textPath)) + ".json"
-	jsonBytes, err := json.MarshalIndent(jsonResponse, "", "  ")
-	if err != nil {
-		return nil, fmt.Errorf("failed to format JSON: %w", err)
+	// 6. Access the "Response" field and parse the wrapped JSON string
+	outerMap, ok := jsonResponse["Response"].(map[string]interface{})
+	if !ok {
+		return nil, fmt.Errorf("expected 'Response' to be a map")
 	}
+
+	responseStr, ok := outerMap["Response"].(string)
+	if !ok {
+		return nil, fmt.Errorf("expected inner 'Response' to be a string")
+	}
+
+	// 7. Clean up the string (remove Markdown formatting)
+	responseStr = strings.TrimSpace(responseStr)
+	responseStr = strings.TrimPrefix(responseStr, "```json")
+	responseStr = strings.TrimSuffix(responseStr, "```")
+	responseStr = strings.TrimSpace(responseStr)
+
+	// 8. Parse the cleaned JSON string into a map
+	var parsedData map[string]interface{}
+	err = json.Unmarshal([]byte(responseStr), &parsedData)
+	if err != nil {
+		return nil, fmt.Errorf("failed to parse cleaned JSON: %w", err)
+	}
+
+	// 9. Determine output path
+	var jsonFilename string
+	if outputPath == "" {
+		jsonFilename = strings.TrimSuffix(textPath, filepath.Ext(textPath)) + ".json"
+	} else {
+		jsonFilename = outputPath
+	}
+
+	// 10. Save the final parsed JSON to a file
+	jsonBytes, err := json.MarshalIndent(parsedData, "", "  ")
+	if err != nil {
+		return nil, fmt.Errorf("failed to format final JSON: %w", err)
+	}
+
 	err = os.WriteFile(jsonFilename, jsonBytes, 0644)
 	if err != nil {
-		return nil, fmt.Errorf("failed to write JSON file: %w", err)
+		return nil, fmt.Errorf("failed to write final JSON file: %w", err)
 	}
-	log.Printf("JSON saved to: %s", jsonFilename)
 
-	// 7. Return parsed JSON
-	return jsonResponse, nil
+	log.Printf("✅ JSON saved to: %s", jsonFilename)
+	return parsedData, nil
 }
 
 func ExtractJsonFromTextBatch(folderPath string) error {
@@ -183,6 +215,7 @@ func ExtractJsonFromTextBatch(folderPath string) error {
 	}
 
 	// Step 2: Read directory entries
+	log.Print(folderPath)
 	files, err := os.ReadDir(folderPath)
 	if err != nil {
 		return fmt.Errorf("failed to read folder: %w", err)
@@ -198,64 +231,13 @@ func ExtractJsonFromTextBatch(folderPath string) error {
 		}
 
 		txtFilePath := filepath.Join(folderPath, file.Name())
-		fileBytes, err := os.ReadFile(txtFilePath)
-		if err != nil {
-			log.Printf("Skipping file %s: %v", file.Name(), err)
-			continue
+		log.Printf("📄 Processing file: %s", txtFilePath)
+		jsonFilename := strings.TrimSuffix(file.Name(), filepath.Ext(file.Name())) + ".json"
+		outputPath := filepath.Join(jsonDir, jsonFilename)
+		_, er := ExtractJsonFromText(txtFilePath, outputPath)
+		if er != nil {
+			return fmt.Errorf("failed to extract file %s to json: %w", txtFilePath, er)
 		}
-		cvText := string(fileBytes)
-
-		// Prepare JSON body
-		requestBody := map[string]string{
-			"job_raw_text": cvText,
-		}
-		jsonData, err := json.Marshal(requestBody)
-		if err != nil {
-			log.Printf("Failed to marshal request body for %s: %v", file.Name(), err)
-			continue
-		}
-
-		// Send POST request
-		url := "http://localhost:8081/ai/parsing"
-		resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
-		if err != nil {
-			log.Printf("Failed to send request for %s: %v", file.Name(), err)
-			continue
-		}
-		defer resp.Body.Close()
-
-		// Read response
-		body, err := io.ReadAll(resp.Body)
-		if err != nil {
-			log.Printf("Failed to read response for %s: %v", file.Name(), err)
-			continue
-		}
-
-		// Parse JSON
-		var jsonResponse map[string]interface{}
-		err = json.Unmarshal(body, &jsonResponse)
-		if err != nil {
-			log.Printf("Failed to parse JSON for %s: %v", file.Name(), err)
-			continue
-		}
-
-		// Save to json file
-		baseName := strings.TrimSuffix(file.Name(), filepath.Ext(file.Name()))
-		jsonPath := filepath.Join(jsonDir, baseName+".json")
-
-		jsonBytes, err := json.MarshalIndent(jsonResponse, "", "  ")
-		if err != nil {
-			log.Printf("Failed to format JSON for %s: %v", file.Name(), err)
-			continue
-		}
-
-		err = os.WriteFile(jsonPath, jsonBytes, 0644)
-		if err != nil {
-			log.Printf("Failed to write JSON file for %s: %v", file.Name(), err)
-			continue
-		}
-
-		log.Printf("Saved: %s", jsonPath)
 	}
 
 	return nil

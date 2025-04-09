@@ -2,14 +2,15 @@ package main
 
 import (
 	"context"
+	"log"
 	"os"
 	"os/signal"
-	"log"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/highlight"
+
 	"github.com/KietAPCS/test_recruitment_assistant/internal/aiservices"
+	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/evaluation"
+	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/highlight"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/output"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/parsing"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/evaluation"
 )
 
 func main() {
@@ -28,7 +29,7 @@ func main() {
 		log.Println("[Highlight Service] Starting on :8083...")
 		highlight.RunServer()
 	}()
-	
+
 	go func() {
 		log.Println("[Output Service] Starting on :8084...")
 		output.RunServer()
