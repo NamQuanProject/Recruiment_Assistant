@@ -8,22 +8,21 @@ import (
 
 	"github.com/KietAPCS/test_recruitment_assistant/internal/aiservices"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/parsing"
+	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/output"
 )
 
 func main() {
-	// Start servers concurrently
-	// go func() {
-	// 	evaluation.RunServer()
-	// }()
-	// go func() {
-	// 	output.RunServer()
-	// }()
+	
 	go func() {
 		aiservices.RunServer()
 	}()
 
 	go func() {
 		parsing.RunServer()
+	}()
+	
+	go func() {
+		output.RunServer()
 	}()
 
 	// Wait for interrupt signal (Ctrl+C)
