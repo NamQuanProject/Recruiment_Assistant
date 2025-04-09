@@ -1,0 +1,82 @@
+[
+  {
+    "text": "VNUHCM - University of Information Technology,",
+    "page": 1,
+    "x": 36,
+    "y": 86.97,
+    "width": 246.57,
+    "height": 12.94,
+    "description": "While listing education is important, the CV could benefit from a brief 'About Me' section to highlight career goals, which is currently missing. This would provide more context for the reviewer.",
+    "type": "weak"
+  },
+  {
+    "text": "OptiMart – Personal Project                                                                                                           July 2024 – November 2024",
+    "page": 1,
+    "x": 36,
+    "y": 275.04,
+    "width": 541.21,
+    "height": 12.94,
+    "description": "The project descriptions are well-detailed, showcasing the candidate's ability to develop complex applications using modern technologies like Next.js and Spring Boot. This demonstrates practical experience in software development.",
+    "type": "strong"
+  },
+  {
+    "text": "Courses work: Data Structures and Algorithms, Calculus, Object-Oriented Programming, Competitive",
+    "page": 1,
+    "x": 94.22,
+    "y": 113.25,
+    "width": 473.5,
+    "height": 12.94,
+    "description": "While listing coursework can be helpful, it's generally more impactful to focus on specific projects and skills, particularly as the candidate gains more professional experience. Consider replacing coursework with more project details.",
+    "type": "weak"
+  },
+  {
+    "text": "Spring boot, Nextjs, JWT, Material UI, PostgreSQL",
+    "page": 1,
+    "x": 127.7,
+    "y": 421.46,
+    "width": 232.28,
+    "height": 12.94,
+    "description": "The CV effectively highlights relevant technical skills including familiarity with Spring Boot, Next.js, JWT, Material UI and PostgreSQL which are important for SWE roles.",
+    "type": "strong"
+  },
+  {
+    "text": "WebDev Studio",
+    "page": 1,
+    "x": 30.6,
+    "y": 167.97,
+    "width": 77.44,
+    "height": 12.94,
+    "description": "Participation in activities like WebDev Studio and UIT - ACM/ICPC BootCamp shows a commitment to continuous learning and engagement with the developer community. This demonstrates proactive learning and teamwork skills.",
+    "type": "strong"
+  },
+  {
+    "text": "Progamming, Operating System, Computer Network, Database Management Systems, Web Application",
+    "page": 1,
+    "x": 94.22,
+    "y": 125.85,
+    "width": 481.39,
+    "height": 12.94,
+    "description": "There is a grammatical error ('Progamming' instead of 'Programming') that should be corrected for a professional presentation. Proofreading the CV carefully is important.",
+    "type": "weak"
+  },
+  {
+    "text": "Implement",
+    "page": 1,
+    "x": 71.42,
+    "y": 394.92,
+    "width": 54.12,
+    "height": 12.94,
+    "description": "The CV showcases knowledge of important software development practices, including security implementation (Spring Security, JWT) and database management (MySQL, PostgreSQL). This is crucial for a SWE role.",
+    "type": "strong"
+  },
+  {
+    "text": "server load efficiency.",
+    "page": 1,
+    "x": 304.13,
+    "y": 314.88,
+    "width": 107.21,
+    "height": 12.94,
+    "description": "While the projects are well-described, quantifying the impact of features or optimizations (e.g., by what percentage did debounce improve server load?) would add more weight to the project descriptions. Adding metrics will highlight the positive impact the projects had.",
+    "type": "weak"
+  }
+]

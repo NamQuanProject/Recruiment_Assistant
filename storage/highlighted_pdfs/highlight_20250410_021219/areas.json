@@ -1,0 +1,92 @@
+[
+  {
+    "text": "Compassionate and flexible Full-time Undergraduate student at Pratt School of",
+    "page": 1,
+    "x": 45.81,
+    "y": 96.29,
+    "width": 287.79,
+    "height": 8.98,
+    "description": "This opening statement includes subjective soft skills like 'compassionate' and 'flexible' without providing specific examples. It's better to demonstrate these qualities within the experience descriptions. This is therefore a weak area.",
+    "type": "weak"
+  },
+  {
+    "text": "Work/Experience",
+    "page": 1,
+    "x": 45.68,
+    "y": 191.26,
+    "width": 135.61,
+    "height": 23.96,
+    "description": "Having a dedicated section for work experience is a strong point. It allows the candidate to showcase their relevant skills and achievements. This is a standard and expected section in a CV.",
+    "type": "strong"
+  },
+  {
+    "text": "DIGITAL FABRICATION L AB TECHNICIAN",
+    "page": 1,
+    "x": 90.26,
+    "y": 252.29,
+    "width": 179.45,
+    "height": 8.98,
+    "description": "This experience is strong because it showcases technical skills relevant to a Software Engineer role, especially if the candidate can tie in aspects like software used, problem-solving, and automation from this experience. It is important to emphasize the Software/Tech skills gained in this lab even though the name doesn't explicitly mention SWE.",
+    "type": "strong"
+  },
+  {
+    "text": "Diagnosed a variety of innovative equipment, such as digital cutting,",
+    "page": 1,
+    "x": 100.26,
+    "y": 265.29,
+    "width": 252.7,
+    "height": 8.98,
+    "description": "This bullet point is too vague. 'Diagnosed' is a good start, but what were the issues? What solutions were implemented? Quantifying the impact or adding specific technical details would make this bullet point much stronger. This is a weak area.",
+    "type": "weak"
+  },
+  {
+    "text": "EVENT SERVICES STAFF",
+    "page": 1,
+    "x": 90.26,
+    "y": 382.29,
+    "width": 106.28,
+    "height": 8.98,
+    "description": "While customer service and organization are valuable, this experience as presented doesn't directly align with Software Engineering. To strengthen this section, the candidate could focus on transferable skills such as problem-solving, teamwork, or any instances where they used technology to improve event services. This is considered a weak point as it is not directly applicable to Software Engineering.",
+    "type": "weak"
+  },
+  {
+    "text": "V I S U A L I Z A T I O N",
+    "page": 1,
+    "x": 421,
+    "y": 472.8,
+    "width": 78.18,
+    "height": 9.58,
+    "description": "Listing visualization skills is strong, as some software engineering roles may require understanding of UI/UX principles or data visualization. However, without specifying the level of proficiency, it is difficult to assess the candidate's expertise. Including programming for visualization would make it stronger.",
+    "type": "strong"
+  },
+  {
+    "text": "Adobe Photoshop, Illustrator,",
+    "page": 1,
+    "x": 421,
+    "y": 485.8,
+    "width": 115.66,
+    "height": 9.58,
+    "description": "Listing specific software skills is good, but again, lacking proficiency levels (beginner, intermediate, advanced) limits the impact. Are they experts or just familiar with the software? This needs improvement. Consider adding specific use-cases relevant to Software Engineering projects to strengthen it.",
+    "type": "weak"
+  },
+  {
+    "text": "Rhinoceros - Grasshopper, Revit,",
+    "page": 1,
+    "x": 421,
+    "y": 550.8,
+    "width": 131.34,
+    "height": 9.58,
+    "description": "These are 3D modeling and design softwares, useful for visualization, design and development of applications. It is a strong point.",
+    "type": "strong"
+  },
+  {
+    "text": "LANGUAGES",
+    "page": 1,
+    "x": 421.5,
+    "y": 709.88,
+    "width": 55.49,
+    "height": 11.97,
+    "description": "Listing languages is a strong point, especially being bilingual as it can be valuable in international teams or when working with global clients. Mentioning proficiency is important. Although the resume lists Vietnamese(native) and English(proficient) this does not relate to programming languages.",
+    "type": "strong"
+  }
+]

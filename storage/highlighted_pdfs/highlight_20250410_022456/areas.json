@@ -1,0 +1,82 @@
+[
+  {
+    "text": "C++, Python, JavaScript, TypeScript",
+    "page": 1,
+    "x": 146,
+    "y": 238,
+    "width": 149,
+    "height": 11,
+    "description": "This is a strong area because it lists several popular and relevant programming languages for a Software Engineer role.",
+    "type": "strong"
+  },
+  {
+    "text": "Reactjs, TailwindCSS, Figma",
+    "page": 1,
+    "x": 119,
+    "y": 251,
+    "width": 123,
+    "height": 11,
+    "description": "This is a strong area because it lists relevant frameworks and tools used in modern web development, specifically React and TailwindCSS.",
+    "type": "strong"
+  },
+  {
+    "text": "Health Recommendation System",
+    "page": 1,
+    "x": 36,
+    "y": 292,
+    "width": 144,
+    "height": 11,
+    "description": "This is a strong area because it shows experience in developing a health-related system, demonstrating problem-solving and application of technical skills in a specific domain.",
+    "type": "strong"
+  },
+  {
+    "text": "Designed UI using Figma and developed responsive web applications using React, and TailwindCSS. Implemented dynamic",
+    "page": 1,
+    "x": 58,
+    "y": 425,
+    "width": 500,
+    "height": 11,
+    "description": "This is a strong point demonstrating design and development skills with modern tools. This directly aligns with Frontend responsibilities.",
+    "type": "strong"
+  },
+  {
+    "text": "Le Quy Don Arena of Valor eSport tournament",
+    "page": 1,
+    "x": 36,
+    "y": 668,
+    "width": 206,
+    "height": 11,
+    "description": "This is a weak area because the connection to software engineering is not clear. While demonstrating organizational skills, it's not directly relevant to the SWE role. Consider removing or minimizing this section if space is limited.",
+    "type": "weak"
+  },
+  {
+    "text": "Major in English",
+    "page": 1,
+    "x": 36,
+    "y": 175,
+    "width": 72,
+    "height": 11,
+    "description": "This is a weak area as it's not relevant to the software engineering role. While strong English skills are helpful, highlighting the major isn't necessary when applying for a technical position. Focus on technical coursework and skills instead.",
+    "type": "weak"
+  },
+  {
+    "text": "EvoGym",
+    "page": 1,
+    "x": 36,
+    "y": 456,
+    "width": 40,
+    "height": 11,
+    "description": "This could be a weak area because it's described as 'A project from a tutorial video'. While learning from tutorials is valuable, it's essential to highlight personal contributions and modifications to the tutorial project. Explain what specific problems the candidate addressed and how they went beyond the tutorial to demonstrate original problem-solving skills.",
+    "type": "weak"
+  },
+  {
+    "text": "Mainly focused on Front End tasks for upcoming projects liked building new websites for the club and tech-sharing",
+    "page": 1,
+    "x": 58,
+    "y": 570,
+    "width": 465,
+    "height": 11,
+    "description": "This area is weak because it uses vague language such as \"liked building new websites\" and doesn't quantify accomplishments. To improve, specify the technologies used, the impact of the websites (e.g., increased club membership, improved user engagement), and provide quantifiable results whenever possible.",
+    "type": "weak"
+  }
+]
