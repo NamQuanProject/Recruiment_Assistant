@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -63,13 +64,11 @@ func RunServer() {
 			return
 		}
 
-		// Check if the CV file exists
 		if _, err := os.Stat(req.CVPath); os.IsNotExist(err) {
 			c.JSON(http.StatusNotFound, gin.H{"error": "CV file does not exist"})
 			return
 		}
 
-		// Create an AI agent
 		agent, err := NewAIAgent(Config{}, true)
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create AI agent"})
@@ -77,7 +76,6 @@ func RunServer() {
 		}
 		defer agent.Close()
 
-		// Format the text blocks for the prompt
 		textBlocksStr := ""
 		for _, block := range req.TextBlocks {
 			textBlocksStr += fmt.Sprintf("Page %d: '%s' at position (%.2f, %.2f) with size %.2f x %.2f\n",
@@ -113,11 +111,9 @@ func RunServer() {
 
 		Make sure to use the exact text and coordinates from the text blocks provided.`, req.JobTitle, req.JobDetails, textBlocksStr)
 
-		// Call Gemini to analyze the CV
 		result := agent.CallChatGemini(prompt)
 		response := result["Response"].(string)
 
-		// Parse the response to extract weak areas
 		weakAreas, err := ParseWeakAreasFromGeminiResponse(response)
 		if err != nil {
 			log.Printf("Error parsing weak areas: %v", err)
@@ -130,6 +126,7 @@ func RunServer() {
 			WeakAreas: weakAreas,
 		})
 	})
+
 	r.POST("/ai/parsing", func(c *gin.Context) {
 		var requestBody struct {
 			JobRawText string `json:"job_raw_text"`

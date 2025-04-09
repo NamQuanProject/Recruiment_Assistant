@@ -70,10 +70,10 @@ func GeminiParsingRawJDText(CVRawText string) (map[string]any, error) {
 	You are given a .txt file containing extracted raw text from a CV. Here is the raw text from the CV:
 	"""` + CVRawText + `"""
 
-	Please extract the relevant information into the following JSON structure to format the response:
+	You MUST extract the relevant information into the following JSON structure to format the response:
 	` + string(structurePrompt) + `
 	
-	Please return only a single top-level JSON object called "CV" following the structure.
+	Make sure to return only a single top-level JSON object following the structure.
 	`
 
 	resp := agent.CallChatGemini(FinalstructurePrompt)

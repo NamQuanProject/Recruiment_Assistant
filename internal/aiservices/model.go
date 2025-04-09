@@ -97,7 +97,6 @@ type CV struct {
 	Activitys           []string
 }
 
-// FindWeakAreasRequest represents the request to find weak areas in a CV
 type FindWeakAreasRequest struct {
 	CVPath     string `json:"cv_path" binding:"required"`
 	JobTitle   string `json:"job_title" binding:"required"`
@@ -112,7 +111,6 @@ type FindWeakAreasRequest struct {
 	} `json:"text_blocks"`
 }
 
-// WeakArea represents a weak area in the CV that needs to be highlighted
 type WeakArea struct {
 	Text        string  `json:"text"`
 	Page        int     `json:"page"`
@@ -123,7 +121,6 @@ type WeakArea struct {
 	Description string  `json:"description"`
 }
 
-// FindWeakAreasResponse represents the response from the AI server
 type FindWeakAreasResponse struct {
 	WeakAreas []WeakArea `json:"weak_areas"`
 }
