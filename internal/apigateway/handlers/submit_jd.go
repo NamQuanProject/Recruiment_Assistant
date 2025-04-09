@@ -12,7 +12,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func UploadJDHandler(c *gin.Context) {
+func SubmitJDHandler(c *gin.Context) {
 	// Single file upload
 	file, err := c.FormFile("pdfFile")
 	if err != nil {
@@ -55,11 +55,11 @@ func UploadJDHandler(c *gin.Context) {
 		return
 	}
 
-    // Return success response with the extracted text
-    c.JSON(http.StatusOK, gin.H{
-        "message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
-        "path":    filePath,
-    })
+	// Return success response with the extracted text
+	c.JSON(http.StatusOK, gin.H{
+		"message": fmt.Sprintf("File '%s' uploaded and processed successfully", file.Filename),
+		"path":    filePath,
+	})
 }
 
 func ProcessJD(filePath string) error {

@@ -127,3 +127,11 @@ type WeakArea struct {
 type FindWeakAreasResponse struct {
 	WeakAreas []WeakArea `json:"weak_areas"`
 }
+
+type JD struct {
+	JobTitle               string
+	JobType                string
+	ExperienceRequirements string
+	SkillsRequired         []string
+	Location               string
+}

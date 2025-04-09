@@ -130,6 +130,29 @@ func RunServer() {
 			WeakAreas: weakAreas,
 		})
 	})
+	r.POST("/ai/parsing", func(c *gin.Context) {
+		var requestBody struct {
+			JobRawText string `json:"job_raw_text"`
+		}
+
+		if err := c.ShouldBindJSON(&requestBody); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid JSON format"})
+			return
+		}
+
+		prompt := "Parse the following CV: " + requestBody.JobRawText
+
+		parsed_response, err := GeminiParsingRawCVText(prompt)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse CV"})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{
+			"Question": prompt,
+			"Response": parsed_response,
+		})
+	})
 
 	r.GET("/ai/jd_category/:job_name", func(c *gin.Context) {
 		jobName := c.Param("job_name")
@@ -158,6 +181,48 @@ func RunServer() {
 		})
 	})
 
-	fmt.Println("AI server running at http://localhost:8081")
+	r.POST("/ai/jd_criteria", func(c *gin.Context) {
+		type JDRequest struct {
+			JobName            string `json:"job_name"`
+			CompanyDescription string `json:"company_jd"`
+		}
+
+		var request JDRequest
+		if err := c.ShouldBindJSON(&request); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request body"})
+			return
+		}
+
+		fmt.Printf("Route /ai/jd_quiteria/%s is hit\n", request.JobName)
+
+		structure, err := ReadJsonStructure("./internal/aiservices/jobs_guideds.json")
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse job structure"})
+			return
+		}
+
+		accountDataRaw, exists := structure[request.JobName]
+		if !exists {
+			c.JSON(http.StatusNotFound, gin.H{"error": "Job category not found"})
+			return
+		}
+
+		accountData, ok := accountDataRaw.(map[string]interface{})
+		if !ok {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid job data structure"})
+			return
+		}
+
+		subCategoryString := HandleCategoryPrompt(accountData)
+
+		resp, err := GeminiQuieriaExtract(request.JobName, subCategoryString, request.CompanyDescription)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract criteria"})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{"criteria": resp})
+	})
+
 	r.Run(":8081")
 }

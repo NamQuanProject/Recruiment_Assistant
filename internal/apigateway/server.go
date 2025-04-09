@@ -2,30 +2,30 @@ package apigateway
 
 import (
 	"net/http"
+
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/user"
 	"github.com/gin-gonic/gin"
 )
 
 func Init() {
 	initializers.LoadEnvVariables()
 	initializers.ConnectToDB()
- 	initializers.SyncDatabase()
+	initializers.SyncDatabase()
 }
 
 func RunServer() {
 	r := gin.Default()
 
 	// Load HTML templates
-	r.LoadHTMLGlob("./templates/*")
+	// r.LoadHTMLGlob("./templates/*")
 
-	// Init()
+	// // Init()
 
-	// Authentication routes
-	r.POST("/signup", user.Signup)
-	r.POST("/login", user.Login)
-	r.POST("/logout", user.Logout)
+	// // Authentication routes
+	// r.POST("/signup", user.Signup)
+	// r.POST("/login", user.Login)
+	// r.POST("/logout", user.Logout)
 
 	// Serve HTML form upload
 	r.GET("/", func(c *gin.Context) {
@@ -38,7 +38,8 @@ func RunServer() {
 	})
 
 	// Job description routes
-	r.POST("/submitJD", handlers.UploadJDHandler)
+	r.POST("/submitJD", handlers.SubmitJDHandler)
+	r.POST("/submitCVs", handlers.SubmitCVsHandler)
 
 	r.Run(":8080") // Start the server on port 8080
 }
