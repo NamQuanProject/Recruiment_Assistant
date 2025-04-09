@@ -4,7 +4,6 @@ import (
 	"sync"
 
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway"
-	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/parsing"
 )
 
 func main() {
@@ -14,11 +13,6 @@ func main() {
 	go func() {
 		defer wg.Done()
 		apigateway.RunServer()
-	}()
-
-	go func() {
-		defer wg.Done()
-		parsing.RunServer()
 	}()
 
 	wg.Wait() // Blocks main until both servers exit

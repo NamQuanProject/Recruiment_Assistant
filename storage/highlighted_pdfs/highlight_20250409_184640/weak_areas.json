@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Baruch College, Zicklin School of Business",
+    "page": 1,
+    "x": 36.03,
+    "y": 93.03,
+    "width": 171.56,
+    "height": 10,
+    "description": "This section lists a MS in Business Analytics. While data analysis skills are valuable, the job is for a Software Engineer. The CV should showcase technical education or relevant projects more prominently."
+  },
+  {
+    "text": "Fashion Institute of Technology",
+    "page": 1,
+    "x": 36.03,
+    "y": 124.05,
+    "width": 130.33,
+    "height": 10,
+    "description": "This section lists a BS in Fashion Business Management, which is not directly relevant to a Software Engineer role. This section could be shortened or de-emphasized to make room for more technically relevant information."
+  },
+  {
+    "text": "SQL",
+    "page": 1,
+    "x": 107.55,
+    "y": 171.3,
+    "width": 15.73,
+    "height": 10,
+    "description": "The 'Computer Skills' section is very brief. The job description requires proficiency in at least one programming language (e.g., Python, Java, C++). This section should be expanded to demonstrate proficiency, experience levels, and specific projects where these skills were utilized. Instead of just listing 'Python', showcasing frameworks used (e.g. Django, Flask) would make it stronger."
+  },
+  {
+    "text": "AWS",
+    "page": 1,
+    "x": 256.85,
+    "y": 171.3,
+    "width": 19.73,
+    "height": 10,
+    "description": "While AWS experience is a 'Nice to Have', listing only the name and then listing some specific services doesn't showcase deep experience. This section could be improved by elaborating on projects completed using these services and the scale/complexity of the projects."
+  },
+  {
+    "text": "OpenSponsorship Data Analytics Challenge",
+    "page": 1,
+    "x": 36.03,
+    "y": 263.57,
+    "width": 178.34,
+    "height": 10,
+    "description": "The portfolio section focuses heavily on data analytics projects. While demonstrating analytical abilities, these projects don't directly showcase software engineering skills like designing, developing, and maintaining applications, which are key responsibilities in the job description. The candidate should prioritize projects demonstrating software development skills and related technologies."
+  },
+  {
+    "text": "Operation Analyst",
+    "page": 1,
+    "x": 179.33,
+    "y": 542.17,
+    "width": 339.48,
+    "height": 10,
+    "description": "The experience section primarily highlights roles in operations and merchandising, which are less relevant to a Software Engineer position. The descriptions should emphasize any aspects of these roles that involved problem-solving, automation, or data manipulation, and quantify achievements where possible. Ideally, the candidate should try to gain experience or create personal projects that are more directly related to software engineering to highlight in this section."
+  }
+]

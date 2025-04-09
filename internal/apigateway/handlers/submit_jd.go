@@ -48,7 +48,7 @@ func UploadJDHandler(c *gin.Context) {
 	}
 
 	// // Process the PDF
-	if err := ProcessCV(filePath); err != nil {
+	if err := ProcessJD(filePath); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"error": fmt.Sprintf("Failed to process File: %v", err),
 		})
@@ -62,7 +62,7 @@ func UploadJDHandler(c *gin.Context) {
     })
 }
 
-func ProcessCV(filePath string) error {
+func ProcessJD(filePath string) error {
 	file, err := os.Open(filePath)
 	if err != nil {
 		return fmt.Errorf("could not open file: %v", err)
@@ -90,7 +90,7 @@ func ProcessCV(filePath string) error {
 		return fmt.Errorf("failed to prepare request: %v", err)
 	}
 
-	resp, err := http.Post("http://localhost:8082/parse", "application/json", bytes.NewBuffer(reqBody))
+	resp, err := http.Post("http://localhost:8085/parse", "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
 		return fmt.Errorf("failed to call parsing server: %v", err)
 	}

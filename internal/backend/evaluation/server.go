@@ -46,6 +46,6 @@ func RunServer() {
 	// Define API routes
 	r.POST("/evaluate", evaluateJobHandler)
 
-	// Start the server on port 8081
-	r.Run(":8081")
+	// Start the server on port 8082
+	r.Run(":8082")
 }
