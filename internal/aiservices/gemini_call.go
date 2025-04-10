@@ -39,9 +39,27 @@ func (agent *AIAgent) CallChatGemini(prompt string) map[string]any {
 	// }
 	string_ouput := resp.Candidates[0].Content.Parts[0].(genai.Text)
 
-	fmt.Println("Answer:", resp.Candidates[0].Content.Parts[0])
+	// fmt.Println("Answer:", resp.Candidates[0].Content.Parts[0])
 
 	agent.AddToHistory(prompt, string(string_ouput))
+
+	return map[string]any{
+		"Response": string(string_ouput),
+	}
+}
+
+func (agent *AIAgent) CallChatBotGemini(prompt string) map[string]any {
+
+	resp, err := agent.Model.GenerateContent(agent.ctx, genai.Text(prompt))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	string_ouput := resp.Candidates[0].Content.Parts[0].(genai.Text)
 
 	return map[string]any{
 		"Response": string(string_ouput),

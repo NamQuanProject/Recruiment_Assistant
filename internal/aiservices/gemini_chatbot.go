@@ -35,7 +35,7 @@ type ChatBot struct {
 }
 
 func (cb *ChatBot) Ask(cvID string, question string) (string, error) {
-	log.Printf("Asking %s on ID: %s.\n", question, cvID)
+	log.Printf("Asking \"%s\" on agent ID: \"%s\".\n", question, cvID)
 	cb.mu.Lock()
 	agent, ok := cb.agentsCache[cvID]
 	cb.mu.Unlock()
@@ -45,7 +45,7 @@ func (cb *ChatBot) Ask(cvID string, question string) (string, error) {
 		var err error
 		agent, err = cb.AgentFactory.CreateAgent(cvID)
 		if err != nil {
-			fmt.Print(err)
+			log.Print(err)
 			return "", err
 		}
 		cb.mu.Lock()
@@ -53,38 +53,43 @@ func (cb *ChatBot) Ask(cvID string, question string) (string, error) {
 		cb.mu.Unlock()
 	}
 
-	// ✅ Step 1: Build prompt from history
 	historyStr := agent.GetHistory()
 
-	// ✅ Step 2: Add evaluation summary
-	evalStr := ""
-	// if agent.CVEvaluationSummary != "" {
-	// 	evalStr = fmt.Sprintf("Here is the evaluation summary of the CV:\n%s\n\n", agent.CVEvaluationSummary)
-	// }
+	evalStr, err := EvaluationToString(cb.evaluationID, cvID)
 
-	// ✅ Step 3: Add new question
+	if err != nil {
+		log.Print(err.Error())
+		return "", err
+	}
+
+	evalStr = fmt.Sprintf("You are an AI assistant analyzing a candidate's CV. This is your evaluation of a CV structured into categories:\n\"%s\"\n", evalStr)
+	historyStr = fmt.Sprintf("This is the history of our chat:\n\"%s\"\n", historyStr)
+
 	constructedPrompt := fmt.Sprintf(
-		"%s%sUser question: %s",
+		"%s%sMy question: %s",
 		evalStr,
 		historyStr,
 		question,
 	)
 
-	// ✅ Step 4: Call Gemini with full prompt
-	result := agent.CallChatGemini(constructedPrompt)
+	result := agent.CallChatBotGemini(constructedPrompt)
 
 	response, ok := result["Response"].(string)
 	if !ok {
 		return "", fmt.Errorf("invalid response from agent")
 	}
 
-	// ✅ Step 5: Save to history
 	agent.AddToHistory(question, response)
+	if err := cb.SaveHistoryToFile(); err != nil {
+		log.Printf("Failed to save history: %v", err)
+	} else {
+		fmt.Println("History saved successfully.")
+	}
 
 	return response, nil
 }
 
-func GetChatBot(evalID string, factory *AgentFactory) *ChatBot {
+func GetChatBot(evalID string, factory *AgentFactory) (*ChatBot, error) {
 	log.Printf("Getting ChatBot with evalID: %s.\n", evalID)
 	cb := ChatBot{
 		AgentFactory: factory,
@@ -92,21 +97,21 @@ func GetChatBot(evalID string, factory *AgentFactory) *ChatBot {
 		agentsCache:  make(map[string]*AIAgent),
 	}
 
-	cb.loadExistingHistories()
+	err := cb.loadExistingHistories()
 
-	return &cb
+	return &cb, err
 }
 
-func (cb *ChatBot) loadExistingHistories() {
+func (cb *ChatBot) loadExistingHistories() error {
 	historyFolder := filepath.Join("storage", fmt.Sprintf("evaluation_%s", cb.evaluationID), "agents_history")
 	files, err := os.ReadDir(historyFolder)
 	if err != nil {
 		if os.IsNotExist(err) {
 			// Folder doesn't exist — no histories to load
-			return
+			return nil
 		}
 		log.Printf("Error reading storage folder: %v", err)
-		return
+		return err
 	}
 
 	for _, file := range files {
@@ -118,7 +123,7 @@ func (cb *ChatBot) loadExistingHistories() {
 		cvID := strings.TrimSuffix(strings.TrimPrefix(file.Name(), "agent_"), ".json")
 
 		// Load history
-		history, err := loadHistoryFromFile(path.Join(historyFolder, file.Name()))
+		history, err := LoadHistoryFromFile(path.Join(historyFolder, file.Name()))
 		if err != nil {
 			log.Printf("Failed to load history for %s: %v", cvID, err)
 			continue
@@ -134,18 +139,8 @@ func (cb *ChatBot) loadExistingHistories() {
 		agent.History = history
 		cb.agentsCache[cvID] = agent
 	}
-}
 
-func loadHistoryFromFile(filePath string) ([]History, error) {
-	data, err := os.ReadFile(filePath)
-	if err != nil {
-		return nil, err
-	}
-	var history []History
-	if err := json.Unmarshal(data, &history); err != nil {
-		return nil, err
-	}
-	return history, nil
+	return nil
 }
 
 func (cb *ChatBot) SaveHistoryToFile() error {
