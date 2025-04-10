@@ -1,4 +1,29 @@
-{    
-"MainCategory": ["string"],
-"SubCategory": ["string"]
-}  
+{
+    "MainCategory": [
+      {
+        "Description": "string",
+        "EvaluationStrategy": "string",
+        "ScoringScale": "int",
+        "ScoringGuided": [
+          {
+            "Range": "string",      
+            "Comment": "string"
+          }
+        ]
+      }
+    ],
+    "SubCategory": [
+      { 
+        "Description": "string",
+        "EvaluationStrategy": "string",
+        "ScoringScale": "int",
+        "ScoringGuided": [
+          {
+            "Range": "string",      
+            "Comment": "string"
+          }
+        ]
+      }
+    ]
+  }
+  

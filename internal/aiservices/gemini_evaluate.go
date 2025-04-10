@@ -3,10 +3,9 @@ package aiservices
 import (
 	"encoding/json"
 	"fmt"
-	"strings"
 )
 
-func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []string, CV string) (map[string]any, error) {
+func GeminiEvaluateScoring(jobType string, mainCategory string, CV string) (map[string]any, error) {
 	// Load the target structure for evaluation
 	structure, jsonErr := ReadJsonStructure("./internal/aiservices/evaluate_structure.json")
 	if jsonErr != nil {
@@ -19,8 +18,8 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	}
 	structurePrompt := string(structureBytes)
 
-	mainCategoryStr := strings.Join(mainCategory, ", ")
-	subCategoryStr := strings.Join(subCategory, ", ")
+	mainCategoryStr := mainCategory
+	// subCategoryStr := strings.Join(subCategory, ", ")
 
 	agent, err := NewAIAgent(Config{}, true)
 	if err != nil {
@@ -82,8 +81,7 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 
 	%s
 
-	📁 Main Categories: %s  
-	📂 Subcategories: %s
+	📁 Main and Sub Categories: %s  
 
 	📄 Candidate CV:
 	"""%s"""
@@ -91,7 +89,7 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	📋 Output:
 	Return a single valid JSON object formatted like this:
 	%s
-`, jobType, flexibleGuide, mainCategoryStr, subCategoryStr, CV, structurePrompt)
+`, jobType, flexibleGuide, mainCategoryStr, CV, structurePrompt)
 
 	agent.Model.ResponseMIMEType = "application/json"
 

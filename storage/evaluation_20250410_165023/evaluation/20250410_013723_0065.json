@@ -1,0 +1,40 @@
+{
+  "Authenticity": 7,
+  "Evaluation": [
+    {
+      "category": "Accounting Principles \u0026 Practices",
+      "explanation": "This category assesses the candidate's understanding and application of fundamental accounting principles. The CV lacks direct evidence of this. The candidate's experience as a Digital Fabrication Lab Technician and Event Services Staff, while demonstrating organizational skills, doesn't provide insight into their knowledge of GAAP or financial statement preparation. The Representation Intern role offers some exposure to project details, but not accounting principles. Score: 2/10 - Limited evidence of accounting principles and practices.",
+      "score": "2"
+    },
+    {
+      "category": "Financial Reporting \u0026 Analysis",
+      "explanation": "The CV provides little to no evidence of financial reporting and analysis skills. The roles described do not typically involve preparing financial statements or analyzing financial data. The candidate's experience focuses on event organization, technical assistance, and visualization materials, none of which directly translate to financial reporting. Score: 1/10 - No clear evidence of financial reporting or analysis skills.",
+      "score": "1"
+    },
+    {
+      "category": "Technical Proficiency (Accounting Software \u0026 Excel)",
+      "explanation": "While the CV mentions proficiency in Microsoft Office, including Excel, it lacks specific experience with accounting software like QuickBooks or Xero. The candidate's technical skills are focused on visualization software (Adobe Suite, Rhino, Revit) and fabrication tools, not accounting-specific programs. Score: 4/10 - Some proficiency in Excel, but lacks accounting software experience.",
+      "score": "4"
+    },
+    {
+      "category": "Reconciliation \u0026 Accuracy",
+      "explanation": "There is no explicit mention of reconciliation experience in the CV. The listed roles primarily involve assisting with events, technical support, and visualization, which do not inherently require reconciliation skills. The absence of keywords like 'reconciliation,' 'audit,' or 'financial statements' further underscores this lack. Score: 1/10 - No evidence of reconciliation or related skills.",
+      "score": "1"
+    },
+    {
+      "category": "Budgeting \u0026 Financial Regulations",
+      "explanation": "The CV doesn't provide direct evidence of experience with budgeting or financial regulations. While the candidate served as Treasurer for the NOMAS Pratt Chapter, the CV doesn't detail specific budgeting responsibilities or knowledge of financial regulations. Without further elaboration, it's difficult to assess the depth of their experience in this area. Score: 3/10 - Limited evidence of budgeting experience, no mention of financial regulations.",
+      "score": "3"
+    }
+  ],
+  "PersonalInfo": {
+    "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
+    "Age": null,
+    "Email": "knguyen6@pratt.edu",
+    "FullName": "Khanh Nguyen",
+    "GitHub": null,
+    "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
+    "PhoneNumber": "346.263.4012",
+    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s"
+  }
+}
