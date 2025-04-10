@@ -144,7 +144,7 @@ func SubmitCVsHandler(c *gin.Context) {
 		return
 	}
 	log.Printf("CVs evaluation successfully")
-	c.JSON(http.StatusOK, gin.H{"message": "CVs evaluation successfully"})
+	c.JSON(http.StatusOK, gin.H{"final_out_path": "internal/backend/output/output.json"})
 	// return
 }
 
