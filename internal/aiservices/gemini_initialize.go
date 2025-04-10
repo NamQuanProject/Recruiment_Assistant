@@ -40,6 +40,52 @@ func NewAIAgent(config Config, default_agent bool) (*AIAgent, error) {
 	}, nil
 }
 
+func GetAIAgent(id string, config Config) (*AIAgent, error) {
+	config.APIKey = "AIzaSyB22ThtcCvZuXual9uaT_6v4Bo5R6oBdok"
+	config.ModelName = "gemini-2.0-flash"
+	config.Temperature = 0.0
+	config.Name = "DefaultAgent"
+
+	ctx := context.Background()
+	client, err := genai.NewClient(ctx, option.WithAPIKey(config.APIKey))
+	if err != nil {
+		return nil, fmt.Errorf("failed to create genai client: %w", err)
+	}
+
+	model := client.GenerativeModel(config.ModelName)
+	setting := DefaultSafetySettings()
+	history := HandleHistoryGet(id)
+
+	return &AIAgent{
+		Name:          config.Name,
+		Client:        client,
+		Model:         model,
+		SafetySetting: setting,
+		History:       history,
+		APIKey:        config.APIKey,
+		ModelName:     config.ModelName,
+		MaxTokens:     config.MaxTokens,
+		Temperature:   config.Temperature,
+		ctx:           ctx,
+	}, nil
+}
+
+func HandleHistoryGet(id string) []History {
+	historyData, jsonErr := ReadJsonStructure("./internal/aiservice/data/history.json")
+	if jsonErr != nil {
+		return []History{}
+	}
+
+	currentModelHistory, ok := historyData[id]
+	if !ok {
+		return []History{}
+	}
+	fmt.Println(currentModelHistory)
+	final_result := []History{}
+
+	return final_result
+}
+
 // SETTINGS AND INITIALIZATION
 
 func DefaultSafetySettings() []*genai.SafetySetting {
