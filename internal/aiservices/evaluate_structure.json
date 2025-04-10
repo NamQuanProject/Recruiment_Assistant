@@ -12,7 +12,7 @@
     "Evaluation": [
       {             
         "category": "string",
-        "score": "0", 
+        "score": "string", 
         "explanation": "string"
       }
     ],
