@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 	"time"
+
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/database/models"
 	"github.com/gin-gonic/gin"
@@ -33,7 +34,7 @@ func RequireAuth(c *gin.Context) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	
+
 	if claims, ok := token.Claims.(jwt.MapClaims); ok {
 		// Check the exp
 		if float64(time.Now().Unix()) > claims["exp"].(float64) {
@@ -53,7 +54,7 @@ func RequireAuth(c *gin.Context) {
 		c.Set("user", user)
 
 		// Continue to the next handler
-		c.Next()	
+		c.Next()
 
 		fmt.Println(claims["foo"], claims["nbf"])
 	} else {

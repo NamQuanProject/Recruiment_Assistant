@@ -202,8 +202,9 @@ func RunServer() {
 		type JDRequest struct {
 			JobName        string `json:"job_name"`
 			JDMainQuiteria string `json:"jd_main_quiteria"`
-			JDSubQuiteria  string `json:"jd_sub_quiteria"`
 			CVRawText      string `json:"cv_raw_text"`
+			EvaluationID   string `json:"evaluation_id"`
+			CVID           string `json:"cv_id"`
 		}
 		var request JDRequest
 		if err := c.ShouldBindJSON(&request); err != nil {
@@ -211,11 +212,33 @@ func RunServer() {
 			return
 		}
 
-		resp, err := GeminiEvaluateScoring(request.JobName, request.JDMainQuiteria, request.CVRawText)
+		eval_id := request.EvaluationID
+		cv_id := request.CVID
+
+		err := InitChatBot(eval_id)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to initialize Chatbot"})
+			return
+		}
+
+		resp, err := GeminiEvaluateScoring(request.JobName, request.JDMainQuiteria, request.CVRawText, cv_id)
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract criteria"})
 			return
 		}
+
+		// cb, err := GetChatBotInstance()
+		// if err != nil {
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get Chatbot instance"})
+		// 	return
+		// }
+
+		// err = cb.SaveHistoryToFile()
+		// if err != nil {
+		// 	log.Print(err)
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save Chatbot History"})
+		// 	return
+		// }
 
 		c.JSON(http.StatusOK, gin.H{"evaluation": resp})
 	})

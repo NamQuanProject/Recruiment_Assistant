@@ -3,9 +3,10 @@ package aiservices
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 )
 
-func GeminiEvaluateScoring(jobType string, mainCategory string, CV string) (map[string]any, error) {
+func GeminiEvaluateScoring(jobType, mainCategory, CV, cv_id string) (map[string]any, error) {
 	structure, jsonErr := ReadJsonStructure("./internal/aiservices/evaluate_structure.json")
 	if jsonErr != nil {
 		return nil, jsonErr
@@ -20,11 +21,18 @@ func GeminiEvaluateScoring(jobType string, mainCategory string, CV string) (map[
 	mainCategoryStr := mainCategory
 	// subCategoryStr := strings.Join(subCategory, ", ")
 
+	// Get chatbot to update
+	cb, err := GetChatBotInstance()
+	if err != nil {
+		log.Print(err)
+		return nil, err
+	}
+
 	agent, err := NewAIAgent(Config{}, true)
 	if err != nil {
 		return nil, err
 	}
-	defer agent.Close()
+	// defer agent.Close()
 
 	finalPrompt := fmt.Sprintf(`
 	You are an experienced recruiter in the field of "%s".
@@ -53,6 +61,7 @@ func GeminiEvaluateScoring(jobType string, mainCategory string, CV string) (map[
 
 	resp := agent.CallChatGemini(finalPrompt)
 
+	cb.AddAgent(cv_id, agent)
 	// fmt.Println("Parsed Response:", resp)
 	return resp, nil
 }

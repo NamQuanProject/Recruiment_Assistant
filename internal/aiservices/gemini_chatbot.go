@@ -34,6 +34,21 @@ type ChatBot struct {
 	mu           sync.Mutex          // for thread safety
 }
 
+func (cb *ChatBot) AddAgent(cv_id string, agent *AIAgent) {
+	cb.mu.Lock()
+	defer cb.mu.Unlock()
+
+	if cb.agentsCache == nil {
+		cb.agentsCache = make(map[string]*AIAgent)
+	}
+
+	agent.Model.ResponseMIMEType = "text/plain"
+
+	cb.agentsCache[cv_id] = agent
+	log.Printf("Added AI agent with ID: %s to Chatbot", cv_id)
+	// cb.SaveHistoryToFile()
+}
+
 func (cb *ChatBot) Ask(cvID string, question string) (string, error) {
 	log.Printf("Asking \"%s\" on agent ID: \"%s\".\n", question, cvID)
 	cb.mu.Lock()
@@ -51,6 +66,8 @@ func (cb *ChatBot) Ask(cvID string, question string) (string, error) {
 		cb.mu.Lock()
 		cb.agentsCache[cvID] = agent
 		cb.mu.Unlock()
+	} else {
+		log.Printf("Chatbot for cv_id: %s exists", cvID)
 	}
 
 	historyStr := agent.GetHistory()
@@ -66,7 +83,7 @@ func (cb *ChatBot) Ask(cvID string, question string) (string, error) {
 	historyStr = fmt.Sprintf("This is the history of our chat:\n\"%s\"\n", historyStr)
 
 	constructedPrompt := fmt.Sprintf(
-		"%s%sMy question: %s",
+		"%s%sPlease give short answer together with explanation for my question in plain text format: %s",
 		evalStr,
 		historyStr,
 		question,
@@ -149,6 +166,7 @@ func (cb *ChatBot) SaveHistoryToFile() error {
 
 	historyFolder := filepath.Join("storage", fmt.Sprintf("evaluation_%s", cb.evaluationID), "agents_history")
 
+	log.Print("Saving Chatbot History to file...\n")
 	// Create folder if it doesn't exist
 	if err := os.MkdirAll(historyFolder, 0755); err != nil {
 		return fmt.Errorf("failed to create history folder: %w", err)

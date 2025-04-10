@@ -99,7 +99,7 @@ func evaluateJobHandler(c *gin.Context) {
 			JobName:        jobName,
 			JDMainQuiteria: string(jdMainBytes),
 			CVRawText:      string(cvTextBytes),
-			EvaluationID:   strings.TrimPrefix(basePath, "storage/"),
+			EvaluationID:   strings.TrimPrefix(basePath, "storage/evaluation_"),
 			CVID:           strings.TrimSuffix(f.Name(), ".txt"),
 		}
 

@@ -3,34 +3,57 @@
   "Evaluation": [
     {
       "category": "Technical Proficiency",
-      "explanation": "The candidate's resume showcases a mix of technical skills, primarily focused on design and visualization software such as Adobe Photoshop, Illustrator, InDesign, Lightroom, V-Ray, Enscape, Rhinoceros-Grasshopper, Revit, and AutoCAD. There is also experience with digital fabrication tools like Laser Cutting, ZUND Digital Cutting and Routing, WAZER Waterjet, 3D Printing and Scanning, and CNC Milling. However, the resume lacks explicit mention of core software engineering technologies like C#, .NET, SQL, or JavaScript. The experience as a Digital Fabrication Lab Technician involves diagnosing equipment and aiding with assessments, suggesting some technical aptitude. While there is some technical background, it's geared more towards design and fabrication than software development. Thus, the candidate would likely require significant guidance in a software engineering role. The relevance to software engineering role is limited, focusing more on design and digital fabrication tools rather than coding or software development technologies.",
-      "score": "4"
+      "explanation": "The candidate's CV mentions experience with digital fabrication equipment, software like Adobe Photoshop, Illustrator, InDesign, Lightroom, V-Ray, Enscape, Rhinoceros - Grasshopper, Revit, and AutoCAD. This indicates some level of technical proficiency. However, the CV does not explicitly mention C#, .NET, or SQL. Therefore, the candidate's technical proficiency in the specific technologies required for a software engineer role is unclear. Further clarification is needed to determine the depth of their experience with relevant programming languages and tools. The score reflects the possibility of transferrable skills. The role listed is for INTERNSHIP APPLICANT, it is a undergrad student at Pratt School of Architecture. ",
+      "score": "5"
     },
     {
       "category": "Problem Solving and Analytical Skills",
-      "explanation": "The resume provides some evidence of problem-solving skills, particularly within the context of the Digital Fabrication Lab Technician role where the candidate 'Diagnosed a variety of innovative equipment.' Additionally, the role as a Photography Assistant involved guiding students through software issues, indicating some problem-solving abilities. However, the descriptions are relatively high-level, and there's a lack of specific examples demonstrating analytical skills or complex problem-solving scenarios. The description of documenting sports matches could point to basic analytical abilities. Overall, the evidence suggests the candidate can analyze and solve problems with assistance, but further assessment is needed to determine their independent problem-solving capabilities in a software engineering context.",
+      "explanation": "The candidate's experience as a Digital Fabrication Lab Technician suggests some problem-solving skills, as they diagnose issues with various types of equipment. Their role as an Event Services Staff also requires organizational and problem-solving skills. However, the CV lacks specific examples of complex problem-solving scenarios or analytical tasks. The listed tasks are somewhat basic and do not convey advanced analytical skills. More evidence is needed to assess their ability to handle complex problems in a software engineering context.",
       "score": "5"
     },
     {
       "category": "Communication and Collaboration Skills",
-      "explanation": "The candidate appears to possess strong communication and collaboration skills. The resume highlights experience as an Event Services Staff, which involved organizing and facilitating events, greeting guests, and providing information. The roles as a Treasurer and Secretary for student organizations also demonstrate communication and organizational skills. Additionally, the Representation Intern position at TTT Corporation involved assisting with visualization materials and participating in meetings with foreign clients as a translator, showcasing the ability to communicate effectively with diverse stakeholders. The statement 'Outgoing and optimistic teamplayer creates strong bonds when working with other people, committing to an exceptional teamwork' further supports the assessment of strong communication and collaboration skills. Overall, the evidence suggests the candidate communicates effectively and collaborates well in a team environment.",
-      "score": "8"
+      "explanation": "The CV highlights the candidate's communication and collaboration skills through their experience as an Event Services Staff, Representation Intern, and Photography Assistant. They mention facilitating events, assisting with client communication, and guiding students. The candidate's self-description also emphasizes their ability to work well in a team. These experiences suggest decent communication and collaboration abilities. The candidate is bilingual, which would likely help with communication.",
+      "score": "7"
     },
     {
       "category": "Adaptability and Learning Agility",
-      "explanation": "The candidate demonstrates some level of adaptability and learning agility. The resume mentions 'Always ready to engage and absorb new knowledge and criticisms.' The diverse range of experiences, from Digital Fabrication Lab Technician to Event Services Staff and Representation Intern, suggests a willingness to take on new challenges and learn different skills. The international student status and bilingualism also indicate adaptability to new environments and cultures. However, the resume lacks specific examples of quickly mastering new technologies or adapting to rapidly changing priorities. More information would be needed to fully assess the candidate's adaptability and learning agility in a software engineering context.",
+      "explanation": "The candidate's diverse experiences in different roles, from a lab technician to an event staff and intern, indicate some level of adaptability. Their willingness to learn new technologies and assist others suggests learning agility. The CV could be improved by providing more specific examples of how they adapted to new situations or quickly learned new skills. However, based on the information provided, their adaptability and learning agility seem moderate.",
       "score": "6"
+    },
+    {
+      "category": "Code Quality and Best Practices",
+      "explanation": "The CV does not contain any information about the candidate's coding experience or knowledge of coding best practices. There are no code samples or mentions of unit testing, design patterns, or code review processes. It is impossible to evaluate the candidate's code quality based on the information provided.",
+      "score": "1"
+    },
+    {
+      "category": "Database Skills (SQL)",
+      "explanation": "The CV does not mention any experience with databases or SQL. Therefore, it is not possible to evaluate the candidate's database skills based on the information provided.",
+      "score": "1"
+    },
+    {
+      "category": "Web Technologies (HTML, CSS, JavaScript)",
+      "explanation": "The CV does not mention any experience with web technologies such as HTML, CSS, or JavaScript. The candidate lists some software like Adobe Photoshop and other visual design software, so might have some basic knowledge of the technologies.",
+      "score": "2"
+    },
+    {
+      "category": "Experience with Agile Development",
+      "explanation": "The CV does not mention any experience with Agile development methodologies. Therefore, it is not possible to evaluate the candidate's familiarity with Agile concepts or practices.",
+      "score": "1"
     }
   ],
-  "FinalScore": 38.333333333333336,
+  "FinalScore": 46.666666666666664,
   "PersonalInfo": {
     "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
     "Age": null,
     "Email": "knguyen6@pratt.edu",
+    "Experience_Years": null,
     "FullName": "Khanh Nguyen",
     "GitHub": null,
     "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
     "PhoneNumber": "346.263.4012",
-    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s"
+    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s",
+    "WorkFor": null,
+    "path_to_cv": "storage\\evaluation_20250410_233350\\parse\\cvs\\20250410_013723_0065.txt"
   }
 }
