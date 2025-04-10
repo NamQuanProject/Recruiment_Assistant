@@ -85,7 +85,7 @@ func SubmitJDHandler(c *gin.Context) {
 
 	if _, err := jobNameFile.WriteString(jobName); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": "Failed to write to jobnam.txt",
+			"error": "Failed to write to jobname.txt",
 		})
 		return
 	}

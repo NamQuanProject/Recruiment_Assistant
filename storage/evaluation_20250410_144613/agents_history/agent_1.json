@@ -1,0 +1,42 @@
+[
+  {
+    "Question": "User question: Hello, how are you?",
+    "Response": "I am doing well, thank you for asking! How are you today?\n",
+    "Date": "2025-04-10T21:29:39.2372359+07:00"
+  },
+  {
+    "Question": "Hello, how are you?",
+    "Response": "I am doing well, thank you for asking! How are you today?\n",
+    "Date": "2025-04-10T21:29:39.2372359+07:00"
+  },
+  {
+    "Question": "Question: User question: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nUser question: What is your name?",
+    "Response": "Answer: I am a large language model, trained by Google.\n",
+    "Date": "2025-04-10T21:30:32.8838695+07:00"
+  },
+  {
+    "Question": "What is your name?",
+    "Response": "Answer: I am a large language model, trained by Google.\n",
+    "Date": "2025-04-10T21:30:32.8838695+07:00"
+  },
+  {
+    "Question": "Question: User question: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Question: User question: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nUser question: What is your name?\nAnswer: Answer: I am a large language model, trained by Google.\n\nQuestion: What is your name?\nAnswer: Answer: I am a large language model, trained by Google.\n\nUser question: What is the capital of England?",
+    "Response": "Answer: The capital of England is London.\n",
+    "Date": "2025-04-10T21:32:28.9644807+07:00"
+  },
+  {
+    "Question": "What is the capital of England?",
+    "Response": "Answer: The capital of England is London.\n",
+    "Date": "2025-04-10T21:32:28.9644807+07:00"
+  },
+  {
+    "Question": "Question: User question: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Question: User question: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nUser question: What is your name?\nAnswer: Answer: I am a large language model, trained by Google.\n\nQuestion: What is your name?\nAnswer: Answer: I am a large language model, trained by Google.\n\nQuestion: Question: User question: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Question: User question: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nQuestion: Hello, how are you?\nAnswer: I am doing well, thank you for asking! How are you today?\n\nUser question: What is your name?\nAnswer: Answer: I am a large language model, trained by Google.\n\nQuestion: What is your name?\nAnswer: Answer: I am a large language model, trained by Google.\n\nUser question: What is the capital of England?\nAnswer: Answer: The capital of England is London.\n\nQuestion: What is the capital of England?\nAnswer: Answer: The capital of England is London.\n\nUser question: List all asked questions please.",
+    "Response": "*   Hello, how are you?\n*   What is your name?\n*   What is the capital of England?\n*   List all asked questions please.\n",
+    "Date": "2025-04-10T21:38:30.9543213+07:00"
+  },
+  {
+    "Question": "List all asked questions please.",
+    "Response": "*   Hello, how are you?\n*   What is your name?\n*   What is the capital of England?\n*   List all asked questions please.\n",
+    "Date": "2025-04-10T21:38:30.9543213+07:00"
+  }
+]
