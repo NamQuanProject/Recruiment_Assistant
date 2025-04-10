@@ -28,46 +28,21 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	}
 	defer agent.Close()
 
-	flexibleGuide := `
-	🧠 Flexible Evaluation Guide:
+	// flexibleGuide := `
+	// 🧠 Flexible Evaluation Guide:
 
-	Score and explain each category using a comprehensive explanation — include evidence found, strengths, weaknesses, and relevance to the job.
+	// Score and explain each category using a comprehensive explanation — include evidence found, strengths, weaknesses, and relevance to the job.
 
-	🔹 Main Categories (Score: 1–10)
-	1. Technical Skills
-	- 9–10: Deep, modern, and varied technical knowledge with real-world application and relevance to the role.
-	- 6–8: Strong but slightly limited or generic skills.
-	- 3–5: Partial or outdated skills, unclear usage.
-	- 1–2: No evidence or unrelated tools.
+	// 🔹 Main Categories (Score: 1–10)
+	// 1. Category related to skills
+	// - 9–10: Deep, modern, and varied technical knowledge with real-world application and relevance to the role.
+	// - 6–8: Strong but slightly limited or generic skills.
+	// - 3–5: Partial or outdated skills, unclear usage.
+	// - 1–2: No evidence or unrelated tools.
 
-	2. Work Experience
-	- 9–10: Relevant roles, clear impact, progression, and achievements.
-	- 6–8: Moderate experience or roles that are somewhat related.
-	- 3–5: Weak or limited scope, missing impact.
-	- 1–2: Little or no applicable experience.
+	// Marking:
 
-	3. Education
-	- 9–10: Prestigious or deeply relevant degrees.
-	- 6–8: Standard education in relevant fields.
-	- 3–5: General education, not directly related.
-	- 1–2: No educational evidence or unrelated study.
-
-	🔸 Subcategories (Score: 1–5)
-	1. Leadership
-	- 5: Strong leadership roles with measurable outcomes.
-	- 3–4: Some leadership, unclear scope.
-	- 1–2: No leadership activity mentioned.
-
-	2. Communication
-	- 5: Evidence of public speaking, writing, collaboration.
-	- 3–4: Some indirect mention or soft evidence.
-	- 1–2: Not demonstrated.
-
-	3. Problem Solving
-	- 5: Examples of overcoming challenges, innovation, analysis.
-	- 3–4: Some signs but vague.
-	- 1–2: No signs of problem-solving.
-	`
+	// `
 
 	finalPrompt := fmt.Sprintf(`
 	You are an experienced recruiter for the field of "%s".
@@ -80,7 +55,7 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	- Avoid any assumptions based on gender, name, race, religion, appearance, or background. Be absolutely unbiased.
 	- Also, if the information provided in the CV has proof for it, then evaluate an authenticity score for the whole CV — this is the reliability point.
 
-	%s
+
 
 	📁 Main Categories: %s  
 	📂 Subcategories: %s
@@ -91,7 +66,7 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	📋 Output:
 	Return a single valid JSON object formatted like this:
 	%s
-`, jobType, flexibleGuide, mainCategoryStr, subCategoryStr, CV, structurePrompt)
+`, jobType, mainCategoryStr, subCategoryStr, CV, structurePrompt)
 
 	agent.Model.ResponseMIMEType = "application/json"
 
