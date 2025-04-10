@@ -45,31 +45,80 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 	You are an expert HR analyst working for a company in the field of """` + job_type + `""" recruiting.
 	
 	You are given:
-	1. The company's official job description (main JD)
-	2. A guided job suggestion (candidate JD)
+	1. The **Official Job Description** from the company (MainCategory)
+	2. A **Guided Job Suggestion** (SubCategory)
+	3. A strict JSON format defining what your output must look like.
 	
-	Your task is to extract the most relevant categories for evaluation and organize them into:
-	- Main Categories: absolutely essential for the role
-	- Subcategories: desirable or supporting qualities
-	
+	Your task is to:
+	- Extract key evaluation **categories** and **subcategories**
 	Each category must include:
-	- A name
-	- A scoring scale (1–10 for main, 1–5 for sub)
-	- A comprehensive explanation:
-	  - Why it's important
-	  - How it relates to the job
-	  - If it came from the main JD or candidate JD
+	- For each, include:
+	• A **Description**
+	• An **Evaluation Strategy** — how to assess it
+	• A **ScoringScale**: 
+		- 1–10 scale for main categories
+		- 1–5 scale for subcategories
+	• Clear **ScoringGuided**: what each score range means
+	• Justify why each category matters, and whether it came from the Main JD or Candidate JD
+
 	
 	Make sure your analysis is fair and unbiased. Do NOT include anything based on gender, age, race, or personal traits. Evaluate purely based on job content.
 	
 	Official JD:
 	"""` + main_jd + `"""
 	
-	Suggested JD:
+	Additional JD:
 	"""` + accountData + `"""
-	
+
+
+
+	Here is an example output:
+	{
+	"MainCategory": [
+		{
+			"Description": "Overall Layout and Structure",
+			"EvaluationStrategy": "Assess the visual organization, consistency, and user flow of the design.",
+			"ScoringGuided": [
+				{ "Range": "1-3", "Comment": "Unstructured or poorly designed" },
+				{ "Range": "3-5", "Comment": "Some structure but inconsistent" },
+				{ "Range": "5-8", "Comment": "Good layout, minor flaws" },
+				{ "Range": "8-10", "Comment": "Excellent and polished design" }
+			],
+			"ScoringScale": 10
+
+		}
+	],
+	"SubCategory": [
+			{
+				"Description": "Typography usage",
+				"EvaluationStrategy": "Focus on font consistency, readability, and hierarchy",
+				"CrucialPoints": [
+					{ "Range": "1-2", "Comment": "Unreadable or inconsistent fonts" },
+					{ "Range": "2-3", "Comment": "Basic readability but lacks hierarchy" },
+					{ "Range": "3-4", "Comment": "Good readability and some hierarchy" },
+					{ "Range": "4-5", "Comment": "Strong typographic hierarchy and style" }
+				],
+				"ScoringScale": 5
+				},
+				{
+				"Description": "Color Usage",
+				"EvaluationStrategy": "Evaluate color harmony, contrast, and accessibility",
+				"ScoringGuided": [
+					{ "Range": "1-2", "Comment": "Clashing or inaccessible color choices" },
+					{ "Range": "2-3", "Comment": "Some consistency but lacks contrast or clarity" },
+					{ "Range": "3-4", "Comment": "Good use of color with some minor issues" },
+					{ "Range": "4-5", "Comment": "Excellent color usage and accessibility" }
+				],
+				"ScoringScale": 5
+			}
+		]
+	}
+
+
+
 	The output format must strictly follow the following JSON structure:
 	` + structurePrompt + `
+
 	
 	Return only a single top-level JSON object.
 	`

@@ -1,12 +1,29 @@
-{    
-"MainCategory": [{
-    "Description": "string",
-    "Evaluation Strategy": "string",
-    "CruitialPoints" : "string"
-}],
-"SubCategory": [{
-    "Description": "string",
-    "Evaluation Strategy": "string",
-    "CruitialPoints" : "string"
-}]
-}  
+{
+    "MainCategory": [
+      {
+        "Description": "string",
+        "EvaluationStrategy": "string",
+        "ScoringScale": "int",
+        "ScoringGuided": [
+          {
+            "Range": "string",      
+            "Comment": "string"
+          }
+        ]
+      }
+    ],
+    "SubCategory": [
+      { 
+        "Description": "string",
+        "EvaluationStrategy": "string",
+        "ScoringScale": "int",
+        "ScoringGuided": [
+          {
+            "Range": "string",      
+            "Comment": "string"
+          }
+        ]
+      }
+    ]
+  }
+  
