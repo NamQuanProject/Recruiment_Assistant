@@ -1,0 +1,66 @@
+{
+  "Authenticity": 7,
+  "Evaluation": [
+    {
+      "category": "Technical Skills and Experience",
+      "explanation": "The candidate demonstrates experience with software and digital tools relevant to architecture and design, such as Rhinoceros, Grasshopper, Revit, AutoCAD, Adobe Creative Suite, and various fabrication technologies. However, there's no mention of core software engineering technologies like C#, .NET, SQL, SSRS, JavaScript, HTML, or CSS, which are crucial for this role. The experience in the Pratt Interdisciplinary Technology Lab is a strength, showcasing hands-on experience with digital fabrication equipment, but it doesn't directly translate to software engineering skills. The candidate's resume lacks evidence of formal software development experience, which is a significant weakness.",
+      "score": "2"
+    },
+    {
+      "category": "Problem-Solving and Troubleshooting Skills",
+      "explanation": "The candidate's experience as a Digital Fabrication Lab Technician suggests some problem-solving skills, as they diagnosed issues with innovative equipment. Additionally, guiding students through software issues as a Photography Assistant indicates basic troubleshooting abilities. However, the resume doesn't provide specific examples of complex problem-solving in a software development context. The descriptions are general and lack detail about the types of problems encountered and the solutions implemented. This is an area where the candidate could provide more concrete evidence of their skills.",
+      "score": "4"
+    },
+    {
+      "category": "Communication and Collaboration Skills",
+      "explanation": "The candidate's resume highlights several experiences that demonstrate strong communication and collaboration skills. Their roles as Event Services Staff, Representation Intern (assisting translator), and Photography Assistant all involve working with people, organizing events, and conveying information. The role as Treasurer of NOMAS Pratt Chapter and Secretary of Vietnamese Students Association further supports their ability to work in a team environment. The resume emphasizes teamwork and communication, indicating a good understanding of the importance of these skills.",
+      "score": "7"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate's diverse experience, including roles in event services, representation, and digital fabrication, suggests a degree of adaptability. The resume mentions being 'ready to engage and absorb new knowledge and criticisms,' which is a positive indicator of learning agility. However, the resume lacks specific examples of how the candidate has quickly learned and applied new technologies or adapted to changing priorities in a software development context. The candidate's background in architecture implies a willingness to learn new tools and techniques, but it's not directly relevant to software engineering.",
+      "score": "5"
+    },
+    {
+      "category": "Software Development Lifecycle Proficiency",
+      "explanation": "The candidate's resume lacks any explicit mention of the software development lifecycle or experience in software development projects. While their technical skills might be applicable to certain phases of the SDLC, the resume doesn't provide any evidence of their understanding or ability to contribute to the process. The experience is primarily focused on design and fabrication, not software development.",
+      "score": "1"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The candidate's resume does not provide any information related to code quality or testing. There's no mention of coding experience, testing methodologies, or debugging skills. This is a significant gap, as these are fundamental skills for a software engineer.",
+      "score": "1"
+    },
+    {
+      "category": "Database Management Skills",
+      "explanation": "The candidate's resume does not mention any database management skills or experience with database technologies like SQL. This is a critical skill for a software engineer, and the lack of any mention is a significant weakness.",
+      "score": "1"
+    },
+    {
+      "category": "Web Development Skills",
+      "explanation": "The candidate's resume does not explicitly mention web development skills such as HTML, CSS, or JavaScript. While they have experience with design and visualization software, those skills don't directly translate to web development proficiency. The resume lacks any evidence of web development experience, which is a significant gap given the requirements of the role.",
+      "score": "1"
+    },
+    {
+      "category": "Agile Development Experience",
+      "explanation": "The candidate's resume does not mention any experience with Agile development methodologies. The absence of any reference to Agile or Scrum suggests a lack of familiarity with these common software development practices.",
+      "score": "1"
+    },
+    {
+      "category": "System Configuration and Support",
+      "explanation": "The candidate's experience as a Digital Fabrication Lab Technician suggests some skills in system configuration and support, as they diagnosed equipment issues and provided instructions to new staff. However, the resume doesn't provide specific details about the types of systems they configured or supported, or the complexity of the issues they resolved. The role seems more focused on hardware and digital fabrication tools than software systems.",
+      "score": "3"
+    }
+  ],
+  "FinalScore": 34.66666666666667,
+  "PersonalInfo": {
+    "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
+    "Age": null,
+    "Email": "knguyen6@pratt.edu",
+    "FullName": "Khanh Nguyen",
+    "GitHub": null,
+    "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
+    "PhoneNumber": "346.263.4012",
+    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s"
+  }
+}
