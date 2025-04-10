@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "./datacontext";
 
 const Criteria = ({ criteriaData, loading }: { criteriaData: any; loading: boolean }) => {
-  console.log("Criteria Data:", criteriaData); // Log the criteria data for debugging
-
+ // Log the criteria data for debugging
+  const { criteriaJson } = useContext(DataContext);
+  console.log("Criteria JSON in Criteria component:", criteriaJson); // Log the criteriaJson
+   // Access criteriaJson from context
   return (
     <div className="flex justify-center items-center mt-12 w-5/6 h-[600px] mx-auto bg-primary shadow-md text-color-black p-8 border-[0.5px] border-gray-400 rounded-sm">
       <div className="w-full h-full bg-white">
@@ -22,7 +25,7 @@ const Criteria = ({ criteriaData, loading }: { criteriaData: any; loading: boole
             <>
               {/* Render Main Categories */}
               <h3 className="font-bold text-xl mb-4">Main Categories</h3>
-              {criteriaData?.MainCategory?.map((item: any, index: number) => (
+              {criteriaJson?.MainCategory?.map((item: any, index: number) => (
                 <div key={index} className="mb-6">
                   <h4 className="font-semibold text-lg">{item.Description}</h4>
                   <p className="text-sm mb-2">
@@ -47,7 +50,7 @@ const Criteria = ({ criteriaData, loading }: { criteriaData: any; loading: boole
 
               {/* Render Sub Categories */}
               <h3 className="font-bold text-xl mb-4">Sub Categories</h3>
-              {criteriaData?.SubCategory?.map((item: any, index: number) => (
+              {criteriaJson?.SubCategory?.map((item: any, index: number) => (
                 <div key={index} className="mb-6">
                   <h4 className="font-semibold text-lg">{item.Description}</h4>
                   <p className="text-sm mb-2">

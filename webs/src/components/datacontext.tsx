@@ -40,9 +40,12 @@ export const DataContext = createContext<DataContextType>({
 export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [sharedData, setSharedData] = useState<CandidateData | null>(null);
   const [criteriaJson, setCriteriaJson] = useState<CriteriaJson | null>(null); // State for criteriaJson
-
+  const updateCriteriaJson = (data: CriteriaJson) => {
+    console.log("Updating Criteria JSON in context:", data); // Log the updated data
+    setCriteriaJson(data);
+  };
   return (
-    <DataContext.Provider value={{ sharedData, setSharedData, criteriaJson, setCriteriaJson }}>
+    <DataContext.Provider value={{ sharedData, setSharedData, criteriaJson, setCriteriaJson: updateCriteriaJson }}>
       {children}
     </DataContext.Provider>
   );

@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import { DataContext } from "./datacontext";
+import { Loader2 } from 'lucide-react'; 
 
 const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) => void; setLoading: (loading: boolean) => void; }) => {
   const [jobDescription, setJobDescription] = useState(""); // State for typed job description
@@ -6,8 +9,16 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
   const [jobName, setJobName] = useState("");
   const [isUploadMode, setIsUploadMode] = useState(false); // Toggle between typing and uploading
   const [uploadedFileName, setUploadedFileName] = useState<string | null>(null); // State for uploaded file name
-  const [uploadedResumes, setUploadedResumes] = useState<File[]>([]);
-  
+  const [uploadedResumes, setUploadedResumes] = useState<File | null>(null);
+  const [resumeFileName, setResumeFileName] = useState<string | null>(null); // Store the file name
+  const { setCriteriaJson } = useContext(DataContext); // Access setCriteriaJson from context
+  const [rankLoading, setRankLoading] = useState(false); // State for loading
+  const [submitCvClicked, setSubmitCvClicked] = useState(false); // State for submit button clicked
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleNavigateToDashboard = () => {
+    navigate("/dashboard"); // Navigate to the /dashboard route
+  };
   const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files && files.length > 0) {
@@ -59,7 +70,7 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
           console.log("Criteria JSON:", criteriaJson); // Log the parsed JSON data
   
           // Pass the parsed JSON data to the parent component
-          setCriteriaData(criteriaJson);
+          setCriteriaJson(criteriaJson);
         } else {
           console.error("Failed to fetch the parsed JSON file.");
         }
@@ -78,43 +89,52 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
       setLoading(false); // Reset loading state
     }
   };
-
-  const handleUploadResume = async (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files && files.length > 0) {
-      const file = files[0]; // Only process the first file
+      const file = files[0];
       const validTypes = ["application/pdf", "application/zip"];
-  
+
       if (!validTypes.includes(file.type)) {
         alert("Only PDF or ZIP files are allowed!");
         return;
       }
-  
-      console.log("Uploaded file:", file.name);
-  
-      // Send the file to the backend
-      const formData = new FormData();
-      formData.append("file", file); // Append the file with the key "resumeFile"
-  
-      try {
-        const response = await fetch("http://localhost:8080/submitCVs", {
-          method: "POST",
-          body: formData,
-        });
-  
-        if (response.ok) {
-          console.log("Resume uploaded successfully!");
-        } else {
-          console.error("Failed to upload resume. Status:", response.status);
-          const errorText = await response.text();
-          console.error("Error response:", errorText);
-        }
-      } catch (error) {
-        if (error instanceof Error) {
-          console.error("Error uploading resume:", error.message);
-        } else {
-          console.error("Error uploading resume:", error);
-        }
+
+      setUploadedResumes(file); // Store the selected file
+      setResumeFileName(file.name); // Store the file name
+      console.log("Selected file:", file.name);
+    }
+  };
+  const handleUploadResume = async () => {
+    if (!uploadedResumes) {
+      alert("Please select a file before submitting.");
+      return;
+    }
+
+    console.log("Uploading file:", uploadedResumes.name);
+    setSubmitCvClicked(true); // Set the submit button clicked state
+
+    const formData = new FormData();
+    formData.append("file", uploadedResumes); // Append the file with the key "resumeFile"
+
+    try {
+      const response = await fetch("http://localhost:8080/submitCVs", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        console.log("Resume uploaded successfully!");
+      } else {
+        console.error("Failed to upload resume. Status:", response.status);
+        const errorText = await response.text();
+        console.error("Error response:", errorText);
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error("Error uploading resume:", error.message);
+      } else {
+        console.error("Error uploading resume:", error);
       }
     }
   };
@@ -206,8 +226,37 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
               data-webkitdirectory=""
               multiple
               className="hidden"
-              onChange={handleUploadResume}
+              onChange={handleFileSelect}
             />
+            <p className={`mt-4 mx-auto text-sm ${resumeFileName ? "text-gray-600" : "text-transparent"  }`}>Uploaded File: {resumeFileName}</p>
+            {(!submitCvClicked)? <button className="mt-20 flex flex-row w-1/3 h-[40px] bg-blue-300 mx-auto items-center px-4 py-2 rounded-md shadow-xl hover:shadow-xl hover:bg-blue-500 transition duration-300"
+                onClick={() => {
+                  handleUploadResume;
+                  setSubmitCvClicked(true); // Set the submit button clicked state
+                }
+                }>
+                <span className="mx-auto w-full text-white">
+                    Submit Resumes
+                </span>
+            </button>
+
+            : <> {!rankLoading ? (
+                  <div className="mt-20 flex flex-row w-1/3 h-[40px] bg-blue-300 mx-auto items-center px-4 py-2 rounded-md shadow-xl hover:shadow-xl">
+                    <Loader2 className="mx-auto animate-spin w-1/5 h-full text-white" />
+                    <span className="mx-auto w-full text-white">
+                      Preparing Results...
+                    </span>
+                  </div>
+                ) : (
+                  <button  className="mt-20 flex flex-row w-1/3 h-[40px] bg-blue-300 mx-auto items-center px-4 py-2 rounded-md shadow-xl hover:shadow-xl hover:bg-blue-500 transition duration-300"
+                  onClick={handleNavigateToDashboard}>
+                  <span className="mx-auto w-full text-white">
+                    Candidates Rank
+                  </span>
+                  </button>
+                )}
+                </>
+                }
             </div>
           </div>
           {/* <div className="mx-4 h-2/5 mb-3 bg-white p-4">

@@ -1,13 +1,13 @@
-import { useParams } from 'react-router-dom';
-import Navbar from '../components/navbar';
-import PdfImage from '../assets/pdf.png';
-import Chatbox from '../components/chatbox';
-import { useState } from 'react';// only for testing
-// Adjust the path to your PDF file
+import { useParams } from "react-router-dom";
+import Navbar from "../components/navbar";
+import { useContext,useState } from "react"; // Import useContext
+import { DataContext } from "../components/datacontext"; // Import DataContext
+import ReactMarkdown from "react-markdown";
 
 const CandidateDetailPage = () => {
   const { rank } = useParams<{ rank: string }>(); // Get the rank from the URL
-
+// 	cvID := "20250410_013723_0065"
+// 	question := "List all questions that I asked you please."
   // Mock data (replace with API call or context if needed)
   const Candidates = [
     { name: "John Doe", score: 85, companies: "Meta, Amazon", experience: "4 years", rank:  1, resume: "/resumes/0001.pdf", },
@@ -39,20 +39,50 @@ const CandidateDetailPage = () => {
   const [messages, setMessages] = useState<{ sender: string; text: string }[]>([]); // Chat history
     const [input, setInput] = useState(""); // User input
   
-    const handleSendMessage = () => {
+    const handleSendMessage = async () => {
       if (input.trim() === "") return;
-  
+    
       // Add user message to chat
       setMessages((prev) => [...prev, { sender: "User", text: input }]);
-  
-      // Simulate bot response
-      setTimeout(() => {
+    
+      try {
+        // Prepare the request body
+        const requestBody = {
+          cv_id: "20250410_013723_0065", // Replace with the actual CV ID
+          question: input, // The user's input as the question
+        };
+    
+        // Send the POST request to the backend
+        const response = await fetch("http://localhost:8081/ai/chatbot/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(requestBody),
+        });
+    
+        if (response.ok) {
+          const data = await response.json();
+          console.log("Chatbot response:", data);
+    
+          // Add bot response to chat
+          setMessages((prev) => [
+            ...prev,
+            { sender: "Bot", text: data.answer || "No response from chatbot" }, // Use the "answer" field from the response
+          ]);
+        } else {
+          console.error("Failed to get chatbot response. Status:", response.status);
+          setMessages((prev) => [
+            ...prev,
+            { sender: "Bot", text: "Failed to get a response from the chatbot." },
+          ]);
+        }
+      } catch (error) {
+        console.error("Error communicating with chatbot:", error);
         setMessages((prev) => [
           ...prev,
-          { sender: "Bot", text: `You said: "${input}"` }, // Simple bot response
+          { sender: "Bot", text: "An error occurred while communicating with the chatbot." },
         ]);
-      }, 500);
-  
+      }
+    
       // Clear input
       setInput("");
     };
@@ -113,15 +143,17 @@ const CandidateDetailPage = () => {
               message.sender === "User" ? "text-right" : "text-left"
             }`}
           >
-            <span
-              className={`inline-block px-4 py-2 rounded-lg ${
-                message.sender === "User"
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-200 text-black"
-              }`}
-            >
-              {message.text}
-            </span>
+                {message.sender === "User" ? (
+                  <span
+                    className="inline-block px-4 py-2 rounded-lg bg-blue-500 text-white"
+                  >
+                    {message.text}
+                  </span>
+                ) : (
+                  <div className="inline-block px-4 py-2 rounded-lg bg-gray-200 text-black">
+                    <ReactMarkdown>{message.text}</ReactMarkdown> {/* Render Markdown */}
+                  </div>
+                )}
           </div>
         ))}
       </div>
