@@ -1,0 +1,41 @@
+{
+  "Authenticity": 7,
+  "Evaluation": [
+    {
+      "category": "Technical Accounting Proficiency",
+      "explanation": "The CV lacks any information related to accounting principles, financial reporting standards, or relevant regulations. There is no mention of GAAP knowledge, account reconciliation, or financial statement preparation. Therefore, it's impossible to assess the candidate's proficiency in technical accounting. This is a significant weakness.",
+      "score": "1"
+    },
+    {
+      "category": "Experience and Education",
+      "explanation": "The candidate is currently a Bachelor of Architecture student with graduation noted as '2020 – PRESENT'. The resume highlights several internships and extracurricular activities. However, none of the roles described appear to be directly related to accounting. The lack of relevant experience is a significant weakness for a staff accountant position. The education is not in accounting.",
+      "score": "2"
+    },
+    {
+      "category": "Software and Technical Skills",
+      "explanation": "The candidate lists software skills, including Adobe Photoshop, Illustrator, InDesign, Lightroom, V-Ray, Enscape, Rhinoceros - Grasshopper, Revit, Auto CAD. These are primarily design and visualization tools. Mentioning Microsoft Office, Word, PowerPoint and Excel is helpful, but the CV lacks proficiency with accounting software like QuickBooks or Xero. This is a weakness given the staff accountant requirements.",
+      "score": "3"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The CV provides limited information on the candidate's problem-solving and analytical skills. While the Digital Fabrication Lab Technician role mentions diagnosing equipment issues, this doesn't directly translate to financial data analysis or problem-solving in an accounting context. The CV does not contain examples demonstrating analytical thinking related to financial data.",
+      "score": "2"
+    },
+    {
+      "category": "Communication and Teamwork",
+      "explanation": "The candidate describes themselves as a compassionate, flexible, outgoing, and optimistic team player. The experience as Event Services Staff and Secretary of Vietnamese Students Association suggests some experience in organizing events, documenting details, and aiding supervisors, indicating teamwork and communication skills. However, the examples are not directly related to accounting environments. Therefore, the score reflects a moderate level of communication and teamwork skills demonstrated.",
+      "score": "6"
+    }
+  ],
+  "FinalScore": 0,
+  "PersonalInfo": {
+    "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
+    "Age": null,
+    "Email": "knguyen6@pratt.edu",
+    "FullName": "Khanh Nguyen",
+    "GitHub": null,
+    "LinkedIn": "www.linkedin.com/in/khanh-\nnguyen-516482224",
+    "PhoneNumber": "346.263.4012",
+    "Website": "https://issuu.com/knguyen172/\ndocs/portfolio_2023_khanh_\nnguyen-s"
+  }
+}
