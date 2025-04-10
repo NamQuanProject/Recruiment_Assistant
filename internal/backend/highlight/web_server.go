@@ -71,6 +71,7 @@ func (s *WebServer) Run() {
 		jobDetails := string(jobDetailsBytes)
 
 		pdfPath := req.PdfPath
+		
 		//pdfpath, jobtile, jobdetailspath, evaluationrefencepath
 		// Get the uploaded file
 

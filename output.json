@@ -2,29 +2,29 @@
   "list": [
     {
       "full_name": "NGUYEN-TU PHAM",
-      "worked_for": "N/A",
-      "experience_level": "N/A",
-      "authenticity": 0,
+      "worked_for": "",
+      "experience_level": "",
+      "authenticity": 8,
       "final_score": 72,
-      "path_to_cv": "N/A",
+      "path_to_cv": "storage/evaluation_20250411_012216/parse/cvs/20250409_214747_CV_highlighted-2.txt",
       "path_to_evaluation": "storage\\evaluation_20250411_012216\\evaluation\\20250409_214747_CV_highlighted-2.json"
     },
     {
       "full_name": "Kim Chau Le",
-      "worked_for": "N/A",
-      "experience_level": "N/A",
-      "authenticity": 0,
+      "worked_for": "",
+      "experience_level": "0",
+      "authenticity": 8,
       "final_score": 62.66666666666667,
-      "path_to_cv": "N/A",
+      "path_to_cv": "storage/evaluation_20250411_012216/parse/cvs/20250410_022450_LeKimChau.txt",
       "path_to_evaluation": "storage\\evaluation_20250411_012216\\evaluation\\20250410_022450_LeKimChau.json"
     },
     {
       "full_name": "Khanh Nguyen",
-      "worked_for": "N/A",
-      "experience_level": "N/A",
-      "authenticity": 0,
+      "worked_for": "Pratt School of Architecture",
+      "experience_level": "1.6",
+      "authenticity": 7,
       "final_score": 41.333333333333336,
-      "path_to_cv": "N/A",
+      "path_to_cv": "storage/evaluation_20250411_012216/parse/cvs/20250410_013723_0065.txt",
       "path_to_evaluation": "storage\\evaluation_20250411_012216\\evaluation\\20250410_013723_0065.json"
     }
   ]

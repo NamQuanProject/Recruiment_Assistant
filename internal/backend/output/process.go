@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
@@ -65,23 +66,38 @@ func outputHandler(c *gin.Context) {
 
 		var evaluation struct {
 			PersonalInfo struct {
-				FullName string `json:"FullName"`
+				FullName         string `json:"FullName"`
+				WorkFor         string `json:"WorkFor"`
+				ExperienceYears string `json:"Experience_Years"`
+				PathToCV        string `json:"PathToCV"`
 			} `json:"PersonalInfo"`
-			FinalScore float64 `json:"FinalScore"`
+			Authenticity interface{} `json:"Authenticity"`
+			FinalScore   float64    `json:"FinalScore"`
 		}
 
 		if err := json.Unmarshal(data, &evaluation); err != nil {
 			continue // Skip files that can't be parsed
 		}
 
+		// Convert Authenticity to float64
+		var authenticity float64
+		switch v := evaluation.Authenticity.(type) {
+		case string:
+			authenticity, _ = strconv.ParseFloat(v, 64)
+		case float64:
+			authenticity = v
+		case int:
+			authenticity = float64(v)
+		}
+
 		// Create candidate entry
 		candidate := Candidate{
 			FullName:         evaluation.PersonalInfo.FullName,
-			WorkedFor:        "N/A", // This would need to be extracted from the evaluation
-			ExperienceLevel:  "N/A", // This would need to be extracted from the evaluation
-			Authenticity:     0.0,   // This would need to be extracted from the evaluation
+			WorkedFor:        evaluation.PersonalInfo.WorkFor,
+			ExperienceLevel:  evaluation.PersonalInfo.ExperienceYears,
+			Authenticity:     authenticity,
 			FinalScore:       evaluation.FinalScore,
-			PathToCV:         "N/A", // This would need to be extracted from the evaluation
+			PathToCV:         evaluation.PersonalInfo.PathToCV,
 			PathToEvaluation: file,
 		}
 
@@ -105,8 +121,7 @@ func outputHandler(c *gin.Context) {
 		return
 	}
 	// Write to the current directory
-	currentDir := "internal/backend/output"
-	os.WriteFile(filepath.Join(currentDir, "output.json"), jsonData, 0644)
+	os.WriteFile("output.json", jsonData, 0644)
 
 	c.JSON(http.StatusOK, response)
 }

@@ -75,6 +75,8 @@ func GetHlCVHandler(c *gin.Context) {
 	pathtocv := itemData.PathToCV
 	pathtoeval := itemData.PathToEval
 
+	
+
 	// Return the paths as a response
 	c.JSON(http.StatusOK, gin.H{"pathToCV": pathtocv, "pathToEval": pathtoeval})
 }
