@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
-
 	"net/http"
 	"os"
 	"path/filepath"
