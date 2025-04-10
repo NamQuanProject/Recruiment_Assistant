@@ -4,6 +4,7 @@ package aiservices
 
 import (
 	"fmt"
+	"log"
 	"sync"
 )
 
@@ -16,6 +17,10 @@ var (
 func InitChatBot(evaluationID string) error {
 	mu.Lock()
 	defer mu.Unlock()
+	if currentChatbot.evaluationID == evaluationID {
+		log.Print("Current Chatbot for evaluationID has been initialized\n")
+		return nil
+	}
 
 	fmt.Println("Initializing chatbot for evaluation ID:", evaluationID)
 
