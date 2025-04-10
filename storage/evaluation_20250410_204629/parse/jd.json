@@ -1,0 +1,256 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Accounting Proficiency",
+      "EvaluationStrategy": "Assess the candidate's understanding of accounting principles, financial reporting standards, and relevant regulations through interview questions, resume review, and potentially a technical assessment. Focus on GAAP knowledge, account reconciliation, and financial statement preparation.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of basic accounting principles. Struggles with fundamental tasks.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Some understanding of accounting principles, but requires guidance on complex tasks.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Solid understanding of accounting principles and can perform most tasks independently.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Expert understanding of accounting principles and can handle complex tasks with minimal supervision. Demonstrates initiative and problem-solving skills.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Experience and Education",
+      "EvaluationStrategy": "Review the candidate's educational background, certifications (e.g., CPA), and relevant work experience. Verify the level of experience against the job requirements (3-5 years).  Consider the quality and relevance of their experience.",
+      "ScoringGuided": [
+        {
+          "Comment": "Lacks required education and/or experience. Minimal relevant work history.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Meets minimum education requirements but lacks sufficient relevant experience.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Meets both education and experience requirements. Demonstrates a solid work history.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Exceeds education and experience requirements. Possesses relevant certifications and a strong track record of success.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software and Technical Skills",
+      "EvaluationStrategy": "Assess the candidate's proficiency with accounting software (e.g., QuickBooks, Xero), Excel, and other relevant tools.  Use practical exercises or scenario-based questions to evaluate their ability to use these tools effectively.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited software skills. Unable to perform basic tasks.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic software skills. Requires significant training and support.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Proficient with relevant software. Can perform most tasks independently.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Expert software skills. Can troubleshoot issues and leverage software to improve efficiency.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills",
+      "EvaluationStrategy": "Evaluate the candidate's ability to analyze financial data, identify discrepancies, and develop solutions. Use scenario-based questions or case studies to assess their critical thinking and problem-solving skills.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze data and identify issues.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can analyze data with guidance but struggles to develop solutions.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Can analyze data, identify issues, and develop solutions independently.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Demonstrates strong analytical skills and a proactive approach to problem-solving. Identifies opportunities for improvement.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Teamwork",
+      "EvaluationStrategy": "Assess the candidate's ability to communicate effectively, both verbally and in writing. Evaluate their teamwork skills and ability to collaborate with others.  Use behavioral questions to assess their past teamwork experiences.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication skills. Struggles to work in a team.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate communication skills but may struggle in team settings.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Good communication skills and works well in a team.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Excellent communication skills and a strong team player. Actively contributes to team goals.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Knowledge of TWC Reporting",
+      "EvaluationStrategy": "Specifically assess familiarity with Texas Workforce Commission (TWC) monthly reports, worksheets, and cost allocations.  Ask about experience preparing and submitting these reports.",
+      "ScoringGuided": [
+        {
+          "Comment": "No experience with TWC reporting.",
+          "Range": "1"
+        },
+        {
+          "Comment": "Limited knowledge of TWC reporting requirements.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Familiar with TWC reporting concepts.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Some experience preparing TWC reports.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Proficient in preparing and submitting TWC reports.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Fixed Asset Accounting",
+      "EvaluationStrategy": "Evaluate experience maintaining fixed asset records, performing reconciliations, and preparing audit schedules related to fixed assets. Focus on understanding depreciation methods and proper accounting treatment.",
+      "ScoringGuided": [
+        {
+          "Comment": "No experience with fixed asset accounting.",
+          "Range": "1"
+        },
+        {
+          "Comment": "Limited knowledge of fixed asset accounting concepts.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Familiar with basic fixed asset accounting tasks.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Some experience maintaining fixed asset records and performing reconciliations.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Proficient in all aspects of fixed asset accounting.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Grant Accounting Experience",
+      "EvaluationStrategy": "Assess experience with federal grant accounting, including understanding of grant regulations, expenditure tracking, and reporting requirements.  Specifically inquire about experience with Department of Labor grants.",
+      "ScoringGuided": [
+        {
+          "Comment": "No experience with grant accounting.",
+          "Range": "1"
+        },
+        {
+          "Comment": "Limited knowledge of grant accounting principles.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Familiar with basic grant accounting concepts.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Some experience with grant accounting, including expenditure tracking.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Proficient in all aspects of grant accounting, including reporting and compliance.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Budgeting Experience",
+      "EvaluationStrategy": "Evaluate experience in preparing budgets for submission to funding agencies (TWC and Department of Labor). Assess knowledge of budget planning, forecasting, and monitoring.",
+      "ScoringGuided": [
+        {
+          "Comment": "No experience with budgeting.",
+          "Range": "1"
+        },
+        {
+          "Comment": "Limited knowledge of budgeting principles.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Familiar with basic budgeting concepts.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Some experience with budget preparation and monitoring.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Proficient in all aspects of budgeting, including planning, forecasting, and monitoring.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Contractor and Vendor Management",
+      "EvaluationStrategy": "Assess experience reviewing contractor budgets, processing expenditures and reimbursements, and monitoring cost summaries. Evaluate knowledge of accounts payable processes and vendor invoice processing.",
+      "ScoringGuided": [
+        {
+          "Comment": "No experience with contractor or vendor management.",
+          "Range": "1"
+        },
+        {
+          "Comment": "Limited knowledge of contractor/vendor management concepts.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Familiar with basic contractor/vendor management tasks.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Some experience processing invoices and reviewing contractor budgets.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Proficient in all aspects of contractor and vendor management.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

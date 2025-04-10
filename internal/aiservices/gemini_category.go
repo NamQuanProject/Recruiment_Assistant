@@ -68,12 +68,8 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 	Official JD:
 	"""` + main_jd + `"""
 	
-	Additional JD:
+	Additional JD to know more about the position
 	"""` + accountData + `"""
-
-
-
-	
 
 
 
