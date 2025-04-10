@@ -3,6 +3,7 @@ package aiservices
 import (
 	"context"
 	"fmt"
+	"time"
 
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
@@ -70,10 +71,14 @@ func GetAIAgent(id string, config Config) (*AIAgent, error) {
 	}, nil
 }
 func toString(v interface{}) string {
-	if str, ok := v.(string); ok {
-		return str
+	switch val := v.(type) {
+	case string:
+		return val
+	case time.Time:
+		return val.Format("2006-01-02 15:04:05")
+	default:
+		return ""
 	}
-	return ""
 }
 func HandleHistoryGet(id string) []History {
 	historyData, err := ReadJsonStructure("./internal/aiservices/data/history.json")

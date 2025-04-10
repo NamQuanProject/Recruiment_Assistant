@@ -8,29 +8,29 @@ import (
 )
 
 func main() {
-	evalID := "20250410_144613"
+	evalID := "20250410_165023"
+	cvID := "20250410_013723_0065"
+	question := "List all questions that I asked you please."
 
-	config := aiservices.Config{
-		APIKey:      "AIzaSyB22ThtcCvZuXual9uaT_6v4Bo5R6oBdok", // Replace with env var in production!
-		ModelName:   "gemini-2.0-flash",
-		Temperature: 0.0,
-		Name:        "DefaultAgent",
+	// config := aiservices.Config{
+	// 	APIKey:      "AIzaSyB22ThtcCvZuXual9uaT_6v4Bo5R6oBdok", // Replace with env var in production!
+	// 	ModelName:   "gemini-2.0-flash",
+	// 	Temperature: 0.0,
+	// 	Name:        "DefaultAgent",
+	// }
+
+	aiservices.InitChatBot(evalID)
+
+	chatbot, err := aiservices.GetChatBotInstance()
+	if err != nil {
+		log.Fatalf("Get Chatbot failed: %v", err)
 	}
 
-	factory := &aiservices.AgentFactory{Config: config}
-	chatbot := aiservices.GetChatBot(evalID, factory)
-
-	resp, err := chatbot.Ask("1", "List all asked questions please.")
+	resp, err := chatbot.Ask(cvID, question)
 	if err != nil {
 		log.Fatalf("Ask failed: %v", err)
 	}
 
 	fmt.Printf("Chatbot response: %s\n", resp)
 
-	// Save conversation history to file
-	if err := chatbot.SaveHistoryToFile(); err != nil {
-		log.Printf("Failed to save history: %v", err)
-	} else {
-		fmt.Println("History saved successfully.")
-	}
 }

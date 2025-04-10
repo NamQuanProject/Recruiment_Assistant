@@ -1,0 +1,216 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Mastery of required technologies, including C#, .NET, SQL, SSRS, and web technologies. Also encompasses experience with software development lifecycle phases, system configuration, and troubleshooting.",
+      "EvaluationStrategy": "Assess through technical interviews, code samples (if available), and review of project experience, focusing on depth of knowledge and practical application of skills. Verify experience with specific technologies mentioned in the job description.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding and practical experience with core technologies. Struggles with basic troubleshooting and system configuration tasks.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Moderate understanding and practical experience. Can perform basic development tasks and troubleshoot common issues with guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong understanding and practical experience. Can independently develop and troubleshoot complex issues. Demonstrates proficiency in multiple technologies.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert level understanding and practical experience. Demonstrates mastery of all required technologies and can lead development efforts and mentor others. Deep understanding of system architecture and optimization.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Ability to identify, analyze, and resolve technical issues, propose effective solutions, and create system requirements and test plans.",
+      "EvaluationStrategy": "Present candidates with hypothetical technical scenarios and assess their problem-solving approach, analytical reasoning, and ability to develop effective solutions. Evaluate their ability to create comprehensive test plans and system requirements based on business needs.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to identify and analyze technical issues. Requires significant guidance to develop basic solutions. Unable to create comprehensive test plans or system requirements.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can identify and analyze common technical issues with some guidance. Develops basic solutions with assistance. Creates rudimentary test plans and system requirements.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Independently identifies, analyzes, and resolves complex technical issues. Develops effective and innovative solutions. Creates comprehensive test plans and system requirements aligned with business needs.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving and analytical skills. Can proactively identify and resolve potential issues. Develops highly effective and innovative solutions. Creates comprehensive and optimized test plans and system requirements, anticipating future needs.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration: Ability to effectively communicate technical information to both technical and non-technical audiences, work collaboratively within a team, and interface with stakeholders to understand their needs.",
+      "EvaluationStrategy": "Assess through behavioral interview questions focusing on past experiences collaborating with teams and communicating technical information. Observe communication style and clarity during the interview process. Review references to gauge teamwork and communication skills.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to communicate technical information clearly. Difficulty working in a team environment. Ineffective at understanding and addressing stakeholder needs.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Communicates technical information adequately. Works reasonably well in a team. Understands and addresses stakeholder needs with some prompting.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Communicates technical information clearly and effectively to both technical and non-technical audiences. Collaborates effectively within a team and proactively contributes to discussions. Understands and effectively addresses stakeholder needs.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional communication and collaboration skills. Effectively communicates complex technical information to diverse audiences. Leads and inspires teams to achieve common goals. Proactively engages with stakeholders to understand and anticipate their needs.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Adaptability and Learning Agility: Demonstrated ability to quickly learn new technologies, adapt to changing priorities, and thrive in a fast-paced environment. Also includes taking initiative and responsibility.",
+      "EvaluationStrategy": "Ask behavioral interview questions about experiences learning new technologies and adapting to changing priorities. Assess the candidate's enthusiasm for learning and their ability to handle pressure. Check for evidence of initiative and responsibility in past projects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Resistant to learning new technologies and adapting to change. Struggles to handle pressure and meet deadlines. Lacks initiative and avoids responsibility.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Accepts learning new technologies and adapting to change with some reluctance. Handles pressure and meets deadlines with some difficulty. Demonstrates some initiative and takes responsibility when required.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Enthusiastically learns new technologies and adapts quickly to changing priorities. Thrives in a fast-paced environment and consistently meets deadlines. Proactively takes initiative and responsibility for projects.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional adaptability and learning agility. Rapidly masters new technologies and thrives in dynamic environments. Consistently exceeds expectations and demonstrates exceptional initiative and responsibility. A proactive problem-solver who anticipates challenges and develops solutions.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Experience in Public Safety/Health Software: Prior experience in developing and supporting software solutions for public safety and public health sectors.",
+      "EvaluationStrategy": "Verify previous roles and project experience in public safety/health through resume review and references. Inquire about specific projects and contributions made in these domains. Assess understanding of relevant industry regulations and compliance requirements (e.g., HIPAA).",
+      "ScoringGuided": [
+        {
+          "Comment": "No experience in public safety/health software development or support. Limited understanding of the domain.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Some limited experience in public safety/health software, potentially through academic projects or minor roles. Basic understanding of the domain.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Significant experience in developing or supporting software solutions in the public safety/health sectors. Good understanding of the domain and relevant regulations.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Extensive experience and deep expertise in public safety/health software development and support. Proven track record of success in delivering impactful solutions in the domain. Expert knowledge of relevant regulations and compliance requirements.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality and Testing: Demonstrates understanding of quality assurance processes, ability to spot bugs, and adherence to coding best practices.",
+      "EvaluationStrategy": "Review code samples (if available) for clarity, efficiency, and adherence to coding standards. Ask about testing methodologies (e.g., TDD) and debugging tools. Present code snippets with potential bugs and assess ability to identify and fix them.",
+      "ScoringGuided": [
+        {
+          "Comment": "Code is poorly written, difficult to understand, and prone to errors. Limited knowledge of testing methodologies and debugging tools.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Code is functional but may lack clarity and efficiency. Basic knowledge of testing and debugging.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Code is well-written, easy to understand, and adheres to coding standards. Strong knowledge of testing methodologies and debugging tools.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Application Attributes: Prioritizes reliability, stability, performance, and integration when developing applications.",
+      "EvaluationStrategy": "Ask about the candidate's approach to ensuring these attributes in their projects. Inquire about specific testing strategies and tools used to measure and improve them. Assess their understanding of the impact of these attributes on user experience.",
+      "ScoringGuided": [
+        {
+          "Comment": "Little consideration for application attributes beyond basic functionality. Limited knowledge of testing strategies and tools.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Awareness of application attributes but may not prioritize them effectively. Basic knowledge of testing strategies and tools.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong focus on application attributes and actively strives to improve them. Proficient in using various testing strategies and tools.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Workflow Organization: Maintains an organized coding workflow, using effective methods for code organization and refactoring.",
+      "EvaluationStrategy": "Inquire about their preferred methods for organizing code, such as folder structures, naming conventions, and code refactoring techniques. Assess their ability to explain and justify their workflow choices.",
+      "ScoringGuided": [
+        {
+          "Comment": "Disorganized coding workflow with little attention to code structure or naming conventions.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of code organization but may not consistently apply effective methods.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Well-organized coding workflow with clear structure, consistent naming conventions, and effective code refactoring techniques.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Teamwork and Interpersonal Skills: Demonstrates ability to collaborate effectively with coworkers, communicate clearly, and resolve conflicts constructively.",
+      "EvaluationStrategy": "Ask behavioral interview questions about experiences working in teams, dealing with difficult situations, and resolving conflicts. Assess their communication style and ability to listen and understand different perspectives. Check references to gauge teamwork skills.",
+      "ScoringGuided": [
+        {
+          "Comment": "Difficulty working in teams, communicating effectively, and resolving conflicts.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Adequate teamwork and communication skills but may struggle in challenging situations.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Excellent teamwork and communication skills. Collaborates effectively, communicates clearly, and resolves conflicts constructively.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Professional Development: Actively pursues professional development through training, education, and staying up-to-date with industry trends.",
+      "EvaluationStrategy": "Inquire about the candidate's professional development activities, such as attending conferences, taking online courses, and reading industry publications. Assess their understanding of current trends and technologies.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited engagement in professional development activities and limited knowledge of current industry trends.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Some engagement in professional development activities and basic knowledge of industry trends.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Actively pursues professional development and stays up-to-date with current industry trends and technologies.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

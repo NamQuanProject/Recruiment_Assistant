@@ -1,0 +1,236 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Skills and Experience: This category assesses the candidate's proficiency in the required technologies, tools, and methodologies necessary for the Software Engineer I role. This includes programming languages (C#, .NET, SQL, Java, Python, C++), database technologies (Microsoft SQL Server, T-SQL, ODBC), web technologies (JavaScript, HTML, CSS), and related development frameworks.",
+      "EvaluationStrategy": "Review the candidate's resume and assess their experience with the technologies listed in the job description. Ask technical questions during the interview to gauge their understanding and practical application of these skills. Consider coding challenges or technical assessments to evaluate their hands-on abilities. Verify claims through reference checks and portfolio review.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert level proficiency in all required technologies with extensive practical experience and a proven track record of successful projects.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong proficiency in most required technologies with solid practical experience and a good understanding of the underlying concepts.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Competent in some required technologies with some practical experience and a basic understanding of the underlying concepts.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Limited experience with required technologies and a basic understanding of the concepts.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Little to no experience with required technologies.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: This category evaluates the candidate's ability to analyze complex problems, identify root causes, and develop effective solutions. It includes assessing their troubleshooting skills, attention to detail, and ability to think critically and creatively.",
+      "EvaluationStrategy": "Present the candidate with hypothetical scenarios or real-world problems encountered in software development. Assess their approach to problem-solving, their ability to break down complex issues, and their creativity in generating solutions. Review past projects for examples of successful problem-solving.",
+      "ScoringGuided": [
+        {
+          "Comment": "Exceptional problem-solving skills with a proven ability to analyze complex issues and develop innovative solutions independently.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong problem-solving skills with the ability to analyze issues and develop effective solutions with minimal guidance.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Adequate problem-solving skills with the ability to identify issues and develop solutions with guidance.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Basic problem-solving skills with the ability to identify simple issues but requires significant guidance to develop solutions.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Limited problem-solving skills and struggles to identify and address issues.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration Skills: This assesses the candidate's ability to communicate effectively with both technical and non-technical stakeholders, work collaboratively in a team environment, and contribute to a positive and productive work culture. Includes interpersonal skills, active listening, and clear articulation of ideas.",
+      "EvaluationStrategy": "Assess the candidate's communication skills throughout the interview process. Observe their ability to articulate their ideas clearly and concisely, listen actively, and respond thoughtfully to questions. Present team-based scenarios to gauge their collaboration skills and ability to work effectively with others. Review references for feedback on their communication and teamwork abilities.",
+      "ScoringGuided": [
+        {
+          "Comment": "Exceptional communication and collaboration skills, able to effectively communicate complex ideas, build strong relationships, and thrive in a team environment.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong communication and collaboration skills, able to communicate ideas clearly, work effectively with others, and contribute to a positive team environment.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Adequate communication and collaboration skills, able to communicate ideas adequately and work with others with some guidance.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Basic communication and collaboration skills, struggles to communicate ideas clearly and requires significant guidance to work effectively with others.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Poor communication and collaboration skills, unable to communicate ideas effectively and struggles to work in a team environment.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software Development Lifecycle (SDLC) Knowledge: This category measures the candidate's familiarity with the entire software development lifecycle, including planning, analysis, design, development, implementation, testing, and maintenance. It encompasses understanding of methodologies like Agile and Waterfall, version control systems, and best practices for code quality and testing.",
+      "EvaluationStrategy": "Inquire about the candidate's experience with different SDLC methodologies and their understanding of the various phases. Ask about their familiarity with version control systems (e.g., Git) and their approach to code quality and testing. Present scenarios where they need to apply SDLC principles to a project and assess their response.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert knowledge of the SDLC with extensive experience in all phases and methodologies. Able to lead and mentor others on SDLC best practices.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong knowledge of the SDLC with experience in most phases and methodologies. Able to apply SDLC principles effectively in projects.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Adequate knowledge of the SDLC with experience in some phases and methodologies. Able to follow SDLC processes with guidance.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Basic knowledge of the SDLC with limited experience in any phases or methodologies. Requires significant guidance on SDLC processes.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Little to no knowledge of the SDLC.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Adaptability and Learning Agility: This evaluates the candidate's capacity to quickly learn new technologies, adapt to changing project requirements, and embrace a continuous learning mindset. It considers their willingness to stay updated with industry trends and their ability to acquire new skills efficiently.",
+      "EvaluationStrategy": "Assess the candidate's track record of learning new technologies and adapting to changing environments. Ask about instances where they had to quickly learn a new skill or technology to meet a project deadline. Inquire about their strategies for staying updated with industry trends and their willingness to embrace new challenges.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates exceptional adaptability and learning agility, quickly mastering new technologies and thriving in dynamic environments. Proactively seeks out new knowledge and skills.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Shows strong adaptability and learning agility, readily learning new technologies and adapting to changing requirements. Actively pursues professional development.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Possesses adequate adaptability and learning agility, able to learn new technologies and adapt to changes with some effort. Willing to learn new skills as needed.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Shows basic adaptability and learning agility, struggles to learn new technologies and adapt to changes without significant guidance. Reluctant to embrace new challenges.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Lacks adaptability and learning agility, resistant to learning new technologies and unwilling to adapt to changes.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality and Testing: Assesses the candidate's commitment to writing clean, maintainable, and well-documented code. Includes experience with unit testing, integration testing, and other testing methodologies to ensure software quality and reliability.",
+      "EvaluationStrategy": "Review code samples provided by the candidate to assess their coding style, readability, and documentation. Ask about their experience with different testing methodologies and their approach to ensuring code quality. Present them with code snippets containing potential bugs and assess their ability to identify and fix them.",
+      "ScoringGuided": [
+        {
+          "Comment": "Writes clean, well-documented, and testable code. Strong understanding of testing methodologies and a commitment to code quality.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Writes mostly clean and documented code. Familiar with basic testing methodologies and understands the importance of code quality.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Writes code that is difficult to read and poorly documented. Limited understanding of testing methodologies and code quality principles.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Database Management Skills: Evaluates the candidate's proficiency in designing, implementing, and managing databases. Includes experience with SQL, database optimization, and data modeling.",
+      "EvaluationStrategy": "Ask the candidate about their experience with different database systems (e.g., Microsoft SQL Server) and their ability to write efficient SQL queries. Present them with database design scenarios and assess their ability to create appropriate data models. Inquire about their knowledge of database optimization techniques.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert in database design, implementation, and management. Strong understanding of SQL, database optimization, and data modeling.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Proficient in database design, implementation, and management. Familiar with SQL and database optimization techniques.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Basic understanding of database concepts but limited practical experience.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Web Development Skills: Measures the candidate's proficiency in web technologies such as HTML, CSS, JavaScript, and related frameworks. Includes experience with front-end and back-end development, as well as web services and APIs.",
+      "EvaluationStrategy": "Review the candidate's portfolio for examples of web development projects. Ask about their experience with different web technologies and frameworks. Present them with web development scenarios and assess their ability to develop solutions using appropriate technologies.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert in web development with a strong understanding of HTML, CSS, JavaScript, and related frameworks. Proficient in both front-end and back-end development.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Proficient in web development with a good understanding of HTML, CSS, JavaScript, and related frameworks. Familiar with both front-end and back-end development.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Basic understanding of web development concepts but limited practical experience.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "System Configuration and Support: Evaluates the candidate's experience in maintaining and modifying system configurations of production, staged, and test applications. This includes troubleshooting, performance tuning, and ensuring system stability and security.",
+      "EvaluationStrategy": "Ask the candidate about their experience in system administration and configuration management. Present them with system troubleshooting scenarios and assess their ability to diagnose and resolve issues. Inquire about their knowledge of security best practices and their approach to ensuring system security.",
+      "ScoringGuided": [
+        {
+          "Comment": "Extensive experience in system configuration and support with a strong understanding of troubleshooting, performance tuning, and security best practices.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Solid experience in system configuration and support with a good understanding of troubleshooting, performance tuning, and security best practices.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Basic understanding of system configuration and support concepts but limited practical experience.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Experience with Public Safety/Health Software: Measures the candidate's prior experience with software solutions tailored for the public safety or public health sectors. It reflects their understanding of the unique challenges and requirements of these industries.",
+      "EvaluationStrategy": "Review the candidate's work history for relevant experience in public safety or public health software development. Ask targeted questions about their understanding of the specific needs and regulations of these sectors. Assess their ability to apply their technical skills to solve real-world problems in these domains.",
+      "ScoringGuided": [
+        {
+          "Comment": "Extensive experience with public safety/health software, demonstrating a deep understanding of the industry's challenges and regulations.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Some experience with public safety/health software, showcasing familiarity with the industry's core concepts.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Limited or no direct experience with public safety/health software.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}
