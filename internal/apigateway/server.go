@@ -6,6 +6,7 @@ import (
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/user"
+	"github.com/gin-contrib/cors" //chau added this
 	"github.com/gin-gonic/gin"
 )
 
@@ -17,7 +18,14 @@ func Init() {
 
 func RunServer() {
 	r := gin.Default()
-
+	r.Use(cors.New(cors.Config{
+		AllowOrigins:     []string{"http://localhost:5173"}, // Allow requests from your frontend
+		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
+		ExposeHeaders:    []string{"Content-Length"},
+		AllowCredentials: true,
+}))  // Chau added this
+	r.Static("/storage", "./storage")
 	// Load HTML templates
 	r.LoadHTMLGlob("./templates/*")
 	r.LoadHTMLGlob("./templates/*")
