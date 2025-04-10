@@ -50,7 +50,8 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 	3. A strict JSON format defining what your output must look like.
 	
 	Your task is to:
-	- Extract key evaluation **categories** and **subcategories**
+	- Providing all the evaluation **main categories** and **subcategories**.
+	- Notes that the main categories is very cruicial to the company so focus more on the main categories and provided full quiteria is needed for the company.
 	Each category must include:
 	- For each, include:
 	• A **Description**
@@ -72,47 +73,7 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 
 
 
-	Here is an example output:
-	{
-	"MainCategory": [
-		{
-			"Description": "Overall Layout and Structure",
-			"EvaluationStrategy": "Assess the visual organization, consistency, and user flow of the design.",
-			"ScoringGuided": [
-				{ "Range": "1-3", "Comment": "Unstructured or poorly designed" },
-				{ "Range": "3-5", "Comment": "Some structure but inconsistent" },
-				{ "Range": "5-8", "Comment": "Good layout, minor flaws" },
-				{ "Range": "8-10", "Comment": "Excellent and polished design" }
-			],
-			"ScoringScale": 10
-
-		}
-	],
-	"SubCategory": [
-			{
-				"Description": "Typography usage",
-				"EvaluationStrategy": "Focus on font consistency, readability, and hierarchy",
-				"CrucialPoints": [
-					{ "Range": "1-2", "Comment": "Unreadable or inconsistent fonts" },
-					{ "Range": "2-3", "Comment": "Basic readability but lacks hierarchy" },
-					{ "Range": "3-4", "Comment": "Good readability and some hierarchy" },
-					{ "Range": "4-5", "Comment": "Strong typographic hierarchy and style" }
-				],
-				"ScoringScale": 5
-				},
-				{
-				"Description": "Color Usage",
-				"EvaluationStrategy": "Evaluate color harmony, contrast, and accessibility",
-				"ScoringGuided": [
-					{ "Range": "1-2", "Comment": "Clashing or inaccessible color choices" },
-					{ "Range": "2-3", "Comment": "Some consistency but lacks contrast or clarity" },
-					{ "Range": "3-4", "Comment": "Good use of color with some minor issues" },
-					{ "Range": "4-5", "Comment": "Excellent color usage and accessibility" }
-				],
-				"ScoringScale": 5
-			}
-		]
-	}
+	
 
 
 

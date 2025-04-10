@@ -32,7 +32,8 @@ func GeminiEvaluateScoring(jobType string, mainCategory string, CV string) (map[
 	🎯 Your task:
 	Evaluate the following CV **fairly and objectively**, using only information in the document.
 
-	- Provide scores for each main category (1–10) and subcategory (1–5)
+	- You must provide scores for each main category (1–10) and subcategory (1–5)
+	- You must scoring with full of the category provided.
 	- Give a **comprehensive explanation** per category — highlighting strong areas, weak areas, missing elements, and alignment with the job.
 	- Avoid any assumptions based on gender, name, race, religion, appearance, or background. Be absolutely unbiased.
 	- Also, if the information provided in the CV has proof for it, then evaluate an authenticity score for the whole CV — this is the reliability point.

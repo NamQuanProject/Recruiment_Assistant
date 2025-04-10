@@ -8,9 +8,7 @@ import (
 	"strings"
 )
 
-// ParseAreasFromGeminiResponse parses the response from Gemini to extract areas
 func ParseAreasFromGeminiResponse(response string) ([]Area, error) {
-	// First, try to extract JSON from the response
 	jsonRegex := regexp.MustCompile(`\{[\s\S]*\}`)
 	jsonMatch := jsonRegex.FindString(response)
 
@@ -18,22 +16,18 @@ func ParseAreasFromGeminiResponse(response string) ([]Area, error) {
 		return nil, fmt.Errorf("no JSON found in response")
 	}
 
-	// Try to parse the JSON
 	var result struct {
 		Areas []Area `json:"areas"`
 	}
 
 	err := json.Unmarshal([]byte(jsonMatch), &result)
 	if err == nil && len(result.Areas) > 0 {
-		// Validate the areas
 		validAreas := []Area{}
 		for _, area := range result.Areas {
-			// Skip areas with empty text
 			if strings.TrimSpace(area.Text) == "" {
 				continue
 			}
 
-			// Skip areas with invalid coordinates
 			if area.X < 0 || area.Y < 0 || area.Width <= 0 || area.Height <= 0 {
 				continue
 			}
@@ -46,14 +40,10 @@ func ParseAreasFromGeminiResponse(response string) ([]Area, error) {
 		}
 	}
 
-	// If JSON parsing failed or no valid areas found, try to extract areas using regex
 	log.Println("Failed to parse JSON or no valid areas found, trying regex extraction")
 
-	// This is a fallback method that tries to extract areas from the text
-	// It's less reliable but can work if the AI doesn't return proper JSON
 	areas := []Area{}
 
-	// Look for patterns like "Text: ... Page: ... X: ... Y: ... Width: ... Height: ... Description: ... Type: ..."
 	textRegex := regexp.MustCompile(`Text:\s*([^\n]+)\s*Page:\s*(\d+)\s*X:\s*([\d.]+)\s*Y:\s*([\d.]+)\s*Width:\s*([\d.]+)\s*Height:\s*([\d.]+)\s*Description:\s*([^\n]+)\s*Type:\s*([^\n]+)`)
 	matches := textRegex.FindAllStringSubmatch(response, -1)
 
@@ -70,19 +60,15 @@ func ParseAreasFromGeminiResponse(response string) ([]Area, error) {
 				Type:        strings.TrimSpace(match[8]),
 			}
 
-			// Skip areas with empty text
 			if strings.TrimSpace(area.Text) == "" {
 				continue
 			}
 
-			// Skip areas with invalid coordinates
 			if area.X < 0 || area.Y < 0 || area.Width <= 0 || area.Height <= 0 {
 				continue
 			}
 
-			// Set default type based on the description content
 			if area.Type == "" {
-				// Check if the description contains keywords indicating strength
 				lowerDesc := strings.ToLower(area.Description)
 				if strings.Contains(lowerDesc, "strong") ||
 					strings.Contains(lowerDesc, "excellent") ||
