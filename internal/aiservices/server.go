@@ -157,6 +157,8 @@ func RunServer() {
 		type JDRequest struct {
 			JobName            string `json:"job_name"`
 			CompanyDescription string `json:"company_jd"`
+			EvaluationID       string `json:"evaluation_id"`
+			CVID               string `json:"cv_id"`
 		}
 
 		var request JDRequest

@@ -22,6 +22,8 @@ type JDRequest struct {
 	JobName        string `json:"job_name"`
 	JDMainQuiteria string `json:"jd_main_quiteria"`
 	CVRawText      string `json:"cv_raw_text"`
+	EvaluationID   string `json:"evaluation_id"`
+	CVID           string `json:"cv_id"`
 }
 
 func evaluateJobHandler(c *gin.Context) {
@@ -97,6 +99,8 @@ func evaluateJobHandler(c *gin.Context) {
 			JobName:        jobName,
 			JDMainQuiteria: string(jdMainBytes),
 			CVRawText:      string(cvTextBytes),
+			EvaluationID:   strings.TrimPrefix(basePath, "storage/"),
+			CVID:           strings.TrimSuffix(f.Name(), ".txt"),
 		}
 
 		payloadBytes, err := json.Marshal(payload)

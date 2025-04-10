@@ -16,12 +16,12 @@ func GetHlCVHandler(c *gin.Context) {
 	//Get the integer index from the query parameter
 	indexStr := c.Query("index")
 	if indexStr == "" {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Missing index"})
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Missing intdex"})
 		return
 	}
 	index, err := strconv.Atoi(indexStr)
 	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid index"})
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid intdex"})
 		return
 	}
 
@@ -33,8 +33,28 @@ func GetHlCVHandler(c *gin.Context) {
 		return
 	}
 	basePath := strings.TrimSpace(string(currentPathBytes))
+	// read the file filename as a string form basepath/parse/jobname.txt
+	// Construct the path to the jobname.txt file
+	jobNamePath := filepath.Join(basePath, "parse", "jobname.txt")
+
+	// Check if the jobname.txt file exists
+	if _, err := os.Stat(jobNamePath); os.IsNotExist(err) {
+		c.JSON(http.StatusNotFound, gin.H{"error": "jobname.txt not found"})
+		return
+	}
+
+	// Read the jobname.txt file
+	jobNameBytes, err := os.ReadFile(jobNamePath)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot read jobname.txt"})
+		return
+	}
+
+	// Convert the file content to a string
+	jobName := strings.TrimSpace(string(jobNameBytes))
+
 	// opne basePath/finaloutput.json
-	finalOutputPath := filepath.Join(basePath, "finaloutput.json")
+	finalOutputPath := filepath.Join("internal", "backend", "output", "output.json")
 	if _, err := os.Stat(finalOutputPath); os.IsNotExist(err) {
 		c.JSON(http.StatusNotFound, gin.H{"error": "finaloutput.json not found"})
 		return
@@ -75,8 +95,6 @@ func GetHlCVHandler(c *gin.Context) {
 	pathtocv := itemData.PathToCV
 	pathtoeval := itemData.PathToEval
 
-	
-
 	// Return the paths as a response
-	c.JSON(http.StatusOK, gin.H{"pathToCV": pathtocv, "pathToEval": pathtoeval})
+	c.JSON(http.StatusOK, gin.H{"highlighted_pdf_path": responseBody["highlighted_pdf_path"]})
 }
