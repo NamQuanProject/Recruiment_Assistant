@@ -7,7 +7,9 @@
       "Address": "string",
       "LinkedIn": "string",
       "GitHub": "string",
-      "Website": "string"
+      "Website": "string",
+      "WorkFor": "string",
+      "Experience_Years": "string"
     },
     "Evaluation": [
       {             

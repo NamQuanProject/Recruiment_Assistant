@@ -1,0 +1,36 @@
+{
+  "Authenticity": 3,
+  "Evaluation": [
+    {
+      "category": "Technical Skills \u0026 Experience",
+      "explanation": "The candidate demonstrates skills in visualization, modeling, and fabrication, with experience in relevant software such as Adobe Photoshop, Illustrator, InDesign, Rhinoceros, Revit, and AutoCAD. They also have experience with digital fabrication equipment and 3D printing/scanning. The candidate's experience as a Digital Fabrication Lab Technician and Representation Intern showcases practical application of these skills. However, the CV lacks specific details about programming languages (C#, .NET, SQL) typically required for software engineering roles. It seems more tailored to architectural technology rather than software engineering. Therefore, the alignment with typical software engineering technical stacks is weak. The experience is mainly in architecture, but they have some experience in other technical fields. They may need to highlight transferable skills.",
+      "score": "4"
+    },
+    {
+      "category": "Problem-Solving \u0026 Troubleshooting Skills",
+      "explanation": "The candidate's experience as a Digital Fabrication Lab Technician indicates some problem-solving abilities, particularly in diagnosing issues with equipment. Their experience in assisting students with software and photo-taking problems as a Photography Assistant also suggests problem-solving capabilities. However, the CV doesn't provide specific examples of complex software or system issues they've resolved, or detailed debugging experiences. The resume needs to showcase more examples of complex technical problem-solving.",
+      "score": "5"
+    },
+    {
+      "category": "Communication \u0026 Interpersonal Skills",
+      "explanation": "The candidate highlights being a 'teamplayer' and creating 'strong bonds' while working with others. Their experiences as Event Services Staff, Treasurer of NOMAS Pratt Chapter, and Secretary of the Vietnamese Students Association point to strong communication and organizational skills. The candidate also mentions aiding supervisors and participating in meetings with foreign clients, indicating some level of stakeholder management and translation skills. Overall, the CV demonstrates solid communication and interpersonal abilities. The candidate effectively communicates their experience, and interpersonal skills are clearly highlighted through various roles.",
+      "score": "7"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) \u0026 Agile Methodologies",
+      "explanation": "The CV does not provide any explicit information or evidence about the candidate's understanding or experience with SDLC or Agile methodologies. There's no mention of sprint planning, daily stand-ups, retrospectives, or specific SDLC models. This is a significant gap for a software engineering role. The candidate would need to supplement this information to demonstrate their suitability. This is a weak area in the candidate's application based on the provided CV.",
+      "score": "2"
+    }
+  ],
+  "FinalScore": 30,
+  "PersonalInfo": {
+    "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
+    "Age": null,
+    "Email": "knguyen6@pratt.edu",
+    "FullName": "Khanh Nguyen",
+    "GitHub": null,
+    "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
+    "PhoneNumber": "346.263.4012",
+    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s"
+  }
+}
