@@ -77,9 +77,11 @@ func ProcessCV(filePath string) error {
 	log.Printf("Processing CV: %s (Size: %d bytes)", absPath, fileInfo.Size())
 
 	parseRequest := struct {
-		InputPath string `json:"input_path"`
+		InputPath  string `json:"input_path" binding:"required"`
+		OutputPath string `json:"output_path" binding:"required"`
 	}{
-		InputPath: absPath,
+		InputPath:  absPath,
+		OutputPath: "storage",
 	}
 
 	reqBody, err := json.Marshal(parseRequest)

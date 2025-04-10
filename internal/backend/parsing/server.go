@@ -55,6 +55,7 @@ func RunServer() {
 		log.Printf("Detected PDF: %s", req.InputPath)
 		err := ExtractTextFromPDF(req.InputPath, req.OutputPath)
 		if err != nil {
+			log.Print(err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 			return
 		}
