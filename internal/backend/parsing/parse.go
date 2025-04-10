@@ -38,7 +38,7 @@ func ExtractTextFromPDF(pdfPath, outputDir string) error {
 	// outputPath := filepath.Join(textDir, baseName+".txt")
 
 	// Run the Python script
-	cmd := exec.Command("python3", pythonScriptPath, pdfPath, outputDir)
+	cmd := exec.Command("python", pythonScriptPath, pdfPath, outputDir)
 	output, err := cmd.CombinedOutput()
 	if err != nil {
 		return fmt.Errorf("error executing Python script: %v\nOutput: %s", err, string(output))
@@ -105,7 +105,7 @@ func ExtractTextFromZip(zipPath string) (string, error) {
 
 	// Run python script
 	pythonScriptPath := filepath.Join("internal", "backend", "parsing", "extract_pdf.py")
-	cmd := exec.Command("python3", pythonScriptPath, "-batch", "true", extractedPath, outputPath)
+	cmd := exec.Command("python", pythonScriptPath, "-batch", "true", extractedPath, outputPath)
 
 	out, err := cmd.CombinedOutput()
 	if err != nil {
