@@ -59,7 +59,9 @@ func SubmitCVsHandler(c *gin.Context) {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to evaluate CV: " + err.Error()})
 			return
 		}
-		c.JSON(http.StatusOK, gin.H{"message": "PDF uploaded and parsed successfully", "path": dst})
+		// c.JSON(http.StatusOK, gin.H{"message": "PDF uploaded and parsed successfully", "path": dst})
+		fmt.Print("message", "PDF uploaded and parsed successfully")
+		fmt.Print("path", dst)
 
 	} else if ext == ".zip" {
 		tempZipPath := filepath.Join(os.TempDir(), file.Filename)
@@ -114,11 +116,14 @@ func SubmitCVsHandler(c *gin.Context) {
 			return
 		}
 
-		c.JSON(http.StatusOK, gin.H{
-			"message":    "ZIP processed",
-			"pdf_count":  len(savedFiles),
-			"saved_pdfs": savedFiles,
-		})
+		// c.JSON(http.StatusOK, gin.H{
+		// 	"message":    "ZIP processed",
+		// 	"pdf_count":  len(savedFiles),
+		// 	"saved_pdfs": savedFiles,
+		// })
+		fmt.Print("message", "ZIP processed")
+		fmt.Print("pdf_count", len(savedFiles))
+		fmt.Print("saved_pdfs", savedFiles)
 
 	}
 
