@@ -1,61 +1,64 @@
 {
-  "Authenticity": "8",
+  "Authenticity": 8,
   "Evaluation": [
     {
       "category": "Technical Proficiency",
-      "explanation": "The candidate demonstrates proficiency in several visualization, modeling, and fabrication tools. They have experience diagnosing digital fabrication equipment and assisting with projects. While the tools listed are relevant to architecture, the CV lacks specific details about software engineering skills. There is no mention of programming languages or software development methodologies. The score reflects the candidate's proficiency in related tools but a lack of direct software engineering skills.",
-      "score": "4"
+      "explanation": "The candidate demonstrates proficiency in several visualization and modeling software packages, including Adobe Photoshop, Illustrator, InDesign, Lightroom, V-Ray, Enscape, Rhinoceros, Grasshopper, Revit, and AutoCAD. They also have experience with fabrication tools like laser cutting, ZUND digital cutting and routing, WAZER waterjet, 3D printing, and CNC milling. The candidate's experience as a Digital Fabrication Lab Technician and Representation Intern suggests a good understanding of the practical applications of these technologies. However, specific experience with software engineering technologies, languages, and tools is not mentioned, which is a weakness considering the software engineer role.",
+      "score": "5"
     },
     {
       "category": "Problem-Solving Skills",
-      "explanation": "The CV mentions diagnosing equipment and aiding with assessments, which suggests some problem-solving abilities. However, the descriptions are vague and do not provide concrete examples of complex problem-solving in a software engineering context. The candidate's experience as a Digital Fabrication Lab Technician includes diagnosing innovative equipment, which is a testament to their problem-solving capabilities. More specific examples of how the candidate approached and resolved technical challenges would strengthen this area.",
+      "explanation": "The CV provides some evidence of problem-solving skills, particularly in the role of Digital Fabrication Lab Technician, where the candidate \"Diagnosed a variety of innovative equipment...to facilitate projects.\" The experiences as event staff and photography assistant showcase organizational and assistance capabilities, while internship tasks imply problem-solving in design and representation. However, the CV lacks concrete examples of complex problem-solving scenarios or independently developed solutions. More detail on specific problem-solving situations would enhance the evaluation.",
       "score": "5"
     },
     {
       "category": "Collaboration and Communication",
-      "explanation": "The candidate's experience as an event staff member and representation intern suggests good communication and teamwork skills. They have experience organizing events, providing instructions, and assisting clients. The CV explicitly mentions being an 'outgoing and optimistic teamplayer.' However, there's no mention of collaborative software development environments (e.g., working with version control systems, code reviews).",
-      "score": "6"
+      "explanation": "The candidate's experience as Event Services Staff and in various student organizations highlights collaboration and communication skills. Specific mentions of 'greeting guests, ticketing, information, and audio-visual' during events, 'aiding supervisors,' and 'participated in meetings with foreign clients as an assisting translator' all suggest good communication skills. Also, 'Outgoing and optimistic teamplayer creates strong bonds when working with other people, committing to an exceptional teamwork' shows self-awareness. However, quantifiable results of collaboration are not provided and there's no specific example of conflict resolution.",
+      "score": "7"
     },
     {
       "category": "Adaptability and Learning Agility",
-      "explanation": "The CV highlights the candidate's willingness to learn new knowledge and criticisms. Their diverse experience in different roles shows adaptability. The candidate's international student status and bilingualism also demonstrate adaptability. However, the CV lacks specific examples of rapidly learning new technologies or adapting to changing software development priorities. The 'Always ready to engage and absorb new knowledge' highlights their intent to learn.",
+      "explanation": "The CV demonstrates adaptability through diverse experiences, from event services to digital fabrication and representation. The statement \"Always ready to engage and absorb new knowledge and criticisms\" explicitly states their openness to learning. The candidate's ability to assist with diverse equipment and software and function in different roles (technician, event staff, intern) indicates a degree of adaptability. However, there's no mention of adapting to rapidly changing software or technology-related environments. No professional development activities are listed.",
       "score": "6"
     },
     {
       "category": "Code Quality",
-      "explanation": "There is no information related to code quality as no coding experience is explicitly mentioned in the CV. The candidate's skills mainly revolve around architectural software, visualization, and fabrication, not software development or coding practices.",
+      "explanation": "The resume does not provide enough information to evaluate code quality. There are no projects or roles mentioned that involve coding. Therefore it is difficult to assess the candidate's ability to write clean, maintainable and well-documented code.",
       "score": "1"
     },
     {
       "category": "Testing and Debugging",
-      "explanation": "The CV does not mention any experience with software testing or debugging. Their experience is primarily in architecture-related tasks and digital fabrication equipment.",
+      "explanation": "The resume does not provide enough information to evaluate testing and debugging skills. There are no projects or roles mentioned that involve software development or quality assurance. Thus, it is hard to assess their ability to write effective unit tests, debug code or identify and resolve software defects.",
       "score": "1"
     },
     {
       "category": "System Design",
-      "explanation": "The candidate's experience seems focused on architecture, visualization, and fabrication, and lacks any mention of system design principles related to software engineering.",
+      "explanation": "The resume lacks evidence to evaluate system design skills. The candidate's experience is primarily in architecture and design visualization, which doesn't directly translate to software system design. There is no information to determine if they can design scalable, reliable, and maintainable software systems.",
       "score": "1"
     },
     {
       "category": "Knowledge of Relevant Technologies",
-      "explanation": "The CV lists tools like Adobe Photoshop, Illustrator, Rhinoceros, Revit, and AutoCAD, which are relevant to architecture but not directly applicable to most software engineering roles. There's no mention of languages like C#, .NET, SQL, or JavaScript.",
+      "explanation": "While the candidate possesses skills in visualization and modeling software, they lack demonstrable experience with core software engineering technologies like C#, .NET, SQL, or JavaScript, which are typically relevant for a software engineer role. The resume does not highlight experience with relevant technologies.",
       "score": "1"
     },
     {
       "category": "Agile Methodologies",
-      "explanation": "The CV lacks any mention of experience or knowledge related to Agile methodologies. The candidate's experience appears project-based in the architecture domain but doesn't provide any indication of familiarity with Agile software development practices.",
+      "explanation": "The resume does not mention any experience or knowledge of Agile methodologies, Scrum, or Kanban. There is no indication that the candidate has worked in an Agile environment.",
       "score": "1"
     }
   ],
-  "FinalScore": 40,
+  "FinalScore": 43.07692307692308,
   "PersonalInfo": {
     "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
     "Age": null,
     "Email": "knguyen6@pratt.edu",
+    "Experience_Years": "1",
     "FullName": "Khanh Nguyen",
     "GitHub": null,
-    "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
+    "LinkedIn": "www.linkedin.com/in/khanh-\nnguyen-516482224",
     "PhoneNumber": "346.263.4012",
-    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s"
+    "Website": "https://issuu.com/knguyen172/\ndocs/portfolio_2023_khanh_\nnguyen-s",
+    "WorkFor": null,
+    "path_to_cv": "storage/evaluation_20250411_014111/parse/cvs/20250410_013723_0065.txt"
   }
 }
