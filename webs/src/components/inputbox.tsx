@@ -122,7 +122,7 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
         method: "POST",
         body: formData,
       });
-
+      console.log("Response:", response); // Log the response object
       if (response.ok) {
         console.log("Resume uploaded successfully!");
       } else {
@@ -230,10 +230,8 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
             />
             <p className={`mt-4 mx-auto text-sm ${resumeFileName ? "text-gray-600" : "text-transparent"  }`}>Uploaded File: {resumeFileName}</p>
             {(!submitCvClicked)? <button className="mt-20 flex flex-row w-1/3 h-[40px] bg-blue-300 mx-auto items-center px-4 py-2 rounded-md shadow-xl hover:shadow-xl hover:bg-blue-500 transition duration-300"
-                onClick={() => {
-                  handleUploadResume;
-                  setSubmitCvClicked(true); // Set the submit button clicked state
-                }
+                onClick={
+                  handleUploadResume // Set the submit button clicked state
                 }>
                 <span className="mx-auto w-full text-white">
                     Submit Resumes
