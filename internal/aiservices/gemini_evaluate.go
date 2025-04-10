@@ -12,6 +12,7 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	if jsonErr != nil {
 		return nil, jsonErr
 	}
+
 	structureBytes, err := json.MarshalIndent(structure, "", "  ")
 	if err != nil {
 		return nil, err
@@ -27,15 +28,12 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	}
 	defer agent.Close()
 
-	// Add detailed flexible evaluation guide
 	flexibleGuide := `
 	🧠 Flexible Evaluation Guide:
 
 	Score and explain each category using a comprehensive explanation — include evidence found, strengths, weaknesses, and relevance to the job.
-	For example: 
-	🔹 Main Categories (Score: 1–10)
-	Evaluate based on depth, specificity, relevance, and quality.
 
+	🔹 Main Categories (Score: 1–10)
 	1. Technical Skills
 	- 9–10: Deep, modern, and varied technical knowledge with real-world application and relevance to the role.
 	- 6–8: Strong but slightly limited or generic skills.
@@ -55,8 +53,6 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	- 1–2: No educational evidence or unrelated study.
 
 	🔸 Subcategories (Score: 1–5)
-	Evaluate presence, clarity, and strength.
-
 	1. Leadership
 	- 5: Strong leadership roles with measurable outcomes.
 	- 3–4: Some leadership, unclear scope.
@@ -74,7 +70,7 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	`
 
 	finalPrompt := fmt.Sprintf(`
-	You are an experienced recruiter for the field of """%s""".
+	You are an experienced recruiter for the field of "%s".
 
 	🎯 Your task:
 	Evaluate the following CV **fairly and objectively**, using only information in the document.
@@ -82,9 +78,9 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	- Provide scores for each main category (1–10) and subcategory (1–5)
 	- Give a **comprehensive explanation** per category — highlighting strong areas, weak areas, missing elements, and alignment with the job.
 	- Avoid any assumptions based on gender, name, race, religion, appearance, or background. Be absolutely unbiased.
+	- Also, if the information provided in the CV has proof for it, then evaluate an authenticity score for the whole CV — this is the reliability point.
 
 	%s
-
 
 	📁 Main Categories: %s  
 	📂 Subcategories: %s
@@ -92,16 +88,15 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	📄 Candidate CV:
 	"""%s"""
 
-
 	📋 Output:
 	Return a single valid JSON object formatted like this:
 	%s
-	`, jobType, flexibleGuide, mainCategoryStr, subCategoryStr, CV, structurePrompt)
+`, jobType, flexibleGuide, mainCategoryStr, subCategoryStr, CV, structurePrompt)
 
 	agent.Model.ResponseMIMEType = "application/json"
+
 	resp := agent.CallChatGemini(finalPrompt)
 
 	fmt.Println("Parsed Response:", resp)
-	agent.Close()
 	return resp, nil
 }

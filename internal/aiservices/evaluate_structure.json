@@ -15,5 +15,6 @@
         "score": "string", 
         "explanation": "string"
       }
-    ]
+    ],
+    "Authenticity": "int"
   }
