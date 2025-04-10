@@ -7,6 +7,7 @@ import (
 	"path/filepath"
 	"sort"
 	"strconv"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 )
@@ -70,6 +71,7 @@ func outputHandler(c *gin.Context) {
 				WorkFor         string `json:"WorkFor"`
 				ExperienceYears string `json:"Experience_Years"`
 				PathToCV        string `json:"PathToCV"`
+				PathToCVAlt     string `json:"path_to_cv"`
 			} `json:"PersonalInfo"`
 			Authenticity interface{} `json:"Authenticity"`
 			FinalScore   float64    `json:"FinalScore"`
@@ -90,6 +92,15 @@ func outputHandler(c *gin.Context) {
 			authenticity = float64(v)
 		}
 
+		// Get the CV path, checking both field names
+		cvPath := evaluation.PersonalInfo.PathToCV
+		if cvPath == "" {
+			cvPath = evaluation.PersonalInfo.PathToCVAlt
+		}
+
+		// Convert file path to use forward slashes
+		evalPath := strings.ReplaceAll(file, "\\", "/")
+
 		// Create candidate entry
 		candidate := Candidate{
 			FullName:         evaluation.PersonalInfo.FullName,
@@ -97,8 +108,8 @@ func outputHandler(c *gin.Context) {
 			ExperienceLevel:  evaluation.PersonalInfo.ExperienceYears,
 			Authenticity:     authenticity,
 			FinalScore:       evaluation.FinalScore,
-			PathToCV:         evaluation.PersonalInfo.PathToCV,
-			PathToEvaluation: file,
+			PathToCV:         cvPath,
+			PathToEvaluation: evalPath,
 		}
 
 		candidates = append(candidates, candidate)
