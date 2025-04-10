@@ -102,5 +102,6 @@ func GeminiEvaluateScoring(jobType string, mainCategory []string, subCategory []
 	resp := agent.CallChatGemini(finalPrompt)
 
 	fmt.Println("Parsed Response:", resp)
+	agent.Close()
 	return resp, nil
 }

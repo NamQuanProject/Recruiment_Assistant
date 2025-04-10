@@ -195,6 +195,27 @@ func RunServer() {
 
 		c.JSON(http.StatusOK, gin.H{"criteria": resp})
 	})
+	r.POST("/ai/evaluate", func(c *gin.Context) {
+		type JDRequest struct {
+			JobName        string   `json:"job_name"`
+			JDMainQuiteria []string `json:"jd_main_quiteria"`
+			JDSubQuiteria  []string `json:"jd_sub_quiteria"`
+			CVRawText      string   `json:"cv_raw_text"`
+		}
+		var request JDRequest
+		if err := c.ShouldBindJSON(&request); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request body"})
+			return
+		}
+
+		resp, err := GeminiEvaluateScoring(request.JobName, request.JDMainQuiteria, request.JDSubQuiteria, request.CVRawText)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract criteria"})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{"criteria": resp})
+	})
 
 	r.Run(":8081")
 }
