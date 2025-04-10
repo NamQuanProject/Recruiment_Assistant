@@ -81,7 +81,7 @@ func ProcessCV(filePath string) error {
 		OutputPath string `json:"output_path" binding:"required"`
 	}{
 		InputPath:  absPath,
-		OutputPath: "storage",
+		OutputPath: "uploads/CV.txt",
 	}
 
 	reqBody, err := json.Marshal(parseRequest)
