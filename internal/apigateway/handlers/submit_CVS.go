@@ -61,8 +61,6 @@ func SubmitCVsHandler(c *gin.Context) {
 		}
 		c.JSON(http.StatusOK, gin.H{"message": "PDF uploaded and parsed successfully", "path": dst})
 
-		return
-
 	} else if ext == ".zip" {
 		tempZipPath := filepath.Join(os.TempDir(), file.Filename)
 		if err := c.SaveUploadedFile(file, tempZipPath); err != nil {
@@ -122,10 +120,32 @@ func SubmitCVsHandler(c *gin.Context) {
 			"saved_pdfs": savedFiles,
 		})
 
-		return
 	}
 
-	c.JSON(http.StatusBadRequest, gin.H{"error": "Only PDF or ZIP files are supported"})
+	req := struct {
+		evaluation_folder string `json:"path" binding:"required"`
+	}{
+		evaluation_folder: filepath.Join(basePath, "evaluation"),
+	}
+	// call output
+	reqBody, err := json.Marshal(req)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to prepare request"})
+		return
+	}
+	resp, err := http.Post("http://localhost:8082/output", "application/json", bytes.NewBuffer(reqBody))
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to call evaluation server"})
+		return
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Evaluation server returned error: " + resp.Status})
+		return
+	}
+	log.Printf("CVs evaluation successfully")
+	c.JSON(http.StatusOK, gin.H{"message": "CVs evaluation successfully"})
+	// return
 }
 
 func processCV(pdfPath, outPath string) error {

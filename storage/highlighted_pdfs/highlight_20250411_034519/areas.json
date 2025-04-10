@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Programming languages: C++, Python, JavaScript,\nTypeScript",
+    "page": 1,
+    "x": 21,
+    "y": 388.05,
+    "width": 311.2,
+    "height": 27.48,
+    "description": "This is a strong area because it lists several programming languages relevant to software engineering. While the job description focuses on C#, .NET, and SQL, experience with other languages like C++, Python, Javascript and Typescript demonstrates a broader programming skill set and adaptability. Listing Typescript makes it a very strong area to consider.",
+    "type": "strong"
+  },
+  {
+    "text": "Frameworks/Tools: Reactjs, TailwindCSS, Figma",
+    "page": 1,
+    "x": 21,
+    "y": 414.45,
+    "width": 298,
+    "height": 13.74,
+    "description": "This is a strong area as it shows experience with modern frontend frameworks and tools. While not directly mentioned in the job description, these are valuable skills for developing user interfaces and are increasingly relevant in full-stack development. Specifically, Figma skills is really great.",
+    "type": "strong"
+  },
+  {
+    "text": "Health Recommendation System Ho Chi Minh, Vietnam\nFrontend Developer May 2024 – July 2024",
+    "page": 1,
+    "x": 21,
+    "y": 440.85,
+    "width": 324.4,
+    "height": 27.48,
+    "description": "This is a strong area because it showcases hands-on experience in frontend development, which is valuable for a software engineer role. The project also demonstrates experience in health recommender system which could be related to public health software field that the job description asks for. Highlighting the technologies used and the impact of the project would further strengthen this section.",
+    "type": "strong"
+  },
+  {
+    "text": "Google Developer Group - HCMUS Ho Chi Minh, Vietnam",
+    "page": 2,
+    "x": 21,
+    "y": 401.25,
+    "width": 337.6,
+    "height": 13.74,
+    "description": "This is a strong area because it indicates involvement in a community-driven organization focused on technology, suggesting a passion for learning and sharing knowledge. Being a 'Web Specialist' shows experience in web-related tasks, relevant to software engineering.",
+    "type": "strong"
+  },
+  {
+    "text": "Linear",
+    "page": 1,
+    "x": 21,
+    "y": 242.85,
+    "width": 40.6,
+    "height": 13.74,
+    "description": "This is a weak area because the list of coursework cuts off. The CV should be formatted to ensure all coursework is fully visible.",
+    "type": "weak"
+  },
+  {
+    "text": "VNUHCM - University of Science Ho Chi Minh, Vietnam",
+    "page": 1,
+    "x": 21,
+    "y": 124.05,
+    "width": 337.6,
+    "height": 13.74,
+    "description": "This area is weak because the expected graduation date is in the future (2027) but it indicates only having frontend roles. The candidate should aim to get internship as a fullstack engineer instead.",
+    "type": "weak"
+  },
+  {
+    "text": "PROJECTS",
+    "page": 1,
+    "x": 21,
+    "y": 427.65,
+    "width": 53.8,
+    "height": 13.74,
+    "description": "This section is weak because it only showcases frontend projects. The job description emphasizes C#, .NET, and SQL, which are primarily backend technologies. To improve, the candidate should include personal projects or contributions to open-source projects that demonstrate proficiency in these technologies. It's important to demonstrate skills relevant to the specific requirements of the job.",
+    "type": "weak"
+  },
+  {
+    "text": "SKILLS",
+    "page": 1,
+    "x": 21,
+    "y": 374.85,
+    "width": 40.6,
+    "height": 13.74,
+    "description": "This area is weak because it lacks any mention of skills in .NET, C#, SQL, SSRS, or database technologies, which are core requirements for the job. The candidate should either acquire these skills or explicitly state a willingness to learn them. Even mentioning familiarity with SQL would be an improvement.",
+    "type": "weak"
+  }
+]
