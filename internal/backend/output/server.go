@@ -1,8 +1,6 @@
 package output
 
 import (
-	"net/http"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -23,49 +21,15 @@ type CVOwner struct {
 
 // EvaluationResult represents the complete evaluation output
 type EvaluationResult struct {
-	JobTitle     string         `json:"jobTitle"`
-	Company      string         `json:"company"`
-	TotalScore   float64        `json:"totalScore"`
+	JobTitle     string          `json:"jobTitle"`
+	Company      string          `json:"company"`
+	TotalScore   float64         `json:"totalScore"`
 	CriteriaList []CriteriaScore `json:"criteriaList"`
-	Summary      string         `json:"summary"`
-	CVOwner      CVOwner        `json:"cvOwner"`
+	Summary      string          `json:"summary"`
+	CVOwner      CVOwner         `json:"cvOwner"`
 }
 
 // Handler for processing and returning the final output
-func outputHandler(c *gin.Context) {
-	var evaluationResult EvaluationResult
-
-	// Bind JSON input to the evaluation result struct
-	if err := c.ShouldBindJSON(&evaluationResult); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"status":  "error",
-			"message": "Invalid input format",
-			"error":   err.Error(),
-		})
-		return
-	}
-
-	// Format the response
-	response := gin.H{
-		"status":  "success",
-		"message": "Evaluation completed successfully",
-		"data": gin.H{
-			"jobTitle":   evaluationResult.JobTitle,
-			"company":    evaluationResult.Company,
-			"totalScore": evaluationResult.TotalScore,
-			"criteria":   evaluationResult.CriteriaList,
-			"summary":    evaluationResult.Summary,
-			"cvOwner": gin.H{
-				"name":        evaluationResult.CVOwner.Name,
-				"email":       evaluationResult.CVOwner.Email,
-				"phoneNumber": evaluationResult.CVOwner.PhoneNumber,
-				"location":    evaluationResult.CVOwner.Location,
-			},
-		},
-	}
-
-	c.JSON(http.StatusOK, response)
-}
 
 // Initialize and run the Gin server
 func RunServer() {

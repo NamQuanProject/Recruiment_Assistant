@@ -53,6 +53,6 @@ func GeminiEvaluateScoring(jobType string, mainCategory string, CV string) (map[
 
 	resp := agent.CallChatGemini(finalPrompt)
 
-	fmt.Println("Parsed Response:", resp)
+	// fmt.Println("Parsed Response:", resp)
 	return resp, nil
 }
