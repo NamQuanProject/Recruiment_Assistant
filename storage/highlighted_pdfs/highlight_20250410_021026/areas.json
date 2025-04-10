@@ -1,0 +1,92 @@
+[
+  {
+    "text": "Analytically minded self-starter with a decade of experience collaborating with cross-functional teams and",
+    "page": 1,
+    "x": 34.25,
+    "y": 82.24,
+    "width": 545.52,
+    "height": 14,
+    "description": "This is a strong opening statement that highlights experience and collaboration, relevant to a Senior Data Scientist role.",
+    "type": "strong"
+  },
+  {
+    "text": "Best Buy",
+    "page": 1,
+    "x": 21.6,
+    "y": 158.22,
+    "width": 61.09,
+    "height": 22.68,
+    "description": "This is a strong point because it shows the candidate's most recent experience is relevant to the target role of Senior Data Scientist.",
+    "type": "strong"
+  },
+  {
+    "text": "- Senior Data Scientist",
+    "page": 1,
+    "x": 82.69,
+    "y": 158.22,
+    "width": 151.93,
+    "height": 22.68,
+    "description": "This is a strong signal to the role sought by the candidate.",
+    "type": "strong"
+  },
+  {
+    "text": "Led data extraction and evaluation efforts to save Best Buy more than 11M over the course of tenure",
+    "page": 1,
+    "x": 49.35,
+    "y": 196.24,
+    "width": 516.11,
+    "height": 14,
+    "description": "This is a strong achievement showcasing impact with a quantifiable result ($11M savings).",
+    "type": "strong"
+  },
+  {
+    "text": "Communicated with PMs to lead 4 data scientists in project planning, development, and execution",
+    "page": 1,
+    "x": 49.35,
+    "y": 270.49,
+    "width": 502.23,
+    "height": 13.99,
+    "description": "This demonstrates leadership experience and communication skills, both crucial for a Senior Data Scientist role.",
+    "type": "strong"
+  },
+  {
+    "text": "Led data extraction and evaluation efforts to save Best Buy more than 11M over the course of tenure",
+    "page": 1,
+    "x": 49.35,
+    "y": 196.24,
+    "width": 516.11,
+    "height": 14,
+    "description": "This statement could be improved by being more specific about the tools, techniques, and scope of the data extraction and evaluation efforts. What specific technologies were used? What was the size of the datasets analyzed?",
+    "type": "weak"
+  },
+  {
+    "text": "Coached data team throughout short and long-term projects, redefining documentation frequently",
+    "page": 1,
+    "x": 49.35,
+    "y": 286.24,
+    "width": 506.97,
+    "height": 13.99,
+    "description": "This statement could be more specific about the leadership style and skills used while coaching the team. Including examples of how the candidate developed team members would make this area stronger.",
+    "type": "weak"
+  },
+  {
+    "text": "2U",
+    "page": 1,
+    "x": 21.6,
+    "y": 422.22,
+    "width": 20.74,
+    "height": 22.68,
+    "description": "The description of the Data Analyst role at 2U could be improved by quantifying the scale of the projects and the number of users impacted by the analysis. Details on the dataset sizes and complexities should be included.",
+    "type": "weak"
+  },
+  {
+    "text": "SKILLS",
+    "page": 1,
+    "x": 21.6,
+    "y": 697.47,
+    "width": 53.52,
+    "height": 22.68,
+    "description": "The skills section is good, but could be improved by adding more specific tools and technologies, and clarifying the level of proficiency for each skill (e.g., 'Expert in Python', 'Proficient in SQL').",
+    "type": "weak"
+  }
+]

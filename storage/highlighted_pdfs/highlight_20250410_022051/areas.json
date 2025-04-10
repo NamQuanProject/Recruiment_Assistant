@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Courses work: Data Structures and Algorithms, Calculus, Object-Oriented Programming, Competitive",
+    "page": 1,
+    "x": 94,
+    "y": 113,
+    "width": 473,
+    "height": 13,
+    "description": "This area is weak. Listing coursework is more relevant for recent graduates. As the candidate is applying for a Senior SWE role, it's more effective to highlight specific projects, accomplishments, and skills directly relevant to the role. Consider removing this section or condensing it significantly.",
+    "type": "weak"
+  },
+  {
+    "text": "WebDev Studio",
+    "page": 1,
+    "x": 30,
+    "y": 167,
+    "width": 77,
+    "height": 13,
+    "description": "This area is strong. Participation in WebDev Studio suggests a commitment to practical web development and teamwork. This is valuable for a Senior SWE role which requires collaborative skills and staying up to date with web technologies.",
+    "type": "strong"
+  },
+  {
+    "text": "OptiMart – Personal Project                                                                                                           July 2024 – November 2024",
+    "page": 1,
+    "x": 36,
+    "y": 275,
+    "width": 541,
+    "height": 13,
+    "description": "This area is strong. The project shows initiative and the ability to build and deploy a full-stack e-commerce platform. For a senior role, it's good to showcase personal projects, highlighting key architectural decisions and technical challenges you overcame.",
+    "type": "strong"
+  },
+  {
+    "text": "high-performance",
+    "page": 1,
+    "x": 132,
+    "y": 302,
+    "width": 92,
+    "height": 13,
+    "description": "This area is weak. While mentioning 'high-performance' is good, quantifying the impact of performance optimizations would add more weight to the project description. For instance, specifying the percentage improvement in response time or reduced server load due to implemented optimizations.",
+    "type": "weak"
+  },
+  {
+    "text": "Spring Boot",
+    "page": 1,
+    "x": 100,
+    "y": 354,
+    "width": 59,
+    "height": 13,
+    "description": "This area is strong. Experience with Spring Boot is highly valuable for a Senior SWE role, demonstrating backend development skills and the ability to build robust and scalable applications. Highlight your expertise in Spring Boot features, such as dependency injection, RESTful API development, and microservices architecture.",
+    "type": "strong"
+  },
+  {
+    "text": "Tech stacks :",
+    "page": 1,
+    "x": 56,
+    "y": 421,
+    "width": 72,
+    "height": 13,
+    "description": "This area is strong. Listing the tech stack (Spring boot, Nextjs, JWT, Material UI, PostgreSQL) shows familiarity with modern technologies which are often requirements for Senior SWE roles.",
+    "type": "strong"
+  },
+  {
+    "text": "Progamming",
+    "page": 1,
+    "x": 94,
+    "y": 125,
+    "width": 79,
+    "height": 13,
+    "description": "This area is weak. This is a typo. 'Progamming' should be 'Programming'. Attention to detail is important.",
+    "type": "weak"
+  },
+  {
+    "text": "Honorable Mention, The 2023 ICPC Vietnam National  Programming Contest",
+    "page": 1,
+    "x": 71,
+    "y": 663,
+    "width": 364,
+    "height": 13,
+    "description": "This area is weak. While participation in programming contests highlights problem-solving skills, their relevance decreases with experience. Consider moving this to the end or only highlighting the most significant achievements, if any. For a senior role, focus on professional experience and its measurable impact.",
+    "type": "weak"
+  }
+]

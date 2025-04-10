@@ -1,0 +1,82 @@
+[
+  {
+    "text": "- Senior Data Scientist",
+    "page": 1,
+    "x": 82,
+    "y": 158,
+    "width": 152,
+    "height": 23,
+    "description": "This clearly indicates the candidate has experience in a Senior Data Scientist role, which is a strong match for the job requirements.",
+    "type": "strong"
+  },
+  {
+    "text": "Led data extraction and evaluation efforts to save Best Buy more than 11M over the course of tenure",
+    "page": 1,
+    "x": 49,
+    "y": 196,
+    "width": 517,
+    "height": 14,
+    "description": "Quantifiable achievement demonstrating impact and leadership in data-related projects. This is highly valuable for a senior role.",
+    "type": "strong"
+  },
+  {
+    "text": "Python (NumPy, Pandas, Scikit-learn, Flask), SAS; SQL - Redshift, MySQL; ElasticSearch; Recommendation",
+    "page": 1,
+    "x": 21,
+    "y": 723,
+    "width": 542,
+    "height": 14,
+    "description": "Lists relevant technical skills including Python libraries (NumPy, Pandas, Scikit-learn, Flask) and databases (SQL, Redshift, MySQL), which are essential for a Data Scientist position. Strong indication of proficiency.",
+    "type": "strong"
+  },
+  {
+    "text": "Customer Segmentation \u0026 Retention Models, Price Optimization, Productionizing Models",
+    "page": 1,
+    "x": 21,
+    "y": 736,
+    "width": 507,
+    "height": 14,
+    "description": "Highlights experience with key Data Science applications like Customer Segmentation, Retention Models, Price Optimization, and Productionizing Models. This showcases practical experience and value creation.",
+    "type": "strong"
+  },
+  {
+    "text": "2U",
+    "page": 1,
+    "x": 21,
+    "y": 422,
+    "width": 21,
+    "height": 23,
+    "description": "The role as 'Data Analyst' at 2U is less impressive for a senior Data Scientist role. While experience as a data analyst is valuable, highlighting more advanced projects or responsibilities from this role would be beneficial to better align with the senior level.",
+    "type": "weak"
+  },
+  {
+    "text": "Analytically minded self-starter with a decade of experience collaborating with cross-functional teams and",
+    "page": 1,
+    "x": 34,
+    "y": 82,
+    "width": 546,
+    "height": 14,
+    "description": "While the summary mentions 'a decade of experience', it is a generic statement. Quantifying specific achievements or the impact of their work in this section would make it stronger. Consider adding metrics or key accomplishments to the summary.",
+    "type": "weak"
+  },
+  {
+    "text": "Brooklyn, NY",
+    "page": 1,
+    "x": 338,
+    "y": 61,
+    "width": 69,
+    "height": 14,
+    "description": "The CV lacks explicit information about projects related to the most modern and trendy technologies in AI/ML. To be improved, add more information on any personal projects that used the cutting edge tech stack to make the CV more appealing.",
+    "type": "weak"
+  },
+  {
+    "text": "2U",
+    "page": 1,
+    "x": 21,
+    "y": 312,
+    "width": 21,
+    "height": 23,
+    "description": "Although the candidate used to hold a data scientist position at 2U, but, projects are generic and do not have the sufficient details. Candidate needs to update the CV to add more details on the projects and their impact in the company.",
+    "type": "weak"
+  }
+]

@@ -20,12 +20,12 @@ func NewClient(baseURL string) *Client {
 	}
 }
 
-// HighlightPDF sends a request to highlight a PDF with weak areas
-func (c *Client) HighlightPDF(pdfPath string, weakAreas []WeakArea) (*HighlightResponse, error) {
+// HighlightPDF sends a request to highlight a PDF with areas
+func (c *Client) HighlightPDF(pdfPath string, areas []Area) (*HighlightResponse, error) {
 	// Create the request body
 	reqBody := HighlightRequest{
-		PDFPath:   pdfPath,
-		WeakAreas: weakAreas,
+		PDFPath: pdfPath,
+		Areas:   areas,
 	}
 
 	// Marshal the request body to JSON

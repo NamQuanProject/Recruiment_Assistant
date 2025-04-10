@@ -3,6 +3,7 @@ package parsing
 
 import (
 	"bytes"
+	"crypto/sha1"
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
@@ -239,6 +240,136 @@ func ExtractJsonFromTextBatch(folderPath string) error {
 			return fmt.Errorf("failed to extract file %s to json: %w", txtFilePath, er)
 		}
 	}
+
+	return nil
+}
+
+func ExtractCategoriesFromJDText(jobName, jdFilePath string) error {
+	// Validate file exists
+	if _, err := os.Stat(jdFilePath); os.IsNotExist(err) {
+		return fmt.Errorf("file does not exist: %s", jdFilePath)
+	}
+
+	// Step 1: Determine extension and extract/copy to storage
+	ext := strings.ToLower(filepath.Ext(jdFilePath))
+	timestamp := time.Now().Format("20060102_150405")
+
+	// Create directory: storage/jd_<timestamp>/
+	baseDir := filepath.Join("storage", "jds", fmt.Sprintf("%s_%s", jobName, timestamp))
+	if err := os.MkdirAll(baseDir, os.ModePerm); err != nil {
+		return fmt.Errorf("failed to create output dir: %w", err)
+	}
+
+	// Generate unique filename
+	hash := sha1.New()
+	hash.Write([]byte(jdFilePath + time.Now().String()))
+	encodedName := fmt.Sprintf("jd_%x.txt", hash.Sum(nil)[:8])
+	targetPath := filepath.Join(baseDir, encodedName)
+
+	var err error
+	if ext == ".pdf" {
+		// Extract from PDF and store as text
+		textPath, extractErr := ExtractTextFromPDF(jdFilePath)
+		if extractErr != nil {
+			return fmt.Errorf("failed to extract text from PDF: %w", extractErr)
+		}
+		err = copyFile(textPath, targetPath)
+	} else if ext == ".txt" {
+		// Just copy the txt file
+		err = copyFile(jdFilePath, targetPath)
+	} else {
+		return fmt.Errorf("unsupported file type: %s", ext)
+	}
+
+	if err != nil {
+		return fmt.Errorf("failed to copy file to storage: %w", err)
+	}
+
+	// Step 2: Read JD text from stored file
+	jdTextBytes, err := os.ReadFile(targetPath)
+	if err != nil {
+		return fmt.Errorf("failed to read stored JD file: %w", err)
+	}
+	jdText := string(jdTextBytes)
+
+	// Step 3: Prepare and send POST request to /ai/jd_criteria
+	// type JDRequest struct {
+	// 	JobName            string `json:"job_name"`
+	// 	CompanyDescription string `json:"company_jd"`
+	// }
+
+	// var request JDRequest
+	requestBody := map[string]string{
+		"job_name":   jobName,
+		"company_jd": jdText,
+	}
+	jsonBody, err := json.Marshal(requestBody)
+	if err != nil {
+		return fmt.Errorf("failed to marshal JSON: %w", err)
+	}
+
+	resp, err := http.Post("http://localhost:8081/ai/jd_criteria", "application/json", bytes.NewReader(jsonBody))
+	if err != nil {
+		return fmt.Errorf("HTTP request failed: %w", err)
+	}
+	defer resp.Body.Close()
+
+	// Read response body
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return err
+	}
+	fmt.Printf("Response status: %s\n", resp.Status)
+	fmt.Printf("Response body: %s\n", string(body))
+
+	// 5. Parse top-level JSON
+	var jsonResponse map[string]interface{}
+	err = json.Unmarshal(body, &jsonResponse)
+	if err != nil {
+		return err
+	}
+
+	// 6. Access the "Response" field and parse the wrapped JSON string
+	outerMap, ok := jsonResponse["criteria"].(map[string]interface{})
+	if !ok {
+		return err
+	}
+
+	responseStr, ok := outerMap["Response"].(string)
+	if !ok {
+		return err
+	}
+
+	// 7. Clean up the string (remove Markdown formatting)
+	responseStr = strings.TrimSpace(responseStr)
+	responseStr = strings.TrimPrefix(responseStr, "```json")
+	responseStr = strings.TrimSuffix(responseStr, "```")
+	responseStr = strings.TrimSpace(responseStr)
+
+	// 8. Parse the cleaned JSON string into a map
+	var parsedData map[string]interface{}
+	err = json.Unmarshal([]byte(responseStr), &parsedData)
+	if err != nil {
+		return err
+	}
+
+	// 9. Determine output path
+	dir := filepath.Dir(targetPath)
+	base := strings.TrimSuffix(filepath.Base(targetPath), filepath.Ext(targetPath))
+	jsonFilename := filepath.Join(dir, base+".json")
+
+	// 10. Save the final parsed JSON to a file
+	jsonBytes, err := json.MarshalIndent(parsedData, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	err = os.WriteFile(jsonFilename, jsonBytes, 0644)
+	if err != nil {
+		return err
+	}
+
+	log.Printf("✅ JSON saved to: %s", jsonFilename)
 
 	return nil
 }

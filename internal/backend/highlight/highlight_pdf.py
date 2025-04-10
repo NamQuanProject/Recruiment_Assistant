@@ -3,24 +3,24 @@ import json
 import argparse
 import sys
 
-def highlight_pdf(pdf_path, weak_areas_path, output_path):
+def highlight_pdf(pdf_path, areas_path, output_path):
     """
-    Highlight weak areas in a PDF file.
+    Highlight strong and weak areas in a PDF file.
     
     Args:
         pdf_path (str): Path to the input PDF file
-        weak_areas_path (str): Path to the JSON file containing weak areas
+        areas_path (str): Path to the JSON file containing strong and weak areas
         output_path (str): Path to save the highlighted PDF
     """
     # Load the PDF
     doc = fitz.open(pdf_path)
     
-    # Load weak areas from JSON
-    with open(weak_areas_path, 'r') as f:
-        weak_areas = json.load(f)
+    # Load areas from JSON
+    with open(areas_path, 'r', encoding='utf-8') as f:
+        areas = json.load(f)
     
-    # Highlight each weak area
-    for area in weak_areas:
+    # Highlight each area
+    for area in areas:
         page_num = area.get('page', 0) - 1  # Convert to 0-based index
         
         # Skip if page number is out of range
@@ -41,14 +41,23 @@ def highlight_pdf(pdf_path, weak_areas_path, output_path):
             area['y'] + area['height'] + y_offset
         )
         
-        # Add a highlight annotation with a semi-transparent yellow color
+        # Add a highlight annotation with color based on type
         annot = page.add_highlight_annot(rect)
-        annot.set_colors(stroke=[1, 1, 0])  # Yellow color
+        
+        # Set color based on type (strong = green, weak = yellow)
+        area_type = area.get('type', 'weak').lower()
+        if area_type == 'strong':
+            annot.set_colors(stroke=[0, 1, 0])  # Green color
+            title = "Strong Area"
+        else:
+            annot.set_colors(stroke=[1, 1, 0])  # Yellow color
+            title = "Weak Area"
+            
         annot.set_opacity(0.3)  # 30% opacity
         
         # Add a popup note with the description
         if 'description' in area and area['description']:
-            annot.set_info(title="Weak Area", content=area['description'])
+            annot.set_info(title=title, content=area['description'])
         
         # Update the annotation
         annot.update()
@@ -60,14 +69,14 @@ def highlight_pdf(pdf_path, weak_areas_path, output_path):
     print(f"Highlighted PDF saved to: {output_path}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Highlight weak areas in a PDF file.")
+    parser = argparse.ArgumentParser(description="Highlight strong and weak areas in a PDF file.")
     parser.add_argument("pdf_path", help="Path to the input PDF file")
-    parser.add_argument("weak_areas_path", help="Path to the JSON file containing weak areas")
+    parser.add_argument("areas_path", help="Path to the JSON file containing strong and weak areas")
     parser.add_argument("output_path", help="Path to save the highlighted PDF")
     
     args = parser.parse_args()
     
-    highlight_pdf(args.pdf_path, args.weak_areas_path, args.output_path)
+    highlight_pdf(args.pdf_path, args.areas_path, args.output_path)
 
 if __name__ == "__main__":
     main() 

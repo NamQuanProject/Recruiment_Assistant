@@ -1,0 +1,10 @@
+{
+  "skills": {
+    "missing": ["Python", "Docker"],
+    "weak": ["JavaScript"]
+  },
+  "experience": {
+    "gaps": ["2020-2021"],
+    "relevant": false
+  }
+}

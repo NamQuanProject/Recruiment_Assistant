@@ -55,9 +55,9 @@ func RunServer() {
 		c.JSON(http.StatusOK, jobData)
 	})
 
-	// New endpoint to find weak areas in a CV
-	r.POST("/ai/find_weak_areas", func(c *gin.Context) {
-		var req FindWeakAreasRequest
+	// Endpoint to analyze CV areas
+	r.POST("/ai/analyze-cv-areas", func(c *gin.Context) {
+		var req AnalyzeCVRequest
 
 		if err := c.ShouldBindJSON(&req); err != nil {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input JSON"})
@@ -82,48 +82,23 @@ func RunServer() {
 				block.Page, block.Text, block.X, block.Y, block.Width, block.Height)
 		}
 
-		// Construct the prompt for finding weak areas
-		prompt := fmt.Sprintf(`Analyze the CV for the job title "%s" with the following job details: "%s".
-
-		Here are the text blocks extracted from the CV:
-		%s
-		
-		Identify weak areas in the CV that could be improved to better match the job requirements. For each weak area, provide:
-		1. The exact text from the CV (must match one of the text blocks above)
-		2. The page number where it appears
-		3. The x, y coordinates and dimensions of the text on the page (must match the position of the text block)
-		4. A description of why this area is weak and how it could be improved
-
-		Return the results in the following JSON format:
-		{
-		"weak_areas": [
-			{
-			"text": "Weak area text",
-			"page": 1,
-			"x": 100,
-			"y": 200,
-			"width": 200,
-			"height": 50,
-			"description": "This area is weak because..."
-			}
-		]
-		}
-
-		Make sure to use the exact text and coordinates from the text blocks provided.`, req.JobTitle, req.JobDetails, textBlocksStr)
+		// Get the prompt using the new function
+		prompt := GetCVAnalysisPrompt(req.JobTitle, req.JobDetails, textBlocksStr, req.EvaluationReference)
 
 		result := agent.CallChatGemini(prompt)
 		response := result["Response"].(string)
 
-		weakAreas, err := ParseWeakAreasFromGeminiResponse(response)
+		// Parse the response to extract areas
+		areas, err := ParseAreasFromGeminiResponse(response)
 		if err != nil {
-			log.Printf("Error parsing weak areas: %v", err)
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse weak areas from AI response"})
+			log.Printf("Error parsing CV areas: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse areas from AI response"})
 			return
 		}
 
-		// Return the weak areas
-		c.JSON(http.StatusOK, FindWeakAreasResponse{
-			WeakAreas: weakAreas,
+		// Return the areas
+		c.JSON(http.StatusOK, AnalyzeCVResponse{
+			Areas: areas,
 		})
 	})
 
