@@ -1,0 +1,62 @@
+{
+  "MainCategory": [
+    {
+      "description": "Proficiency in core accounting principles, procedures, and theory. This is essential for preparing accurate financial statements, managing expenditures, revenue, and journal entries, and ensuring compliance with regulations. Directly derived from the main JD's requirement to prepare financial statements, reports dealing with federal grants, regulations, statistics, and maintaining adequate records, as well as the candidate JD's emphasis on GAAP knowledge.",
+      "name": "Accounting Principles \u0026 Practices",
+      "score": 10
+    },
+    {
+      "description": "The ability to prepare, analyze, and interpret complex financial reports, including those related to budgets, expenditures, and cash flow. Vital for providing insights into the organization's financial health and supporting informed decision-making. Sourced from the main JD's focus on preparing financial statements, status analyses of funds, and budget preparation, as well as the candidate JD's mention of producing financial reports and analyzing data.",
+      "name": "Financial Reporting \u0026 Analysis",
+      "score": 10
+    },
+    {
+      "description": "Competence in using accounting software (e.g., QuickBooks, Xero) and spreadsheet software (Excel) for data management, analysis, and reporting. Crucial for efficient and accurate handling of financial data and tasks. This is from the main JD's mention of working knowledge of Windows (Excel, Access) and the candidate JD's emphasis on proficiency in accounting and spreadsheet software.",
+      "name": "Software Proficiency (Accounting \u0026 Spreadsheets)",
+      "score": 10
+    },
+    {
+      "description": "The ability to perform account reconciliations (bank, general ledger), verify data accuracy, and identify/correct errors. This ensures the reliability of financial records and mitigates the risk of misreporting. Emphasized in the main JD's requirement to monitor and review bank statements and prepare bank reconciliations, and reinforced by the candidate JD's focus on accurate reporting and data verification.",
+      "name": "Reconciliation \u0026 Accuracy",
+      "score": 10
+    },
+    {
+      "description": "Understanding of relevant financial regulations (federal, state, local), including tax regulations and reporting requirements (e.g., 1099 Forms). Essential for ensuring the organization's financial operations are compliant and avoiding legal issues. Directly taken from the main JD's mentions of preparing reports dealing with federal grants and regulations, preparing 1099 Forms and the candidate JD's requirements to File and prepare tax returns for employees, ensuring that they accurately adhere to applicable regulations.",
+      "explanation": "Understanding of relevant financial regulations (federal, state, local), including tax regulations and reporting requirements (e.g., 1099 Forms). Essential for ensuring the organization's financial operations are compliant and avoiding legal issues. Directly taken from the main JD's mentions of preparing reports dealing with federal grants and regulations, preparing 1099 Forms and the candidate JD's mention of studying existing and recent legislation to ensure compliance with national and local financial requirements",
+      "name": "Compliance \u0026 Regulatory Knowledge",
+      "score": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "description": "Experience in planning, preparing, and monitoring budgets, as well as implementing cost control measures. Important for effective financial management and resource allocation. This is derived from the main JD's responsibilities including preparing budgets, planning procedures to control fund disbursement, and the candidate JD's objective of monitoring policies and procedures for assigned departments.",
+      "explanation": "Experience in planning, preparing, and monitoring budgets, as well as implementing cost control measures. Important for effective financial management and resource allocation. This is derived from the main JD's responsibilities including preparing budgets, planning procedures to control fund disbursement, and the candidate JD's objective of monitoring policies and procedures for assigned departments.",
+      "name": "Budgeting \u0026 Cost Control",
+      "score": 4
+    },
+    {
+      "description": "Experience in maintaining fixed asset records, performing reconciliation, and preparing audit schedules related to fixed assets. Contributes to accurate asset accounting and reporting. Taken directly from the main JD's requirement to maintain fixed asset records and perform fixed asset reconciliation.",
+      "explanation": "Experience in maintaining fixed asset records, performing reconciliation, and preparing audit schedules related to fixed assets. Contributes to accurate asset accounting and reporting. Taken directly from the main JD's requirement to maintain fixed asset records and perform fixed asset reconciliation.",
+      "name": "Fixed Asset Management",
+      "score": 3
+    },
+    {
+      "description": "Experience processing grant expenditures and reimbursements, and reviewing/monitoring contractor cost summaries. Useful due to the grant-funded nature of the position. Taken from the main JD's duties related to contractor, special grant, and accounts payable support.",
+      "explanation": "Experience processing grant expenditures and reimbursements, and reviewing/monitoring contractor cost summaries. Useful due to the grant-funded nature of the position. Taken from the main JD's duties related to contractor, special grant, and accounts payable support.",
+      "name": "Grant Accounting Experience",
+      "score": 3
+    },
+    {
+      "description": "Ability to identify inefficiencies in accounting processes and suggest improvements. Supports continuous improvement and optimization of financial operations. Extracted from the candidate JD which poses the question about recalling an instance when they noticed an opportunity for improvement in your workplace. What did you do after picking up on the inefficiency?",
+      "explanation": "Ability to identify inefficiencies in accounting processes and suggest improvements. Supports continuous improvement and optimization of financial operations. Extracted from the candidate JD which poses the question about recalling an instance when they noticed an opportunity for improvement in your workplace. What did you do after picking up on the inefficiency?",
+      "name": "Problem-Solving \u0026 Inefficiency Identification",
+      "score": 4
+    },
+    {
+      "description": "Ability to work effectively in a team environment, supporting colleagues and contributing to shared goals. Important for fostering a positive and productive work environment. Highlighted in the candidate JD's interview question about describing a time they worked in a team setting.",
+      "explanation": "Ability to work effectively in a team environment, supporting colleagues and contributing to shared goals. Important for fostering a positive and productive work environment. Highlighted in the candidate JD's interview question about describing a time they worked in a team setting.",
+      "name": "Teamwork and Collaboration",
+      "score": 3
+    }
+  ]
+}

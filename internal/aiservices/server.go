@@ -200,8 +200,8 @@ func RunServer() {
 		type JDRequest struct {
 			JobName        string `json:"job_name"`
 			JDMainQuiteria string `json:"jd_main_quiteria"`
-			// JDSubQuiteria  []string `json:"jd_sub_quiteria"`
-			CVRawText string `json:"cv_raw_text"`
+			JDSubQuiteria  string `json:"jd_sub_quiteria"`
+			CVRawText      string `json:"cv_raw_text"`
 		}
 		var request JDRequest
 		if err := c.ShouldBindJSON(&request); err != nil {
@@ -216,6 +216,80 @@ func RunServer() {
 		}
 
 		c.JSON(http.StatusOK, gin.H{"evaluation": resp})
+	})
+
+	r.POST("/ai/chatbot/init", func(c *gin.Context) {
+		type InitChatbotRequest struct {
+			EvaluationID string `json:"eval_id"`
+		}
+
+		var request InitChatbotRequest
+		if err := c.ShouldBindJSON(&request); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request body"})
+			return
+		}
+
+		evalID := request.EvaluationID
+		if evalID == "" {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Missing eval_id"})
+			return
+		}
+
+		err := InitChatBot(evalID)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{
+				"error":   "Failed to initialize chatbot",
+				"details": err.Error(),
+			})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{
+			"message":       "Chatbot initialized successfully",
+			"evaluation_id": evalID,
+		})
+	})
+
+	r.POST("/ai/chatbot/ask", func(c *gin.Context) {
+		type ChatRequest struct {
+			CV_ID    string `json:"cv_id"`
+			Question string `json:"question"`
+		}
+
+		var request ChatRequest
+		if err := c.ShouldBindJSON(&request); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request body"})
+			return
+		}
+
+		cvID := request.CV_ID
+		question := request.Question
+
+		if cvID == "" || question == "" {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "cv_id and question are required"})
+			return
+		}
+
+		// Check if chatbot is initialized
+		if currentChatbot == nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Chatbot not initialized"})
+			return
+		}
+
+		// Ask the chatbot
+		resp, err := currentChatbot.Ask(cvID, question)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{
+				"error":   fmt.Sprintf("Failed to ask chatbot with ID: %s", cvID),
+				"details": err.Error(),
+			})
+			return
+		}
+
+		// Success response
+		c.JSON(http.StatusOK, gin.H{
+			"answer": resp,
+		})
 	})
 
 	r.Run(":8081")

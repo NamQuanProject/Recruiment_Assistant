@@ -38,7 +38,7 @@ func ExtractTextFromPDF(pdfPath, outputDir string) error {
 	// outputPath := filepath.Join(textDir, baseName+".txt")
 
 	// Run the Python script
-	cmd := exec.Command("python3", pythonScriptPath, pdfPath, outputDir)
+	cmd := exec.Command("python", pythonScriptPath, pdfPath, outputDir)
 	output, err := cmd.CombinedOutput()
 	if err != nil {
 		return fmt.Errorf("error executing Python script: %v\nOutput: %s", err, string(output))
