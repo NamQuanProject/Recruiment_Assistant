@@ -1,0 +1,16 @@
+{
+    "list": [
+        {
+            "full_name": "test",
+            "worked_for": "test",
+            "experience_level": "test",
+            "authenticity": 0.95,
+            "final_score": 0.95,
+            "path_to_cv": "test",
+            "path_to_evaluation": "test"
+        },
+        {
+            
+        }
+    ]
+}
