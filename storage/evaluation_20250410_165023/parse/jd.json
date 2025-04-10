@@ -1,0 +1,51 @@
+{
+  "MainCategory": [
+    {
+      "description": "Comprehensive knowledge and practical application of accounting principles, procedures, and theory are crucial for preparing accurate financial statements, managing accounts, and ensuring compliance. This includes GAAP knowledge. It's a fundamental requirement for performing complex accounting tasks such as preparing financial reports, journal entries, and reconciliations. This aligns with both the main JD (preparing financial statements, maintaining accounting records) and candidate JD (GAAP knowledge, account reconciliations).",
+      "name": "Accounting Principles \u0026 Practices",
+      "score": 10
+    },
+    {
+      "description": "The ability to prepare, analyze, and interpret financial reports is vital for understanding the organization's financial position and performance. This involves preparing complex reports, analyzing expenditure data, and preparing budget reports, as well as identifying trends and opportunities for improvement. This is directly stated in the main JD ('prepares financial statements', 'prepares complex technical reports') and emphasized in the candidate JD (preparing detailed financial reports, analyzing data).",
+      "name": "Financial Reporting \u0026 Analysis",
+      "score": 10
+    },
+    {
+      "description": "Proficiency in accounting software (e.g., QuickBooks, Xero) and Microsoft Excel is essential for managing financial data, performing calculations, and generating reports efficiently. This includes the ability to use these tools for tasks such as tracking invoices, managing accounts, and performing reconciliations. Both JDs highlight this, with the main JD mentioning working knowledge of Windows and Excel, and the candidate JD emphasizing familiarity with accounting software.",
+      "name": "Technical Proficiency (Accounting Software \u0026 Excel)",
+      "score": 10
+    },
+    {
+      "description": "A keen eye for detail and the ability to perform accurate reconciliations are essential to ensure the integrity of financial data. This involves reconciling bank statements, fixed assets, and general ledger accounts, as well as identifying and correcting errors. This is explicitly stated in the main JD ('performs fixed asset reconciliation', 'monitors and reviews bank statements and prepares bank reconciliations') and reinforced in the candidate JD ('verify accuracy of data, and identify and correct errors').",
+      "name": "Reconciliation \u0026 Accuracy",
+      "score": 10
+    },
+    {
+      "description": "The role requires skills in budget preparation, monitoring expenditure, and understanding financial regulations. It is important for compliance and for effective funds management. This incorporates the ability to interpret laws and regulations, prepare budgets, and adhere to financial requirements. The main JD includes preparing budgets for submission and various reports dealing with federal grants/regulations. The candidate JD adds emphasis on studying existing and recent legislation to ensure compliance.",
+      "name": "Budgeting \u0026 Financial Regulations",
+      "score": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "description": "The ability to identify inefficiencies, suggest improvements, and take proactive measures to solve problems is valuable for optimizing accounting processes and protecting financial interests. This involves identifying opportunities for improvement in the workplace and taking action to prevent mistakes. This comes from the candidate JD, where it is recommended to ask interview questions about the candidate identifying an inefficiency and taking action.",
+      "name": "Problem Solving \u0026 Initiative",
+      "score": 5
+    },
+    {
+      "description": "Effective teamwork and clear communication are important for collaborating with colleagues and supporting senior management. This includes openness to collaboration, willingness to perform supportive tasks, and understanding the importance of teamwork. This is primarily derived from the candidate JD, which suggests assessing the candidate's experience working in a team setting.",
+      "name": "Teamwork \u0026 Communication",
+      "score": 4
+    },
+    {
+      "description": "The role requires the ability to adapt to changing priorities, manage multiple tasks simultaneously, and meet strict deadlines. This includes experience producing timely work, willingness to put in extra hours during peak periods, and maintaining productivity under stress. This comes from the candidate JD suggesting questions about coping with extra responsibilities and deadlines and questions about multitasking.",
+      "name": "Adaptability \u0026 Time Management",
+      "score": 4
+    },
+    {
+      "description": "A desire for continuous learning and professional growth is beneficial for staying up-to-date with industry best practices and advancing within the accounting field. This includes pursuing opportunities for training, networking, and potentially obtaining certifications like a CPA license. This aligns primarily with the candidate JD's emphasis on the candidate's career aspirations in accounting and continually updating their approach to accounting.",
+      "name": "Professional Development \u0026 Growth",
+      "score": 3
+    }
+  ]
+}

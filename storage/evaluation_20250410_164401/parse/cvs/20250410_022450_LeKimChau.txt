@@ -1,0 +1,74 @@
+
+--- Page 1 ---
+KIM CHAU LE
+(+84) 905 059 106 | lekimchau211@gmail.com (mailto:lekimchau211@gmail.com) | https://github.com/Chowkey (https://github.com/Chowkey) | Ho Chi Minh, Vietnam
+EDUCATION
+VNUHCM - University of Science Ho Chi Minh, Vietnam
+Bachelor of Science: Computer Science, Advanced Program of Computer Science Expected Graduation: June 2027
+•
+GPA: 3.76/4.00
+•
+Coursework: OOP, Data Structures & Algorithms, Computer Systems Programming, Multivariable Calculus, Linear
+Algebra, Discrete Structures, Scientific Method.
+Le Quy Don High School for the Gifted Da Nang, Vietnam
+Major in English 2020 - 2023
+•
+12th
+GPA in Grade: 9.5/10
+•
+IELTS: 7.5
+SKILLS
+Programming languages: C++, Python, JavaScript, TypeScript
+Frameworks/Tools: Reactjs, TailwindCSS, Figma
+PROJECTS
+Health Recommendation System Ho Chi Minh, Vietnam
+Frontend Developer May 2024 – July 2024
+•
+A website using AI helping people having health problems, both mental and physical, by giving health suggestions and
+playing a role as a sympathetical listener to any of their problems.
+•
+Used Figma for designing and React, TailwindCSS for frontend, intergrating Magic UI library for some modern animated
+components.
+TikTok TechJam 2024 Ho Chi Minh, Vietnam
+Frontend Developer Jun 2024 - July 2024
+•
+Created a solution to enhance Tailored Discovery for Tiktok shop by extracting users’preferences from checklists and
+prompts with captivating theme-based UI.
+•
+Designed UI using Figma and developed responsive web applications using React, and TailwindCSS. Implemented dynamic
+theming for seamless customization based on user preferences.
+EvoGym Ho Chi Minh, Vietnam
+Frontend Developer April 2024 - May 2024
+•
+A project from a tutorial video, which is a homepage displaying information about a gym named EvoGym including details
+about available classes, registration form.
+•
+Developed reponsive web using React, TailwindCSS and used TypeScript for better type handling.
+LEADERSHIP & INVOLVEMENT
+Google Developer Group - HCMUS Ho Chi Minh, Vietnam
+Web Specialist Oct 2024 - Present
+•
+Mainly focused on Front End tasks for upcoming projects liked building new websites for the club and tech-sharing
+workshops about web developing.
+HCMUS Chess Club Ho Chi Minh, Vietnam
+Active member Oct 2023 - Present
+•
+Analyze chess openings, strategies, and special techniques in terms of advantages, disadvantages, and applicable situations
+for the club reports after each game to facilitate continuous improvement
+•
+Assist in teaching basic chess concepts to beginners and train potential athletes to compete in chess tournaments
+Le Quy Don Arena of Valor eSport tournament Da Nang, Vietnam
+Tournament Organizer Oct 2022 - Dec 2022
+•
+Managing activities and match schedules for over 16 teams of 5 players throughout the event.
+•
+Ensured the quality of live broadcasting by overseeing, lighting, sound, and network aspects
+HONORS & AWARDS
+•
+Second prize in City-ranking Excellence Contest 2023 March 2023
+•
+Full Scholarship for Honors Student, Le Quy Don High School for the Gifted 2021
+•
+Recipient of the “Huynh Thuc Khang” prize as one of the 48 top students in Da Nang December 2020
+•
+Da Nang Department of Education and Training Certificate for Honors Student 2020

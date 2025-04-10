@@ -1,0 +1,56 @@
+{
+  "MainCategory": [
+    {
+      "description": "Comprehensive understanding and application of accounting principles (GAAP) and procedures is critical for preparing accurate financial statements, reports, and maintaining financial records. This includes journal entries, account reconciliations, and fixed asset management. A strong foundation ensures compliance and accurate financial reporting. This is derived from the Main JD's emphasis on financial statement preparation, budget management, and expenditure tracking, and supported by the candidate JD's emphasis on GAAP knowledge and financial report preparation.",
+      "name": "Accounting Principles and Practices",
+      "score": 10
+    },
+    {
+      "description": "The ability to prepare and analyze financial reports, including monthly, quarterly, and annual statements, is essential for providing insights into the organization's financial performance. This involves preparing complex technical reports, analyzing expenditure data, preparing status analyses of funds, and identifying trends and variances. This is derived from the Main JD's requirements for preparing financial statements, TWC reports, and budget submissions, as well as the candidate JD's call for preparing detailed financial reports and analyzing data.",
+      "name": "Financial Reporting and Analysis",
+      "score": 10
+    },
+    {
+      "description": "Proficiency in accounting software (e.g., QuickBooks, Xero) and spreadsheet software (e.g., Excel, Access) is crucial for managing financial data, automating tasks, and generating reports efficiently. This includes data entry, reconciliation, analysis, and report generation. The Main JD specifies working knowledge of Windows, Excel, and Access. The suggested JD emphasizes expertise in accounting software for accurate reporting.",
+      "name": "Software Proficiency",
+      "score": 10
+    },
+    {
+      "description": "Knowledge of relevant laws, regulations, and compliance requirements (e.g., TWC, Department of Labor, federal grants) is necessary to ensure the organization operates within legal and ethical boundaries. This includes preparing reports according to specific regulations, staying updated on legislative changes, and ensuring accurate tax reporting (1099s). This is evident in the Main JD's requirements for preparing TWC reports and budgets and preparing 1099 forms as well as the suggested JD's focus on compliance with local and national financial requirements.",
+      "name": "Compliance and Regulatory Knowledge",
+      "score": 10
+    },
+    {
+      "description": "Performing account reconciliations (general ledger, bank statements, fixed assets) is crucial for identifying and correcting errors, ensuring data accuracy, and maintaining the integrity of financial records. The Main JD lists monitoring and reviewing bank statements and performing bank reconciliations and fixed asset reconciliation as essential duties, while the candidate JD lists account reconciliations as a key responsiblity for the role.",
+      "name": "Account Reconciliation",
+      "score": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "description": "The ability to identify inefficiencies, analyze complex data, and propose solutions for improvement is valuable for optimizing accounting processes and enhancing financial performance. This includes reviewing processes, identifying errors, and suggesting improvements to reports and procedures. The candidate JD highlights the importance of identifying improvement opportunities and taking proactive measures to solve problems.",
+      "name": "Problem Solving and Analytical Skills",
+      "score": 5
+    },
+    {
+      "description": "Effective communication and collaboration skills are essential for working with team members, contractors, and other stakeholders. This involves preparing clear reports, explaining financial information, and participating in meetings. The Main JD specifies attending committee and contractor meetings, while the candidate JD emphasizes the importance of teamwork and collaboration with other finance professionals.",
+      "name": "Communication and Collaboration",
+      "score": 5
+    },
+    {
+      "description": "The ability to manage multiple tasks, prioritize deadlines, and maintain accuracy under pressure is important for meeting reporting deadlines and handling a high volume of work. This involves organizing tasks, prioritizing responsibilities, and maintaining detailed records. The candidate JD emphasizes the importance of multitasking and prioritizing tasks for completion.",
+      "name": "Time Management and Prioritization",
+      "score": 5
+    },
+    {
+      "description": "A commitment to continuous learning and professional development is essential for staying updated on accounting regulations, best practices, and technological advancements. This involves participating in webinars, workshops, and networking events. The candidate JD emphasizes the desire to continue professional growth through training and staying informed of new financial regulations.",
+      "name": "Professional Development",
+      "score": 5
+    },
+    {
+      "description": "Experience in managing contractor and grant budgets, expenditures, and reimbursements is beneficial, especially in a grant-funded environment. This includes reviewing budgets, processing invoices, and monitoring cost summaries. This skill is derived from the Main JD's requirements for contractor, special grant, and accounts payable support.",
+      "name": "Contractor and Grant Management",
+      "score": 4
+    }
+  ]
+}
