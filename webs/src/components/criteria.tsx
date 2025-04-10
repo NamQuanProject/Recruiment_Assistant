@@ -1,45 +1,77 @@
 import React from "react";
 
-const Criteria = () => {
-  const criteriaData = [
-    {
-      title: "Technical Skills & Tools (30%)",
-      description:
-        "Proficiency in data science tools and programming languages (e.g., Python, SQL, Tableau, Excel, SAS). Experience with statistical analysis, data mining, pattern recognition, and predictive modeling. Bonus for machine learning, AI, and big data frameworks.",
-    },
-    {
-      title: "Relevant Experience & Projects (25%)",
-      description:
-        "Demonstrated experience in data science roles, ideally 7+ years. Evidence of analytical experiments, statistical models, and production-ready solutions. Experience working with unstructured and structured datasets.",
-    },
-    {
-      title: "Problem-Solving & Analytical Abilities (20%)",
-      description:
-        "Proven track record of solving complex business problems using data. Examples of data-driven decision-making and impactful insights. Ability to interpret data trends and create actionable recommendations.",
-    },
-    {
-      title: "Communication & Stakeholder Collaboration (15%)",
-      description:
-        "Experience presenting insights and findings to non-technical audiences. Effective communication skills for working with cross-functional teams. Experience translating complex data into business value.",
-    },
-    {
-      title: "Education & Certifications (10%)",
-      description:
-        "Degree in statistics, mathematics, or related discipline. Relevant professional certifications in data science or analytics. Bonus for advanced degrees (e.g., Master’s, Ph.D.).",
-    },
-  ];
+const Criteria = ({ criteriaData, loading }: { criteriaData: any; loading: boolean }) => {
+  console.log("Criteria Data:", criteriaData); // Log the criteria data for debugging
+
   return (
     <div className="flex justify-center items-center mt-12 w-5/6 h-[600px] mx-auto bg-primary shadow-md text-color-black p-8 border-[0.5px] border-gray-400 rounded-sm">
       <div className="w-full h-full bg-white">
-      <h2 className="text-center font-bold py-4 text-2xl border-b-2 h-20">Suggested Criteria for Assessing a Resume</h2>
-      <p className=" p-4 overflow-y-auto">
-        {criteriaData.map((item, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="font-semibold text-lg">{item.title}</h3>
-              <p className="text-sm">{item.description}</p>
+        <h2 className="text-center max-h-1/6 font-bold py-4 text-2xl border-b-2 h-20">
+          Suggested Criteria for Assessing a Resume
+        </h2>
+        <div className="p-4 h-5/6 overflow-y-auto">
+          {loading ? (
+            // Show pulse effect while loading
+            <div className="animate-pulse h-full flex flex-col space-y-4">
+              <div className="h-1/4 bg-gray-300 rounded"></div>
+              <div className="h-1/4 bg-gray-300 rounded"></div>
+              <div className="h-1/4 bg-gray-300 rounded"></div>
+              <div className="h-1/4 bg-gray-300 rounded"></div>
             </div>
-       ))}
-      </p>
+          ) : (
+            <>
+              {/* Render Main Categories */}
+              <h3 className="font-bold text-xl mb-4">Main Categories</h3>
+              {criteriaData?.MainCategory?.map((item: any, index: number) => (
+                <div key={index} className="mb-6">
+                  <h4 className="font-semibold text-lg">{item.Description}</h4>
+                  <p className="text-sm mb-2">
+                    <strong>Evaluation Strategy:</strong> {item.EvaluationStrategy}
+                  </p>
+                  <p className="text-sm mb-2">
+                    <strong>Scoring Scale:</strong> {item.ScoringScale}
+                  </p>
+                  <div className="text-sm">
+                    <strong>Scoring Guided:</strong>
+                    <ul className="list-disc pl-5">
+                      {item.ScoringGuided.map((guide: any, guideIndex: number) => (
+                        <li key={guideIndex}>
+                          <strong>Range:</strong> {guide.Range},{" "}
+                          <strong>Comment:</strong> {guide.Comment}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+
+              {/* Render Sub Categories */}
+              <h3 className="font-bold text-xl mb-4">Sub Categories</h3>
+              {criteriaData?.SubCategory?.map((item: any, index: number) => (
+                <div key={index} className="mb-6">
+                  <h4 className="font-semibold text-lg">{item.Description}</h4>
+                  <p className="text-sm mb-2">
+                    <strong>Evaluation Strategy:</strong> {item.EvaluationStrategy}
+                  </p>
+                  <p className="text-sm mb-2">
+                    <strong>Scoring Scale:</strong> {item.ScoringScale}
+                  </p>
+                  <div className="text-sm">
+                    <strong>Scoring Guided:</strong>
+                    <ul className="list-disc pl-5">
+                      {item.ScoringGuided.map((guide: any, guideIndex: number) => (
+                        <li key={guideIndex}>
+                          <strong>Range:</strong> {guide.Range},{" "}
+                          <strong>Comment:</strong> {guide.Comment}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
