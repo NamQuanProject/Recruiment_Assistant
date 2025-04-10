@@ -132,7 +132,7 @@ func outputHandler(c *gin.Context) {
 		return
 	}
 	// Write to the current directory
-	os.WriteFile("output.json", jsonData, 0644)
+	os.WriteFile("internal/backend/output/output.json", jsonData, 0644)
 
 	c.JSON(http.StatusOK, response)
 }
