@@ -2,7 +2,6 @@ package aiservices
 
 import (
 	"context"
-	"time"
 
 	"github.com/google/generative-ai-go/genai"
 )
@@ -10,7 +9,7 @@ import (
 type History struct {
 	Question string
 	Response string
-	Date     time.Time
+	Date     string
 }
 
 type AIAgent struct {

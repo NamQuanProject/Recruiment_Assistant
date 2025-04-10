@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-// GetCVAnalysisPrompt returns the formatted prompt for CV analysis
 func GetCVAnalysisPrompt(jobTitle string, jobDetails string, textBlocksStr string, evaluationReference map[string]any) string {
 	return fmt.Sprintf(`Analyze the CV for the job title "%s" with the following job details: "%s".
 
@@ -41,4 +40,4 @@ func GetCVAnalysisPrompt(jobTitle string, jobDetails string, textBlocksStr strin
 	Identify at most 4 strong areas and 4 weak areas if possible.
 	For strong areas, focus on relevant skills, experience, and achievements that match the job requirements.
 	For weak areas, focus on the roles (whether it fit with the job description or the job), projects (related or not), and experience (enough or not), provide decent constructive feedback on how to improve them.`, jobTitle, jobDetails, textBlocksStr, evaluationReference)
-} 
+}

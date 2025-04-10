@@ -200,8 +200,8 @@ func RunServer() {
 		type JDRequest struct {
 			JobName        string `json:"job_name"`
 			JDMainQuiteria string `json:"jd_main_quiteria"`
-			// JDSubQuiteria  []string `json:"jd_sub_quiteria"`
-			CVRawText string `json:"cv_raw_text"`
+			JDSubQuiteria  string `json:"jd_sub_quiteria"`
+			CVRawText      string `json:"cv_raw_text"`
 		}
 		var request JDRequest
 		if err := c.ShouldBindJSON(&request); err != nil {

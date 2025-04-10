@@ -77,7 +77,7 @@ func (agent *AIAgent) AddToHistory(question string, response string) {
 	agent.History = append(agent.History, History{
 		Question: question,
 		Response: response,
-		Date:     time.Now(),
+		Date:     toString(time.Now()),
 	})
 }
 
