@@ -1,0 +1,236 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assesses the candidate's knowledge and hands-on experience with the required technologies, programming languages, and development platforms crucial for the Software Engineer I role.",
+      "EvaluationStrategy": "Review the candidate's resume and assess their responses to technical interview questions. Verify claimed expertise through practical coding exercises and problem-solving scenarios. Specifically, focus on C#, .NET, SQL, Javascript, HTML and CSS. Also evaluate experience with database technologies such as Microsoft SQL Server.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates expertise in all required technologies, can independently solve complex technical problems, and suggests improvements to existing systems.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Proficient in most required technologies, can solve moderately complex technical problems with some assistance, and understands system design principles.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Has basic knowledge of required technologies, needs guidance to solve technical problems, and is still learning system design principles.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Limited knowledge of required technologies, struggles to solve even simple technical problems, and lacks understanding of system design principles.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "No knowledge of required technologies.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Evaluates the candidate's ability to analyze complex problems, identify root causes, and develop effective and innovative solutions.",
+      "EvaluationStrategy": "Present the candidate with real-world scenarios or case studies related to software development and system configurations. Evaluate their approach to breaking down the problem, identifying potential solutions, and assessing the pros and cons of each option. Assess their experience with testing and debugging.",
+      "ScoringGuided": [
+        {
+          "Comment": "Consistently demonstrates exceptional problem-solving skills, identifies innovative solutions, and proactively addresses potential issues.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Effectively analyzes problems, develops sound solutions, and anticipates potential challenges.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Competently solves routine problems, but may require assistance with complex issues.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Struggles to analyze complex problems and develop effective solutions without significant guidance.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Unable to analyze problems or develop effective solutions.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration: Assesses the candidate's ability to effectively communicate technical information to both technical and non-technical audiences, and to collaborate effectively with team members and stakeholders.",
+      "EvaluationStrategy": "Evaluate the candidate's communication skills during the interview. Assess their ability to explain technical concepts clearly and concisely. Ask behavioral questions to assess their experience working in teams and resolving conflicts. Verify communication skills from references.",
+      "ScoringGuided": [
+        {
+          "Comment": "Communicates clearly and effectively with all audiences, fosters strong working relationships, and proactively shares knowledge.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Communicates effectively in most situations, collaborates well with team members, and actively participates in discussions.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Communicates adequately, but may struggle to explain complex concepts clearly or participate effectively in team discussions.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Has difficulty communicating effectively and struggles to collaborate with team members.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Unable to communicate effectively or collaborate with others.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software Development Lifecycle (SDLC) Knowledge: Assesses the candidate's understanding of the software development lifecycle and their ability to contribute to all phases of the process.",
+      "EvaluationStrategy": "Ask the candidate about their experience with different SDLC methodologies (e.g., Agile, Waterfall). Present them with scenarios related to each phase of the SDLC (planning, analysis, design, development, testing, deployment, maintenance) and assess their understanding of the tasks and responsibilities involved. Also evaluate experience with version control systems.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates a comprehensive understanding of the SDLC and can effectively contribute to all phases of the process.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Has a strong understanding of the SDLC and can contribute effectively to most phases of the process.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Has a basic understanding of the SDLC and can contribute to some phases of the process with guidance.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Has limited understanding of the SDLC and requires significant guidance to contribute to any phase of the process.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "No understanding of SDLC.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Adaptability and Learning Agility: Assesses the candidate's ability to quickly learn new technologies, adapt to changing priorities, and thrive in a fast-paced environment.  This includes a willingness to continue professional growth through training and education.",
+      "EvaluationStrategy": "Explore their history of learning new technologies or adapting to changing project requirements. Use behavioral questions to understand how they've handled unexpected challenges or tight deadlines. Look for evidence of continuous learning and professional development.",
+      "ScoringGuided": [
+        {
+          "Comment": "Adapts quickly to new technologies and priorities, proactively seeks out learning opportunities, and thrives in a fast-paced environment.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Adapts well to new technologies and priorities, is open to learning, and can perform effectively in a fast-paced environment.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Requires some time to adapt to new technologies and priorities, shows willingness to learn, and can perform adequately in a fast-paced environment with support.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Struggles to adapt to new technologies and priorities, demonstrates limited willingness to learn, and has difficulty performing in a fast-paced environment.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Resistant to change, unwilling to learn new technologies, and unable to function in a fast-paced environment.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality and Testing: Assesses the candidate's ability to write clean, maintainable, and well-documented code, as well as their experience with testing and debugging.",
+      "EvaluationStrategy": "Review code samples provided by the candidate. Ask about their testing process, including unit testing, integration testing, and performance testing. Evaluate their ability to identify and fix bugs. Ask about familiarity with tools for static analysis and code review.",
+      "ScoringGuided": [
+        {
+          "Comment": "Writes clean, well-documented, and testable code. Proactively identifies and fixes bugs. Is proficient with testing frameworks and debugging tools.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Writes mostly clean and well-documented code. Can identify and fix most bugs with some assistance. Has experience with testing and debugging.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Code quality is inconsistent, documentation is lacking. Struggles to identify and fix bugs. Limited experience with testing and debugging.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Database Knowledge: Assesses the candidate's understanding of database concepts, SQL, and experience with database technologies like Microsoft SQL Server.",
+      "EvaluationStrategy": "Ask the candidate about their experience with database design, querying, and optimization. Have them write SQL queries to solve specific problems. Assess their knowledge of database security and performance tuning.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert in database design, SQL, and performance tuning. Can independently solve complex database problems.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Proficient in database concepts and SQL. Can solve moderately complex database problems with some assistance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Has basic knowledge of database concepts and SQL. Needs guidance to solve database problems.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Web Technologies: Evaluates proficiency in web technologies, including Javascript, HTML, CSS, Web Services, ADO, ADO.NET, and IIS.",
+      "EvaluationStrategy": "Assess hands-on experience with web development frameworks and libraries. Review knowledge of RESTful API design and security. Examine understanding of front-end performance optimization.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates expertise in a wide range of web technologies, designs scalable and secure web applications, and optimizes front-end performance.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Proficient with core web technologies and frameworks, designs functional web applications, and has a good understanding of web security.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Has basic knowledge of web technologies, needs significant guidance to develop web applications, and lacks understanding of web security.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "System Configuration and Support: Assesses the candidate's experience with system configuration, maintenance, and troubleshooting in multi-server environments.",
+      "EvaluationStrategy": "Ask about their experience with configuring and maintaining servers, troubleshooting system issues, and automating system administration tasks. Evaluate their knowledge of operating systems, networking, and security.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert in system configuration and support. Proactively identifies and resolves system issues. Automates system administration tasks.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Proficient in system configuration and support. Can troubleshoot most system issues with some assistance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Has basic knowledge of system configuration and support. Needs significant guidance to troubleshoot system issues.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Agile Development:  Evaluates experience with Agile methodologies.",
+      "EvaluationStrategy": "Inquire about their experience in Agile environments.  Ask specific questions about their involvement in sprints, daily stand-ups, sprint reviews, and retrospectives.  Assess their understanding of Agile principles and values.",
+      "ScoringGuided": [
+        {
+          "Comment": "Deep understanding of Agile principles and practices.  Actively contributes to process improvement and effectively utilizes Agile tools and techniques.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Familiar with Agile methodologies and participates effectively in Agile teams.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Limited experience with Agile and requires guidance on Agile practices.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

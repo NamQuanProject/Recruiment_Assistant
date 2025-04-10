@@ -1,0 +1,41 @@
+{
+  "Authenticity": "7",
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates proficiency in various software and fabrication tools relevant to architectural design and digital fabrication. The candidate's experience as a Digital Fabrication Lab Technician and Representation Intern suggests a familiarity with technologies like Adobe Creative Suite, Rhinoceros, Revit, AutoCAD, and various fabrication techniques. However, the CV lacks specific examples of coding skills or software development experience typically expected for a software engineer role. The listed skills are more geared towards design and fabrication rather than software engineering. Therefore, the score is moderate.",
+      "score": "5"
+    },
+    {
+      "category": "Problem Solving and Analytical Skills",
+      "explanation": "The CV mentions diagnosing equipment issues at the Pratt Interdisciplinary Technology Lab, which implies some problem-solving skills. Additionally, assisting with internal and personal assessments suggests analytical abilities. However, the descriptions are vague, and there's a lack of specific examples demonstrating complex problem-solving in a software engineering context. The candidate's role as an event staff and photography assistant provide less insights into analytical skills relevant to the role.",
+      "score": "4"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The candidate highlights strong teamwork and communication skills, referencing experience as an event staff, treasurer, secretary, and digital fabrication lab technician. The CV mentions facilitating events, conducting walkthroughs, and participating in meetings with foreign clients, which suggests good communication abilities. However, the examples are not directly related to software development environments. Therefore, the score reflects a moderate level of relevant communication and collaboration skills.",
+      "score": "6"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate expresses a willingness to learn and adapt to new knowledge. The diverse experiences listed, from event services to digital fabrication, suggest some level of adaptability. However, there is no explicit mention of quickly learning new technologies or adapting to changing project requirements in a software development context. Therefore, the score is moderate.",
+      "score": "5"
+    },
+    {
+      "category": "Experience",
+      "explanation": "The candidate's experience is primarily in architecture, design, and fabrication, with roles such as Digital Fabrication Lab Technician, Representation Intern, Event Services Staff and Photography Assistant. While these roles demonstrate valuable skills like problem-solving and teamwork, they lack direct relevance to software engineering. There is no mention of experience in public safety or public health software, as per the job description's preference. Therefore, the score is relatively low due to the lack of relevant professional experience.",
+      "score": "3"
+    }
+  ],
+  "FinalScore": 30.666666666666664,
+  "PersonalInfo": {
+    "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
+    "Age": null,
+    "Email": "knguyen6@pratt.edu",
+    "FullName": "Khanh Nguyen",
+    "GitHub": null,
+    "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
+    "PhoneNumber": "346.263.4012",
+    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s"
+  }
+}

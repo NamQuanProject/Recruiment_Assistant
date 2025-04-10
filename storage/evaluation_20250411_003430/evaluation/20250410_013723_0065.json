@@ -1,0 +1,66 @@
+{
+  "Authenticity": 7,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate's resume showcases experience with digital fabrication equipment, visualization software (Adobe Photoshop, Illustrator, InDesign, Lightroom, V-Ray, Enscape), and modeling software (Rhinoceros - Grasshopper, Revit, AutoCAD). While these skills are valuable in an architectural context, they don't directly align with the core technologies expected for a Software Engineer I role (C#, .NET, SQL, Javascript, HTML, CSS). The resume lacks any mention of programming languages or software development experience. Therefore the score is relatively low. There is no evidence about database knowledge or experience.",
+      "score": "3"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate's experience in diagnosing issues with digital fabrication equipment and assisting with internal assessments suggests some problem-solving abilities. Their role as a lab technician and representation intern likely involved analyzing problems and finding solutions. However, the resume lacks specific examples of complex problem-solving scenarios or innovative solutions. Furthermore, there is no mention of testing and debugging experience related to software development.",
+      "score": "5"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The resume highlights the candidate's communication and collaboration skills through their various roles. As an event services staff member, they organized and facilitated events, indicating strong communication and interpersonal skills. Their experience as a treasurer, secretary, and photography assistant demonstrates their ability to work in teams and communicate effectively with diverse groups of people. They are also bilingual and an international student, which shows ability to communicate with different audience.",
+      "score": "7"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) Knowledge",
+      "explanation": "The resume does not provide any information about the candidate's understanding of the Software Development Lifecycle (SDLC). There is no mention of Agile methodologies, version control systems, or experience in any phase of the SDLC. Given the lack of any related experience, the candidate's knowledge of SDLC is likely limited.",
+      "score": "2"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate's resume demonstrates a willingness to learn and adapt through their diverse experiences in different roles and organizations. Their experience as a digital fabrication lab technician, event services staff member, representation intern, and photography assistant shows their ability to quickly learn new skills and adapt to changing environments. The resume also mentions that the candidate is 'always ready to engage and absorb new knowledge and criticisms,' indicating a proactive approach to learning. However, these experiences are not directly related to software engineering.",
+      "score": "6"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The candidate has no software development experience and the resume does not showcase skills in code writing, documentation, or testing and debugging. Therefore, the candidate is evaluated as low for this subcategory.",
+      "score": "1"
+    },
+    {
+      "category": "Database Knowledge",
+      "explanation": "The candidate has no experience in database design, querying, or optimization, as evidenced by the resume. Therefore, the candidate is evaluated as low for this subcategory.",
+      "score": "1"
+    },
+    {
+      "category": "Web Technologies",
+      "explanation": "The candidate's resume does not mention experience with Javascript, HTML, CSS, Web Services, ADO, ADO.NET, or IIS. Therefore, the candidate is evaluated as low for this subcategory.",
+      "score": "1"
+    },
+    {
+      "category": "System Configuration and Support",
+      "explanation": "The candidate's resume indicates experience in diagnosing issues with digital fabrication equipment. However, there's no description or mention of experience with system configuration, maintenance, and troubleshooting in multi-server environments, operating systems, networking, or security.",
+      "score": "2"
+    },
+    {
+      "category": "Agile Development",
+      "explanation": "The resume does not mention any experience with Agile methodologies. Therefore, the candidate is evaluated as low for this subcategory.",
+      "score": "1"
+    }
+  ],
+  "FinalScore": 38.666666666666664,
+  "PersonalInfo": {
+    "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
+    "Age": null,
+    "Email": "knguyen6@pratt.edu",
+    "FullName": "Khanh Nguyen",
+    "GitHub": null,
+    "LinkedIn": "www.linkedin.com/in/khanh-\nnguyen-516482224",
+    "PhoneNumber": "346.263.4012",
+    "Website": "https://issuu.com/knguyen172/\ndocs/portfolio_2023_khanh_\nnguyen-s"
+  }
+}

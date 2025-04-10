@@ -27,26 +27,26 @@ func GeminiEvaluateScoring(jobType string, mainCategory string, CV string) (map[
 	defer agent.Close()
 
 	finalPrompt := fmt.Sprintf(`
-	You are an experienced recruiter for the field of "%s".
+You are an experienced recruiter in the field of "%s".
 
-	🎯 Your task:
-	Evaluate the following CV **fairly and objectively**, using only information in the document.
+🎯 **Your Task:**  
+Evaluate the following CV **fairly and objectively**, using only the information provided in the document.
 
-	- You must provide scores for each main category (1–10) and subcategory (1–5)
-	- You must scoring with full of the category provided.
-	- Give a **comprehensive explanation** per category — highlighting strong areas, weak areas, missing elements, and alignment with the job.
-	- Avoid any assumptions based on gender, name, race, religion, appearance, or background. Be absolutely unbiased.
-	- Also, if the information provided in the CV has proof for it, then evaluate an authenticity score for the whole CV — this is the reliability point.
+- You must assign scores for each **main category (1–10)** and **subcategory (1–5)**.
+- ⚠️ **IMPORTANT**: You must evaluate and score **every single category and subcategory** listed below. **Do not skip any.**
+- For each category, provide a **comprehensive explanation** — highlighting strengths, weaknesses, missing elements, and how well the candidate aligns with the role.
+- Be completely unbiased: do **not** make assumptions based on gender, name, race, religion, appearance, or background.
+- If the CV contains verifiable evidence (e.g., links, certifications, official documents), include an **Authenticity Score (1–10)** to reflect the reliability of the CV.
 
+📁 **Evaluation Categories:**  
+%s
 
-	📁 Main and Sub Categories: %s  
+📄 **Candidate CV:**  
+"""%s"""
 
-	📄 Candidate CV:
-	"""%s"""
-
-	📋 Output:
-	Return a single valid JSON object formatted like this:
-	%s
+📋 **Output Format:**  
+Return a single valid JSON object in the following structure:  
+%s
 `, jobType, mainCategoryStr, CV, structurePrompt)
 
 	agent.Model.ResponseMIMEType = "application/json"
