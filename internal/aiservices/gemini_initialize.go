@@ -69,10 +69,15 @@ func GetAIAgent(id string, config Config) (*AIAgent, error) {
 		ctx:           ctx,
 	}, nil
 }
-
+func toString(v interface{}) string {
+	if str, ok := v.(string); ok {
+		return str
+	}
+	return ""
+}
 func HandleHistoryGet(id string) []History {
-	historyData, jsonErr := ReadJsonStructure("./internal/aiservice/data/history.json")
-	if jsonErr != nil {
+	historyData, err := ReadJsonStructure("./internal/aiservices/data/history.json")
+	if err != nil {
 		return []History{}
 	}
 
@@ -80,10 +85,27 @@ func HandleHistoryGet(id string) []History {
 	if !ok {
 		return []History{}
 	}
-	fmt.Println(currentModelHistory)
-	final_result := []History{}
 
-	return final_result
+	rawEntries, ok := currentModelHistory.([]interface{})
+	if !ok {
+		return []History{}
+	}
+
+	finalResult := make([]History, 0, len(rawEntries))
+	for _, raw := range rawEntries {
+		entryMap, ok := raw.(map[string]interface{})
+		if !ok {
+			continue
+		}
+
+		finalResult = append(finalResult, History{
+			Question: toString(entryMap["Question"]),
+			Response: toString(entryMap["Response"]),
+			Date:     toString(entryMap["Date"]),
+		})
+	}
+
+	return finalResult
 }
 
 // SETTINGS AND INITIALIZATION
