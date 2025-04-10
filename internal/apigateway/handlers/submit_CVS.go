@@ -8,27 +8,25 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-	"strings"
 
 	"github.com/gin-gonic/gin"
 )
 
 func SubmitCVsHandler(c *gin.Context) {
-	// Get single uploaded file under field "pdfFile"
 	file, err := c.FormFile("pdfFile")
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "No file uploaded under field 'pdfFile'"})
 		return
 	}
 
-	ext := strings.ToLower(filepath.Ext(file.Filename))
-	if ext != ".pdf" {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"file":  file.Filename,
-			"error": "Only PDF files are allowed",
-		})
-		return
-	}
+	// ext := strings.ToLower(filepath.Ext(file.Filename))
+	// if ext != ".pdf" {
+	// 	c.JSON(http.StatusBadRequest, gin.H{
+	// 		"file":  file.Filename,
+	// 		"error": "Only PDF files are allowed",
+	// 	})
+	// 	return
+	// }
 
 	uploadDir := "uploads"
 	if err := os.MkdirAll(uploadDir, os.ModePerm); err != nil {
@@ -45,7 +43,6 @@ func SubmitCVsHandler(c *gin.Context) {
 		return
 	}
 
-	// Process the uploaded PDF
 	if err := ProcessCV(dst); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"file":   file.Filename,
@@ -90,7 +87,7 @@ func ProcessCV(filePath string) error {
 		return fmt.Errorf("failed to prepare request: %v", err)
 	}
 
-	resp, err := http.Post("http://localhost:8085/parse", "application/json", bytes.NewBuffer(reqBody))
+	resp, err := http.Post("http://localhost:8085/parse/cv", "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
 		return fmt.Errorf("failed to call CV parsing server: %v", err)
 	}
