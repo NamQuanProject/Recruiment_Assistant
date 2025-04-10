@@ -43,7 +43,7 @@ func NewAIAgent(config Config, default_agent bool) (*AIAgent, error) {
 
 func GetAIAgent(id string, config Config) (*AIAgent, error) {
 	config.APIKey = "AIzaSyB22ThtcCvZuXual9uaT_6v4Bo5R6oBdok"
-	config.ModelName = "gemini-2.0-flash"
+	config.ModelName = "gemini-2.5-pro-exp-03-28"
 	config.Temperature = 0.0
 	config.Name = "DefaultAgent"
 

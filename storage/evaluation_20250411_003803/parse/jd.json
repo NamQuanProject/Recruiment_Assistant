@@ -1,0 +1,190 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: This category assesses the candidate's depth and breadth of technical skills relevant to software engineering, including programming languages, frameworks, databases, and web technologies. It is crucial for the candidate to effectively contribute to the development and maintenance of software systems.",
+      "EvaluationStrategy": "Evaluate the candidate's experience with required and preferred technologies through resume analysis, technical interview questions, and coding challenges. Assess their understanding of fundamental concepts and their ability to apply them in practical scenarios. Consider certifications and relevant projects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no demonstrable experience with required technologies. Lacks fundamental understanding.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Some experience with required technologies but may require guidance. Demonstrates basic understanding.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong understanding and experience with required technologies. Can independently contribute to development tasks.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert level knowledge and experience with multiple technologies. Can lead development efforts and mentor others.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software Development Lifecycle (SDLC) Expertise: Assesses the candidate's understanding and practical experience with all phases of the SDLC, including requirements gathering, design, development, testing, deployment, and maintenance. Mastery of SDLC enables efficient, high-quality software delivery.",
+      "EvaluationStrategy": "Assess the candidate's familiarity with different SDLC methodologies (e.g., Agile, Waterfall) and their ability to apply them in real-world projects. Explore their experience with version control systems, testing frameworks, and deployment processes. Ask about their contributions to each phase of the SDLC in previous projects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of SDLC principles. Lacks experience in multiple phases.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of SDLC phases and methodologies. Some experience in specific areas.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong understanding of SDLC principles and methodologies. Experience in all phases of the SDLC and can contribute effectively.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert level knowledge of SDLC methodologies. Can lead the SDLC process for complex projects and implement best practices.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Evaluates the candidate's ability to analyze complex problems, identify root causes, and develop effective solutions. Strong problem-solving skills are essential for debugging code, resolving technical issues, and designing robust systems.",
+      "EvaluationStrategy": "Present the candidate with coding challenges, debugging scenarios, and system design problems. Assess their approach to problem-solving, their ability to break down complex problems into smaller parts, and their creativity in finding solutions. Look for examples of their problem-solving abilities in their previous projects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze complex problems. Difficulty identifying root causes and generating effective solutions.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can analyze problems with guidance. Generates basic solutions but may require assistance with complex issues.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Demonstrates strong problem-solving skills. Can independently analyze complex problems and develop effective solutions.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving and analytical skills. Can quickly identify and resolve complex issues with innovative solutions.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration: Assesses the candidate's ability to communicate effectively with team members, stakeholders, and clients. Strong communication skills are crucial for collaborating on projects, explaining technical concepts, and understanding business requirements.",
+      "EvaluationStrategy": "Evaluate the candidate's communication skills through interviews and team-based exercises. Assess their ability to clearly articulate technical concepts, actively listen to others, and provide constructive feedback. Look for examples of their collaborative skills in previous projects and their ability to work effectively in a team environment.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication skills. Difficulty articulating technical concepts and collaborating with others.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate communication skills. Can communicate technical concepts with some difficulty. Requires guidance in collaborative efforts.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong communication skills. Can clearly articulate technical concepts and collaborate effectively with team members.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional communication and collaboration skills. Can effectively communicate with diverse stakeholders and lead collaborative efforts.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "C# and .NET Proficiency: This subcategory evaluates the candidate's specific knowledge and experience with C# programming language and the .NET framework, which are primary technologies used in the company's software development. Strong proficiency in C# and .NET is crucial for developing and maintaining applications on the Microsoft platform.",
+      "EvaluationStrategy": "Assess the candidate's hands-on experience with C# and .NET through coding challenges, code reviews, and technical interview questions. Evaluate their understanding of object-oriented programming principles, .NET libraries, and common design patterns. Consider certifications and relevant projects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with C# and .NET. Lacks fundamental understanding.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Some experience with C# and .NET but requires guidance. Demonstrates basic understanding.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong understanding and experience with C# and .NET. Can independently contribute to development tasks.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert level knowledge and experience with C# and .NET. Can lead development efforts and mentor others.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Database Technologies (SQL Server): This subcategory assesses the candidate's knowledge and experience with database technologies, specifically Microsoft SQL Server, including T-SQL, ODBC, and SQL Reporting Services. Proficiency in SQL Server is crucial for data storage, retrieval, and reporting.",
+      "EvaluationStrategy": "Evaluate the candidate's hands-on experience with SQL Server through coding challenges, database design exercises, and technical interview questions. Assess their ability to write efficient SQL queries, design database schemas, and optimize database performance. Consider certifications and relevant projects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with SQL Server. Lacks fundamental understanding of database concepts.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Some experience with SQL Server but requires guidance. Demonstrates basic understanding of database concepts.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong understanding and experience with SQL Server. Can independently contribute to database-related tasks.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert level knowledge and experience with SQL Server. Can lead database design and optimization efforts.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Web Technologies (JavaScript, HTML, CSS): This subcategory evaluates the candidate's knowledge and experience with web technologies such as JavaScript, HTML, and CSS, which are essential for developing user interfaces and web applications. Proficiency in web technologies is crucial for creating engaging and responsive web experiences.",
+      "EvaluationStrategy": "Assess the candidate's hands-on experience with JavaScript, HTML, and CSS through coding challenges, web design exercises, and technical interview questions. Evaluate their understanding of web standards, front-end frameworks, and responsive design principles. Consider relevant projects and portfolio.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with JavaScript, HTML, and CSS. Lacks fundamental understanding of web development concepts.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Some experience with JavaScript, HTML, and CSS but requires guidance. Demonstrates basic understanding of web development concepts.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong understanding and experience with JavaScript, HTML, and CSS. Can independently contribute to front-end development tasks.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert level knowledge and experience with JavaScript, HTML, and CSS. Can lead front-end development efforts and implement best practices.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Adaptability and Learning Agility: This subcategory assesses the candidate's ability to adapt to new technologies, learn quickly, and thrive in a fast-paced environment. Given the rapidly evolving nature of software engineering, adaptability and learning agility are crucial for staying current and contributing effectively.",
+      "EvaluationStrategy": "Evaluate the candidate's previous experience with learning new technologies and their ability to apply them in practical scenarios. Ask about their approach to learning new skills and their willingness to embrace change. Look for examples of their adaptability in previous projects and their ability to overcome challenges.",
+      "ScoringGuided": [
+        {
+          "Comment": "Resistant to change. Difficulty learning new technologies and adapting to new situations.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Open to learning but requires significant guidance. Adapts slowly to new technologies and situations.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Demonstrates a strong willingness to learn and adapt. Can quickly grasp new concepts and apply them effectively.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Exceptional adaptability and learning agility. Continuously seeks new knowledge and embraces change.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

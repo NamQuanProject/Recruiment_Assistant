@@ -1,0 +1,216 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assesses the candidate's mastery of the required technologies (C#, .NET, SQL, JavaScript, HTML, CSS, etc.) and their ability to apply them effectively to develop, maintain, and troubleshoot software systems.",
+      "EvaluationStrategy": "Review the candidate's resume and project portfolio for evidence of hands-on experience with the specified technologies. Conduct technical interviews with coding exercises and scenario-based questions to evaluate their problem-solving skills and coding abilities.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with required technologies. Struggles with basic coding concepts and problem-solving.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Some experience with required technologies but may need guidance on complex tasks. Demonstrates basic coding skills but may struggle with optimization.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Proficient in required technologies and can independently develop, maintain, and troubleshoot software systems. Writes clean, efficient code and understands software development best practices.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level proficiency in required technologies with a deep understanding of software architecture, design patterns, and performance optimization. Can mentor other engineers and drive technical innovation.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem Solving and Analytical Skills: Evaluates the candidate's ability to analyze complex problems, identify root causes, and develop effective solutions. This includes troubleshooting system issues, debugging code, and designing efficient algorithms.",
+      "EvaluationStrategy": "Present the candidate with real-world problem scenarios and assess their approach to problem-solving. Evaluate their ability to break down complex problems into smaller, manageable tasks and develop logical, well-reasoned solutions. Use technical interview questions to assess their knowledge of data structures, algorithms, and debugging techniques.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze problems and develop solutions. Lacks fundamental problem-solving skills.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can analyze simple problems and develop basic solutions with guidance. May struggle with complex issues.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Effectively analyzes complex problems, identifies root causes, and develops well-reasoned solutions independently. Proficient in debugging and troubleshooting.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving skills with a strong ability to analyze complex systems and develop innovative solutions. Can anticipate potential problems and proactively address them.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration: Assesses the candidate's ability to communicate effectively with both technical and non-technical stakeholders, and to collaborate effectively with team members. This includes clear and concise written and verbal communication, active listening, and the ability to work effectively in a team environment.",
+      "EvaluationStrategy": "Evaluate the candidate's communication skills throughout the interview process. Assess their ability to explain technical concepts clearly and concisely to both technical and non-technical audiences. Use behavioral interview questions to assess their teamwork skills and ability to collaborate effectively with others. Observe their interactions with other interviewers and team members.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication skills and difficulty collaborating with others. Struggles to express ideas clearly and concisely.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate communication skills but may struggle to explain complex technical concepts clearly. Can collaborate with others but may require guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Excellent communication skills with the ability to explain technical concepts clearly and concisely to both technical and non-technical audiences. Works effectively in a team environment and collaborates well with others.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional communication and collaboration skills. Can effectively communicate complex technical concepts to diverse audiences and build strong relationships with stakeholders. A natural leader and team player.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software Development Lifecycle (SDLC) Knowledge: Evaluates the candidate's understanding of the software development lifecycle and their ability to participate in all phases, including requirements gathering, design, development, testing, and deployment.",
+      "EvaluationStrategy": "Ask the candidate about their experience with different SDLC methodologies (e.g., Agile, Waterfall). Assess their understanding of the different phases of the SDLC and their role in each phase. Use scenario-based questions to evaluate their ability to apply SDLC principles to real-world projects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of the SDLC. Struggles to participate in any phase of the software development process.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of the SDLC but may need guidance on specific phases. Can participate in some phases of the software development process with assistance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Solid understanding of the SDLC and can participate effectively in all phases of the software development process. Familiar with different SDLC methodologies and can adapt to different environments.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level knowledge of the SDLC with a deep understanding of different methodologies and their tradeoffs. Can lead and mentor others in the software development process and drive process improvements.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Adaptability and Learning Agility: Assesses the candidate's ability to quickly learn new technologies and adapt to changing project requirements. This includes a willingness to learn new skills, a positive attitude towards change, and the ability to thrive in a fast-paced environment.",
+      "EvaluationStrategy": "Ask the candidate about their experience learning new technologies and adapting to changing project requirements. Use behavioral interview questions to assess their attitude towards change and their ability to handle ambiguity. Look for evidence of continuous learning and a proactive approach to professional development.",
+      "ScoringGuided": [
+        {
+          "Comment": "Resistant to change and struggles to learn new technologies. Prefers to stick to familiar methods and tools.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Willing to learn new technologies but may require significant guidance and support. Can adapt to some changes but may struggle with ambiguity.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Quickly learns new technologies and adapts easily to changing project requirements. Embraces new challenges and thrives in a fast-paced environment.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional learning agility and a proactive approach to professional development. Seeks out new challenges and is comfortable with ambiguity. A valuable asset in a rapidly changing environment.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality: Assesses the candidate's ability to write clean, maintainable, and well-documented code. This includes adherence to coding standards, use of design patterns, and effective commenting.",
+      "EvaluationStrategy": "Review code samples provided by the candidate and assess their quality based on coding standards, design patterns, and documentation. Observe the candidate's coding style during technical interviews and provide feedback.",
+      "ScoringGuided": [
+        {
+          "Comment": "Code is difficult to read, poorly documented, and does not follow coding standards.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Code is generally readable and follows basic coding standards, but may lack documentation or proper design patterns.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Code is clean, well-documented, and follows coding standards and design patterns effectively.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Testing and Debugging: Evaluates the candidate's ability to write effective unit tests, debug code, and identify and resolve software defects.",
+      "EvaluationStrategy": "Ask the candidate about their experience with testing frameworks and debugging tools. Present the candidate with buggy code and assess their ability to identify and fix the defects. Review the candidate's unit tests for completeness and effectiveness.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited experience with testing and debugging. Struggles to write effective unit tests or identify software defects.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Some experience with testing and debugging. Can write basic unit tests and identify some software defects with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in testing and debugging. Writes effective unit tests, identifies software defects efficiently, and uses debugging tools effectively.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Requirements Analysis: Assesses the candidate's ability to understand and analyze user requirements, and to translate them into technical specifications.",
+      "EvaluationStrategy": "Present the candidate with user stories or requirements documents and assess their ability to identify key requirements and translate them into technical specifications. Ask the candidate about their experience with requirements gathering and analysis techniques.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to understand user requirements and translate them into technical specifications.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Can understand basic user requirements and translate them into technical specifications with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Effectively understands user requirements and translates them into clear and concise technical specifications.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Database Knowledge: Evaluates the candidate's understanding of database concepts, SQL, and database design principles. This includes the ability to write efficient SQL queries, design database schemas, and optimize database performance.",
+      "EvaluationStrategy": "Ask the candidate about their experience with different database systems and SQL. Present the candidate with database design scenarios and assess their ability to design efficient database schemas. Evaluate their ability to write efficient SQL queries during technical interviews.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of database concepts and SQL. Struggles to write basic SQL queries or design database schemas.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Some understanding of database concepts and SQL. Can write basic SQL queries and design simple database schemas with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in database concepts and SQL. Writes efficient SQL queries, designs effective database schemas, and understands database performance optimization techniques.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "On-Call Responsibilities: Determines the candidate's willingness and ability to participate in a rotating 24x7 on-call schedule to support production systems.",
+      "EvaluationStrategy": "Discuss the on-call responsibilities with the candidate, explaining the expectations and time commitment involved. Assess their understanding of the importance of on-call support and their ability to respond to incidents promptly and effectively. Inquire about their prior experience with on-call duties and their coping mechanisms for dealing with after-hours emergencies.",
+      "ScoringGuided": [
+        {
+          "Comment": "Unwilling or unable to participate in on-call responsibilities due to personal constraints or lack of experience.",
+          "Range": "1"
+        },
+        {
+          "Comment": "Hesitant about on-call responsibilities, but willing to consider it with further explanation and support. May lack confidence in handling after-hours incidents.",
+          "Range": "2-3"
+        },
+        {
+          "Comment": "Enthusiastic about participating in on-call responsibilities and demonstrates a strong understanding of the importance of system availability and rapid incident response. Has prior experience with on-call duties and a proven track record of resolving issues effectively.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

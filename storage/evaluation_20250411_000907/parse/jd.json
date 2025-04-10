@@ -1,0 +1,229 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assesses the candidate's knowledge and practical experience with required and preferred technologies, including C#, .NET, SQL, web technologies, and related tools.  Also includes familiarity with software development lifecycle, testing methodologies, and system configuration.",
+      "EvaluationStrategy": "Review the candidate's resume, project portfolio, and responses to technical interview questions.  Verify claimed expertise through coding challenges and practical problem-solving scenarios.  Assess their understanding of software development principles and their ability to apply them to real-world problems.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates expert-level knowledge and hands-on experience with all required and preferred technologies.  Can independently design, develop, and deploy complex software solutions. Exhibits deep understanding of SDLC and testing methodologies.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Possesses strong knowledge and experience with most required technologies and a good understanding of preferred technologies. Can develop and deploy software solutions with minimal supervision.  Understands SDLC and testing methodologies.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Has a working knowledge of required technologies but may lack experience with some. Understands basic SDLC and testing concepts but may require guidance on complex tasks.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Demonstrates limited knowledge of required technologies and lacks practical experience.  Requires significant guidance and supervision.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Lacks fundamental knowledge of required technologies.  Unable to perform basic software development tasks.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Evaluates the candidate's ability to analyze complex problems, identify root causes, and develop effective solutions.  Includes troubleshooting skills and the ability to think critically under pressure.",
+      "EvaluationStrategy": "Present the candidate with real-world scenarios and technical challenges.  Assess their problem-solving approach, their ability to break down complex problems, and their creativity in finding solutions. Observe their thought process and communication skills during the problem-solving process.",
+      "ScoringGuided": [
+        {
+          "Comment": "Exceptional problem-solving skills. Can quickly identify root causes and develop innovative solutions to complex problems.  Thinks critically and effectively under pressure.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong problem-solving skills. Can effectively analyze problems and develop appropriate solutions.  Generally performs well under pressure.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Demonstrates adequate problem-solving skills. Can identify and solve common problems but may struggle with complex issues.  May require guidance under pressure.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Displays limited problem-solving skills. Struggles to analyze problems and develop effective solutions.  Performs poorly under pressure.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Lacks problem-solving skills. Unable to analyze problems or develop solutions.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration: Assesses the candidate's ability to communicate effectively with stakeholders, collaborate with team members, and document technical information clearly and concisely.",
+      "EvaluationStrategy": "Observe the candidate's communication style during the interview process. Evaluate their ability to explain technical concepts clearly and concisely. Assess their ability to work effectively in a team environment through behavioral questions and group exercises.  Review any technical documentation they have provided.",
+      "ScoringGuided": [
+        {
+          "Comment": "Excellent communication and collaboration skills. Can effectively communicate with stakeholders at all levels and work seamlessly in a team environment.  Produces clear and concise technical documentation.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong communication and collaboration skills. Communicates effectively and works well in a team.  Produces adequate technical documentation.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Demonstrates adequate communication and collaboration skills but may struggle in certain situations. Requires improvement in technical documentation.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Displays limited communication and collaboration skills. Struggles to communicate effectively or work in a team.  Poor technical documentation skills.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Lacks communication and collaboration skills. Unable to communicate effectively or work in a team.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Adaptability and Learning Agility: Evaluates the candidate's ability to adapt to changing priorities, learn new technologies, and thrive in a fast-paced environment. Includes a willingness to take initiative and responsibility.",
+      "EvaluationStrategy": "Assess the candidate's learning agility through questions about their past experiences and their approach to learning new technologies. Evaluate their adaptability through scenario-based questions that require them to adapt to changing circumstances. Look for evidence of initiative and responsibility in their past projects and work experiences.",
+      "ScoringGuided": [
+        {
+          "Comment": "Highly adaptable and demonstrates a strong desire to learn new technologies. Thrives in a fast-paced environment and readily takes initiative and responsibility.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Adaptable and willing to learn new technologies. Performs well in a fast-paced environment and takes initiative when appropriate.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Demonstrates some adaptability but may struggle with rapid changes. Requires some encouragement to learn new technologies and take initiative.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Displays limited adaptability and is resistant to learning new technologies. Struggles in a fast-paced environment and avoids taking initiative.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Lacks adaptability and is unwilling to learn new technologies.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality: Evaluates the candidate's ability to write clean, maintainable, and well-documented code.",
+      "EvaluationStrategy": "Review code samples provided by the candidate. Assess the code's readability, structure, and adherence to coding standards. Look for evidence of proper documentation and error handling.",
+      "ScoringGuided": [
+        {
+          "Comment": "Code is exceptionally clean, well-documented, and easy to maintain.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Code is generally clean and maintainable with adequate documentation.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Code is functional but may lack clarity and documentation.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Code is difficult to understand and maintain with little or no documentation.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Database Skills: Assesses the candidate's proficiency in working with databases, including SQL, data modeling, and database design.",
+      "EvaluationStrategy": "Evaluate the candidate's responses to questions about database concepts and their experience with specific database technologies. Ask them to write SQL queries and design database schemas.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert-level database skills. Can design and implement complex database solutions.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Strong database skills. Can write complex SQL queries and design efficient database schemas.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Basic database skills. Can write simple SQL queries and understand basic database concepts.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Limited database skills. Struggles to write SQL queries or understand database concepts.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Testing and Debugging: Assesses the candidate's ability to write unit tests, debug code, and identify and resolve software defects.",
+      "EvaluationStrategy": "Review the candidate's experience with testing methodologies and debugging tools. Ask them to describe their approach to testing and debugging code. Provide them with code containing defects and ask them to identify and fix the defects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert in testing and debugging. Can write comprehensive unit tests and effectively debug complex code.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Proficient in testing and debugging. Can write basic unit tests and debug code with minimal assistance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Basic understanding of testing and debugging concepts. Requires guidance to write unit tests and debug code.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Limited understanding of testing and debugging. Struggles to write unit tests or debug code.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Knowledge of Software Development Lifecycle (SDLC): Understanding and experience with different phases of the SDLC (planning, analysis, design, development, implementation, maintenance).",
+      "EvaluationStrategy": "Assess the candidate's understanding of the SDLC through questions and scenarios. Ask about their experience with different SDLC methodologies (e.g., Agile, Waterfall).",
+      "ScoringGuided": [
+        {
+          "Comment": "Deep understanding and extensive experience with all phases of the SDLC.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Good understanding and experience with most phases of the SDLC.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Basic understanding of the SDLC but limited practical experience.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Limited understanding of the SDLC.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Teamwork \u0026 Collaboration: Assesses ability to effectively work with other team members. Shares information openly, listens to others, and constructively resolves conflicts.",
+      "EvaluationStrategy": "Behavioral interview questions that focus on past teamwork experiences. Check references from past colleagues. Assess whether the candidate prioritizes team goals or individual achievement.",
+      "ScoringGuided": [
+        {
+          "Comment": "An exceptional team player who actively promotes collaboration and contributes to a positive team environment. Provides guidance and mentorship to other team members.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Works effectively in a team environment and contributes positively to team goals. Communicates effectively with team members and resolves conflicts constructively.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Works adequately in a team environment but may occasionally struggle with communication or conflict resolution.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Has difficulty working in a team environment and may exhibit poor communication or conflict-resolution skills.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

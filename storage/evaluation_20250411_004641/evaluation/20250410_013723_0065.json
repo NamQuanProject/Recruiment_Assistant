@@ -1,0 +1,58 @@
+{
+  "Authenticity": "7",
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate lists a variety of software and fabrication tools, including Adobe Photoshop, Illustrator, InDesign, Lightroom, V-Ray, Enscape, Rhinoceros - Grasshopper, Revit, AutoCAD, Laser Cutting, ZUND Digital Cutting and Routing, WAZER Waterjet, 3D Printing and Scanning, and CNC Milling. While these are useful in architecture and design, the relevance to software engineering is limited. The candidate mentions Office, Word, PowerPoint, and Excel, which are basic computer skills. There's no mention of C#, .NET, SQL, SSRS, Javascript, HTML, or CSS, nor experience with relational databases, ORM or SQL technologies. The candidate's experience does not align well with the requirements of a software engineering role.",
+      "score": "2"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate's experience as a Digital Fabrication Lab Technician involves diagnosing issues with equipment and assisting with projects, which implies some level of problem-solving. The resume lacks specific examples of analytical tasks or complex problem-solving scenarios. The descriptions of previous roles are more focused on assistance and facilitation than on independent problem-solving. More concrete examples would be needed to assess this skill accurately.",
+      "score": "4"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) Expertise",
+      "explanation": "The candidate's experience does not explicitly mention involvement in the software development lifecycle. The roles described are related to architecture, design, and lab assistance, which don't typically involve SDLC processes. There is no indication of familiarity with agile methodologies, requirements gathering, or testing. Therefore, it's difficult to assess their expertise in this area based on the provided information.",
+      "score": "1"
+    },
+    {
+      "category": "Communication and Collaboration Skills",
+      "explanation": "The candidate describes themselves as an 'outgoing and optimistic teamplayer' who 'creates strong bonds when working with other people.' The roles as Event Services Staff and Representation Intern involve communication, teamwork, and interaction with clients. These experiences indicate some level of communication and collaboration skills. The role as a translator further demonstrates the ability to communicate effectively. However, without specific examples of conflict resolution or leading teams, the assessment is limited.",
+      "score": "6"
+    }
+  ],
+  "FinalScore": 21.666666666666668,
+  "PersonalInfo": {
+    "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
+    "Age": null,
+    "Email": "knguyen6@pratt.edu",
+    "FullName": "Khanh Nguyen",
+    "GitHub": null,
+    "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
+    "PhoneNumber": "346.263.4012",
+    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s"
+  },
+  "SubCategory": [
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The CV doesn't show any involvement in software development, so there's no evidence of the candidate's skills in code quality or testing. This subcategory cannot be evaluated positively based on the provided information.",
+      "score": "1"
+    },
+    {
+      "category": "Continuous Learning and Professional Development",
+      "explanation": "The candidate is currently a student and has held multiple internships, which demonstrates a willingness to learn. However, the CV doesn't mention any specific efforts to stay current with software engineering trends or technologies. Therefore, it's difficult to assess their commitment to continuous learning in the software engineering field specifically.",
+      "score": "2"
+    },
+    {
+      "category": "Adaptability and Flexibility",
+      "explanation": "The variety of roles held by the candidate (Digital Fabrication Lab Technician, Event Services Staff, Representation Intern, Photography Assistant) suggests some adaptability and flexibility. However, the CV lacks specific examples of adapting to changing priorities or learning new technologies quickly. Therefore, the assessment is based on inference rather than concrete evidence.",
+      "score": "3"
+    },
+    {
+      "category": "Public Safety/Public Health Domain Knowledge",
+      "explanation": "The CV doesn't mention any experience in public safety or public health. The roles described are primarily related to architecture, design, and event management. Therefore, the candidate has no experience in this specified domain.",
+      "score": "1"
+    }
+  ]
+}

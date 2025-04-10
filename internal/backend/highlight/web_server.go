@@ -3,6 +3,7 @@ package highlight
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"log"
 	"net/http"
 	"os"
@@ -15,6 +16,12 @@ import (
 // WebServer handles the web interface for CV highlighting
 type WebServer struct {
 	uploadDir string
+}
+type getHlCVRequest struct {
+	JobTitle       string `json:"job_title"`
+	JobDetailsPath string `json:"job_details_path"`
+	PdfPath        string `json:"pdf_path"`
+	EvalRefPath    string `json:"evaluation_path"`
 }
 
 // NewWebServer creates a new web server instance
@@ -45,44 +52,98 @@ func (s *WebServer) Run() {
 
 	// Handle CV upload and analysis
 	r.POST("/analyze-cv", func(c *gin.Context) {
-		// Get the uploaded file
-		file, err := c.FormFile("cvFile")
+
+		var req getHlCVRequest
+		if err := c.ShouldBindJSON(&req); err != nil {
+			log.Printf("Failed to bind JSON: %v", err)
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input JSON"})
+			return
+		}
+
+		//jobtile = string of req.JobTitle
+		jobTitle := req.JobTitle
+		//read jobdetails string from req.JobDetailsPath
+		jobDetailsBytes, err := os.ReadFile(req.JobDetailsPath)
 		if err != nil {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "No file uploaded"})
+			log.Printf("Failed to read job details file: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to read job details file"})
 			return
 		}
+		jobDetails := string(jobDetailsBytes)
 
-		// Get job title and details
-		jobTitle := c.PostForm("jobTitle")
-		jobDetails := c.PostForm("jobDetails")
-		evaluationReferenceStr := c.PostForm("evaluationReference")
+		pdfpath := req.PdfPath
+		//pdfpath, jobtile, jobdetailspath, evaluationrefencepath
+		// Get the uploaded file
 
-		if jobTitle == "" || jobDetails == "" {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "Job title and details are required"})
-			return
-		}
+		// // Get job title and details
+		// jobTitle := c.PostForm("jobTitle")
+		// jobDetails := c.PostForm("jobDetails")
+		// evaluationReferenceStr := c.PostForm("evaluationReference")
+
+		// if jobTitle == "" || jobDetails == "" {
+		// 	c.JSON(http.StatusBadRequest, gin.H{"error": "Job title and details are required"})
+		// 	return
+		// }
 
 		// Parse evaluation reference if provided
-		var evaluationReference map[string]any
-		if evaluationReferenceStr != "" {
-			if err := json.Unmarshal([]byte(evaluationReferenceStr), &evaluationReference); err != nil {
-				log.Printf("Failed to parse evaluation reference: %v", err)
-				c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid evaluation reference format"})
-				return
-			}
-		}
+		// var evaluationReference map[string]any
+		// if evaluationReferenceStr != "" {
+		// 	if err := json.Unmarshal([]byte(evaluationReferenceStr), &evaluationReference); err != nil {
+		// 		log.Printf("Failed to parse evaluation reference: %v", err)
+		// 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid evaluation reference format"})
+		// 		return
+		// 	}
+		// }
 
 		// Create a unique filename
 		timestamp := time.Now().Format("20060102_150405")
-		filename := fmt.Sprintf("%s_%s", timestamp, filepath.Base(file.Filename))
+		filename := fmt.Sprintf("%s_%s", timestamp, filepath.Base(pdfpath))
+		fmt.Println("Filename:", filename)
 		pdfPath := filepath.Join(s.uploadDir, filename)
 
-		// Save the uploaded file
-		if err := c.SaveUploadedFile(file, pdfPath); err != nil {
-			log.Printf("Failed to save file: %v", err)
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save file"})
+		// Copy the PDF file from pdfpath to pdfPath
+		sourceFile, err := os.Open(pdfpath)
+		if err != nil {
+			log.Printf("Failed to open source PDF file: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to open source PDF file"})
 			return
 		}
+		defer sourceFile.Close()
+
+		destFile, err := os.Create(pdfPath)
+		if err != nil {
+			log.Printf("Failed to create destination PDF file: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create destination PDF file"})
+			return
+		}
+		defer destFile.Close()
+
+		if _, err := io.Copy(destFile, sourceFile); err != nil {
+			log.Printf("Failed to copy PDF file: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to copy PDF file"})
+			return
+		}
+
+		//read evaluation reference as map[string]any from req.EvalRefPath
+		evaluationReferenceBytes, err := os.ReadFile(req.EvalRefPath)
+		if err != nil {
+			log.Printf("Failed to read evaluation reference file: %v", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to read evaluation reference file"})
+			return
+		}
+		var evaluationReference map[string]any
+		if err := json.Unmarshal(evaluationReferenceBytes, &evaluationReference); err != nil {
+			log.Printf("Failed to parse evaluation reference JSON: %v", err)
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid evaluation reference JSON format"})
+			return
+		}
+
+		// // Save the uploaded file
+		// if err := c.SaveUploadedFile(file, pdfPath); err != nil {
+		// 	log.Printf("Failed to save file: %v", err)
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save file"})
+		// 	return
+		// }
 
 		areas, err := FindAreas(pdfPath, jobTitle, jobDetails, "http://localhost:8081", evaluationReference)
 		if err != nil {
@@ -130,12 +191,12 @@ func (s *WebServer) Run() {
 
 		// Return success response with download link
 		c.JSON(http.StatusOK, gin.H{
-			"message":            fmt.Sprintf("CV analyzed successfully. Found %d strong areas and %d weak areas.", strongCount, weakCount),
+			"message":              fmt.Sprintf("CV analyzed successfully. Found %d strong areas and %d weak areas.", strongCount, weakCount),
 			"highlighted_pdf_path": highlightResp.HighlightedPDFPath,
 		})
 	})
 
 	// Start the server
-	fmt.Println("Web server running at http://localhost:3001")
-	r.Run(":3001")
-} 
+	fmt.Println("Web server running at http://localhost:4000")
+	r.Run(":4000")
+}

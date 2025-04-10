@@ -50,6 +50,7 @@ func RunServer() {
 	// Job description routes
 	r.POST("/submitJD", handlers.SubmitJDHandler)
 	r.POST("/submitCVs", handlers.SubmitCVsHandler)
+	r.POST("/getHlCV", handlers.GetHlCVHandler)
 
 	r.Run(":8080") // Start the server on port 8080
 }

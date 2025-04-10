@@ -1,0 +1,226 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assesses the candidate's depth and breadth of knowledge in relevant software development technologies, languages, and tools.",
+      "EvaluationStrategy": "Review the candidate's resume, project portfolio, and answers to technical interview questions. Evaluate their experience with C#, .NET, SQL, SSRS, JavaScript, HTML, CSS, and other technologies mentioned in the job description. Assess their ability to apply these technologies to solve real-world problems.",
+      "Justification": "This category is crucial because the job requires hands-on software development. Proficiency in the mentioned technologies directly impacts the candidate's ability to perform the core job functions effectively. (Main JD \u0026 Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding or experience with required technologies. Unable to independently apply them to solve problems.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of required technologies. Can apply them with guidance and supervision.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong understanding of required technologies. Can independently apply them to solve complex problems. Demonstrates knowledge of best practices.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level understanding of required technologies. Can independently apply them to solve highly complex problems and mentor others. Contributes to the advancement of technology within the organization.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Evaluates the candidate's ability to analyze complex problems, identify root causes, and develop effective solutions.",
+      "EvaluationStrategy": "Present the candidate with technical challenges or scenarios and assess their problem-solving approach. Evaluate their ability to break down complex problems into smaller, manageable parts, identify relevant information, and develop logical solutions. Assess their debugging skills and ability to identify and resolve software defects.",
+      "Justification": "Software development involves constant problem-solving. The ability to quickly and effectively analyze problems and develop solutions is essential for maintaining system stability and meeting business needs. (Main JD \u0026 Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze problems and develop effective solutions. Lacks critical thinking skills.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can analyze problems and develop solutions with guidance. Requires assistance in identifying root causes.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Independently analyzes problems, identifies root causes, and develops effective solutions. Demonstrates strong critical thinking skills.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving and analytical skills. Can solve highly complex problems and develop innovative solutions. Serves as a resource for others.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software Development Lifecycle (SDLC) Expertise: Assesses the candidate's understanding of the SDLC and their ability to contribute to each phase, including planning, analysis, design, development, implementation, and maintenance.",
+      "EvaluationStrategy": "Ask the candidate about their experience with different SDLC methodologies (e.g., Agile, Waterfall). Evaluate their understanding of each phase of the SDLC and their role in each phase. Assess their ability to create system requirements, technical specifications, and test plans.",
+      "Justification": "The job description explicitly mentions participating in all facets of the software and system development life-cycle. A strong understanding of the SDLC is crucial for ensuring the quality and efficiency of software development efforts. (Main JD \u0026 Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of the SDLC. Unable to contribute effectively to any phase.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of the SDLC. Can contribute to some phases with guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong understanding of the SDLC. Can independently contribute to all phases. Demonstrates knowledge of best practices.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level understanding of the SDLC. Can lead and manage software development projects from start to finish. Contributes to the improvement of SDLC processes.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration Skills: Assesses the candidate's ability to communicate effectively with technical and non-technical stakeholders and collaborate effectively with team members.",
+      "EvaluationStrategy": "Evaluate the candidate's written and verbal communication skills during the interview process. Assess their ability to explain technical concepts clearly and concisely to non-technical audiences. Inquire about their experience working in collaborative environments and their ability to contribute to a team. Use interview questions to assess conflict resolution and teamwork abilities.",
+      "Justification": "The job description emphasizes strong communication skills and the ability to work independently as well as in a collaborative environment. This is critical because the role requires interfacing with different stakeholders and working with other engineering staff. (Main JD \u0026 Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication skills. Unable to effectively communicate with others or collaborate effectively.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate communication skills. Can communicate and collaborate effectively with some guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong communication skills. Can effectively communicate with technical and non-technical audiences and collaborate effectively with team members.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional communication and collaboration skills. Can effectively communicate with all stakeholders and build strong relationships. Serves as a mentor for others.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Adaptability and Learning Agility: Assesses the candidate's ability to quickly learn new technologies, adapt to changing priorities, and thrive in a fast-paced environment.",
+      "EvaluationStrategy": "Ask the candidate about their experience learning new technologies and adapting to changing priorities. Assess their willingness to learn and their ability to quickly acquire new skills. Evaluate their ability to handle multiple tasks simultaneously and prioritize effectively. Ask behavioral questions about how they handled unexpected changes or challenges in previous roles.",
+      "Justification": "The job description specifically mentions the need to be a fast learner and maintain a high-quality productivity level within a fast-paced environment. Adaptability is crucial for success in a rapidly evolving software development landscape. (Main JD \u0026 Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Resistant to change. Struggles to learn new technologies or adapt to changing priorities.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Willing to learn new technologies and adapt to changing priorities but requires significant guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Quickly learns new technologies and adapts to changing priorities. Thrives in a fast-paced environment.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional learning agility and adaptability. Proactively seeks out new knowledge and embraces change. Drives innovation within the organization.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality and Testing: Evaluates the candidate's ability to write clean, maintainable, and well-documented code, and their experience with testing methodologies.",
+      "EvaluationStrategy": "Review code samples provided by the candidate. Assess the code's readability, clarity, and adherence to coding standards. Evaluate their understanding of unit testing, integration testing, and other testing methodologies. Ask about their experience with test-driven development (TDD).",
+      "Justification": "High-quality code is essential for maintainability and scalability. A strong emphasis on testing ensures the reliability and stability of the software. (Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Code is poorly written, difficult to understand, and lacks documentation. Limited experience with testing.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Code is generally readable but may lack clarity or documentation in some areas. Basic understanding of testing.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Code is clean, maintainable, well-documented, and adheres to coding standards. Strong understanding of testing methodologies and experience with TDD.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Database Knowledge (SQL): Assesses the candidate's proficiency in writing SQL queries, designing database schemas, and optimizing database performance.",
+      "EvaluationStrategy": "Present the candidate with SQL-related challenges or scenarios. Evaluate their ability to write complex SQL queries, design efficient database schemas, and optimize database performance. Assess their experience with Microsoft SQL Server (T-SQL) and other database technologies mentioned in the job description.",
+      "Justification": "The job description mentions hands-on experience with database technologies such as Microsoft SQL Server (T-SQL). Proficiency in SQL is crucial for developing data-driven applications. (Main JD \u0026 Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited knowledge of SQL. Unable to write basic queries or design simple database schemas.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic knowledge of SQL. Can write simple queries and design basic database schemas with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong knowledge of SQL. Can write complex queries, design efficient database schemas, and optimize database performance. Experience with Microsoft SQL Server (T-SQL).",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Web Technologies (HTML, CSS, JavaScript): Assesses the candidate's proficiency in web technologies such as HTML, CSS, and JavaScript for building user interfaces.",
+      "EvaluationStrategy": "Review the candidate's experience with web technologies through their resume or project portfolio. Present web development challenges and assess their ability to create responsive and user-friendly interfaces using HTML, CSS, and JavaScript frameworks (e.g., React, Angular, Vue.js).",
+      "Justification": "The job description requires savvy in Web Technologies such as JavaScript, HTML, CSS, etc. Proficiency in these areas is crucial for developing web-based applications. (Main JD \u0026 Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited knowledge of web technologies. Unable to create basic web pages or use JavaScript effectively.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic knowledge of web technologies. Can create simple web pages and use JavaScript with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong knowledge of web technologies. Can create responsive and user-friendly interfaces using HTML, CSS, and JavaScript frameworks.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Version Control (Git): Assesses the candidate's experience with version control systems like Git for managing code changes and collaborating with team members.",
+      "EvaluationStrategy": "Ask about the candidate's experience with Git and other version control systems. Assess their understanding of branching, merging, and conflict resolution. Evaluate their ability to use Git effectively for collaborative software development.",
+      "Justification": "Version control is essential for collaborative software development. A strong understanding of Git allows developers to track changes, manage code versions, and collaborate effectively with team members. (Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited experience with version control systems. Unable to use Git effectively.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic knowledge of version control systems. Can use Git for basic tasks with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong knowledge of version control systems. Can use Git effectively for managing code changes and collaborating with team members.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Troubleshooting and Debugging Skills: Assesses the candidate's ability to diagnose and resolve software defects and system issues.",
+      "EvaluationStrategy": "Present the candidate with debugging scenarios or code snippets containing errors. Evaluate their ability to identify the root cause of the problem, use debugging tools effectively, and implement a solution. Assess their problem-solving approach and attention to detail.",
+      "Justification": "Strong troubleshooting skills are explicitly mentioned in the job description. The ability to quickly diagnose and resolve issues is crucial for maintaining system stability and minimizing downtime. (Main JD \u0026 Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to identify and resolve software defects or system issues. Lacks debugging skills.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Can identify and resolve simple software defects or system issues with guidance. Basic debugging skills.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Effectively diagnoses and resolves complex software defects and system issues. Strong debugging skills and attention to detail.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

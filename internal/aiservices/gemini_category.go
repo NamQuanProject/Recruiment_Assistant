@@ -51,8 +51,6 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 	
 	Your task is to:
 	- Providing all the evaluation **main categories** and **subcategories**.
-	- Notes that the main categories is very cruicial to the company so focus more on the main categories and provided full quiteria is needed for the company.
-	Each category must include:
 	- For each, include:
 	• A **Description**
 	• An **Evaluation Strategy** — how to assess it
@@ -68,7 +66,7 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 	Official JD:
 	"""` + main_jd + `"""
 	
-	Additional JD to know more about the position
+	Additional JD:
 	"""` + accountData + `"""
 
 

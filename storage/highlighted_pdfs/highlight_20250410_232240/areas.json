@@ -1,0 +1,82 @@
+[
+  {
+    "text": "C++, Python, JavaScript, TypeScript",
+    "page": 1,
+    "x": 146,
+    "y": 238,
+    "width": 149,
+    "height": 11,
+    "description": "This is a strong area because it lists relevant programming languages for a Software Engineer role. These languages are widely used in software development and demonstrate the candidate's coding abilities.",
+    "type": "strong"
+  },
+  {
+    "text": "Reactjs, TailwindCSS, Figma",
+    "page": 1,
+    "x": 119,
+    "y": 251,
+    "width": 123,
+    "height": 11,
+    "description": "This is a strong area as it showcases experience with relevant frameworks and tools for frontend development, which is beneficial for a SWE role especially for roles involving web development.  Figma shows design understanding.",
+    "type": "strong"
+  },
+  {
+    "text": "Health Recommendation System",
+    "page": 1,
+    "x": 36,
+    "y": 292,
+    "width": 144,
+    "height": 11,
+    "description": "This is a strong area. The description highlights a project that utilizes AI to solve health problems, demonstrating practical application of programming skills and problem-solving abilities relevant to SWE roles.  Mentioning specific algorithms or techniques used could further strengthen it.",
+    "type": "strong"
+  },
+  {
+    "text": "Google Developer Group - HCMUS",
+    "page": 1,
+    "x": 36,
+    "y": 546,
+    "width": 156,
+    "height": 11,
+    "description": "This is a strong area because involvement in the Google Developer Group showcases interest in technology, initiative, and community involvement, which are all desirable traits for a Software Engineer.",
+    "type": "strong"
+  },
+  {
+    "text": "Expected Graduation: June 2027",
+    "page": 1,
+    "x": 426,
+    "y": 107,
+    "width": 135,
+    "height": 11,
+    "description": "This is a weak area as the expected graduation date is far in the future (2027), which suggests the candidate is early in their academic career.  It might not be optimal for a full-time SWE role, unless it's specifically for an intern position. Consider applying to internships or part-time positions.",
+    "type": "weak"
+  },
+  {
+    "text": "Le Quy Don High School for the Gifted",
+    "page": 1,
+    "x": 36,
+    "y": 163,
+    "width": 172,
+    "height": 11,
+    "description": "This is a weak area because high school information is less relevant than university details for a SWE position, especially with the ongoing university education. Focus on highlighting university projects, coursework, and relevant experience to demonstrate current skills.",
+    "type": "weak"
+  },
+  {
+    "text": "HCMUS Chess Club",
+    "page": 1,
+    "x": 36,
+    "y": 601,
+    "width": 93,
+    "height": 11,
+    "description": "This is a weak area. While extracurricular activities are good, the chess club involvement doesn't directly demonstrate SWE skills. While analysis skills can be useful it would be more useful to highlight more relevant experience.",
+    "type": "weak"
+  },
+  {
+    "text": "Le Quy Don Arena of Valor eSport tournament",
+    "page": 1,
+    "x": 36,
+    "y": 668,
+    "width": 206,
+    "height": 11,
+    "description": "This is a weak area. Organizing an eSport tournament highlights organizational skills but is not directly related to SWE skills. While demonstrating leadership is positive, it's better to prioritize more technically relevant experience. This could be omitted or significantly shortened.",
+    "type": "weak"
+  }
+]
