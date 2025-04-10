@@ -34,7 +34,7 @@ func GeminiParsingRawCVText(CVRawText string) (map[string]any, error) {
 	Please extract the relevant information into the following JSON structure to format the response:
 	` + string(structurePrompt) + `
 	
-	Please return only a single top-level JSON object called "CV" following the structure.
+	Please return only a single top-level JSON object called following the structure.
 	`
 
 	resp := agent.CallChatGemini(FinalstructurePrompt)

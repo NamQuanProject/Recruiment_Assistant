@@ -42,27 +42,36 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 	defer agent.Close()
 
 	finalStructurePrompt := `
-	You are an expert in Human Resources of a company with deep experience recruiting in the field of """` + job_type + `"""
-
-	You are highly skilled at reading two job descriptions:
-	1. A suggested job description from us (candidate JD).
-	2. The official job description from your company.
-
-	Your task is to identify:
-	- Subcategories that may be considered a plus.
-	- Main categories that are absolutely required.
-
-	You are given the following:
-	- Extracted job description (candidate JD):
-	"""` + accountData + `"""
-
-	- Official main job description:
+	You are an expert HR analyst working for a company in the field of """` + job_type + `""" recruiting.
+	
+	You are given:
+	1. The company's official job description (main JD)
+	2. A guided job suggestion (candidate JD)
+	
+	Your task is to extract the most relevant categories for evaluation and organize them into:
+	- Main Categories: absolutely essential for the role
+	- Subcategories: desirable or supporting qualities
+	
+	Each category must include:
+	- A name
+	- A scoring scale (1–10 for main, 1–5 for sub)
+	- A comprehensive explanation:
+	  - Why it's important
+	  - How it relates to the job
+	  - If it came from the main JD or candidate JD
+	
+	Make sure your analysis is fair and unbiased. Do NOT include anything based on gender, age, race, or personal traits. Evaluate purely based on job content.
+	
+	Official JD:
 	"""` + main_jd + `"""
-
-	Please extract the relevant information into the following JSON structure:
+	
+	Suggested JD:
+	"""` + accountData + `"""
+	
+	The output format must strictly follow the following JSON structure:
 	` + structurePrompt + `
-
-	Return only a single top-level JSON object called "CV".
+	
+	Return only a single top-level JSON object.
 	`
 
 	resp := agent.CallChatGemini(finalStructurePrompt)
@@ -73,13 +82,11 @@ func GeminiQuieriaExtract(job_type string, sub_jd string, main_jd string) (map[s
 }
 
 func HandleCategoryPrompt(structure_jd map[string]any) string {
-	// Lấy mô tả chính nếu có
 	description := ""
 	if val, ok := structure_jd["description"].(string); ok {
 		description = val
 	}
 
-	// Lấy mục tiêu chính trong phần job_description
 	objectivesStr := ""
 	if jobDesc, ok := structure_jd["job_description"].(map[string]any); ok {
 		if objectives, ok := jobDesc["Objectives of this role"].([]any); ok && len(objectives) > 0 {
@@ -91,7 +98,6 @@ func HandleCategoryPrompt(structure_jd map[string]any) string {
 		}
 	}
 
-	// Lấy skill requirements nếu có
 	skillsStr := ""
 	if skills, ok := structure_jd["skills_requirements"].([]any); ok && len(skills) > 0 {
 		skillsStr = " Ideal candidates should possess skills such as " + skills[0].(string)
@@ -101,7 +107,6 @@ func HandleCategoryPrompt(structure_jd map[string]any) string {
 		skillsStr += "."
 	}
 
-	// Tận dụng interview_questions như là điểm nổi bật ứng viên cần chuẩn bị
 	insightStr := ""
 	if questions, ok := structure_jd["interview_questions"].([]any); ok && len(questions) > 0 {
 		insightStr = " During the interview, candidates are often asked about topics like "
@@ -120,7 +125,6 @@ func HandleCategoryPrompt(structure_jd map[string]any) string {
 		insightStr += ". This reflects the importance of practical knowledge and strong communication skills in this role."
 	}
 
-	// Kết hợp các phần
 	fullString := description + objectivesStr + skillsStr + insightStr
 	return fullString
 }

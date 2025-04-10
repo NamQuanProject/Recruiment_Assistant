@@ -167,27 +167,49 @@ func RunServer() {
 
 		fmt.Printf("Route /ai/jd_quiteria/%s is hit\n", request.JobName)
 
-		structure, err := ReadJsonStructure("./internal/aiservices/jobs_guideds.json")
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse job structure"})
-			return
-		}
+		// structure, err := ReadJsonStructure("./internal/aiservices/jobs_guideds.json")
+		// if err != nil {
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse job structure"})
+		// 	return
+		// }
 
-		accountDataRaw, exists := structure[request.JobName]
-		if !exists {
-			c.JSON(http.StatusNotFound, gin.H{"error": "Job category not found"})
-			return
-		}
+		// accountDataRaw, exists := structure[request.JobName]
+		// if !exists {
+		// 	c.JSON(http.StatusNotFound, gin.H{"error": "Job category not found"})
+		// 	return
+		// }
 
-		accountData, ok := accountDataRaw.(map[string]interface{})
-		if !ok {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid job data structure"})
-			return
-		}
+		// accountData, ok := accountDataRaw.(map[string]interface{})
+		// if !ok {
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid job data structure"})
+		// 	return
+		// }
 
-		subCategoryString := HandleCategoryPrompt(accountData)
+		// subCategoryString := HandleCategoryPrompt(accountData)
+		subCategoryString := ""
 
 		resp, err := GeminiQuieriaExtract(request.JobName, subCategoryString, request.CompanyDescription)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract criteria"})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{"criteria": resp})
+	})
+	r.POST("/ai/evaluate", func(c *gin.Context) {
+		type JDRequest struct {
+			JobName        string   `json:"job_name"`
+			JDMainQuiteria []string `json:"jd_main_quiteria"`
+			JDSubQuiteria  []string `json:"jd_sub_quiteria"`
+			CVRawText      string   `json:"cv_raw_text"`
+		}
+		var request JDRequest
+		if err := c.ShouldBindJSON(&request); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request body"})
+			return
+		}
+
+		resp, err := GeminiEvaluateScoring(request.JobName, request.JDMainQuiteria, request.JDSubQuiteria, request.CVRawText)
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract criteria"})
 			return

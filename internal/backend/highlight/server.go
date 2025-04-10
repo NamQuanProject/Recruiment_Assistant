@@ -23,14 +23,14 @@ type HighlightRequest struct {
 
 // Area represents an area in the CV that needs to be highlighted
 type Area struct {
-	Text        string `json:"text"`
-	Page        int    `json:"page"`
+	Text        string  `json:"text"`
+	Page        int     `json:"page"`
 	X           float64 `json:"x"`
 	Y           float64 `json:"y"`
 	Width       float64 `json:"width"`
 	Height      float64 `json:"height"`
-	Description string `json:"description"`
-	Type        string `json:"type"` // "weak" or "strong"
+	Description string  `json:"description"`
+	Type        string  `json:"type"` // "weak" or "strong"
 }
 
 // HighlightResponse represents the response from the highlight server
@@ -63,7 +63,7 @@ func RunServer() {
 		// Create a timestamp for unique file naming
 		timestamp := time.Now().Format("20060102_150405")
 		baseName := strings.TrimSuffix(filepath.Base(req.PDFPath), ".pdf")
-		
+
 		// Create output directory
 		outputDir := filepath.Join("storage", "highlighted_pdfs", "highlight_"+timestamp)
 		if err := os.MkdirAll(outputDir, os.ModePerm); err != nil {
@@ -99,7 +99,7 @@ func RunServer() {
 		// Run the Python script to highlight the PDF
 		pythonScriptPath := filepath.Join("internal", "backend", "highlight", "highlight_pdf.py")
 		highlightedPDFPath := filepath.Join(outputDir, baseName+"_highlighted.pdf")
-		
+
 		cmd := exec.Command("python", pythonScriptPath, copiedPDFPath, areasPath, highlightedPDFPath)
 		output, err := cmd.CombinedOutput()
 		if err != nil {

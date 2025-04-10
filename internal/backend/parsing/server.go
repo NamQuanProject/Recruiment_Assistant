@@ -12,12 +12,15 @@ import (
 )
 
 type ParseRequest struct {
-	InputPath string `json:"input_path" binding:"required"`
+	InputPath  string `json:"input_path" binding:"required"`
+	OutputPath string `json:"output_path" binding:"required"`
 }
 
 type JDRequest struct {
 	JobName                string `json:"job_name"`
 	CompanyDescriptionPath string `json:"company_jd"`
+	TxtPath                string `json:"txt_path"`
+	JsonPath               string `json:"json_path"`
 }
 
 func RunServer() {
@@ -41,46 +44,53 @@ func RunServer() {
 		}
 
 		ext := strings.ToLower(filepath.Ext(req.InputPath))
-
-		switch ext {
-		case ".pdf":
-			log.Printf("Detected PDF: %s", req.InputPath)
-			textPath, err := ExtractTextFromPDF(req.InputPath)
-			if err != nil {
-				log.Print(err)
-				c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-				return
-			}
-			log.Print("ExtractJsonFromText:", textPath)
-			_, er := ExtractJsonFromText(textPath, "")
-
-			if er != nil {
-				log.Print(er)
-				c.JSON(http.StatusInternalServerError, gin.H{"error": er.Error()})
-				return
-			}
-			c.JSON(http.StatusOK, gin.H{"message": "PDF processed successfully"})
-
-		case ".zip":
-			log.Printf("Detected ZIP: %s", req.InputPath)
-			extractedPath, err := ExtractTextFromZip(req.InputPath)
-			if err != nil {
-				c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-				return
-			}
-			er := ExtractJsonFromTextBatch(extractedPath)
-			if er != nil {
-				log.Print(er)
-				c.JSON(http.StatusInternalServerError, gin.H{"error": er.Error()})
-				return
-			}
-			c.JSON(http.StatusOK, gin.H{"message": "ZIP processed successfully"})
-
-		default:
+		if ext != ".pdf" {
 			c.JSON(http.StatusBadRequest, gin.H{
-				"error": "Unsupported file type. Only .pdf and .zip are allowed.",
+				"file":  req.InputPath,
+				"error": "Only PDF files are allowed",
 			})
+			return
 		}
+
+		log.Printf("Detected PDF: %s", req.InputPath)
+		err := ExtractTextFromPDF(req.InputPath, req.OutputPath)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+			return
+		}
+		log.Print("ExtractJsonFromText:", req.OutputPath)
+		// _, er := ExtractJsonFromText(textPath, "")
+
+		// if er != nil {
+		// 	log.Print(er)
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": er.Error()})
+		// 	return
+		// }
+		c.JSON(http.StatusOK, gin.H{"message": "PDF processed successfully"})
+
+		// switch ext {
+		// case ".pdf":
+
+		// case ".zip":
+		// 	log.Printf("Detected ZIP: %s", req.InputPath)
+		// 	extractedPath, err := ExtractTextFromZip(req.InputPath)
+		// 	if err != nil {
+		// 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		// 		return
+		// 	}
+		// 	er := ExtractJsonFromTextBatch(extractedPath)
+		// 	if er != nil {
+		// 		log.Print(er)
+		// 		c.JSON(http.StatusInternalServerError, gin.H{"error": er.Error()})
+		// 		return
+		// 	}
+		// 	c.JSON(http.StatusOK, gin.H{"message": "ZIP processed successfully"})
+
+		// default:
+		// 	c.JSON(http.StatusBadRequest, gin.H{
+		// 		"error": "Unsupported file type. Only .pdf and .zip are allowed.",
+		// 	})
+		// }
 	})
 
 	r.POST("/parse/jd", func(c *gin.Context) {
@@ -100,7 +110,7 @@ func RunServer() {
 			return
 		}
 
-		err := ExtractCategoriesFromJDText(req.JobName, req.CompanyDescriptionPath)
+		err := ExtractCategoriesFromJDText(req.JobName, req.CompanyDescriptionPath, req.TxtPath, req.JsonPath)
 		if err != nil {
 			log.Printf("Failed to extract and send JD: %v", err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})

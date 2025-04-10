@@ -1,0 +1,20 @@
+{
+    "PersonalInfo": {
+      "FullName": "string",
+      "Age": "int",
+      "Email": "string",
+      "PhoneNumber": "string",
+      "Address": "string",
+      "LinkedIn": "string",
+      "GitHub": "string",
+      "Website": "string"
+    },
+    "Evaluation": [
+      {             
+        "category": "string",
+        "score": "string", 
+        "explanation": "string"
+      }
+    ],
+    "Authenticity": "int"
+  }
