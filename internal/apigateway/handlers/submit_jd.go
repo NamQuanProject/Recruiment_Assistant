@@ -136,7 +136,7 @@ func SubmitJDHandler(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{
 		"message": fmt.Sprintf("JD '%s' uploaded and processed successfully", file.Filename),
-		"path":    filePath,
+		"path":    JsonPath,
 	})
 }
 
