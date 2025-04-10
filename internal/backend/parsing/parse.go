@@ -3,7 +3,6 @@ package parsing
 
 import (
 	"bytes"
-	"crypto/sha1"
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
@@ -18,38 +17,34 @@ import (
 	"time"
 )
 
-func ExtractTextFromPDF(pdfPath string) (string, error) {
+func ExtractTextFromPDF(pdfPath, outputDir string) error {
 	// Get timestamp and base name of the PDF
-	timeStamp := time.Now().Format("20060102_150405")
-	baseName := strings.TrimSuffix(filepath.Base(pdfPath), ".pdf")
-
-	// Define storage paths
-	uploadDir := filepath.Join("storage", "cv_pdfs", "upload_"+timeStamp)
-	textDir := uploadDir
+	// timeStamp := time.Now().Format("20060102_150405")
+	// baseName := strings.TrimSuffix(filepath.Base(pdfPath), ".pdf")
 
 	// Create necessary directories
-	if err := os.MkdirAll(textDir, os.ModePerm); err != nil {
-		return "", fmt.Errorf("failed to create directories: %v", err)
-	}
+	// if err := os.MkdirAll(textDir, os.ModePerm); err != nil {
+	// 	return fmt.Errorf("failed to create directories: %v", err)
+	// }
 
 	// Copy the original PDF to the upload directory
-	copiedPDFPath := filepath.Join(uploadDir, baseName+".pdf")
-	if err := copyFile(pdfPath, copiedPDFPath); err != nil {
-		return "", fmt.Errorf("failed to copy PDF: %v", err)
-	}
+	// copiedPDFPath := filepath.Join(uploadDir, baseName+".pdf")
+	// if err := copyFile(pdfPath, copiedPDFPath); err != nil {
+	// 	return "", fmt.Errorf("failed to copy PDF: %v", err)
+	// }
 
 	// Prepare Python script and output path
 	pythonScriptPath := filepath.Join("internal", "backend", "parsing", "extract_pdf.py")
-	outputPath := filepath.Join(textDir, baseName+".txt")
+	// outputPath := filepath.Join(textDir, baseName+".txt")
 
 	// Run the Python script
-	cmd := exec.Command("python", pythonScriptPath, copiedPDFPath, outputPath)
+	cmd := exec.Command("python3", pythonScriptPath, pdfPath, outputDir)
 	output, err := cmd.CombinedOutput()
 	if err != nil {
-		return "", fmt.Errorf("error executing Python script: %v\nOutput: %s", err, string(output))
+		return fmt.Errorf("error executing Python script: %v\nOutput: %s", err, string(output))
 	}
 
-	return strings.TrimSpace(string(outputPath)), nil
+	return nil
 }
 
 func ExtractTextFromZip(zipPath string) (string, error) {
@@ -110,7 +105,7 @@ func ExtractTextFromZip(zipPath string) (string, error) {
 
 	// Run python script
 	pythonScriptPath := filepath.Join("internal", "backend", "parsing", "extract_pdf.py")
-	cmd := exec.Command("python", pythonScriptPath, "-batch", "true", extractedPath, outputPath)
+	cmd := exec.Command("python3", pythonScriptPath, "-batch", "true", extractedPath, outputPath)
 
 	out, err := cmd.CombinedOutput()
 	if err != nil {
@@ -244,7 +239,7 @@ func ExtractJsonFromTextBatch(folderPath string) error {
 	return nil
 }
 
-func ExtractCategoriesFromJDText(jobName, jdFilePath string) error {
+func ExtractCategoriesFromJDText(jobName, jdFilePath, txtOutput, jsonOutput string) error {
 	// Validate file exists
 	if _, err := os.Stat(jdFilePath); os.IsNotExist(err) {
 		return fmt.Errorf("file does not exist: %s", jdFilePath)
@@ -252,31 +247,31 @@ func ExtractCategoriesFromJDText(jobName, jdFilePath string) error {
 
 	// Step 1: Determine extension and extract/copy to storage
 	ext := strings.ToLower(filepath.Ext(jdFilePath))
-	timestamp := time.Now().Format("20060102_150405")
+	// timestamp := time.Now().Format("20060102_150405")
 
 	// Create directory: storage/jd_<timestamp>/
-	baseDir := filepath.Join("storage", "jds", fmt.Sprintf("%s_%s", jobName, timestamp))
-	if err := os.MkdirAll(baseDir, os.ModePerm); err != nil {
-		return fmt.Errorf("failed to create output dir: %w", err)
-	}
+	// baseDir := filepath.Join("evaluation", "jd")
+	// if err := os.MkdirAll(baseDir, os.ModePerm); err != nil {
+	// 	return ``, fmt.Errorf("failed to create output dir: %w", err)
+	// }
 
 	// Generate unique filename
-	hash := sha1.New()
-	hash.Write([]byte(jdFilePath + time.Now().String()))
-	encodedName := fmt.Sprintf("jd_%x.txt", hash.Sum(nil)[:8])
-	targetPath := filepath.Join(baseDir, encodedName)
+	// hash := sha1.New()
+	// hash.Write([]byte(jdFilePath + time.Now().String()))
+	// encodedName := fmt.Sprintf("jd_%x.txt", hash.Sum(nil)[:8])
+	// targetPath := filepath.Join(baseDir, encodedName)
 
 	var err error
 	if ext == ".pdf" {
 		// Extract from PDF and store as text
-		textPath, extractErr := ExtractTextFromPDF(jdFilePath)
+		extractErr := ExtractTextFromPDF(jdFilePath, txtOutput)
 		if extractErr != nil {
 			return fmt.Errorf("failed to extract text from PDF: %w", extractErr)
 		}
-		err = copyFile(textPath, targetPath)
+		// err = copyFile(textPath, targetPath)
 	} else if ext == ".txt" {
 		// Just copy the txt file
-		err = copyFile(jdFilePath, targetPath)
+		err = copyFile(jdFilePath, txtOutput)
 	} else {
 		return fmt.Errorf("unsupported file type: %s", ext)
 	}
@@ -286,7 +281,7 @@ func ExtractCategoriesFromJDText(jobName, jdFilePath string) error {
 	}
 
 	// Step 2: Read JD text from stored file
-	jdTextBytes, err := os.ReadFile(targetPath)
+	jdTextBytes, err := os.ReadFile(txtOutput)
 	if err != nil {
 		return fmt.Errorf("failed to read stored JD file: %w", err)
 	}
@@ -354,9 +349,9 @@ func ExtractCategoriesFromJDText(jobName, jdFilePath string) error {
 	}
 
 	// 9. Determine output path
-	dir := filepath.Dir(targetPath)
-	base := strings.TrimSuffix(filepath.Base(targetPath), filepath.Ext(targetPath))
-	jsonFilename := filepath.Join(dir, base+".json")
+	// dir := filepath.Dir(targetPath)
+	// base := strings.TrimSuffix(filepath.Base(targetPath), filepath.Ext(targetPath))
+	// jsonFilename := filepath.Join(dir, base+".json")
 
 	// 10. Save the final parsed JSON to a file
 	jsonBytes, err := json.MarshalIndent(parsedData, "", "  ")
@@ -364,12 +359,12 @@ func ExtractCategoriesFromJDText(jobName, jdFilePath string) error {
 		return err
 	}
 
-	err = os.WriteFile(jsonFilename, jsonBytes, 0644)
+	err = os.WriteFile(jsonOutput, jsonBytes, 0644)
 	if err != nil {
 		return err
 	}
 
-	log.Printf("✅ JSON saved to: %s", jsonFilename)
+	log.Printf("✅ JSON saved to: %s", jsonOutput)
 
 	return nil
 }

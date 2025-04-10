@@ -19,7 +19,7 @@ func CalibrateOffset(pdfPath string) (float64, error) {
 
 	// Run the calibration script
 	pythonScriptPath := filepath.Join("internal", "backend", "highlight", "calibrate_offset.py")
-	cmd := exec.Command("python", pythonScriptPath, pdfPath, tempDir)
+	cmd := exec.Command("python3", pythonScriptPath, pdfPath, tempDir)
 	output, err := cmd.CombinedOutput()
 	if err != nil {
 		return 0, fmt.Errorf("failed to run calibration script: %v\nOutput: %s", err, string(output))
@@ -93,4 +93,4 @@ func GetCalibrationOffset(pdfPath string) (float64, error) {
 
 	// PDF path doesn't match, run calibration
 	return CalibrateOffset(pdfPath)
-} 
+}

@@ -167,25 +167,26 @@ func RunServer() {
 
 		fmt.Printf("Route /ai/jd_quiteria/%s is hit\n", request.JobName)
 
-		structure, err := ReadJsonStructure("./internal/aiservices/jobs_guideds.json")
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse job structure"})
-			return
-		}
+		// structure, err := ReadJsonStructure("./internal/aiservices/jobs_guideds.json")
+		// if err != nil {
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse job structure"})
+		// 	return
+		// }
 
-		accountDataRaw, exists := structure[request.JobName]
-		if !exists {
-			c.JSON(http.StatusNotFound, gin.H{"error": "Job category not found"})
-			return
-		}
+		// accountDataRaw, exists := structure[request.JobName]
+		// if !exists {
+		// 	c.JSON(http.StatusNotFound, gin.H{"error": "Job category not found"})
+		// 	return
+		// }
 
-		accountData, ok := accountDataRaw.(map[string]interface{})
-		if !ok {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid job data structure"})
-			return
-		}
+		// accountData, ok := accountDataRaw.(map[string]interface{})
+		// if !ok {
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid job data structure"})
+		// 	return
+		// }
 
-		subCategoryString := HandleCategoryPrompt(accountData)
+		// subCategoryString := HandleCategoryPrompt(accountData)
+		subCategoryString := ""
 
 		resp, err := GeminiQuieriaExtract(request.JobName, subCategoryString, request.CompanyDescription)
 		if err != nil {

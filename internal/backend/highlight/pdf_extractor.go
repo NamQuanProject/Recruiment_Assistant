@@ -32,7 +32,7 @@ func ExtractTextFromPDF(pdfPath string) ([]PDFTextBlock, error) {
 
 	// Run the Python script to extract text
 	pythonScriptPath := filepath.Join("internal", "backend", "highlight", "extract_pdf_text.py")
-	cmd := exec.Command("python", pythonScriptPath, pdfPath, outputPath)
+	cmd := exec.Command("python3", pythonScriptPath, pdfPath, outputPath)
 	output, err := cmd.CombinedOutput()
 	if err != nil {
 		return nil, fmt.Errorf("failed to extract text from PDF: %v\nOutput: %s", err, string(output))
@@ -51,4 +51,4 @@ func ExtractTextFromPDF(pdfPath string) ([]PDFTextBlock, error) {
 	}
 
 	return textBlocks, nil
-} 
+}
