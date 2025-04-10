@@ -15,9 +15,18 @@
       "worked_for": "N/A",
       "experience_level": "N/A",
       "authenticity": 0,
-      "final_score": 62.66666666666667,
+      "final_score": 40,
+      "path_to_cv": "storage/evaluation_20250411_014111/original/cvs/20250410_022450_LeKimChau.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_014111/evaluation/20250410_022450_LeKimChau.json"
+    },
+    {
+      "full_name": "NGUYEN-TU PHAM",
+      "worked_for": "N/A",
+      "experience_level": "N/A",
+      "authenticity": 0,
+      "final_score": 38.333333333333336,
       "path_to_cv": "N/A",
-      "path_to_evaluation": "storage\\evaluation_20250411_012216\\evaluation\\20250410_022450_LeKimChau.json"
+      "path_to_evaluation": "storage\\evaluation_20250411_001938\\evaluation\\CV.json"
     },
     {
       "full_name": "Khanh Nguyen",

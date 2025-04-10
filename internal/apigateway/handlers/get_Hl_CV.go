@@ -2,30 +2,41 @@ package handlers
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"os"
 	"path/filepath"
-	"strconv"
 	"strings"
 
 	"github.com/gin-gonic/gin"
 )
 
+type HlCVRequest struct {
+	Index int `json:"index"`
+}
+
+// Cấu trúc đúng với output.json
+type OutputItem struct {
+	FullName        string  `json:"full_name"`
+	WorkedFor       string  `json:"worked_for"`
+	ExperienceLevel string  `json:"experience_level"`
+	Authenticity    float64 `json:"authenticity"`
+	FinalScore      float64 `json:"final_score"`
+	PathToCV        string  `json:"path_to_cv"`
+	PathToEval      string  `json:"path_to_evaluation"`
+}
+
+type OutputFile struct {
+	List []OutputItem `json:"list"`
+}
+
 func GetHlCVHandler(c *gin.Context) {
-
-	//Get the integer index from the query parameter
-	indexStr := c.Query("index")
-	if indexStr == "" {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Missing intdex"})
+	var req HlCVRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input"})
 		return
 	}
-	index, err := strconv.Atoi(indexStr)
-	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid intdex"})
-		return
-	}
-
-	// Get the current path from the file
+	index := req.Index
 
 	currentPathBytes, err := os.ReadFile("storage/current.txt")
 	if err != nil {
@@ -33,68 +44,84 @@ func GetHlCVHandler(c *gin.Context) {
 		return
 	}
 	basePath := strings.TrimSpace(string(currentPathBytes))
-	// read the file filename as a string form basepath/parse/jobname.txt
-	// Construct the path to the jobname.txt file
-	jobNamePath := filepath.Join(basePath, "parse", "jobname.txt")
 
-	// Check if the jobname.txt file exists
+	jobNamePath := filepath.Join(basePath, "parse", "jobname.txt")
 	if _, err := os.Stat(jobNamePath); os.IsNotExist(err) {
 		c.JSON(http.StatusNotFound, gin.H{"error": "jobname.txt not found"})
 		return
 	}
-
-	// Read the jobname.txt file
 	jobNameBytes, err := os.ReadFile(jobNamePath)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot read jobname.txt"})
 		return
 	}
-
-	// Convert the file content to a string
 	jobName := strings.TrimSpace(string(jobNameBytes))
 
-	// opne basePath/finaloutput.json
+	// Read output.json
 	finalOutputPath := filepath.Join("internal", "backend", "output", "output.json")
 	if _, err := os.Stat(finalOutputPath); os.IsNotExist(err) {
 		c.JSON(http.StatusNotFound, gin.H{"error": "finaloutput.json not found"})
 		return
 	}
-	// Read the finaloutput.json file
-	finalOutputFile, err := os.Open(finalOutputPath)
+	data, err := os.ReadFile(finalOutputPath)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot open finaloutput.json"})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot read finaloutput.json"})
 		return
 	}
-	defer finalOutputFile.Close()
-	// Read the file content and save it into var list in json
-	var list []string
-	if err := json.NewDecoder(finalOutputFile).Decode(&list); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot decode finaloutput.json"})
+
+	var output OutputFile
+	if err := json.Unmarshal(data, &output); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot parse finaloutput.json"})
 		return
 	}
-	// Check if the index is within bounds
-	if index < 0 || index >= len(list) {
+	if index < 0 || index >= len(output.List) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Index out of bounds"})
 		return
 	}
 
-	// Get the item at the specified index
-	item := list[index]
+	item := output.List[index]
+	pathtocv := item.PathToCV
+	pathtoeval := item.PathToEval
+	fmt.Println("Path to CV:", pathtocv)
+	fmt.Println("Path to Evaluation:", pathtoeval)
 
-	// Parse the item to extract pathToCV and pathToEval
-	var itemData struct {
-		PathToCV   string `json:"pathToCV"`
-		PathToEval string `json:"pathToEval"`
+	request := struct {
+		JobTitle       string `json:"job_title"`
+		JobDetailsPath string `json:"job_details_path"`
+		PdfPath        string `json:"pdf_path"`
+		EvalRefPath    string `json:"evaluation_path"`
+	}{
+		JobTitle:       jobName,
+		JobDetailsPath: filepath.Join(basePath, "parse", "jd.txt"),
+		PdfPath:        pathtocv,
+		EvalRefPath:    pathtoeval,
 	}
-	if err := json.Unmarshal([]byte(item), &itemData); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot parse item data"})
+
+	requestBody, err := json.Marshal(request)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot marshal request body"})
 		return
 	}
 
-	// Save the paths in variables
-	pathtocv := itemData.PathToCV
-	pathtoeval := itemData.PathToEval
+	resp, err := http.Post("http://localhost:4000/analyze-cv", "application/json", strings.NewReader(string(requestBody)))
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to call server"})
+		return
+	}
+	defer resp.Body.Close()
 
-	// Return the paths as a response
-	c.JSON(http.StatusOK, gin.H{"highlighted_pdf_path": responseBody["highlighted_pdf_path"]})
+	if resp.StatusCode != http.StatusOK {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Server returned an error", "status": resp.StatusCode})
+		return
+	}
+
+	var responseBody map[string]interface{}
+	if err := json.NewDecoder(resp.Body).Decode(&responseBody); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to decode server response"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"highlighted_pdf_path": responseBody["highlighted_pdf_path"],
+	})
 }
