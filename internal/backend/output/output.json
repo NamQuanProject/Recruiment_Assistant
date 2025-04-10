@@ -1,40 +1,31 @@
 {
   "list": [
     {
-      "full_name": "Terrence Coleman",
-      "worked_for": "N/A",
-      "experience_level": "N/A",
-      "authenticity": 0,
-      "final_score": 43.333333333333336,
-      "path_to_cv": "N/A",
-      "path_to_evaluation": "storage\\evaluation_20250411_001938\\evaluation\\0067.json"
-    },
-    {
-      "full_name": "Kim Chau Le",
-      "worked_for": "N/A",
-      "experience_level": "N/A",
-      "authenticity": 0,
-      "final_score": 40,
-      "path_to_cv": "N/A",
-      "path_to_evaluation": "storage\\evaluation_20250411_001938\\evaluation\\LeKimChau.json"
-    },
-    {
       "full_name": "NGUYEN-TU PHAM",
-      "worked_for": "N/A",
-      "experience_level": "N/A",
-      "authenticity": 0,
-      "final_score": 38.333333333333336,
-      "path_to_cv": "N/A",
-      "path_to_evaluation": "storage\\evaluation_20250411_001938\\evaluation\\CV.json"
+      "worked_for": "",
+      "experience_level": "",
+      "authenticity": 9,
+      "final_score": 61.53846153846154,
+      "path_to_cv": "storage/evaluation_20250411_014111/parse/cvs/20250409_214747_CV_highlighted-2.txt",
+      "path_to_evaluation": "storage/evaluation_20250411_014111/evaluation/20250409_214747_CV_highlighted-2.json"
+    },
+    {
+      "full_name": "KIM CHAU LE",
+      "worked_for": "",
+      "experience_level": "0",
+      "authenticity": 8,
+      "final_score": 60,
+      "path_to_cv": "storage/evaluation_20250411_014111/parse/cvs/20250410_022450_LeKimChau.txt",
+      "path_to_evaluation": "storage/evaluation_20250411_014111/evaluation/20250410_022450_LeKimChau.json"
     },
     {
       "full_name": "Khanh Nguyen",
-      "worked_for": "N/A",
-      "experience_level": "N/A",
-      "authenticity": 0,
-      "final_score": 30,
-      "path_to_cv": "N/A",
-      "path_to_evaluation": "storage\\evaluation_20250411_001938\\evaluation\\0065.json"
+      "worked_for": "",
+      "experience_level": "1",
+      "authenticity": 8,
+      "final_score": 43.07692307692308,
+      "path_to_cv": "storage/evaluation_20250411_014111/parse/cvs/20250410_013723_0065.txt",
+      "path_to_evaluation": "storage/evaluation_20250411_014111/evaluation/20250410_013723_0065.json"
     }
   ]
 }
