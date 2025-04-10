@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 
 	"github.com/gin-gonic/gin"
@@ -45,11 +46,27 @@ func evaluateJobHandler(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot read jd.json"})
 		return
 	}
-	// var jdMain []string
-	// if err := json.Unmarshal(jdMainBytes, &jdMain); err != nil {
-	// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid jd.json format"})
-	// 	return
-	// }
+
+	// Parse JDMainQuiteria to get total scoring scale
+	var jdData struct {
+		MainCategory []struct {
+			ScoringScale float64 `json:"ScoringScale"`
+		} `json:"MainCategory"`
+		SubCategory []struct {
+			ScoringScale float64 `json:"ScoringScale"`
+		} `json:"SubCategory"`
+	}
+	if err := json.Unmarshal(jdMainBytes, &jdData); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid jd.json format"})
+		return
+	}
+	var totalScale float64
+	for _, m := range jdData.MainCategory {
+		totalScale += m.ScoringScale
+	}
+	for _, s := range jdData.SubCategory {
+		totalScale += s.ScoringScale
+	}
 
 	cvsFolder := filepath.Join(parsePath, "cvs")
 	outputFolder := filepath.Join(basePath, "evaluation")
@@ -97,53 +114,69 @@ func evaluateJobHandler(c *gin.Context) {
 		if err != nil {
 			return
 		}
-		fmt.Printf("Response status: %s\n", resp.Status)
-		fmt.Printf("Response body: %s\n", string(body))
 
-		// 5. Parse top-level JSON
 		var jsonResponse map[string]interface{}
-		err = json.Unmarshal(body, &jsonResponse)
-		if err != nil {
+		if err := json.Unmarshal(body, &jsonResponse); err != nil {
 			return
 		}
 
-		// 6. Access the "Response" field and parse the wrapped JSON string
-		outerMap, ok := jsonResponse["evaluation"].(map[string]interface{})
+		evalMap, ok := jsonResponse["evaluation"].(map[string]interface{})
 		if !ok {
 			return
 		}
 
-		responseStr, ok := outerMap["Response"].(string)
+		responseStr, ok := evalMap["Response"].(string)
 		if !ok {
 			return
 		}
 
-		// 7. Clean up the string (remove Markdown formatting)
 		responseStr = strings.TrimSpace(responseStr)
 		responseStr = strings.TrimPrefix(responseStr, "```json")
 		responseStr = strings.TrimSuffix(responseStr, "```")
 		responseStr = strings.TrimSpace(responseStr)
 
-		// 8. Parse the cleaned JSON string into a map
 		var parsedData map[string]interface{}
-		err = json.Unmarshal([]byte(responseStr), &parsedData)
-		if err != nil {
+		if err := json.Unmarshal([]byte(responseStr), &parsedData); err != nil {
 			return
 		}
 
-		// 9. Determine output path
-		jsonOutput := filepath.Join(outputFolder, strings.TrimSuffix(f.Name(), filepath.Ext(f.Name()))+".json")
+		evalList, ok := parsedData["Evaluation"].([]interface{})
+		if !ok {
+			return
+		}
 
-		// 10. Save the final parsed JSON to a file
+		var totalScore float64
+		for _, item := range evalList {
+			evalItem, ok := item.(map[string]interface{})
+			if !ok {
+				fmt.Println("Error: invalid evaluation item format")
+				continue
+			}
+			var score1 float64
+			score, ok := evalItem["score"].(string)
+			if !ok {
+				fmt.Println(score, "Error: score not found or not a number")
+				return
+			}
+			if ok {
+				score1, err = strconv.ParseFloat(score, 64)
+			}
+			totalScore += score1
+		}
+
+		finalScore := totalScore / totalScale * 100
+		parsedData["FinalScore"] = finalScore // Adding the new key "FinalScore"
+
+		jsonOutput := filepath.Join(outputFolder, strings.TrimSuffix(f.Name(), filepath.Ext(f.Name()))+".json")
 		jsonBytes, err := json.MarshalIndent(parsedData, "", "  ")
 		if err != nil {
 			return
 		}
-
-		err = os.WriteFile(jsonOutput, jsonBytes, 0644)
-		if err != nil {
+		if err := os.WriteFile(jsonOutput, jsonBytes, 0644); err != nil {
 			continue
 		}
+		fmt.Println(string(jsonBytes))
+		results = append(results, jsonOutput)
 	}
 
 	c.JSON(http.StatusOK, gin.H{
