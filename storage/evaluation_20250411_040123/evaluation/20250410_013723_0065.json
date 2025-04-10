@@ -3,56 +3,56 @@
   "Evaluation": [
     {
       "category": "Technical Proficiency",
-      "explanation": "The candidate demonstrates skills in visualization, modeling, and fabrication, with experience in software like Adobe Photoshop, Illustrator, InDesign, Lightroom, V-Ray, Enscape, Rhinoceros-Grasshopper, Revit, and AutoCAD. They also have experience with fabrication tools like laser cutting, ZUND digital cutting and routing, WAZER waterjet, 3D printing and scanning, and CNC milling. However, the CV lacks mention of common software engineering technologies such as C#, .NET, SQL, JavaScript, HTML, CSS, Java, Python, or C++. Given the focus on architectural design and digital fabrication, the technical skills are relevant but not directly aligned with software engineering. The score reflects the relevant technical skills in design software and digital fabrication, but the absence of core software engineering technologies limits the score.",
-      "score": "4"
-    },
-    {
-      "category": "Problem-Solving and Analytical Skills",
-      "explanation": "The CV provides evidence of problem-solving skills in diagnosing issues with innovative equipment as a Digital Fabrication Lab Technician. The candidate also aided in internal and personal assessments, implying analytical skills. However, the CV does not explicitly showcase complex problem-solving scenarios or debugging examples that are typical in software engineering. The score reflects the general problem-solving capabilities demonstrated in the described roles.",
-      "score": "5"
-    },
-    {
-      "category": "Software Development Lifecycle (SDLC) and Best Practices",
-      "explanation": "The CV lacks information regarding the candidate's understanding of SDLC methodologies, coding standards, testing practices, and version control systems. There's no mention of experience with Agile, Waterfall, CI/CD pipelines, or any software engineering best practices. Therefore, it's difficult to assess their knowledge in this area, leading to a low score.",
+      "explanation": "The candidate lists skills relevant to architectural design and digital fabrication, including Rhinoceros, Grasshopper, Revit, AutoCAD, Adobe Creative Suite, and various fabrication tools (laser cutting, 3D printing, CNC milling). However, the CV lacks mention of core software engineering technologies like C#, .NET, SQL, JavaScript, HTML, CSS, Java, Python, and C++. The experience as a Digital Fabrication Lab Technician suggests some technical aptitude, but it's focused on equipment operation and support rather than software development. Therefore, the candidate's technical proficiency related to software engineering appears limited based on the provided information. More information would be needed to properly evaluate software engineering skills.",
       "score": "2"
     },
     {
-      "category": "Collaboration and Communication Skills",
-      "explanation": "The candidate's CV emphasizes teamwork and communication through roles like Event Services Staff, Representation Intern, and involvement in student organizations (NOMAS Pratt Chapter, Vietnamese Students Association). They organized events, assisted in producing visualization materials, participated in meetings with foreign clients (as a translator), guided students, and contributed to lectures. These experiences highlight the ability to work in a team, communicate effectively, and collaborate with diverse groups. This shows strong collaboration and communication skills, making them an effective team player.",
-      "score": "8"
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The CV provides limited direct evidence of problem-solving and analytical skills in a software engineering context. Diagnosing equipment issues as a Digital Fabrication Lab Technician suggests some problem-solving ability, but the specific nature of these problems and the solutions implemented are not detailed. The descriptions of the roles (Event Services Staff, Representation Intern, Photography Assistant) do not provide concrete examples of analytical or problem-solving abilities. The role in the digital lab is most relevant but lacks detail.",
+      "score": "3"
     },
     {
-      "category": "Adaptability and Learning Agility",
-      "explanation": "The CV demonstrates adaptability and a willingness to learn through diverse experiences, from event management to digital fabrication and representation internships. The candidate's roles required them to engage with new knowledge, adapt to different environments, and learn new software and equipment. This indicates a moderate level of adaptability and learning agility.",
+      "category": "Software Development Lifecycle (SDLC) and Best Practices",
+      "explanation": "There is no explicit mention of SDLC methodologies, coding standards, testing practices, or version control systems in the CV. The candidate's experience does not appear to involve formal software development processes. Therefore, it's difficult to assess their understanding or adherence to SDLC principles and software engineering best practices based on the provided information.",
+      "score": "1"
+    },
+    {
+      "category": "Collaboration and Communication Skills",
+      "explanation": "The candidate emphasizes being an 'outgoing and optimistic teamplayer' and mentions creating 'strong bonds' when working with others. The experience as Event Services Staff and Representation Intern involves interacting with guests, colleagues, and clients, suggesting some level of communication skills. Assisting as a translator also indicates communication abilities. However, the CV lacks specific examples of technical communication or collaborative projects in a software engineering context.",
       "score": "6"
     },
     {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate states being 'ready to engage and absorb new knowledge and criticisms'. The diverse experiences listed in the CV, ranging from event services to digital fabrication, suggest some degree of adaptability. However, there's no specific evidence of adapting to new technologies or methodologies in a software engineering context. The candidate is an undergraduate student, which implies some willingness to learn.",
+      "score": "5"
+    },
+    {
       "category": "Code Quality and Maintainability",
-      "explanation": "The CV does not include any information related to coding or software development. Therefore, it's impossible to assess the candidate's code quality and maintainability.",
+      "explanation": "There is no mention of coding or software development in the CV. Therefore, it is impossible to evaluate code quality and maintainability.",
       "score": "1"
     },
     {
       "category": "Testing and Debugging",
-      "explanation": "The CV does not provide any evidence of testing or debugging skills. The candidate's experience is primarily in architecture, event management, and digital fabrication, which typically do not involve software testing or debugging.",
+      "explanation": "The CV does not mention testing or debugging skills. It is impossible to evaluate testing and debugging ability.",
       "score": "1"
     },
     {
       "category": "Database Knowledge",
-      "explanation": "The CV does not mention any experience with database systems, SQL, or data modeling. Therefore, it's not possible to evaluate the candidate's database knowledge.",
+      "explanation": "The candidate does not list any database skills or experience with database systems. Skills in this area appear limited.",
       "score": "1"
     },
     {
       "category": "Web Technologies",
-      "explanation": "The CV does not list any specific web technologies. Therefore, the candidate's proficiency in web technologies cannot be evaluated.",
+      "explanation": "The candidate does not list any web technologies skills or experience. Skills in this area appear limited.",
       "score": "1"
     },
     {
       "category": "System Configuration and Support",
-      "explanation": "The candidate's experience as a Digital Fabrication Lab Technician involves diagnosing innovative equipment, which suggests some system configuration and support skills. However, the CV does not provide detailed examples of troubleshooting or resolving complex system issues in multi-application or multi-server environments.",
-      "score": "3"
+      "explanation": "The candidate's experience as a Digital Fabrication Lab Technician suggests some familiarity with system configuration and support, but the specifics are not detailed. The CV does not elaborate on the scale or complexity of the systems involved, or the candidate's role in maintaining them. More information is needed.",
+      "score": "2"
     }
   ],
-  "FinalScore": 42.66666666666667,
+  "FinalScore": 30.666666666666664,
   "PersonalInfo": {
     "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
     "Age": null,
@@ -63,7 +63,7 @@
     "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
     "PathToCV": "storage/evaluation_20250411_040123/original/cvs/20250410_013723_0065.pdf",
     "PhoneNumber": "346.263.4012",
-    "Website": "https://issuu.com/knguyen172/\ndocs/portfolio_2023_khanh_nguyen-s",
+    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s",
     "WorkFor": null
   }
 }

@@ -123,9 +123,9 @@ func SubmitCVsHandler(c *gin.Context) {
 	}
 
 	req := struct {
-		evaluation_folder string `json:"path" binding:"required"`
+		EvaluationFolder string `json:"evaluation_folder"`
 	}{
-		evaluation_folder: filepath.Join(basePath, "evaluation"),
+		EvaluationFolder: filepath.Join(basePath, "evaluation"),
 	}
 	// call output
 	reqBody, err := json.Marshal(req)
@@ -133,7 +133,7 @@ func SubmitCVsHandler(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to prepare request"})
 		return
 	}
-	resp, err := http.Post("http://localhost:8082/output", "application/json", bytes.NewBuffer(reqBody))
+	resp, err := http.Post("http://localhost:8084/output", "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to call evaluation server"})
 		return
