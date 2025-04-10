@@ -3,104 +3,151 @@ package evaluation
 import (
 	"bytes"
 	"encoding/json"
+	"fmt"
 	"io"
 	"net/http"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 )
 
+type evalRequest struct {
+	InputPath string `json:"input_path" binding:"required"`
+}
+
+type JDRequest struct {
+	JobName        string `json:"job_name"`
+	JDMainQuiteria string `json:"jd_main_quiteria"`
+	CVRawText      string `json:"cv_raw_text"`
+}
+
 func evaluateJobHandler(c *gin.Context) {
-	inputFolder := c.Query("path")
-	if inputFolder == "" {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Missing 'path' query parameter"})
+	var req evalRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input"})
 		return
 	}
 
-	// Đọc job_type
-	jobTypePath := filepath.Join(inputFolder, "job_type.txt")
-	jobTypeBytes, err := os.ReadFile(jobTypePath)
+	basePath := strings.TrimSpace(req.InputPath)
+	parsePath := filepath.Join(basePath, "parse")
+
+	jobnameBytes, err := os.ReadFile(filepath.Join(parsePath, "jobname.txt"))
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to read job_type.txt"})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot read jobname.txt"})
 		return
 	}
-	jobType := string(jobTypeBytes)
+	jobName := strings.TrimSpace(string(jobnameBytes))
 
-	// Đọc criteria (JD JSON)
-	criteriaPath := filepath.Join(inputFolder, "jd.json")
-	criteriaBytes, err := os.ReadFile(criteriaPath)
+	jdMainBytes, err := os.ReadFile(filepath.Join(parsePath, "jd.json"))
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to read jd.json"})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot read jd.json"})
 		return
 	}
-	criteria := string(criteriaBytes)
+	// var jdMain []string
+	// if err := json.Unmarshal(jdMainBytes, &jdMain); err != nil {
+	// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid jd.json format"})
+	// 	return
+	// }
 
-	// Đọc các file CV trong thư mục con "cvs"
-	cvFolder := filepath.Join(inputFolder, "cvs")
-	files, err := os.ReadDir(cvFolder)
+	cvsFolder := filepath.Join(parsePath, "cvs")
+	outputFolder := filepath.Join(basePath, "evaluation")
+	if err := os.MkdirAll(outputFolder, os.ModePerm); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create output folder"})
+		return
+	}
+
+	files, err := os.ReadDir(cvsFolder)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to read cvs folder"})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot read cvs folder"})
 		return
 	}
 
-	results := make(map[string]interface{})
-
-	for _, file := range files {
-		if file.IsDir() {
+	var results []string
+	for _, f := range files {
+		if f.IsDir() || !strings.HasSuffix(f.Name(), ".txt") {
 			continue
 		}
 
-		cvPath := filepath.Join(cvFolder, file.Name())
-		cvBytes, err := os.ReadFile(cvPath)
+		cvPath := filepath.Join(cvsFolder, f.Name())
+		cvTextBytes, err := os.ReadFile(cvPath)
 		if err != nil {
-			results[file.Name()] = "Failed to read file"
-			continue
-		}
-		cv := string(cvBytes)
-
-		// Tạo request JSON gửi sang server 8081
-		payload := map[string]string{
-			"job_type": jobType,
-			"criteria": criteria,
-			"cv":       cv,
-		}
-		jsonPayload, err := json.Marshal(payload)
-		if err != nil {
-			results[file.Name()] = "JSON marshal error: " + err.Error()
 			continue
 		}
 
-		// Gửi POST request tới server AI tại :8081
-		resp, err := http.Post("http://localhost:8081/evaluate", "application/json", bytes.NewBuffer(jsonPayload))
+		payload := JDRequest{
+			JobName:        jobName,
+			JDMainQuiteria: string(jdMainBytes),
+			CVRawText:      string(cvTextBytes),
+		}
+
+		payloadBytes, err := json.Marshal(payload)
 		if err != nil {
-			results[file.Name()] = "Request error: " + err.Error()
+			continue
+		}
+
+		resp, err := http.Post("http://localhost:8081/ai/evaluate", "application/json", bytes.NewBuffer(payloadBytes))
+		if err != nil {
 			continue
 		}
 		defer resp.Body.Close()
 
-		respBody, err := io.ReadAll(resp.Body)
+		body, err := io.ReadAll(resp.Body)
 		if err != nil {
-			results[file.Name()] = "Failed to read response: " + err.Error()
-			continue
+			return
+		}
+		fmt.Printf("Response status: %s\n", resp.Status)
+		fmt.Printf("Response body: %s\n", string(body))
+
+		// 5. Parse top-level JSON
+		var jsonResponse map[string]interface{}
+		err = json.Unmarshal(body, &jsonResponse)
+		if err != nil {
+			return
 		}
 
-		if resp.StatusCode != http.StatusOK {
-			results[file.Name()] = "Error from AI server: " + string(respBody)
-			continue
+		// 6. Access the "Response" field and parse the wrapped JSON string
+		outerMap, ok := jsonResponse["evaluation"].(map[string]interface{})
+		if !ok {
+			return
 		}
 
-		var parsed map[string]interface{}
-		if err := json.Unmarshal(respBody, &parsed); err != nil {
-			results[file.Name()] = "Failed to parse JSON: " + err.Error()
-			continue
+		responseStr, ok := outerMap["Response"].(string)
+		if !ok {
+			return
 		}
 
-		results[file.Name()] = parsed
+		// 7. Clean up the string (remove Markdown formatting)
+		responseStr = strings.TrimSpace(responseStr)
+		responseStr = strings.TrimPrefix(responseStr, "```json")
+		responseStr = strings.TrimSuffix(responseStr, "```")
+		responseStr = strings.TrimSpace(responseStr)
+
+		// 8. Parse the cleaned JSON string into a map
+		var parsedData map[string]interface{}
+		err = json.Unmarshal([]byte(responseStr), &parsedData)
+		if err != nil {
+			return
+		}
+
+		// 9. Determine output path
+		jsonOutput := filepath.Join(outputFolder, strings.TrimSuffix(f.Name(), filepath.Ext(f.Name()))+".json")
+
+		// 10. Save the final parsed JSON to a file
+		jsonBytes, err := json.MarshalIndent(parsedData, "", "  ")
+		if err != nil {
+			return
+		}
+
+		err = os.WriteFile(jsonOutput, jsonBytes, 0644)
+		if err != nil {
+			continue
+		}
 	}
 
-	// Trả kết quả
 	c.JSON(http.StatusOK, gin.H{
-		"results": results,
+		"message":     "Evaluation completed",
+		"evaluations": results,
 	})
 }
