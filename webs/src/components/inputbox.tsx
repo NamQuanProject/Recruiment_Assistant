@@ -122,9 +122,11 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
         method: "POST",
         body: formData,
       });
-      console.log("Response:", response); // Log the response object
+// Log the response object
       if (response.ok) {
         console.log("Resume uploaded successfully!");
+        const data = await response.json(); // Parse the JSON response
+       console.log("Response Data:", data);
       } else {
         console.error("Failed to upload resume. Status:", response.status);
         const errorText = await response.text();
@@ -136,6 +138,9 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
       } else {
         console.error("Error uploading resume:", error);
       }
+    }
+    finally {
+      setRankLoading(true); // Reset the submit button clicked state
     }
   };
   return (
