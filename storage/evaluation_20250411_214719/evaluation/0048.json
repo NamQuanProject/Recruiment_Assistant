@@ -1,0 +1,69 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate lists a good range of programming languages including Java, Python, C, C++, JavaScript, HTML/CSS, Assembly, and Swift. They also mention frameworks like React.js, Node.js, and Material-UI, along with developer tools such as Git, GitHub, VS Code, Visual Studio, IntelliJ, Vim, UNIX, and Bash. Their projects, like the Simple C Compiler and Marketplace Demo, suggest practical application of these skills. However, the depth of experience in C# and .NET, which are core to the job description, is unclear. While they have a solid foundation, further exploration is needed to determine their proficiency in the specific technologies required for this role.",
+      "score": "7"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate's research experience, particularly with The Data Mine - Merck - LabLogs MSDS and Urban Sustainability Modeling \u0026 Analysis Research Team, demonstrates their ability to analyze data, develop automated data processing pipelines, and extract insights from various sources. The Simple C Compiler project also highlights their problem-solving skills in compiler design and optimization. The research projects involve problem-solving using programming to achieve certain goals, which helps in analytical skills. Their presentation at Purdue's Undergraduate Research Expo indicates an ability to communicate complex information effectively.",
+      "score": "8"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The candidate's experience as an Undergraduate Teaching Assistant demonstrates their ability to communicate technical information to students and collaborate with course coordinators and lecturers. Their involvement in team projects like Excellaca also showcases their ability to work in a group setting and coordinate efforts. Presenting research findings at Purdue's Undergraduate Research Expo highlights their communication skills. There is not much information about conflict resolution, and working with stakeholders, but their teaching assistant role and team projects does show good collaboration.",
+      "score": "7"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) Knowledge",
+      "explanation": "The projects listed show involvement in various phases of the SDLC, from design and development to implementation. The Simple C Compiler project, for example, demonstrates understanding of compiler design principles and assembly code generation. There is a lack of information about understanding of Agile and Waterfall, or experience with CI/CD pipelines. Therefore, the knowledge of SDLC is not fully clear. ",
+      "score": "6"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate's diverse experiences, ranging from research in data science and urban sustainability to developing a compiler and a marketplace demo, demonstrate their willingness to learn new technologies and adapt to different challenges. Their continuous enrollment in relevant coursework, such as Competitive Programming and Systems Programming, indicates a proactive pursuit of professional development. The variety of languages and frameworks on their resume suggest a good willingness to learn and adapt to new technologies. ",
+      "score": "8"
+    },
+    {
+      "category": "Specific Technology Expertise (e.g., C#, .NET, SQL)",
+      "explanation": "The candidate has experience with several languages such as C, C++, and Java. There is no mention of C# or .NET, however. The candidate doesn't show SQL in their projects or relevant coursework. Because of this, I am giving them a score of 2/5.",
+      "score": "2"
+    },
+    {
+      "category": "Experience with Public Safety/Health Software",
+      "explanation": "The candidate's CV does not explicitly mention any experience with public safety or health software.",
+      "score": "1"
+    },
+    {
+      "category": "Agile Development Experience",
+      "explanation": "While the candidate has worked on several projects, the CV does not explicitly mention any experience with Agile development methodologies.",
+      "score": "1"
+    },
+    {
+      "category": "Database Management Skills (SQL Server)",
+      "explanation": "The candidate does not have experience with SQL Server, or databases in general. Projects do show registration/login, so they may have some familiarity.",
+      "score": "1"
+    },
+    {
+      "category": "Web Development Experience",
+      "explanation": "The candidate shows they have built web applications. They also know React.js, Node.js, Material-UI, Javascript, and HTML/CSS. The role would benefit from this knowledge.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 60,
+  "PersonalInfo": {
+    "Address": null,
+    "Age": null,
+    "Email": "Email",
+    "Experience_Years": null,
+    "FullName": "Quan Dinh",
+    "GitHub": "github.com/githublink",
+    "LinkedIn": "linkedin.com/in/linkedinlink",
+    "PathToCV": "storage\\evaluation_20250411_214719\\original\\cvs\\0048.pdf",
+    "PhoneNumber": "Phone No",
+    "Website": null,
+    "WorkFor": null
+  }
+}

@@ -37,7 +37,7 @@ func GetCVAnalysisPrompt(jobTitle string, jobDetails string, textBlocksStr strin
 	}
 
 	Make sure to use the exact text and coordinates from the text blocks provided.
-	Identify at most 4 strong areas and 4 weak areas if possible.
+	Identify at most 5 strong areas and 5 weak areas if possible.
 	For strong areas, focus on relevant skills, experience, and achievements that match the job requirements.
 	For weak areas, focus on the roles (whether it fit with the job description or the job), projects (related or not), and experience (enough or not), provide decent constructive feedback on how to improve them.`, jobTitle, jobDetails, textBlocksStr, evaluationReference)
 }

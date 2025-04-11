@@ -1,0 +1,69 @@
+{
+  "Authenticity": "8",
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate lacks direct experience with C#, .NET, SQL, and other technologies listed in the job description. The CV focuses on skills and experiences in product design, growth marketing, and project management, which are not directly related to software engineering. The candidate's tools and technologies primarily include Figma, Google Workspace, Adobe Photoshop, and Microsoft Suite, which are more relevant to design and project management rather than software development. Therefore, the candidate's technical proficiency for a software engineer role is limited.",
+      "score": "2"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The CV demonstrates some problem-solving skills through descriptions of project work, such as identifying customer needs and improving project timelines. For example, in the Prudential Vietnam internship, the candidate assisted in addressing unmet customer needs and improved the efficiency of cross-selling projects. The description also involves gathering and analyzing feedback, and reporting findings. However, the CV lacks examples of solving technical problems or debugging code, which are crucial for a software engineer role. The extracurricular activities list problem-solving as a key learning, but lacks details.",
+      "score": "5"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The CV demonstrates strong communication and collaboration skills. The candidate has experience working with cross-functional teams, managing stakeholders, and presenting findings. The descriptions of project work at Prudential Vietnam and extracurricular activities highlight the candidate's ability to communicate effectively and collaborate with team members. The candidate also has experience managing relationships with external partners, which further demonstrates their communication and collaboration skills. The LinkedIn profile and portfolio links also suggest good communication skills.",
+      "score": "8"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) Knowledge",
+      "explanation": "The candidate demonstrates basic understanding of project lifecycles through internship experiences, such as assisting in the development of user flows and monitoring project timelines. The Agile Project Management training course listed suggests some familiarity with Agile methodologies. However, the CV lacks explicit examples of contributing to all phases of the SDLC, such as design, development, implementation, and maintenance. The candidate's experience is primarily focused on project management and coordination, rather than hands-on software development activities.",
+      "score": "4"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate describes themself as adaptable and growth-oriented, and their CV shows a willingness to learn new skills. The inclusion of various training courses, such as UX Design and Agile Project Management, demonstrates a proactive approach to professional development. The candidate's experience in different roles and projects also suggests adaptability. However, the CV does not provide specific examples of quickly learning new technologies or adapting to unexpected changes in a fast-paced environment. The listed projects and activities show a diverse range of experiences, indicating adaptability.",
+      "score": "7"
+    },
+    {
+      "category": "Specific Technology Expertise (e.g., C#, .NET, SQL)",
+      "explanation": "The candidate does not demonstrate expertise in C#, .NET, or SQL. The CV primarily focuses on design and marketing skills and experiences. The listed tools and technologies (Figma, Google Workspace, Adobe Photoshop, Microsoft Suite) are not directly related to C#, .NET, or SQL development.",
+      "score": "1"
+    },
+    {
+      "category": "Experience with Public Safety/Health Software",
+      "explanation": "The candidate has no prior experience with Public Safety/Health Software.",
+      "score": "1"
+    },
+    {
+      "category": "Agile Development Experience",
+      "explanation": "The candidate has some familiarity with Agile concepts through the 'Agile Project Management' training course listed. However, the CV does not provide detailed examples of working in an Agile environment or contributing to Agile teams. The description of project work does not explicitly mention Agile practices such as sprint planning, daily stand-ups, or retrospectives.",
+      "score": "2"
+    },
+    {
+      "category": "Database Management Skills (SQL Server)",
+      "explanation": "The candidate has no experience with SQL Server management. The CV does not mention any database-related skills or experiences.",
+      "score": "1"
+    },
+    {
+      "category": "Web Development Experience",
+      "explanation": "The candidate has no experience in web development. The CV does not mention any web technologies such as Javascript, HTML, CSS, or Web Services.",
+      "score": "1"
+    }
+  ],
+  "FinalScore": 42.66666666666667,
+  "PersonalInfo": {
+    "Address": null,
+    "Age": null,
+    "Email": "nybui.work@gmail.com",
+    "Experience_Years": "0",
+    "FullName": "Bui Mai Ny",
+    "GitHub": null,
+    "LinkedIn": "https://www.linkedin.com/in/buimainy/",
+    "PathToCV": "storage\\evaluation_20250411_214719\\original\\cvs\\0046.pdf",
+    "PhoneNumber": "(+84) 39 3275279",
+    "Website": "https://nybui.notion.site/Ny-i-l-m-2d46fe6405654cd286317badf307cd64",
+    "WorkFor": "PRUDENTIAL VIETNAM ASSURANCE PRIVATE LTD."
+  }
+}

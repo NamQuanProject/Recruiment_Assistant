@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Python (NumPy, Pandas, Scikit-learn, Flask), SAS; SQL - Redshift, MySQL; ElasticSearch; Recommendation",
+    "page": 1,
+    "x": 21.6,
+    "y": 723.49,
+    "width": 541.23,
+    "height": 13.99,
+    "description": "This area is strong because it demonstrates proficiency in several relevant technologies, particularly SQL, which is mentioned in the job description. This shows an ability to work with databases, a crucial skill for a Software Engineer I role at FirstWatch.",
+    "type": "strong"
+  },
+  {
+    "text": "Led data extraction and evaluation efforts to save Best Buy more than 11M over the course of tenure",
+    "page": 1,
+    "x": 49.35,
+    "y": 196.24,
+    "width": 516.11,
+    "height": 14,
+    "description": "This area is strong because it showcases the candidate's ability to analyze data, extract valuable insights, and contribute significantly to the company's bottom line. This demonstrates strong problem-solving and analytical abilities, crucial for software development.",
+    "type": "strong"
+  },
+  {
+    "text": "Communicated with PMs to lead 4 data scientists in project planning, development, and execution",
+    "page": 1,
+    "x": 49.35,
+    "y": 270.49,
+    "width": 502.23,
+    "height": 13.99,
+    "description": "This area is strong because it highlights the candidate's leadership and communication skills, which are essential for collaborating with stakeholders and managing projects. The job description mentions the need for strong communication skills, and this demonstrates the candidate's ability in this area.",
+    "type": "strong"
+  },
+  {
+    "text": "Brooklyn, NY",
+    "page": 1,
+    "x": 338.44,
+    "y": 61.99,
+    "width": 68.09,
+    "height": 14,
+    "description": "This area is weak because the resume provides no explicit evidence of C# or .NET experience, which are listed as primary development languages. The CV needs to showcase projects or experiences that involve the technologies mentioned in the description in order to demonstrate ability.",
+    "type": "weak"
+  },
+  {
+    "text": "Best Buy",
+    "page": 1,
+    "x": 21.6,
+    "y": 158.22,
+    "width": 61.09,
+    "height": 22.68,
+    "description": "This area is weak because the CV focuses on Data Science roles, which, while valuable, don't directly align with the Software Engineer I role requirements. While data analysis skills are beneficial, the CV should include projects or experiences demonstrating software development skills (C#, .NET, etc.) to show a better fit for the position.",
+    "type": "weak"
+  }
+]

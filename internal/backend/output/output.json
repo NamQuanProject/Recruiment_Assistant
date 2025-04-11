@@ -1,40 +1,49 @@
 {
   "list": [
     {
-      "full_name": "Huu Nguyen",
-      "worked_for": "",
-      "experience_level": "1",
-      "authenticity": 8,
-      "final_score": 57.333333333333336,
-      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0025.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0025.json"
-    },
-    {
-      "full_name": "CA NGUYEN",
-      "worked_for": "",
-      "experience_level": "",
-      "authenticity": 8,
-      "final_score": 52,
-      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0010.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0010.json"
-    },
-    {
-      "full_name": "ABC",
+      "full_name": "Quan Dinh",
       "worked_for": "",
       "experience_level": "",
       "authenticity": 9,
-      "final_score": 65,
-      "path_to_cv": "storage\\evaluation_20250411_051908\\original\\cvs\\0048.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_051908/evaluation/0048.json"
+      "final_score": 60,
+      "path_to_cv": "storage\\evaluation_20250411_214719\\original\\cvs\\0048.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_214719/evaluation/0048.json"
+    },
+    {
+      "full_name": "Terrence Coleman",
+      "worked_for": "",
+      "experience_level": "10",
+      "authenticity": 8,
+      "final_score": 60,
+      "path_to_cv": "storage\\evaluation_20250411_214719\\original\\cvs\\0067.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_214719/evaluation/0067.json"
     },
     {
       "full_name": "Quoc Nguyen",
       "worked_for": "",
-      "experience_level": "3",
-      "authenticity": 8,
+      "experience_level": "2",
+      "authenticity": 7,
       "final_score": 52,
-      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0080.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0080.json"
+      "path_to_cv": "storage\\evaluation_20250411_214719\\original\\cvs\\0049.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_214719/evaluation/0049.json"
+    },
+    {
+      "full_name": "Bui Mai Ny",
+      "worked_for": "PRUDENTIAL VIETNAM ASSURANCE PRIVATE LTD.",
+      "experience_level": "0",
+      "authenticity": 8,
+      "final_score": 42.66666666666667,
+      "path_to_cv": "storage\\evaluation_20250411_214719\\original\\cvs\\0046.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_214719/evaluation/0046.json"
+    },
+    {
+      "full_name": "Khanh Nguyen",
+      "worked_for": "",
+      "experience_level": "",
+      "authenticity": 7,
+      "final_score": 34.66666666666667,
+      "path_to_cv": "storage\\evaluation_20250411_214719\\original\\cvs\\0065.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_214719/evaluation/0065.json"
     }
   ]
 }
