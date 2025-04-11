@@ -96,6 +96,7 @@ func GetHlCVHandler(c *gin.Context) {
 		PdfPath:        pathtocv,
 		EvalRefPath:    pathtoeval,
 	}
+	fmt.Print("Request to server:", request)
 
 	requestBody, err := json.Marshal(request)
 	if err != nil {

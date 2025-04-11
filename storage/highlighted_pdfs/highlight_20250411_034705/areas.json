@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Programming languages: C++, Python, JavaScript,\nTypeScript",
+    "page": 1,
+    "x": 21,
+    "y": 388.05,
+    "width": 311.2,
+    "height": 27.48,
+    "description": "This is a strong area. Listing proficiency in multiple programming languages like C++, Python, JavaScript, and TypeScript directly addresses the 'Technical Proficiency' requirement. This demonstrates breadth of knowledge, which is valuable for a software engineer.",
+    "type": "strong"
+  },
+  {
+    "text": "Frameworks/Tools: Reactjs, TailwindCSS, Figma",
+    "page": 1,
+    "x": 21,
+    "y": 414.45,
+    "width": 298,
+    "height": 13.74,
+    "description": "This is a strong area. Reactjs and TailwindCSS are relevant frontend technologies, and Figma suggests UI design skills. This demonstrates skills required for the frontend portions of the job.",
+    "type": "strong"
+  },
+  {
+    "text": "Health Recommendation System Ho Chi Minh, Vietnam",
+    "page": 1,
+    "x": 21,
+    "y": 440.85,
+    "width": 324.4,
+    "height": 13.74,
+    "description": "This is a strong area. This projects showcases practical applications in frontend development. Details on the system and technologies utilized adds credibility and demonstrates experience.",
+    "type": "strong"
+  },
+  {
+    "text": "Google Developer Group - HCMUS Ho Chi Minh, Vietnam",
+    "page": 2,
+    "x": 21,
+    "y": 401.25,
+    "width": 337.6,
+    "height": 13.74,
+    "description": "This is a strong area. Involvement with the Google Developer Group as a Web Specialist suggests good communication and collaboration skills, and indicates a proactive approach to learning and skill development.",
+    "type": "strong"
+  },
+  {
+    "text": "Coursework: OOP, Data Structures \u0026 Algorithms,\nComputer Systems Programming, Multivariable Calculus,\nLinear\nAlgebra, Discrete Structures, Scientific Method.",
+    "page": 1,
+    "x": 21,
+    "y": 216.45,
+    "width": 350.8,
+    "height": 54.96,
+    "description": "This area is weak. The listing of coursework is too generic. While relevant, it doesn't showcase specific projects or applications of these concepts. To improve, include specific projects or assignments where you applied these concepts and highlight any significant achievements or learnings. It's better to show, don't tell.",
+    "type": "weak"
+  },
+  {
+    "text": "EvoGym Ho Chi Minh, Vietnam",
+    "page": 2,
+    "x": 21,
+    "y": 256.05,
+    "width": 179.2,
+    "height": 13.74,
+    "description": "This area is weak. Describing the EvoGym project as 'A project from a tutorial video' diminishes its impact. While learning from tutorials is valuable, presenting it as a direct replication without any added innovation makes it less impressive. To improve, highlight any modifications, customizations, or enhancements you made beyond the tutorial's scope. This demonstrates initiative and problem-solving skills.",
+    "type": "weak"
+  },
+  {
+    "text": "TikTok TechJam 2024 Ho Chi Minh, Vietnam",
+    "page": 2,
+    "x": 21,
+    "y": 84.45,
+    "width": 265,
+    "height": 13.74,
+    "description": "This area could be improved. Although it showcases experience, more technical details about this experience would be useful. Provide a summary of the challenge in the Hackathon and elaborate on the architecture of the solution developed. The number of team members and other important context would be more helpful.",
+    "type": "weak"
+  },
+  {
+    "text": "Vietnam",
+    "page": 1,
+    "x": 21,
+    "y": 97.65,
+    "width": 47.2,
+    "height": 13.74,
+    "description": "The CV lacks any mention of testing or debugging skills. There's no indication of whether the candidate has experience writing unit tests, using debugging tools, or implementing testing strategies. Candidate can improve this by adding a section about this or mentioning projects that involve testing or debugging.",
+    "type": "weak"
+  }
+]

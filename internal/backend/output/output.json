@@ -1,31 +1,31 @@
 {
   "list": [
     {
-      "full_name": "NGUYEN-TU PHAM",
-      "worked_for": "",
-      "experience_level": "",
-      "authenticity": 9,
-      "final_score": 61.53846153846154,
-      "path_to_cv": "storage/evaluation_20250411_014111/parse/cvs/20250409_214747_CV_highlighted-2.txt",
-      "path_to_evaluation": "storage/evaluation_20250411_014111/evaluation/20250409_214747_CV_highlighted-2.json"
-    },
-    {
-      "full_name": "KIM CHAU LE",
-      "worked_for": "",
-      "experience_level": "0",
-      "authenticity": 8,
-      "final_score": 60,
-      "path_to_cv": "storage/evaluation_20250411_014111/parse/cvs/20250410_022450_LeKimChau.txt",
-      "path_to_evaluation": "storage/evaluation_20250411_014111/evaluation/20250410_022450_LeKimChau.json"
-    },
-    {
-      "full_name": "Khanh Nguyen",
+      "full_name": "Huu Nguyen",
       "worked_for": "",
       "experience_level": "1",
       "authenticity": 8,
-      "final_score": 43.07692307692308,
-      "path_to_cv": "storage/evaluation_20250411_014111/parse/cvs/20250410_013723_0065.txt",
-      "path_to_evaluation": "storage/evaluation_20250411_014111/evaluation/20250410_013723_0065.json"
+      "final_score": 57.333333333333336,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0025.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0025.json"
+    },
+    {
+      "full_name": "CA NGUYEN",
+      "worked_for": "",
+      "experience_level": "",
+      "authenticity": 8,
+      "final_score": 52,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0010.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0010.json"
+    },
+    {
+      "full_name": "ABC",
+      "worked_for": "",
+      "experience_level": "0",
+      "authenticity": 8,
+      "final_score": 52,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0080.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0080.json"
     }
   ]
 }

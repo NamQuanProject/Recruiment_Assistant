@@ -3,12 +3,10 @@ package highlight
 import (
 	"encoding/json"
 	"fmt"
-	"io"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
-	"time"
 
 	"github.com/gin-gonic/gin"
 )
@@ -96,33 +94,33 @@ func (s *WebServer) Run() {
 		// }
 
 		// Create a unique filename
-		timestamp := time.Now().Format("20060102_150405")
-		filename := fmt.Sprintf("%s_%s", timestamp, filepath.Base(pdfpath))
-		fmt.Println("Filename:", filename)
-		pdfPath := filepath.Join(s.uploadDir, filename)
+		// timestamp := time.Now().Format("20060102_150405")
+		// filename := fmt.Sprintf("%s_%s", timestamp, filepath.Base(pdfpath))
+		// fmt.Println("Filename:", filename)
+		// pdfPath := filepath.Join(s.uploadDir, filename)
 
 		// Copy the PDF file from pdfpath to pdfPath
-		sourceFile, err := os.Open(pdfpath)
-		if err != nil {
-			log.Printf("Failed to open source PDF file: %v", err)
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to open source PDF file"})
-			return
-		}
-		defer sourceFile.Close()
+		// sourceFile, err := os.Open(pdfpath)
+		// if err != nil {
+		// 	log.Printf("Failed to open source PDF file: %v", err)
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to open source PDF file"})
+		// 	return
+		// }
+		// defer sourceFile.Close()
 
-		destFile, err := os.Create(pdfPath)
-		if err != nil {
-			log.Printf("Failed to create destination PDF file: %v", err)
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create destination PDF file"})
-			return
-		}
-		defer destFile.Close()
+		// destFile, err := os.Create(pdfPath)
+		// if err != nil {
+		// 	log.Printf("Failed to create destination PDF file: %v", err)
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create destination PDF file"})
+		// 	return
+		// }
+		// defer destFile.Close()
 
-		if _, err := io.Copy(destFile, sourceFile); err != nil {
-			log.Printf("Failed to copy PDF file: %v", err)
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to copy PDF file"})
-			return
-		}
+		// if _, err := io.Copy(destFile, sourceFile); err != nil {
+		// 	log.Printf("Failed to copy PDF file: %v", err)
+		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to copy PDF file"})
+		// 	return
+		// }
 
 		//read evaluation reference as map[string]any from req.EvalRefPath
 		evaluationReferenceBytes, err := os.ReadFile(req.EvalRefPath)
@@ -145,7 +143,7 @@ func (s *WebServer) Run() {
 		// 	return
 		// }
 
-		areas, err := FindAreas(pdfPath, jobTitle, jobDetails, "http://localhost:8081", evaluationReference)
+		areas, err := FindAreas(pdfpath, jobTitle, jobDetails, "http://localhost:8081", evaluationReference)
 		if err != nil {
 			log.Printf("Failed to find areas: %v", err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to analyze CV"})
@@ -182,7 +180,7 @@ func (s *WebServer) Run() {
 
 		// Create highlight client and highlight the PDF
 		highlightClient := NewClient("http://localhost:8083")
-		highlightResp, err := highlightClient.HighlightPDF(pdfPath, areas)
+		highlightResp, err := highlightClient.HighlightPDF(pdfpath, areas)
 		if err != nil {
 			log.Printf("Failed to highlight PDF: %v", err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to highlight PDF"})

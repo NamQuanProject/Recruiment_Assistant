@@ -24,8 +24,9 @@ func RunServer() {
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
-}))  // Chau added this
+	})) // Chau added this
 	r.Static("/storage", "./storage")
+	r.Static("/internal", "./internal")
 	// Load HTML templates
 	r.LoadHTMLGlob("./templates/*")
 	r.LoadHTMLGlob("./templates/*")

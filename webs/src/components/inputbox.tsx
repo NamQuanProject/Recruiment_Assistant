@@ -15,7 +15,7 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
   const [rankLoading, setRankLoading] = useState(false); // State for loading
   const [submitCvClicked, setSubmitCvClicked] = useState(false); // State for submit button clicked
   const navigate = useNavigate(); // Initialize useNavigate
-
+  const { setSharedData } = useContext(DataContext); // Access setSharedData from context
   const handleNavigateToDashboard = () => {
     navigate("/dashboard"); // Navigate to the /dashboard route
   };
@@ -91,10 +91,11 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
   };
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
+    console.log("Selected files:", files); // Log the selected files
     if (files && files.length > 0) {
       const file = files[0];
-      const validTypes = ["application/pdf", "application/zip"];
-
+      const validTypes = ["application/pdf", "application/x-zip-compressed", "application/zip"]; // Allowed file types
+       // Log the selected file type
       if (!validTypes.includes(file.type)) {
         alert("Only PDF or ZIP files are allowed!");
         return;
@@ -110,32 +111,41 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
       alert("Please select a file before submitting.");
       return;
     }
-
+  
     console.log("Uploading file:", uploadedResumes.name);
-    setSubmitCvClicked(true); // Set the submit button clicked state
-
+  
     const formData = new FormData();
-    formData.append("file", uploadedResumes); // Append the file with the key "resumeFile"
-
+    formData.append("file", uploadedResumes);
+  
     try {
       const response = await fetch("http://localhost:8080/submitCVs", {
         method: "POST",
         body: formData,
       });
-
+  
       if (response.ok) {
-        console.log("Resume uploaded successfully!");
+        const responseData = await response.json(); // Parse the initial response
+        console.log("Response Data:", responseData);
+  
+        // Fetch the JSON file from the path provided in the response
+        const jsonResponse = await fetch(`http://localhost:8080/${responseData.final_out_path.replace(/\\/g, "/")}`);
+        if (jsonResponse.ok) {
+          const jsonData = await jsonResponse.json(); // Parse the JSON file
+          console.log("Fetched JSON Data:", jsonData);
+  
+          // Store the JSON data in the shared context
+          setSharedData(jsonData);
+          navigate("/dashboard"); // Navigate to the DashboardPage
+        } else {
+          console.error("Failed to fetch the JSON file. Status:", jsonResponse.status);
+        }
       } else {
         console.error("Failed to upload resume. Status:", response.status);
         const errorText = await response.text();
         console.error("Error response:", errorText);
       }
     } catch (error) {
-      if (error instanceof Error) {
-        console.error("Error uploading resume:", error.message);
-      } else {
-        console.error("Error uploading resume:", error);
-      }
+      console.error("Error uploading resume:", error);
     }
   };
   return (
@@ -222,7 +232,7 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
             <input
               id="resume-upload"
               type="file"
-              accept=".pdf"
+              accept=".pdf, .zip, .x-zip-compressed, application/zip"
               data-webkitdirectory=""
               multiple
               className="hidden"
@@ -230,10 +240,8 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
             />
             <p className={`mt-4 mx-auto text-sm ${resumeFileName ? "text-gray-600" : "text-transparent"  }`}>Uploaded File: {resumeFileName}</p>
             {(!submitCvClicked)? <button className="mt-20 flex flex-row w-1/3 h-[40px] bg-blue-300 mx-auto items-center px-4 py-2 rounded-md shadow-xl hover:shadow-xl hover:bg-blue-500 transition duration-300"
-                onClick={() => {
-                  handleUploadResume;
-                  setSubmitCvClicked(true); // Set the submit button clicked state
-                }
+                onClick={
+                  handleUploadResume // Set the submit button clicked state
                 }>
                 <span className="mx-auto w-full text-white">
                     Submit Resumes

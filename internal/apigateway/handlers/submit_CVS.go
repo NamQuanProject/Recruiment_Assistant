@@ -59,9 +59,9 @@ func SubmitCVsHandler(c *gin.Context) {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to evaluate CV: " + err.Error()})
 			return
 		}
-		c.JSON(http.StatusOK, gin.H{"message": "PDF uploaded and parsed successfully", "path": dst})
-
-		return
+		// c.JSON(http.StatusOK, gin.H{"message": "PDF uploaded and parsed successfully", "path": dst})
+		fmt.Print("message", "PDF uploaded and parsed successfully")
+		fmt.Print("path", dst)
 
 	} else if ext == ".zip" {
 		tempZipPath := filepath.Join(os.TempDir(), file.Filename)
@@ -116,16 +116,41 @@ func SubmitCVsHandler(c *gin.Context) {
 			return
 		}
 
-		c.JSON(http.StatusOK, gin.H{
-			"message":    "ZIP processed",
-			"pdf_count":  len(savedFiles),
-			"saved_pdfs": savedFiles,
-		})
+		// c.JSON(http.StatusOK, gin.H{
+		// 	"message":    "ZIP processed",
+		// 	"pdf_count":  len(savedFiles),
+		// 	"saved_pdfs": savedFiles,
+		// })
+		fmt.Print("message", "ZIP processed")
+		fmt.Print("pdf_count", len(savedFiles))
+		fmt.Print("saved_pdfs", savedFiles)
 
-		return
 	}
 
-	c.JSON(http.StatusBadRequest, gin.H{"error": "Only PDF or ZIP files are supported"})
+	req := struct {
+		EvaluationFolder string `json:"evaluation_folder"`
+	}{
+		EvaluationFolder: filepath.Join(basePath, "evaluation"),
+	}
+	// call output
+	reqBody, err := json.Marshal(req)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to prepare request"})
+		return
+	}
+	resp, err := http.Post("http://localhost:8084/output", "application/json", bytes.NewBuffer(reqBody))
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to call evaluation server"})
+		return
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Evaluation server returned error: " + resp.Status})
+		return
+	}
+	log.Printf("CVs evaluation successfully")
+	c.JSON(http.StatusOK, gin.H{"final_out_path": "internal/backend/output/output.json"})
+	// return
 }
 
 func processCV(pdfPath, outPath string) error {

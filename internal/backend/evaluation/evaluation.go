@@ -172,8 +172,9 @@ func evaluateJobHandler(c *gin.Context) {
 		parsedData["FinalScore"] = finalScore // Adding the new key "FinalScore"
 		personalInfo, ok := parsedData["PersonalInfo"].(map[string]interface{})
 		if ok {
-			personalInfo["PathToCV"] = cvPath
+			personalInfo["PathToCV"] = filepath.Join(basePath, "original", "cvs", strings.TrimSuffix(f.Name(), ".txt")+".pdf")
 		}
+		fmt.Print("pathtocv:", cvPath)
 
 		jsonOutput := filepath.Join(outputFolder, strings.TrimSuffix(f.Name(), filepath.Ext(f.Name()))+".json")
 		jsonBytes, err := json.MarshalIndent(parsedData, "", "  ")

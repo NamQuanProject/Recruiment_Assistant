@@ -1,0 +1,82 @@
+[
+  {
+    "text": "ABC",
+    "page": 1,
+    "x": 290,
+    "y": 72,
+    "width": 30,
+    "height": 16,
+    "description": "The candidate provides their name. This is a standard and necessary part of a CV. However, the name alone doesn't showcase any skills or experiences relevant to an account executive role.",
+    "type": "strong"
+  },
+  {
+    "text": "Data Visualization and Business Intelligence",
+    "page": 1,
+    "x": 107,
+    "y": 217,
+    "width": 184,
+    "height": 12,
+    "description": "The candidate lists Data Visualization and Business Intelligence as relevant coursework. This is a strong area as it demonstrates skills in analyzing and presenting data, which are useful for an Account Executive to understand market trends, customer behavior and sales performance.",
+    "type": "strong"
+  },
+  {
+    "text": "Python, SQL, Tableau, HTML, Microsoft Office (Word, Excel, Power Point), Orange",
+    "page": 1,
+    "x": 174,
+    "y": 692,
+    "width": 342,
+    "height": 12,
+    "description": "The candidate lists relevant technical skills. These are very important for data analysis and reporting in account executive role.",
+    "type": "strong"
+  },
+  {
+    "text": "Financial Analysis of CVS Health Corp",
+    "page": 1,
+    "x": 72,
+    "y": 307,
+    "width": 176,
+    "height": 12,
+    "description": "The candidate showcases financial analysis skills through this project. This is a strong point as account executives often need to understand financial data and its implication.",
+    "type": "strong"
+  },
+  {
+    "text": "Volunteer for All Majors Job \u0026 Internship Fair",
+    "page": 1,
+    "x": 72,
+    "y": 574,
+    "width": 208,
+    "height": 12,
+    "description": "While volunteer experience is good, this particular experience lacks a direct connection to the responsibilities of an account executive. It doesn't showcase skills in sales, relationship management, or business development. To improve this, the candidate should focus on volunteer experiences that demonstrate these skills.",
+    "type": "weak"
+  },
+  {
+    "text": "EDUCATION",
+    "page": 1,
+    "x": 71,
+    "y": 102,
+    "width": 68,
+    "height": 12,
+    "description": "The education section is good, but it is missing details regarding sales, marketing or communication coursework. To improve this, the candidate should highlight any courses or projects that involved sales strategies, customer relationship management, or marketing principles.",
+    "type": "weak"
+  },
+  {
+    "text": "PROJECTS",
+    "page": 1,
+    "x": 72,
+    "y": 294,
+    "width": 58,
+    "height": 12,
+    "description": "The projects are heavily focused on data analysis and lack explicit connections to sales or marketing initiatives. To improve this, the candidate should include projects where they applied their analytical skills to solve business problems, such as identifying target markets, optimizing pricing strategies, or improving customer acquisition costs. If this isn't possible, focus on how current projects affected business and sales.",
+    "type": "weak"
+  },
+  {
+    "text": "Languages:",
+    "page": 1,
+    "x": 107,
+    "y": 705,
+    "width": 49,
+    "height": 12,
+    "description": "While listing languages is helpful, the CV lacks details of communication skills, relationship management skills and negotiation skills. To improve this, add some achievements that showcase communication skills or negotiation skills. Also, the candidate should try to do some research to understand which is the target audience of this job, and improve the skill section",
+    "type": "weak"
+  }
+]

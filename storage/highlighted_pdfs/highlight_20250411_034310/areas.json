@@ -1,0 +1,82 @@
+[
+  {
+    "text": "C++, Python, JavaScript, TypeScript",
+    "page": 1,
+    "x": 146,
+    "y": 238,
+    "width": 149,
+    "height": 11,
+    "description": "This lists relevant programming languages, demonstrating technical proficiency. It aligns well with the 'Technical Proficiency' requirement of the job. This section could be improved by providing specific examples where they've used these languages in past projects.",
+    "type": "strong"
+  },
+  {
+    "text": "Reactjs, TailwindCSS, Figma",
+    "page": 1,
+    "x": 119,
+    "y": 251,
+    "width": 123,
+    "height": 11,
+    "description": "This lists relevant frameworks and tools, again demonstrating technical proficiency and experience with modern web development technologies. It shows the candidate is familiar with the tools needed for a frontend role. Adding specific projects where these tools were used would strengthen this section.",
+    "type": "strong"
+  },
+  {
+    "text": "Google Developer Group - HCMUS",
+    "page": 1,
+    "x": 36,
+    "y": 546,
+    "width": 156,
+    "height": 11,
+    "description": "Involvement in the Google Developer Group suggests strong collaboration and communication skills, particularly in tech-sharing workshops. It is a great way to improve on these points in the CV.",
+    "type": "strong"
+  },
+  {
+    "text": "Designed UI using Figma and developed responsive web applications using React, and TailwindCSS. Implemented dynamic",
+    "page": 1,
+    "x": 58,
+    "y": 425,
+    "width": 500,
+    "height": 11,
+    "description": "This text highlights specific accomplishments and technologies used, showcasing tangible results. This highlights skills that can be used in the job as requested.",
+    "type": "strong"
+  },
+  {
+    "text": "Analyze chess openings, strategies, and special techniques in terms of advantages, disadvantages, and applicable situations",
+    "page": 1,
+    "x": 58,
+    "y": 624,
+    "width": 494,
+    "height": 11,
+    "description": "While the candidate's involvement in the Chess Club demonstrates analytical skills, it's not directly relevant to software engineering. Unless the analysis involved algorithmic problem-solving, it doesn't directly address the 'Problem-Solving Skills' criteria. The candidate should instead focus on specific problem-solving challenges faced in their software projects.",
+    "type": "weak"
+  },
+  {
+    "text": "A project from a tutorial video, which is a homepage displaying information about a gym named EvoGym including details",
+    "page": 1,
+    "x": 58,
+    "y": 481,
+    "width": 495,
+    "height": 11,
+    "description": "Describing EvoGym as a 'project from a tutorial video' weakens its impact. While learning from tutorials is valuable, presenting it this way suggests a lack of originality and independent problem-solving. The candidate should instead focus on the skills they learned and any modifications or extensions they made to the tutorial project to make it their own.",
+    "type": "weak"
+  },
+  {
+    "text": "Managing activities and match schedules for over 16 teams of 5 players throughout the event.",
+    "page": 1,
+    "x": 58,
+    "y": 691,
+    "width": 374,
+    "height": 11,
+    "description": "This experience as a tournament organizer, while showing leadership and organizational skills, isn't directly relevant to software engineering. It could be improved by relating it to Agile methodologies. While organizational skills are important for a software engineer, it should be a better explanation of the point.",
+    "type": "weak"
+  },
+  {
+    "text": "Full Scholarship",
+    "page": 1,
+    "x": 58,
+    "y": 757,
+    "width": 72,
+    "height": 11,
+    "description": "Listing scholarships is a good way to highlight achievements, but the CV doesn't show what skills can be used in this job. A better approach would be to focus on techincal skills, which is a better value for showing relevant skills.",
+    "type": "weak"
+  }
+]
