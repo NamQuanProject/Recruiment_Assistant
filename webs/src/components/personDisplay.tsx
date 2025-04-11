@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { DataContext, SharedData } from "./datacontext";
+
 interface Props {
   rank: number;
   name: string;
@@ -13,11 +12,7 @@ interface Props {
 
 const Display = ({ rank, name, score, experience, authenticity, companies, evalPath }: Props) => {
   const navigate = useNavigate(); // Use navigate to programmatically redirect
-//	evalID := "20250410_165023"
-// 	cvID := "20250410_013723_0065"
-// 	question := "List all questions that I asked you please."
-  const evalId = evalPath.match(/evaluation_(.*?)\//)?.[1];
-  const {setSharedData} = useContext(DataContext); // Access setSharedData from context
+
   const handleClick = async () => {
     const evalId = evalPath.match(/evaluation_(.*?)\//)?.[1]; // Extract evalId from evalPath
   
@@ -74,10 +69,24 @@ const Display = ({ rank, name, score, experience, authenticity, companies, evalP
         <p className="text-gray-700 text-lg h-full w-1/8 text-center py-3">{rank}</p>
         <div className="flex flex-row justify-between h-full w-full">
           <h3 className="text-lg font-semibold h-full w-1/5 text-start py-3">{name}</h3>
-          <p className="text-gray-700 h-full w-1/5 text-center py-3">{companies}</p>
-          <p className="text-gray-700 h-full w-1/5 text-center py-3">{experience}</p>
-          <p className="text-gray-700 h-full w-1/5 text-center py-3">{authenticity}%</p>
-          <p className="text-gray-700 h-full w-1/5 text-center py-3">{score}%</p>
+          <p className="text-gray-700 h-full w-1/5 text-center py-3">{(companies === "") ? "No companies listed" : companies}</p>
+          <p className="text-gray-700 h-full w-1/5 text-center py-3">{(experience == "0" || experience == "") ? "Entry level": `${experience} years`}</p>
+          <div className="h-full w-1/5 text-center py-3 flex flex-col justify-center items-center">
+              <div className="w-3/5 bg-gray-300 rounded-full h-2">
+                <div
+                  className={`h-2 rounded-full ${
+                    (authenticity / 10) * 100 <= 33
+                      ? "bg-red-400"
+                      : (authenticity / 10) * 100 <= 66
+                      ? "bg-yellow-400"
+                      : "bg-green-400"
+                  }`}
+                  style={{ width: `${(authenticity / 10) * 100}%` }} // Set width dynamically
+                ></div>
+              </div>
+              <p className="text-sm text-gray-700 mt-1 w-full">{(authenticity / 10 *100).toFixed(1)}%</p>
+            </div>
+          <p className="text-gray-700 font-semibold text-lg h-full w-1/5 text-center py-3">{(score).toFixed(1)}</p>
         </div>
       </div>
     </div>

@@ -1,11 +1,14 @@
 @import "tailwindcss";
 @layer utilities {
+  .bg-navbar {
+    background-color: #1c3156;
+  }
   .bg-primary {
-    background-color: #CAF4FA;
+    background-color: #f4fcff;
   }
   .bg-secondary {
     background-color: #9BDEEF;
-  }
+  } 
   .bg-thirdary {
     background-color: #E8F7F5;
   }
@@ -13,9 +16,28 @@
     color: #f9dbba;
   }
   .button-primary {
-    background-color: #B1D1EC;
+    background-color: #26509a;
   }
   .button-active {
-    background-color: #A0C4FF;
+    background-color: #dae6f9;
   }
+}
+
+body {
+  background-color: #fff7db; /* Replace with your desired color */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }

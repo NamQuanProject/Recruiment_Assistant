@@ -5,6 +5,7 @@ import InputPage from './pages/inputPage';
 import DashboardPage from './pages/dashboard';
 import CandidateDetailPage from './pages/candidateDetailPage';
 import { DataProvider } from './components/datacontext';
+import NavBar from './components/navbar';
 const App = () => {
   return (
     <DataProvider>
