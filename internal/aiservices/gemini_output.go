@@ -80,9 +80,10 @@ func (agent *AIAgent) AddToHistory(question string, response string) {
 		Date:     toString(time.Now()),
 	})
 
-	// Keep only the last 5 items
-	if len(agent.History) > 10 {
-		agent.History = agent.History[len(agent.History)-5:]
+	if len(agent.History) > 20 {
+		first := agent.History[0]
+		last := agent.History[len(agent.History)-19:] // keep last 4
+		agent.History = append([]History{first}, last...)
 	}
 }
 
