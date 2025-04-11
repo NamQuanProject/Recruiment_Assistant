@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Work/Experience",
+    "page": 1,
+    "x": 22,
+    "y": 349.45,
+    "width": 99,
+    "height": 13.74,
+    "description": "This area is weak because the listed experience is not directly related to software engineering. While the candidate has diverse experiences, they lack specific software development roles or projects that would demonstrate relevant skills for the Software Engineer I position. The candidate should add details about personal or academic projects that involved programming, even if they were small in scope.",
+    "type": "weak"
+  },
+  {
+    "text": "Pratt Interdisciplinary Technology Lab, Brooklyn, NY",
+    "page": 1,
+    "x": 22,
+    "y": 389.05,
+    "width": 343.2,
+    "height": 13.74,
+    "description": "This experience could be strong if presented correctly. The 'DIGITAL FABRICATION LAB TECHNICIAN' role, while not explicitly software engineering, involves diagnosing and using 'innovative equipment, such as digital cutting, robotics, 3D scanning, and AI'. This could indicate some familiarity with technology and problem-solving, but the CV needs to elaborate on the technical aspects and transferable skills to a software engineering context.  The candidate should describe how they used software or scripting to interact with these tools.",
+    "type": "weak"
+  },
+  {
+    "text": "modeling",
+    "page": 3,
+    "x": 22,
+    "y": 32.65,
+    "width": 99,
+    "height": 13.74,
+    "description": "This area is weak. The modeling experiences are related to architectural design, not software development. This skill is not directly transferable to the software engineering role. The CV should focus on programming projects or languages rather than design software.",
+    "type": "weak"
+  },
+  {
+    "text": "Secretary - Aug 2023 - Present",
+    "page": 2,
+    "x": 22,
+    "y": 296.65,
+    "width": 198,
+    "height": 13.74,
+    "description": "This area is weak because the role of 'Secretary' and the activities 'Documented details of sports matches for efficient future preferences' and 'Aided supervisors in creating schedule management and media for Pratt Athletics' are not directly relevant to a software engineering position. While organizational skills are valuable, they need to be framed within a technical context. The candidate should omit this or focus on tasks involving data analysis or automation if any exist in that role.",
+    "type": "weak"
+  },
+  {
+    "text": "Compassionate and flexible Full-time Undergraduate",
+    "page": 1,
+    "x": 22,
+    "y": 138.25,
+    "width": 330,
+    "height": 13.74,
+    "description": "This area is strong because it highlights personal qualities that align with the job description's emphasis on being 'hard-working, people-oriented, friendly, patient, a fast learner, think quickly on their feet, take initiative and responsibility, and LOVE providing our customers great and honest customer service.'",
+    "type": "strong"
+  },
+  {
+    "text": "Always ready to engage and absorb",
+    "page": 1,
+    "x": 22,
+    "y": 217.45,
+    "width": 217.8,
+    "height": 13.74,
+    "description": "This area is strong because the job description emphasizes the need for a 'fast learner'. This statement explicitly addresses that requirement, suggesting the candidate is open to new information and adapting to new challenges.",
+    "type": "strong"
+  },
+  {
+    "text": "Participated in meetings with foreign clients as an",
+    "page": 3,
+    "x": 22,
+    "y": 125.05,
+    "width": 336.6,
+    "height": 13.74,
+    "description": "This experience could be framed as strong if communication is emphasized. While being a translator isn't directly software engineering, the candidate was able to convey ideas and requirements to others in order to achive an understanding of needs, and in different languages. The skills can be emphasized as the ability to understand clients' needs.",
+    "type": "strong"
+  },
+  {
+    "text": "Outgoing and optimistic",
+    "page": 1,
+    "x": 22,
+    "y": 243.85,
+    "width": 349.8,
+    "height": 13.74,
+    "description": "This area is strong because personality is aligned with the job description's requirement to be 'people-oriented, friendly'. This trait is an important factor in providing great customer service.",
+    "type": "strong"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "text": "C++, Python, JavaScript, TypeScript",
+    "page": 1,
+    "x": 146,
+    "y": 238,
+    "width": 149,
+    "height": 11,
+    "description": "This is a strong area because the job description mentions C# and .NET. While this candidate doesn't list those specific technologies, they list several popular programming languages, including JavaScript which can be useful for web development. Showcasing experience in multiple languages demonstrates adaptability and a strong foundation in programming concepts.",
+    "type": "strong"
+  },
+  {
+    "text": "Reactjs, TailwindCSS, Figma",
+    "page": 1,
+    "x": 119,
+    "y": 251,
+    "width": 123,
+    "height": 11,
+    "description": "This is a strong area. The candidate lists relevant front-end frameworks and tools, demonstrating their ability to build modern web applications, which is a key aspect of the job. While this is not a specific ask in the description it shows good understanding of development technologies.",
+    "type": "strong"
+  },
+  {
+    "text": "Google Developer Group - HCMUS",
+    "page": 1,
+    "x": 36,
+    "y": 546,
+    "width": 156,
+    "height": 11,
+    "description": "This is a strong area because it shows involvement in a developer community, indicating a proactive approach to learning and a willingness to share knowledge. The job description mentions the need for someone who is people-oriented, friendly and a fast learner. This experience reflects those qualities.",
+    "type": "strong"
+  },
+  {
+    "text": "Health Recommendation System",
+    "page": 1,
+    "x": 36,
+    "y": 292,
+    "width": 144,
+    "height": 11,
+    "description": "This is potentially a strong area if the candidate can articulate the challenges they faced and the solutions they implemented. While the project itself isn't directly related to public safety or public health, it demonstrates the ability to develop applications that address specific needs. A better description of the project that shows the technical challenges that were overcome would be beneficial.",
+    "type": "strong"
+  },
+  {
+    "text": "Expected Graduation: June 2027",
+    "page": 1,
+    "x": 426,
+    "y": 107,
+    "width": 135,
+    "height": 11,
+    "description": "This is a weak area because the candidate is still in school and doesn't graduate until June 2027. Considering the job is not an internship, a candidate with more experience should be more desirable. To address this, the candidate should focus on any professional experience or significant side projects that demonstrate their abilities beyond their academic work.",
+    "type": "weak"
+  },
+  {
+    "text": "TikTok TechJam 2024",
+    "page": 1,
+    "x": 36,
+    "y": 375,
+    "width": 99,
+    "height": 11,
+    "description": "This is a weak area. Although participating in a TechJam demonstrates initiative, the CV lacks specific details on the problems solved, technologies utilized, and the impact achieved. If the project involved any technologies or skills related to the job description, such as database interaction or server-side logic, these aspects should be emphasized. Additionally, quantifying results (e.g., improved user engagement, reduced development time) would enhance the impact of this experience.",
+    "type": "weak"
+  },
+  {
+    "text": "EvoGym",
+    "page": 1,
+    "x": 36,
+    "y": 456,
+    "width": 40,
+    "height": 11,
+    "description": "This is a weak area because it is a project from a tutorial video and doesn't show much initiative. It should be removed.",
+    "type": "weak"
+  },
+  {
+    "text": "IELTS: 7.5",
+    "page": 1,
+    "x": 58,
+    "y": 199,
+    "width": 44,
+    "height": 11,
+    "description": "This is a weak area. Although demonstrating good English communication is valuable, it is not directly related to the technical skills and experience required for a software engineer position. While strong communication skills are mentioned in the responsibilities, the IELTS score does not provide sufficient evidence of these skills in a professional context.",
+    "type": "weak"
+  }
+]
