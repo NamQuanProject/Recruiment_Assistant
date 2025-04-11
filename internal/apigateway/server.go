@@ -26,6 +26,7 @@ func RunServer() {
 		AllowCredentials: true,
 	})) // Chau added this
 	r.Static("/storage", "./storage")
+	r.Static("/internal", "./internal")
 	// Load HTML templates
 	r.LoadHTMLGlob("./templates/*")
 	r.LoadHTMLGlob("./templates/*")

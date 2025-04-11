@@ -15,7 +15,7 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
   const [rankLoading, setRankLoading] = useState(false); // State for loading
   const [submitCvClicked, setSubmitCvClicked] = useState(false); // State for submit button clicked
   const navigate = useNavigate(); // Initialize useNavigate
-
+  const { setSharedData } = useContext(DataContext); // Access setSharedData from context
   const handleNavigateToDashboard = () => {
     navigate("/dashboard"); // Navigate to the /dashboard route
   };
@@ -91,10 +91,11 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
   };
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
+    console.log("Selected files:", files); // Log the selected files
     if (files && files.length > 0) {
       const file = files[0];
-      const validTypes = ["application/pdf", "application/zip"];
-
+      const validTypes = ["application/pdf", "application/x-zip-compressed", "application/zip"]; // Allowed file types
+       // Log the selected file type
       if (!validTypes.includes(file.type)) {
         alert("Only PDF or ZIP files are allowed!");
         return;
@@ -110,37 +111,41 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
       alert("Please select a file before submitting.");
       return;
     }
-
+  
     console.log("Uploading file:", uploadedResumes.name);
-    setSubmitCvClicked(true); // Set the submit button clicked state
-
+  
     const formData = new FormData();
-    formData.append("file", uploadedResumes); // Append the file with the key "resumeFile"
-
+    formData.append("file", uploadedResumes);
+  
     try {
       const response = await fetch("http://localhost:8080/submitCVs", {
         method: "POST",
         body: formData,
       });
-// Log the response object
+  
       if (response.ok) {
-        console.log("Resume uploaded successfully!");
-        const data = await response.json(); // Parse the JSON response
-       console.log("Response Data:", data);
+        const responseData = await response.json(); // Parse the initial response
+        console.log("Response Data:", responseData);
+  
+        // Fetch the JSON file from the path provided in the response
+        const jsonResponse = await fetch(`http://localhost:8080/${responseData.final_out_path.replace(/\\/g, "/")}`);
+        if (jsonResponse.ok) {
+          const jsonData = await jsonResponse.json(); // Parse the JSON file
+          console.log("Fetched JSON Data:", jsonData);
+  
+          // Store the JSON data in the shared context
+          setSharedData(jsonData);
+          navigate("/dashboard"); // Navigate to the DashboardPage
+        } else {
+          console.error("Failed to fetch the JSON file. Status:", jsonResponse.status);
+        }
       } else {
         console.error("Failed to upload resume. Status:", response.status);
         const errorText = await response.text();
         console.error("Error response:", errorText);
       }
     } catch (error) {
-      if (error instanceof Error) {
-        console.error("Error uploading resume:", error.message);
-      } else {
-        console.error("Error uploading resume:", error);
-      }
-    }
-    finally {
-      setRankLoading(true); // Reset the submit button clicked state
+      console.error("Error uploading resume:", error);
     }
   };
   return (
@@ -227,7 +232,7 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
             <input
               id="resume-upload"
               type="file"
-              accept=".pdf"
+              accept=".pdf, .zip, .x-zip-compressed, application/zip"
               data-webkitdirectory=""
               multiple
               className="hidden"

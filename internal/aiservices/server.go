@@ -7,11 +7,19 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
+	"github.com/gin-contrib/cors"
 )
 
 func RunServer() {
 	r := gin.Default()
-
+    // Enable CORS
+    r.Use(cors.New(cors.Config{
+			AllowOrigins:     []string{"http://localhost:5173"}, // Allow requests from your frontend
+			AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"}, // Allowed HTTP methods
+			AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"}, // Allowed headers
+			ExposeHeaders:    []string{"Content-Length"}, // Headers exposed to the browser
+			AllowCredentials: true, // Allow cookies or authentication headers
+	}))
 	r.GET("/ai", func(c *gin.Context) {
 		agent, err := NewAIAgent(Config{}, true)
 		if err != nil {
@@ -227,18 +235,18 @@ func RunServer() {
 			return
 		}
 
-		// cb, err := GetChatBotInstance()
-		// if err != nil {
-		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get Chatbot instance"})
-		// 	return
-		// }
+		cb, err := GetChatBotInstance()
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get Chatbot instance"})
+			return
+		}
 
-		// err = cb.SaveHistoryToFile()
-		// if err != nil {
-		// 	log.Print(err)
-		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save Chatbot History"})
-		// 	return
-		// }
+		err = cb.SaveHistoryToFile()
+		if err != nil {
+			log.Print(err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save Chatbot History"})
+			return
+		}
 
 		c.JSON(http.StatusOK, gin.H{"evaluation": resp})
 	})

@@ -1,16 +1,25 @@
 {
   "list": [
     {
-      "full_name": "Terrence Coleman",
-      "worked_for": "Best Buy",
-      "experience_level": "10",
+      "full_name": "Huu Nguyen",
+      "worked_for": "",
+      "experience_level": "1",
       "authenticity": 8,
-      "final_score": 71.66666666666667,
-      "path_to_cv": "storage\\evaluation_20250411_051908\\original\\cvs\\0067.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_051908/evaluation/0067.json"
+      "final_score": 57.333333333333336,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0025.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0025.json"
     },
     {
-      "full_name": "Quan Dinh",
+      "full_name": "CA NGUYEN",
+      "worked_for": "",
+      "experience_level": "",
+      "authenticity": 8,
+      "final_score": 52,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0010.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0010.json"
+    },
+    {
+      "full_name": "ABC",
       "worked_for": "",
       "experience_level": "",
       "authenticity": 9,
@@ -23,27 +32,9 @@
       "worked_for": "",
       "experience_level": "3",
       "authenticity": 8,
-      "final_score": 60,
-      "path_to_cv": "storage\\evaluation_20250411_051908\\original\\cvs\\0049.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_051908/evaluation/0049.json"
-    },
-    {
-      "full_name": "Bui Mai Ny",
-      "worked_for": "PRUDENTIAL VIETNAM ASSURANCE PRIVATE LTD.",
-      "experience_level": "0",
-      "authenticity": 7,
-      "final_score": 50,
-      "path_to_cv": "storage\\evaluation_20250411_051908\\original\\cvs\\0046.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_051908/evaluation/0046.json"
-    },
-    {
-      "full_name": "Khanh Nguyen",
-      "worked_for": "",
-      "experience_level": "",
-      "authenticity": 7,
-      "final_score": 45,
-      "path_to_cv": "storage\\evaluation_20250411_051908\\original\\cvs\\0065.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_051908/evaluation/0065.json"
+      "final_score": 52,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0080.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0080.json"
     }
   ]
 }

@@ -1,0 +1,82 @@
+[
+  {
+    "text": "SQL",
+    "page": 1,
+    "x": 107,
+    "y": 171,
+    "width": 16,
+    "height": 10,
+    "description": "This is a strong area.  SQL is a valuable skill for an account executive, especially for data analysis and reporting.",
+    "type": "strong"
+  },
+  {
+    "text": "Python",
+    "page": 1,
+    "x": 130,
+    "y": 171,
+    "width": 30,
+    "height": 10,
+    "description": "This is a strong area. Proficiency in Python, particularly with libraries like pandas and numpy, demonstrates strong analytical capabilities which can be used for data-driven decision-making in account management.",
+    "type": "strong"
+  },
+  {
+    "text": "Excel",
+    "page": 1,
+    "x": 388,
+    "y": 171,
+    "width": 22,
+    "height": 10,
+    "description": "This is a strong area. Excel proficiency is crucial for account executives for tasks like data analysis, reporting, and forecasting.",
+    "type": "strong"
+  },
+  {
+    "text": "Analyzed MSFT over five years, finding a strong correlation with the S\u0026P500's market trends.",
+    "page": 1,
+    "x": 54,
+    "y": 482,
+    "width": 380,
+    "height": 10,
+    "description": "This is a strong area. Demonstrates analytical skills and an understanding of market trends, relevant to understanding client needs and market dynamics.",
+    "type": "strong"
+  },
+  {
+    "text": "Watchfinder\u0026Co",
+    "page": 1,
+    "x": 36,
+    "y": 542,
+    "width": 72,
+    "height": 10,
+    "description": "This is a weak area.  The role as 'Operation Analyst' doesn't clearly align with the requirements of an account executive role. To improve, the candidate should highlight any client interaction, sales support, or data-driven insights that influenced sales strategies in this role.",
+    "type": "weak"
+  },
+  {
+    "text": "Yigal Azrouel",
+    "page": 1,
+    "x": 36,
+    "y": 585,
+    "width": 57,
+    "height": 10,
+    "description": "This is a weak area. While the candidate held a 'Merchandising \u0026 Marketing Coordinator' position, the description lacks quantifiable achievements related to sales, client acquisition, or revenue growth. To improve, the candidate should quantify the impact of market research and promotional activities on sales or customer engagement.",
+    "type": "weak"
+  },
+  {
+    "text": "Interests:",
+    "page": 1,
+    "x": 36,
+    "y": 227,
+    "width": 44,
+    "height": 10,
+    "description": "This is a weak area. While including interests can add a personal touch, the listed interests are quite broad and don't necessarily showcase qualities relevant to an account executive role (e.g., networking, communication). Consider adding more specific interests related to business, sales, or client relations. Remove generic ones like Technology. ",
+    "type": "weak"
+  },
+  {
+    "text": "Time Management \u0026 Organization",
+    "page": 1,
+    "x": 36,
+    "y": 630,
+    "width": 139,
+    "height": 12,
+    "description": "This is a weak area. Need more description of the the ability to manage multiple projects and responsibilities across different roles and affiliations.",
+    "type": "weak"
+  }
+]
