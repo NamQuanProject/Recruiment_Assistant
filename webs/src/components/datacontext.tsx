@@ -1,9 +1,13 @@
 import React, { createContext, useState, ReactNode } from "react";
 
 export interface CandidateData {
-  name: string;
-  rank: number;
-  [key: string]: any; // Allow additional properties
+  full_name: string;
+  worked_for: string;
+  experience_level: string;
+  authenticity: number;
+  final_score: number;
+  path_to_cv: string;
+  path_to_evaluation: string;
 }
 
 export interface ScoringGuide {
@@ -17,6 +21,9 @@ export interface Category {
   ScoringScale: number;
   ScoringGuided: ScoringGuide[];
 }
+export interface SharedData {
+  list: CandidateData[];
+}
 
 export interface CriteriaJson {
   MainCategory: Category[];
@@ -24,8 +31,8 @@ export interface CriteriaJson {
 }
 
 interface DataContextType {
-  sharedData: CandidateData | null;
-  setSharedData: (data: CandidateData) => void;
+  sharedData: SharedData | null;
+  setSharedData: React.Dispatch<React.SetStateAction<SharedData | null>>;
   criteriaJson: CriteriaJson | null; // Add criteriaJson to the context
   setCriteriaJson: (data: CriteriaJson) => void; // Function to update criteriaJson
 }
@@ -38,7 +45,7 @@ export const DataContext = createContext<DataContextType>({
 });
 
 export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [sharedData, setSharedData] = useState<CandidateData | null>(null);
+  const [sharedData, setSharedData] = useState<SharedData | null>(null);
   const [criteriaJson, setCriteriaJson] = useState<CriteriaJson | null>(null); // State for criteriaJson
   const updateCriteriaJson = (data: CriteriaJson) => {
     console.log("Updating Criteria JSON in context:", data); // Log the updated data

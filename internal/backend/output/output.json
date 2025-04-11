@@ -1,31 +1,31 @@
 {
   "list": [
     {
-      "full_name": "NGUYEN-TU PHAM",
+      "full_name": "Huu Nguyen",
       "worked_for": "",
       "experience_level": "1",
-      "authenticity": 9,
-      "final_score": 60,
-      "path_to_cv": "storage/evaluation_20250411_045132/original/cvs/20250409_214747_CV_highlighted-2.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_045132/evaluation/20250409_214747_CV_highlighted-2.json"
+      "authenticity": 8,
+      "final_score": 57.333333333333336,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0025.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0025.json"
     },
     {
-      "full_name": "KIM CHAU LE",
+      "full_name": "CA NGUYEN",
+      "worked_for": "",
+      "experience_level": "",
+      "authenticity": 8,
+      "final_score": 52,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0010.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0010.json"
+    },
+    {
+      "full_name": "ABC",
       "worked_for": "",
       "experience_level": "0",
       "authenticity": 8,
-      "final_score": 57.333333333333336,
-      "path_to_cv": "storage/evaluation_20250411_045132/original/cvs/20250410_022450_LeKimChau.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_045132/evaluation/20250410_022450_LeKimChau.json"
-    },
-    {
-      "full_name": "Khanh Nguyen",
-      "worked_for": "Pratt School of Architecture",
-      "experience_level": "1.6",
-      "authenticity": 7,
-      "final_score": 38.666666666666664,
-      "path_to_cv": "storage/evaluation_20250411_045132/original/cvs/20250410_013723_0065.pdf",
-      "path_to_evaluation": "storage/evaluation_20250411_045132/evaluation/20250410_013723_0065.json"
+      "final_score": 52,
+      "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0080.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_064815/evaluation/0080.json"
     }
   ]
 }
