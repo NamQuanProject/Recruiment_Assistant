@@ -1,4 +1,5 @@
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const flexBetween = "flex justify-between items-center";
   return (
@@ -8,7 +9,7 @@ const NavBar = () => {
           <img alt="logo" className="object-contain w-24 h-12 " src={Logo}/>
           <div className={`${flexBetween} w-full`}>
               <div className={`${flexBetween} gap-8 text-sm`}>
-                <div className="cursor-pointer text-base text-gray-200">Home</div>
+              <Link to="/" className="cursor-pointer text-base text-gray-200">Home</Link> {/* Navigate to / */}
                 <div className="cursor-pointer text-base text-gray-200">Products</div>
                 <div className="cursor-pointer text-base text-gray-200">Contact</div>
               </div>
