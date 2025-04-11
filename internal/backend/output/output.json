@@ -21,7 +21,16 @@
     {
       "full_name": "ABC",
       "worked_for": "",
-      "experience_level": "0",
+      "experience_level": "",
+      "authenticity": 9,
+      "final_score": 65,
+      "path_to_cv": "storage\\evaluation_20250411_051908\\original\\cvs\\0048.pdf",
+      "path_to_evaluation": "storage/evaluation_20250411_051908/evaluation/0048.json"
+    },
+    {
+      "full_name": "Quoc Nguyen",
+      "worked_for": "",
+      "experience_level": "3",
       "authenticity": 8,
       "final_score": 52,
       "path_to_cv": "storage\\evaluation_20250411_064815\\original\\cvs\\0080.pdf",

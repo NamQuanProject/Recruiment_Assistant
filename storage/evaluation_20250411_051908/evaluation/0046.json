@@ -1,0 +1,59 @@
+{
+  "Authenticity": "7",
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates limited technical proficiency regarding required technologies for a software engineer role. The CV highlights skills in Figma, Google Workspace, Adobe Photoshop, and Microsoft Suite. While these tools are useful, they are not core programming languages, frameworks, or database technologies typically required for a software engineer. There's a lack of evidence of experience with C#, .NET, SQL, JavaScript, HTML, CSS, or related tools. The candidate's background is in business, and their experiences lean towards project management and marketing rather than software development. Therefore, the CV doesn't demonstrate the necessary technical skills for the role.",
+      "score": "2"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate's CV highlights problem-solving skills learned through extracurricular activities and project management experiences. For example, in the 'In Your Eyes' MARCOM contest, they learned problem-solving. The experiences at Prudential Vietnam also show analytical skills. However, the examples provided are primarily focused on project-related problem-solving and stakeholder management rather than technical problem-solving in a software development context. While these experiences are valuable, they don't directly demonstrate the ability to analyze complex technical problems, identify root causes, and develop effective solutions for software-related issues. Therefore, the candidate's problem-solving skills are somewhat applicable but not directly aligned with the requirements of a software engineer role.",
+      "score": "5"
+    },
+    {
+      "category": "Communication and Collaboration Skills",
+      "explanation": "The candidate showcases good communication and collaboration skills through their experiences in extracurricular activities and internships. The CV highlights working closely with internal stakeholders, managing relationships with external parties, and collaborating with cross-functional teams. For instance, in the 'In Your Eyes' MARCOM contest, they worked with 15 internal stakeholders. At Prudential, they assisted project managers and communicated with Sales Channels Heads. These experiences suggest the candidate can communicate effectively and collaborate in a team environment. The 'Storytelling Presentation' skill listed also points to good communication. However, the CV lacks specific examples of communicating complex technical concepts clearly and concisely. Therefore, while the candidate demonstrates strong communication and collaboration skills overall, there is limited evidence of technical communication skills relevant to a software engineering role.",
+      "score": "7"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) Experience",
+      "explanation": "The candidate has limited experience with the Software Development Lifecycle (SDLC). While the CV mentions project management experience and assisting with user flows, it lacks specific details about involvement in all phases of the SDLC. There is no mention of requirements gathering, system design, coding, testing, or deployment. The Agile Project Management training course suggests some familiarity with Agile methodologies, but the extent of practical experience is unclear. The experiences described primarily focus on project coordination, stakeholder management, and performance reporting, which are related to the SDLC but don't demonstrate a comprehensive understanding of the software development process. Therefore, the candidate's SDLC experience is limited and requires further development for a software engineer role.",
+      "score": "3"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The candidate's CV does not provide any evidence of code quality or testing experience. There is no mention of writing code, following coding standards, using design patterns, or performing unit testing. The skills listed do not include any programming languages or testing frameworks. Therefore, it is not possible to assess the candidate's ability to write clean, maintainable, and well-documented code or their commitment to thorough testing based on the information provided in the CV.",
+      "score": "1"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate describes themselves as an 'adaptable and growth-oriented' individual, which suggests a willingness to learn new skills. The CV highlights experiences in different domains, such as marketing, project management, and UX/UI design, indicating a degree of adaptability. The training courses listed, including 'Tech 101' and UX Design courses, demonstrate an interest in learning new technologies. However, the CV lacks specific examples of quickly adapting to new technologies or environments and independently acquiring new knowledge in a software engineering context. While the candidate shows potential for adaptability and learning agility, more concrete evidence is needed to assess their ability to keep up with the rapidly evolving software development field.",
+      "score": "4"
+    },
+    {
+      "category": "Customer Focus",
+      "explanation": "The candidate's CV demonstrates a customer focus through their experiences in project management and marketing. At Prudential Vietnam, they delegated surveys, conducted reports with the Customer Experience team, and suggested insights for leveraging agent experience. This indicates an understanding of customer needs and a willingness to improve customer experience. The candidate's involvement in projects focused on addressing unmet customer needs and enabling personalized communications also suggests a customer-centric approach. However, the CV lacks specific examples of direct customer interaction or problem resolution in a software engineering context. While the candidate demonstrates a customer focus in general, the application to a software engineer role is not explicitly highlighted.",
+      "score": "4"
+    },
+    {
+      "category": "Teamwork and Collaboration",
+      "explanation": "The candidate's CV highlights several experiences that demonstrate teamwork and collaboration skills. In the 'In Your Eyes' MARCOM contest, they worked closely with 15 internal stakeholders and managed relationships with external parties. At Prudential Vietnam, they assisted project managers and collaborated with cross-functional teams. These experiences suggest the candidate can work effectively as part of a team, contribute to a positive team environment, and communicate effectively with colleagues. The CV emphasizes the candidate's ability to clarify requirements, prioritize tasks, and ensure high-quality delivery in a collaborative setting. Therefore, the candidate demonstrates strong teamwork and collaboration skills.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 50,
+  "PersonalInfo": {
+    "Address": null,
+    "Age": null,
+    "Email": "nybui.work@gmail.com",
+    "Experience_Years": "0",
+    "FullName": "Bui Mai Ny",
+    "GitHub": null,
+    "LinkedIn": "https://www.linkedin.com/in/buimainy/",
+    "PathToCV": "storage\\evaluation_20250411_051908\\original\\cvs\\0046.pdf",
+    "PhoneNumber": "(+84) 39 3275279",
+    "Website": "https://nybui.notion.site/Ny-i-l-m-2d46fe6405654cd286317badf307cd64",
+    "WorkFor": "PRUDENTIAL VIETNAM ASSURANCE PRIVATE LTD."
+  }
+}

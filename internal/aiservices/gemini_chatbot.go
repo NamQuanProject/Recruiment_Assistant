@@ -79,11 +79,11 @@ func (cb *ChatBot) Ask(cvID string, question string) (string, error) {
 		return "", err
 	}
 
-	evalStr = fmt.Sprintf("You are an AI assistant analyzing a candidate's CV. This is your evaluation of a CV structured into categories:\n\"%s\"\n", evalStr)
+	evalStr = fmt.Sprintf("You are an AI assistant analyzing a candidate's CV. This is your evaluation of a CV structured into categories:\n\"%s\"\nI will ask you several questions relating to the CV\n", evalStr)
 	historyStr = fmt.Sprintf("This is the history of our chat:\n\"%s\"\n", historyStr)
 
 	constructedPrompt := fmt.Sprintf(
-		"%s%sPlease give short answer together with explanation for my question in plain text format: %s",
+		"%s%sPlease give concise answer together with explanation (appropriate length) for my question in plain text format: %s",
 		evalStr,
 		historyStr,
 		question,

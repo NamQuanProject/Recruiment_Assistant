@@ -1,0 +1,59 @@
+{
+  "Authenticity": 7,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates a foundational understanding of digital fabrication equipment and some design software (Adobe Suite, Rhino, Revit, AutoCAD). However, there's a lack of specific software engineering skills such as C#, .NET, SQL, JavaScript, HTML, or CSS. The CV focuses more on architectural visualization and digital fabrication, which are tangentially related but don't directly address the software engineering requirements. Therefore, the candidate's technical skills don't align well with the typical software engineer job description.",
+      "score": "3"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate's experience as a Digital Fabrication Lab Technician suggests some level of diagnostic and troubleshooting abilities, which are relevant to problem-solving. However, the resume lacks specific examples of complex problem-solving scenarios or analytical tasks. The described tasks seem more focused on providing support and instructions rather than in-depth problem analysis and solution development.",
+      "score": "5"
+    },
+    {
+      "category": "Communication and Collaboration Skills",
+      "explanation": "The candidate highlights their experience as an event staff and representation intern. They claim to be an 'outgoing and optimistic teamplayer' and mentions creating 'strong bonds' with other people. Their experience as a treasurer and secretary in student associations further supports their communication and organizational skills. However, the CV lacks concrete examples of how they've communicated complex technical concepts or resolved conflicts within a team.",
+      "score": "6"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) Experience",
+      "explanation": "The candidate's CV provides no explicit information about their involvement in any phase of the SDLC. There are no mentions of Agile, Waterfall, requirements gathering, testing, or deployment. Their experience seems more focused on supporting existing processes rather than actively participating in the development or management of software projects.",
+      "score": "2"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "There's no evidence in the resume that the candidate has any experience with coding, code quality practices, or software testing. The listed skills are related to design software and fabrication equipment, not software development best practices.",
+      "score": "1"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate expresses willingness to learn new knowledge, which suggests some level of adaptability. The diverse experiences listed also demonstrate a capacity to take on different roles. However, the CV lacks specific examples of how they've quickly learned a new technology or adapted to a rapidly changing environment. There is no real evidence of learning agility.",
+      "score": "3"
+    },
+    {
+      "category": "Customer Focus",
+      "explanation": "The candidate's experience as an event staff and photography assistant involved guiding and assisting students, which implies some level of customer interaction. However, the CV doesn't provide specific examples of how they've addressed customer needs, resolved complaints, or exceeded customer expectations. The described tasks are more operational and less focused on direct customer service.",
+      "score": "3"
+    },
+    {
+      "category": "Teamwork and Collaboration",
+      "explanation": "The candidate self-identifies as a team player and lists experiences where they worked with others, such as in event services and as a representation intern. However, the descriptions of these roles don't provide substantial evidence of collaborative problem-solving or active contribution to a team dynamic. The mention of creating 'strong bonds' is subjective and lacks concrete examples.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 45,
+  "PersonalInfo": {
+    "Address": "461 Dekalb Ave\nBrooklyn, NY 11205",
+    "Age": null,
+    "Email": "knguyen6@pratt.edu",
+    "Experience_Years": null,
+    "FullName": "Khanh Nguyen",
+    "GitHub": null,
+    "LinkedIn": "www.linkedin.com/in/khanh-nguyen-516482224",
+    "PathToCV": "storage\\evaluation_20250411_051908\\original\\cvs\\0065.pdf",
+    "PhoneNumber": "346.263.4012",
+    "Website": "https://issuu.com/knguyen172/docs/portfolio_2023_khanh_nguyen-s",
+    "WorkFor": null
+  }
+}

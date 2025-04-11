@@ -184,7 +184,7 @@ func evaluateJobHandler(c *gin.Context) {
 		if err := os.WriteFile(jsonOutput, jsonBytes, 0644); err != nil {
 			continue
 		}
-		fmt.Println(string(jsonBytes))
+		// fmt.Println(string(jsonBytes))
 		results = append(results, jsonOutput)
 	}
 

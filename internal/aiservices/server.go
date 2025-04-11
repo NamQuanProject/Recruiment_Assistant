@@ -235,18 +235,18 @@ func RunServer() {
 			return
 		}
 
-		// cb, err := GetChatBotInstance()
-		// if err != nil {
-		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get Chatbot instance"})
-		// 	return
-		// }
+		cb, err := GetChatBotInstance()
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get Chatbot instance"})
+			return
+		}
 
-		// err = cb.SaveHistoryToFile()
-		// if err != nil {
-		// 	log.Print(err)
-		// 	c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save Chatbot History"})
-		// 	return
-		// }
+		err = cb.SaveHistoryToFile()
+		if err != nil {
+			log.Print(err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save Chatbot History"})
+			return
+		}
 
 		c.JSON(http.StatusOK, gin.H{"evaluation": resp})
 	})
