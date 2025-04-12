@@ -68,8 +68,13 @@ const Display = ({ rank, name, score, experience, authenticity, companies, evalP
       <div className="relative flex flex-row justify-between h-[50px] w-full bg-thirdary shadow-md rounded-md border-[0.5px] border-gray-400 hover:bg-blue-300 transition duration-300 ease-in-out">
         <p className="text-gray-700 text-lg h-full w-1/8 text-center py-3">{rank}</p>
         <div className="flex flex-row justify-between h-full w-full">
-          <h3 className="text-lg font-semibold h-full w-1/5 text-start py-3">{name}</h3>
-          <p className="text-gray-700 h-full w-1/5 text-center py-3">{(companies === "") ? "No companies listed" : companies}</p>
+          <h3 className="text-lg font-semibold h-full w-1/5 text-start py-3">
+            {name.length > 20 ? name.slice(0, 17) + "..." : name}
+          </h3>
+          <p className="text-gray-700 h-full w-1/5 text-center py-3">
+          {(companies === "" ) ? "No companies" : `${companies.length > 30 ? companies.slice(0, 25) + "..." : companies}`}
+
+          </p>
           <p className="text-gray-700 h-full w-1/5 text-center py-3">{(experience == "0" || experience == "") ? "Entry level": `${experience} years`}</p>
           <div className="h-full w-1/5 text-center py-3 flex flex-col justify-center items-center">
               <div className="w-3/5 bg-gray-300 rounded-full h-2">

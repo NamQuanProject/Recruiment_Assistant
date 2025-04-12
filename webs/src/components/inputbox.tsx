@@ -205,7 +205,7 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
               </div>
               <Select
               options={jobNames}
-              placeholder="Enter the Job Name..."
+              placeholder="Job Name"
               styles={customStyles}
               classNames={{
                 control: (state) =>
