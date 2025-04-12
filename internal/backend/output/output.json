@@ -1,31 +1,31 @@
 {
   "list": [
     {
-      "full_name": "Huu Nguyen (Anthony)",
+      "full_name": "Huu Nguyen",
       "worked_for": "",
       "experience_level": "1",
-      "authenticity": 7,
-      "final_score": 60,
-      "path_to_cv": "storage/evaluation_20250412_132226/original/cvs/0025.pdf",
-      "path_to_evaluation": "storage/evaluation_20250412_132226/evaluation/0025.json"
-    },
-    {
-      "full_name": "ABC",
-      "worked_for": "",
-      "experience_level": "0",
-      "authenticity": 7,
-      "final_score": 41.53846153846154,
-      "path_to_cv": "storage/evaluation_20250412_132226/original/cvs/0080.pdf",
-      "path_to_evaluation": "storage/evaluation_20250412_132226/evaluation/0080.json"
+      "authenticity": 8,
+      "final_score": 47.69230769230769,
+      "path_to_cv": "storage/evaluation_20250412_162308/original/cvs/0025.pdf",
+      "path_to_evaluation": "storage/evaluation_20250412_162308/evaluation/0025.json"
     },
     {
       "full_name": "CA NGUYEN",
       "worked_for": "",
       "experience_level": "",
+      "authenticity": 8,
+      "final_score": 40,
+      "path_to_cv": "storage/evaluation_20250412_162308/original/cvs/0010.pdf",
+      "path_to_evaluation": "storage/evaluation_20250412_162308/evaluation/0010.json"
+    },
+    {
+      "full_name": "ABC",
+      "worked_for": "",
+      "experience_level": "",
       "authenticity": 7,
-      "final_score": 24.615384615384617,
-      "path_to_cv": "storage/evaluation_20250412_132226/original/cvs/0010.pdf",
-      "path_to_evaluation": "storage/evaluation_20250412_132226/evaluation/0010.json"
+      "final_score": 35.38461538461539,
+      "path_to_cv": "storage/evaluation_20250412_162308/original/cvs/0080.pdf",
+      "path_to_evaluation": "storage/evaluation_20250412_162308/evaluation/0080.json"
     }
   ]
 }
