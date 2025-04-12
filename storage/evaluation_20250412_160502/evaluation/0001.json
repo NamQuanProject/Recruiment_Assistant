@@ -1,0 +1,59 @@
+{
+  "Authenticity": 8,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates proficiency in several relevant languages and frameworks, including Java, Python, React, and Node.js. The projects showcase practical application of these skills. However, the depth of knowledge in each area isn't fully clear from the CV alone. The candidate lists SQL (Postgres) which aligns well with database requirements. The mentioned frameworks also fit web-based requirements. Overall, the candidate shows a solid foundation but could benefit from more specific examples quantifying the scale or complexity of projects.",
+      "score": "7"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate's experience descriptions include examples of problem-solving, such as automating processes and implementing features for advertisement management, chat applications, and booking applications. The descriptions quantify improvements (e.g., 'Significantly reduced manual activity by 90%'), which strengthens the claims. However, the CV could be improved by explicitly outlining the problem-solving process used in each project.",
+      "score": "7"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The candidate's involvement in extracurricular activities, such as leading the Technical Department for 'Thach Thuc', demonstrates leadership and organizational skills. The description of project experiences also implies collaboration with others. The CV could be strengthened by providing more specific examples of communication strategies and how the candidate effectively collaborated with team members.",
+      "score": "7"
+    },
+    {
+      "category": "Software Development Lifecycle \u0026 Best Practices",
+      "explanation": "The candidate demonstrates an understanding of the SDLC through involvement in designing, developing, testing, and deploying multiple applications. The use of Git as a developer tool indicates familiarity with version control. However, the CV lacks explicit mention of specific methodologies like Agile or details about testing frameworks used. More information on CI/CD practices would improve this section.",
+      "score": "6"
+    },
+    {
+      "category": "Object-Oriented Design (OOD)",
+      "explanation": "While the candidate lists Java as a technical skill, there's no explicit mention of OOD principles or design patterns used in the projects. To improve this section, the candidate could include specific examples of how they applied OOD principles in their projects to create maintainable and scalable code.",
+      "score": "3"
+    },
+    {
+      "category": "Database Knowledge",
+      "explanation": "The candidate mentions SQL (Postgres) and MongoDB, indicating database knowledge. Project descriptions also refer to database usage for chat and booking applications. The CV could be strengthened by mentioning experience with ORM technologies and providing more details about database schema design and optimization techniques used in the projects.",
+      "score": "4"
+    },
+    {
+      "category": "Web Technologies",
+      "explanation": "The candidate lists HTML/CSS, JavaScript, React, React Native, Node.js, and Express.JS, demonstrating experience with various web technologies. The projects also highlight experience with web application development. The CV shows proficiency in both front-end and back-end technologies. The candidate also used Bootstrap, which is a plus. ",
+      "score": "4"
+    },
+    {
+      "category": "Test Automation",
+      "explanation": "The CV does not explicitly mention experience with test automation frameworks or methodologies. To improve this section, the candidate should include details about any experience with writing and executing automated tests, as well as the tools and frameworks used.",
+      "score": "2"
+    }
+  ],
+  "FinalScore": 66.66666666666666,
+  "PersonalInfo": {
+    "Address": "HCMC, Vietnam",
+    "Age": null,
+    "Email": "nguyenckhanh71@gmail.com",
+    "Experience_Years": "0",
+    "FullName": "Khanh Nguyen",
+    "GitHub": "github.com/CokaVN11",
+    "LinkedIn": "linkedin.com/in/ngckhanh",
+    "PathToCV": "storage/evaluation_20250412_160502/original/cvs/0001.pdf",
+    "PhoneNumber": null,
+    "Website": null,
+    "WorkFor": "Thach thuc’s Technical Department"
+  }
+}

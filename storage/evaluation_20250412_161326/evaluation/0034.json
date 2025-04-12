@@ -1,0 +1,69 @@
+{
+  "Authenticity": 8,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates proficiency in multiple required languages and tools (Python, Java, C++, JavaScript, SQL, React, Node.js, TensorFlow, Pandas, Docker, Kubernetes, Git, AWS, PostgreSQL). The resume showcases experience with relevant frameworks and libraries. The candidate shows good understanding of underlying principles and can apply them to solve complex problems, demonstrated by projects like the BigQuery dataset implementation and the real-time stock analysis dashboard. They used Scala and Apache Beam APIs, achieving a 60% compression, and optimized financial data retrieval with SQL queries, reducing execution time by 35%.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving and Debugging Skills",
+      "explanation": "The candidate demonstrates strong problem-solving and debugging skills by improving model robustness by 18% through defensive training and optimizing financial data retrieval, reducing query execution time by 35%. The candidate can effectively identify, analyze, and resolve most software defects independently. The examples provided on the resume like developing scalable deep learning models and improving data refresh rates by 50% are a demonstration of candidate ability to overcome complex problems.",
+      "score": "8"
+    },
+    {
+      "category": "Collaboration and Communication",
+      "explanation": "The candidate has industry experience and research experience with presentations that suggests they communicate technical concepts clearly to diverse audiences. The work at IBM involved analyzing hundreds of trending book-based playlists and conducting A/B tests to validate targeted audiobook campaigns, which demonstrates effective communication. The candidate also presented findings at the IEEE Workshop on Machine Learning for Security, which highlights experience collaborating and communicating with peers.",
+      "score": "7"
+    },
+    {
+      "category": "Code Quality and Documentation",
+      "explanation": "The candidate's experience at IBM and Fidelity Investments highlights the ability to produce optimized code. For example, they achieved a 60% compression versus the raw metadata source using Scala and Apache Beam, and reduced query execution time by 35% through SQL optimization. The resume mentions 'Test-Driven Development, CI/CD' which demonstrates the candidate adheres to coding standards and best practices.",
+      "score": "8"
+    },
+    {
+      "category": "Adaptability and Learning",
+      "explanation": "The candidate demonstrates a proactive approach to learning new technologies by engaging in research like developing scalable deep learning models and investigating the impact of adversarial attacks on neural networks. The candidate has worked with multiple technologies such as Scala, Apache Beam, React, Node.js, TensorFlow, Pandas, Docker, Kubernetes, Git, AWS, and PostgreSQL. The variety of experiences presented on the resume show that the candidate seeks out opportunities for professional development.",
+      "score": "8"
+    },
+    {
+      "category": "Attention to Detail",
+      "explanation": "The candidate's projects, such as engineering a React and Node.js dashboard and conducting data preprocessing on large-scale cybersecurity datasets, suggest a high degree of attention to detail. The specific performance improvements mentioned (e.g., 60% compression, 35% reduction in query time, 18% improved model robustness) indicate a focus on precision and quality.",
+      "score": "4"
+    },
+    {
+      "category": "Independence",
+      "explanation": "The candidate's experience as a Software Engineer and Graduate Research Assistant shows they can work independently. The resume shows managing time effectively and prioritizing tasks without constant supervision. Designing and implementing data pipelines and developing defensive training approaches suggests self-direction and initiative.",
+      "score": "4"
+    },
+    {
+      "category": "Unity/Unreal Engine Experience",
+      "explanation": "The CV provides no information regarding Unity/Unreal Engine experience.",
+      "score": "1"
+    },
+    {
+      "category": "Web Development Skills",
+      "explanation": "The candidate possesses web development skills including proficiency with HTML/CSS and Javascript (React, Node.js). Demonstrated by engineering a React and Node.js dashboard for real-time stock analysis, the candidate has practical experience in web development.",
+      "score": "4"
+    },
+    {
+      "category": "Quality Assurance Knowledge",
+      "explanation": "The candidate mentions 'Test-Driven Development' which demonstrates a solid understanding of quality assurance processes. The candidate is familiar with quality assurance processes and coding writing techniques, and debugging tools based on listed methodologies and tooling. ",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 74.66666666666667,
+  "PersonalInfo": {
+    "Address": "Chapel Hill, NC",
+    "Age": null,
+    "Email": "Unavailable, placeholder present",
+    "Experience_Years": "2",
+    "FullName": "Alan Turing",
+    "GitHub": "Available, placeholder present",
+    "LinkedIn": "Available, placeholder present",
+    "PathToCV": "storage/evaluation_20250412_161326/original/cvs/0034.pdf",
+    "PhoneNumber": "Unavailable, placeholder present",
+    "Website": "Available, placeholder present",
+    "WorkFor": "IBM"
+  }
+}

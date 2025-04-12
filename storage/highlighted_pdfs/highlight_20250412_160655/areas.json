@@ -1,0 +1,102 @@
+[
+  {
+    "text": "B.S. in Computer Science, Statistics",
+    "page": 1,
+    "x": 28.8,
+    "y": 104.66,
+    "width": 141.56,
+    "height": 14.35,
+    "description": "This is a strong area because the job description requires a Bachelor’s/Master’s degree in Computer Science Engineering or Equivalent.  This shows the candidate meets the minimum educational requirements.",
+    "type": "strong"
+  },
+  {
+    "text": "Java",
+    "page": 1,
+    "x": 97.86,
+    "y": 162.93,
+    "width": 19.15,
+    "height": 15.01,
+    "description": "This is a strong area because the job description lists Java as one of the preferred programming languages. Listing proficiency in Java is highly relevant.",
+    "type": "strong"
+  },
+  {
+    "text": "Designed a cumulative aggregated dataset hosted in BigQuery and GCS to unify",
+    "page": 1,
+    "x": 56.5,
+    "y": 266.87,
+    "width": 343.56,
+    "height": 14.36,
+    "description": "This is a strong area because it demonstrates experience with BigQuery, which is listed as a tool in the Technical Skills section and aligns well with data engineering aspects of software engineering roles. It highlights practical application of relevant skills.",
+    "type": "strong"
+  },
+  {
+    "text": "Automated 100% of the backend API test suite using Node.js and Chai and implemented real-time status monitors for",
+    "page": 1,
+    "x": 140.58,
+    "y": 572.88,
+    "width": 421.62,
+    "height": 14.36,
+    "description": "This is a strong area because it demonstrates experience in test automation, a valuable skill for software engineers. The use of Node.js and Chai indicates proficiency in relevant technologies, and the results (95% reduction in error response time) quantify the impact of the work.",
+    "type": "strong"
+  },
+  {
+    "text": "Python, Tableau",
+    "page": 1,
+    "x": 117.71,
+    "y": 699.22,
+    "width": 74.63,
+    "height": 15.01,
+    "description": "This is a strong area. These are very popular tools for this role. It is good to show your proficiency in Python and Tableau. It indicates proficiency in programming and data visualization, valuable assets in a data-driven software engineering role.",
+    "type": "strong"
+  },
+  {
+    "text": "1+ years’ experience writing production code of increasing complexity.",
+    "page": 2,
+    "x": 28.8,
+    "y": 89,
+    "width": 200,
+    "height": 15,
+    "description": "This is a weak area. While it fulfills the basic qualification, it would be significantly strengthened by quantifying the experience further, if possible. Mentioning specific projects or responsibilities that demonstrate the 'increasing complexity' could make this experience stand out more.",
+    "type": "weak"
+  },
+  {
+    "text": "UNC Department of Computer Science",
+    "page": 1,
+    "x": 28.8,
+    "y": 363,
+    "width": 189.99,
+    "height": 15.01,
+    "description": "This is a weak area. The description is too general. Include examples of the technologies used and more details of the tasks accomplished. Describe the impact to the students' learning and success.",
+    "type": "weak"
+  },
+  {
+    "text": "Pioneered a multi-level Tableau dashboard system for Apple Maps, automating project status reporting and KPI monitoring",
+    "page": 1,
+    "x": 56.5,
+    "y": 461.74,
+    "width": 526.4,
+    "height": 14.36,
+    "description": "This is a weak area because while impressive, the description lacks specific technical details. What data sources were used? What specific KPIs were monitored? Mentioning the data infrastructure (e.g., cloud platform) and the complexity of the data pipelines would strengthen this experience.",
+    "type": "weak"
+  },
+  {
+    "text": "RoadRisk",
+    "page": 1,
+    "x": 28.8,
+    "y": 631.15,
+    "width": 51.14,
+    "height": 15.01,
+    "description": "This is a weak area because while the project is interesting, it primarily showcases data science skills rather than software engineering skills. To improve this, focus on any software engineering aspects of the project, such as how the model was deployed, integrated into a larger system, or any challenges related to scaling or maintaining the application.",
+    "type": "weak"
+  },
+  {
+    "text": "Relevant Courses:",
+    "page": 1,
+    "x": 28.8,
+    "y": 119.02,
+    "width": 82.52,
+    "height": 14.35,
+    "description": "This is a weak area because While listing relevant courses is helpful, it would be more impactful to briefly mention how these courses relate to specific skills used in projects or experiences. For example, \"Data Structures (used in Spotify internship to optimize data storage)\" or similar.",
+    "type": "weak"
+  }
+]

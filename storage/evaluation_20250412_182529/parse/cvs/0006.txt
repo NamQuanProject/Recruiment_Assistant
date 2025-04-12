@@ -1,0 +1,77 @@
+
+--- Page 1 ---
+LAC THIEU QUAN
+Ho Chi Minh City
+
+0909159238 # thieuquanlac@gmail.com (mailto:x@gmail.com) Quan Lac (https://www.linkedin.com/in/quan-lac-a4a90b299/) LacTQuan (https://github.com/LacTQuan)
+ï
+§
+EDUCATION
+University of Science
+Sep. 2021
+Junior Student, GPA: 3.8 Ho Chi Minh City
+TECHNICAL
+SKILLS
+Languages: Python, Java, C/C++, HTML/CSS, JavaScript, SQL, Dart, Kotlin
+Technologies/Frameworks: GitHub, Nodejs, Bootstrap, SpringBoot, MongoDB, Docker, React Native
+English: IELTS 7.0
+RELEVANT
+COURSEWORK
+Data Structures Database Management Operation System
+•
+• •
+Software Methodology Artificial Intelligence Computer Network
+• • •
+Object-oriented programming Java Application Programming Web Application Programming
+• • •
+PROJECTS
+|
+Advertisement Management Website HTML/CSS, Javascript, MongoDB, Nodejs, Expressjs September 2023
+This web application incorporates a map (Mapbox API) for advertising placement management, catering to four distinct
+•
+roles: citizen, department staff, district staff, and ward staff. For citizens, creating an account is optional; they can access
+the website directly to explore authorized locations for placing advertising boards. Citizens also have the ability to submit
+reports through the system, which will be handled by government staff. The remaining three roles—department staff,
+district staff, and ward staff—have permissions to modify data and process submitted reports, enhancing the collaborative
+functionality of the system.
+Responsibilities: Designing UI using Figma, front-end and back-end side implementing, testing
+•
+Github Repository (https://github.com/hcmusA18/Ads-Management)
+•
+|
+Chat Application September 2023
+Java, Swing, Spring Boot, PostgreSQL
+This chat application defines two distinct roles: user and admin. Admin has the ability to access statistical data, generate
+•
+new user accounts, remove existing accounts, conversations,e.g. Users need to register for their personal accounts to log
+in to the system, enabling them to discover and chat with friends in group or in private mode. Chat UI is created by using
+Java Swing which is a relatively outdated framework. The application’s database is built on Postgresql and the backend
+side is implemented using Spring Boot. Clients get data from the API provided by backend and the real-time chat is
+handled by Java WebSocket.
+Responsibilities: Designing database, implementing chat UI, implementing API services
+•
+Github Repository (https://github.com/tuongthoai/ChatApp)
+•
+|
+Medical Booking Website Javascript, HTML, CSS, Nodejs, MongoDB May 2023
+A web application in which clients are given access to health facilities. Users can view clinic details, schedule
+•
+appointments, and manage their personal medical bookings. There are 3 roles: clients, administrators, and clinics. Each
+of them has specific access permission to the website.
+Responsibilities: Product owner, FE + BE developer, architecture designer.
+•
+Github Repository (https://github.com/GiaThinn/Intro2SE-21CLC10-Group05)
+•
+EXTRACURRICULAR
+GDSC Hackathon
+2024
+Our team has passed the idea stage and entered the Online Hackathon stage
+Thach Thuc’s organization board
+2023
+Was a member in technological department
+AWARDS
+Top 5 students having the highest GPAs
+2022 & 2023
+Achieve this award in two consecutive years (freshman and sophomore year)
+Year and semester scholarship
+2022 & 2023

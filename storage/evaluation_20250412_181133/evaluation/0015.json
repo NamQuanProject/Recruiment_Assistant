@@ -1,0 +1,64 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "Hedy demonstrates a strong technical foundation with proficiency in multiple languages (C, Java, JavaScript, Python, R, Scala, SQL) and technologies (Docker, Flask, Git, Node.js, PyTorch, React.js, REST APIs). Her experience at Spotify, Apple, and Comtech showcases practical application of these skills in data engineering and software development roles. The projects listed, RoadRisk and Flaming Insights, further validate her ability to apply these skills in data analysis and machine learning. The breadth of skills and experience, combined with relevant coursework, position her well for a web development role, though the CV leans more towards data engineering.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving Skills",
+      "explanation": "The CV provides evidence of strong problem-solving skills through descriptions of projects and internships. For example, at Spotify, she designed an aggregated dataset to unify data pipelines and reduce computational overhead. At Apple, she streamlined data sources to reduce metric reporting time. At Comtech, she automated the backend API test suite leading to a reduction in error response time. These examples demonstrate her ability to analyze problems, identify solutions, and implement them effectively. Her projects RoadRisk and Flaming Insights display analytical and problem-solving skills.",
+      "score": "8"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "Hedy's experience as a Lead Teaching Assistant demonstrates strong communication and collaboration skills. She hosts office hours, grades exams, and manages undergraduate teaching assistants. Her internship at Apple also highlights communication skills, as she presented findings and recommendations to senior VPs. While the CV provides evidence of these skills, more detail on team-based projects would further strengthen this section.",
+      "score": "7"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The variety of roles and projects listed in the CV indicates a willingness to learn new technologies and adapt to changing project requirements. Her experience at different companies (Spotify, Apple, Comtech) and involvement in diverse projects (data engineering, software development) suggest adaptability. The range of technologies she's worked with (Docker, Flask, PyTorch, React.js, etc.) also indicates a capacity for learning new tools.",
+      "score": "8"
+    },
+    {
+      "category": "Front-End Development Skills",
+      "explanation": "Hedy lists JavaScript and React.js as technical skills, and mentions building front-end features at Comtech Telecommunications. This suggests functional knowledge of front-end technologies. However, the CV doesn't provide significant details about her front-end development experience, such as specific projects or frameworks used. The description is relatively limited, so more specifics are needed to better assess her front-end capabilities.",
+      "score": "3"
+    },
+    {
+      "category": "Back-End Development Skills",
+      "explanation": "The CV showcases back-end skills through her experience with languages like Python, Java, and Scala, and technologies like Node.js. Her internships at Spotify and Apple, as well as projects like RoadRisk, demonstrate experience in server-side logic and data processing. The mention of REST APIs suggests familiarity with back-end communication protocols. The automation of the backend API test suite using Node.js at Comtech is another example.",
+      "score": "4"
+    },
+    {
+      "category": "Web Services and API Knowledge",
+      "explanation": "Hedy lists REST APIs as a technology she is familiar with. Additionally, her role at Comtech involved automating backend API test suites. This indicates some level of understanding and experience with web services and APIs. However, the CV lacks specific details about designing or implementing APIs from scratch. The mention of integrating with APIs is present but high-level.",
+      "score": "3"
+    },
+    {
+      "category": "Version Control (Git)",
+      "explanation": "Git is listed under technical skills, indicating familiarity with version control systems. The CV lacks specific examples of using Git for branching, merging, or resolving conflicts. A more detailed description of her Git workflow or contributions to collaborative projects would be beneficial.",
+      "score": "3"
+    },
+    {
+      "category": "Database Management",
+      "explanation": "The CV lists SQL as a language and mentions experience with BigQuery, GCS, and Snowflake, which are database technologies. Her work at Spotify involved designing a dataset in BigQuery, and her work at Apple streamlined complex data sources in Hive. These experiences demonstrate practical application of database management skills. However, the CV does not highlight a deep understanding of database design principles or optimization techniques.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 73.84615384615385,
+  "PersonalInfo": {
+    "Address": null,
+    "Age": null,
+    "Email": "hedylamarr@email.edu",
+    "Experience_Years": "1+",
+    "FullName": "Hedy Lamarr",
+    "GitHub": null,
+    "LinkedIn": "linkedin.com/in/hedylamarr111",
+    "PathToCV": "storage/evaluation_20250412_181133/original/cvs/0015.pdf",
+    "PhoneNumber": "(555) 555-5555",
+    "Website": null,
+    "WorkFor": null
+  }
+}

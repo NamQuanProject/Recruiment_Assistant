@@ -1,0 +1,64 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates a strong understanding and practical experience with a range of web development technologies. The CV lists proficiency in multiple languages (C#, Javascript, Python, etc.) and frameworks (ReactJS, Angular, Django, ASP.NET). The work experience and project descriptions provide concrete examples of utilizing these technologies to develop web applications. The depth of knowledge is evident, suggesting the candidate can independently develop and troubleshoot most web development tasks and exhibits a strong grasp of best practices. There are many framework and languages listed, which demonstrates a wide knowledge base.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving Skills",
+      "explanation": "The candidate's CV highlights instances of problem-solving in their work experience. Examples include reducing response times for API calls by 25%, reducing scheduling conflicts by 40%, and enhancing an AI recommendation system to increase customer engagement by 50%. These quantifiable achievements suggest a strong ability to diagnose and resolve web development issues independently. The candidate demonstrates strong problem-solving skills, can independently diagnose and resolve most web development issues, and proactively seeks out solutions.",
+      "score": "8"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The candidate explicitly mentions collaboration within an Agile environment with a cross-functional team of over 25 members. They also mention leading and mentoring a team of 5 interns. The CV lacks specific examples of how they communicated complex technical concepts to non-technical audiences. However, the leadership experience implies effective communication within a technical team. Overall, the CV demonstrates that the candidate collaborates effectively and contributes positively to team dynamics but lacks explicit examples of communication to non-technical audiences. The CV could be improved with examples that show communication to non-technical audiences.",
+      "score": "7"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate has experience with multiple frameworks and programming languages, demonstrating adaptability. The projects use varied technologies. The candidate's experience as an intern in multiple environments also points to their ability to adapt quickly to new situations and technologies. The CV demonstrates a strong desire to learn new technologies and adapt quickly to changing project requirements. The fact they are still studying increases the assumption that they will learn more.",
+      "score": "8"
+    },
+    {
+      "category": "Front-End Development Skills",
+      "explanation": "The candidate demonstrates solid understanding and practical experience with front-end development technologies. Projects and work experience include using ReactJS, Angular, TypeScript, Bootstrap, HTML, CSS, and JavaScript to create user interfaces. The candidate has the ability to independently develop and troubleshoot most front-end tasks.",
+      "score": "4"
+    },
+    {
+      "category": "Back-End Development Skills",
+      "explanation": "The candidate exhibits solid understanding and experience with back-end development technologies, using languages like C#, Python, and Java, and frameworks such as ASP.NET, Django, and NodeJS. The candidate mentions experience with designing and implementing APIs and has the ability to independently develop and troubleshoot most back-end tasks.",
+      "score": "4"
+    },
+    {
+      "category": "Web Services and API Knowledge",
+      "explanation": "The candidate's CV indicates solid understanding and experience integrating with Web Services and APIs, particularly through their work with Django REST/CRUD and Axios API calls. They also have experience developing a robust API architecture. The CV demonstrates experience integrating with Web Services and APIs.",
+      "score": "4"
+    },
+    {
+      "category": "Version Control (Git)",
+      "explanation": "The candidate lists Git/GitHub under skills. While the CV mentions a GitHub repo, it lacks explicit details on branching strategies or conflict resolution. Therefore, a comfortable experience using Git for branching, merging, and basic collaboration can be assumed.",
+      "score": "4"
+    },
+    {
+      "category": "Database Management",
+      "explanation": "The candidate's CV lists experience with MySQL, PostgreSQL, and SQL Management Server. They also mention constructing and managing SQL Management Server and PostgreSQL, as well as analyzing data using Python and SQL. They have experience designing and querying databases and can perform basic optimization.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 78.46153846153847,
+  "PersonalInfo": {
+    "Address": "Tampa, FL",
+    "Age": null,
+    "Email": "hungkhanh.truong112@gmail.com",
+    "Experience_Years": "Potentially less than 2 years",
+    "FullName": "HUNG TRUONG",
+    "GitHub": "github.com/Hungruong",
+    "LinkedIn": "linkedin.com/in/hungtk04/",
+    "PathToCV": "storage/evaluation_20250412_181133/original/cvs/0024.pdf",
+    "PhoneNumber": "(813) 861 – 4852",
+    "Website": null,
+    "WorkFor": null
+  }
+}

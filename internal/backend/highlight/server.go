@@ -100,7 +100,7 @@ func RunServer() {
 		pythonScriptPath := filepath.Join("internal", "backend", "highlight", "highlight_pdf.py")
 		highlightedPDFPath := filepath.Join(outputDir, baseName+"_highlighted.pdf")
 
-		cmd := exec.Command("python", pythonScriptPath, copiedPDFPath, areasPath, highlightedPDFPath)
+		cmd := exec.Command("python3", pythonScriptPath, copiedPDFPath, areasPath, highlightedPDFPath)
 		output, err := cmd.CombinedOutput()
 		if err != nil {
 			log.Printf("Error executing Python script: %v\nOutput: %s", err, string(output))

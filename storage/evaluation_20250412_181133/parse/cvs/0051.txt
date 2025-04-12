@@ -1,0 +1,67 @@
+
+--- Page 1 ---
+Hung Nguyen Manh
+| |
+hmn16@usf.edu (mailto:hmn16@usf.edu) linkedin.com/in/hmn774/ (https://www.linkedin.com/in/hmn774/) github.com/silverfoxpt (https://github.com/silverfoxpt)
+Education
+University of South Florida Tampa, Florida
+Bachelor of Science, Computer Science 2023 - 2027
+Technical Skills
+Languages: C++, C#, Java, Python
+Frameworks: Unity, Qt5, Spring Boot, Django
+Developer Tools: Git, MySQL, PostgreSQL, Visual Studio, Visual Studio Code
+Libraries: SFML
+Experience
+Programming Mentor Dec. 2023 – Present
+Self-operated Online
+Designed 8+ bilingual (English + Vietnamese) lesson plans for secondary-level students, focusing on fundamental
+•
+concepts in C++ such as variables, arrays, and loops.
+Utilized Codeforces’s Polygon framework to efficiently craft problem statements and manage submissions.
+•
+Software Development Intern Oct. 2022 – Jul. 2023
+FPT Information System Hanoi, Viet Nam
+Developed 50+ RESTful APIs using Spring MVC, handling dataset of up to 100k records with PostgreSQL and
+•
+MySQL.
+Implemented lightweight authentication and authorization systems using Spring Security.
+•
+Projects
+Oct. 2023 – Dec. 2023
+|
+Parser & Computer Algebra System (CAS) C++, SFML
+Handled up to 10k mathematical characters parsing with Pratt Parser.
+•
+Designed a Computer Algebra System (CAS) that automatically reorders and simplifies mathematical expressions
+•
+using principles from ”Computer Algebra and Symbolic Computation” by Joel S. Cohen.
+Jul. 2023 – Aug. 2023
+|
+Underwater Physic Engine C++, SFML
+Utilized Verlet and Euler Intergration to simulate constrained system and spring-damper model of up to 20k
+•
+constraints/springs running at 60+ FPS; combined with L-System calculation to simulate aquatic greenery.
+Implemented Perlin flowfield and Flocking algorithm to create realistic underwater boids simulation of 500+
+•
+objects.
+Mar. 2023 – Jul. 2023
+|
+Microscopic Traffic Simulator C++, SFML
+Utilized the Intelligent Driver Model (IDM) to simulate traffic of up to 200+ cars.
+•
+Implemented traffic lights and intersections, on which cars can dynamically avoid and queue.
+•
+Create, modify and save up to 50+ new tiles using the JSON format.
+•
+|
+Graph Drawer C#, Unity
+Implemented Unity’s physics and GUI system to help learners create and modify directed/undirected graphs of up
+•
+to 50 nodes.
+Visualized graph-related algorithms: DFS, BFS, Djikstra, Bridges and Articulation Points, Strongly Connected
+•
+Components (Tarjan’s algorithm)
+Certifications & Awards
+Second prize, Hanoi National University of Education Informatics Competition for High School Students
+Issued Apr. 2023
+First place, USF Devfest Tampa Bay 2023

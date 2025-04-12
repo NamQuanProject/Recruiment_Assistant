@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Python, Java, C++, SQL, JavaScript",
+    "page": 1,
+    "x": 84,
+    "y": 657,
+    "width": 159,
+    "height": 16,
+    "description": "This area is strong because it demonstrates proficiency in multiple programming languages, including Java, C++, and Python, which are specifically mentioned as desirable in the Amazon job description. It also includes JavaScript and SQL.",
+    "type": "strong"
+  },
+  {
+    "text": "React, Node.js, TensorFlow, Pandas",
+    "page": 1,
+    "x": 141,
+    "y": 672,
+    "width": 159,
+    "height": 16,
+    "description": "This area is strong because it showcases experience with relevant frameworks and libraries. Specifically, React and Node.js are useful for front-end and back-end development, TensorFlow for machine learning tasks, and Pandas for data analysis. These are valuable for both Amazon and Thomson Reuters.",
+    "type": "strong"
+  },
+  {
+    "text": "Designed a cumulative aggregated dataset hosted in BigQuery and GCS to unify multiple",
+    "page": 1,
+    "x": 56,
+    "y": 318,
+    "width": 396,
+    "height": 16,
+    "description": "This area is strong because it highlights experience in designing data pipelines and working with big data technologies like BigQuery and GCS, demonstrating system design and problem-solving skills. This aligns with the need for scalable distributed services mentioned in the Amazon job description.",
+    "type": "strong"
+  },
+  {
+    "text": "Implemented the dataset using Scala and Apache Beam APIs, achieving a",
+    "page": 1,
+    "x": 56,
+    "y": 348,
+    "width": 328,
+    "height": 16,
+    "description": "This area is strong because it demonstrates hands-on experience with relevant technologies like Scala and Apache Beam, and quantifies the impact of the work (60% compression). This provides concrete evidence of technical skills and problem-solving abilities.",
+    "type": "strong"
+  },
+  {
+    "text": "Experience with Amazon Web Services.",
+    "page": 2,
+    "x": 56,
+    "y": 63,
+    "width": 193,
+    "height": 16,
+    "description": "This area is strong because the Amazon job description specifically mentions experience with AWS as a preferred qualification. This shows the candidate has skills directly relevant to the role.",
+    "type": "strong"
+  },
+  {
+    "text": "[Email] | [Phone] | [LinkedIn Profile] | [GitHub Profile] | [Portfolio (if applicable)]",
+    "page": 1,
+    "x": 114,
+    "y": 45,
+    "width": 383,
+    "height": 16,
+    "description": "This area is weak because the email and phone are not there and are placeholders, these should be filled with the real information for recruiters to contact. Also, the portfolio should contain work that can show off some experience.",
+    "type": "weak"
+  },
+  {
+    "text": "Honors: Dean’s List (all semesters), Magna cum Laude​",
+    "page": 1,
+    "x": 28,
+    "y": 236,
+    "width": 242,
+    "height": 16,
+    "description": "This area is weak because while academic achievements are good to have, they are less impactful than relevant experience and skills for a software engineering role. It would be better to focus on more concrete examples of projects or contributions.",
+    "type": "weak"
+  },
+  {
+    "text": "Software Engineer Intern",
+    "page": 1,
+    "x": 28,
+    "y": 423,
+    "width": 112,
+    "height": 16,
+    "description": "This area is weak because the description lacks details about the intern's role in the team and whether there was a project contribution that made an impact. Consider making the contribution more impactful in this area of the CV to show you fit the role.",
+    "type": "weak"
+  },
+  {
+    "text": "Agile, Test-Driven Development, CI/CD",
+    "page": 1,
+    "x": 105,
+    "y": 702,
+    "width": 183,
+    "height": 16,
+    "description": "This area is weak because it mentions methodologies but doesn't provide specific examples of how they were applied. The candidate should provide more concrete evidence in the work experience section. For example, describe using a specific testing framework with TDD or how CI/CD was implemented for a project.",
+    "type": "weak"
+  },
+  {
+    "text": "UNC-Chapel Hill – Department of Computer Science (Cybersecurity Lab)​",
+    "page": 1,
+    "x": 28,
+    "y": 518,
+    "width": 360,
+    "height": 16,
+    "description": "This area is weak because the research experience is not quantified with numbers, for example, the percentage of improvement, time reduction and many other points. This section is important to highlight the skills and experiences of the candidate, make sure to add more details about the outcome in this section.",
+    "type": "weak"
+  }
+]

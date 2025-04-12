@@ -1,0 +1,59 @@
+{
+  "Authenticity": 7,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates proficiency in several technical skills, including MATLAB, LabView, and SolidWorks. However, there is no mention of Java, C++, or Python, which are key requirements for the software engineer role as specified in the job description. The skills listed are more relevant to biomedical engineering than software engineering. Therefore, the candidate's technical proficiency is not strongly aligned with the job requirements.",
+      "score": "4"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate has experience with designing and testing biomedical devices. This demonstrates some problem-solving and analytical skills. The project descriptions include elements of design, simulation, and testing. However, the resume doesn't explicitly highlight experience in solving complex software-related problems or translating business requirements into technical solutions. More emphasis on coding and software-related problem-solving would strengthen this area.",
+      "score": "5"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The candidate's work experience as a peer tutor demonstrates communication and collaboration skills. The candidate assists students, designs newsletters, organizes events, and trains new recruits. These activities require effective communication and the ability to work with others. However, the resume does not provide specific examples of collaboration on software development projects or communication with product managers and user-experience designers, as would be expected in a software engineering role.",
+      "score": "6"
+    },
+    {
+      "category": "Software Development Lifecycle \u0026 Best Practices",
+      "explanation": "The resume lacks explicit mention of experience with the software development lifecycle (SDLC), coding standards, testing methodologies, or version control systems like Git. While the project descriptions imply a basic understanding of design and testing, the candidate doesn't demonstrate knowledge of Agile or Waterfall methodologies, CI/CD, or code review processes. This is a significant weakness in the context of a software engineering role.",
+      "score": "3"
+    },
+    {
+      "category": "Object-Oriented Design (OOD)",
+      "explanation": "The candidate's resume does not contain any information relating to OOD. There is no mention of OOD principles, design patterns, or experience with designing object-oriented systems. This is a weakness, as OOD is a desirable skill for the software engineer role.",
+      "score": "1"
+    },
+    {
+      "category": "Database Knowledge",
+      "explanation": "The candidate's resume does not mention any experience with relational databases, SQL, or ORM technologies. The lack of database knowledge is a significant gap, as the job description emphasizes the importance of these skills for building data-driven applications.",
+      "score": "1"
+    },
+    {
+      "category": "Web Technologies",
+      "explanation": "The candidate's resume does not mention any experience with web technologies like HTML, CSS, JavaScript, or web frameworks. The lack of web development skills is a weakness, as the job description mentions proficiency with HTML5, CSS3, and experience with web application development.",
+      "score": "1"
+    },
+    {
+      "category": "Test Automation",
+      "explanation": "The candidate's resume does not mention any experience with test automation tools or methodologies. The lack of test automation skills is a weakness, as the job description specifically lists strong scripting and test automation abilities as a required skill.",
+      "score": "1"
+    }
+  ],
+  "FinalScore": 36.666666666666664,
+  "PersonalInfo": {
+    "Address": "193 Arroyo Dr, Irvine CA 92617",
+    "Age": null,
+    "Email": "khuetran6720@gmail.com",
+    "Experience_Years": "2",
+    "FullName": "Khue Tran",
+    "GitHub": null,
+    "LinkedIn": null,
+    "PathToCV": "storage/evaluation_20250412_160502/original/cvs/0053.pdf",
+    "PhoneNumber": "(505) 550-1246",
+    "Website": null,
+    "WorkFor": "University of California, Irvine"
+  }
+}

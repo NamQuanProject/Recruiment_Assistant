@@ -1,0 +1,182 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assessing the candidate's expertise in required programming languages and web development technologies.",
+      "EvaluationStrategy": "Evaluate the candidate's resume and portfolio for experience with C#, C++, Objective-C, JavaScript, HTML, CSS, PHP, SQL and other relevant technologies. Assess their responses to technical questions regarding these languages and their practical application. Technical interview and coding challenges can further gauge proficiency.",
+      "Justification": "Essential for the Software Engineer role, as stated in the official JD and reinforced in the additional JD's 'Required Skills and Qualifications'. Proficiency in relevant languages is a core requirement. Both JDs.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with required programming languages and web development technologies. Struggles to explain basic concepts.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates basic understanding of required programming languages and technologies. Can complete simple tasks with guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Proficient in required programming languages and web development technologies. Can independently complete complex tasks and explain concepts clearly.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert in required programming languages and web development technologies. Demonstrates in-depth knowledge and can solve complex problems creatively and efficiently. Contributes to best practices and innovation.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Debugging Skills: Evaluating the candidate's ability to identify, analyze, and resolve software defects and challenges.",
+      "EvaluationStrategy": "Assess the candidate's responses to behavioral questions about problem-solving experiences. Review their approach to debugging code in a portfolio or during a technical interview. Coding challenges should include scenarios that require debugging and troubleshooting.",
+      "Justification": "Explicitly mentioned as a requirement in the official JD ('Excellent debugging and problem-solving skills'). Critical for effective software development and maintenance. Both JDs.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to identify and analyze software defects. Requires significant guidance to resolve simple problems.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates basic problem-solving skills. Can identify and resolve common software defects with some guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Proficient in problem-solving and debugging. Can independently identify, analyze, and resolve complex software defects efficiently.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert in problem-solving and debugging. Demonstrates exceptional analytical skills and can develop innovative solutions to complex problems. Proactively identifies and prevents potential issues.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Collaboration and Communication Skills: Assessing the candidate's ability to work effectively in a team and communicate technical information clearly.",
+      "EvaluationStrategy": "Evaluate the candidate's responses to behavioral questions about teamwork and communication. Assess their ability to explain technical concepts to non-technical audiences. Look for examples of successful collaboration in their work history. Assess the soft skills.",
+      "Justification": "The official JD mentions the need to 'Collaborate with other programmers'. The additional JD emphasizes the importance of teamwork and communication skills. Both JDs.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to work effectively in a team. Difficulty communicating technical information clearly and concisely.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates basic teamwork and communication skills. Can collaborate with others and explain technical concepts with some effort.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Proficient in teamwork and communication. Can effectively collaborate with others, clearly communicate technical information, and actively listen to feedback.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional teamwork and communication skills. Excels at collaborating with diverse teams, effectively communicates complex technical information to a wide range of audiences, and fosters a positive and productive team environment.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Continuous Learning and Adaptability: Evaluating the candidate's commitment to staying up-to-date with industry trends and technologies.",
+      "EvaluationStrategy": "Assess the candidate's responses to questions about how they stay current with industry trends. Review their portfolio for evidence of learning new technologies. Look for examples of adaptability in their work history. Check for additional courses.",
+      "Justification": "The official JD explicitly states 'Continuously learn and improve skills'. The additional JD emphasizes the rapidly changing nature of web development and the need for continuous learning ('How do you keep up with the latest coding developments and programs?'). Both JDs.",
+      "ScoringGuided": [
+        {
+          "Comment": "Shows little or no interest in learning new technologies or keeping up with industry trends.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates some interest in learning new technologies. Occasionally attends training or reads industry publications.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Actively seeks out opportunities to learn new technologies and stay up-to-date with industry trends. Regularly attends training, reads industry publications, and participates in online communities.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Demonstrates a strong passion for learning and continuous improvement. Proactively seeks out and masters new technologies, actively contributes to the industry through publications or presentations, and mentors others.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "HTML/CSS Proficiency: Assessing the candidate's understanding and application of HTML and CSS for creating web page structure and styling.",
+      "EvaluationStrategy": "Review the candidate's portfolio for examples of well-structured and styled web pages. Ask technical questions about HTML and CSS concepts, such as semantic markup, responsive design, and CSS preprocessors. Assess code quality and adherence to best practices.",
+      "Justification": "Fundamental to web development, as highlighted in the additional JD's 'Required Skills and Qualifications' ('Extensive knowledge of web applications, programming languages, and web services — including API, CSS, CSS3, cross-browser compatibility, HTML, HTML5...'). Candidate JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of HTML and CSS. Struggles to create basic web page layouts and styling.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Demonstrates basic understanding of HTML and CSS. Can create simple web pages with some guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in HTML and CSS. Can create complex web page layouts, implement responsive design, and use CSS preprocessors effectively.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "JavaScript Proficiency: Assessing the candidate's ability to use JavaScript to add interactivity and functionality to web pages.",
+      "EvaluationStrategy": "Review the candidate's portfolio for examples of JavaScript-powered web applications. Ask technical questions about JavaScript concepts, such as DOM manipulation, event handling, and asynchronous programming. Assess code quality and adherence to best practices.",
+      "Justification": "A critical skill for web developers, as emphasized in the additional JD's 'Required Skills and Qualifications' ('Extensive knowledge of web applications, programming languages, and web services — including API, CSS, CSS3, cross-browser compatibility, HTML, HTML5, JavaScript, jQuery, PHP...'). Candidate JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of JavaScript. Struggles to add basic interactivity to web pages.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Demonstrates basic understanding of JavaScript. Can add simple interactivity to web pages with some guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in JavaScript. Can create complex web applications, implement advanced interactivity, and use JavaScript frameworks and libraries effectively.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Backend Technologies (PHP, SQL) Proficiency: Assessing the candidate's knowledge of server-side programming and database management.",
+      "EvaluationStrategy": "Review the candidate's portfolio for projects involving backend development. Ask technical questions about server-side programming concepts, database design, and SQL queries. Evaluate their experience with frameworks and libraries.",
+      "Justification": "Important for creating dynamic websites and web applications, highlighted in the additional JD's 'Required Skills and Qualifications' ('Extensive knowledge of web applications, programming languages, and web services — including API, CSS, CSS3, cross-browser compatibility, HTML, HTML5, JavaScript, jQuery, PHP...'). Candidate JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with backend technologies. Struggles to explain basic concepts.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Demonstrates basic understanding of backend technologies. Can perform simple tasks with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in backend technologies. Can independently develop and maintain server-side applications, design databases, and write complex SQL queries.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Version Control (Git) Proficiency: Assessing the candidate's ability to use Git for code management and collaboration.",
+      "EvaluationStrategy": "Ask the candidate about their experience with Git workflows, branching strategies, and conflict resolution. Review their contribution history on platforms like GitHub or GitLab. Assess their understanding of version control best practices.",
+      "Justification": "Essential for collaborative software development, as emphasized in the additional JD's 'Preferred skills and qualifications' ('Experience in implementing web development workflows and operations using a variety of tools, including GitHub'). Candidate JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with Git. Struggles to understand basic concepts.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Demonstrates basic understanding of Git. Can perform simple tasks like committing and pushing code with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in Git. Can independently manage code repositories, use branching strategies, resolve conflicts, and contribute to collaborative projects.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

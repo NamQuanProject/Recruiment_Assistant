@@ -1,0 +1,52 @@
+
+--- Page 1 ---
+An Bui
+Web Developer | Full-Stack Engineer | Software Engineer
+anbui0115.dev@gmail.com (mailto:anbui0115.dev@gmail.com) | GitHub (https://github.com/Anbui0115) | LinkedIn (https://www.linkedin.com/in/an-bui-0115/) | Portfolio (https://anbui0115.github.io/)
+TECHNICAL SKILLS
+Languages: Javascript, Python, Typescript, HTML, CSS, SQL
+Frontend: React.js, Next.js, Redux, Tailwind CSS
+Backend: Node.js, Express, Flask, PostgreSQL, Sequelize, SQLAlchemy, OpenAI
+Expertise: Cloud Platforms (AWS, GCP, Azure), Docker, Regex, Heroku, Git, Kubernetes, Terraform, Agile Project Management, CI/CD
+TECHNICAL EXPERIENCE
+Arize AI (https://arize.com/) | Software Engineer Apr 2023 - Present
+● Proficiently orchestrate cloud resource management across AWS, GCP, and Azure, ensuring high availability.
+● Optimize release pipelines, guaranteeing peak platform health, performance, and reliability for on-premises customers.
+● Collaborated with customers to manage and maintain Terraform configurations, ensuring healthy clusters and networks.
+● Successfully upgraded Arize within customer infrastructure, maintaining the health and performance of clusters.
+● Streamline codebase construction in response to customer-reported issues, while actively contributing to code quality
+enhancements and increased functionality, both on-premises and in cloud deployments.
+Freelance | Fullstack Web Developer Nov 2022 - Present
+● Custom Website Development: Crafted unique websites tailored to meet individual client needs and optimizing SEO.
+● Client Collaboration: Developed strong rapport with clients ensuring their vision and requirements are met.
+● Responsive Design: Implemented responsive design principles to ensure optimal viewing experience across various devices.
+PROJECTS
+Ourbucks (React.js, Redux, Python, Flux, PostgreSQL, Flask, JavaScript, Docker, SQLite, CSS3, HTML5, Heroku) Live (https://ourbucks.herokuapp.com/) | Github (https://github.com/Anbui0115/OurBucks-solo-full-stack)
+Web application for online drink ordering and customization
+● Developed a comprehensive web application for custom drink ordering and personalization, featuring a robust product
+selection and user-friendly customization interface.
+● Integrated Redux for state management, enhancing user session consistency and experience.
+● Maintained user account and authentication functionality to allow users to save favorite items and track previous orders.
+Eatsy (React, Redux, Python, Flux, PostgreSQL, Flask, JavaScript, Docker, SQLite, CSS3, HTML5, Heroku) Live (https://eatsy-2022.herokuapp.com/) | Github (https://github.com/Anbui0115/Etsy-group-project)
+An Etsy clone for buying and selling essential products.
+● Designed a weighted search algorithm that initially displays the category with the most results and orders items based upon
+the relevance of the search query.
+● Designed a custom modal framework for rapid development, streamlining the user interface and interaction design.
+● Constructed a unidirectional data flow architecture with a single application-level state object to prevent mutated state and
+data collision, and to ensure reliable DOM rendering.
+Anbnb (React, Redux, JavaScript, PostgreSQL, CSS3, HTML5, Node.js, Express,js, Heroku) Live (https://anbnb.herokuapp.com/) | Github (https://github.com/Anbui0115/week12-Airbnb)
+A web app inspired by Airbnb where users can browse for lodging, make reservations, or to start a business and host their own place.
+● Created a dynamic web platform for lodging discovery and reservations, employing advanced SQL techniques for efficient
+data retrieval and user interaction optimization.
+● Ensured user privacy and autonomy through frontend and backend authentication measures and React Router, allowing users
+to only access and make changes to their own reservations when logged in.
+● Prioritized user experience and security through comprehensive authentication measures and intuitive design.
+ADDITIONAL EXPERIENCE
+Supermicro (https://www.supermicro.com/en/home) | Sales Support Representative - Inside Sales Aug 2021 - Apr 2022
+● Elevated sales account performance and bolstered customer and coworker satisfaction by delivering expert technical and
+product guidance, along with superior order processing and data entry efficiencies.
+● Streamlined the order processing and increased efficiency by 20% by creating guidelines for training purposes.
+EDUCATION
+App Academy, Certification: Full Stack Software Engineer: JavaScript, Python, HTML, CSS, React, Redux, Node.js, Express, SQL
+Ho Chi Minh City University of Technology (HCMUT) Bachelor of Science in Computer Science: Object-Oriented Programming,
+Databases, Data Structures and Algorithms

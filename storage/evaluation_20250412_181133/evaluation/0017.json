@@ -1,0 +1,64 @@
+{
+  "Authenticity": 7,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates proficiency in multiple programming languages (Python, Java, C++, C#, JavaScript, SQL) and frameworks (React, Angular, Flutter, Git). They also have knowledge of Agile, DevSecOps, and CI/CD methodologies. Experience includes front-end and back-end development, API integration, and database management. The variety of skills and experiences indicate a strong technical foundation. However, a more in-depth showcase of individual project contributions would enhance the evaluation.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving Skills",
+      "explanation": "The CV showcases problem-solving through descriptions of resolving technical issues in previous roles (Cipher IT Student Researcher, UITS Service Desk). The candidate mentions troubleshooting and remote support, malware removal, and system updates. Additionally, the candidate highlights the ability to debug and test code, but the information provided lacks details of complex problem-solving scenarios. A more detailed explanation on how the candidate resolves issues in the role would be beneficial to evaluate the ability.",
+      "score": "7"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The CV highlights collaboration within development teams, particularly in the context of designing and deploying web applications and mobile solutions. The candidate mentions collaborating with cross-functional teams to refine project requirements and deliver scalable solutions. Project leadership experience is also mentioned in projects such as 'Basic to Python Interpreter' and 'Team Leader for Java Based Tower Defense Game Project'. The information provided shows that the candidate has the skills to communicate and collaborate effectively in a team environment.",
+      "score": "8"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate demonstrates adaptability by mentioning experience with different frameworks (React, Angular, Flutter) and contributing to diverse projects (web applications, mobile solutions, AI integration). The active pursuit of certifications (CompTIA A+) suggests a willingness to learn and stay updated with industry trends. Involvement in hackathons and diverse projects indicates a good level of adaptability and learning agility. More concrete examples of quickly learning and implementing new technologies would further strengthen this area.",
+      "score": "8"
+    },
+    {
+      "category": "Front-End Development Skills",
+      "explanation": "The candidate has demonstrable experience building responsive and interactive front-end interfaces using React.js, HTML, CSS, and Bootstrap. The candidate has worked to ensure accessibility and cross-platform compatibility. The CV mentions leading front-end development for the 'Rag-A-Thon Hackathon'. This experience demonstrates the candidate's proficiency in building and designing intuitive UI/UX interfaces. The projects included showcase experience and proficiency in front-end technologies.",
+      "score": "4"
+    },
+    {
+      "category": "Back-End Development Skills",
+      "explanation": "The candidate mentions experience integrating APIs using Python, Java, and JavaScript. The candidate highlights the implementation of a secure P2P program using blockchain written in Python. Past projects show the ability to create the back-end, server side code that is necessary to run a program. The skills listed show that the candidate has the ability to develop back-end code.",
+      "score": "4"
+    },
+    {
+      "category": "Web Services and API Knowledge",
+      "explanation": "The CV indicates experience developing and integrating APIs to connect front-end applications with back-end services. The candidate mentions incorporating and refining back-end AI API services in the 'Rag-A-Thon Hackathon' project. The experience shows that the candidate has the knowledge and experience to implement Web Services and API's.",
+      "score": "4"
+    },
+    {
+      "category": "Version Control (Git)",
+      "explanation": "The candidate mentions managing code repositories using Git and adhering to best practices for version control. This facilitates collaboration and minimizes integration issues. The experience shows that the candidate is familiar with using Git for version control. The information shows that the candidate is comfortable using Git for branching, merging, and basic collaboration.",
+      "score": "4"
+    },
+    {
+      "category": "Database Management",
+      "explanation": "The candidate has experience with SQL as mentioned under the 'Skills' section. Projects use Databases to connect front-end and back-end. It is implied that the candidate has the experience in Database Management. However, the CV does not explicitly mention database design or optimization.",
+      "score": "3"
+    }
+  ],
+  "FinalScore": 76.92307692307693,
+  "PersonalInfo": {
+    "Address": "Atlanta GA",
+    "Age": null,
+    "Email": "Giang.nguyen.SWE@gmail.com",
+    "Experience_Years": null,
+    "FullName": "Hoang-Giang Thi Nguyen",
+    "GitHub": "https://github.com/AVenti-stack",
+    "LinkedIn": "LinkedIn/giangnguyen1998",
+    "PathToCV": "storage/evaluation_20250412_181133/original/cvs/0017.pdf",
+    "PhoneNumber": "4049933178",
+    "Website": "Ngu.swe.io",
+    "WorkFor": "USC Authorized to work for all US Employers"
+  }
+}

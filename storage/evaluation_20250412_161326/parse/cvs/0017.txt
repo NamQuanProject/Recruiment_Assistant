@@ -1,0 +1,155 @@
+
+--- Page 1 ---
+Hoang-Giang Thi Nguyen
+Atlanta GA
+4049933178
+USC Authorized to work for all US Employers
+Giang.nguyen.SWE@gmail.com Ngu.swe.io. LinkedIn/giangnguyen1998 https://github.com/AVenti-stack (mailto:Giang.nguyen.SWE@gmail.com)
+SUMMARY
+Software Engineer with experience specializing in web application development, DevSecOps, and CI/CD
+pipeline support. Proficient in Python, Java, C++, and SQL, with a strong foundation in Agile
+methodologies and a focus on enhancing security, efficiency, and user experience across projects. Skilled in
+technical documentation, communication, and collaboration with cross-functional teams to drive project
+success in secure and regulated environments.
+SKILLS
+•
+Programming Languages: Python, Java, C++, C#, JavaScript, SQL
+•
+Frameworks & Tools: React, Angular, Flutter, Jira, Git
+•
+Methodologies: Agile, DevSecOps, CI/CD
+•
+Other: Technical Writing, Documentation, Microsoft Office Suite, Cybersecurity Knowledge
+EXPERIENCE
+Frontend / Software Developer
+Novalink Solutions (Remote)
+March 2024 – Present,
+• Collaborated with a small team of developers to design and deploy web applications and mobile
+solutions tailored to client needs, focusing on state agencies and private businesses.
+• Built responsive and interactive front-end interfaces using React.js, HTML, CSS, and Bootstrap,
+ensuring accessibility and cross-platform compatibility.
+• Developed and integrated APIs to connect front-end applications with back-end services, leveraging
+Python, Java, and JavaScript for efficient and secure data handling.
+• Incorporated AI-powered features, such as recommendation engines and data-driven insights, into
+client applications to enhance user engagement and functionality.
+• Improved project timelines and reliability by implementing CI/CD pipelines, automating builds and
+deployments, and reducing manual processes.
+• Managed code repositories using Git and adhered to best practices for version control, facilitating
+collaboration and minimizing integration issues.
+• Conducted thorough testing and debugging using VS Code and other tools to ensure high-quality
+deliverables aligned with client expectations.
+• Collaborated with cross-functional teams to refine project requirements and deliver scalable solutions,
+focusing on usability, performance, and maintainability.
+
+--- Page 2 ---
+School GAP
+Bachelor of Science in Computer Science
+Concentration: People and Design
+Georgia Institute of Technology • Atlanta, GA
+September 2022 – March 2024
+Achieved Dean’s List recognition for academic excellence.
+•
+Focused on developing skills in user-centered design, software engineering, and technical problem-
+•
+solving.
+Completed projects in [mention key projects, e.g., web development, software design, etc.].
+•
+Cipher IT Student Researcher
+Georgia Institute of Technology • August 2020 - September 2022,
+Atlanta, GA
+•
+Managed over 100 support tickets using Jira to track, update, and resolve technical issues for
+faculty, staff, and students, ensuring efficient ticket routing and issue resolution.
+•
+Provided comprehensive troubleshooting and remote support, utilizing problem-solving skills to
+diagnose and resolve technical issues.
+•
+Performed malware removal, software patching, and system updates to maintain a secure computing
+environment.
+•
+Assisted researchers and engineers with IT support needs, providing solutions for complex technical
+challenges in a high-demand research environment.
+•
+Utilized scripting and Linux-based tools to streamline routine tasks, gaining experience in
+automation and server management.
+•
+Monitored and managed virtual machines and networked systems, ensuring continuous availability
+and secure configuration for lab users.
+•
+Supported IT operations in a DevOps setting, familiarizing with continuous integration tools and
+maintaining system updates to optimize software and security performance.
+•
+Participated in IT security initiatives, including vulnerability scans and system hardening, to
+enhance the overall security posture of the research environment.
+Key Skills: Technical Writing, Jira, Documentation, Cybersecurity, Linux (Deployments), Python (scripts),
+Git, Configuration Management
+UITS Service Desk/Help Desk
+Kennesaw State University • May 2018 - September 2020,
+Kennesaw, GA
+•
+Managed over 100 support tickets, ensuring resolution and customer satisfaction.
+•
+Utilized Jira to track and manage technical issues, providing comprehensive troubleshooting and
+support.
+•
+Enhanced system security by performing malware removal and software patching, maintaining a
+secure computing environment.
+Key Skills: Technical Support, Jira, Troubleshooting, System Security, Remote Assistance.
+
+--- Page 3 ---
+EDUCATION
+Bachelor of Science in Computer Science
+Concentration: People and Design • Georgia Institute of Technology • Atlanta, GA • 2023 • Dean’s List
+CERTIFICATIONS
+CompTIA A+
+2024(In Progress)
+RECENT PROJECTS
+Rag-A-Thon Hackathon 2024 – Lead Front-End Developer
+•
+Led the development of a cross-platform health application from scratch, designed to provide
+personalized fitness and nutrition plans using AI.
+•
+Built the application using Flutter, ensuring scalability and seamless performance across iOS and
+Android platforms.
+•
+Designed and implemented intuitive UI/UX interfaces, creating an engaging and user-friendly
+experience tailored to diverse user needs.
+•
+Collaborated with the team to integrate AI-driven features, including chatbot functionality, by
+incorporating and refining back-end AI API services.
+•
+Documented technical workflows, development processes, and project milestones for judging, team
+alignment, and potential sponsorship opportunities.
+•
+Coordinated effectively with team members to balance front-end and back-end tasks, ensuring a
+cohesive and fully functional application within the hackathon timeframe.
+GBA Game Development (Georgia Tech CS 2631) – Developer
+•
+Created a C++-based Gameboy game, handling GUI design, debugging, and audio/visual elements.
+Basic to Python Interpreter (Georgia Tech CS 2110) – Project Leader
+•
+Directed a Basic to Python interpreter project, improving code conversion accuracy by 40% and
+reducing development time by 25%.
+Team Leader for Java Based Tower Defense Game Project
+Georgia Tech CS3311 • 2021 • Teamwork, Leadership, Communication, Java, Interface Design
+•
+Used Java to create a windows-based tower defense game
+•
+Worked as team leader to ensure project met due dates
+•
+In charge of creating the framework and implementing animations for each sprite.
+P2P Blockchain
+KSU Senior Project • 2020 • Teamwork, Python, Blockchain, Agular, HTML, JS, CSS
+•
+Implemented a secure P2P program that used blockchain to transfer files
+•
+In charge of creating the blockchain ledger
+
+--- Page 4 ---
+•
+Written in Python
+•
+Use Angular, JS, and CSS to implement the GUI
+
+--- Page 5 ---
+
