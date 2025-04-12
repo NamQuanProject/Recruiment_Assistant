@@ -75,7 +75,7 @@ const Display = ({ rank, name, score, experience, authenticity, companies, evalP
           {(companies === "" ) ? "No companies" : `${companies.length > 30 ? companies.slice(0, 25) + "..." : companies}`}
 
           </p>
-          <p className="text-gray-700 h-full w-1/5 text-center py-3">{(experience == "0" || experience == "") ? "Entry level": `${experience} years`}</p>
+          <p className="text-gray-700 h-full w-1/5 text-center py-3">{(experience == "0" || experience == "" || experience.toLowerCase().includes("year")) ? "Entry level" : `${experience} years`}</p>
           <div className="h-full w-1/5 text-center py-3 flex flex-col justify-center items-center">
               <div className="w-3/5 bg-gray-300 rounded-full h-2">
                 <div

@@ -127,7 +127,7 @@ const CandidateDetailPage = () => {
                 <h3 className="font-bold text-xl mb-2">I. Final Score</h3>
                 <p className="text-lg text-gray-700 mb-4">Based on our evaluation, the final score is {criteriaData.FinalScore.toFixed(2)}</p>
                 <h3 className="font-bold text-xl mb-2">II. Authenticity</h3>
-                <p className="text-lg text-gray-700 mb-4">Based on provided link, this CV is assessed to have {criteriaData.Authenticity/10*100}% authenticity which mean the information provided is 70% accountable</p>
+                <p className="text-lg text-gray-700 mb-4">Based on provided link, this CV is assessed to have {criteriaData.Authenticity/10*100}% authenticity which indicates the creditability of this CV</p>
 
               
                 {/* Display Personal Info */}
