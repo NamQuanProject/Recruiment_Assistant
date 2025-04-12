@@ -52,7 +52,7 @@ const CandidateDetailPage = () => {
 
   // Extract cv_id from path_to_evaluation
   const cvId = candidate.path_to_cv.match(/cvs\\(.*?)\.pdf/)?.[1];
-  console.log("Extracted cvId:", cvId); // Logs "0025" // Log the extracted cv_id for debugging
+// Logs "0025" // Log the extracted cv_id for debugging
 
   // Chatbox state and logic
   const [messages, setMessages] = useState<{ sender: string; text: string }[]>([]);
@@ -125,9 +125,9 @@ const CandidateDetailPage = () => {
             ) : criteriaData && criteriaJson ? (
               <div>
                 <h3 className="font-bold text-xl mb-2">I. Final Score</h3>
-                <p className="text-sm text-gray-700 mb-4">{criteriaData.FinalScore.toFixed(2)}</p>
+                <p className="text-lg text-gray-700 mb-4">Based on our evaluation, the final score is {criteriaData.FinalScore.toFixed(2)}</p>
                 <h3 className="font-bold text-xl mb-2">II. Authenticity</h3>
-                <p className="text-sm text-gray-700 mb-4">{criteriaData.Authenticity/10*100}%</p>
+                <p className="text-lg text-gray-700 mb-4">Based on provided link, this CV is assessed to have {criteriaData.Authenticity/10*100}% authenticity which mean the information provided is 70% accountable</p>
 
               
                 {/* Display Personal Info */}

@@ -14,8 +14,8 @@ const NavBar = () => {
                 <div className="cursor-pointer text-base text-gray-200">Contact</div>
               </div>
               <div className={`${flexBetween} gap-8`}>
-                <div className="cursor-pointer text-base text-gray-200">Employer Login</div>
-                <div className="cursor-pointer text-base text-gray-200">Employee Login</div>
+                <div className="cursor-pointer text-base text-gray-200">Employer</div>
+                <div className="cursor-pointer text-base text-gray-200">Employee</div>
               </div>  
           </div>
         </div>
