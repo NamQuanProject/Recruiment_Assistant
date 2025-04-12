@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import {Link } from "react-router-dom";
 import Footer from "../components/footer";
+import Logo from "../assets/logo.png";
 
 const features = [
   "Instant CV Screening with AI",
@@ -14,16 +15,20 @@ const features = [
 
 const Homepage: React.FC = () => {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#1c3156] to-[#0e1a2f] text-white p-6 overflow-y-auto">
-      <section className="max-w-6xl mx-auto py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="space-y-6">
+    <main className="min-h-screen max-h-screen bg-gradient-to-br from-[#1c3156] to-[#0e1a2f] text-white p-6 overflow-y-auto">
+      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+        <div className="mt-6 space-y-6">
+          <div className="flex mb-6">
+            <img src={Logo} alt="Logo" className="w-32 h-16" />
+          </div>
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-3xl md:text-6xl font-bold"
           >
-            AI-Powered Recruiment System
+            AI-Empowered Recruiment System
           </motion.h1>
 
           <motion.p
