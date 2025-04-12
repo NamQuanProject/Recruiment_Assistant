@@ -38,6 +38,8 @@ Install Node.js dependencies (in webs directory):
 ```bash
 cd webs
 npm install
+npm install react react-dom react-router-dom react-select
+npm install framer-motion
 ```
 
 ### 🖥️ Running the Project
