@@ -1,0 +1,64 @@
+{
+  "Authenticity": "7",
+  "Evaluation": [
+    {
+      "category": "Technical Skills and Experience",
+      "explanation": "The candidate's CV focuses heavily on graphic design and visual communication skills, with no explicit mention of back-end development technologies, programming languages, or related experience. While the candidate lists software skills such as Adobe Illustrator, Photoshop, InDesign, XD, and Figma, these are primarily design-oriented tools and don't directly translate to back-end development proficiency. There is a complete absence of information related to server-side programming, database management, or API development. Therefore, based solely on the provided CV, the candidate's technical skills and experience do not align with the requirements of a back-end developer role. The candidate needs to showcase backend development skills like programming languages (Python, Java, Node.js), Database Management skills (SQL, NoSQL), API design and development skills, cloud computing experience (AWS, Azure, GCP), and security best practices.",
+      "score": "1"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The CV demonstrates problem-solving skills within the context of design projects, such as designing promotional materials for events or developing brand identities. However, there is no indication of the candidate's ability to analyze complex technical problems, identify root causes, and develop effective solutions in a back-end development environment. The projects described showcase creative problem-solving but lack the analytical rigor expected in a technical role. The candidate needs to illustrate the analytical skills of backend development by describing how she has overcome a technical challenge.",
+      "score": "2"
+    },
+    {
+      "category": "Teamwork and Communication Skills",
+      "explanation": "The candidate's CV highlights teamwork and communication skills through experiences such as volunteering for the American Advertising Federation and serving as an International Ambassador and Vice-President of the Vietnamese Student Association. These roles demonstrate the ability to collaborate with others, communicate effectively, and lead teams. However, the CV does not provide specific examples of the candidate's ability to communicate technical concepts clearly and concisely, or to collaborate effectively with other developers in a technical setting. The candidate needs to provide clear information about her experiences as a developer with teamwork and communication.",
+      "score": "5"
+    },
+    {
+      "category": "Continuous Learning and Adaptability",
+      "explanation": "The CV shows involvement in diverse projects and activities, suggesting a willingness to learn and adapt. However, the candidate needs to demonstrate her commitment to continuous learning by explicitly mentioning certifications, online courses, personal projects or hackathons related to backend development. The CV needs to showcase how she has adapted to changing technical requirements or unexpected challenges.",
+      "score": "3"
+    },
+    {
+      "category": "Programming Languages Proficiency",
+      "explanation": "The CV does not mention any programming languages. The candidate needs to specify backend programming languages.",
+      "score": "1"
+    },
+    {
+      "category": "Database Management Skills",
+      "explanation": "The CV lacks any mention of database management skills. The candidate needs to add information about working with database management systems.",
+      "score": "1"
+    },
+    {
+      "category": "API Design and Development",
+      "explanation": "The CV does not provide any evidence of API design and development experience.",
+      "score": "1"
+    },
+    {
+      "category": "Cloud Computing Experience",
+      "explanation": "The CV does not contain any information about cloud computing experience.",
+      "score": "1"
+    },
+    {
+      "category": "Security Best Practices",
+      "explanation": "The CV does not mention any knowledge or experience with security best practices.",
+      "score": "1"
+    }
+  ],
+  "FinalScore": 24.615384615384617,
+  "PersonalInfo": {
+    "Address": "Jonesboro, AR",
+    "Age": null,
+    "Email": "nhaca2110@gmail.com",
+    "Experience_Years": null,
+    "FullName": "CA NGUYEN",
+    "GitHub": null,
+    "LinkedIn": "https://www.linkedin.com/in/ca-nguyen-site2001/",
+    "PathToCV": "storage/evaluation_20250412_132226/original/cvs/0010.pdf",
+    "PhoneNumber": "(571) 412-9003",
+    "Website": "https://canguyen.myportfolio.com",
+    "WorkFor": null
+  }
+}

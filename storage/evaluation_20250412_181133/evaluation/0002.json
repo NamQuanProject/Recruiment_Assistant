@@ -1,0 +1,64 @@
+{
+  "Authenticity": "9",
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates a strong technical foundation. The CV lists a wide array of relevant technologies, including Javascript, Python, Typescript, HTML, CSS, SQL, React.js, Next.js, Redux, Tailwind CSS, Node.js, Express, Flask, PostgreSQL, Sequelize, SQLAlchemy, OpenAI, AWS, GCP, Azure, Docker, Regex, Heroku, Git, Kubernetes, and Terraform. Experience at Arize AI and freelance work showcase practical application of these skills. The projects section provides concrete examples of full-stack development. The educational background from App Academy further supports technical competency. Overall, the candidate seems well-versed in modern web development technologies.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving Skills",
+      "explanation": "The candidate showcases problem-solving abilities through descriptions of their contributions at Arize AI, where they optimized release pipelines and addressed customer-reported issues. In the project descriptions, the design of a weighted search algorithm for Eatsy and the creation of a dynamic web platform for Anbnb also indicate problem-solving skills. The candidate demonstrated improving efficiency by 20% by creating guidelines for training purposes at Supermicro. Overall, the CV demonstrates a good ability to identify and solve problems.",
+      "score": "7"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The candidate highlights collaboration skills through descriptions of teamwork at Arize AI and client interaction as a freelance web developer. The CV mentions 'Client Collaboration: Developed strong rapport with clients ensuring their vision and requirements are met'. The description of the Supermicro position also alludes to communication and collaboration abilities. More specifics about communication styles and conflict resolution strategies could enhance this section. However, overall there are positive indicators.",
+      "score": "7"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The candidate demonstrates adaptability by showcasing a wide range of technologies and experiences across different roles (Software Engineer, Freelancer). The transition from Sales Support to Software Engineer also suggests a willingness to learn and adapt. The candidate lists experience with many different technology stacks. The project descriptions show experience with different combinations of technologies, and the candidate successfully upgraded Arize within customer infrastructure. Overall, the candidate seems adaptable and willing to learn.",
+      "score": "8"
+    },
+    {
+      "category": "Front-End Development Skills",
+      "explanation": "The candidate demonstrates solid front-end development skills. The CV lists proficiency in HTML, CSS, JavaScript, React.js, Next.js, Redux, and Tailwind CSS. The projects section highlights the use of React and Redux in multiple projects, and the candidate used Responsive Design in freelance work. Examples from the projects include user interface enhancements and dynamic web platform creation, indicating practical skills. The custom modal framework for Eatsy is good showcase of this.",
+      "score": "4"
+    },
+    {
+      "category": "Back-End Development Skills",
+      "explanation": "The candidate has a solid set of backend development skills. The CV lists proficiency in Node.js, Express, Flask, PostgreSQL, Sequelize, and SQLAlchemy. The projects OurBucks, Eatsy, and Anbnb all utilized Python, Flask, and PostgreSQL indicating solid experience. The description of Anbnb highlights experience with advanced SQL techniques.",
+      "score": "4"
+    },
+    {
+      "category": "Web Services and API Knowledge",
+      "explanation": "The candidate has Web Services and API Knowledge, with the description mentioning OpenAI. Also, the candidate integrated CI/CD into work. But it's not clear the candidate has experience building them. Lacks explicit details on API design or integration with third-party services, so score is lowered.",
+      "score": "3"
+    },
+    {
+      "category": "Version Control (Git)",
+      "explanation": "The candidate lists Git as an area of expertise. GitHub links are provided for personal projects. The description of work at Arize AI implies the use of Git for codebase construction and maintenance. The GitHub links give confidence in the candidate's expertise.",
+      "score": "4"
+    },
+    {
+      "category": "Database Management",
+      "explanation": "The candidate lists SQL, PostgreSQL, Sequelize, and SQLAlchemy as technical skills. The projects section highlights the use of PostgreSQL in multiple projects, and the Anbnb description mentions advanced SQL techniques. This demonstrates practical experience with database design, querying, and optimization.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 75.38461538461539,
+  "PersonalInfo": {
+    "Address": "Not provided",
+    "Age": "Not provided",
+    "Email": "anbui0115.dev@gmail.com",
+    "Experience_Years": "1+",
+    "FullName": "An Bui",
+    "GitHub": "https://github.com/Anbui0115",
+    "LinkedIn": "https://www.linkedin.com/in/an-bui-0115/",
+    "PathToCV": "storage/evaluation_20250412_181133/original/cvs/0002.pdf",
+    "PhoneNumber": "Not provided",
+    "Website": "https://anbui0115.github.io/",
+    "WorkFor": "Arize AI"
+  }
+}

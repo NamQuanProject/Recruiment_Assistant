@@ -1,0 +1,213 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Skills and Experience: This category assesses the candidate's proficiency in required and preferred technical skills, including programming languages, frameworks, and tools relevant to back-end development, as well as their experience in applying these skills in real-world projects.",
+      "EvaluationStrategy": "Evaluate the candidate's responses to technical questions, their descriptions of past projects, and their familiarity with specific technologies mentioned in the job description. Verify claims with code samples or references where possible.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of core back-end concepts and technologies. Lacks practical experience.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates a basic understanding of back-end development principles and some experience with relevant technologies. May require guidance on complex tasks.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Possesses strong technical skills and significant experience in back-end development. Can independently handle complex tasks and contribute to architectural decisions.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level knowledge of back-end technologies and extensive experience in designing and implementing complex systems. A thought leader who can mentor others and drive innovation.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: This category evaluates the candidate's ability to analyze complex problems, identify root causes, and develop effective solutions in a back-end development context.",
+      "EvaluationStrategy": "Assess the candidate's problem-solving approach through behavioral questions, such as describing how they overcame a technical challenge. Look for evidence of analytical thinking, logical reasoning, and attention to detail.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze complex problems and often relies on trial and error. Difficulty identifying root causes.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can analyze basic problems and propose solutions, but may require guidance on more complex issues. May not always identify the root cause.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Demonstrates strong analytical skills and can effectively solve complex problems independently. Proactively identifies root causes and develops innovative solutions.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving skills with a proven track record of resolving critical issues and improving system performance. A strategic thinker who can anticipate potential problems and develop proactive solutions.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Teamwork and Communication Skills: This category evaluates the candidate's ability to collaborate effectively with other developers, stakeholders, and project managers, as well as their ability to communicate technical concepts clearly and concisely.",
+      "EvaluationStrategy": "Assess the candidate's teamwork skills through behavioral questions about past collaborations. Evaluate their communication skills through their ability to explain technical concepts in a clear and understandable manner. Consider their ability to provide and receive feedback constructively.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to work effectively in a team and may have difficulty communicating technical concepts clearly. Avoids collaboration and may resist feedback.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can work effectively in a team, but may require guidance on complex collaborations. Communicates technical concepts adequately, but may struggle to tailor communication to different audiences.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "A strong team player who communicates effectively and collaborates well with others. Proactively shares knowledge and provides constructive feedback.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "An exceptional communicator and collaborator who can effectively lead teams and build consensus. Skilled at translating complex technical concepts into clear and concise language for both technical and non-technical audiences.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Continuous Learning and Adaptability: This category assesses the candidate's commitment to staying up-to-date with the latest technologies and trends in back-end development, as well as their ability to adapt to changing requirements and priorities.",
+      "EvaluationStrategy": "Ask the candidate about their approach to continuous learning and how they stay informed about new technologies. Assess their adaptability through behavioral questions about how they handled changing requirements or unexpected challenges.",
+      "ScoringGuided": [
+        {
+          "Comment": "Shows little interest in continuous learning and may be resistant to new technologies or approaches. Struggles to adapt to changing requirements.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Understands the importance of continuous learning, but may lack a structured approach. Can adapt to basic changes, but may struggle with more significant disruptions.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Actively seeks out new knowledge and stays up-to-date with the latest technologies. Adapts quickly to changing requirements and embraces new challenges.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "A passionate learner who is constantly seeking out new knowledge and sharing it with others. A highly adaptable individual who thrives in dynamic environments and embraces change as an opportunity for growth.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Programming Languages Proficiency: Assesses the depth of knowledge and practical experience with programming languages relevant to the specific back-end role (e.g., Python, Java, Node.js).",
+      "EvaluationStrategy": "Use technical questions to gauge understanding of language-specific concepts, syntax, and best practices. Ask about projects where the language was used and the challenges encountered.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited knowledge of the programming language. Unable to write basic code.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of the language. Can write simple programs with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in the language. Can write complex programs independently.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert in the language. Can design and implement complex systems using the language.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Database Management Skills: Evaluates the candidate's ability to design, implement, and manage databases, including knowledge of SQL and NoSQL databases.",
+      "EvaluationStrategy": "Ask about experience with database design, query optimization, and data modeling. Present scenarios involving database performance and ask how the candidate would address them.",
+      "ScoringGuided": [
+        {
+          "Comment": "Little to no experience with databases. Unable to write basic SQL queries.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of database concepts. Can write simple SQL queries.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in database management. Can design and implement databases, write complex queries, and optimize performance.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert in database management. Can design and implement highly scalable and reliable database systems.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "API Design and Development: Assesses the candidate's experience in designing and developing RESTful APIs, including understanding of API standards, security, and versioning.",
+      "EvaluationStrategy": "Ask about the candidate's experience designing APIs, including the technologies and design patterns they have used. Discuss API security considerations and best practices.",
+      "ScoringGuided": [
+        {
+          "Comment": "Little to no experience with API design or development.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of API concepts. Can implement simple APIs with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in API design and development. Can design and implement RESTful APIs with security and versioning considerations.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert in API design and development. Can design and implement highly scalable and secure APIs that meet complex business requirements.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Cloud Computing Experience: Evaluates the candidate's familiarity with cloud platforms (e.g., AWS, Azure, Google Cloud) and their ability to deploy and manage applications in the cloud.",
+      "EvaluationStrategy": "Ask about the candidate's experience with specific cloud services and their understanding of cloud computing concepts. Discuss scenarios involving cloud infrastructure and ask how the candidate would approach them.",
+      "ScoringGuided": [
+        {
+          "Comment": "Little to no experience with cloud computing.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of cloud computing concepts. Can deploy simple applications to the cloud with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in cloud computing. Can deploy and manage applications in the cloud, including scaling and monitoring.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert in cloud computing. Can design and implement highly scalable and resilient cloud infrastructure.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Security Best Practices: Assesses the candidate's knowledge of security best practices for back-end development, including authentication, authorization, and data protection.",
+      "EvaluationStrategy": "Ask about the candidate's understanding of common security vulnerabilities and how to prevent them. Discuss security considerations in API design and data storage.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited knowledge of security best practices.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of security concepts. Can implement basic security measures with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in security best practices. Can design and implement secure applications with authentication, authorization, and data protection.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert in security. Can design and implement highly secure systems and proactively identify and mitigate security vulnerabilities.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

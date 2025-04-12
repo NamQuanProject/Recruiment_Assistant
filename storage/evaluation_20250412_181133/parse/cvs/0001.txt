@@ -1,0 +1,73 @@
+
+--- Page 1 ---
+Khanh Nguyen
+| |
+nguyenckhanh71@gmail.com (mailto:nguyenckhanh71@gmail.com) linkedin.com/in/ngckhanh (https://linkedin.com/in/ngckhanh) github.com/CokaVN11 (https://github.com/CokaVN11)
+Education
+University of Science, VNUHCM (HCMUS) HCMC, Vietnam
+Bachelor of Information Technology Expected Graduation Oct.2025
+Experience
+Thach thuc’s Technical Department May 2023 – Present
+University of Science, VNUHCM HCMC, Vietnam
+Developed a React-based game website to automate the guidance process for the Thach Thuc round, facilitating
+•
+smoother gameplay.
+Empowered player teams to submit answers and receive scores promptly, enhancing engagement and
+•
+competitiveness.
+Significantly reduced manual activity by 90%, streamlining the game’s operations and improving overall efficiency.
+•
+Technical Skills
+Languages: Java, Python, SQL (Postgres), JavaScript, HTML/CSS
+Frameworks: React, React Native, Node.js, Express.JS, Material-UI
+Developer Tools: Git, VS Code, Visual Studio, Postman, Netlify, Render (Free-hosting)
+Projects
+Oct 2023 – Dec 2023
+|
+Ads Management Website Javascript, Bootstrap, ExpressJS, MongoDB, Mapbox API
+Designed and developed the front-end interface using HTML, JavaScript, EJS templates, and Bootstrap.
+•
+Integrated Mapbox API to provide advanced mapping functionalities, enabling users to visualize and interact with
+•
+geographical data related to advertising locations.
+Implemented an intuitive user interface allowing citizens to create, edit, and delete advertisements seamlessly.
+•
+Implemented features allowing citizens to request new advertisement, report violation.
+•
+Empowered administrative cadres at various levels (city, district, ward) to manage advertisement.
+•
+|
+Link: Manager website (https://ads-manager-1aai.onrender.com/) Citizen website (https://ads-citizen.onrender.com/)
+•
+Oct 2023 – Dec 2023
+|
+Chat Application Java, Spring Boot, Java Swing, PostgreSQL
+Designed and developed a chat application allowing users to engage in one-on-one or group chats with friends
+•
+Enabled users to perform actions such as adding or removing friends, editing personal information, and changing
+•
+passwords, enhancing user control and customization.
+Implemented admin features for overseeing system functionalities and data management, including user
+•
+management, data editing, and generating analytical charts to monitor user activity.
+May 2023 – Sep 2023
+|
+Booking Application React Native, NodeJS, ExpressJS, MongoDB
+Designed and developed a comprehensive booking application, enabling users to seamlessly browse hotels and rooms
+•
+and make reservations.
+Developed RESTful APIs using NodeJS, ExpressJS, Mongoose, and MongoDB, ensuring smooth communication
+•
+between the client and server components.
+Developed hotelier functionalities including check-in, check-out procedures, and the ability to post new rooms,
+•
+empowering hotel owners to manage their properties effectively.
+Implemented admin features for overseeing system functionalities and data management, including user
+•
+management, data editing, and generating analytical charts to monitor user activity.
+Extracurricular
+GDSC Solution Hackathon 2024 Lead the development and successfully build a mobile application in 2 weeks
+Thach thuc 2023 Led the Technical Department as a Vice chairman, demonstrating leadership and organizational
+skills
+Thach thuc 2022 Contributed to the Technical Department as a member, enhancing teamwork and problem-solving
+abilities.

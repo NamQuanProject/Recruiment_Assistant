@@ -1,0 +1,59 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates a strong understanding of various programming languages including C#, C++, JavaScript, HTML, CSS, Python, and SQL. They have experience with multiple technologies and frameworks such as ASP.NET, ReactJS, Angular, and Django. The candidate showcases practical experience with these technologies through internship projects and personal projects. The variety of languages and frameworks mentioned indicates adaptability and a willingness to learn, aligning well with the job requirements. However, it is difficult to assess the depth of their knowledge in each language or framework without further assessment.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving and Debugging Skills",
+      "explanation": "The candidate showcases problem-solving skills by describing how they reduced response times and scheduling conflicts in their work experience. They also enhanced an AI recommendation system, leading to increased customer engagement. The projects mentioned, like building an e-commerce app and a chatbot, demonstrate the ability to tackle complex development challenges. The mention of debugging is not explicitly made. Further clarification through technical interviews would be beneficial.",
+      "score": "7"
+    },
+    {
+      "category": "Collaboration and Communication Skills",
+      "explanation": "The candidate demonstrates collaboration and communication skills through their work experience where they worked in Agile environments and collaborated with cross-functional teams. They mention mentoring a team of interns, indicating leadership and communication abilities. The candidate provides information of collaboration and communication skills that align well with the job descriptions.",
+      "score": "8"
+    },
+    {
+      "category": "Continuous Learning and Adaptability",
+      "explanation": "The candidate demonstrates continuous learning through their relevant coursework and personal projects using various technologies and frameworks. They showcase adaptability by working on diverse projects and technologies. The resume shows a willingness to explore and implement new technologies.",
+      "score": "8"
+    },
+    {
+      "category": "HTML/CSS Proficiency",
+      "explanation": "The candidate demonstrates proficiency in HTML and CSS through their project descriptions where they mention using Bootstrap and implementing interactive front-end components. They mention enhancing user experience, which indicates understanding of styling and layout. The projects list technologies like HTML, CSS, SCSS which indicates good knowledge in the area.",
+      "score": "4"
+    },
+    {
+      "category": "JavaScript Proficiency",
+      "explanation": "The candidate showcases JavaScript proficiency through projects like the Chat Bot App using ReactJS and the Skinet E-commerce App. They mention implementing interactive components and utilizing frameworks like ReactJS and Redux Toolkit, demonstrating a solid understanding of JavaScript concepts.",
+      "score": "4"
+    },
+    {
+      "category": "Backend Technologies (PHP, SQL) Proficiency",
+      "explanation": "The candidate demonstrates backend technologies experience through the use of SQL Management Server, PostgreSQL, ASP.Net, Django, NodeJS, and ExpressJS in their projects. They mention developing API architectures and managing databases, indicating understanding of server-side programming and database management. The skills section explicitly lists SQL.",
+      "score": "4"
+    },
+    {
+      "category": "Version Control (Git) Proficiency",
+      "explanation": "The candidate lists Git/GitHub in their Technologies/Environments section and provides links to their GitHub profile, which shows proficiency in Git for code management and collaboration. They showcase version control skills through their project contributions.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 78.33333333333333,
+  "PersonalInfo": {
+    "Address": "Tampa, FL",
+    "Age": null,
+    "Email": "hungkhanh.truong112@gmail.com",
+    "Experience_Years": "0",
+    "FullName": "HUNG TRUONG",
+    "GitHub": "github.com/Hungruong",
+    "LinkedIn": "linkedin.com/in/hungtk04/",
+    "PathToCV": "storage/evaluation_20250412_182529/original/cvs/0024.pdf",
+    "PhoneNumber": "(813) 861 – 4852",
+    "Website": null,
+    "WorkFor": null
+  }
+}

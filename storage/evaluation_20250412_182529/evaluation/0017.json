@@ -1,0 +1,59 @@
+{
+  "Authenticity": 7,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates proficiency in several programming languages, including Python, Java, C++, C#, and SQL, as well as frameworks and tools like React, Angular, Flutter, Jira, and Git. The resume highlights experience in web application development, DevSecOps, and CI/CD pipeline support, which aligns well with the requirements of a web developer role. The candidate's experience includes building front-end interfaces using React.js, integrating APIs, and managing code repositories with Git. However, the depth of knowledge in each technology is not fully elaborated upon, and the specific contexts in which these skills were applied could be more detailed. The candidate could benefit from further quantifying achievements and providing specific examples of how these skills contributed to project success. Also, there is no mention about testing and debugging knowledges.",
+      "score": "7"
+    },
+    {
+      "category": "Problem-Solving and Debugging Skills",
+      "explanation": "The candidate demonstrates problem-solving skills through experiences such as managing support tickets, troubleshooting technical issues, and performing malware removal. The description of the Cipher IT Student Researcher role highlights the ability to diagnose and resolve technical issues in a high-demand research environment. However, the resume does not explicitly emphasize debugging skills or provide detailed examples of solving complex software defects. Providing more specific instances of debugging challenging problems and the methodologies used would strengthen this area.",
+      "score": "6"
+    },
+    {
+      "category": "Collaboration and Communication Skills",
+      "explanation": "The candidate exhibits collaboration and communication skills through experiences such as collaborating with cross-functional teams, managing support tickets, and documenting technical workflows. The resume highlights teamwork in project settings and effective communication to refine project requirements and deliver scalable solutions. The project descriptions, such as the Rag-A-Thon Hackathon and team projects at Georgia Tech, emphasize collaboration and coordination with team members. More specific examples of communicating technical information clearly and concisely to diverse audiences would enhance this section.",
+      "score": "7"
+    },
+    {
+      "category": "Continuous Learning and Adaptability",
+      "explanation": "The candidate demonstrates a commitment to continuous learning by pursuing a Bachelor of Science in Computer Science and indicating ongoing certification (CompTIA A+ in progress). The experience in diverse projects, such as web application development and game development, shows adaptability to different technologies and environments. The resume could be strengthened by explicitly stating how the candidate stays up-to-date with industry trends and technologies and by providing examples of quickly learning and applying new skills to projects.",
+      "score": "6"
+    },
+    {
+      "category": "HTML/CSS Proficiency",
+      "explanation": "The candidate mentions using HTML and CSS in the Frontend / Software Developer role at Novalink Solutions and in the P2P Blockchain project at KSU. They describe building responsive and interactive front-end interfaces using React.js, HTML, CSS, and Bootstrap. This indicates a basic to moderate level of proficiency. However, the resume does not provide specifics about advanced HTML/CSS techniques, such as semantic markup, responsive design principles, or CSS preprocessors. Examples of creating complex layouts or implementing innovative styling solutions would strengthen this section.",
+      "score": "3"
+    },
+    {
+      "category": "JavaScript Proficiency",
+      "explanation": "The candidate mentions using JavaScript in the Frontend / Software Developer role at Novalink Solutions and in the P2P Blockchain project at KSU. The resume indicates that the candidate uses JavaScript to connect front-end applications with back-end services. However, the resume does not provide specific examples of advanced JavaScript concepts or the use of frameworks and libraries. More details on the candidate's experience with JavaScript frameworks (beyond React.js) and their ability to create complex, interactive web applications would enhance this section.",
+      "score": "3"
+    },
+    {
+      "category": "Backend Technologies (PHP, SQL) Proficiency",
+      "explanation": "The candidate lists SQL as a programming language under the Skills section. The resume also mentions integrating APIs to connect front-end applications with back-end services in the Frontend / Software Developer role at Novalink Solutions. However, the resume does not provide specifics about experience with PHP or other backend technologies. The projects mentioned do not highlight backend development or database design in detail. More concrete examples of developing and maintaining server-side applications, designing databases, or writing complex SQL queries would be beneficial.",
+      "score": "2"
+    },
+    {
+      "category": "Version Control (Git) Proficiency",
+      "explanation": "The candidate lists Git under the Frameworks \u0026 Tools section and mentions managing code repositories using Git in the Frontend / Software Developer role at Novalink Solutions. They also state adherence to best practices for version control. This indicates a moderate level of proficiency. However, the resume lacks specifics about Git workflows, branching strategies, or conflict resolution. Examples of contributing to collaborative projects and managing code repositories effectively would strengthen this section.",
+      "score": "3"
+    }
+  ],
+  "FinalScore": 61.66666666666667,
+  "PersonalInfo": {
+    "Address": "Atlanta GA",
+    "Age": null,
+    "Email": "Giang.nguyen.SWE@gmail.com",
+    "Experience_Years": "Less than 1 year",
+    "FullName": "Hoang-Giang Thi Nguyen",
+    "GitHub": "https://github.com/AVenti-stack",
+    "LinkedIn": "LinkedIn/giangnguyen1998",
+    "PathToCV": "storage/evaluation_20250412_182529/original/cvs/0017.pdf",
+    "PhoneNumber": "4049933178",
+    "Website": "Ngu.swe.io",
+    "WorkFor": "USC Authorized to work for all US Employers"
+  }
+}

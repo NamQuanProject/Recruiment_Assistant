@@ -1,0 +1,64 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "Hedy demonstrates a strong foundation in technical skills. Her listed languages (C, Java, JavaScript, Python, R, Scala, SQL) and technologies (Docker, Flask, Git, Node.js, PyTorch, React.js, REST APIs) cover a wide range of relevant tools. Her experience at Spotify, Apple, and Comtech showcases practical application of these skills in data engineering and software engineering contexts. The inclusion of tools like Apache Beam/Hadoop/Spark, BigQuery, GCP, Jira, Jenkins, Jupyter, Snowflake, and Tableau further strengthens her profile. However, the depth of knowledge in each area cannot be fully assessed from the CV alone, but the breadth is impressive for someone early in their career.",
+      "score": "8"
+    },
+    {
+      "category": "Problem Solving and Analytical Skills",
+      "explanation": "The CV provides strong evidence of problem-solving and analytical skills. Her work at Spotify involved designing and implementing a data pipeline to unify data sources, demonstrating her ability to analyze a problem, design a solution, and implement it effectively. At Apple, she streamlined data sources, reducing metric reporting time significantly. The projects 'RoadRisk' and 'Flaming Insights' further showcase her analytical abilities, using statistical modeling and data analysis to derive insights from large datasets. These examples demonstrate her ability to identify problems, analyze data, and develop practical solutions.",
+      "score": "8"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "Hedy's CV shows good communication and collaboration skills. As a Lead Teaching Assistant, she manages and coordinates support tasks for other TAs and hosts weekly office hours for over 200 students, indicating strong communication and leadership abilities. Her experience at Apple involved presenting findings and recommendations to senior VPs, highlighting her ability to communicate effectively with diverse audiences. Her contributions in team settings at Spotify and Comtech further demonstrate her collaborative abilities. The description of the projects also suggests ability to communicate findings effectively.",
+      "score": "7"
+    },
+    {
+      "category": "Experience and Qualifications",
+      "explanation": "Hedy is currently pursuing a B.S. in Computer Science and Statistics with an expected graduation date of May 2026. Her internships at Spotify, Apple, and Comtech provide significant relevant experience in data engineering and software engineering. Her experience is impressive for someone still in school and indicates a high level of preparedness for a full-time software engineering role. Her relevant coursework further supplements her practical experience. This level of relevant experience while in school is a strong positive.",
+      "score": "9"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The CV mentions automating the backend API test suite at Comtech, indicating an understanding of testing methodologies. However, there's no specific mention of code quality practices or code review processes. Further details on the specific testing frameworks and methodologies used would strengthen this area. While the CV shows she writes code, it's hard to gauge the quality of the code without code samples.",
+      "score": "4"
+    },
+    {
+      "category": "System Design",
+      "explanation": "The CV mentions designing a cumulative aggregated dataset at Spotify, which implies some level of system design thinking. However, there is a lack of detail about the architectural considerations, scalability, or reliability aspects of the design. More specific examples of system design experience would be beneficial. It is hard to gauge how much system design was truly involved in those internships from the descriptions given.",
+      "score": "3"
+    },
+    {
+      "category": "Adaptability and Learning Agility",
+      "explanation": "The range of technologies listed in the CV (languages, technologies, tools) suggests a willingness to learn new skills. Her ability to work in different environments (Spotify, Apple, Comtech) also indicates adaptability. The 'RoadRisk' and 'Flaming Insights' projects demonstrate the ability to independently learn and apply new skills. This is a good indicator of learning agility.",
+      "score": "4"
+    },
+    {
+      "category": "Teamwork and Collaboration Skills",
+      "explanation": "The role as Lead Teaching Assistant strongly suggests effective teamwork and collaboration skills. Furthermore, the descriptions of the internships imply working within a team to achieve goals, but there are no specific examples showcasing collaboration beyond simply being on a team. More specific examples of how she contributed to team efforts or resolved conflicts would be beneficial.",
+      "score": "4"
+    },
+    {
+      "category": "Customer Focus",
+      "explanation": "The CV does not provide direct examples of customer interaction or translating customer needs into technical requirements. While the projects and internships contribute to overall business goals, it's difficult to assess her customer focus without more information on how she considered customer needs in her work. There is little to no demonstration of direct customer focus from what is provided.",
+      "score": "2"
+    }
+  ],
+  "FinalScore": 75.38461538461539,
+  "PersonalInfo": {
+    "Address": "Chapel Hill, NC",
+    "Age": null,
+    "Email": "hedylamarr@email.edu",
+    "Experience_Years": "2",
+    "FullName": "Hedy Lamarr",
+    "GitHub": null,
+    "LinkedIn": "linkedin.com/in/hedylamarr111",
+    "PathToCV": "storage/evaluation_20250412_155538/original/cvs/0015.pdf",
+    "PhoneNumber": "(555) 555-5555",
+    "Website": null,
+    "WorkFor": null
+  }
+}

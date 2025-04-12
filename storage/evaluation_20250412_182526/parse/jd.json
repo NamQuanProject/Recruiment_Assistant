@@ -1,0 +1,211 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Demonstrates a solid understanding of required and beneficial programming languages and web development technologies.",
+      "EvaluationStrategy": "Assess the candidate's proficiency in C#, C++, Objective-C, JavaScript, HTML, CSS, and other relevant web development technologies through resume analysis, portfolio review, and technical interview questions. Look for specific examples of projects and contributions.",
+      "Justification": "Essential for executing the duties and responsibilities outlined in both the official and additional job descriptions. Directly derived from the 'Proficiency with the C#, C++, Objective-C, or JavaScript programming languages' requirement and the additional JD's required skills.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding or experience with required programming languages and web development technologies. Lacks practical application.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Some understanding of required languages and technologies but may lack depth in certain areas. Demonstrates basic application skills.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong understanding and practical experience with required programming languages and web development technologies. Can independently apply skills to solve problems.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level proficiency with a wide range of programming languages and web development technologies. Can lead projects and mentor others.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Official JD \u0026 Candidate JD"
+    },
+    {
+      "Description": "Problem-Solving and Debugging Skills: Ability to identify, analyze, and resolve software defects and technical issues effectively.",
+      "EvaluationStrategy": "Assess the candidate's problem-solving and debugging skills through technical interview questions focusing on past experiences, code reviews, and potentially a practical coding exercise. Look for a structured approach to problem-solving and the ability to explain their reasoning.",
+      "Justification": "Critical for maintaining and improving existing codebases, as stated in the official job description ('Debug existing source code and polish feature sets'). Also important for developing new features and resolving issues during web development.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to identify and resolve basic software defects. Lacks a systematic approach to debugging.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can identify and resolve simple software defects with guidance. Demonstrates a basic understanding of debugging techniques.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Independently identifies and resolves complex software defects. Demonstrates strong problem-solving and debugging skills.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level problem-solving and debugging skills. Can efficiently resolve complex issues and mentor others in troubleshooting.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Official JD \u0026 Candidate JD"
+    },
+    {
+      "Description": "Collaboration and Communication Skills: Ability to work effectively in a team, communicate technical concepts clearly, and provide/receive constructive feedback.",
+      "EvaluationStrategy": "Assess the candidate's collaboration and communication skills through behavioral interview questions, reference checks, and observation during the interview process. Look for examples of effective teamwork, clear communication, and a willingness to learn from others.",
+      "Justification": "Essential for working in a team of developers, as stated in the official job description ('Collaborate with other programmers to design and implement features'). Also crucial for interacting with stakeholders and clients, as highlighted in the additional job description.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to work effectively in a team. Communication is unclear and ineffective. Resistance to feedback.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Works adequately in a team but may have some communication challenges. Accepts feedback with some difficulty.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Works effectively in a team and communicates technical concepts clearly. Provides and receives constructive feedback.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional collaboration and communication skills. Can lead teams, mentor others, and effectively communicate complex technical concepts to both technical and non-technical audiences.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Official JD \u0026 Candidate JD"
+    },
+    {
+      "Description": "Web Development Knowledge and Experience: Demonstrates a strong understanding of web development principles, practices, and technologies.",
+      "EvaluationStrategy": "Evaluate based on resume, portfolio, and answers to interview questions. Assess the depth and breadth of their experience with HTML, CSS, JavaScript, frameworks, databases, and other relevant technologies. Focus on specific projects and contributions.",
+      "Justification": "This is a core requirement of the job. It aligns directly with the additional JD's focus on web development skills, knowledge of web applications, programming languages, and the creation of functional websites.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited knowledge of web development principles and technologies. Minimal practical experience.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of web development principles and technologies. Some practical experience with common technologies.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Solid understanding of web development principles and technologies. Significant practical experience and ability to apply knowledge to complex projects.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level knowledge of web development principles and technologies. Extensive experience leading and mentoring others on complex web development projects.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Candidate JD"
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "HTML/CSS Proficiency: Demonstrates strong skills in HTML and CSS for creating web page structure and styling.",
+      "EvaluationStrategy": "Review portfolio samples and ask technical questions related to HTML/CSS best practices, responsive design, and cross-browser compatibility.",
+      "Justification": "Fundamental for web development as stated in additional job description. Necessary to create well-structured and visually appealing websites.",
+      "ScoringGuided": [
+        {
+          "Comment": "Basic HTML/CSS skills. Limited understanding of responsive design or advanced styling techniques.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Solid HTML/CSS skills. Comfortable with responsive design and cross-browser compatibility.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Expert-level HTML/CSS skills. Deep understanding of advanced styling techniques and accessibility best practices.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Candidate JD"
+    },
+    {
+      "Description": "JavaScript Proficiency: Demonstrates strong skills in JavaScript for adding interactivity and dynamic functionality to websites.",
+      "EvaluationStrategy": "Review portfolio samples and ask technical questions related to JavaScript frameworks, DOM manipulation, and asynchronous programming.",
+      "Justification": "Fundamental for web development as stated in additional job description. Necessary to create interactive and dynamic user experiences.",
+      "ScoringGuided": [
+        {
+          "Comment": "Basic JavaScript skills. Limited experience with frameworks or advanced programming concepts.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Solid JavaScript skills. Comfortable with common frameworks and asynchronous programming.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Expert-level JavaScript skills. Deep understanding of advanced programming concepts and modern JavaScript frameworks.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Candidate JD"
+    },
+    {
+      "Description": "Back-End Technologies: Demonstrates experience with back-end technologies such as databases, server-side scripting languages (e.g., PHP, Python), and APIs.",
+      "EvaluationStrategy": "Review resume and ask questions about experience with database design, API integration, and server-side development.",
+      "Justification": "Necessary to build full-stack web applications that interact with databases and external services.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited experience with back-end technologies. Basic understanding of database concepts.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Solid experience with back-end technologies. Comfortable with database design, API integration, and server-side development.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Expert-level experience with back-end technologies. Deep understanding of database design, API architecture, and server-side scalability.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Candidate JD"
+    },
+    {
+      "Description": "Web Application Security: Knowledge of security principles and best practices for protecting web applications from common vulnerabilities.",
+      "EvaluationStrategy": "Assess the candidate's knowledge of web application security through interview questions about common vulnerabilities (e.g., XSS, SQL injection) and security best practices.",
+      "Justification": "Essential for developing secure web applications and protecting user data.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited knowledge of web application security principles. Unaware of common vulnerabilities.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of web application security principles. Aware of some common vulnerabilities and mitigation techniques.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Strong understanding of web application security principles. Knowledgeable about a wide range of vulnerabilities and security best practices.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Candidate JD"
+    },
+    {
+      "Description": "Content Management Systems (CMS): Experience with content management systems like WordPress or Drupal.",
+      "EvaluationStrategy": "Assess the candidate's experience with CMS platforms through resume review, portfolio analysis, and interview questions related to CMS development and customization.",
+      "Justification": "Valuable for managing and maintaining website content efficiently.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with CMS platforms.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic experience with CMS platforms. Can create and customize basic websites using CMS.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Extensive experience with CMS platforms. Can develop custom themes, plugins, and modules for CMS.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Candidate JD"
+    }
+  ]
+}

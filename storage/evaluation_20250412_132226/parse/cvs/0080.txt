@@ -1,0 +1,71 @@
+
+--- Page 1 ---
+ABC
+abc@gmail.com • (717) 727-xxxx • https://www.linkedin.com/in/abcnsgfoc (https://www.linkedin.com/in/abcnsgfoc)
+EDUCATION
+University of Texas at Arlington
+Arlington, TX
+Bachelor of Science in Business Analytics
+Expected Dec 2025
+Harrisburg Area Community College Harrisburg, PA
+Associate of Science in Business Administration / GPA 3.97 2019-2022
+RELEVANT COURSE WORK
+•
+Data Visualization and Business Intelligence
+•
+Business Finance
+•
+Advanced Statistics for Data Analytics
+•
+Strategic Management
+•
+Operation Management
+PROJECTS
+Financial Analysis of CVS Health Corp Sep 2024
+•
+Conducted a comprehensive financial analysis of CVS Health Corporation, leveraging business analytics
+techniques to evaluate key metrics.
+•
+Utilized Excel and financial modeling to analyze data trends and performance indicators.
+•
+Presented findings, highlighting actionable insights that informed strategic decision-making.
+Regression Analysis for Win Prediction in Basketball Dec 2023
+•
+Conducted regression analysis on real-world sports data to predict Total Wins in sports context.
+•
+Applied simple and multiple regression techniques, and analyzing variables
+•
+Created scatterplots and statistical models in Python, interpreting R-squared values and significance levels.
+•
+Developed data-driven insights and recommendations to improve predictive accuracy by incorporating
+additional variables.
+IPhone Market Performance Analysis Nov 2024
+•
+Analyzed iPhone sales and revenue trends from 2007 to 2022 to evaluate Apple’s market performance.
+•
+Compared iPhone model features, such as screen size, camera resolution, and battery life, to understand
+their impact on customer satisfaction.
+•
+Assessed the relationship between pricing, product features, and customer ratings to understand market
+dynamics.
+•
+Created interactive Tableau dashboards with visualizations to present key insights and trends in sales and
+customer feedback.
+VOLUNTEER EXPERIENCE
+Volunteer for All Majors Job & Internship Fair Fall 2022
+•
+Assist and provide general support for over 100 employers
+•
+Collaborated with a diverse team, showcasing teamwork and adaptability in a fast-paced environment.
+HONORS, AWARDS AND SCHOLARSHIP
+•
+Transfer Honors Scholarship – University of Texas at Arlington
+•
+Phi Theta Kappa Scholarship – Phi Theta Kappa
+•
+Dean’s list (2019-2022, fall 2023)
+SKILLS
+•
+Technical skills: Python, SQL, Tableau, HTML, Microsoft Office (Word, Excel, Power Point), Orange
+•
+Languages: English, Vietnamese

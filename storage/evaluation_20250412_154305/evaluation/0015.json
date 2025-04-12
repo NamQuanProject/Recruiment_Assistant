@@ -1,0 +1,59 @@
+{
+  "Authenticity": "9",
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "Hedy demonstrates strong technical proficiency with experience in multiple languages (C, Java, JavaScript, Python, R, Scala, SQL) and technologies (Docker, Flask, Git, Node.js, PyTorch, React.js, REST APIs). The projects and internships show practical application of these skills in data engineering and software development, indicating a good understanding of relevant technologies. The variety of tools mentioned (Apache Beam/Hadoop/Spark, BigQuery, GCP, Jira, Jenkins, Jupyter, Snowflake, Tableau) further supports a broad technical skillset. The descriptions of her work at Spotify and Apple show using Scala and Tableau, and using Node.js at Comtech.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The CV demonstrates solid problem-solving and analytical skills. The Spotify internship involved designing a cumulative aggregated dataset to unify data pipelines, resulting in significant compression and efficiency gains. At Apple, Hedy pioneered a multi-level Tableau dashboard system and streamlined complex data sources, leading to a substantial reduction in metric reporting time. The projects (RoadRisk and Flaming Insights) highlight the ability to analyze large datasets, build predictive models, and identify key trends and insights. She demonstrated use of dimension reduction to improve model performance.",
+      "score": "8"
+    },
+    {
+      "category": "Communication and Collaboration Skills",
+      "explanation": "Hedy's experience as a Lead Teaching Assistant indicates strong communication and collaboration skills. Managing and coordinating support tasks for undergraduate teaching assistants, as well as hosting weekly office hours for a large number of students, demonstrates the ability to communicate effectively and work in a team environment. The Apple internship also mentions presenting findings and recommendations to senior VPs. However, the CV could benefit from more explicit examples of teamwork in a professional setting.",
+      "score": "7"
+    },
+    {
+      "category": "Experience",
+      "explanation": "Hedy has gained substantial experience through multiple internships at reputable companies (Spotify, Apple, Comtech) and a teaching assistant role. The internships provided opportunities to work on real-world projects, utilize a variety of technologies, and contribute to significant improvements in data processing and reporting. While still a student (May 2026 graduation), the quantity and quality of experience are impressive. However, more years of experience would further increase the score.",
+      "score": "8"
+    },
+    {
+      "category": "Object-Oriented Design (OOD)",
+      "explanation": "The CV lists Object-Oriented Programming as a relevant course, and the UNC Department of Computer Science role involves teaching Object-Oriented Programming. However, there's no explicit mention of applying OOD principles in project descriptions. While the role as teaching assistant is promising, there's no demonstration of its practice.",
+      "score": "3"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The Comtech Telecommunications internship mentions automating the backend API test suite using Node.js and Chai, which demonstrates an understanding of the importance of testing. There is no mention, however, of code reviews or debugging tools. The CV could be improved by including more information about the approaches to ensuring code quality in other projects.",
+      "score": "4"
+    },
+    {
+      "category": "Teamwork \u0026 Communication",
+      "explanation": "Hedy's role as Lead Teaching Assistant suggests teamwork skills through managing and coordinating support tasks. The project descriptions lack specific details about teamwork experiences, but the teaching assistant experience shows that she can work with others and share ideas.",
+      "score": "4"
+    },
+    {
+      "category": "Staying Current",
+      "explanation": "The CV demonstrates a broad range of technologies and tools, suggesting an awareness of current industry trends. However, there is no explicit mention of keeping up with technical publications or articulating the latest trends. The technologies cited are relevant, but a clear statement of keeping abreast of the latest happenings is absent.",
+      "score": "3"
+    }
+  ],
+  "FinalScore": 75,
+  "PersonalInfo": {
+    "Address": null,
+    "Age": null,
+    "Email": "hedylamarr@email.edu",
+    "Experience_Years": null,
+    "FullName": "Hedy Lamarr",
+    "GitHub": null,
+    "LinkedIn": "linkedin.com/in/hedylamarr111",
+    "PathToCV": "storage/evaluation_20250412_154305/original/cvs/0015.pdf",
+    "PhoneNumber": "(555) 555-5555",
+    "Website": null,
+    "WorkFor": null
+  }
+}

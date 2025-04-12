@@ -40,6 +40,12 @@ func main() {
 		parsing.RunServer()
 	}()
 
+	go func() {
+		server := highlight.NewWebServer()
+		log.Println("Starting web server...")
+		server.Run()
+	}()
+
 	// Wait for interrupt signal (Ctrl+C)
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt)
 	defer stop()

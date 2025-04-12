@@ -1,0 +1,67 @@
+
+--- Page 1 ---
+Qualifications:
+d Bachelor’s/Master’s degree in Computer Science Engineering or Equivalent.
+Sample Job Descriptions
+#1 Software Engineer at Amazon
+Prime Video is changing the traditional television and movie industry with a vast library of high-
+quality media and reliable digital delivery. Our services are engineered for high availability,
+maximum reach, and cost savings that we can pass on to customers. We enable the world to
+watch the video instantly, across hundreds of devices, whether on the road or from the comfort of
+a living room sofa. Today, we deliver movies and TV shows to computers, gaming consoles,
+tablets, smartphones, and smart TVs. We operate in more than 200 countries, and we aspire to
+grow — a lot.
+Want to join a team working on a high-impact project with a direct and significant impact on the
+Prime Video business? Want to join a high visibility project still in the beginning phases with a
+lot of opportunities to innovate, design, and implement solutions that will have a direct impact
+on increasing customer selection, and reducing operating costs which in turn translates to lower
+prices for Amazon customers? In the Catalog Services team, we are writing highly scalable
+distributed services from the ground up to search and build intelligent relationships (hierarchical,
+duplicate, etc.) which will have an exponential impact on the way customers experience Prime
+Video titles. We work closely with many teams in the Prime Video supply chain as the
+relationship space affects the complete video supply chain.
+We are looking for talented software development engineers who are eager to shine by designing
+and developing world-class solutions. The engineering candidate wants to have ownership of a
+domain to deliver meaningful results to the customers. As an organization, we work hard to not only
+deliver results but invest in each team member’s career and skillsets goals. Additionally, we
+encourage the use of new technologies when the technology provides a clear advantage.
+Successful candidates for this position will have a strong background in designing and developing
+world-class microservices in Java, C++, C#, Python, NodeJS, or Ruby. Equally important to these
+specific candidate skills are excellently written and verbal communication skills both with the team
+and external teams, the ability to multitask, the ability to translate business requirements to
+engineering requirements, the ability to adapt quickly to new environments, and using creativity to
+solve difficult problems in a world-class engineering team.
+Keka for the love of employee experience
+
+--- Page 2 ---
+Come be a part of the greenfield initiative to create an impact in a fast-growing area within Amazon.
+BASIC QUALIFICATIONS
+i Programming experience with at least one modern language such as Java, C++, or C#
+including object-oriented design.[
+i Bachelor’s degree in computer science or a related field.[
+i 1+ years’ experience writing production code of increasing complexity.
+PREFERRED QUALIFICATIONS
+i Understanding of computer science fundamentals, including algorithms, complexity analysis, data
+structures, problem-solving, and object-oriented analysis and design.[
+i Working knowledge of programming languages other than Java, C, or C++ (e.g. Ruby).[
+i Working knowledge of databases, service-oriented architectures, and highly-scaled distributed
+systems.[
+i Excellent written and verbal communication.[
+i Experience with Amazon Web Services.[
+i Experience with mission-critical, 24×7 systems experience with high throughput cloud systems.[
+i Relentless customer focus.[
+i Excellent analytical skills.[
+i Experience implementing and consuming large scale web services.[
+i Masters degree in Computer Science or equivalent.
+Amazon is an Equal Opportunity Employer – Minority / Women / Disability / Veteran / Gender
+Identity / Sexual Orientation / Age. Pursuant to the Los Angeles Fair Chance Ordinance, we will
+consider for employment qualified applicants with arrest and conviction records.
+Source: amazon.jobs
+#2 Software Engineer Thomson Reuters
+Job Description
+Thomson Reuters is the world’s leading source of intelligent information for businesses and
+professionals. We combine industry expertise with innovative technology to deliver critical information
+to leading decision-makers in the legal and tax & accounting markets, powered by the world’s most
+trusted news organization. More information about Thomson Reuters and its financial performance
+can be found on www.ThomsonReuters.com.
+Keka for the love of employee experience

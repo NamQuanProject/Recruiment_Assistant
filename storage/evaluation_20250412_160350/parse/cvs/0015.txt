@@ -1,0 +1,59 @@
+
+--- Page 1 ---
+Hedy Lamarr
+hedylamarr@email.edu (mailto:hedylamarr@email.edu) • (555) 555-5555 • linkedin.com/in/hedylamarr111 (http://linkedin.com/in/hedylamarr111)
+EDUCATION
+University of North Carolina at Chapel Hill ​ May 2026
+B.S. in Computer Science, Statistics ​ Chapel Hill, NC
+Relevant Courses: Machine Learning, Data Structures, Algorithms, Files & Databases, Object-Oriented Programming
+TECHNICAL SKILLS
+Languages: C, Java, JavaScript, Python, R, Scala, SQL
+Technologies: Docker, Flask, Git, Node.js, PyTorch, React.js, REST APIs
+Tools: Apache Beam/Hadoop/Spark, BigQuery, GCP, Jira, Jenkins, Jupyter, Snowflake, Tableau
+EXPERIENCE
+Spotify ​ Jun. 2025 - Aug. 2025
+Data Engineer Intern​ New York, NY
+Designed a cumulative aggregated dataset hosted in BigQuery and GCS to unify multiple data pipelines for podcast
+●​
+consumption metadata, centralizing data sources and reducing computational overhead for various metrics
+Implemented the dataset using Scala and Apache Beam APIs, achieving a 60% compression versus the raw metadata source
+●​
+and enabling faster, more efficient queries
+Analyzed hundreds of trending, book-based playlists and conducted A/B tests to validate targeted audiobook campaigns,
+●​
+uncovering avenues for audience growth
+UNC Department of Computer Science ​ Aug. 2024 - Present
+Lead Teaching Assistant​ Chapel Hill, NC
+Hosting 10 weekly office hours and grading exams for over 200 students enrolled in Object-Oriented Programming
+●​
+Managing and coordinating support tasks for 12 undergraduate teaching assistants
+●​
+Apple Inc. ​ May 2024 - Aug. 2024
+Data Engineer Intern​ Cupertino, CA
+Pioneered a multi-level Tableau dashboard system for Apple Maps, automating project status reporting and KPI monitoring
+●​
+for 10+ regional sub-teams
+Streamlined complex data sources in Hive using data wrangling techniques, reducing metric reporting time by 95%
+●​
+Evaluated and presented findings and recommendations for data infrastructure optimization to senior VPs
+●​
+Comtech Telecommunications ​ May 2023 - May 2024
+Software Engineer Intern​ Remote
+Built and deployed 8 new front-end features and improvements to the emergency locator web platform within 6 months
+●​
+Automated 100% of the backend API test suite using Node.js and Chai and implemented real-time status monitors for
+●​
+critical APIs, leading to a 95% reduction in error response time
+PROJECTS
+RoadRisk | R, Python ​ Dec. 2024
+Interpreted over 6 million traffic incident records and built Random Forest, Naive Bayes, Logistic Regression, and SVM
+●​
+models to predict accident severity, reaching an accuracy of 83%
+Employed dimension reduction and random undersampling techniques to improve model performance by +10%
+●​
+Flaming Insights | Python, Tableau ​ Sep. 2024
+Conducted data analysis on 1.88 million wildfire records spanning 24 years, revealing a significant increase in the
+●​
+frequency of wildfires, with an annual growth rate of 3.5%
+Identified the top 5 fire-prone counties and found that Human Activity was the leading cause in 64% of cases
+●​

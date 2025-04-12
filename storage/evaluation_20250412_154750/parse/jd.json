@@ -1,0 +1,216 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assesses the candidate's hands-on coding abilities and understanding of relevant technologies, languages, and tools essential for the software engineer role.",
+      "EvaluationStrategy": "Evaluate through coding tests, technical interviews focusing on data structures, algorithms, system design, and past project experiences. Verify proficiency in required languages (Java, C++, C#, Python) and relevant technologies (databases, web services, cloud platforms).",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited practical coding skills, struggles with basic concepts, and lacks understanding of core technologies.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates basic coding proficiency, understands fundamental concepts, and has some experience with relevant technologies but requires guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong coding skills, good understanding of relevant technologies, capable of independent problem-solving, and can contribute effectively to projects.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Expert-level coding skills, deep understanding of technologies, independently drives projects, and can mentor others.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem Solving and Analytical Skills: Evaluates the candidate's ability to analyze complex problems, devise effective solutions, and think critically.",
+      "EvaluationStrategy": "Utilize problem-solving questions, case studies, and behavioral questions. Assess the candidate's approach to problem decomposition, algorithm design, and debugging. Look for evidence of analytical thinking, logical reasoning, and attention to detail.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze problems, lacks logical reasoning, and has difficulty devising solutions.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can analyze simple problems, demonstrates basic logical reasoning, and can propose solutions with guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Effectively analyzes complex problems, demonstrates strong logical reasoning, and independently develops effective solutions.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Exceptional analytical and problem-solving skills, consistently finds innovative solutions, and anticipates potential issues.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration: Assesses the candidate's ability to effectively communicate technical concepts, work collaboratively in a team, and interact with stakeholders.",
+      "EvaluationStrategy": "Assess through behavioral questions, group interviews, and reference checks. Evaluate the candidate's ability to articulate technical ideas clearly, actively listen to others, and contribute constructively to team discussions. Assess their experience working in collaborative environments and resolving conflicts.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication skills, struggles to articulate ideas, and has difficulty working in a team.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate communication skills, can articulate basic ideas, and can work in a team with some guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong communication skills, effectively articulates complex ideas, and works collaboratively in a team environment.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Exceptional communication and collaboration skills, effectively influences stakeholders, and fosters a positive team environment.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Experience and Qualifications: Evaluates the candidate's level of relevant experience, education, and certifications related to software engineering.",
+      "EvaluationStrategy": "Review resume, verify educational credentials, and assess experience through work history and project descriptions. Focus on the depth and breadth of relevant experience, the complexity of projects undertaken, and the candidate's contributions to those projects.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited relevant experience or education, lacks required certifications.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Meets minimum experience requirements, has basic education, and may have some certifications.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Solid relevant experience, appropriate education, and relevant certifications.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Extensive and highly relevant experience, advanced education, and industry-recognized certifications.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Adaptability and Learning Agility: Assesses the candidate's willingness and ability to learn new technologies, adapt to changing priorities, and embrace new challenges.",
+      "EvaluationStrategy": "Assess through behavioral questions related to past experiences with new technologies, changing priorities, and challenging situations. Evaluate their approach to learning, their resourcefulness in finding solutions, and their resilience in overcoming obstacles.",
+      "ScoringGuided": [
+        {
+          "Comment": "Resistant to change, struggles to learn new technologies, and lacks adaptability.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Willing to learn but requires significant guidance, adapts slowly to change, and may struggle with new challenges.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Demonstrates a proactive approach to learning, adapts well to change, and embraces new challenges.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Highly adaptable and quick learner, thrives in dynamic environments, and proactively seeks out new challenges.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality and Testing: Evaluates the candidate's ability to write clean, maintainable, and well-tested code.",
+      "EvaluationStrategy": "Review code samples, conduct coding exercises, and ask questions about testing methodologies. Assess the candidate's understanding of code design principles, their ability to write unit tests, and their experience with code reviews.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor code quality, lacks testing skills, and does not adhere to coding standards.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Acceptable code quality, basic testing skills, and generally follows coding standards.",
+          "Range": "3"
+        },
+        {
+          "Comment": "High-quality code, strong testing skills, and consistently adheres to coding standards.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "System Design: Assesses the candidate's ability to design scalable, reliable, and efficient software systems.",
+      "EvaluationStrategy": "Utilize system design interview questions and case studies. Assess the candidate's understanding of system architecture, distributed systems, databases, and networking. Evaluate their ability to make informed design decisions based on performance, scalability, and security considerations.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of system design principles and struggles to design even simple systems.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of system design and can design simple systems with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong understanding of system design and can independently design complex systems.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Teamwork and Collaboration: Evaluates how well the candidate works with others and contributes to a team environment.",
+      "EvaluationStrategy": "Use behavioral interview questions to assess past collaborative experiences. Ask about conflict resolution, contribution to team goals, and communication style within a team.",
+      "ScoringGuided": [
+        {
+          "Comment": "Difficulty working in teams, struggles with communication, and avoids collaboration.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Works adequately in teams, communicates effectively, and contributes to team goals.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Excelent team player, communicates effectively, and actively contributes to team success.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Domain Knowledge: Evaluates the candidate's understanding of the specific industry or business domain relevant to the software engineering role (e.g., e-commerce, video streaming).",
+      "EvaluationStrategy": "Ask questions about industry trends, best practices, and relevant technologies. Assess the candidate's familiarity with the company's products and services, as well as the competitive landscape.",
+      "ScoringGuided": [
+        {
+          "Comment": "Lacks understanding of the industry and its specific challenges.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic knowledge of the industry and some related challenges.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Solid understanding of the industry and its key challenges.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Continuous Learning: Assesses the candidate's commitment to staying up-to-date with the latest technologies and trends in software engineering.",
+      "EvaluationStrategy": "Ask questions about professional development activities, participation in industry events, and personal projects. Assess the candidate's awareness of emerging technologies and their interest in exploring new tools and techniques.",
+      "ScoringGuided": [
+        {
+          "Comment": "No evidence of recent learning activities or interest in new technologies.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Demonstrates some interest in learning and may have participated in some recent training.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Actively pursues professional development and stays up-to-date with the latest technologies.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

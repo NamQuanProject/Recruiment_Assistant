@@ -1,0 +1,75 @@
+
+--- Page 1 ---
+HUNG TRUONG
+linkedin.com/in/hungtk04/ (https://www.linkedin.com/in/hungtk04/)
+Tampa, FL | hungkhanh.truong112@gmail.com (mailto:hungkhanh.truong112@gmail.com) | (813) 861 – 4852 | | github.com/Hungruong (https://github.com/Hungruong)
+EDUCATION
+University of South Florida – Tampa, FL Dec 2025
+Major: Computer Science GPA: 3.87
+Relevant Coursework: Data Structure and Algorithms, Computer Logic and Design, Program Design, Computer Organization,
+Object Oriented Programming, Design Pattern, Distributed Systems, Discrete Math, Prob/Statistics, Linear Systems
+WORK EXPERIENCE
+FPT Software Remote
+Software Engineer Intern May 2023 – Aug 2023
+•
+Developed a comprehensive CRM website using Angular, catering to a user base exceeding 100,000 individuals within the
+rental housing and apartment industry.
+•
+Integrated and extended functionalities of Django and ASP.NET APIs to facilitate essential features, including email/text
+management and appointment scheduling, resulting in a 30% reduction in response time and increased user satisfaction.
+•
+Utilized Bootstrap framework to enhance platform aesthetics according to Figma design specifications and collaborated with
+UX design to reduce scheduling conflicts by 40%.
+•
+Collaborated within an Agile environment, engaging with a cross-functional team of over 25 members, including software
+engineers, testers, and manager to execute and validate development tasks effectively, ensuring on-time project delivery.
+Flow Austin, Texas
+Software Engineer Intern Apr 2023 – Aug 2023
+•
+Implemented architectures using Django REST/CRUD and Axios API calls, resulting in a 25% reduction in response time for
+API calls, from 200ms to 150ms, enhancing the efficiency and responsiveness of the system.
+•
+Utilized React JS for the front-end interface, enhancing the user experience and interface with Material UI, which resulted in
+50% faster loading time and 20% increase conversion rate.
+•
+Enhanced an AI recommendation system to optimize user experience, leading to a 50% increase in customer engagement
+through the implementation of an auto-reply function.
+•
+Executed SaaS platforms, including ZoomInfo, Outreach, and Salesforce leading to a 200% increase in sales productivity.
+•
+Led and mentored a full-stack team of 5 interns, enhancing their skill sets in front-end technologies and fostering a
+collaborative and learning-focused team environment.
+University of South Florida Tampa, Florida
+Research Assistant Jan 2023 – May 2023
+•
+Constructed and managed SQL Management Server and PostgreSQL, ensuring robust and efficient database operations.
+•
+Analyzed collected data using Python and SQL, identifying key variables accounting for 90% variance in data, improving the
+accuracy of predictive models.
+•
+Authored weekly reports summarizing test results and data insights, contributing to a 15% increase in product adoption rates.
+PROJECTS
+Skinet Ecommerce App (Github) (https://github.com/Hungruong/Skinet-Ecommerce-App) | Personal Project
+•
+Develope online grocery shopping website using ASP.Net with Stripe to implement payment, and JWT tokens for user
+authentications and enhanced application performance through caching and lazy loading promise techniques.
+•
+Designed and implemented interactive front-end components with Angular, TypeScript, Bootstrap and PostgreSQL databases
+enabling users to view products, add products to a cart, search for products, track orders, and process payments.
+•
+Developed a robust API architecture with over 300 endpoints in a C# backend.
+Chat Bot App (Github) (https://github.com/Hungruong/Chat_bot_app) | Personal Project
+•
+Integrated Chat Engine to enable real-time chat functionality, facilitating seamless and interactive communication between
+users and the chatbot, using JavaScript, ReactJS, HTML, SCSS and Heroicons to customize the app’s UI.
+•
+Assigned Open API for an AI chatbot, facilitating user interaction and enabling seamless initiation of new chats and interactions
+with other users in an interactive manner.
+•
+Implemented Redux Toolkit and Redux Toolkit Query for efficient state management and streamlined data fetching in the web
+application, with backend using NodeJS and ExpressJS frameworks.
+SKILLS
+Languages: C, C++, C#, Java, Python, CSS, HTML, Javascript, Typescript, GraphQL, SQL
+Technologies/ Environments: MySQL, PostgreSQL, SQL Management Server, Spring Boot, ASP.Net, NodeJS, ReactJS,
+NextJS, Django, Angular, SCSS/SASS, styled-components, Bootstrap, Redux, Express JS, Redis, ESLint, Git/GitHub, Postman,
+VS Code, Visual Studio, IntelliJ, PyCharm, Eclipse, Linux (Ubuntu 22.04), Docker

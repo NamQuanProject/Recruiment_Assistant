@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Proficiency with the C#, C++, Objective-C, or JavaScript programming languages.",
+    "page": 1,
+    "x": 28.8,
+    "y": 657.63,
+    "width": 158.82,
+    "height": 15.01,
+    "description": "This is a strong area because the job posting explicitly requires proficiency in C#, C++, Objective-C, or JavaScript. The CV lists JavaScript under Languages, indicating the candidate meets this requirement. Although the CV does not explicitly confirm knowledge in C#, C++ or Objective-C, JavaScript knowledge should be enough in order to proceed.",
+    "type": "strong"
+  },
+  {
+    "text": "Designed a cumulative aggregated dataset hosted in BigQuery and GCS to unify multiple",
+    "page": 1,
+    "x": 56.94,
+    "y": 318.74,
+    "width": 395.71,
+    "height": 15.01,
+    "description": "This is a strong area because it showcases experience with data engineering, a valuable skill for a software engineer. The description highlights the ability to design and implement data solutions, which demonstrates problem-solving and technical skills.",
+    "type": "strong"
+  },
+  {
+    "text": "React, Node.js, TensorFlow, Pandas",
+    "page": 1,
+    "x": 141.94,
+    "y": 672.64,
+    "width": 158.81,
+    "height": 15.01,
+    "description": "This is a strong area. The mention of React and Node.js demonstrates web development skills which are listed as beneficial for the role. Mentioning frameworks/libraries such as TensorFlow and Pandas, shows the candidate is up to date on the latest tech stack and has the drive to keep up with those.",
+    "type": "strong"
+  },
+  {
+    "text": "Agile, Test-Driven Development, CI/CD",
+    "page": 1,
+    "x": 105.12,
+    "y": 702.65,
+    "width": 182.97,
+    "height": 15.01,
+    "description": "This is a strong area because it indicates familiarity with software development methodologies and best practices, highlighting the ability to work effectively in a team and deliver high-quality code.",
+    "type": "strong"
+  },
+  {
+    "text": "●​ Conduct data preprocessing and feature engineering on large-scale cybersecurity datasets using Spark and",
+    "page": 1,
+    "x": 46.8,
+    "y": 578.23,
+    "width": 503.07,
+    "height": 15.01,
+    "description": "This is a strong area because it shows experience with data preprocessing and usage of Spark, indicating skills in big data processing and analysis, which are relevant and valuable in modern software engineering roles.",
+    "type": "strong"
+  },
+  {
+    "text": "[Email] | [Phone] | [LinkedIn Profile] | [GitHub Profile] | [Portfolio (if applicable)]",
+    "page": 1,
+    "x": 114.88,
+    "y": 45.09,
+    "width": 382.24,
+    "height": 15.66,
+    "description": "This is a weak area because the email and phone number are missing and uses placeholders. Providing direct contact information makes it easier for the recruiter to reach out.",
+    "type": "weak"
+  },
+  {
+    "text": "Thesis (if applicable):",
+    "page": 1,
+    "x": 56.94,
+    "y": 179.3,
+    "width": 103.68,
+    "height": 15.01,
+    "description": "This is a weak area. Although the candidate included the topic of their thesis, the fact that is applicable makes it seem unimportant and not required. This could be improved by removing '(if applicable)' to highlight the importance of having a thesis, and showing the complexity and understanding by expanding on the topic.",
+    "type": "weak"
+  },
+  {
+    "text": "UNC-Chapel Hill – Department of Computer Science (Cybersecurity Lab)​",
+    "page": 1,
+    "x": 28.8,
+    "y": 518.2,
+    "width": 359.58,
+    "height": 15.01,
+    "description": "This is a weak area because the role does not include the dates of the applicant research. It is important to include dates to show how long you've been researching for as this demonstrates commitment and passion to the subject.",
+    "type": "weak"
+  },
+  {
+    "text": "Excellent debugging and problem-solving skills.",
+    "page": 1,
+    "x": 28.8,
+    "y": 635.25,
+    "width": 113.66,
+    "height": 15.66,
+    "description": "This is a weak area. Instead of stating that you are excellent, the applicant should include examples of how they solved problems and debugged software. For example, using the existing text they should reference how they improved model robustness by 18% through defensive training.",
+    "type": "weak"
+  },
+  {
+    "text": "Beneficial Skills:\n●\tUnity or Unreal game engine experience.\n●\tWeb development skills (HTML/CSS, JavaScript).",
+    "page": 1,
+    "x": 28.8,
+    "y": 657.63,
+    "width": 158.82,
+    "height": 15.01,
+    "description": "This is a weak area because the candidate's resume does not explicitly state or mention experience within the Unity or Unreal Game Engine. While they show web development experience, showing experience or skills with game engines will boost the profile for the applicant. By adding this to the resume, it shows that they're aware of the requirement and proactively working towards improving on the potential area of improvement.",
+    "type": "weak"
+  }
+]

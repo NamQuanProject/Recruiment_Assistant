@@ -1,0 +1,190 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assesses the candidate's grasp of fundamental computer science concepts, programming languages, and software development methodologies relevant to the role.",
+      "EvaluationStrategy": "Evaluate based on resume details, code samples (if available), and performance in technical interview questions focusing on data structures, algorithms, and system design. Assess experience with Java, C++, C#, Python, NodeJS, Ruby, HTML5, CSS3, relational databases, ORM, SQL and web application frameworks.",
+      "Justification": "Essential for building, maintaining, and improving software systems. Directly addresses the 'BASIC QUALIFICATIONS', 'PREFERRED QUALIFICATIONS' and skills requirements sections from the Main JD \u0026 Candidate JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of fundamental concepts and/or required programming languages. Lacks practical experience.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of concepts and some experience with relevant languages. Requires guidance on complex tasks.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong grasp of fundamental concepts and proficient in several required languages. Can independently handle complex tasks and propose solutions.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert understanding of concepts and mastery of multiple relevant languages. Can lead technical discussions, mentor others, and drive innovation.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Main JD \u0026 Candidate JD"
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Evaluates the candidate's ability to analyze complex problems, identify root causes, and develop effective solutions in a software engineering context.",
+      "EvaluationStrategy": "Utilize behavioral interview questions focusing on past experiences with challenging projects. Assess responses for logical reasoning, attention to detail, and creativity in problem-solving. Include technical questions that require analytical thinking and algorithmic design.",
+      "Justification": "Critical for debugging, optimizing, and designing efficient software systems. Addresses 'understanding of computer science fundamentals', 'Excellent analytical skills' and examining existing systems for flaws from the Main JD \u0026 Candidate JD",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze problems and identify root causes. Difficulty developing effective solutions.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can analyze basic problems with some guidance. Develops solutions with assistance from others.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Independently analyzes complex problems and develops effective solutions. Proactively identifies potential issues and proposes preventative measures.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving skills. Can quickly identify and resolve complex issues, develop innovative solutions, and mentor others in problem-solving techniques.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Main JD \u0026 Candidate JD"
+    },
+    {
+      "Description": "Communication and Collaboration: Assesses the candidate's ability to communicate effectively, work collaboratively in a team environment, and interact professionally with stakeholders.",
+      "EvaluationStrategy": "Evaluate through behavioral interview questions focusing on teamwork, conflict resolution, and communication skills. Assess the candidate's clarity and conciseness in explaining technical concepts. Consider references from previous employers or colleagues.",
+      "Justification": "Essential for working effectively in software development teams and interacting with clients or other departments. Directly correlated to 'excellently written and verbal communication skills' from the Main JD and collaboration responsibilities in Candidate JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication skills. Struggles to work effectively in a team environment.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate communication skills. Can collaborate with others with some effort.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong communication skills. Collaborates effectively with team members and stakeholders.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional communication and collaboration skills. Can lead technical discussions, mentor others, and build strong relationships with stakeholders.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Main JD \u0026 Candidate JD"
+    },
+    {
+      "Description": "Experience and Adaptability: Evaluates the candidate's relevant work experience, their ability to learn new technologies, and adapt to changing project requirements.",
+      "EvaluationStrategy": "Review the candidate's resume for relevant work experience and projects. Ask behavioral interview questions that assess their ability to learn new technologies and adapt to new environments. Evaluate their knowledge of industry best practices and emerging trends.",
+      "Justification": "Ensures the candidate can contribute effectively and keep up with evolving technologies. Directly derived from '1+ years’ experience writing production code of increasing complexity', 'Experience with Amazon Web Services' and 'Experience with mission-critical, 24×7 systems experience with high throughput cloud systems' from the Main JD \u0026 Candidate JD",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited relevant experience. Struggles to learn new technologies and adapt to changing requirements.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Some relevant experience. Can learn new technologies and adapt to changing requirements with some support.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Significant relevant experience. Quickly learns new technologies and adapts effectively to changing requirements.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Extensive relevant experience. A quick learner who thrives in dynamic environments and proactively seeks out new challenges and technologies.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Main JD \u0026 Candidate JD"
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality and Testing: Assesses the candidate's understanding and application of coding best practices, including code readability, maintainability, and thorough testing.",
+      "EvaluationStrategy": "Review code samples (if available) for adherence to coding standards, use of comments, and modular design. Ask technical interview questions about testing methodologies, including unit testing, integration testing, and end-to-end testing. Assess knowledge of debugging tools and techniques.",
+      "Justification": "Ensures reliable and maintainable software. Directly related to responsibilities in the Candidate JD to ensure software and networking platforms that are free of faulty programming.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor code quality, lacks testing practices.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Adequate code quality, basic testing knowledge.",
+          "Range": "3"
+        },
+        {
+          "Comment": "High code quality, strong testing practices.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Candidate JD"
+    },
+    {
+      "Description": "System Design and Architecture: Assesses the candidate's ability to design scalable, robust, and efficient software systems, considering factors like performance, security, and maintainability.",
+      "EvaluationStrategy": "Present system design problems during technical interviews and evaluate the candidate's proposed solutions. Assess their understanding of different architectural patterns and their ability to justify design choices. Evaluate based on 'PREFERRED QUALIFICATIONS' from the Main JD.",
+      "Justification": "Essential for building and maintaining complex software systems. This is mentioned in the 'building world-class microservices' section of the Main JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of system design principles.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of system design.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong understanding of system design principles and practices.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Main JD"
+    },
+    {
+      "Description": "Adaptability to New Technologies: Determines the candidate's capacity to learn and apply new technologies, frameworks, and tools in a fast-paced software development environment.",
+      "EvaluationStrategy": "Ask about candidate's experience with adopting new technologies in past projects. Evaluate the speed with which they grasped new concepts and their capacity to apply it. Look for signs of continuous learning in the candidate's history, indicated by attending conferences, and taking online courses.",
+      "Justification": "To remain relevant and to allow the organization to be agile. This relates to the Amazon's encouragement of new technologies mentioned in the Main JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Slow to grasp new technology, resistant to change.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Adequately adapts to new tech, moderate learning curve.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Quickly grasps and applies new tech, embraces change.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Main JD"
+    },
+    {
+      "Description": "Teamwork and Collaboration: Gauges the candidate's skills and experiences in collaborative settings, problem-solving within a team, and general ability to communicate with other team members.",
+      "EvaluationStrategy": "Utilize behavioral questions to assess the candidate's teamwork skills, like the ability to resolve conflicts, and to provide and receive constructive criticism. Evaluate them on their capacity to clearly explain the rationale behind their decisions during discussions.",
+      "Justification": "To create high-functioning teams to deliver the best products. This is derived from the Main JD requiring verbal and written skills, as well as many areas of the Candidate JD relating to collaboration.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication, struggles to collaborate.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Adequate communication, collaborates adequately.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Effective communication, collaborates effectively.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Main JD \u0026 Candidate JD"
+    }
+  ]
+}

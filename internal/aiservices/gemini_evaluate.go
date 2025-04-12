@@ -45,6 +45,7 @@ func GeminiEvaluateScoring(jobType, mainCategory, CV, cv_id string) (map[string]
 	- Provide a **detailed explanation per category**: highlight candidate strengths, weaknesses, what's missing, and how well the CV aligns with the job.
 	- Stay unbiased: **do NOT** make assumptions about gender, ethnicity, nationality, religion, or personal appearance.
 	- If the CV provides **verifiable links or certifications**, give an **Authenticity Score (1–10)** explaining how trustworthy the information appears.
+	- If the provide CV is not really a CV just return 0 for all score of all category with the explanation the provided CV is not a CV at all.
 	
 	📁 **Evaluation Categories:**  
 	%s

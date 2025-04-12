@@ -1,0 +1,101 @@
+
+--- Page 1 ---
+Han Nguyen
+System Developer
+tuyethan97@gmail.com | Github: TuyetHan (https://github.com/TuyetHan) | LinkedIn: ThanhTuyetHan Nguyen (https://www.linkedin.com/in/thanh-tuyet-han-nguyen-759887239/)
+Summary
+A software engineer with a Master’s degree from Aalto University and three years of experience in the automotive
+sector. I deeply understand the industry’s characteristics, development processes, and challenges. Highly motivated by
+the potential of machine learning, I am eager to further explore its applications within the automotive domain. Over
+the next two years, my focus will be on integrating machine learning techniques to optimize processes, enhance
+efficiency, and drive innovation in the automotive sector.
+Experience
+•Aalto University
+June 2023 - Aug 2023
+Research Assistant Espoo, Finland
+Implement MIXER logic into 4DIAC platform using C++. The work also includes designing component architecture,
+–
+defining test cases, and then performing testing on Debian devices.
+Tools: SSH, WinSCP, Cmake, Vscode, Github
+–
+•BOSCH
+Feb 2019 - July 2022
+Embedded System Software Developer Ho Chi Minh, Vietnam
+Main responsible:
+–
+∗Implement
+communication between ECUs using Autosar and C language. Test developed software by using official test
+techniques (white-box testing, black-box testing, range testing, MCDC,...) and tools such as HiL, SiL.
+∗Cooperate
+with other developers to ensure a smooth development process. Debug, analyse reported problems and
+support customers when they need it.
+Skill gains:
+–
+∗Deep
+knowledge of C, Embedded System, Micro Controller, CAN Communication. Familiarise with Autosar, ASPICE.
+∗Teamwork,
+Active Listening, Negotiation, Time management, Prioritizing, Problem Solving, Analysing, Mentoring.
+Tools: Beyond Compare, CAPL, CAN analyser, SharCC (internal), Doors.
+–
+Education
+•Eötvös Loránd University
+Sep 2023 - Aug 2024
+MSc in Computer Science, Autonomous Systems specialization Budapest, Hungary
+– GPA: (accumulate) 5/5
+Main Course: 3D Sensing and Sensor Fusion, Image and Video Processing, Advance Deep Network Development, Introduc-
+–
+tion to Vehicles and Sensors
+Thesis: Camera and LiDAR Calibration Transformer
+–
+∗Skill
+gains: Distributed Training, FSDP, Data Parallel, Point cloud and image processing, Deep Learning model design.
+∗Tools:
+Vscode, Github, SLURM, HPC, Google Colab, SSH, VastAI.
+∗Language
+and Library: Python, Pytorch, torchpoint3D, OpenCV, Accelerate, FSDP.
+•Aalto University
+Sep 2022 - Aug 2023
+Master of Science, Autonomous Systems Espoo, Finland
+GPA: 4.74/5
+–
+– Main Course: Sensor Fusion, Machine Learning, Deep Learning, Embedded System Development
+•HCM University of Technology and Education
+Sep 2022 - Aug 2023
+Bachelor, Electronics and Communication Engineering Ho Chi Minh, Vietnam
+– GPA: 8.11/10
+Thesis: Hand-writing Recognition using Deep Learning
+–
+Technical Skills
+Programming Languages: Python, C/C++
+•
+Tools and Frameworks: Visual Studio, Github, Cmake, OpenCV, WinSCP
+•
+Operating Systems:Windows, Linux
+•
+
+--- Page 2 ---
+Projects
+•Camera and LiDAR Calibration Transformer
+Mar 2022 - Apr 2023
+Master Thesis Project (on going) CamLidCalib (https://github.com/TuyetHan/CamLidCalib_Trans)
+Design, implement, and test several transformer architectures on Point Cloud and Camera Image. The objective is not only
+–
+to find intrinsic/ extrinsic parameters but rather to find the correct transformed point clouds to project on the image.
+Apply data augmentation and data processing techniques on the original Kitti dataset, creating infinite new samples. Build
+–
+calibration pipeline and design evaluation metrics.
+Perform training on several platforms, such as Google Colab, HPC, VastAI or Google Cloud.
+–
+•MIXER in 4DIAC
+Jun 2023 - Aug 2023
+Research Assistant, Aalto Univeristy DisWirCont (https://github.com/TuyetHan/DistributedWirelessControl)
+Implement MIXER logic into 4DIAC platform, the main task is design component structure, coding, testing, and documen-
+–
+tation.
+•Deep Learning Basic
+Jun 2023 - Aug 2023
+Course Homework, Aalto Univeristy DeepLearning (https://github.com/TuyetHan/DeepLearningBasic)
+Homework for Deep Learning Course: Implement several Deep Network architecture such as Auto Encoder, Diffusion,
+–
+Transformer, GNN,..
+Last updated: May 2, 2024

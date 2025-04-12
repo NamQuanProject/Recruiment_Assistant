@@ -1,0 +1,72 @@
+
+--- Page 1 ---
+Huu Nguyen (Anthony)
+Brooklyn, NY | (646) 875-2780 | huu.nguyen149@outlook.com| (mailto:huu.nguyen149@outlook.com) www.linkedin.com/in/anthony-nguyen914 (http://www.linkedin.com/in/anthony-nguyen914)
+EDUCATION
+Baruch College, Zicklin School of Business | New York, NY | MS in Business Analytics 12/23
+•
+Coursework: Big Data Tech, Data Mining, Programming for Analytics, Data Warehousing , Natural Language Processing
+Fashion Institute of Technology | New York, NY | BS in Fashion Business Management 05/21
+•
+Coursework: Managerial Statistics, Marketing Management, Data Analysis for Business Applications
+SKILLS & INTERESTS
+Computer Skills: SQL, Python (pandas, numpy, json), AWS (Kinesis, Athena, Lambda), Excel (VLOOKUP, PivotTables, Macros), R
+(dplyr, ggplot2, tidyr), Tableau, MS Office, Google Suite, VS Code
+Certifications: JDA Enterprise Planner Certificate, MS Excel Certified Application Specialist, Tableau Citizen Data Science Certificate
+Languages: Fluent in English and Vietnamese
+Interests: Technology, Artificial Intelligence, Photography, Sports, Traveling, Fashion, and Sustainability
+PORTFOLIO
+OpenSponsorship Data Analytics Challenge: [Tools: Python • Pandas • Matplotlib • Seaborn] 10 Hours
+•
+Brand Engagement Deep Dive: Leveraged data visualization to identify 'Brand' as the dominant role. Suggest exclusive content
+and promotions to boost retention at Plan Level 0.
+•
+Campaign Onboarding Analysis: Analyzed brand behavior, revealing a 54-day average to launch campaigns. Recommend
+process optimizations for quicker onboarding.
+•
+User Search Behavior Insights: Used statistical analysis to detect search behavior contrasts between Plan Levels 0 and 3.
+Propose tailored real-time alerts based on these patterns.
+Stock Price Pipeline and Visualization for E-Commerce: [Tool: AWS • Python] 10 hours
+•
+Monitored giants like Amazon, Alibaba; spotlighted Costco's volatility, advising on market shifts and investment strategies.
+•
+Built a real-time data pipeline with AWS, tracking stocks across 10 e-commerce platforms.
+•
+Leveraged AWS Athena & Glue for data extraction, visualizing market dynamics for informed planning.
+NYC Subway Crime Analysis: [Tools: Tableau • Python• Alteryx] 16 hours
+•
+Advised resource allocation for safety, emphasizing stations needing enhanced security based on crime trends.
+•
+Analyzed 63,505 crimes, identifying Manhattan and specific outlying stations as top concerns.
+•
+Used a color-coded map to highlight crime hotspots, peak times, and vulnerable stations like the 125th.
+Five-year Performance Analysis of MSFT: [Tools: Python •Excel] 11 hours
+•
+Analyzed MSFT over five years, finding a strong correlation with the S&P500's market trends.
+•
+Suggested to stakeholders that MSFT's trends can offer a snapshot of the broader market, aiding in informed decisions.
+•
+Employed Python and Excel for data extraction, visualizing the close MSFT - S&P500 relationship.
+EXPERIENCES
+Watchfinder&Co | New York, NY | Operation Analyst 12/21 - 12/22
+•
+Inspected and analyzed data for 50 watches weekly, aiding in achieving annual sales and purchasing targets.
+•
+Processed 20 manifests daily and reduced stock discrepancies by 10% by utilizing data analysis and inventory management.
+Yigal Azrouel | New York, NY | Merchandising & Marketing Coordinator 01/20 - 06/20
+•
+Assisted in sales meetings, effectively communicating data-driven insights to buyers.
+•
+Conducted market research to identify fashion trends and supported data-driven event planning and promotions.
+LEADERSHIP & OTHER AFFILIATIONS
+AMA (American Marketing Association) 08/22 - Present
+•
+Coordinating transformative events and workshops as a committee member at AMA, Baruch College, to foster personal growth
+and professional development in a diverse student body.
+Data Science and Analytics Society - event planning member 08/22 - Present
+•
+Coordinated 6 workshops and events, resulting in an estimated 10% uptick in event attendees, enhancing students' data
+expertise.
+Operation Christmas Child - volunteer 12/21 - 12/22
+•
+Participated in the wrapping and distribution process, successfully handling around 200,000 gifts over two years.

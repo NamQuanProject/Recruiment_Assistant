@@ -1,0 +1,59 @@
+{
+  "Authenticity": 8,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "Hedy lists a wide array of languages (C, Java, JavaScript, Python, R, Scala, SQL) and technologies (Docker, Flask, Git, Node.js, PyTorch, React.js, REST APIs). She also demonstrates experience with tools like Apache Beam/Hadoop/Spark, BigQuery, GCP, Jira, Jenkins, Jupyter, Snowflake, and Tableau. This suggests a strong understanding of fundamental concepts and proficiency in several relevant languages. The projects and experience provide context for the listed skills, increasing confidence in her abilities. However, the depth of expertise in each area is difficult to ascertain from the resume alone, but the breadth is impressive for someone early in their career.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate showcases problem-solving skills through her experience at Spotify, Apple, and in her personal projects. For example, at Spotify, she designed a data set to unify multiple data pipelines, achieving significant compression. At Apple, she streamlined complex data sources, reducing metric reporting time significantly. Her projects, such as RoadRisk and Flaming Insights, involve data analysis and predictive modeling, demonstrating analytical thinking and the ability to derive insights from data. These experiences clearly demonstrate her capacity to analyze problems and develop effective solutions.",
+      "score": "8"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The resume demonstrates strong communication and collaboration skills, particularly through her role as a Lead Teaching Assistant at UNC, where she manages and coordinates support tasks for undergraduate teaching assistants. Her experience at Apple includes presenting findings and recommendations to senior VPs, indicating effective communication skills. The descriptions of her internships also highlight her ability to work within teams and contribute to projects effectively. While there are no explicit statements about teamwork, the roles imply collaboration.",
+      "score": "7"
+    },
+    {
+      "category": "Experience and Adaptability",
+      "explanation": "The candidate has gained diverse experience through internships at Spotify, Apple, and Comtech Telecommunications. She has worked with data engineering, software engineering, and data analysis, showing adaptability to different roles and technologies. The resume indicates experience writing code, building features, and automating test suites. The variety of technologies and tools used in her projects and internships suggests a willingness to learn and adapt to new environments and technologies. The progression of roles, including a teaching assistant position, shows a growth in responsibility.",
+      "score": "8"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The candidate automated the backend API test suite at Comtech Telecommunications using Node.js and Chai, leading to a significant reduction in error response time. This showcases her understanding of testing methodologies and commitment to code quality. While there is no direct mention of code reviews or specific coding standards, the implementation of automated testing suggests an awareness of code quality practices. The description of implementing features and improvements to a web platform implies attention to maintainability and readability, but this is not explicitly stated.",
+      "score": "4"
+    },
+    {
+      "category": "System Design and Architecture",
+      "explanation": "The candidate's experience at Spotify, designing an aggregated dataset hosted in BigQuery and GCS to unify multiple data pipelines, indicates some understanding of system design principles. However, the resume lacks detailed information about the architectural considerations involved in these projects. The reference to building front-end features at Comtech suggests familiarity with some aspects of system design, but there's no explicit mention of designing scalable, robust, or efficient systems.",
+      "score": "3"
+    },
+    {
+      "category": "Adaptability to New Technologies",
+      "explanation": "The variety of technologies and tools listed in the Technical Skills section (Docker, Flask, Git, Node.js, PyTorch, React.js, REST APIs, Apache Beam/Hadoop/Spark, BigQuery, GCP, Jira, Jenkins, Jupyter, Snowflake, Tableau) suggests a strong capacity to learn and apply new technologies. Her experience across multiple internships and projects demonstrates a willingness to experiment with different technologies. The lack of explicit statements about quickly learning new technologies is a slight weakness, but the evidence suggests this adaptability.",
+      "score": "4"
+    },
+    {
+      "category": "Teamwork and Collaboration",
+      "explanation": "The Lead Teaching Assistant role clearly requires teamwork and collaboration. Coordinating support tasks for 12 undergraduate teaching assistants demonstrates leadership and the ability to work effectively in a team. The internships at Spotify, Apple, and Comtech likely involved working in teams, although the resume doesn't explicitly detail collaborative efforts. The descriptions of her work imply interaction with other team members, but this could be strengthened with more specific examples of teamwork.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 76.66666666666667,
+  "PersonalInfo": {
+    "Address": "Chapel Hill, NC",
+    "Age": null,
+    "Email": "hedylamarr@email.edu",
+    "Experience_Years": "1+",
+    "FullName": "Hedy Lamarr",
+    "GitHub": null,
+    "LinkedIn": "linkedin.com/in/hedylamarr111",
+    "PathToCV": "storage/evaluation_20250412_160350/original/cvs/0015.pdf",
+    "PhoneNumber": "(555) 555-5555",
+    "Website": null,
+    "WorkFor": null
+  }
+}

@@ -51,9 +51,9 @@ const CandidateDetailPage = () => {
   }
 
   // Extract cv_id from path_to_evaluation
-  const cvId = candidate.path_to_cv.match(/cvs\\(.*?)\.pdf/)?.[1];
-// Logs "0025" // Log the extracted cv_id for debugging
-
+  const cvId = candidate.path_to_cv.match(/cvs[\\/](.*?)\.pdf/)?.[1];
+  console.log("Extracted cvId:", cvId); // Logs "0025" // Log the extracted cv_id for debugging
+  console.log("Path:", candidate.path_to_cv)
   // Chatbox state and logic
   const [messages, setMessages] = useState<{ sender: string; text: string }[]>([]);
   const [input, setInput] = useState("");

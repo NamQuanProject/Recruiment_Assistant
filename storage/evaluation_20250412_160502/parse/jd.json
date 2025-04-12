@@ -1,0 +1,198 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assesses the candidate's mastery of essential programming languages, software development tools, and engineering principles relevant to the role. This includes experience with Java, C++, Python, databases, and web technologies.",
+      "EvaluationStrategy": "Evaluate the candidate's depth of knowledge and practical experience through resume review, technical interviews, and coding assessments. Focus on their proficiency in required languages, understanding of data structures, algorithms, and system design principles, and familiarity with relevant frameworks and tools.",
+      "Justification": "This is critical because the role demands designing and developing scalable software platforms and applications. The Main JD specifies proficiency in languages like Java, C++, Python, and the Additional JD specifies experience in web-based environments and knowledge of databases. (From Main JD and Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no demonstrable proficiency in required languages or technologies. Lacks understanding of fundamental computer science concepts.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of required languages and technologies. Able to complete simple coding tasks but struggles with complex problems or unfamiliar tools.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Solid understanding of required languages and technologies. Able to design and implement moderately complex solutions with minimal guidance. Familiar with common development tools and practices.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Expert-level proficiency in required languages and technologies. Able to design and implement complex, scalable, and maintainable solutions. Deep understanding of computer science principles and software engineering best practices. Contributes to technical leadership and mentoring.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Evaluates the candidate's ability to identify, analyze, and solve complex technical problems, translate business requirements into technical solutions, and apply critical thinking to improve system performance and reliability.",
+      "EvaluationStrategy": "Use behavioral questions (e.g., 'Tell me about a challenging technical problem you solved') and technical challenges to assess the candidate's problem-solving approach, analytical skills, and ability to think critically. Evaluate their ability to break down complex problems into smaller, manageable parts, identify root causes, and develop effective solutions.",
+      "Justification": "This is essential for identifying flaws in existing systems, creating solutions to improve service uptime, and translating business needs into engineering requirements. Both JDs emphasize the importance of problem-solving and analytical skills. (From Main JD and Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze problems or identify effective solutions. Relies heavily on others for guidance.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Able to analyze simple problems and identify potential solutions with some guidance. May struggle with complex or ambiguous problems.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong analytical skills and ability to solve moderately complex problems independently. Able to translate business requirements into technical solutions effectively.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Exceptional problem-solving and analytical skills. Able to tackle highly complex and ambiguous problems, identify innovative solutions, and contribute to improving system performance and reliability.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration: Measures the candidate's ability to communicate effectively with both technical and non-technical stakeholders, collaborate with team members, and contribute to a positive and productive team environment.",
+      "EvaluationStrategy": "Assess the candidate's communication and collaboration skills through behavioral interview questions (e.g., 'Tell me about a time you disagreed with a colleague'). Pay attention to their ability to articulate ideas clearly, listen actively, and work effectively in a team setting. Look for evidence of leadership qualities and a willingness to share knowledge and mentor others.",
+      "Justification": "The role requires collaborating with global teams, communicating with product managers and user-experience designers, and resolving disagreements diplomatically. Strong communication and collaboration skills are essential for success. Both JDs highlight the importance of these skills. (From Main JD and Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication skills and difficulty collaborating with others. Struggles to articulate ideas clearly or work effectively in a team setting.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate communication skills but may struggle with more complex communication tasks. Can collaborate effectively with others in some situations but may require guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong communication and collaboration skills. Able to articulate ideas clearly, listen actively, and work effectively in a team setting. Contributes to a positive and productive team environment.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Excellent communication and collaboration skills. Able to communicate effectively with both technical and non-technical stakeholders, build strong relationships, and contribute to a high-performing team. Demonstrates leadership qualities and a willingness to mentor others.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software Development Lifecycle \u0026 Best Practices: Assesses the candidate's understanding of the full software development lifecycle (SDLC), including design, development, testing, deployment, and maintenance, as well as their adherence to coding standards, testing methodologies, and version control.",
+      "EvaluationStrategy": "Assess the candidate's knowledge of SDLC methodologies (e.g., Agile, Waterfall), experience with testing frameworks (e.g., JUnit, Selenium), and familiarity with version control systems (e.g., Git). Review code samples to evaluate their adherence to coding standards and best practices. Ask about their experience with continuous integration and continuous delivery (CI/CD).",
+      "Justification": "The role involves planning and executing the full SDLC for assigned projects, ensuring adherence to company standards, and creating software platforms that are free of faulty programming. The Additional JD emphasizes documenting design processes, including testing and troubleshooting. (From Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of the software development lifecycle or coding best practices.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of the software development lifecycle and some coding best practices. May require guidance on more complex tasks.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Solid understanding of the software development lifecycle and adheres to coding best practices. Experienced with testing and version control.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Expert understanding of the software development lifecycle and consistently applies coding best practices. Proficient in testing, version control, and CI/CD. Actively promotes best practices within the team.",
+          "Range": "9-10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Object-Oriented Design (OOD): Assesses the candidate's proficiency in OOD principles and their ability to apply these principles to design robust and maintainable software systems.",
+      "EvaluationStrategy": "Evaluate the candidate's understanding of OOD concepts like inheritance, polymorphism, and encapsulation through interview questions and design exercises. Assess their ability to create class diagrams and design patterns that promote code reuse and maintainability.",
+      "Justification": "The Main JD specifically mentions object-oriented design as a desirable skill. Strong OOD skills are crucial for building scalable and maintainable software. (From Main JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of OOD principles.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of OOD principles.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Solid understanding of OOD principles and can apply them effectively.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert in OOD principles and can design complex systems using OOD principles effectively.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Database Knowledge: Evaluates the candidate's knowledge of relational databases, SQL, and ORM technologies, and their ability to design and optimize database schemas for performance and scalability.",
+      "EvaluationStrategy": "Assess the candidate's experience with different database systems (e.g., MySQL, PostgreSQL, Oracle) and their proficiency in writing SQL queries. Evaluate their understanding of database normalization, indexing, and performance tuning. Inquire about their experience with ORM frameworks like Hibernate or SQLAlchemy.",
+      "Justification": "The Additional JD specifically mentions a working knowledge of relational databases, ORM, and SQL. Database skills are essential for building data-driven applications. (From Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no knowledge of relational databases or SQL.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic knowledge of relational databases and SQL.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Solid knowledge of relational databases, SQL, and ORM technologies.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert knowledge of relational databases, SQL, ORM technologies, and database design principles.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Web Technologies: Assesses the candidate's experience with web application development, including HTML, CSS, JavaScript, and various web frameworks.",
+      "EvaluationStrategy": "Evaluate the candidate's experience with front-end technologies (e.g., React, Angular, Vue.js) and back-end frameworks (e.g., Spring, Node.js, Django). Assess their understanding of web development best practices, including responsive design, accessibility, and security.",
+      "Justification": "The Additional JD mentions proficiency with HTML5, CSS3, and experience with web application development using various frameworks. This is important for building web-based applications and services. (From Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with web development technologies.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic experience with web development technologies.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Solid experience with web development technologies and frameworks.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert experience with web development technologies, frameworks, and best practices.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Test Automation: Assesses the candidate's ability to write and execute automated tests to ensure software quality and reliability.",
+      "EvaluationStrategy": "Evaluate the candidate's experience with different testing frameworks and tools (e.g., JUnit, Selenium, TestNG). Assess their understanding of different testing methodologies (e.g., unit testing, integration testing, end-to-end testing). Review their code samples to evaluate the quality and effectiveness of their automated tests.",
+      "Justification": "The Additional JD specifically lists strong scripting and test automation abilities as a required skill. Test automation is essential for ensuring software quality and reducing the risk of defects. (From Additional JD)",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with test automation.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic experience with test automation.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Solid experience with test automation and different testing methodologies.",
+          "Range": "4"
+        },
+        {
+          "Comment": "Expert experience with test automation and a deep understanding of different testing methodologies. Able to design and implement comprehensive test automation strategies.",
+          "Range": "5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

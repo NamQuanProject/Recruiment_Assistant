@@ -1,0 +1,59 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates a strong grasp of various programming languages (C, C++, C#, Java, Python, CSS, HTML, JavaScript, TypeScript, GraphQL, SQL) and technologies/environments (MySQL, PostgreSQL, SQL Management Server, Spring Boot, ASP.Net, NodeJS, ReactJS, NextJS, Django, Angular, SCSS/SASS, styled-components, Bootstrap, Redux, Express JS, Redis, ESLint, Git/GitHub, Postman, VS Code, Visual Studio, IntelliJ, PyCharm, Eclipse, Linux (Ubuntu 22.04), Docker). The projects showcase practical application of these skills. The CV also includes relevant coursework such as Data Structure and Algorithms, and Computer Organization. The candidate looks proficient in both backend and frontend tools.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate's experience as a Research Assistant and the project descriptions demonstrate analytical skills. The candidate used Python and SQL to analyze data and identify key variables. The candidate also integrated and extended functionalities of Django and ASP.NET APIs to facilitate essential features, including email/text management and appointment scheduling, resulting in a 30% reduction in response time and increased user satisfaction. There is evidence of problem-solving in optimizing user experience and enhancing system efficiency.",
+      "score": "7"
+    },
+    {
+      "category": "Communication and Collaboration",
+      "explanation": "The candidate mentions working in an Agile environment with a cross-functional team. They also led and mentored a team of interns, demonstrating leadership and collaboration skills. The resume demonstrates the ability to communicate effectively within a team setting and contribute to on-time project delivery.",
+      "score": "8"
+    },
+    {
+      "category": "Experience and Adaptability",
+      "explanation": "The candidate has internship experience at FPT Software and Flow, along with a Research Assistant role. The projects and work experiences involve various technologies, showing adaptability to new environments and project requirements. The candidate gained experience in different work cultures.",
+      "score": "7"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The CV does not explicitly detail testing methodologies used, but mentions ensuring effective execution and validation of development tasks. The projects listed imply that the candidate can develop robust APIs but the CV provides no details on unit testing or integration testing. Code quality can be assessed if samples are made available. ",
+      "score": "3"
+    },
+    {
+      "category": "System Design and Architecture",
+      "explanation": "The candidate's project descriptions demonstrate some understanding of system design, particularly in the Skinet Ecommerce App where they designed and implemented front-end components and developed a robust API architecture. The use of microservices and cloud technologies are not explicit. However, the candidate exhibits exposure to system architecture and design through descriptions of project implementations.",
+      "score": "4"
+    },
+    {
+      "category": "Adaptability to New Technologies",
+      "explanation": "The candidate's resume includes a variety of technologies and frameworks, suggesting an ability to learn and apply new tools. The candidate's experience with ReactJS, NextJS, Django, and Angular indicates a capacity for adapting to different frontend and backend technologies. The inclusion of cloud services and new technologies are not explicit but the variety of technologies listed suggests a high degree of adaptability.",
+      "score": "4"
+    },
+    {
+      "category": "Teamwork and Collaboration",
+      "explanation": "The candidate clearly states they collaborated within an Agile environment with cross-functional teams. Leading and mentoring a team of 5 interns also indicates strong teamwork and collaboration skills. Mentions collaboration with UX design. Overall, the candidate seems adept at working in team environments and possesses leadership qualities.",
+      "score": "4"
+    }
+  ],
+  "FinalScore": 75,
+  "PersonalInfo": {
+    "Address": "Tampa, FL",
+    "Age": null,
+    "Email": "hungkhanh.truong112@gmail.com",
+    "Experience_Years": "0-1",
+    "FullName": "HUNG TRUONG",
+    "GitHub": "github.com/Hungruong",
+    "LinkedIn": "linkedin.com/in/hungtk04/",
+    "PathToCV": "storage/evaluation_20250412_160350/original/cvs/0024.pdf",
+    "PhoneNumber": "(813) 861 – 4852",
+    "Website": null,
+    "WorkFor": null
+  }
+}

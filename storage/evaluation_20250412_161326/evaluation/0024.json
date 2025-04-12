@@ -1,0 +1,69 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates strong proficiency in multiple required languages and tools, including C#, JavaScript, and others. The resume highlights experience with ASP.NET, ReactJS, and Angular, showcasing the ability to apply these technologies to solve complex problems. The projects listed further demonstrate this proficiency with concrete examples. The candidate also lists experience with GraphQL which is a plus.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving and Debugging Skills",
+      "explanation": "The candidate demonstrates strong problem-solving and debugging skills. Examples include reducing response times and increasing conversion rates in previous roles. The use of technologies like ReactJS and optimizing API calls shows an understanding of how to tackle performance-related issues. The candidate also mentions debugging tools, but not specifically. More details on specific debugging scenarios and tools used would be beneficial.",
+      "score": "7"
+    },
+    {
+      "category": "Collaboration and Communication",
+      "explanation": "The candidate showcases effective collaboration and communication skills through descriptions of teamwork in an Agile environment and mentoring junior engineers. The resume mentions collaborating with cross-functional teams and UX designers. Quantifiable results, such as reducing scheduling conflicts by 40%, further support this.",
+      "score": "8"
+    },
+    {
+      "category": "Code Quality and Documentation",
+      "explanation": "The resume provides examples of producing well-organized and documented source code through project descriptions. Mention of adhering to coding standards and best practices would strengthen this section. The description of API architecture in the 'Skinet Ecommerce App' project indicates consideration for code organization.",
+      "score": "7"
+    },
+    {
+      "category": "Adaptability and Learning",
+      "explanation": "The candidate demonstrates a proactive approach to learning new technologies and adapting to changing project requirements. The variety of technologies used across different projects (e.g., Angular, ReactJS, ASP.NET, Django) demonstrates adaptability. The candidate is currently a student and learning, which demonstrates continuous growth.",
+      "score": "8"
+    },
+    {
+      "category": "Attention to Detail",
+      "explanation": "The candidate shows attention to detail through descriptions of implementing architectures, enhancing AI recommendation systems, and managing databases. The quantifiable results in several work experiences also showcase attention to detail and a focus on delivering high-quality work. The GPA is also a testament to the level of attention to details.",
+      "score": "4"
+    },
+    {
+      "category": "Independence",
+      "explanation": "The resume describes leading and mentoring a full-stack team, implying the ability to work independently and take initiative. However, there aren't explicit examples of independent projects or tasks where the candidate had to self-direct without supervision.",
+      "score": "3"
+    },
+    {
+      "category": "Unity/Unreal Engine Experience",
+      "explanation": "The candidate does not explicitly mention experience with Unity or Unreal Engine.",
+      "score": "1"
+    },
+    {
+      "category": "Web Development Skills",
+      "explanation": "The candidate demonstrates strong proficiency with HTML/CSS and JavaScript through project descriptions and listed skills. The resume mentions experience with ReactJS, NextJS, Angular, and Bootstrap, showing experience developing and deploying web applications.",
+      "score": "4"
+    },
+    {
+      "category": "Quality Assurance Knowledge",
+      "explanation": "The candidate showcases quality assurance knowledge through implementing robust architectures and using technologies like TypeScript and ESLint. Explicitly mentioning experience with test-driven development (TDD) or specific debugging techniques would enhance this section.",
+      "score": "3"
+    }
+  ],
+  "FinalScore": 70.66666666666667,
+  "PersonalInfo": {
+    "Address": "Tampa, FL",
+    "Age": null,
+    "Email": "hungkhanh.truong112@gmail.com",
+    "Experience_Years": "1",
+    "FullName": "HUNG TRUONG",
+    "GitHub": "github.com/Hungruong",
+    "LinkedIn": "linkedin.com/in/hungtk04/",
+    "PathToCV": "storage/evaluation_20250412_161326/original/cvs/0024.pdf",
+    "PhoneNumber": "(813) 861 – 4852",
+    "Website": null,
+    "WorkFor": "FPT Software"
+  }
+}
