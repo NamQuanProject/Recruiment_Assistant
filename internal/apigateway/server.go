@@ -25,13 +25,9 @@ func RunServer() {
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
 	})) // Chau added this
+
 	r.Static("/storage", "./storage")
 	r.Static("/internal", "./internal")
-	// Load HTML templates
-	r.LoadHTMLGlob("./templates/*")
-	r.LoadHTMLGlob("./templates/*")
-
-	// // Init()
 
 	// Authentication routes
 	r.POST("/signup", user.Signup)

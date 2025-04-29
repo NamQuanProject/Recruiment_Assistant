@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -39,14 +38,7 @@ func NewWebServer() *WebServer {
 func (s *WebServer) Run() {
 	r := gin.Default()
 
-	// Serve static files from templates directory
-	r.LoadHTMLGlob("templates/*")
 	r.Static("/storage", "./storage")
-
-	// Serve the CV highlight page
-	r.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "cv_highlight.html", nil)
-	})
 
 	// Handle CV upload and analysis
 	r.POST("/analyze-cv", func(c *gin.Context) {
