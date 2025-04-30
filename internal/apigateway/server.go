@@ -1,7 +1,6 @@
 package apigateway
 
 import (
-	"net/http"
 	"os"
 
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
