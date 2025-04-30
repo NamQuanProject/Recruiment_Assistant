@@ -1,6 +1,6 @@
 module github.com/KietAPCS/test_recruitment_assistant
 
-go 1.24.1
+go 1.24.0
 
 require (
 	github.com/PuerkitoBio/goquery v1.10.2
