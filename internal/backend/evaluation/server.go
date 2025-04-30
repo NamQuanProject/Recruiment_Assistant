@@ -1,6 +1,8 @@
 package evaluation
 
 import (
+	"os"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,5 +14,10 @@ func RunServer() {
 	r.POST("/evaluate", evaluateJobHandler)
 
 	// Start the server on port 8082
-	r.Run(":8082")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8082" // fallback khi chạy local
+	}
+
+	r.Run(":" + port)
 }

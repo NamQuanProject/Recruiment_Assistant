@@ -1,0 +1,69 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Skills and Experience",
+      "explanation": "The candidate demonstrates a strong foundation in multiple programming languages (C++, C#, Java, Python) and frameworks (Unity, Qt5, Spring Boot, Django). Experience includes developing RESTful APIs with Spring MVC, using PostgreSQL and MySQL, and implementing authentication/authorization systems. Projects showcase proficiency in C++ and SFML for simulations and parsing. The candidate has relevant internship experience and personal projects that align well with software engineering roles, indicating practical application of technical skills. Overall, the technical skills and experience are well-aligned with the requirements, showing solid expertise and hands-on experience.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The projects described, such as the Parser \u0026 Computer Algebra System (CAS), Underwater Physic Engine, and Microscopic Traffic Simulator, demonstrate the candidate's ability to analyze complex problems and develop solutions. The implementation of algorithms and simulations showcases analytical thinking and problem-solving skills. The projects also demonstrate creativity in applying these skills to different domains. Overall, the candidate demonstrates strong problem-solving and analytical skills through their project work.",
+      "score": "8"
+    },
+    {
+      "category": "Communication and Collaboration Skills",
+      "explanation": "The candidate's experience as a Programming Mentor indicates communication skills, as they designed lesson plans and taught fundamental concepts. The projects also implicitly suggest collaboration, although specific details of team collaboration are not explicitly mentioned. The description of the projects and experiences is clear and well-structured, suggesting good written communication skills. The LinkedIn profile can potentially provide more insight into communication and collaboration skills through recommendations and endorsements.",
+      "score": "7"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) Knowledge",
+      "explanation": "The candidate's experience includes internships where they were involved in developing RESTful APIs, which implies exposure to different stages of the SDLC. The projects also suggest an understanding of design, development, and testing phases. However, there is no explicit mention of specific SDLC methodologies (e.g., Agile, Waterfall) used. Overall, the candidate has a good understanding of the SDLC, as demonstrated by their projects and internship experience, but lacks explicit mention of formal SDLC methodologies.",
+      "score": "7"
+    },
+    {
+      "category": "Adaptability and Continuous Learning",
+      "explanation": "The candidate's willingness to learn new technologies is demonstrated by their diverse range of projects and skills, including different programming languages and frameworks. The projects showcase their ability to adapt to different problem domains and implement novel solutions. The candidate's involvement in a wide range of projects and technologies suggests a strong interest in continuous learning and staying up-to-date with industry trends. Overall, the candidate exhibits high adaptability and a strong interest in continuous learning.",
+      "score": "8"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The resume does not provide explicit details about code quality or testing practices. However, the description of projects implies the ability to write functional code. There is no mention of unit tests or adherence to coding standards. Therefore, it is difficult to assess code quality and testing practices based solely on the resume.",
+      "score": "3"
+    },
+    {
+      "category": "Database Knowledge",
+      "explanation": "The candidate mentions experience with PostgreSQL and MySQL in their internship, indicating familiarity with relational databases. Developing RESTful APIs using Spring MVC suggests an understanding of database interactions. However, the resume does not provide details about SQL proficiency or database design principles. Overall, the candidate has some database knowledge, but the depth of understanding is not clear from the resume.",
+      "score": "3"
+    },
+    {
+      "category": "Web Application Development",
+      "explanation": "The candidate mentions experience developing RESTful APIs using Spring MVC, indicating proficiency in web application development. The use of Spring Security suggests an understanding of web security best practices. However, there is no mention of front-end frameworks or specific web application architecture knowledge. Overall, the candidate has some web application development experience, but the resume primarily focuses on back-end development.",
+      "score": "3"
+    },
+    {
+      "category": "Version Control",
+      "explanation": "The candidate lists Git under 'Developer Tools,' indicating familiarity with version control systems. However, the resume does not provide details about their proficiency in using Git for collaboration or managing code changes. Overall, the candidate has some version control experience, but the depth of understanding is not clear from the resume.",
+      "score": "3"
+    },
+    {
+      "category": "Agile Methodologies",
+      "explanation": "The resume does not mention any specific experience with Agile methodologies. Therefore, it is difficult to assess the candidate's familiarity with Agile principles and practices based solely on the resume.",
+      "score": "2"
+    }
+  ],
+  "FinalScore": 69.33333333333334,
+  "PersonalInfo": {
+    "Address": "Tampa, Florida",
+    "Age": null,
+    "Email": "hmn16@usf.edu",
+    "Experience_Years": "0.75",
+    "FullName": "Hung Nguyen Manh",
+    "GitHub": "github.com/silverfoxpt",
+    "LinkedIn": "linkedin.com/in/hmn774/",
+    "PathToCV": "storage/evaluation_20250430_110750/original/cvs/0051.pdf",
+    "PhoneNumber": null,
+    "Website": null,
+    "WorkFor": "Self-operated Online, FPT Information System"
+  }
+}

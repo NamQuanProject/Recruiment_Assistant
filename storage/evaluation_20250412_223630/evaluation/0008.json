@@ -1,0 +1,49 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates a solid technical background, particularly in C/C++ and Python, evidenced by their work at BOSCH and Aalto University. Their experience with embedded systems and autonomous systems further strengthens their profile. They show familiarity with tools like Visual Studio, Github, and Cmake. While the CV doesn't explicitly highlight web development technologies like HTML, CSS, or JavaScript in detail, the projects and tools used suggest some level of understanding, especially with projects using Github. The projects listed showcase practical application of skills. The main weakness is the lack of explicitly stated web-development skills.",
+      "score": "7"
+    },
+    {
+      "category": "Problem-Solving and Debugging Skills",
+      "explanation": "The candidate has demonstrated problem-solving skills through their experience at BOSCH, where they were involved in debugging, analyzing reported problems, and supporting customers. Their work on implementing MIXER logic and camera/LiDAR calibration also highlights their ability to tackle complex technical challenges. The descriptions of the projects show how the candidate implemented, tested, and designed solutions, which shows good problem-solving abilities. This area seems to be well-addressed.",
+      "score": "8"
+    },
+    {
+      "category": "Collaboration and Communication",
+      "explanation": "The candidate's experience at BOSCH involved cooperating with other developers, indicating their ability to work in a team. They also mention 'Teamwork, Active Listening, Negotiation' as skills gained. The CV is clearly structured and well-written, suggesting good communication skills. They have provided links to GitHub and LinkedIn, which is helpful for further verification. However, there's not a lot of direct evidence of communicating technical details to non-technical audiences.",
+      "score": "7"
+    },
+    {
+      "category": "Web Development Specific Skills (HTML/CSS/JavaScript)",
+      "explanation": "The CV does not explicitly list extensive experience with HTML, CSS, or JavaScript. While their GitHub projects might involve some of these technologies, it's not clearly stated. This is a weakness, especially considering one of the JDs emphasizes these skills. More explicit examples or projects showcasing these skills would be beneficial. The absence of mention brings the score down.",
+      "score": "2"
+    },
+    {
+      "category": "Experience with Web Frameworks and CMS (WordPress/Drupal/etc.)",
+      "explanation": "The CV makes no mention of experience with web frameworks or CMSs like WordPress or Drupal. This is a gap, especially given that the Additional JD mentions proficiency with content management systems. The candidate's background is stronger in embedded systems and autonomous systems, but web frameworks aren't addressed.",
+      "score": "1"
+    },
+    {
+      "category": "Understanding of Web Security Principles",
+      "explanation": "The CV does not contain any information related to web security principles or practices. There's no mention of secure coding, vulnerability mitigation, or any related concepts. This is a significant omission, particularly since the Additional JD lists 'security principles' as required knowledge.",
+      "score": "1"
+    }
+  ],
+  "FinalScore": 57.77777777777777,
+  "PersonalInfo": {
+    "Address": "N/A",
+    "Age": "N/A",
+    "Email": "tuyethan97@gmail.com",
+    "Experience_Years": "3",
+    "FullName": "Han Nguyen",
+    "GitHub": "https://github.com/TuyetHan",
+    "LinkedIn": "https://www.linkedin.com/in/thanh-tuyet-han-nguyen-759887239/",
+    "PathToCV": "storage/evaluation_20250412_223630/original/cvs/0008.pdf",
+    "PhoneNumber": "N/A",
+    "Website": "N/A",
+    "WorkFor": "Aalto University, BOSCH, Eötvös Loránd University, HCM University of Technology and Education"
+  }
+}

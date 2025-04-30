@@ -1,13 +1,94 @@
 {
   "list": [
     {
-      "full_name": "Phan Tuấn Kiệt",
+      "full_name": "Hung Truong",
+      "worked_for": "",
+      "experience_level": "0-1",
+      "authenticity": 9,
+      "final_score": 74.66666666666667,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0024.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0024.json"
+    },
+    {
+      "full_name": "Alan Turing",
+      "worked_for": "IBM, Fidelity Investments",
+      "experience_level": "2.1",
+      "authenticity": 8,
+      "final_score": 72,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0034.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0034.json"
+    },
+    {
+      "full_name": "Hoang-Giang Thi Nguyen",
+      "worked_for": "USC Authorized to work for all US Employers",
+      "experience_level": "1",
+      "authenticity": 7,
+      "final_score": 70.66666666666667,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0017.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0017.json"
+    },
+    {
+      "full_name": "An Bui",
+      "worked_for": "Arize AI",
+      "experience_level": "1+",
+      "authenticity": 9,
+      "final_score": 69.33333333333334,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0002.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0002.json"
+    },
+    {
+      "full_name": "Hedy Lamarr",
+      "worked_for": "UNC Department of Computer Science",
+      "experience_level": "1",
+      "authenticity": 8,
+      "final_score": 69.33333333333334,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0015.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0015.json"
+    },
+    {
+      "full_name": "Hung Nguyen Manh",
+      "worked_for": "Self-operated Online, FPT Information System",
+      "experience_level": "0.75",
+      "authenticity": 9,
+      "final_score": 69.33333333333334,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0051.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0051.json"
+    },
+    {
+      "full_name": "Khanh Nguyen",
+      "worked_for": "Thach thuc’s Technical Department",
+      "experience_level": "0",
+      "authenticity": 8,
+      "final_score": 61.33333333333333,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0001.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0001.json"
+    },
+    {
+      "full_name": "LAC THIEU QUAN",
       "worked_for": "",
       "experience_level": "0",
+      "authenticity": 8,
+      "final_score": 61.33333333333333,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0006.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0006.json"
+    },
+    {
+      "full_name": "Han Nguyen",
+      "worked_for": "",
+      "experience_level": "3",
+      "authenticity": 8,
+      "final_score": 61.33333333333333,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0008.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0008.json"
+    },
+    {
+      "full_name": "Khue Tran",
+      "worked_for": "University of California, Irvine",
+      "experience_level": "2",
       "authenticity": 7,
-      "final_score": 75.55555555555556,
-      "path_to_cv": "storage\\evaluation_20250429_171324\\original\\cvs\\PhanTuanKiet - ForEach.pdf",
-      "path_to_evaluation": "storage/evaluation_20250429_171324/evaluation/PhanTuanKiet - ForEach.json"
+      "final_score": 42.66666666666667,
+      "path_to_cv": "storage/evaluation_20250430_110750/original/cvs/0053.pdf",
+      "path_to_evaluation": "storage/evaluation_20250430_110750/evaluation/0053.json"
     }
   ]
 }

@@ -1,0 +1,102 @@
+[
+  {
+    "text": "At Least 2 years’ work experience as a Software Engineer or Software Developer.",
+    "page": 1,
+    "x": 64,
+    "y": 180,
+    "width": 490,
+    "height": 20,
+    "description": "The job description specifies a minimum of 2 years' experience. While the CV doesn't explicitly state this, the candidate's multiple internships and projects, especially the year-long Software Engineer Intern role at Comtech, contribute to fulfilling this requirement. Mentioning the total approximate years of experience directly would strengthen this point.",
+    "type": "strong"
+  },
+  {
+    "text": "Ability to develop software in Java, Ruby on Rails, C++, or other programming languages.",
+    "page": 1,
+    "x": 64,
+    "y": 240,
+    "width": 490,
+    "height": 20,
+    "description": "The candidate lists 'Java', 'Python', and 'SQL' under Technical Skills, directly addressing this requirement. The experience descriptions further showcase the use of these languages in practical projects. Highlighting specific projects where these languages were used extensively would improve this further.",
+    "type": "strong"
+  },
+  {
+    "text": "Spotify",
+    "page": 1,
+    "x": 28.8,
+    "y": 237.51,
+    "width": 35.08,
+    "height": 15.01,
+    "description": "This internship is strong because Spotify is a well-known company, and the Data Engineer Intern role aligns well with software engineer responsibilities, particularly concerning data pipelines and analysis. The description details relevant technical skills and outcomes.",
+    "type": "strong"
+  },
+  {
+    "text": "UNC Department of Computer Science",
+    "page": 1,
+    "x": 28.8,
+    "y": 363,
+    "width": 189.99,
+    "height": 15.01,
+    "description": "Serving as a Lead Teaching Assistant demonstrates strong communication, collaboration, and problem-solving skills, all of which are valuable for a software engineer, as noted in the job descriptions.",
+    "type": "strong"
+  },
+  {
+    "text": "Automated",
+    "page": 1,
+    "x": 56.5,
+    "y": 572.88,
+    "width": 58.92,
+    "height": 14.36,
+    "description": "The automation of the backend API test suite using Node.js and Chai shows understanding and practical application of software engineering tools and testing methodologies. It also demonstrates an ability to improve existing systems.",
+    "type": "strong"
+  },
+  {
+    "text": "Experience with test-driven development.",
+    "page": 1,
+    "x": 64,
+    "y": 360,
+    "width": 490,
+    "height": 20,
+    "description": "While the candidate's experiences demonstrate some familiarity with testing (e.g., automating API tests), there's no explicit mention of Test-Driven Development (TDD). To address this, she could highlight any instances where she wrote tests before writing code or discuss her general approach to testing and code quality.",
+    "type": "weak"
+  },
+  {
+    "text": "Excellent knowledge of relational databases, SQL, and ORM technologies (JPA2, Hibernate).",
+    "page": 1,
+    "x": 64,
+    "y": 270,
+    "width": 490,
+    "height": 20,
+    "description": "Although the candidate lists SQL under technical skills and details experience using BigQuery, and Hive it does not explicitly state experience in ORM technologies. It would be helpful to detail ORM experience, or if there is none, focus on the strength in SQL.",
+    "type": "weak"
+  },
+  {
+    "text": "RoadRisk",
+    "page": 1,
+    "x": 28.8,
+    "y": 631.15,
+    "width": 51.14,
+    "height": 15.01,
+    "description": "The projects are interesting and show analytical skills, but a lack of context connecting them directly to the software engineering principles (design, architecture) required by the job posting weakens their impact. Highlighting the software development process used in these projects would improve this.",
+    "type": "weak"
+  },
+  {
+    "text": "Ability to document requirements and specifications.",
+    "page": 1,
+    "x": 64,
+    "y": 390,
+    "width": 490,
+    "height": 20,
+    "description": "The CV doesn't provide explicit evidence of the ability to document requirements and specifications. Adding a bullet point in the work experience sections describing instances where she documented requirements or specifications would strengthen this area.",
+    "type": "weak"
+  },
+  {
+    "text": "Code Quality and Documentation",
+    "page": 1,
+    "x": 64,
+    "y": 760,
+    "width": 490,
+    "height": 20,
+    "description": "The CV lacks explicit mention of the candidate's experience in code quality practices or documentation. Including information about coding standards followed, code review processes, or any contributions to documentation would enhance the CV.",
+    "type": "weak"
+  }
+]

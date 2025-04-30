@@ -1,0 +1,49 @@
+{
+  "Authenticity": 8,
+  "Evaluation": [
+    {
+      "category": "Technical Proficiency",
+      "explanation": "The candidate demonstrates a good understanding of several programming languages (C++, C#, Java, Python) which aligns well with the Main JD. The candidate also lists relevant frameworks (Unity, Qt5, Spring Boot, Django), developer tools (Git, MySQL, PostgreSQL, Visual Studio, Visual Studio Code) and a library (SFML). The depth of knowledge in each area needs to be verified during an interview, but the range of technologies is impressive. The candidate's projects show practical application of these technologies. The candidate lacks Objective-C, so this can be considered a weakness for the Main JD.",
+      "score": "7"
+    },
+    {
+      "category": "Problem-Solving and Debugging Skills",
+      "explanation": "The CV provides examples of problem-solving through project descriptions such as the Parser \u0026 Computer Algebra System, Underwater Physic Engine, and Microscopic Traffic Simulator. The implementation of algorithms and simulation of complex systems suggests strong problem-solving abilities. Mentioning handling up to 10k mathematical characters parsing indicates efficient debugging skills. Need to verify the depth of these skills in the interview.",
+      "score": "8"
+    },
+    {
+      "category": "Collaboration and Communication",
+      "explanation": "The candidate's experience as a Programming Mentor demonstrates communication skills, specifically designing lesson plans. The Software Development Intern experience implies working in a team. However, the CV lacks explicit examples of collaborative projects or communication with non-technical audiences. Further assessment is required during the interview to evaluate the candidate's ability to work in a team and communicate effectively.",
+      "score": "6"
+    },
+    {
+      "category": "Web Development Specific Skills (HTML/CSS/JavaScript)",
+      "explanation": "The CV does not explicitly mention HTML, CSS, or JavaScript. While Spring Boot and Django are listed, which can be used for web development, the candidate doesn't showcase skills on the front-end development side. This is a weakness, especially considering the Additional JD's focus on web development. The candidate has little to no verifiable experience in this category based on the CV.",
+      "score": "2"
+    },
+    {
+      "category": "Experience with Web Frameworks and CMS (WordPress/Drupal/etc.)",
+      "explanation": "The candidate lists Spring Boot and Django, which are web frameworks. However, there is no mention of experience with CMS like WordPress or Drupal. The CV lacks specifics regarding the level of customization or deployment experience using these frameworks. The candidate is more experienced with web frameworks.",
+      "score": "3"
+    },
+    {
+      "category": "Understanding of Web Security Principles",
+      "explanation": "The CV mentions implementing authentication and authorization systems using Spring Security, which implies some understanding of web security principles. However, the CV doesn't provide any details about knowledge of common web vulnerabilities or secure coding practices. Further investigation is needed during the interview to assess the depth of their understanding.",
+      "score": "3"
+    }
+  ],
+  "FinalScore": 64.44444444444444,
+  "PersonalInfo": {
+    "Address": "Tampa, Florida",
+    "Age": null,
+    "Email": "hmn16@usf.edu",
+    "Experience_Years": "0.75",
+    "FullName": "Hung Nguyen Manh",
+    "GitHub": "github.com/silverfoxpt",
+    "LinkedIn": "linkedin.com/in/hmn774/",
+    "PathToCV": "storage/evaluation_20250412_223630/original/cvs/0051.pdf",
+    "PhoneNumber": null,
+    "Website": null,
+    "WorkFor": "Self-operated Online, FPT Information System"
+  }
+}

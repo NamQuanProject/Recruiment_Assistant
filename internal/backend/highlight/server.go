@@ -100,7 +100,7 @@ func RunServer() {
 		pythonScriptPath := filepath.Join("internal", "backend", "highlight", "highlight_pdf.py")
 		highlightedPDFPath := filepath.Join(outputDir, baseName+"_highlighted.pdf")
 
-		cmd := exec.Command("python", pythonScriptPath, copiedPDFPath, areasPath, highlightedPDFPath)
+		cmd := exec.Command("python3", pythonScriptPath, copiedPDFPath, areasPath, highlightedPDFPath)
 		output, err := cmd.CombinedOutput()
 		if err != nil {
 			log.Printf("Error executing Python script: %v\nOutput: %s", err, string(output))
@@ -116,7 +116,12 @@ func RunServer() {
 	})
 
 	fmt.Println("Highlight server running at http://localhost:8083")
-	r.Run(":8083")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8083" // fallback khi chạy local
+	}
+
+	r.Run(":" + port)
 }
 
 // copyFile copies a file from src to dst

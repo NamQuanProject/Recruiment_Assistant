@@ -1,0 +1,53 @@
+
+--- Page 1 ---
+Alan Turing
+[Email] | [Phone] | [LinkedIn Profile] | [GitHub Profile] | [Portfolio (if applicable)]
+EDUCATION
+University of North Carolina at Chapel Hill | Chapel Hill, NC ​ May 2027
+Master of Science in Computer Science
+Relevant Coursework: Machine Learning, Distributed Systems, Algorithms, Cloud Computing
+●​
+Research: Developing scalable deep learning models for real-time fraud detection in financial transactions (advised by
+●​
+Dr. [Advisor's Name])
+Thesis (if applicable): "Enhancing Anomaly Detection in Large-Scale Systems Using AI"
+●​
+North Carolina State University | Raleigh, NC ​ May 2022
+Bachelor of Science in Computer Science and Environmental Science
+Honors: Dean’s List (all semesters), Magna cum Laude​
+INDUSTRY EXPERIENCE
+IBM – Research Triangle Park, NC
+Software Engineer ​ June 2022 – July 2024
+Designed a cumulative aggregated dataset hosted in BigQuery and GCS to unify multiple data pipelines for podcast
+●​
+consumption metadata, centralizing data sources and reducing computational overhead for various metrics
+Implemented the dataset using Scala and Apache Beam APIs, achieving a 60% compression versus the raw metadata
+●​
+source and enabling faster, more efficient queries
+Analyzed hundreds of trending, book-based playlists and conducted A/B tests to validate targeted audiobook
+●​
+campaigns, uncovering avenues for audience growth
+Fidelity Investments – Durham, NC​
+Software Engineer Intern ​ ​ ​ ​ ​ ​ ​ May 2021 – August 2021
+Engineered a React and Node.js dashboard for real-time stock analysis, improving data refresh rates by 50%.
+●​
+Created RESTful APIs using Java Spring Boot to integrate investment analytics with customer dashboards
+●​
+Developed SQL queries to optimize financial data retrieval, reducing query execution time by 35%
+●​
+RESEARCH EXPERIENCE
+UNC-Chapel Hill – Department of Computer Science (Cybersecurity Lab)​
+Graduate Research Assistant ​ ​ ​ ​ ​ ​ ​ ​ January 2025 – Present
+Investigate the impact of adversarial attacks on neural networks, proposing a defensive training approach that
+●​
+improved model robustness by 18%
+Conduct data preprocessing and feature engineering on large-scale cybersecurity datasets using Spark and
+●​
+Pandas
+Presented findings at the IEEE Workshop on Machine Learning for Security
+●​
+TECHNICAL SKILLS
+Languages: Python, Java, C++, SQL, JavaScript
+Frameworks/Libraries: React, Node.js, TensorFlow, Pandas
+Tools: Docker, Kubernetes, Git, AWS, PostgreSQL
+Methodologies: Agile, Test-Driven Development, CI/CD

@@ -124,5 +124,10 @@ func RunServer() {
 	})
 
 	fmt.Println("Parsing server running at http://localhost:8085")
-	r.Run(":8085")
+	// Update the server to listen on the port from the environment variable
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8085" // fallback when running locally
+	}
+	r.Run(":" + port)
 }

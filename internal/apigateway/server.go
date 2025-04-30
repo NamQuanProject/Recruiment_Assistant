@@ -2,6 +2,7 @@ package apigateway
 
 import (
 	"net/http"
+	"os"
 
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/handlers"
 	"github.com/KietAPCS/test_recruitment_assistant/internal/apigateway/initializers"
@@ -49,5 +50,10 @@ func RunServer() {
 	r.POST("/submitCVs", handlers.SubmitCVsHandler)
 	r.POST("/getHlCV", handlers.GetHlCVHandler)
 
-	r.Run(":8080") // Start the server on port 8080
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080" // fallback khi chạy local
+	}
+
+	r.Run(":" + port)
 }

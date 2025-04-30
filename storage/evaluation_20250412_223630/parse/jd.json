@@ -1,0 +1,144 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Demonstrates a strong understanding of relevant programming languages, web development technologies, and software development principles.",
+      "EvaluationStrategy": "Assess through resume review, portfolio examination (if provided), coding challenges, and technical interview questions focusing on specific languages and technologies mentioned in both JDs (C#, C++, Objective-C, JavaScript, HTML, CSS, PHP, SQL, etc.). Evaluate the depth and breadth of their knowledge and practical application.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding; struggles with basic concepts; lacks practical experience in required technologies.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate understanding; able to apply basic concepts; some experience in required technologies but may require guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong understanding; proficient in applying concepts; considerable experience in required technologies; can work independently.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert understanding; mastery of concepts; extensive experience in required technologies; can lead and mentor others.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Both",
+      "WhyItMatters": "This is a core requirement from both JDs. The Main JD requires proficiency in C#, C++, Objective-C, or JavaScript. The Additional JD requires extensive knowledge of web applications, programming languages, and web services. Without adequate technical skills, the candidate cannot perform the essential functions of the role."
+    },
+    {
+      "Description": "Problem-Solving and Debugging Skills: Ability to identify, analyze, and resolve software defects and technical challenges effectively.",
+      "EvaluationStrategy": "Use technical interview questions that describe problem scenarios, review past projects and contributions for evidence of debugging and problem-solving skills, and potentially use coding exercises to observe their approach in real-time.",
+      "ScoringGuided": [
+        {
+          "Comment": "Unable to effectively identify or resolve basic software defects or technical challenges; requires significant assistance.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Able to identify and resolve some software defects and technical challenges with guidance; may struggle with complex problems.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Able to independently identify, analyze, and resolve most software defects and technical challenges; demonstrates strong problem-solving skills.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving skills; able to quickly and efficiently resolve complex software defects and technical challenges; can develop innovative solutions.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Both",
+      "WhyItMatters": "The Main JD explicitly mentions \"Excellent debugging and problem-solving skills\" as a requirement. The Additional JD emphasizes problem-solving and collaborative problem-solving as essential. This is vital for maintaining and improving code."
+    },
+    {
+      "Description": "Collaboration and Communication: Ability to work effectively in a team environment and communicate technical information clearly to both technical and non-technical audiences.",
+      "EvaluationStrategy": "Assess through behavioral interview questions focused on teamwork and communication experiences. Examine the clarity and organization of their portfolio (if any) and the ability to explain technical concepts in simple terms. Check references to gather feedback on their collaborative abilities.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to work effectively in a team environment; communication is unclear or ineffective.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Works adequately in a team; communication is generally clear but may lack detail or precision.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Works effectively in a team; communicates technical information clearly and concisely to both technical and non-technical audiences.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional collaboration and communication skills; fosters a positive and productive team environment; effectively communicates complex technical information to diverse audiences.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10,
+      "Source": "Both",
+      "WhyItMatters": "Both JDs highlight the importance of teamwork. The Main JD requires collaboration with other programmers, and the Additional JD emphasizes collaboration and meeting with stakeholders. Effective communication is key for understanding requirements and conveying technical information."
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Web Development Specific Skills (HTML/CSS/JavaScript): Proficiency in core web development technologies, including HTML, CSS, and JavaScript.",
+      "EvaluationStrategy": "Evaluate through targeted technical questions, coding exercises focused on front-end development, and review of past web development projects. Assess their knowledge of responsive design principles, cross-browser compatibility, and modern JavaScript frameworks.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited knowledge of HTML, CSS, and JavaScript; struggles with basic web development tasks.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Adequate knowledge of HTML, CSS, and JavaScript; able to perform basic web development tasks with some guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong proficiency in HTML, CSS, and JavaScript; able to independently develop and maintain complex web applications; proficient in modern JavaScript frameworks.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Both",
+      "WhyItMatters": "The Additional JD focuses specifically on web development. It highlights the need to create websites and interfaces using standard HTML/CSS practices and incorporate data from back-end databases and services. The Main JD also lists Web development skills (HTML/CSS, JavaScript) under Beneficial Skills."
+    },
+    {
+      "Description": "Experience with Web Frameworks and CMS (WordPress/Drupal/etc.): Familiarity with popular web frameworks and content management systems.",
+      "EvaluationStrategy": "Inquire about their experience with specific frameworks and CMSs. Assess their ability to customize and extend existing frameworks and CMSs to meet specific business requirements. Check for portfolio items utilizing these technologies.",
+      "ScoringGuided": [
+        {
+          "Comment": "No experience with web frameworks or CMSs.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic familiarity with one or more web frameworks or CMSs; limited practical experience.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in using and customizing one or more web frameworks or CMSs; able to independently develop and deploy web applications using these technologies.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Additional",
+      "WhyItMatters": "The Additional JD explicitly mentions proficiency with content management systems, including WordPress and Drupal. Experience with frameworks accelerates development and improves maintainability."
+    },
+    {
+      "Description": "Understanding of Web Security Principles: Knowledge of common web vulnerabilities and techniques for preventing them.",
+      "EvaluationStrategy": "Ask questions about common web security threats (e.g., SQL injection, XSS) and how to mitigate them. Assess their understanding of secure coding practices and data validation techniques.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of web security principles; unaware of common web vulnerabilities.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Basic understanding of web security principles; aware of some common web vulnerabilities but may not know how to mitigate them.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong understanding of web security principles; able to identify and mitigate common web vulnerabilities; follows secure coding practices.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5,
+      "Source": "Additional",
+      "WhyItMatters": "The Additional JD lists \"security principles\" as part of required knowledge. Protecting web applications from security threats is crucial for maintaining data integrity and user privacy."
+    }
+  ]
+}

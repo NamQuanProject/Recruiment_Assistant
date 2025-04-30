@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -62,7 +63,7 @@ func (s *WebServer) Run() {
 		jobDetails := string(jobDetailsBytes)
 
 		pdfpath := req.PdfPath
-		
+
 		evaluationReferenceBytes, err := os.ReadFile(req.EvalRefPath)
 		if err != nil {
 			log.Printf("Failed to read evaluation reference file: %v", err)
@@ -129,5 +130,10 @@ func (s *WebServer) Run() {
 
 	// Start the server
 	fmt.Println("Web server running at http://localhost:4000")
-	r.Run(":4000")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "4000" // fallback khi chạy local
+	}
+
+	r.Run(":" + port)
 }

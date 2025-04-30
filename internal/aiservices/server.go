@@ -325,5 +325,10 @@ func RunServer() {
 		})
 	})
 
-	r.Run(":8081")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8081" // fallback khi chạy local
+	}
+
+	r.Run(":" + port)
 }

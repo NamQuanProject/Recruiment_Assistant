@@ -1,0 +1,69 @@
+{
+  "Authenticity": 9,
+  "Evaluation": [
+    {
+      "category": "Technical Skills and Experience",
+      "explanation": "The candidate demonstrates a strong foundation in various programming languages and technologies, including C#, Java, Python, JavaScript, TypeScript, and SQL. The experience includes internships at FPT Software and Flow, where they worked with Angular, Django, ASP.NET, ReactJS, and other relevant frameworks. Project descriptions showcase practical application of these skills. The candidate has relevant coursework and projects, indicating a solid grasp of software engineering principles. However, the depth of experience in each technology isn't fully clear. The candidate's skills and experiences align well with the requirements of a software engineer role.",
+      "score": "8"
+    },
+    {
+      "category": "Problem-Solving and Analytical Skills",
+      "explanation": "The candidate demonstrates problem-solving skills through their work experience, such as reducing response times for API calls by 25% and increasing customer engagement by 50% through AI recommendation systems. The candidate analyzed data using Python and SQL to identify key variables, improving the accuracy of predictive models. This is a strong indication of analytical abilities. The projects described involve solving specific technical challenges. The CV shows effective problem solving abilities.",
+      "score": "7"
+    },
+    {
+      "category": "Communication and Collaboration Skills",
+      "explanation": "The candidate exhibits good communication and collaboration skills through their experience working in Agile environments and collaborating with cross-functional teams of over 25 members. The candidate led and mentored a full-stack team of 5 interns, indicating leadership and communication abilities. They authored weekly reports summarizing test results and data insights. The descriptions suggest the ability to articulate technical concepts and ideas effectively.",
+      "score": "8"
+    },
+    {
+      "category": "Software Development Lifecycle (SDLC) Knowledge",
+      "explanation": "The candidate demonstrates SDLC knowledge through their experience in software engineering internships and projects. The candidate mentions working in an Agile environment, which indicates familiarity with Agile methodologies. The project descriptions suggest involvement in different stages of the SDLC, including design, development, and testing. More detail on specific SDLC methodologies used would further strengthen this section.",
+      "score": "7"
+    },
+    {
+      "category": "Adaptability and Continuous Learning",
+      "explanation": "The candidate exhibits adaptability and a willingness to learn new technologies through their experience with various frameworks, languages, and environments. The candidate's involvement in diverse projects and internships suggests a proactive approach to learning and adapting to new challenges. The listed skills showcase a broad range of technologies, indicating a strong interest in continuous learning.",
+      "score": "8"
+    },
+    {
+      "category": "Code Quality and Testing",
+      "explanation": "The CV mentions enhancing application performance through caching and lazy loading techniques, implying attention to code quality. However, there is no explicit mention of unit tests or adherence to specific coding standards. Including details about testing practices and code quality initiatives would strengthen this area.",
+      "score": "3"
+    },
+    {
+      "category": "Database Knowledge",
+      "explanation": "The candidate has experience with MySQL, PostgreSQL, and SQL Management Server, indicating a solid understanding of relational databases. The candidate constructed and managed SQL Management Server and PostgreSQL databases. They also used SQL to analyze data, showcasing practical application of database knowledge.",
+      "score": "4"
+    },
+    {
+      "category": "Web Application Development",
+      "explanation": "The candidate has extensive experience with web application development frameworks and technologies, including Angular, ReactJS, ASP.NET, Django, and NodeJS. The candidate developed a CRM website using Angular and implemented architectures using Django REST/CRUD. They also utilized ReactJS for the front-end interface. This showcases a strong proficiency in web application development.",
+      "score": "5"
+    },
+    {
+      "category": "Version Control",
+      "explanation": "The candidate lists Git/GitHub under skills, indicating experience with version control systems. However, the CV lacks specific examples of using version control to manage code changes, collaborate with team members, or maintain code history. Elaborating on version control practices would strengthen this section.",
+      "score": "3"
+    },
+    {
+      "category": "Agile Methodologies",
+      "explanation": "The candidate mentions collaborating within an Agile environment, which indicates some familiarity with Agile methodologies. However, the CV lacks specific details about sprint planning, daily stand-ups, sprint reviews, or retrospectives. Providing more context on Agile experience would strengthen this section.",
+      "score": "3"
+    }
+  ],
+  "FinalScore": 74.66666666666667,
+  "PersonalInfo": {
+    "Address": "Tampa, FL",
+    "Age": null,
+    "Email": "hungkhanh.truong112@gmail.com",
+    "Experience_Years": "0-1",
+    "FullName": "Hung Truong",
+    "GitHub": "github.com/Hungruong",
+    "LinkedIn": "linkedin.com/in/hungtk04/",
+    "PathToCV": "storage/evaluation_20250430_110750/original/cvs/0024.pdf",
+    "PhoneNumber": "(813) 861 – 4852",
+    "Website": null,
+    "WorkFor": null
+  }
+}

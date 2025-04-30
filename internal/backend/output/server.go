@@ -1,6 +1,8 @@
 package output
 
 import (
+	"os"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -39,5 +41,10 @@ func RunServer() {
 	r.POST("/output", outputHandler)
 
 	// Start the server on port 8084
-	r.Run(":8084")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8084" // fallback khi chạy local
+	}
+
+	r.Run(":" + port)
 }
