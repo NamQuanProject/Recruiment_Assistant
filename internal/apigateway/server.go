@@ -36,14 +36,14 @@ func RunServer() {
 	r.POST("/logout", user.Logout)
 
 	// Serve HTML form upload
-	r.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "upload.html", nil)
-	})
+	//r.GET("/", func(c *gin.Context) {
+		//c.HTML(http.StatusOK, "upload.html", nil)
+	//})
 
 	// Create a route for testing the upload without auth (temporary)
-	r.GET("/upload-test", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "upload.html", nil)
-	})
+	//r.GET("/upload-test", func(c *gin.Context) {
+		//c.HTML(http.StatusOK, "upload.html", nil)
+	//})
 
 	// Job description routes
 	r.POST("/submitJD", handlers.SubmitJDHandler)
