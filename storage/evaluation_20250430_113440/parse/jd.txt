@@ -1,0 +1,243 @@
+
+--- Page 1 ---
+Job Description of Software Engineer
+We are a fast-growing company with multiple development projects across technologies and
+industries. We are looking for team players who are smart, experienced, and who can apply the
+principles of software engineering to design, develop, testing, maintenance, and evaluation of
+computer software.
+Responsibilities as a Software Engineer:
+ Determine operational feasibility by evaluating analysis, problem definition, requirements,
+solution development, and proposed solutions.
+ Develops software solutions by studying information needs; conferring with users; studying
+systems flow, data usage, and work processes; investigating problem areas; following the
+software development lifecycle.
+ Document and demonstrate solutions by developing documentation, flowcharts, layouts,
+diagrams, charts, code comments, and clear code.
+ Prepare and install solutions by determining and designing system specifications, standards,
+and programming.
+ Update technical skills by studying state-of-the-art development tools, programming
+techniques, and computing equipment.
+ Participate in educational opportunities & read professional publications.
+ Be aware of security regulations and carry out all work within the security framework of the
+company and client.
+Skill sets we require:
+ At Least 2 years’ work experience as a Software Engineer or Software Developer.
+ Experience designing interactive applications.
+ Ability to develop software in Java, Ruby on Rails, C++, or other programming languages.
+ Excellent knowledge of relational databases, SQL, and ORM technologies (JPA2, Hibernate).
+ Experience developing web applications using at least one popular web framework (JSF, Wicket,
+GWT, Spring MVC).
+ Experience with test-driven development.
+ Proficiency in software engineering tools.
+ Ability to document requirements and specifications.
+Keka for the love of employee experience
+
+--- Page 2 ---
+Qualifications:
+d Bachelor’s/Master’s degree in Computer Science Engineering or Equivalent.
+Sample Job Descriptions
+#1 Software Engineer at Amazon
+Prime Video is changing the traditional television and movie industry with a vast library of high-
+quality media and reliable digital delivery. Our services are engineered for high availability,
+maximum reach, and cost savings that we can pass on to customers. We enable the world to
+watch the video instantly, across hundreds of devices, whether on the road or from the comfort of
+a living room sofa. Today, we deliver movies and TV shows to computers, gaming consoles,
+tablets, smartphones, and smart TVs. We operate in more than 200 countries, and we aspire to
+grow — a lot.
+Want to join a team working on a high-impact project with a direct and significant impact on the
+Prime Video business? Want to join a high visibility project still in the beginning phases with a
+lot of opportunities to innovate, design, and implement solutions that will have a direct impact
+on increasing customer selection, and reducing operating costs which in turn translates to lower
+prices for Amazon customers? In the Catalog Services team, we are writing highly scalable
+distributed services from the ground up to search and build intelligent relationships (hierarchical,
+duplicate, etc.) which will have an exponential impact on the way customers experience Prime
+Video titles. We work closely with many teams in the Prime Video supply chain as the
+relationship space affects the complete video supply chain.
+We are looking for talented software development engineers who are eager to shine by designing
+and developing world-class solutions. The engineering candidate wants to have ownership of a
+domain to deliver meaningful results to the customers. As an organization, we work hard to not only
+deliver results but invest in each team member’s career and skillsets goals. Additionally, we
+encourage the use of new technologies when the technology provides a clear advantage.
+Successful candidates for this position will have a strong background in designing and developing
+world-class microservices in Java, C++, C#, Python, NodeJS, or Ruby. Equally important to these
+specific candidate skills are excellently written and verbal communication skills both with the team
+and external teams, the ability to multitask, the ability to translate business requirements to
+engineering requirements, the ability to adapt quickly to new environments, and using creativity to
+solve difficult problems in a world-class engineering team.
+Keka for the love of employee experience
+
+--- Page 3 ---
+Come be a part of the greenfield initiative to create an impact in a fast-growing area within Amazon.
+BASIC QUALIFICATIONS
+i Programming experience with at least one modern language such as Java, C++, or C#
+including object-oriented design.[
+i Bachelor’s degree in computer science or a related field.[
+i 1+ years’ experience writing production code of increasing complexity.
+PREFERRED QUALIFICATIONS
+i Understanding of computer science fundamentals, including algorithms, complexity analysis, data
+structures, problem-solving, and object-oriented analysis and design.[
+i Working knowledge of programming languages other than Java, C, or C++ (e.g. Ruby).[
+i Working knowledge of databases, service-oriented architectures, and highly-scaled distributed
+systems.[
+i Excellent written and verbal communication.[
+i Experience with Amazon Web Services.[
+i Experience with mission-critical, 24×7 systems experience with high throughput cloud systems.[
+i Relentless customer focus.[
+i Excellent analytical skills.[
+i Experience implementing and consuming large scale web services.[
+i Masters degree in Computer Science or equivalent.
+Amazon is an Equal Opportunity Employer – Minority / Women / Disability / Veteran / Gender
+Identity / Sexual Orientation / Age. Pursuant to the Los Angeles Fair Chance Ordinance, we will
+consider for employment qualified applicants with arrest and conviction records.
+Source: amazon.jobs
+#2 Software Engineer Thomson Reuters
+Job Description
+Thomson Reuters is the world’s leading source of intelligent information for businesses and
+professionals. We combine industry expertise with innovative technology to deliver critical information
+to leading decision-makers in the legal and tax & accounting markets, powered by the world’s most
+trusted news organization. More information about Thomson Reuters and its financial performance
+can be found on www.ThomsonReuters.com.
+Keka for the love of employee experience
+
+--- Page 4 ---
+Asia & Emerging Markets (AEM) focuses on helping Thomson Reuters expand its presence and
+accelerate growth in rapidly developing countries and regions. AEM offers products and services to
+professionals in Legal and Tax & Accounting in countries such as Australia, Japan, China, India,
+Russia, Hong Kong, Malaysia, Singapore, and the Gulf.
+Essential day to day responsibility –
+We are looking for a talented, highly motivated Software Engineer to work in a fast-paced,
+energetic environment. As a Software Engineer, you will be a member of a small team of
+developers that is responsible for supporting and developing commercial solutions used by
+customers throughout the globe. You will spend approximately 30% of your time interacting and
+collaborating with product developers, project managers, software engineers, and quality
+assurance analysts across the globe. The rest of your time will be spent designing, prototyping,
+developing, testing, and deploying technology solutions.
+KEY RESPONSIBILITIES:
+Ò Develops, deploys, and supports applications from initial ideation to implementation. Development
+is done in a variety of environments, but mainly Java on a Linux application server using Oracle as
+the database.Ð
+Ò Develops software solutions by studying requirements; conferring with business users and
+analysts; studying system flows and work processes; investigating problem areas; following the
+software development lifecycle.Ð
+Ò Willingness to operate in a diverse platform and has experience working with multiple project
+environments.Ð
+Ò Ability to handle support and development work items from multiple projects concurrentlyÐ
+Ò Analyzes product requirements and contributes to the design, development, and implementation
+of the software modules.Ð
+Ò Improves operations by collecting information from support incidents, conducting system analysis,
+root cause analysis, and provide issue resolutions.Ð
+Ò Willingness to learn new technologies, cross-train self and team members in different skills and
+tools.Ð
+Ò Awareness of Agile project development methodology, SCRUM, continuous integration process.Ð
+Ò Assists team lead with project development estimates and timelines.
+Education – Bachelor’s or Master’s degree in Computer Science or related field
+Required Skills – 0 to 3 year’s industry experience
+Keka for the love of employee experience
+
+--- Page 5 ---
+Knowledge and Skills
+a Core Java and J2EEY
+a Spring Framework – Core, Spring MVC, PersistenceY
+a HTML, CSS and JavaScriptY
+a Linux and/or UNIXY
+a Web Services – RestFUL web service developmentY
+a Tomcat/ Apache web serversY
+a SQL/PLSQL/Oracle databasesY
+a XML , XSL/T , Xpath,Y
+a TFS, CVS, SVN, Perforce, or similar source code control systemY
+a Unit testing – Junit, MockitoY
+a JIRAY
+a Distributed application development hosted on multiple environments.Y
+a Knowledge of .NET, C# is an added plus.Y
+a Strong focus on customer service.Y
+a Effective written and verbal communication skillsY
+a Strong problem solving, data analysis, design, and testing skills.Y
+a Hard worker, quick learner, and eager to leverage new technologies.
+At Thomson Reuters, we believe what we do matters. We are passionate about our work, inspired by
+the impact it has on our business and our customers. As a team, we believe in winning as one –
+collaborating to reach shared goals, and developing through challenging and meaningful experiences.
+With more than 25,000 employees in more than 100 countries, we work flexibly across boundaries
+and realize innovations that help shape industries around the world. Making this happen is a dynamic,
+evolving process, and we count on each employee to be a catalyst in driving our performance – and
+their own.
+As a global business, we rely on diversity of culture and thought to deliver on our goals. To ensure
+we can do that, we seek talented, qualified employees in all our operations around the world
+regardless of race, color, sex/gender, including pregnancy, gender identity, and expression,
+national origin, religion, sexual orientation, disability, age, marital status, citizen status, veteran
+status, or any other protected classification under applicable law. Thomson Reuters is proud to be
+an Equal Employment Opportunity/Affirmative Action Employer providing a drug-free workplace.
+We also make reasonable accommodations for qualified individuals with disabilities and for sincerely
+held religious beliefs in accordance with applicable law.
+Source: thomsonreuters.com
+Keka for the love of employee experience
+
+--- Page 6 ---
+#3 Software Engineer – Dropbox Seattle, WA
+Company Description
+Dropbox is a leading global collaboration platform that’s transforming the way people
+work together, from the smallest business to the largest enterprise. With more than 500
+million registered users across more than 180 countries, our mission is to unleash the
+world’s creative energy by designing a more enlightened way of working.
+Headquartered in San Francisco, CA, Dropbox has more than 12 offices around the
+world.
+Team Description
+Our Engineering team is working to simplify the way people work together. They’re building a family
+of products that handle over a billion files a day for people around the world. With our broad mission
+and massive scale, there are countless opportunities to make an impact.
+Role Description
+Dropbox is looking for software engineers to build the next generation of work collaboration tools. The
+software engineer role is a generalist role, accepting people with a broad range of expertise with an
+emphasis on the backend and distributed systems work. You can find more specialized engineering
+roles including mobile, web, and full-stack on our engineering jobs page.
+Software engineers work at all levels of the stack to deliver software – everything from syncing
+exabytes of data to staying in flow with Dropbox Paper, to handling millions of HTTP requests.
+Software Engineers are at the heart of everything we do at Dropbox, and in a typical week, you’ll be
+expected to develop new features in a multi-functional team of designers, product managers, project
+managers, and quality assurance engineers. Software engineers are also responsible for the quality of
+the code and systems they produce, working hand-in-hand with customer experience and quality
+assurance Dropboxers to ensure that our product continues to serve the needs of our tens of millions of
+users.
+If you are a new grad or intern please apply directly to that role.
+Keka for the love of employee experience
+
+--- Page 7 ---
+Responsibilities
+6 You will partner with product managers, designers, and analysts to deeply understand the needs
+of our users and build a product that serves those needs.8
+6 You will build infrastructure to handle metadata for hundreds of billions of files, hundreds of
+petabytes of user data, and millions of concurrent connections.8
+6 You will write modular, secure, and well-tested code.8
+6 You will design and build software capable of reaching millions of daily users in Python, React, and
+Go.8
+6 You will ensure that our development environment is best-in-class by delivering improvements to
+internal tooling and direct partnership with our product platform teams.8
+6 You will work closely with customer support to respond quickly to issues for our users and solve
+those in a permanent and scalable way.8
+6 You will articulate a technical vision for a more enlightened way of working and work with multi-
+functional partners to deliver that vision.
+Requirements
+6 BS degree in Computer Science or related technical field involving coding (e.g., physics or
+mathematics), or equivalent technical experience.8
+6 2+ years of work-related industry experience.8
+6 A desire to take Dropbox even further. If these large-scale projects resonate, we’d love to learn
+more about you and find out if we can work together.
+Benefits and Perks
+6 100% company paid individual medical, dental, & vision insurance coverage8
+6 401k + company match8
+6 Market competitive total compensation package8
+6 Free Dropbox space for your friends and family8
+6 Wellness Reimbursement8
+6 Generous vacation policy8
+6 10 companies paid holidays8
+6 Volunteer time off8
+6 Company-sponsored tech talks (technology and other relevant professional topics)
+Keka for the love of employee experience
+
+--- Page 8 ---
+Dropbox is an equal-opportunity employer. We are a welcoming place for everyone, and we do our
+best to make sure all people feel supported and connected at work. A big part of that effort is our
+support for members and allies of internal groups like Asians at Dropbox, BlackDropboxers, Latinx,
+Pride box (LGBTQ), Vets at Dropbox, Women at Dropbox, ATX Diversity (based in Austin, Texas), and
+the Dropbox Empowerment Network (based in Dublin, Ireland).
+Source: dropbox
+Keka for the love of employee experience
