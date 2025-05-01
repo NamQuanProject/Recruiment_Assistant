@@ -135,7 +135,13 @@ func ExtractJsonFromText(textPath string, outputPath string) (map[string]interfa
 	}
 
 	// 3. Send POST request
-	url := "http://localhost:8081/ai/parsing"
+	// url := "http://localhost:8081/ai/parsing"
+	url := os.Getenv("AI_URL")
+	if url == "" {
+		url = "http://localhost:8081" // Default URL for local testing
+	}
+	url = fmt.Sprintf("%s/ai/parsing", url)
+	log.Printf("Sending request to: %s", url)
 	resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
 	if err != nil {
 		return nil, fmt.Errorf("failed to send POST request: %w", err)
@@ -303,7 +309,15 @@ func ExtractCategoriesFromJDText(jobName, jdFilePath, txtOutput, jsonOutput stri
 		return fmt.Errorf("failed to marshal JSON: %w", err)
 	}
 
-	resp, err := http.Post("http://localhost:8081/ai/jd_criteria", "application/json", bytes.NewReader(jsonBody))
+	URL := os.Getenv("AI_URL")
+	if URL == "" {
+		URL = "http://localhost:8081" // Default URL for local testing
+	}
+	URL = fmt.Sprintf("%s/ai/jd_criteria", URL)
+	log.Printf("Sending request to: %s", URL)
+
+	// resp, err := http.Post("http://localhost:8081/ai/jd_criteria", "application/json", bytes.NewReader(jsonBody))
+	resp, err := http.Post(URL, "application/json", bytes.NewReader(jsonBody))
 	if err != nil {
 		return fmt.Errorf("HTTP request failed: %w", err)
 	}

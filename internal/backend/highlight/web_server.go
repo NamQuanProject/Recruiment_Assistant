@@ -77,7 +77,12 @@ func (s *WebServer) Run() {
 			return
 		}
 
-		areas, err := FindAreas(pdfpath, jobTitle, jobDetails, "http://localhost:8081", evaluationReference)
+		newURL := os.Getenv("AI_URL")
+		if newURL == "" {
+			newURL = "http://localhost:8081"
+		}
+
+		areas, err := FindAreas(pdfpath, jobTitle, jobDetails, newURL, evaluationReference)
 		if err != nil {
 			log.Printf("Failed to find areas: %v", err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to analyze CV"})
@@ -113,7 +118,11 @@ func (s *WebServer) Run() {
 		}
 
 		// Create highlight client and highlight the PDF
-		highlightClient := NewClient("http://localhost:8083")
+		URL := os.Getenv("HIGHLIGHT_URL")
+		if URL == "" {
+			URL = "http://localhost:8083" // Default URL for local testing
+		}
+		highlightClient := NewClient(URL)
 		highlightResp, err := highlightClient.HighlightPDF(pdfpath, areas)
 		if err != nil {
 			log.Printf("Failed to highlight PDF: %v", err)

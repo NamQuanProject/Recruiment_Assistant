@@ -108,7 +108,14 @@ func evaluateJobHandler(c *gin.Context) {
 			continue
 		}
 
-		resp, err := http.Post("http://localhost:8081/ai/evaluate", "application/json", bytes.NewBuffer(payloadBytes))
+		URL := os.Getenv("AI_URL")
+		if URL == "" {
+			URL = "http://localhost:8081"
+		}
+
+		// resp, err := http.Post("http://localhost:8081/ai/evaluate", "application/json", bytes.NewBuffer(payloadBytes))
+		resp, err := http.Post(fmt.Sprintf("%s/ai/evaluate", URL), "application/json", bytes.NewBuffer(payloadBytes))
+
 		if err != nil {
 			continue
 		}

@@ -138,7 +138,12 @@ func SubmitCVsHandler(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to prepare request"})
 		return
 	}
-	resp, err := http.Post("http://localhost:8084/output", "application/json", bytes.NewBuffer(reqBody))
+	URL := os.Getenv("OUTPUT_URL")
+	if URL == "" {
+		URL = "http://localhost:8084" // Default URL for local testing
+	}
+	// resp, err := http.Post("http://localhost:8084/output", "application/json", bytes.NewBuffer(reqBody))
+	resp, err := http.Post(fmt.Sprintf("%s/output", URL), "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to call evaluation server"})
 		return
@@ -169,7 +174,12 @@ func processCV(pdfPath, outPath string) error {
 	}
 
 	// Call parsing server
-	resp, err := http.Post("http://localhost:8085/parse/cv", "application/json", bytes.NewBuffer(reqBody))
+	URL := os.Getenv("PARSE_URL")
+	if URL == "" {
+		URL = "http://localhost:8085" // Default URL for local testing
+	}
+	// resp, err := http.Post("http://localhost:8085/parse/cv", "application/json", bytes.NewBuffer(reqBody))
+	resp, err := http.Post(fmt.Sprintf("%s/parse/cv", URL), "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
 		return fmt.Errorf("failed to call parsing server: %v", err)
 	}
@@ -196,7 +206,13 @@ func evaluate(path string) error {
 		return fmt.Errorf("failed to prepare request: %v", err)
 	}
 
-	resp, err := http.Post("http://localhost:8082/evaluate", "application/json", bytes.NewBuffer(reqBody))
+	URL := os.Getenv("EVAL_URL")
+	if URL == "" {
+		URL = "http://localhost:8082" // Default URL for local testing
+	}
+
+	// resp, err := http.Post("http://localhost:8082/evaluate", "application/json", bytes.NewBuffer(reqBody))
+	resp, err := http.Post(fmt.Sprintf("%s/evaluate", URL), "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
 		return fmt.Errorf("failed to call evaluation server: %v", err)
 	}

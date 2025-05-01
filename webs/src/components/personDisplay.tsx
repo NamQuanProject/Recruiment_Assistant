@@ -28,7 +28,14 @@ const Display = ({ rank, name, score, experience, authenticity, companies, evalP
         eval_id: evalId, // Use evalId for the request
       };
 
-      const initResponse = await fetch("http://localhost:8081/ai/chatbot/init", {
+      const AI_URL = import.meta.env.AI_URL || "http://localhost:8081"; // Use environment variable or default URL
+
+      // const initResponse = await fetch("http://localhost:8081/ai/chatbot/init", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify(initRequestBody),
+      // });
+      const initResponse = await fetch(`${AI_URL}/ai/chatbot/init`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(initRequestBody),
@@ -43,7 +50,14 @@ const Display = ({ rank, name, score, experience, authenticity, companies, evalP
           index: rank-1, // Use rank as the index for the request
         };
 
-        const hlCVResponse = await fetch("http://localhost:8080/getHlCV", {
+        // const hlCVResponse = await fetch("http://localhost:8080/getHlCV", {
+        //   method: "POST",
+        //   headers: { "Content-Type": "application/json" },
+        //   body: JSON.stringify(hlCVRequestBody),
+        // });
+        const API_URL = import.meta.env.AI_URL || "http://localhost:8081"; // Use environment variable or default URL
+        
+        const hlCVResponse = await fetch(`${API_URL}/getHlCV`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(hlCVRequestBody),

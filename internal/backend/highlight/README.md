@@ -59,7 +59,7 @@ The server will start on port 8083.
 import "github.com/KietAPCS/test_recruitment_assistant/internal/backend/highlight"
 
 // Create a highlight client
-highlightClient := highlight.NewClient("http://localhost:8083")
+highlightClient := highlight.NewClient("http://8083")
 
 // Highlight a PDF
 highlightResp, err := highlightClient.HighlightPDF("path/to/pdf/file.pdf", weakAreas)

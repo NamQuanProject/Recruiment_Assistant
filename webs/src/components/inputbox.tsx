@@ -72,7 +72,10 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
       }
   
       // Send the form data to the backend
-      const response = await fetch("http://localhost:8080/submitJD", {
+      const API_URL = import.meta.env.API_URL || "http://localhost:8080";
+      console.log("Submitting job description to:", API_URL);
+    
+      const response = await fetch(`${API_URL}/submitJD`, {
         method: "POST",
         body: formData,
       });
@@ -85,7 +88,9 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
         console.log("Parsed JSON Path:", responseData.path); // Log the path to the parsed JSON file
   
         // Fetch the JSON file from the path
-        const jsonResponse = await fetch(`http://localhost:8080/${responseData.path.replace(/\\/g, '/')}`);
+        
+        // const jsonResponse = await fetch(`http://localhost:8080/${responseData.path.replace(/\\/g, '/')}`);
+        const jsonResponse = await fetch(`${API_URL}/${responseData.path.replace(/\\/g, "/")}`);
         if (jsonResponse.ok) {
           const criteriaJson = await jsonResponse.json();
           console.log("Criteria JSON:", criteriaJson); // Log the parsed JSON data
@@ -140,17 +145,20 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
     setSubmitCvClicked(true); // Set the submit button clicked state
     try {
       setRankLoading(true); // Set loading state
-      const response = await fetch("http://localhost:8080/submitCVs", {
+      const API_URL = import.meta.env.API_URL || "http://localhost:8080";
+      const response = await fetch(`${API_URL}/submitCVs`, {
         method: "POST",
         body: formData,
       });
+      console.log("Response:", response); // Log the response object
       console.log(rankLoading) ;
       if (response.ok) {
         const responseData = await response.json(); // Parse the initial response
         console.log("Response Data:", responseData);
         console.log("cc");
         // Fetch the JSON file from the path provided in the response
-        const jsonResponse = await fetch(`http://localhost:8080/${responseData.final_out_path.replace(/\\/g, "/")}`);
+        // const jsonResponse = await fetch(`http://localhost:8080/${responseData.final_out_path.replace(/\\/g, "/")}`);
+        const jsonResponse = await fetch(`${API_URL}/${responseData.final_out_path.replace(/\\/g, "/")}`);
         if (jsonResponse.ok) {
           const jsonData = await jsonResponse.json(); // Parse the JSON file
           console.log("Fetched JSON Data:", jsonData);

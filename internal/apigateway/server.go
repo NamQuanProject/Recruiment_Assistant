@@ -21,7 +21,7 @@ func RunServer() {
 	r.Use(cors.New(cors.Config{
 		AllowOrigins: []string{
 			"http://localhost:5173",              // local frontend
-			"https://frontend-c5z1.onrender.com", // deployed frontend
+			"https://frontend-eqtg.onrender.com", // deployed frontend
 		},
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
@@ -39,12 +39,12 @@ func RunServer() {
 
 	// Serve HTML form upload
 	//r.GET("/", func(c *gin.Context) {
-		//c.HTML(http.StatusOK, "upload.html", nil)
+	//c.HTML(http.StatusOK, "upload.html", nil)
 	//})
 
 	// Create a route for testing the upload without auth (temporary)
 	//r.GET("/upload-test", func(c *gin.Context) {
-		//c.HTML(http.StatusOK, "upload.html", nil)
+	//c.HTML(http.StatusOK, "upload.html", nil)
 	//})
 
 	// Job description routes
