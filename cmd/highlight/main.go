@@ -12,9 +12,8 @@ import (
 func main() {
 
 	go func() {
-		server := highlight.NewWebServer()
-		log.Println("Starting web server...")
-		server.Run()
+		log.Println("[Highlight Service] Starting on :8083...")
+		highlight.RunServer()
 	}()
 
 	// Wait for interrupt signal (Ctrl+C)

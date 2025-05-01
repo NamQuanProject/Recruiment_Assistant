@@ -13,9 +13,46 @@ services:
     buildCommand: go build -o backend ./cmd/backend
     startCommand: ./backend
 
+  - name: aiservice-service
+    type: web
+    env: go
+    plan: free
+    buildCommand: go build -o aiservice ./cmd/aiservice
+    startCommand: ./aiservice
+
+  - name: evaluation-service
+    type: web
+    env: go
+    plan: free
+    buildCommand: go build -o evaluation ./cmd/evaluation
+    startCommand: ./evaluation
+
+  - name: highlight-service
+    type: web
+    env: go
+    plan: free
+    buildCommand: go build -o highlight ./cmd/highlight
+    startCommand: ./highlight
+
+  - name: output-service
+    type: web
+    env: go
+    plan: free
+    buildCommand: go build -o output ./cmd/output
+    startCommand: ./output
+
+  - name: parsing-service
+    type: web
+    env: go
+    plan: free
+    buildCommand: go build -o parsing ./cmd/parsing
+    startCommand: ./parsing
+
+
   - name: frontend
     type: web
     env: node
     plan: free
     buildCommand: cd webs && npm install
     startCommand: cd webs && npm run dev
+

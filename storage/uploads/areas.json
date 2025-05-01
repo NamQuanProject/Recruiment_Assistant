@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Python, Java, C++, SQL, JavaScript",
+    "page": 1,
+    "x": 84,
+    "y": 657,
+    "width": 159,
+    "height": 15,
+    "description": "This is a strong area because it explicitly lists C++, which is a key requirement in the job description. The inclusion of other relevant languages like Python, Java, SQL, and JavaScript further strengthens the candidate's profile.",
+    "type": "strong"
+  },
+  {
+    "text": "IBM",
+    "page": 1,
+    "x": 28,
+    "y": 288,
+    "width": 23,
+    "height": 15,
+    "description": "This is a strong area. Having experience in a reputable company like IBM adds credibility to the candidate's profile. The experience gained in a real-world industry setting is invaluable.",
+    "type": "strong"
+  },
+  {
+    "text": "Designed a cumulative aggregated dataset hosted in BigQuery and GCS to unify multiple",
+    "page": 1,
+    "x": 56,
+    "y": 318,
+    "width": 396,
+    "height": 15,
+    "description": "This is a strong area because it demonstrates experience with designing and implementing data solutions, which are relevant to software engineering roles. The mention of BigQuery and GCS also indicates familiarity with cloud technologies.",
+    "type": "strong"
+  },
+  {
+    "text": "Relevant Coursework: Machine Learning, Distributed Systems, Algorithms, Cloud Computing",
+    "page": 1,
+    "x": 56,
+    "y": 134,
+    "width": 428,
+    "height": 15,
+    "description": "This is a strong area because it shows a solid foundation in core computer science concepts, especially Machine Learning and Distributed Systems, which are highly valued in software engineering, especially in senior roles that can lead to more architectural work.",
+    "type": "strong"
+  },
+  {
+    "text": "Master of Science in Computer Science",
+    "page": 1,
+    "x": 28,
+    "y": 107,
+    "width": 166,
+    "height": 15,
+    "description": "This is a strong area because it indicates a higher level of education in a relevant field, which is often preferred for senior software engineering roles. The master's degree signals a deeper understanding of computer science principles.",
+    "type": "strong"
+  },
+  {
+    "text": "Code Quality and Testing Practices",
+    "page": 1,
+    "x": 28,
+    "y": 702,
+    "width": 77,
+    "height": 15,
+    "description": "This is a weak area because while Test-Driven Development is mentioned, there's no concrete examples of how the candidate ensures code quality (e.g., code reviews, static analysis) or uses specific testing frameworks. Including details about testing methodologies and tools would greatly improve this section. Also mentioning specific coverage would improve the CV.",
+    "type": "weak"
+  },
+  {
+    "text": "Thesis (if applicable):",
+    "page": 1,
+    "x": 56,
+    "y": 179,
+    "width": 104,
+    "height": 15,
+    "description": "While a thesis title is present, elaborating on the technical challenges, solutions, and outcomes of the thesis work would make this section stronger and more relevant to a software engineering role, especially demonstrating senior level knowledge.",
+    "type": "weak"
+  },
+  {
+    "text": "Adaptability and Problem Resolution Under Pressure",
+    "page": 1,
+    "x": 56,
+    "y": 378,
+    "width": 52,
+    "height": 15,
+    "description": "This is a weak area because the CV lacks specific examples of how the candidate handled challenging situations or adapted to changing requirements under pressure. Adding behavioral examples showcasing problem-solving skills in difficult situations would significantly enhance this section.",
+    "type": "weak"
+  },
+  {
+    "text": "Fidelity Investments",
+    "page": 1,
+    "x": 28,
+    "y": 408,
+    "width": 98,
+    "height": 15,
+    "description": "The Fidelity Investments experience is good, but the description is very brief. Adding more context about the projects the candidate worked on and the technologies they used would make this experience more impactful. Especially how their contribution mattered to real user.",
+    "type": "weak"
+  },
+  {
+    "text": "System Design and Architecture",
+    "page": 1,
+    "x": 56,
+    "y": 318,
+    "width": 396,
+    "height": 15,
+    "description": "While the IBM experience mentions designing a dataset, it lacks depth in architectural choices and scalability considerations. Providing more detailed examples of system design projects, architectural patterns used, and how scalability was addressed would strengthen this area for a senior engineer role. Mentioning design patterns are good.",
+    "type": "weak"
+  }
+]

@@ -6,15 +6,14 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/highlight"
+	"github.com/KietAPCS/test_recruitment_assistant/internal/backend/evaluation"
 )
 
 func main() {
 
 	go func() {
-		server := highlight.NewWebServer()
-		log.Println("Starting web server...")
-		server.Run()
+		log.Println("[Evaluation] Starting on :8082...")
+		evaluation.RunServer()
 	}()
 
 	// Wait for interrupt signal (Ctrl+C)

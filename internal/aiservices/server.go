@@ -14,7 +14,10 @@ func RunServer() {
 	r := gin.Default()
 	// Enable CORS
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5173"},                   // Allow requests from your frontend
+		AllowOrigins: []string{
+			"http://localhost:5173",              // local frontend
+			"https://frontend-c5z1.onrender.com", // deployed frontend
+		}, // Allow requests from your frontend
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"}, // Allowed HTTP methods
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"}, // Allowed headers
 		ExposeHeaders:    []string{"Content-Length"},                          // Headers exposed to the browser

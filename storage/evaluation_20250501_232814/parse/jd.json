@@ -1,0 +1,190 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency in C++ and Related Technologies",
+      "EvaluationStrategy": "Assess the candidate's depth of knowledge and practical experience with C++, Java, Python, relational databases (ORM, SQL), HTML5, CSS3, web application frameworks (Wicket, GWT, Spring MVC), scripting, and test automation through technical questions, code samples, and past project descriptions. Verify years of experience and specific projects showcasing these skills.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates expert-level proficiency, deep understanding of underlying principles, and extensive practical experience. Can independently design and implement complex solutions.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Demonstrates strong proficiency, solid understanding of principles, and considerable practical experience. Can effectively contribute to complex projects.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Demonstrates moderate proficiency, basic understanding of principles, and some practical experience. Can work under guidance on simpler tasks.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Demonstrates limited proficiency, minimal understanding of principles, and little practical experience. Requires significant guidance and training.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Demonstrates no proficiency or understanding.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software Development Lifecycle Expertise",
+      "EvaluationStrategy": "Evaluate the candidate's understanding and experience in all phases of the software development lifecycle, including design, development, testing, deployment, and maintenance. Assess their ability to document processes, adhere to company standards, and contribute to continuous integration.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert understanding and practical experience in all phases of the SDLC. Can independently manage projects and mentor others.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong understanding and practical experience in most phases of the SDLC. Can effectively contribute to projects and identify areas for improvement.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Moderate understanding and some practical experience in key phases of the SDLC. Requires guidance on complex tasks.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Limited understanding and minimal practical experience in the SDLC. Requires significant training and supervision.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Demonstrates no understanding or experience.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills",
+      "EvaluationStrategy": "Assess the candidate's ability to analyze complex problems, identify root causes, and develop effective solutions. Evaluate their critical thinking skills, attention to detail, and ability to make sound judgments under pressure.",
+      "ScoringGuided": [
+        {
+          "Comment": "Exceptional problem-solving and analytical skills. Consistently identifies and solves complex problems independently and effectively.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong problem-solving and analytical skills. Effectively solves most problems with minimal guidance.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Moderate problem-solving and analytical skills. Requires some guidance to solve complex problems.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Limited problem-solving and analytical skills. Requires significant guidance and assistance.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Demonstrates poor problem-solving and analytical skills.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Collaboration and Communication Skills",
+      "EvaluationStrategy": "Evaluate the candidate's ability to work effectively in a team environment, communicate technical information clearly and concisely, and collaborate with stakeholders across different departments. Assess their interpersonal skills, active listening skills, and ability to influence others.",
+      "ScoringGuided": [
+        {
+          "Comment": "Exceptional collaboration and communication skills. Effectively leads teams, communicates complex information clearly, and builds strong relationships with stakeholders.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong collaboration and communication skills. Works effectively in teams, communicates information clearly, and builds positive relationships with stakeholders.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Moderate collaboration and communication skills. Contributes to team efforts and communicates information adequately.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Limited collaboration and communication skills. Requires improvement in teamwork and communication.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Demonstrates poor collaboration and communication skills.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality and Testing Practices",
+      "EvaluationStrategy": "Assess the candidate's understanding of code quality principles, including code readability, maintainability, and testability. Evaluate their experience with unit testing, integration testing, and test automation frameworks.",
+      "ScoringGuided": [
+        {
+          "Comment": "Writes clean, well-documented, and highly testable code. Actively promotes and implements best practices for code quality and testing.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Writes good quality code with adequate documentation and testing. Follows established coding standards and testing procedures.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Writes code that is functional but may lack documentation or proper testing. Needs guidance on code quality and testing best practices.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "System Design and Architecture",
+      "EvaluationStrategy": "Evaluate the candidate's ability to design scalable, reliable, and efficient software systems. Assess their understanding of architectural patterns, design principles, and trade-offs.",
+      "ScoringGuided": [
+        {
+          "Comment": "Designs robust and scalable systems with a deep understanding of architectural patterns and design principles. Proactively identifies and addresses potential issues.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Designs functional systems with a good understanding of architectural patterns and design principles. Can effectively contribute to system design discussions.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Designs basic systems with limited understanding of architectural patterns and design principles. Requires guidance on system design tasks.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Continuous Learning and Professional Development",
+      "EvaluationStrategy": "Assess the candidate's commitment to continuous learning and professional development. Evaluate their awareness of industry trends, participation in training programs, and contributions to the software engineering community.",
+      "ScoringGuided": [
+        {
+          "Comment": "Actively pursues continuous learning opportunities and contributes to the software engineering community. Stays up-to-date with industry trends and emerging technologies.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Demonstrates a commitment to professional development and participates in relevant training programs. Stays informed about industry trends.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Shows limited interest in continuous learning and professional development. Requires encouragement to pursue training opportunities.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Adaptability and Problem Resolution Under Pressure",
+      "EvaluationStrategy": "Analyze the candidate's responses to behavioral questions related to conflict resolution, adherence to deadlines and workflow under pressure, and problem-solving under adverse conditions. Gauge the candidate's flexibility and poise during highly stressful situations.",
+      "ScoringGuided": [
+        {
+          "Comment": "Consistently demonstrates an ability to resolve conflicts with diplomacy and maintain a focus on the task and workflow. Communicates effectively under stress and keeps goals in mind despite issues.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Is willing to work in adverse conditions and adheres to deadlines and solves problems in workflow while under moderate pressure.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Rarely works well under pressure and needs strong guidelines to stay on task with deadlines and workflow while also exhibiting the need for strong diplomacy to mediate issues.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}
