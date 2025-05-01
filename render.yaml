@@ -76,4 +76,10 @@ services:
     plan: free
     buildCommand: cd webs && npm install
     startCommand: cd webs && npm run dev
+    envVars:
+      - name: API_URL
+        value: "https://api-service-ub0y.onrender.com"
+      - name: AI_URL
+        value: "https://aiservice-service.onrender.com"
+     
 
