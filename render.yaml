@@ -75,8 +75,3 @@ services:
     plan: free
     buildCommand: cd webs && npm install && npm run build
     startCommand: cd webs && npm install -g serve && serve -s dist
-    envVars:
-      - key: VITE_API_URL
-        value: "https://api-service-ub0y.onrender.com"
-      - key: VITE_AI_URL
-        value: "https://aiservice-service.onrender.com"
