@@ -146,6 +146,9 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
     try {
       setRankLoading(true); // Set loading state
       const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+      console.log("import.meta.env =", import.meta.env);
+      console.log("API_URL =", import.meta.env.VITE_API_URL);
+
       const response = await fetch(`${API_URL}/submitCVs`, {
         method: "POST",
         body: formData,
