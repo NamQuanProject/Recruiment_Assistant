@@ -6,7 +6,7 @@ services:
     buildCommand: go build -o api ./cmd/api
     startCommand: ./api
     envVars:
-      - name: API_URL
+      - key: API_URL
         value: "https://api-service-ub0y.onrender.com"
 
   - name: backend-service
@@ -16,7 +16,7 @@ services:
     buildCommand: go build -o backend ./cmd/backend
     startCommand: ./backend
     envVars:
-      - name: BACKEND_URL
+      - key: BACKEND_URL
         value: "https://backend-service-mjv8.onrender.com"
 
   - name: aiservice-service
@@ -26,7 +26,7 @@ services:
     buildCommand: go build -o aiservice ./cmd/aiservice
     startCommand: ./aiservice
     envVars:
-      - name: AI_URL
+      - key: AI_URL
         value: "https://aiservice-service.onrender.com"
 
   - name: evaluation-service
@@ -36,7 +36,7 @@ services:
     buildCommand: go build -o evaluation ./cmd/evaluation
     startCommand: ./evaluation
     envVars:
-      - name: EVAL_URL
+      - key: EVAL_URL
         value: "https://evaluation-service-dytd.onrender.com"
 
   - name: highlight-service
@@ -46,7 +46,7 @@ services:
     buildCommand: go build -o highlight ./cmd/highlight
     startCommand: ./highlight
     envVars:
-      - name: HIGHLIGHT_URL
+      - key: HIGHLIGHT_URL
         value: "https://highlight-service.onrender.com"
 
   - name: output-service
@@ -56,7 +56,7 @@ services:
     buildCommand: go build -o output ./cmd/output
     startCommand: ./output
     envVars:
-      - name: OUTPUT_URL
+      - key: OUTPUT_URL
         value: "https://output-service.onrender.com"
 
   - name: parsing-service
@@ -66,9 +66,8 @@ services:
     buildCommand: go build -o parsing ./cmd/parsing
     startCommand: ./parsing
     envVars:
-      - name: PARSE_URL
+      - key: PARSE_URL
         value: "https://parsing-service.onrender.com"
-
 
   - name: frontend
     type: web
@@ -77,9 +76,7 @@ services:
     buildCommand: cd webs && npm install
     startCommand: cd webs && npm run dev
     envVars:
-      - name: API_URL
+      - key: VITE_API_URL
         value: "https://api-service-ub0y.onrender.com"
-      - name: AI_URL
+      - key: VITE_AI_URL
         value: "https://aiservice-service.onrender.com"
-     
-
