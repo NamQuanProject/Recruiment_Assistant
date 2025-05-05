@@ -28,7 +28,7 @@ const CandidateDetailPage = () => {
     const fetchCriteriaData = async () => {
       if (candidate?.path_to_evaluation) {
         try {
-          const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080"; // Use environment variable or default URL
+          const API_URL ="https://api-service-ub0y.onrender.com"; // Use environment variable or default URL
           // const response = await fetch(`http://localhost:8080/${candidate.path_to_evaluation.replace(/\\/g, "/")}`);
           const response = await fetch(`${API_URL}/${candidate.path_to_evaluation.replace(/\\/g, "/")}`);
           console.log("Fetching criteria data from:", `${API_URL}/${candidate.path_to_evaluation.replace(/\\/g, "/")}`);
@@ -76,7 +76,7 @@ const CandidateDetailPage = () => {
       console.log("Request body:", requestBody); // Log the request body for debugging
 
       // Send the POST request to the backend
-      const AI_URL = import.meta.env.VITE_AI_URL || "http://localhost:8081"; // Use environment variable or default URL
+      const AI_URL = "https://aiservice-service.onrender.com"; // Use environment variable or default URL
       // const response = await fetch("http://localhost:8081/ai/chatbot/ask", {
       //   method: "POST",
       //   headers: { "Content-Type": "application/json" },
@@ -123,8 +123,8 @@ const CandidateDetailPage = () => {
       <div className="flex flex-col justify-between h-[1600px] w-5/6 mx-auto bg-primary border border-gray-300 rounded-md shadow-md py-6 px-4">
         <div className="w-full gap-4 flex justify-between h-7/10 mx-auto">
           <iframe
-            //  src={`http://localhost:8080/${hlCVData?.highlighted_pdf_path.replace(/\\/g, "/")}`}
-            src={`${import.meta.env.VITE_API_URL}/${hlCVData?.highlighted_pdf_path.replace(/\\/g, "/")}`}
+             src={`https://api-service-ub0y.onrender.com/${hlCVData?.highlighted_pdf_path.replace(/\\/g, "/")}`}
+            // src={`${import.meta.env.VITE_API_URL}/${hlCVData?.highlighted_pdf_path.replace(/\\/g, "/")}`}
             title="Resume"
             className="w-3/5 h-full border object-contain"
           ></iframe>

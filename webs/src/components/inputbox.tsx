@@ -72,7 +72,7 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
       }
   
       // Send the form data to the backend
-      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+      const API_URL = "https://api-service-ub0y.onrender.com";
       console.log("Submitting job description to:", API_URL);
     
       const response = await fetch(`${API_URL}/submitJD`, {
@@ -145,9 +145,9 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
     setSubmitCvClicked(true); // Set the submit button clicked state
     try {
       setRankLoading(true); // Set loading state
-      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
-      console.log("import.meta.env =", import.meta.env);
-      console.log("API_URL =", import.meta.env.VITE_API_URL);
+      const API_URL = "https://api-service-ub0y.onrender.com";
+      // console.log("import.meta.env =", import.meta.env);
+      // console.log("API_URL =", import.meta.env.VITE_API_URL);
 
       const response = await fetch(`${API_URL}/submitCVs`, {
         method: "POST",

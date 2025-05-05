@@ -28,7 +28,7 @@ const Display = ({ rank, name, score, experience, authenticity, companies, evalP
         eval_id: evalId, // Use evalId for the request
       };
 
-      const AI_URL = import.meta.env.VITE_AI_URL || "http://localhost:8081"; // Use environment variable or default URL
+      const AI_URL = "https://aiservice-service.onrender.com"; // Use environment variable or default URL
 
       // const initResponse = await fetch("http://localhost:8081/ai/chatbot/init", {
       //   method: "POST",
@@ -55,7 +55,7 @@ const Display = ({ rank, name, score, experience, authenticity, companies, evalP
         //   headers: { "Content-Type": "application/json" },
         //   body: JSON.stringify(hlCVRequestBody),
         // });
-        const API_URL = import.meta.env.VITE_AI_URL || "http://localhost:8081"; // Use environment variable or default URL
+        const API_URL = "https://api-service-ub0y.onrender.com"; // Use environment variable or default URL
         
         const hlCVResponse = await fetch(`${API_URL}/getHlCV`, {
           method: "POST",
