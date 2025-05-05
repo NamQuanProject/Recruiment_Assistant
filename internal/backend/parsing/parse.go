@@ -136,10 +136,11 @@ func ExtractJsonFromText(textPath string, outputPath string) (map[string]interfa
 
 	// 3. Send POST request
 	// url := "http://localhost:8081/ai/parsing"
-	url := os.Getenv("AI_URL")
-	if url == "" {
-		url = "http://localhost:8081" // Default URL for local testing
-	}
+	// url := os.Getenv("AI_URL")
+	// if url == "" {
+	// 	url = "http://localhost:8081" // Default URL for local testing
+	// }
+	url := "https://aiservice-service.onrender.com"
 	url = fmt.Sprintf("%s/ai/parsing", url)
 	log.Printf("Sending request to: %s", url)
 	resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
@@ -309,10 +310,11 @@ func ExtractCategoriesFromJDText(jobName, jdFilePath, txtOutput, jsonOutput stri
 		return fmt.Errorf("failed to marshal JSON: %w", err)
 	}
 
-	URL := os.Getenv("AI_URL")
-	if URL == "" {
-		URL = "http://localhost:8081" // Default URL for local testing
-	}
+	// URL := os.Getenv("AI_URL")
+	// if URL == "" {
+	// 	URL = "http://localhost:8081" // Default URL for local testing
+	// }
+	URL := "https://aiservice-service.onrender.com"
 	URL = fmt.Sprintf("%s/ai/jd_criteria", URL)
 	log.Printf("Sending request to: %s", URL)
 

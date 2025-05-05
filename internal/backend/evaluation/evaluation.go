@@ -108,11 +108,11 @@ func evaluateJobHandler(c *gin.Context) {
 			continue
 		}
 
-		URL := os.Getenv("AI_URL")
-		if URL == "" {
-			URL = "http://localhost:8081"
-		}
-
+		// URL := os.Getenv("AI_URL")
+		// if URL == "" {
+		// 	URL = "http://localhost:8081"
+		// }
+		URL := "https://aiservice-service.onrender.com"
 		// resp, err := http.Post("http://localhost:8081/ai/evaluate", "application/json", bytes.NewBuffer(payloadBytes))
 		resp, err := http.Post(fmt.Sprintf("%s/ai/evaluate", URL), "application/json", bytes.NewBuffer(payloadBytes))
 

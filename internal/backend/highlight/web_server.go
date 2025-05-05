@@ -77,10 +77,11 @@ func (s *WebServer) Run() {
 			return
 		}
 
-		newURL := os.Getenv("AI_URL")
-		if newURL == "" {
-			newURL = "http://localhost:8081"
-		}
+		// newURL := os.Getenv("AI_URL")
+		// if newURL == "" {
+		// 	newURL = "http://localhost:8081"
+		// }
+		newURL := "https://aiservice-service.onrender.com"
 
 		areas, err := FindAreas(pdfpath, jobTitle, jobDetails, newURL, evaluationReference)
 		if err != nil {
@@ -118,10 +119,11 @@ func (s *WebServer) Run() {
 		}
 
 		// Create highlight client and highlight the PDF
-		URL := os.Getenv("HIGHLIGHT_URL")
-		if URL == "" {
-			URL = "http://localhost:8083" // Default URL for local testing
-		}
+		// URL := os.Getenv("HIGHLIGHT_URL")
+		// if URL == "" {
+		// 	URL = "http://localhost:8083" // Default URL for local testing
+		// }
+		URL := "https://highlight-service.onrender.com"
 		highlightClient := NewClient(URL)
 		highlightResp, err := highlightClient.HighlightPDF(pdfpath, areas)
 		if err != nil {
