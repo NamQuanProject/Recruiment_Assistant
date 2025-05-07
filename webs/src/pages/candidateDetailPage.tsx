@@ -16,7 +16,7 @@ const CandidateDetailPage = () => {
   const { hlCVData } = location.state || {}; // Extract hlCVData from the state
   // Find the candidate based on the rank
   const candidate = sharedData?.list.find(
-    (c, index) => index + 1 === parseInt(rank || "", 10)
+    (_, index) => index + 1 === parseInt(rank || "", 10)
   );
   console.log("Candidate data:", sharedData); // Log the candidate data for debugging
   const [criteriaData, setCriteriaData] = useState<any>(null); // State to store fetched JSON data

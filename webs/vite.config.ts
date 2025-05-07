@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     server: {
       host: '0.0.0.0',
       port: 5173,
-      allowedHosts: ['frontend-eqtg.onrender.com'], // Optional, remove if not needed
+      allowedHosts: ['frontend-u3bd.onrender.com'], // Optional, remove if not needed
     },
     define: {
       // Injecting VITE_API_URL from environment variables

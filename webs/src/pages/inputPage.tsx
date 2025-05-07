@@ -1,7 +1,7 @@
 import NavBar from "../components/navbar";
 import IPBox from "../components/inputbox";
 import Criteria from "../components/criteria";
-import React, { useState } from "react";
+import { useState } from "react";
 import Logo1 from '../assets/Ellipse 1.png';
 import Logo2 from '../assets/Ellipse 2.png';
 import Logo3 from '../assets/Ellipse 3.png';

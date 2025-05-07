@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 import {Routes, Route,} from 'react-router-dom';
 import './index.css';
 import InputPage from './pages/inputPage';
 import DashboardPage from './pages/dashboard';
 import CandidateDetailPage from './pages/candidateDetailPage';
 import { DataProvider } from './components/datacontext';
-import NavBar from './components/navbar';
+// import NavBar from './components/navbar';
 import HomePage from './pages/homePage';
 const App = () => {
   return (

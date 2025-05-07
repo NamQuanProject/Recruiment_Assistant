@@ -3,7 +3,7 @@ import HomepageImg from "../assets/Homepage.png";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import {Link } from "react-router-dom";
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 import Logo from "../assets/logo.png";
 
 const features = [
