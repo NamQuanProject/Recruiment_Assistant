@@ -1,0 +1,162 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Skills and Experience: Assesses the candidate's proficiency in required technologies and their overall experience in software development.",
+      "EvaluationStrategy": "Review the candidate's resume and experience, focusing on specific technologies mentioned in the job description (C#, .NET, SQL, JavaScript, HTML, CSS, etc.). Verify claims during technical interviews and coding challenges.",
+      "Justification": "Essential for performing the core functions of the job. Directly from Main JD and Candidate JD (skills requirements).",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no experience with required technologies. Lacks fundamental understanding of software development principles.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Some experience with required technologies, but may require guidance. Basic understanding of software development principles.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Proficient in most required technologies and has a solid understanding of software development principles. Can work independently on most tasks.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert in all required technologies and has extensive experience in software development. Can lead projects and mentor other developers.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Evaluates the candidate's ability to identify, analyze, and solve technical problems.",
+      "EvaluationStrategy": "Present the candidate with technical challenges and assess their approach to problem-solving. Observe their ability to break down complex problems into smaller, manageable steps. Evaluate their debugging skills.",
+      "Justification": "Critical for maintaining and modifying software, troubleshooting issues, and developing effective solutions.  From Main JD (strong troubleshooting skills) and Candidate JD (examine existing systems for flaws).",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to identify and analyze technical problems. Requires significant assistance to solve even simple problems.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Can identify and analyze basic technical problems with some guidance. Requires assistance to solve complex problems.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Can independently identify, analyze, and solve most technical problems. Demonstrates strong debugging skills.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving and analytical skills. Can quickly identify, analyze, and solve complex technical problems with minimal assistance. Proactively identifies potential issues and develops solutions.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Collaboration Skills: Assesses the candidate's ability to communicate effectively with stakeholders and work collaboratively within a team.",
+      "EvaluationStrategy": "Assess the candidate's communication skills during the interview process. Evaluate their ability to explain technical concepts clearly and concisely. Review their experience working in collaborative environments.",
+      "Justification": "Important for interfacing with stakeholders, creating technical documentation, and working in a collaborative environment. From Main JD (strong communication skills) and Candidate JD (Collaborate with global team).",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication skills. Struggles to explain technical concepts clearly. Difficulty working in a team environment.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Adequate communication skills. Can explain basic technical concepts. Able to work in a team environment with some guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong communication skills. Can explain technical concepts clearly and concisely. Works effectively in a team environment.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Excellent communication and collaboration skills. Can effectively communicate with stakeholders at all levels. A strong team player who can lead and motivate others.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Software Development Lifecycle (SDLC) Knowledge: Evaluates the candidate's understanding of the software development lifecycle and their ability to contribute to each phase.",
+      "EvaluationStrategy": "Ask the candidate about their experience with different phases of the SDLC (planning, analysis, design, development, implementation, maintenance). Review their ability to create system requirements, technical specifications, and test plans.",
+      "Justification": "Necessary for developing and maintaining software systems effectively. From Main JD (participate in all facets of software and system development life-cycle) and Candidate JD (Plan and execute full software development lifecycle).",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited or no understanding of the SDLC. Unable to contribute to any phase of the SDLC.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Basic understanding of the SDLC. Can contribute to some phases of the SDLC with guidance.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Solid understanding of the SDLC. Can contribute to most phases of the SDLC independently.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert understanding of the SDLC. Can contribute to all phases of the SDLC and lead SDLC-related activities.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Coding Quality and Best Practices: Assesses the candidate's ability to write clean, maintainable, and efficient code.",
+      "EvaluationStrategy": "Review code samples provided by the candidate. Evaluate their use of coding standards, design patterns, and testing methodologies. Assess their knowledge of code refactoring techniques.",
+      "Justification": "Ensures the long-term maintainability and scalability of the software. From Candidate JD (software and networking platforms that are free of faulty programming).",
+      "ScoringGuided": [
+        {
+          "Comment": "Code is difficult to understand and maintain. Lacks coding standards and best practices.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Code is generally understandable, but could be improved in terms of maintainability and efficiency. Follows some coding standards.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Code is clean, maintainable, and efficient. Follows coding standards and best practices. Demonstrates a strong understanding of design patterns.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Adaptability and Learning Agility: Evaluates the candidate's willingness and ability to learn new technologies and adapt to changing project requirements.",
+      "EvaluationStrategy": "Ask the candidate about their experience learning new technologies and adapting to changing project requirements. Assess their willingness to take on new challenges and learn from their mistakes. Observe the candidates interest in professional growth.",
+      "Justification": "Important for keeping up with the rapidly evolving technology landscape. From Main JD (a fast learner) and Candidate JD (Desire to continue professional growth).",
+      "ScoringGuided": [
+        {
+          "Comment": "Resistant to learning new technologies or adapting to changing project requirements. Lacks a growth mindset.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Willing to learn new technologies and adapt to changing project requirements with some encouragement.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Highly adaptable and eager to learn new technologies. Proactively seeks out new challenges and learns quickly from their mistakes. Has a strong professional growth mindset.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Domain Knowledge (Public Safety/Health): Assesses the candidate's familiarity with the public safety and/or public health software fields.",
+      "EvaluationStrategy": "Ask the candidate about their experience working in the public safety and/or public health software fields. Review their understanding of the unique challenges and requirements of these domains. Check for experience interfacing with third-party solutions.",
+      "Justification": "Preferred skill for understanding the specific needs of the company's customers. From Main JD (experience working with business intelligence in the public safety and/or public health software fields).",
+      "ScoringGuided": [
+        {
+          "Comment": "No experience in the public safety or public health software fields. Lacks understanding of the unique challenges and requirements of these domains.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Some experience in the public safety or public health software fields. Basic understanding of the unique challenges and requirements of these domains.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Significant experience in the public safety or public health software fields. Strong understanding of the unique challenges and requirements of these domains. Experience interfacing with third-party solutions.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

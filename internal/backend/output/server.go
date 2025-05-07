@@ -38,7 +38,7 @@ func RunServer() {
 	r := gin.Default()
 
 	// Define API routes
-	r.POST("/output", outputHandler)
+	// r.POST("/output", outputHandler)
 
 	// Start the server on port 8084
 	port := os.Getenv("PORT")

@@ -1,4 +1,4 @@
-package parsing
+package handlers
 
 import (
 	"archive/zip"

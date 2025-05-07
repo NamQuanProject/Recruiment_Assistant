@@ -73,4 +73,4 @@ func (c *Client) HighlightPDF(pdfPath string, areas []Area) (*HighlightResponse,
 	}
 
 	return &highlightResp, nil
-} 
+}

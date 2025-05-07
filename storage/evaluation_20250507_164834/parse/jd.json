@@ -1,0 +1,138 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Technical Proficiency: Assesses the candidate's depth and breadth of technical skills relevant to the C++ software engineering role.",
+      "EvaluationStrategy": "Evaluate the candidate's proficiency in C++ and related technologies through their responses to technical questions, code samples (if available), and descriptions of past projects. Assess their understanding of data structures, algorithms, and software design principles.",
+      "Justification": "This category is crucial as it directly measures the candidate's ability to perform the core functions of a software engineer, which is explicitly mentioned in the Main JD. This comes from the Main JD as the only skill mentioned is 'c++'.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited understanding of C++ and core software engineering principles. Struggles to articulate technical concepts and lacks practical experience.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates a basic understanding of C++ and some software engineering principles. Can discuss technical concepts but may lack in-depth knowledge and practical application.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong understanding of C++ and software engineering principles. Demonstrates practical experience in designing, developing, and debugging software. Can articulate complex technical concepts clearly.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Expert-level proficiency in C++ and software engineering principles. Demonstrates extensive experience in designing, developing, and debugging complex software systems. Exhibits exceptional problem-solving skills and can lead technical discussions.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Problem-Solving and Analytical Skills: Assesses the candidate's ability to analyze complex problems, develop effective solutions, and apply critical thinking.",
+      "EvaluationStrategy": "Present the candidate with hypothetical scenarios, technical challenges, or debugging exercises to evaluate their problem-solving approach. Assess their ability to break down complex problems into smaller, manageable components, identify root causes, and develop logical solutions. Look for evidence of analytical thinking and attention to detail.",
+      "Justification": "Problem-solving is implicit in the general description of software engineers fixing problems. The guided JD touches on analytical skills for handling disagreements, reinforcing the importance of this MainCategory. Sourced from both Main and Guided JDs.",
+      "ScoringGuided": [
+        {
+          "Comment": "Struggles to analyze complex problems and develop effective solutions. Lacks a structured problem-solving approach and demonstrates limited analytical skills.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates a basic ability to analyze problems and develop solutions. Can identify some root causes but may struggle with more complex issues. Analytical skills are developing but not yet fully refined.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong problem-solving and analytical skills. Able to effectively analyze complex problems, identify root causes, and develop logical solutions. Demonstrates a structured problem-solving approach and pays close attention to detail.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional problem-solving and analytical skills. Able to analyze highly complex problems, identify underlying issues, and develop innovative solutions. Demonstrates a highly structured and efficient problem-solving approach.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Collaboration and Communication: Evaluates the candidate's ability to work effectively in a team environment, communicate technical information clearly, and collaborate with stakeholders.",
+      "EvaluationStrategy": "Assess the candidate's communication skills through their responses to behavioral questions and their ability to explain technical concepts in a clear and concise manner. Evaluate their teamwork skills by discussing past projects and their role in collaborative efforts. Assess their ability to provide and receive constructive feedback.",
+      "Justification": "The Guided JD emphasizes the importance of collaboration with various teams and clients. Questions are specifically designed to test these skills. Relevant for success within the company and therefore needs to be rated as a Main Category. Sourced from the Guided JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Poor communication and collaboration skills. Struggles to articulate technical concepts clearly and demonstrates difficulty working in a team environment.",
+          "Range": "1-3"
+        },
+        {
+          "Comment": "Demonstrates basic communication and collaboration skills. Can communicate technical information but may struggle with more complex concepts. Teamwork skills are developing but not yet fully refined.",
+          "Range": "4-6"
+        },
+        {
+          "Comment": "Strong communication and collaboration skills. Able to communicate technical information clearly and concisely. Works effectively in a team environment and can provide and receive constructive feedback.",
+          "Range": "7-9"
+        },
+        {
+          "Comment": "Exceptional communication and collaboration skills. Able to communicate complex technical information clearly and concisely. A highly effective team player who excels at collaboration and can lead technical discussions.",
+          "Range": "10"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Code Quality and Best Practices: Evaluates the candidate's commitment to writing clean, maintainable, and efficient code.",
+      "EvaluationStrategy": "Assess the candidate's understanding of coding standards, design patterns, and best practices through code reviews (if available) and technical discussions. Evaluate their ability to write well-documented code and follow established coding conventions. Assess how they spot and fix bugs.",
+      "Justification": "This is explicitly mentioned in the guided JD. Writing quality code is mentioned frequently as a key success factor. From Guided JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates limited awareness of code quality and best practices. Code is often difficult to read, maintain, and debug.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Understands basic coding standards and best practices. Code is generally readable and maintainable, but there is room for improvement.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Strong commitment to code quality and best practices. Code is clean, well-documented, and easy to maintain.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Testing and Debugging: Assesses the candidate's ability to write unit tests, debug code effectively, and ensure software quality.",
+      "EvaluationStrategy": "Evaluate the candidate's experience with testing frameworks and debugging tools. Assess their ability to write comprehensive unit tests and identify and resolve software defects efficiently. Understand their quality assurance process.",
+      "Justification": "The guided JD includes questions about QA processes, spotting bugs, and the importance of reliable applications, making this a critical subcategory. From Guided JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Limited experience with testing and debugging. Struggles to write effective unit tests and debug code efficiently.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Understands basic testing and debugging techniques. Can write some unit tests and debug code with guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Proficient in testing and debugging. Able to write comprehensive unit tests and debug code effectively.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Adaptability and Learning Agility: Evaluates the candidate's ability to adapt to new technologies, learn quickly, and embrace change.",
+      "EvaluationStrategy": "Assess the candidate's willingness to learn new technologies and their ability to adapt to changing priorities. Evaluate their past experiences with adopting new tools and processes. Inquire about resources they would recommend to become a better software engineer.",
+      "Justification": "The rapid pace of technological advancements requires software engineers to continuously learn. Questions probe the candidate's ongoing professional development and knowledge of industry trends. From the Guided JD.",
+      "ScoringGuided": [
+        {
+          "Comment": "Resistant to change and struggles to learn new technologies quickly.",
+          "Range": "1-2"
+        },
+        {
+          "Comment": "Open to learning new technologies but may require significant guidance.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Highly adaptable and demonstrates a strong desire to learn new technologies quickly.",
+          "Range": "4-5"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

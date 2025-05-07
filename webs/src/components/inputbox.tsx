@@ -72,7 +72,8 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
       }
   
       // Send the form data to the backend
-      const API_URL = "https://api-service-ub0y.onrender.com";
+      // const API_URL = "https://api-service-ub0y.onrender.com";
+      const API_URL = "http://localhost:8080";
       console.log("Submitting job description to:", API_URL);
     
       const response = await fetch(`${API_URL}/submitJD`, {
@@ -89,8 +90,8 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
   
         // Fetch the JSON file from the path
         
-        // const jsonResponse = await fetch(`http://localhost:8080/${responseData.path.replace(/\\/g, '/')}`);
-        const jsonResponse = await fetch(`${API_URL}/${responseData.path.replace(/\\/g, "/")}`);
+        const jsonResponse = await fetch(`http://localhost:8080/${responseData.path.replace(/\\/g, '/')}`);
+        // const jsonResponse = await fetch(`${API_URL}/${responseData.path.replace(/\\/g, "/")}`);
         if (jsonResponse.ok) {
           const criteriaJson = await jsonResponse.json();
           console.log("Criteria JSON:", criteriaJson); // Log the parsed JSON data
@@ -145,7 +146,8 @@ const IPBox = ({ setCriteriaData, setLoading }: { setCriteriaData: (data: any) =
     setSubmitCvClicked(true); // Set the submit button clicked state
     try {
       setRankLoading(true); // Set loading state
-      const API_URL = "https://api-service-ub0y.onrender.com";
+      // const API_URL = "https://api-service-ub0y.onrender.com";
+      const API_URL = "http://localhost:8080"; // Use localhost for local testing
       // console.log("import.meta.env =", import.meta.env);
       // console.log("API_URL =", import.meta.env.VITE_API_URL);
 

@@ -1,0 +1,102 @@
+[
+  {
+    "text": ": Python, Java, C/C++, HTML/CSS, JavaScript, SQL, Dart, Kotlin",
+    "page": 1,
+    "x": 88,
+    "y": 146,
+    "width": 287,
+    "height": 10,
+    "description": "This area is strong because it lists C/C++ which is specifically requested in the job description, along with other relevant programming languages.",
+    "type": "strong"
+  },
+  {
+    "text": "Data Structures",
+    "page": 1,
+    "x": 50,
+    "y": 209,
+    "width": 74,
+    "height": 12,
+    "description": "This area is strong because it shows the candidate has knowledge about data structure, which is essential for a software engineer.",
+    "type": "strong"
+  },
+  {
+    "text": "Software Methodology",
+    "page": 1,
+    "x": 50,
+    "y": 219,
+    "width": 105,
+    "height": 12,
+    "description": "This area is strong because knowledge of software methodologies is crucial for software engineers to develop in a team.",
+    "type": "strong"
+  },
+  {
+    "text": "Advertisement Management Website",
+    "page": 1,
+    "x": 28,
+    "y": 264,
+    "width": 169,
+    "height": 10,
+    "description": "This area is strong because it shows the candidate is familiar with web development. The details given about the project are also great.",
+    "type": "strong"
+  },
+  {
+    "text": "Github Repository",
+    "page": 1,
+    "x": 47,
+    "y": 573,
+    "width": 84,
+    "height": 12,
+    "description": "This area is strong because it shows that the candidate is familiar with Github for version control, which is essential for software engineers.",
+    "type": "strong"
+  },
+  {
+    "text": "Languages",
+    "page": 1,
+    "x": 39,
+    "y": 146,
+    "width": 50,
+    "height": 10,
+    "description": "This area is weak because it lists a large number of languages without specifying proficiency. It would be better to indicate the level of expertise (e.g., beginner, intermediate, advanced) for each language.",
+    "type": "weak"
+  },
+  {
+    "text": "Responsibilities: Designing UI using Figma, front-end and back-end side implementing, testing",
+    "page": 1,
+    "x": 47,
+    "y": 351,
+    "width": 417,
+    "height": 12,
+    "description": "This area is weak because it's too general. It should quantify their experiences with metrics. Example, Designed UI, with +500 users and backend implementation with an API to handle 1000 requests/day, and 200 tests passing.",
+    "type": "weak"
+  },
+  {
+    "text": "This chat application defines two distinct roles: user and admin. Admin has the ability to access statistical data, generate",
+    "page": 1,
+    "x": 47,
+    "y": 399,
+    "width": 531,
+    "height": 12,
+    "description": "This area is weak because it doesn't directly showcase C++ skills, which are requested in the job description. While Java and Spring Boot are mentioned, it's not clear how this project relates to the C++ requirement. It could be improved by highlighting aspects relevant to system design, performance optimization, or backend architecture principles applicable across different languages.",
+    "type": "weak"
+  },
+  {
+    "text": "Medical Booking Website",
+    "page": 1,
+    "x": 28,
+    "y": 508,
+    "width": 116,
+    "height": 10,
+    "description": "This area is weak because, like the Chat Application, it lacks a clear connection to C++. While demonstrating web development skills, it doesn't align directly with the specified job requirement. The candidate could improve this by highlighting aspects like API design, database schema, or performance optimizations if they are particularly complex or innovative.",
+    "type": "weak"
+  },
+  {
+    "text": "Junior Student, GPA: 3.8",
+    "page": 1,
+    "x": 28,
+    "y": 108,
+    "width": 106,
+    "height": 10,
+    "description": "This area is weak because while a high GPA is good, it doesn't provide much information about the candidate's practical skills or experience relevant to the software engineering role. It would be better to emphasize relevant projects, skills, or coursework that demonstrate their abilities.",
+    "type": "weak"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Sales Support Representative - Inside Sales",
+    "page": 1,
+    "x": 93,
+    "y": 622,
+    "width": 179,
+    "height": 10,
+    "description": "This experience, though not directly an Account Executive role, demonstrates customer interaction and sales support skills, which are transferable to an Account Executive position. The 'Inside Sales' aspect highlights communication and relationship-building skills, which are vital for sales positions.",
+    "type": "strong"
+  },
+  {
+    "text": "Elevated sales account performance and bolstered customer and coworker satisfaction by delivering expert technical and",
+    "page": 1,
+    "x": 72,
+    "y": 635,
+    "width": 482,
+    "height": 10,
+    "description": "This bullet point highlights a measurable impact on sales account performance and customer satisfaction, showcasing results-oriented achievements. It also displays strong communication and problem-solving abilities, essential for an Account Executive.",
+    "type": "strong"
+  },
+  {
+    "text": "Client Collaboration:",
+    "page": 1,
+    "x": 72,
+    "y": 291,
+    "width": 88,
+    "height": 10,
+    "description": "Although the bulk of the CV is very technical, the client collaboration section highlights soft skills required for the Account Executive role and indicates the candidate is able to build rapport with clients and understand their needs. This helps balance the technical aspect of the CV and provides evidence of broader skills required.",
+    "type": "strong"
+  },
+  {
+    "text": "Web Developer | Full-Stack Engineer | Software Engineer",
+    "page": 1,
+    "x": 252,
+    "y": 44,
+    "width": 323,
+    "height": 13,
+    "description": "This is a weak area because the title focuses on technical roles that are not directly related to an Account Executive position. While technical skills can be valuable, this title doesn't immediately convey relevant experience for the target job. To improve this, the title could be adjusted to highlight transferable skills or experiences relevant to sales or customer relations, such as 'Client Solutions Engineer' or 'Technical Account Manager' depending on the actual role.",
+    "type": "weak"
+  },
+  {
+    "text": "Languages:",
+    "page": 1,
+    "x": 36,
+    "y": 100,
+    "width": 50,
+    "height": 10,
+    "description": "This section is a weak area because, while showcasing technical skills, it doesn't directly translate to the responsibilities of an Account Executive. Listing programming languages is less relevant than highlighting communication, sales, or relationship-building abilities. To improve this, this space can be replaced with something more relavant to the job title (like, CRM software or tools).",
+    "type": "weak"
+  },
+  {
+    "text": "PROJECTS",
+    "page": 1,
+    "x": 36,
+    "y": 321,
+    "width": 53,
+    "height": 11,
+    "description": "This is a weak area because it focuses on technical projects. These projects, while demonstrating coding skills, do not showcase abilities in sales, marketing, or customer relationship management which are crucial for an account executive. To improve this, the projects could be re-framed to highlight any aspects related to user interaction, problem-solving, or achieving specific business goals.",
+    "type": "weak"
+  },
+  {
+    "text": "TECHNICAL SKILLS",
+    "page": 1,
+    "x": 36,
+    "y": 79,
+    "width": 96,
+    "height": 11,
+    "description": "This section heavily emphasizes technical skills, which are not the primary focus for an Account Executive. While a basic understanding of technology is helpful, the depth of technical expertise presented here is less relevant than skills in communication, sales, and client management. To improve this, the CV could reduce the focus on technical skills and instead highlight soft skills and experiences related to sales and customer interaction.",
+    "type": "weak"
+  },
+  {
+    "text": "EDUCATION",
+    "page": 1,
+    "x": 36,
+    "y": 678,
+    "width": 58,
+    "height": 11,
+    "description": "This is a weak area because the content focuses on technical education, particularly software engineering. While a Computer Science degree can be valuable, it doesn't directly showcase sales or business acumen required for an Account Executive role. To improve this, consider adding relevant coursework or certifications in sales, marketing, or business administration. Highlighting any business-related projects or activities undertaken during education would also be beneficial.",
+    "type": "weak"
+  }
+]

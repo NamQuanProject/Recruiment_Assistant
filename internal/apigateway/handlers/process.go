@@ -1,4 +1,4 @@
-package output
+package handlers
 
 import (
 	"encoding/json"
@@ -30,7 +30,7 @@ func test(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Hello, World!"})
 }
 
-func outputHandler(c *gin.Context) {
+func OutputHandler(c *gin.Context) {
 	var evaluationFolder string
 
 	// Handle both GET and POST requests
@@ -67,14 +67,14 @@ func outputHandler(c *gin.Context) {
 
 		var evaluation struct {
 			PersonalInfo struct {
-				FullName         string `json:"FullName"`
+				FullName        string `json:"FullName"`
 				WorkFor         string `json:"WorkFor"`
 				ExperienceYears string `json:"Experience_Years"`
 				PathToCV        string `json:"PathToCV"`
 				PathToCVAlt     string `json:"path_to_cv"`
 			} `json:"PersonalInfo"`
 			Authenticity interface{} `json:"Authenticity"`
-			FinalScore   float64    `json:"FinalScore"`
+			FinalScore   float64     `json:"FinalScore"`
 		}
 
 		if err := json.Unmarshal(data, &evaluation); err != nil {

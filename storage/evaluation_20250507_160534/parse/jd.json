@@ -1,0 +1,206 @@
+{
+  "MainCategory": [
+    {
+      "Description": "Client Relationship Management and Development",
+      "EvaluationStrategy": "Assess the candidate's ability to build, maintain, and grow client relationships through understanding needs, proactive communication, and problem-solving. Evaluate their approach to handling difficult clients and maintaining long-term loyalty. Look for examples of successful account management and revenue generation.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates exceptional client relationship skills, consistently exceeding expectations and driving significant account growth. Proactively identifies and addresses client needs, builds strong rapport, and resolves conflicts effectively. Viewed as a trusted advisor by clients.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong client relationship skills, effectively manages accounts and meets client expectations. Builds rapport and resolves conflicts with minimal supervision. Identifies opportunities for account growth and proactively communicates with clients.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Adequate client relationship skills, generally meets client expectations but may require some guidance in handling complex issues or identifying growth opportunities. Maintains professional communication and addresses conflicts with supervision.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Developing client relationship skills, struggles to consistently meet client expectations or identify growth opportunities. May require significant guidance in handling complex issues or resolving conflicts. Communication may be inconsistent or ineffective.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Weak client relationship skills, consistently fails to meet client expectations or build rapport. Struggles to resolve conflicts or identify growth opportunities. Communication is ineffective and may damage client relationships.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Communication and Interpersonal Skills",
+      "EvaluationStrategy": "Evaluate the candidate's verbal and written communication skills, including their ability to explain complex issues clearly, listen actively, and adapt their communication style to different audiences. Assess their interpersonal skills, including empathy, diplomacy, and conflict resolution abilities. Pay attention to their ability to communicate effectively with both clients and internal teams.",
+      "ScoringGuided": [
+        {
+          "Comment": "Exceptional communication skills, capable of articulating complex ideas clearly and persuasively. Demonstrates strong active listening skills and builds rapport easily. Effectively communicates with diverse audiences and resolves conflicts diplomatically.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong communication skills, effectively conveys information and builds rapport with others. Listens attentively and adapts communication style as needed. Resolves conflicts professionally and effectively.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Adequate communication skills, generally conveys information clearly but may struggle with complex topics or diverse audiences. Listens passively and may struggle to resolve conflicts effectively.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Developing communication skills, struggles to convey information clearly or build rapport with others. May have difficulty listening attentively or resolving conflicts effectively.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Weak communication skills, unable to convey information effectively or build rapport with others. Struggles to listen attentively or resolve conflicts effectively. Communication may be unclear, unprofessional, or damaging.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Organizational and Time Management Skills",
+      "EvaluationStrategy": "Assess the candidate's ability to manage multiple accounts, prioritize tasks, and meet deadlines effectively. Evaluate their experience with project management software and CRM tools. Look for evidence of strong attention to detail and ability to stay organized under pressure. Evaluate their ability to track progress toward revenue goals.",
+      "ScoringGuided": [
+        {
+          "Comment": "Exceptional organizational skills, able to manage multiple accounts seamlessly and consistently meet deadlines. Demonstrates mastery of project management and CRM tools. Meticulous attention to detail and ability to stay organized under pressure. Proactively tracks progress toward revenue goals and adapts strategies as needed.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Strong organizational skills, effectively manages multiple accounts and meets deadlines consistently. Proficient in project management and CRM tools. Attentive to detail and able to stay organized under pressure. Tracks progress toward revenue goals and identifies areas for improvement.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Adequate organizational skills, generally manages multiple accounts and meets deadlines but may require some guidance. Familiar with project management and CRM tools but may need additional training. Attention to detail is inconsistent and may struggle to stay organized under pressure. Tracks progress toward revenue goals with supervision.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Developing organizational skills, struggles to manage multiple accounts or meet deadlines consistently. Limited experience with project management or CRM tools. Attention to detail is weak and may struggle to stay organized under pressure. Requires significant guidance in tracking progress toward revenue goals.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "Weak organizational skills, unable to manage multiple accounts or meet deadlines effectively. Unfamiliar with project management or CRM tools. Lacks attention to detail and struggles to stay organized under pressure. Unable to track progress toward revenue goals effectively.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    },
+    {
+      "Description": "Technical Proficiency (CRM and other relevant Software)",
+      "EvaluationStrategy": "Evaluate the candidate’s familiarity with CRM software (e.g., Salesforce, HubSpot, Zoho) and other relevant tools. Assess their aptitude for learning new systems and leveraging technology to improve communication, productivity, and data analysis. Determine their ability to use CRM data to optimize the customer journey and generate revenue reports.",
+      "ScoringGuided": [
+        {
+          "Comment": "Expert level proficiency with multiple CRM platforms and related software. Demonstrates an ability to leverage technology to improve efficiency and outcomes.",
+          "Range": "9-10"
+        },
+        {
+          "Comment": "Proficient in one or more CRM platforms and quickly learns new systems. Able to leverage technology to improve communication and productivity.",
+          "Range": "7-8"
+        },
+        {
+          "Comment": "Familiar with CRM software but needs some guidance. Demonstrates a willingness to learn new systems.",
+          "Range": "5-6"
+        },
+        {
+          "Comment": "Limited experience with CRM software and a slow learning curve.",
+          "Range": "3-4"
+        },
+        {
+          "Comment": "No experience with CRM software.",
+          "Range": "1-2"
+        }
+      ],
+      "ScoringScale": 10
+    }
+  ],
+  "SubCategory": [
+    {
+      "Description": "Upselling and Revenue Generation",
+      "EvaluationStrategy": "Assess the candidate's ability to identify opportunities for upselling existing clients and generating new revenue. Evaluate their understanding of the industry, client needs, and their organization's capabilities. Look for examples of successful upselling campaigns and their ability to demonstrate a clear return on investment.",
+      "ScoringGuided": [
+        {
+          "Comment": "Consistently exceeds revenue targets through proactive upselling and strategic account management.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Regularly identifies and executes upselling opportunities, contributing to revenue growth.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Occasionally identifies upselling opportunities but may require guidance.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Rarely identifies or executes upselling opportunities.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Problem-Solving and Conflict Resolution",
+      "EvaluationStrategy": "Evaluate the candidate's ability to identify and solve problems for clients, particularly when dealing with uncooperative or challenging customers. Assess their approach to conflict resolution, including their ability to remain professional, empathetic, and solution-oriented.",
+      "ScoringGuided": [
+        {
+          "Comment": "Demonstrates exceptional problem-solving and conflict resolution skills, consistently finding creative solutions and de-escalating tense situations.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Effectively resolves client issues and conflicts, maintaining a professional and empathetic demeanor.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Generally able to resolve client issues and conflicts but may require some guidance.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Struggles to resolve client issues and conflicts effectively, often escalating the situation.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Teamwork and Collaboration",
+      "EvaluationStrategy": "Assess the candidate's ability to work effectively with internal teams, including sales, strategy, and support. Evaluate their communication skills and ability to explain client problems clearly to other teams. Look for evidence of strong leadership skills and a willingness to collaborate to achieve common goals.",
+      "ScoringGuided": [
+        {
+          "Comment": "An exceptional team player who proactively collaborates with others to achieve common goals. Demonstrates strong leadership skills and effectively communicates client needs to internal teams.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Works effectively with internal teams and communicates client needs clearly.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Generally works well with internal teams but may require some guidance in communicating client needs.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Struggles to work effectively with internal teams and communicate client needs clearly.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    },
+    {
+      "Description": "Motivation and Adaptability",
+      "EvaluationStrategy": "Evaluate the candidate's ability to stay motivated and focused, even when working on accounts that don't interest them. Assess their adaptability and willingness to learn new skills and strategies. Look for evidence of a proactive approach to problem-solving and a willingness to ask for help when needed.",
+      "ScoringGuided": [
+        {
+          "Comment": "Highly motivated and adaptable, consistently exceeding expectations even when working on challenging accounts. Proactively seeks new strategies and is always willing to learn new skills.",
+          "Range": "4-5"
+        },
+        {
+          "Comment": "Maintains a positive attitude and adapts to changing priorities effectively.",
+          "Range": "3"
+        },
+        {
+          "Comment": "Generally motivated and adaptable but may require some encouragement.",
+          "Range": "2"
+        },
+        {
+          "Comment": "Struggles to stay motivated or adapt to changing priorities.",
+          "Range": "1"
+        }
+      ],
+      "ScoringScale": 5
+    }
+  ]
+}

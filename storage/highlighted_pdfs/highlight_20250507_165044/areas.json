@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Implement MIXER logic into 4DIAC platform using C++.",
+    "page": 1,
+    "x": 31,
+    "y": 234,
+    "width": 269,
+    "height": 10,
+    "description": "This demonstrates direct experience with C++, which is a core requirement of the job. This showcases practical application of C++ skills.",
+    "type": "strong"
+  },
+  {
+    "text": "Deep knowledge of C, Embedded System, Micro Controller, CAN Communication. Familiarise with Autosar, ASPICE.",
+    "page": 1,
+    "x": 55,
+    "y": 394,
+    "width": 513,
+    "height": 10,
+    "description": "This highlights key skills relevant to software engineering, especially embedded systems. The mention of C/C++ and related technologies like Autosar and ASPICE strengthens the profile.",
+    "type": "strong"
+  },
+  {
+    "text": "Programming Languages",
+    "page": 1,
+    "x": 20,
+    "y": 763,
+    "width": 123,
+    "height": 13,
+    "description": "Explicitly listing 'Python, C/C++' under programming languages provides immediate confirmation of proficiency in these critical languages for a software engineer role.",
+    "type": "strong"
+  },
+  {
+    "text": "Implement communication between ECUs using Autosar and C language. Test developed software by using official test",
+    "page": 1,
+    "x": 55,
+    "y": 329,
+    "width": 513,
+    "height": 10,
+    "description": "This showcases experience in a relevant domain (ECUs and Autosar), highlighting practical application of C programming and testing methodologies.",
+    "type": "strong"
+  },
+  {
+    "text": "Main Course: 3D Sensing and Sensor Fusion, Image and Video Processing, Advance Deep Network Development, Introduc-",
+    "page": 1,
+    "x": 31,
+    "y": 515,
+    "width": 537,
+    "height": 10,
+    "description": "Lists relevant coursework for this role and demonstrates areas where the candidate has strong software development skills. They list relevant coursework in sensor fusion, deep learning, and advanced topics.",
+    "type": "strong"
+  },
+  {
+    "text": "System Developer",
+    "page": 1,
+    "x": 17,
+    "y": 37,
+    "width": 105,
+    "height": 15,
+    "description": "While the CV lists 'System Developer' as the current role, the title is vague. It doesn't specify the kind of system or the development focus. It would be better to more precisely show the specialization or project focus that aligns with the target job description, making it easier for recruiters to assess the relevance of experience.",
+    "type": "weak"
+  },
+  {
+    "text": "A software engineer with a Master’s degree from Aalto University and three years of experience in the automotive",
+    "page": 1,
+    "x": 17,
+    "y": 102,
+    "width": 542,
+    "height": 11,
+    "description": "The summary is acceptable, but it could be improved by explicitly stating C++ skills in the summary to immediately catch the recruiter's attention. Quantifiable achievements would further strengthen it.",
+    "type": "weak"
+  },
+  {
+    "text": "Skill gains:",
+    "page": 1,
+    "x": 55,
+    "y": 553,
+    "width": 47,
+    "height": 10,
+    "description": "The description contains a list of random skills, but does not include any results. To improve, concrete achievements relating to the skills should be added.",
+    "type": "weak"
+  },
+  {
+    "text": "Experience",
+    "page": 1,
+    "x": 17,
+    "y": 179,
+    "width": 74,
+    "height": 12,
+    "description": "While the candidate has experience, the job descriptions are not very detailed and does not provide information for the technologies used at the job, except for C/C++ and Autosar. More project information could be used to strengthen the CV.",
+    "type": "weak"
+  },
+  {
+    "text": "Technical Skills",
+    "page": 1,
+    "x": 17,
+    "y": 744,
+    "width": 112,
+    "height": 12,
+    "description": "The list of Technical skills could be expanded to include more specific libraries, APIs, or frameworks that the candidate is familiar with, especially those relevant to C++ development and the specific domain of the target role.",
+    "type": "weak"
+  }
+]

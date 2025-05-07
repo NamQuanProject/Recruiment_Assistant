@@ -1,0 +1,102 @@
+[
+  {
+    "text": ": Python, Java, C/C++, HTML/CSS, JavaScript, SQL, Dart, Kotlin",
+    "page": 1,
+    "x": 88,
+    "y": 146,
+    "width": 286,
+    "height": 10,
+    "description": "This area is strong because it demonstrates a broad range of technical skills, including C/C++, which is specifically mentioned in the job description. This showcases the candidate's potential to handle the required tasks. The number of other programming languages highlights versatility and adaptability.",
+    "type": "strong"
+  },
+  {
+    "text": "University of Science",
+    "page": 1,
+    "x": 28,
+    "y": 93,
+    "width": 106,
+    "height": 11,
+    "description": "This area is strong because it provides the name of the university, which could be a reputable institution. Having a degree is an asset.",
+    "type": "strong"
+  },
+  {
+    "text": "Data Structures",
+    "page": 1,
+    "x": 50,
+    "y": 209,
+    "width": 73,
+    "height": 12,
+    "description": "This area is strong because it shows the candidate has completed coursework in relevant subjects like Data Structures, Software Methodology, and Object-oriented programming, indicating a solid theoretical foundation.",
+    "type": "strong"
+  },
+  {
+    "text": "Advertisement Management Website",
+    "page": 1,
+    "x": 28,
+    "y": 264,
+    "width": 169,
+    "height": 10,
+    "description": "This project description is strong because it showcases experience in web development, using technologies like HTML/CSS, JavaScript, MongoDB, and Node.js. The detailed explanation of the application's functionality and the roles it caters to indicates a good understanding of the software development process.",
+    "type": "strong"
+  },
+  {
+    "text": "Chat Application",
+    "page": 1,
+    "x": 28,
+    "y": 386,
+    "width": 78,
+    "height": 10,
+    "description": "This project description demonstrates experience in Java, Spring Boot and PostgreSQL. The candidate can potentially transfer that knowledge to the new job.",
+    "type": "strong"
+  },
+  {
+    "text": ": Python, Java, C/C++, HTML/CSS, JavaScript, SQL, Dart, Kotlin",
+    "page": 1,
+    "x": 88,
+    "y": 146,
+    "width": 286,
+    "height": 10,
+    "description": "This is a weak area. While listing many languages is good, it doesn't specify proficiency levels. To improve, the candidate should indicate their level of expertise (e.g., beginner, intermediate, expert) for each language or group them based on proficiency.",
+    "type": "weak"
+  },
+  {
+    "text": "Technologies/Frameworks",
+    "page": 1,
+    "x": 39,
+    "y": 158,
+    "width": 122,
+    "height": 10,
+    "description": "This is a weak area. While listing many technologies/frameworks is good, it doesn't specify proficiency levels. To improve, the candidate should indicate their level of expertise (e.g., beginner, intermediate, expert) for each tech stack or group them based on proficiency.",
+    "type": "weak"
+  },
+  {
+    "text": "Testing",
+    "page": 1,
+    "x": 350,
+    "y": 351,
+    "width": 40,
+    "height": 12,
+    "description": "This is a weak area. The CV only mentions 'testing' as a responsibility in one project. To improve, the candidate should elaborate on their testing experience, specifying the types of testing they have performed (e.g., unit, integration, system, user acceptance) and the tools they have used.",
+    "type": "weak"
+  },
+  {
+    "text": "Object-oriented programming",
+    "page": 1,
+    "x": 50,
+    "y": 229,
+    "width": 135,
+    "height": 12,
+    "description": "This is a weak area. While mentioning coursework is good, it lacks context. The candidate should relate their coursework to practical skills or projects to demonstrate their understanding and application of the concepts. For example, they could mention a project where they applied object-oriented programming principles.",
+    "type": "weak"
+  },
+  {
+    "text": "Github Repository",
+    "page": 1,
+    "x": 52,
+    "y": 488,
+    "width": 79,
+    "height": 10,
+    "description": "This is a weak area. While mentioning having Github repositories is good, it is not useful if the candidate does not provide the links to those repositories so the hiring manager can view and see the code.",
+    "type": "weak"
+  }
+]

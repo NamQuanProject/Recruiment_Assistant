@@ -1,13 +1,22 @@
 {
   "list": [
     {
-      "full_name": "Alan Turing",
-      "worked_for": "UNC-Chapel Hill – Department of Computer Science (Cybersecurity Lab)",
-      "experience_level": "2",
-      "authenticity": 7,
+      "full_name": "Han Nguyen",
+      "worked_for": "",
+      "experience_level": "3",
+      "authenticity": 8,
+      "final_score": 71.11111111111111,
+      "path_to_cv": "storage/evaluation_20250507_164834/original/cvs/0008.pdf",
+      "path_to_evaluation": "storage/evaluation_20250507_164834/evaluation/0008.json"
+    },
+    {
+      "full_name": "Lac Thieu Quan",
+      "worked_for": "",
+      "experience_level": "0",
+      "authenticity": 9,
       "final_score": 66.66666666666666,
-      "path_to_cv": "storage/evaluation_20250501_232814/original/cvs/0034.pdf",
-      "path_to_evaluation": "storage/evaluation_20250501_232814/evaluation/0034.json"
+      "path_to_cv": "storage/evaluation_20250507_164834/original/cvs/0006.pdf",
+      "path_to_evaluation": "storage/evaluation_20250507_164834/evaluation/0006.json"
     }
   ]
 }

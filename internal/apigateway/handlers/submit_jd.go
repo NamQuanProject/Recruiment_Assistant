@@ -176,11 +176,11 @@ func ProcessJD(jobName, filePath, TxtPath, JsonPath string) error {
 	}
 
 	// Call parsing server
-	// URL := os.Getenv("PARSE_URL")
-	// if URL == "" {
-	// 	URL = "http://localhost:8085" // Default URL for local testing
-	// }
-	URL := "https://parsing-service.onrender.com"
+	URL := os.Getenv("PARSE_URL")
+	if URL == "" {
+		URL = "http://localhost:8080" // Default URL for local testing
+	}
+	// URL := "https://parsing-service.onrender.com"
 	// resp, err := http.Post("http://localhost:8085/parse/jd", "application/json", bytes.NewBuffer(reqBody))
 	resp, err := http.Post(fmt.Sprintf("%s/parse/jd", URL), "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
