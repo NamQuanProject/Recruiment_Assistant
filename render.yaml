@@ -1,23 +1,23 @@
 services:
-  - name: api-service
+  - name: apigateway23
     type: web
     env: go
     plan: free
     buildCommand: go build -o api ./cmd/api
     startCommand: ./api
     envVars:
-      - name: API_URL
-        value: "https://api-service-ub0y.onrender.com"
+      - key: API_URL
+        value: "https://apigateway23.onrender.com"
 
-  - name: aiservice-service
+  - name: aiservice23
     type: web
     env: go
     plan: free
     buildCommand: go build -o aiservice ./cmd/aiservice
     startCommand: ./aiservice
     envVars:
-      - name: AI_URL
-        value: "https://aiservice-service.onrender.com"
+      - key: AI_URL
+        value: "https://aiservice23.onrender.com"
 
   - name: frontend
     type: web
@@ -26,7 +26,7 @@ services:
     buildCommand: cd webs && npm install && npm run build
     startCommand: cd webs && npm install -g serve && serve -s dist
     envVars:
-      - name: VITE_API_URL
-        value: "https://api-service-ub0y.onrender.com"
-      - name: VITE_AI_URL
-        value: "https://aiservice-service.onrender.com"
+      - key: VITE_API_URL
+        value: "https://apigateway23.onrender.com"
+      - key: VITE_AI_URL
+        value: "https://aiservice23.onrender.com"
