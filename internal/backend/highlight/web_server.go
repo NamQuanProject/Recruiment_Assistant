@@ -81,7 +81,7 @@ func (s *WebServer) Run() {
 		// if newURL == "" {
 		// 	newURL = "http://localhost:8081"
 		// }
-		newURL := "https://aiservice-service.onrender.com"
+		newURL := "https://aiservice23.onrender.com"
 
 		areas, err := FindAreas(pdfpath, jobTitle, jobDetails, newURL, evaluationReference)
 		if err != nil {

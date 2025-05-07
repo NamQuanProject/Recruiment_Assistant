@@ -103,10 +103,11 @@ func GetHlCVHandler(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot marshal request body"})
 		return
 	}
-	URL := os.Getenv("BACKEND_URL")
-	if URL == "" {
-		URL = "http://localhost:8080" // Default URL for local testing
-	}
+	// URL := os.Getenv("BACKEND_URL")
+	// if URL == "" {
+	// 	URL = "http://localhost:8080" // Default URL for local testing
+	// }
+	URL := "https://apigateway23.onrender.com"
 	// URL := "https://backend-service-mjv8.onrender.com"
 	// resp, err := http.Post("http://localhost:4000/analyze-cv", "application/json", strings.NewReader(string(requestBody)))
 	resp, err := http.Post(fmt.Sprintf("%s/analyze-cv", URL), "application/json", strings.NewReader(string(requestBody)))

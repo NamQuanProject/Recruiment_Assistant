@@ -138,10 +138,11 @@ func SubmitCVsHandler(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to prepare request"})
 		return
 	}
-	URL := os.Getenv("OUTPUT_URL")
-	if URL == "" {
-		URL = "http://localhost:8080" // Default URL for local testing
-	}
+	// URL := os.Getenv("OUTPUT_URL")
+	// if URL == "" {
+	// 	URL = "http://localhost:8080" // Default URL for local testing
+	// }
+	URL := "https://apigateway23.onrender.com"
 	// URL := "https://output-service.onrender.com"
 	// resp, err := http.Post("http://localhost:8084/output", "application/json", bytes.NewBuffer(reqBody))
 	resp, err := http.Post(fmt.Sprintf("%s/output", URL), "application/json", bytes.NewBuffer(reqBody))
@@ -175,11 +176,12 @@ func processCV(pdfPath, outPath string) error {
 	}
 
 	// Call parsing server
-	URL := os.Getenv("PARSE_URL")
-	if URL == "" {
-		URL = "http://localhost:8080" // Default URL for local testing
-	}
-	// URL := "https://parsing-service.onrender.com"
+	// URL := os.Getenv("PARSE_URL")
+	// if URL == "" {
+	// 	URL = "http://localhost:8080" // Default URL for local testing
+	// }
+	// // URL := "https://parsing-service.onrender.com"
+	URL := "https://apigateway23.onrender.com"
 	// resp, err := http.Post("http://localhost:8085/parse/cv", "application/json", bytes.NewBuffer(reqBody))
 	resp, err := http.Post(fmt.Sprintf("%s/parse/cv", URL), "application/json", bytes.NewBuffer(reqBody))
 	if err != nil {
@@ -208,10 +210,11 @@ func evaluate(path string) error {
 		return fmt.Errorf("failed to prepare request: %v", err)
 	}
 
-	URL := os.Getenv("EVAL_URL")
-	if URL == "" {
-		URL = "http://localhost:8080" // Default URL for local testing
-	}
+	// URL := os.Getenv("EVAL_URL")
+	// if URL == "" {
+	// 	URL = "http://localhost:8080" // Default URL for local testing
+	// }
+	URL := "https://apigateway23.onrender.com"
 	// URL := "https://evaluation-service-dytd.onrender.com"
 
 	// resp, err := http.Post("http://localhost:8082/evaluate", "application/json", bytes.NewBuffer(reqBody))
