@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const Chatbox = () => {
   const [messages, setMessages] = useState<{ sender: string; text: string }[]>([]); // Chat history

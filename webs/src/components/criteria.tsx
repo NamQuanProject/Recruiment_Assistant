@@ -1,7 +1,7 @@
 import  { useContext } from "react";
 import { DataContext } from "./datacontext";
 
-const Criteria = ({ criteriaData, loading }: { criteriaData: any; loading: boolean }) => {
+const Criteria = ({  loading }: { loading: boolean }) => {
   const { criteriaJson } = useContext(DataContext); // Access criteriaJson from context
   console.log("Criteria JSON in Criteria component:", criteriaJson); // Log the criteriaJson
 
